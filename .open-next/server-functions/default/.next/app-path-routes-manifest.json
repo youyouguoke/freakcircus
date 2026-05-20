@@ -1,0 +1,16 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/characters/page": "/characters",
+  "/endings/page": "/endings",
+  "/faq/page": "/faq",
+  "/favicon.ico/route": "/favicon.ico",
+  "/lore/page": "/lore",
+  "/page": "/",
+  "/privacy-policy/page": "/privacy-policy",
+  "/robots.txt/route": "/robots.txt",
+  "/sitemap.xml/route": "/sitemap.xml",
+  "/terms-of-service/page": "/terms-of-service",
+  "/theories/page": "/theories",
+  "/walkthroughs/page": "/walkthroughs"
+}
