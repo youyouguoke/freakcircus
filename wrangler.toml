@@ -6,3 +6,8 @@ account_id = "b183c58c7fa8b50d9a8a8e6ac8d42a31"
 
 [observability.logs]
 enabled = true
+
+# Static assets configuration
+[assets]
+directory = ".open-next/assets"
+not_found_handling = "single-page-application"

@@ -1,43 +1,76 @@
 export default function TrustSection() {
   return (
-    <section className="bg-cream py-20 relative overflow-hidden">
-      <div className="flex flex-col md:flex-row items-center justify-center gap-12 px-4 md:px-16">
-        <div className="text-paper-heading font-[Epilogue] text-xl md:text-2xl font-semibold uppercase tracking-widest text-center border-y-2 border-paper-heading/20 py-4 w-full md:w-1/3">
-          COMMUNITY-RESEARCHED <br /> LORE ARCHIVE
-        </div>
+    <section className="bg-surface py-16 px-4 md:px-16 border-t border-outline/10">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="font-[Epilogue] text-2xl md:text-3xl font-bold text-primary mb-4">
+          Community-Researched Lore Archive
+        </h2>
+        <p className="text-on-surface-variant text-sm mb-8">
+          Inside This Archive — What the community has built over two years of testing and documentation
+        </p>
 
-        <div className="flex -space-x-4 overflow-hidden">
-          <img
-            className="inline-block h-20 w-20 md:h-24 md:w-24 rounded-full ring-4 ring-cream grayscale brightness-75 hover:brightness-100 transition-all"
-            alt="Archival portrait"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuClQ4uTl3OEY8n--eFYyMX1ZdVlGaFX3ZMvwjtnuPnFXndJ4iE46_--1K22z3uh-dTqzcJKdux1inWXCP9aiLboyHVQpgVh7PK-AFS7JPxYOa8iDQEvmwkAwVlfMGKFieywjrjfJoyh-iL6QvAFLgfkQ6A0pujkxdVsXIvojvhEVCVJrUhl39wyEnKYbeGzI3NNgE6ZlzPeZNWbINIeXEV5lCM9mzXc31q95e0oKjPIVG9bwjA99P0mu-FbqBPUftkFD3oxExwgyZA"
-          />
-          <img
-            className="inline-block h-20 w-20 md:h-24 md:w-24 rounded-full ring-4 ring-cream grayscale brightness-75 hover:brightness-100 transition-all"
-            alt="Archival portrait"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIgugjDoHIOv8LE3WGn0-7L1C7VXb2AE6XH81_vVHxeG3Gt255d6yMpaD3orEe9Cv4zQxlCguiJilF_FKDP1Ul1cokUOPm_xflfWInq1gCuYBEmSLzypA68e2ydExnm0xFARdREZA1xyyPuMw21T9GD7zJwqR-cyCsJY5falWk_hysV7Y429RrMg2v5fSVtr5Idn9Q43ZXuRI42ml8xsWBcWnYg_8X4iX1USMAsr4Hi0MzSDyJOdNONqiVF6160X3yWwStfiaF7DM"
-          />
-          <img
-            className="inline-block h-20 w-20 md:h-24 md:w-24 rounded-full ring-4 ring-cream grayscale brightness-75 hover:brightness-100 transition-all"
-            alt="Archival portrait"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLxANs39Gar3UYW31lo1pkg_cf04ep_qcUMLZuma4YYf6WU8x_2RpxRMt1FbDd1aR88a3t63rq3TtJrb1_qTlC0vnWZgXJpbbpRazu740uXHT7ClLbt5qfdjl8xlLgdA3hQsd5BpIIWQmSOmXoj4p1JZRhkHTQjsfRiDPZ5KPtFVCTTrb1Zz6aXrzYCyEoFzZTEGbqaLPXQ_ns2r_hL3bJO5bFsPasnCjSxruyFTEYqY_hd0WzgNU_yqsaTdMsaJC_IuxPvMtSFLA"
-          />
-          <div className="h-20 w-20 md:h-24 md:w-24 rounded-full bg-cream-dark flex items-center justify-center border-2 border-dashed border-blood text-blood font-bold text-sm md:text-base">
-            +8k
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="bg-surface-container border border-outline/20 p-6">
+            <div className="font-[JetBrains_Mono] text-xs text-primary mb-2">✓</div>
+            <h3 className="font-[Epilogue] text-lg font-bold text-foreground mb-2">
+              Character Relationship Analysis
+            </h3>
+            <p className="text-on-surface-variant text-sm">
+              How Pierrot, Harlequin, The Doctor, and Columbina interconnect across routes. Cross-route dialogue changes and shared memory triggers.
+            </p>
           </div>
-        </div>
 
-        <div className="relative">
-          <div className="bg-white/50 p-4 border border-blood/30 rotate-1 shadow-sm font-[JetBrains_Mono] text-xs text-black">
-            <span className="text-blood font-bold block mb-1">LOG_774:</span>
-            &quot;Data integrity maintained by the collective. We see the
-            strings.&quot;
+          <div className="bg-surface-container border border-outline/20 p-6">
+            <div className="font-[JetBrains_Mono] text-xs text-primary mb-2">✓</div>
+            <h3 className="font-[Epilogue] text-lg font-bold text-foreground mb-2">
+              Ending Requirement Documentation
+            </h3>
+            <p className="text-on-surface-variant text-sm">
+              Verified unlock conditions for 8+ endings. Scene-by-scene requirements, replay dependencies, and hidden trigger documentation.
+            </p>
           </div>
-          <div className="absolute -top-3 -right-3 w-12 h-4 bg-yellow-200/40 rotate-45 opacity-60" />
+
+          <div className="bg-surface-container border border-outline/20 p-6">
+            <div className="font-[JetBrains_Mono] text-xs text-primary mb-2">✓</div>
+            <h3 className="font-[Epilogue] text-lg font-bold text-foreground mb-2">
+              Route-Specific Walkthroughs
+            </h3>
+            <p className="text-on-surface-variant text-sm">
+              Step-by-step guides for Pierrot's silent route, Harlequin's fractured route, The Doctor's memory route, and Columbina's loop route.
+            </p>
+          </div>
+
+          <div className="bg-surface-container border border-outline/20 p-6">
+            <div className="font-[JetBrains_Mono] text-xs text-primary mb-2">✓</div>
+            <h3 className="font-[Epilogue] text-lg font-bold text-foreground mb-2">
+              Community-Discovered Theories
+            </h3>
+            <p className="text-on-surface-variant text-sm">
+              Player-submitted investigations into loop mechanics, replay awareness, the Mirror Hall's changing architecture, and the true nature of the circus.
+            </p>
+          </div>
+
+          <div className="bg-surface-container border border-outline/20 p-6">
+            <div className="font-[JetBrains_Mono] text-xs text-primary mb-2">✓</div>
+            <h3 className="font-[Epilogue] text-lg font-bold text-foreground mb-2">
+              Timeline and Lore References
+            </h3>
+            <p className="text-on-surface-variant text-sm">
+              Chronological event tracking, symbol analysis (red thread, mirrors, stage curtains), and the founding myth of the First Circus Fire.
+            </p>
+          </div>
+
+          <div className="bg-surface-container border border-outline/20 p-6">
+            <div className="font-[JetBrains_Mono] text-xs text-primary mb-2">✓</div>
+            <h3 className="font-[Epilogue] text-lg font-bold text-foreground mb-2">
+              Data Mining and File Analysis
+            </h3>
+            <p className="text-on-surface-variant text-sm">
+              Technical documentation of unused voice lines, hidden counters in save files, corrupted endings found in game builds, and hex pattern analysis.
+            </p>
+          </div>
         </div>
       </div>
-
-      <div className="ink-scratch opacity-30 mt-16" />
     </section>
   );
 }

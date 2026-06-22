@@ -1,73 +1,90 @@
 import { Metadata } from "next";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import EndingsHero from "@/components/endings/EndingsHero";
+import EndingOverview from "@/components/endings/EndingOverview";
+import EndingComparisonTable from "@/components/endings/EndingComparisonTable";
+import EndingCategories from "@/components/endings/EndingCategories";
+import EndingArchiveGrid from "@/components/endings/EndingArchiveGrid";
+import EndingSpotlight from "@/components/endings/EndingSpotlight";
+import RouteGraph from "@/components/endings/RouteGraph";
+import CommunityDiscoveries from "@/components/endings/CommunityDiscoveries";
+import EndingDifficultyRanking from "@/components/endings/EndingDifficultyRanking";
+import EndingTimeline from "@/components/endings/EndingTimeline";
+import EndingsFAQ from "@/components/endings/EndingsFAQ";
+import EndingExplained from "@/components/endings/EndingExplained";
+import PopularEndingGuides from "@/components/endings/PopularEndingGuides";
+import EndingTableOfContents from "@/components/endings/EndingTableOfContents";
+import ArchiveIndex from "@/components/home/ArchiveIndex";
+import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Endings Guide | Freak Circus Hub",
-  description: "Complete endings guide for The Freak Circus. All 12 endings explained with trigger conditions and hidden dialogue.",
+  title: "Freak Circus Endings Guide (2026) | All Endings, Routes, Requirements & Explained",
+  description: "Complete Freak Circus endings guide. All 8+ endings explained: unlock conditions, step-by-step walkthroughs, requirements, rewards, and fan interpretations. Covers Pierrot, Harlequin, Doctor, and Columbina endings.",
+  keywords: [
+    "Freak Circus endings",
+    "Freak Circus endings guide",
+    "ending guide",
+    "routes",
+    "requirements",
+    "explained",
+    "how to unlock",
+    "ending walkthrough",
+    "unlock ending",
+    "Pierrot endings",
+    "Harlequin endings",
+    "Doctor endings",
+    "Columbina endings",
+    "true ending",
+    "secret ending",
+    "hidden ending",
+    "canon ending",
+    "Eternal Silence",
+    "Corrupted Data",
+    "Columbina's Truth",
+    "Grand Finale",
+    "all endings",
+    "ending order",
+    "ending timeline",
+  ],
+  openGraph: {
+    title: "Freak Circus Endings Guide (2026) | All Endings, Routes, Requirements & Explained",
+    description: "Complete Freak Circus endings guide. All 8+ endings explained with unlock conditions, walkthroughs, and requirements.",
+    type: "website",
+    url: "https://freak-circus.com/endings",
+    siteName: "Freak Circus Hub",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Freak Circus Endings Guide (2026) | All Endings, Routes, Requirements & Explained",
+    description: "Complete Freak Circus endings guide. All endings, routes, requirements, and explained.",
+  },
+  alternates: {
+    canonical: "https://freak-circus.com/endings",
+  },
 };
-
-const endings = [
-  {
-    name: "The Grand Finale",
-    route: "Harlequin",
-    difficulty: "Normal",
-    desc: "The standard ending where the circus burns. Most players reach this on their first playthrough.",
-  },
-  {
-    name: "Eternal Silence",
-    route: "Pierrot",
-    difficulty: "Hard",
-    desc: "Unlock by refusing to speak for the entire Pierrot route. The screen fades to black and stays black for 3 minutes.",
-  },
-  {
-    name: "The Doctor's Note",
-    route: "Doctor",
-    difficulty: "Hard",
-    desc: "Find all five hidden medical files scattered across the map before the final encounter.",
-  },
-  {
-    name: "Columbina's Truth",
-    route: "Columbina",
-    difficulty: "Very Hard",
-    desc: "The true ending that reveals the circus is a purgatorial loop. Requires perfect alignment of all dialogue choices.",
-  },
-  {
-    name: "Corrupted Data",
-    route: "???",
-    difficulty: "Impossible",
-    desc: "A rumored 13th ending found only in modified game files. The screen displays raw hex data before crashing.",
-  },
-];
 
 export default function EndingsPage() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen bg-surface">
       <Navigation />
-      <section className="bg-surface py-32 px-4 md:px-16">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="font-[Creepster] text-5xl md:text-7xl text-primary mb-4">ENDINGS ARCHIVE</h1>
-          <p className="text-on-surface-variant text-lg mb-16 max-w-2xl">
-            Every curtain call, every final bow. Here lies the complete guide to all known endings in The Freak Circus.
-          </p>
-
-          <div className="space-y-6">
-            {endings.map((ending, i) => (
-              <div key={ending.name} className="bg-surface-container border-l-4 border-primary-container p-6 hover:border-primary transition-colors">
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 mb-3">
-                  <h2 className="font-[Epilogue] text-xl md:text-2xl font-bold text-primary">{ending.name}</h2>
-                  <div className="flex gap-3">
-                    <span className="font-[JetBrains_Mono] text-xs uppercase bg-surface-container-highest px-2 py-1 text-primary-fixed">{ending.route}</span>
-                    <span className={`font-[JetBrains_Mono] text-xs uppercase px-2 py-1 ${ending.difficulty === "Impossible" ? "bg-blood text-white" : "bg-surface-container-highest text-on-secondary-container"}`}>{ending.difficulty}</span>
-                  </div>
-                </div>
-                <p className="text-on-surface-variant">{ending.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <EndingsHero />
+      <EndingTableOfContents />
+      <EndingOverview />
+      <EndingComparisonTable />
+      <EndingCategories />
+      <EndingArchiveGrid />
+      <EndingSpotlight />
+      <EndingExplained />
+      <RouteGraph />
+      <CommunityDiscoveries />
+      <EndingDifficultyRanking />
+      <EndingTimeline />
+      <EndingsFAQ />
+      <PopularEndingGuides />
+      <ArchiveIndex />
       <Footer />
+      <JsonLd />
     </main>
   );
 }

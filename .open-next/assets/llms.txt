@@ -1,0 +1,29 @@
+# Freak Circus Hub
+
+> Freak Circus Hub is a fan-made lore archive and community investigation board for The Freak Circus, a psychological horror visual novel. It helps players discover hidden endings, route theories, character motives, timeline anomalies, and spoiler-safe walkthroughs.
+
+## Key Pages
+
+- [Home](https://freak-circus.com/): Main archive hub with endings, theories, lore, and walkthroughs.
+- [Endings](https://freak-circus.com/endings): Complete ending archive including verified, corrupted, and hidden finales.
+- [Walkthroughs](https://freak-circus.com/walkthroughs): Spoiler-safe route guides and hidden trigger documentation.
+- [Theories](https://freak-circus.com/theories): Community timeline analysis, symbolism studies, and route investigations.
+- [Lore](https://freak-circus.com/lore): Hidden history, timeline records, recurring symbols, and recovered documents.
+- [Characters](https://freak-circus.com/characters): Character profiles for Pierrot, Harlequin, Doctor, and Columbina.
+- [FAQ](https://freak-circus.com/faq): Frequently asked questions about endings, spoilers, and archive updates.
+
+## Key Facts
+
+- Category: Video game lore archive / Fan wiki
+- Audience: Horror visual novel players, lore hunters, completionists
+- Main use cases: Discover hidden endings, understand timeline corruption, find spoiler-safe walkthroughs, explore character theories
+- Game: The Freak Circus (psychological horror visual novel)
+- Characters: Pierrot, Harlequin, The Doctor, Columbina
+- Update frequency: Weekly
+- Last updated: 2026-06-03
+
+## Contact
+
+- Website: https://freak-circus.com
+- Email: hello@freak-circus.com
+- Brand: Freak Circus Hub

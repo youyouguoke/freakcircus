@@ -21,7 +21,16 @@
     "afterFiles": [],
     "fallback": []
   },
-  "dynamicRoutes": [],
+  "dynamicRoutes": [
+    {
+      "page": "/walkthroughs/[slug]",
+      "regex": "^/walkthroughs/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPslug": "nxtPslug"
+      },
+      "namedRegex": "^/walkthroughs/(?<nxtPslug>[^/]+?)(?:/)?$"
+    }
+  ],
   "staticRoutes": [
     {
       "page": "/",
@@ -48,10 +57,76 @@
       "namedRegex": "^/characters(?:/)?$"
     },
     {
+      "page": "/characters/columbina",
+      "regex": "^/characters/columbina(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/characters/columbina(?:/)?$"
+    },
+    {
+      "page": "/characters/doctor",
+      "regex": "^/characters/doctor(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/characters/doctor(?:/)?$"
+    },
+    {
+      "page": "/characters/harlequin",
+      "regex": "^/characters/harlequin(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/characters/harlequin(?:/)?$"
+    },
+    {
+      "page": "/characters/pierrot",
+      "regex": "^/characters/pierrot(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/characters/pierrot(?:/)?$"
+    },
+    {
+      "page": "/characters/pierrot-endings",
+      "regex": "^/characters/pierrot\\-endings(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/characters/pierrot\\-endings(?:/)?$"
+    },
+    {
+      "page": "/characters/pierrot-route-guide",
+      "regex": "^/characters/pierrot\\-route\\-guide(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/characters/pierrot\\-route\\-guide(?:/)?$"
+    },
+    {
       "page": "/endings",
       "regex": "^/endings(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/endings(?:/)?$"
+    },
+    {
+      "page": "/endings/columbinas-truth",
+      "regex": "^/endings/columbinas\\-truth(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/endings/columbinas\\-truth(?:/)?$"
+    },
+    {
+      "page": "/endings/corrupted-data",
+      "regex": "^/endings/corrupted\\-data(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/endings/corrupted\\-data(?:/)?$"
+    },
+    {
+      "page": "/endings/doctors-note",
+      "regex": "^/endings/doctors\\-note(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/endings/doctors\\-note(?:/)?$"
+    },
+    {
+      "page": "/endings/eternal-silence",
+      "regex": "^/endings/eternal\\-silence(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/endings/eternal\\-silence(?:/)?$"
+    },
+    {
+      "page": "/endings/the-grand-finale",
+      "regex": "^/endings/the\\-grand\\-finale(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/endings/the\\-grand\\-finale(?:/)?$"
     },
     {
       "page": "/faq",
@@ -70,6 +145,48 @@
       "regex": "^/lore(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/lore(?:/)?$"
+    },
+    {
+      "page": "/lore/first-circus-fire",
+      "regex": "^/lore/first\\-circus\\-fire(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/lore/first\\-circus\\-fire(?:/)?$"
+    },
+    {
+      "page": "/lore/founding-myth",
+      "regex": "^/lore/founding\\-myth(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/lore/founding\\-myth(?:/)?$"
+    },
+    {
+      "page": "/lore/mask-ceremony",
+      "regex": "^/lore/mask\\-ceremony(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/lore/mask\\-ceremony(?:/)?$"
+    },
+    {
+      "page": "/lore/mirror-hall",
+      "regex": "^/lore/mirror\\-hall(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/lore/mirror\\-hall(?:/)?$"
+    },
+    {
+      "page": "/lore/null-performer",
+      "regex": "^/lore/null\\-performer(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/lore/null\\-performer(?:/)?$"
+    },
+    {
+      "page": "/lore/silent-exit",
+      "regex": "^/lore/silent\\-exit(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/lore/silent\\-exit(?:/)?$"
+    },
+    {
+      "page": "/play-online",
+      "regex": "^/play\\-online(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/play\\-online(?:/)?$"
     },
     {
       "page": "/privacy-policy",
@@ -102,10 +219,52 @@
       "namedRegex": "^/theories(?:/)?$"
     },
     {
+      "page": "/theories/pierrot-remembers-routes",
+      "regex": "^/theories/pierrot\\-remembers\\-routes(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/theories/pierrot\\-remembers\\-routes(?:/)?$"
+    },
+    {
       "page": "/walkthroughs",
       "regex": "^/walkthroughs(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/walkthroughs(?:/)?$"
+    },
+    {
+      "page": "/walkthroughs/columbina-fractured-route",
+      "regex": "^/walkthroughs/columbina\\-fractured\\-route(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/walkthroughs/columbina\\-fractured\\-route(?:/)?$"
+    },
+    {
+      "page": "/walkthroughs/doctor-memory-route",
+      "regex": "^/walkthroughs/doctor\\-memory\\-route(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/walkthroughs/doctor\\-memory\\-route(?:/)?$"
+    },
+    {
+      "page": "/walkthroughs/harlequin-true-route",
+      "regex": "^/walkthroughs/harlequin\\-true\\-route(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/walkthroughs/harlequin\\-true\\-route(?:/)?$"
+    },
+    {
+      "page": "/walkthroughs/null-route",
+      "regex": "^/walkthroughs/null\\-route(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/walkthroughs/null\\-route(?:/)?$"
+    },
+    {
+      "page": "/walkthroughs/pierrot-main-route",
+      "regex": "^/walkthroughs/pierrot\\-main\\-route(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/walkthroughs/pierrot\\-main\\-route(?:/)?$"
+    },
+    {
+      "page": "/walkthroughs/pierrot-silent-route",
+      "regex": "^/walkthroughs/pierrot\\-silent\\-route(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/walkthroughs/pierrot\\-silent\\-route(?:/)?$"
     }
   ],
   "dataRoutes": [],

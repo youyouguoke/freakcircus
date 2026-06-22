@@ -1,47 +1,95 @@
 import { Metadata } from "next";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import WalkthroughHero from "@/components/walkthroughs/WalkthroughHero";
+import WalkthroughOverview from "@/components/walkthroughs/WalkthroughOverview";
+import RouteComparisonTable from "@/components/walkthroughs/RouteComparisonTable";
+import RouteOrderGuide from "@/components/walkthroughs/RouteOrderGuide";
+import RouteArchiveGrid from "@/components/walkthroughs/RouteArchiveGrid";
+import FeaturedRoute from "@/components/walkthroughs/FeaturedRoute";
+import BranchMap from "@/components/walkthroughs/BranchMap";
+import DependencyAnalysis from "@/components/walkthroughs/DependencyAnalysis";
+import HiddenTriggerArchive from "@/components/walkthroughs/HiddenTriggerArchive";
+import CommunityRouteNotes from "@/components/walkthroughs/CommunityRouteNotes";
+import RouteDifficultyRanking from "@/components/walkthroughs/RouteDifficultyRanking";
+import RouteSymbolism from "@/components/walkthroughs/RouteSymbolism";
+import WalkthroughFAQ from "@/components/walkthroughs/WalkthroughFAQ";
+import RouteFlowchart from "@/components/walkthroughs/RouteFlowchart";
+import ChoiceConsequenceTable from "@/components/walkthroughs/ChoiceConsequenceTable";
+import CompletionChecklist from "@/components/walkthroughs/CompletionChecklist";
+import MissableContent from "@/components/walkthroughs/MissableContent";
+import WalkthroughLinkMatrix from "@/components/walkthroughs/WalkthroughLinkMatrix";
+import ArchiveIndex from "@/components/home/ArchiveIndex";
+import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Walkthroughs | Freak Circus Hub",
-  description: "Step-by-step walkthroughs for every route in The Freak Circus visual novel.",
+  title: "Freak Circus Walkthrough Guide (2026) | All Routes, Choices, Hidden Triggers & Endings",
+  description: "Complete Freak Circus walkthrough guide. Step-by-step guides for Pierrot, Harlequin, Doctor, and Columbina routes. All choices, hidden triggers, secret endings, missable content, and 100% completion checklist.",
+  keywords: [
+    "Freak Circus walkthrough",
+    "Freak Circus walkthrough guide",
+    "walkthrough",
+    "guide",
+    "routes",
+    "choices",
+    "endings",
+    "hidden triggers",
+    "Pierrot walkthrough",
+    "Harlequin walkthrough",
+    "Doctor walkthrough",
+    "Columbina walkthrough",
+    "secret route",
+    "true route",
+    "how to unlock",
+    "choice guide",
+    "missable content",
+    "100% completion",
+    "route difficulty",
+    "step by step",
+    "walkthrough guide",
+  ],
+  openGraph: {
+    title: "Freak Circus Walkthrough Guide (2026) | All Routes, Choices, Hidden Triggers & Endings",
+    description: "Complete Freak Circus walkthrough guide. Step-by-step guides for all routes with hidden triggers, choices, and endings.",
+    type: "website",
+    url: "https://freak-circus.com/walkthroughs",
+    siteName: "Freak Circus Hub",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Freak Circus Walkthrough Guide (2026) | All Routes, Choices, Hidden Triggers & Endings",
+    description: "Complete Freak Circus walkthrough guide. All routes, choices, hidden triggers, and endings.",
+  },
+  alternates: {
+    canonical: "https://freak-circus.com/walkthroughs",
+  },
 };
-
-const guides = [
-  { route: "Harlequin Route", steps: 24, status: "Complete" },
-  { route: "Pierrot Route", steps: 31, status: "Complete" },
-  { route: "Doctor Route", steps: 18, status: "Complete" },
-  { route: "Columbina Route", steps: 27, status: "Complete" },
-  { route: "Secret Route (???)", steps: 42, status: "In Progress" },
-];
 
 export default function WalkthroughsPage() {
   return (
     <main className="min-h-screen">
       <Navigation />
-      <section className="bg-surface py-32 px-4 md:px-16">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="font-[Creepster] text-5xl md:text-7xl text-primary mb-4">WALKTHROUGHS</h1>
-          <p className="text-on-surface-variant text-lg mb-16 max-w-2xl">
-            Frame-perfect decision maps. Every choice matters. We have mapped every branch so you don&apos;t have to guess.
-          </p>
-
-          <div className="space-y-4">
-            {guides.map((guide) => (
-              <div key={guide.route} className="bg-surface-container border border-primary-container p-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4 hover:border-primary transition-colors">
-                <div>
-                  <h2 className="font-[Epilogue] text-xl font-bold text-primary">{guide.route}</h2>
-                  <p className="text-on-surface-variant text-sm">{guide.steps} key decision points mapped</p>
-                </div>
-                <span className={`font-[JetBrains_Mono] text-xs uppercase px-3 py-1 border ${guide.status === "Complete" ? "border-primary text-primary" : "border-blood text-blood"}`}>
-                  {guide.status}
-                </span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <WalkthroughHero />
+      <RouteFlowchart />
+      <WalkthroughOverview />
+      <RouteComparisonTable />
+      <RouteOrderGuide />
+      <RouteArchiveGrid />
+      <ChoiceConsequenceTable />
+      <FeaturedRoute />
+      <BranchMap />
+      <DependencyAnalysis />
+      <HiddenTriggerArchive />
+      <MissableContent />
+      <CompletionChecklist />
+      <CommunityRouteNotes />
+      <RouteDifficultyRanking />
+      <RouteSymbolism />
+      <WalkthroughFAQ />
+      <WalkthroughLinkMatrix />
+      <ArchiveIndex />
       <Footer />
+      <JsonLd />
     </main>
   );
 }

@@ -26,14 +26,19 @@ export const metadata: Metadata = {
     siteName: "Freak Circus Hub",
     locale: "en_US",
     type: "website",
-    images: ["/OG.png"],
+    images: [{
+      url: "/og-image.png",
+      width: 1200,
+      height: 630,
+      alt: "Freak Circus Hub — Every ending mapped, every character connected, every theory documented",
+    }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Freak Circus Hub — Lore Archive & Theory Hub",
     description:
       "Every ending mapped. Every character connected. Every theory documented.",
-    images: ["/OG.png"],
+    images: ["/twitter-image.png"],
   },
   robots: {
     index: true,
