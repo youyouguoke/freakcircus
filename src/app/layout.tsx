@@ -82,6 +82,24 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
           rel="stylesheet"
         />
+        {/* Google tag (gtag.js) */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3GS2W560EC"></script>
+        <script dangerouslySetInnerHTML={{__html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-3GS2W560EC');
+        `}} />
+        <script async src="https://plausible.shipsolo.io/js/pa-ew39StHckGexwKZs37REB.js"></script>
+        <script dangerouslySetInnerHTML={{__html: `
+          window.plausible = window.plausible || function() {
+            (window.plausible.q = window.plausible.q || []).push(arguments)
+          };
+          window.plausible.init = window.plausible.init || function(i) {
+            window.plausible.o = i || {};
+          };
+          window.plausible.init();
+        `}} />
       </head>
       <body className="font-sans antialiased">
         <div className="grain-overlay" />
