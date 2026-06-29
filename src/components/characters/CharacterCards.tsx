@@ -87,6 +87,27 @@ const characters = [
     theory: "The Orchestrator Theory proposes Columbina is the only character who truly understands the circus. Her three-loop structure mirrors the game's overall narrative architecture, suggesting the entire circus is a single loop containing smaller loops within each character route. The fourth door in her hallway may represent the true ending that requires all other routes to be completed first.",
     href: "/characters/columbina",
   },
+  {
+    title: "The Gatekeeper",
+    name: "Ticket Taker",
+    role: "Circus Entrance / Lore Guide",
+    image: "/tickettaker.jpg",
+    alt: "Ticket Taker Freak Circus Character — Gatekeeper Lore Guide",
+    personality: "Silent, imposing, transactional",
+    routeTheme: "Pink ticket, mirror scene, identity mystery",
+    popularity: "Most discussed NPC despite no romance route",
+    mystery: "Mirror scene shows the player wearing his porcelain mask",
+    background: "The Ticket Taker stands as the enigmatic sentinel at the threshold of the Freak Circus. Draped in tattered mahogany robes and concealing their features behind a static, smiling porcelain mask, they exist between the realm of the living and the spectacle of the circus. Unlike other performers who thrive on the attention of the crowd, the Ticket Taker remains cold, clinical, and transactional. Players first encounter them not at the circus gates, but in the desolate 'Raining Cafe', where they deliver the first of many ominous warnings.",
+    endings: [
+      { name: "Bad Ending A", type: "Standard", desc: "Fail to provide the pink ticket at the circus entrance. Immediate Game Over." },
+      { name: "Mirror Truth", type: "Secret", desc: "Click the mirror 33 times to trigger the hidden laugh — the player's own voice reversed." },
+      { name: "Day 3 Encounter", type: "Cut Content", desc: "Datamined trigger zone found but never activated in current build." },
+    ],
+    route: "As of patch 1.5, there is no playable route for the Ticket Taker. He remains an NPC guide and a primary source of lore exposition. Community petitions for a 'Hidden Route' are currently under review by the developers. Empty romance voice files and unused walking animations suggest one was planned but cut.",
+    relationship: "The Ticket Taker's connection to the Doctor is the most theorized in the community. Multiple evidence points suggest a connection: identical height (188cm), shared vocal frequency patterns, matching robe wallpaper patterns, and the fact they never appear in the same scene. The mirror scene reflection showing the player wearing his mask has spawned the dominant Time-Loop Theory.",
+    theory: "The Time-Loop Theory suggests the Ticket Taker is the player from a previous failed cycle. Evidence: The mirror scene dialogue uses the player's exact word choice from Day 1. The Ticket Taker knows the player's name before it is spoken. The mask fits the player's face perfectly in the reflection. Data mining suggests there is no character model under the mask, confirming he is likely an incorporeal entity.",
+    href: "/ticket-taker",
+  },
 ];
 
 export default function CharacterCards() {
@@ -97,7 +118,7 @@ export default function CharacterCards() {
           Freak Circus Characters
         </h2>
         <p className="text-on-surface-variant text-sm mb-8">
-          The four central figures of The Freak Circus — Pierrot the melancholic clown, Harlequin the chaotic performer, The Doctor the circus physician, and Columbina the ballerina. Each character has their own route, hidden triggers, disturbing revelations, and multiple endings.
+          The five central figures of The Freak Circus — Pierrot the melancholic clown, Harlequin the chaotic performer, The Doctor the circus physician, Columbina the ballerina, and the enigmatic Ticket Taker who guards the threshold. Each character has their own route, hidden triggers, disturbing revelations, and multiple endings.
         </p>
         <div className="grid md:grid-cols-2 gap-8">
           {characters.map((char) => (
