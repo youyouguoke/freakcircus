@@ -220,58 +220,62 @@ export default function TicketTakerPage() {
         </section>
 
         {/* Section 2: Overview - Expanded */}
-        <section className="mb-16 grid md:grid-cols-3 gap-8 items-start">
-          <div className="md:col-span-2">
-            <h2 className="font-display text-3xl mb-8 text-on-surface">
-              WHO IS THE TICKET TAKER?
-            </h2>
-            <div className="mb-8 overflow-hidden border border-white/5">
-              <img
-                src="/ticket-taker-sprite.png"
-                alt="Official Ticket Taker character sprite from The Freak Circus visual novel showing the porcelain mask and mahogany robes"
-                className="w-full h-auto object-cover"
-                loading="lazy"
-              />
-              <p className="font-mono text-[9px] text-on-surface/30 uppercase tracking-widest p-3 bg-surface-container-low border-t border-white/5">
-                Official Character Sprite — The Freak Circus v0.2
-              </p>
+        <section className="mb-16">
+          <h2 className="font-display text-3xl mb-8 text-on-surface">
+            WHO IS THE TICKET TAKER?
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8 items-start">
+            <div className="md:col-span-2">
+              <div className="space-y-6 font-sans text-on-surface/80 leading-relaxed">
+                <p>
+                  The <strong className="text-on-surface">Ticket Taker</strong> stands as the enigmatic sentinel at the
+                  threshold of the <a href="/lore" className="text-primary hover:underline decoration-primary/30">Freak Circus</a>. Draped in tattered mahogany robes
+                  and concealing their features behind a static, smiling porcelain
+                  mask, they exist between the realm of the living and the
+                  spectacle of the circus. Unlike other performers who thrive on the attention of the crowd,
+                  the Ticket Taker remains cold, clinical, and transactional.
+                </p>
+                <p>
+                  Players first encounter them not at the circus gates, but in the
+                  desolate <a href="/walkthroughs/pierrot-main-route" className="text-primary hover:underline decoration-primary/30">&lsquo;Raining Cafe&rsquo;</a>, where they deliver the first
+                  of many ominous warnings. This early appearance is significant—most NPCs in <em>The Freak Circus</em> only appear after the player has committed to a specific route, yet the Ticket Taker is present from <strong>Day 1</strong>, suggesting their role transcends normal narrative boundaries.
+                </p>
+                <p>
+                  <strong>Why do players care about Ticket Taker?</strong> Despite having no romance route and minimal dialogue, the Ticket Taker has become one of the most discussed characters in the community. Reddit threads analyzing their <a href="#mirror-scene" className="text-primary hover:underline decoration-primary/30">mirror scene</a> regularly receive hundreds of upvotes, and Tumblr theory posts about their connection to <a href="/characters/doctor" className="text-primary hover:underline decoration-primary/30">the Doctor</a> circulate weekly. The character&apos;s silence, imposing height, and the symbolic <a href="#pink-ticket" className="text-primary hover:underline decoration-primary/30">pink ticket</a> have made them a focal point for lore enthusiasts who believe they hold the key to understanding the circus&apos;s true nature.
+                </p>
+                <p>
+                  <strong>Why is Ticket Taker important to the story?</strong> Without the Ticket Taker, the player cannot progress past <strong>Day 2</strong>. They are the literal gatekeeper—both narratively and mechanically. Failing to provide the <a href="#pink-ticket" className="text-primary hover:underline decoration-primary/30">pink ticket</a> at the circus entrance triggers <a href="/endings" className="text-primary hover:underline decoration-primary/30">Bad Ending A</a>, one of the earliest deaths in the game. Their presence in the <a href="#mirror-scene" className="text-primary hover:underline decoration-primary/30">mirror scene</a> on Day 2 is widely considered one of the most unsettling moments in the entire visual novel, with the reflection revealing the player wearing the Ticket Taker&apos;s porcelain mask.
+                </p>
+              </div>
             </div>
-            <div className="space-y-6 font-sans text-on-surface/80 leading-relaxed">
-              <p>
-                The <strong className="text-on-surface">Ticket Taker</strong> stands as the enigmatic sentinel at the
-                threshold of the <a href="/lore" className="text-primary hover:underline decoration-primary/30">Freak Circus</a>. Draped in tattered mahogany robes
-                and concealing their features behind a static, smiling porcelain
-                mask, they exist between the realm of the living and the
-                spectacle of the circus. Unlike other performers who thrive on the attention of the crowd,
-                the Ticket Taker remains cold, clinical, and transactional.
-              </p>
-              <p>
-                Players first encounter them not at the circus gates, but in the
-                desolate <a href="/walkthroughs/pierrot-main-route" className="text-primary hover:underline decoration-primary/30">&lsquo;Raining Cafe&rsquo;</a>, where they deliver the first
-                of many ominous warnings. This early appearance is significant—most NPCs in <em>The Freak Circus</em> only appear after the player has committed to a specific route, yet the Ticket Taker is present from <strong>Day 1</strong>, suggesting their role transcends normal narrative boundaries.
-              </p>
-              <p>
-                <strong>Why do players care about Ticket Taker?</strong> Despite having no romance route and minimal dialogue, the Ticket Taker has become one of the most discussed characters in the community. Reddit threads analyzing their <a href="#mirror-scene" className="text-primary hover:underline decoration-primary/30">mirror scene</a> regularly receive hundreds of upvotes, and Tumblr theory posts about their connection to <a href="/characters/doctor" className="text-primary hover:underline decoration-primary/30">the Doctor</a> circulate weekly. The character&apos;s silence, imposing height, and the symbolic <a href="#pink-ticket" className="text-primary hover:underline decoration-primary/30">pink ticket</a> have made them a focal point for lore enthusiasts who believe they hold the key to understanding the circus&apos;s true nature.
-              </p>
-              <p>
-                <strong>Why is Ticket Taker important to the story?</strong> Without the Ticket Taker, the player cannot progress past <strong>Day 2</strong>. They are the literal gatekeeper—both narratively and mechanically. Failing to provide the <a href="#pink-ticket" className="text-primary hover:underline decoration-primary/30">pink ticket</a> at the circus entrance triggers <a href="/endings" className="text-primary hover:underline decoration-primary/30">Bad Ending A</a>, one of the earliest deaths in the game. Their presence in the <a href="#mirror-scene" className="text-primary hover:underline decoration-primary/30">mirror scene</a> on Day 2 is widely considered one of the most unsettling moments in the entire visual novel, with the reflection revealing the player wearing the Ticket Taker&apos;s porcelain mask.
-              </p>
+            <div className="space-y-6">
+              <div className="overflow-hidden border border-white/5 max-w-[224px] mx-auto md:mx-0">
+                <img
+                  src="/ticket-taker-sprite.png"
+                  alt="Official Ticket Taker character sprite from The Freak Circus visual novel showing the porcelain mask and mahogany robes"
+                  className="w-full h-auto object-cover"
+                  loading="lazy"
+                />
+                <p className="font-mono text-[9px] text-on-surface/30 uppercase tracking-widest p-3 bg-surface-container-low border-t border-white/5">
+                  Official Character Sprite — The Freak Circus v0.2
+                </p>
+              </div>
+              <div className="glass-card p-8 border-t-2 border-t-secondary bg-surface-container-low">
+                <h3 className="font-mono text-[12px] text-secondary mb-6 uppercase tracking-widest font-bold">
+                  CRITICAL WARNING
+                </h3>
+                <p className="italic text-on-surface/70 mb-8 border-l-2 border-secondary/20 pl-4 py-2">
+                  &ldquo;Do not accept the Pink Ticket unless you are prepared to see
+                  what&apos;s behind the glass.&rdquo;
+                </p>
+                <div className="w-full bg-[#353534] h-1 mb-3">
+                  <div className="bg-secondary h-full w-[85%]" />
+                </div>
+                <p className="font-mono text-[9px] opacity-40 uppercase tracking-widest">
+                  LORE DISCOVERY PROGRESS: 85%
+                </p>
+              </div>
             </div>
-          </div>
-          <div className="glass-card p-8 border-t-2 border-t-secondary bg-surface-container-low">
-            <h3 className="font-mono text-[12px] text-secondary mb-6 uppercase tracking-widest font-bold">
-              CRITICAL WARNING
-            </h3>
-            <p className="italic text-on-surface/70 mb-8 border-l-2 border-secondary/20 pl-4 py-2">
-              &ldquo;Do not accept the Pink Ticket unless you are prepared to see
-              what&apos;s behind the glass.&rdquo;
-            </p>
-            <div className="w-full bg-[#353534] h-1 mb-3">
-              <div className="bg-secondary h-full w-[85%]" />
-            </div>
-            <p className="font-mono text-[9px] opacity-40 uppercase tracking-widest">
-              LORE DISCOVERY PROGRESS: 85%
-            </p>
           </div>
         </section>
 

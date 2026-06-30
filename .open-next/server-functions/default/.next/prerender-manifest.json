@@ -242,6 +242,102 @@
         "x-next-revalidate-tag-token"
       ]
     },
+    "/day-1": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/day-1",
+      "dataRoute": "/day-1.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/day-2": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/day-2",
+      "dataRoute": "/day-2.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/day-3": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/day-3",
+      "dataRoute": "/day-3.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/day-3-release-date": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/day-3-release-date",
+      "dataRoute": "/day-3-release-date.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
     "/endings": {
       "experimentalBypassFor": [
         {
@@ -785,6 +881,30 @@
         "x-next-revalidate-tag-token"
       ]
     },
+    "/ticket-taker": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/ticket-taker",
+      "dataRoute": "/ticket-taker.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
     "/walkthroughs": {
       "experimentalBypassFor": [
         {
@@ -986,8 +1106,8 @@
   },
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "78a00f11626265e6c36caf76e17bcda7",
-    "previewModeSigningKey": "d17ea867a0039591070905e118c5f2856ce6909e7de31e2f143a24667e95a700",
-    "previewModeEncryptionKey": "58f7e2a759d137c43a45230d6a47fdeb43f8e900b795695e5dc2086ff8a148b7"
+    "previewModeId": "87b582b87506211d6291a750dba7782b",
+    "previewModeSigningKey": "d43d5e68b260d469d6aa71d53a3b1cb0329c90f44325d32dc44751685614d0e9",
+    "previewModeEncryptionKey": "93ef30dc7db6aec792b28a744ba4dc809b3469b34fef26087008acd9d66f1cd2"
   }
 }

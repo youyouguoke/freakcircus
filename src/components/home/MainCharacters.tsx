@@ -31,6 +31,13 @@ const characters = [
     desc: "Columbina appears gentle and refined at first glance, but her route contains the most disturbing revelations about the circus's true nature. The three-loop storyline requires perfect alignment of all dialogue choices — any deviation causes a complete reset. Her hallway gains a fourth door after three loops, and memory fragments reference events from other routes that the player never selected. Many players believe she is the only character who truly understands the circus, and that her endings suggest the entire narrative is a purgatorial loop.",
     href: "/characters/columbina",
   },
+  {
+    name: "Ticket Taker",
+    role: "The Gatekeeper",
+    image: "/tickettaker.jpg",
+    desc: "The Ticket Taker stands as the enigmatic sentinel at the threshold of the Freak Circus. Draped in tattered mahogany robes and concealing their features behind a static porcelain mask, they exist between the realm of the living and the spectacle. The mirror scene — where the player sees themselves wearing the mask — has spawned the dominant Time-Loop Theory. No playable route exists yet, but datamined files suggest one was planned.",
+    href: "/ticket-taker",
+  },
 ];
 
 export default function MainCharacters() {
@@ -41,7 +48,7 @@ export default function MainCharacters() {
           Meet The Cast
         </h2>
         <p className="text-on-surface-variant text-sm mb-8">
-          The four main characters of The Freak Circus, each with their own route, hidden triggers, and disturbing revelations
+          The five central figures of The Freak Circus, each with their own route, hidden triggers, and disturbing revelations
         </p>
 
         <div className="grid md:grid-cols-2 gap-6">

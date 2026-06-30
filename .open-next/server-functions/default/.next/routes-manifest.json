@@ -93,6 +93,30 @@
       "namedRegex": "^/characters/pierrot\\-route\\-guide(?:/)?$"
     },
     {
+      "page": "/day-1",
+      "regex": "^/day\\-1(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/day\\-1(?:/)?$"
+    },
+    {
+      "page": "/day-2",
+      "regex": "^/day\\-2(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/day\\-2(?:/)?$"
+    },
+    {
+      "page": "/day-3",
+      "regex": "^/day\\-3(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/day\\-3(?:/)?$"
+    },
+    {
+      "page": "/day-3-release-date",
+      "regex": "^/day\\-3\\-release\\-date(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/day\\-3\\-release\\-date(?:/)?$"
+    },
+    {
       "page": "/endings",
       "regex": "^/endings(?:/)?$",
       "routeKeys": {},
@@ -223,6 +247,12 @@
       "regex": "^/theories/pierrot\\-remembers\\-routes(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/theories/pierrot\\-remembers\\-routes(?:/)?$"
+    },
+    {
+      "page": "/ticket-taker",
+      "regex": "^/ticket\\-taker(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/ticket\\-taker(?:/)?$"
     },
     {
       "page": "/walkthroughs",
