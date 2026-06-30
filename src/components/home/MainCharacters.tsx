@@ -32,6 +32,13 @@ const characters = [
     href: "/characters/columbina",
   },
   {
+    name: "Jester",
+    role: "The Trickster",
+    image: "/Jester2.png",
+    desc: "Jester operates at the edges of the narrative — watching, commenting, and occasionally redirecting events in ways that suggest he understands more than he should. He appears during Day 2 and in select mirror sequences, often delivering lines that feel directed at the player rather than the protagonist. His limited screen time makes every appearance feel significant, and his dialogue is dense with double meanings that fuel community theory-crafting.",
+    href: "/characters/jester",
+  },
+  {
     name: "Ticket Taker",
     role: "The Gatekeeper",
     image: "/tickettaker.jpg",
@@ -48,10 +55,10 @@ export default function MainCharacters() {
           Meet The Cast
         </h2>
         <p className="text-on-surface-variant text-sm mb-8">
-          The five central figures of The Freak Circus, each with their own route, hidden triggers, and disturbing revelations
+          The six central figures of The Freak Circus, each with their own route, hidden triggers, and disturbing revelations
         </p>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {characters.map((char) => (
             <div key={char.name} className="bg-surface-container border border-outline/20 p-6 hover:border-primary transition-colors flex flex-col">
               <div className="flex items-start gap-4 mb-3">

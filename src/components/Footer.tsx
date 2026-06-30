@@ -28,7 +28,7 @@ export default function Footer() {
         </div>
 
         {/* Links */}
-        <div className="flex gap-4">
+        <div className="flex flex-wrap justify-center gap-4">
           <Link
             href="/privacy-policy"
             className="font-[JetBrains_Mono] text-xs uppercase text-on-surface-variant opacity-60 hover:text-primary transition-colors"

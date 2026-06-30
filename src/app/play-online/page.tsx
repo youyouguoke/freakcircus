@@ -31,20 +31,37 @@ export default function PlayOnline() {
 
       <section className="bg-surface min-h-[60vh] flex flex-col justify-center py-16 px-4 md:px-16 relative overflow-hidden">
         <div className="max-w-4xl mx-auto w-full relative z-10">
+          <div className="font-[JetBrains_Mono] text-xs text-primary mb-4 uppercase tracking-widest">
+            v0.2 Prototype | Last updated: 2026-02-22
+          </div>
           <h1 className="font-[Creepster] text-5xl md:text-7xl text-primary mb-6 leading-none">
             Play The Freak Circus Online
           </h1>
           <p className="text-on-surface-variant text-lg max-w-2xl mb-8">
             Experience the official demo directly in your browser. No download required. Rated 18+ for psychological horror and unsettling narrative content.
           </p>
-          <a
-            href="https://garula.itch.io/the-freak-circus"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block px-8 py-4 bg-primary text-surface font-[JetBrains_Mono] text-sm uppercase hover:bg-primary/90 transition-colors"
-          >
-            Play Official Demo →
-          </a>
+          <div className="flex flex-wrap gap-4">
+            <a
+              href="https://garula.itch.io/the-freak-circus"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-8 py-4 bg-primary text-surface font-[JetBrains_Mono] text-sm uppercase hover:bg-primary/90 transition-colors"
+            >
+              Play Official Demo →
+            </a>
+            <Link
+              href="/download"
+              className="inline-block px-8 py-4 border border-primary text-primary font-[JetBrains_Mono] text-sm uppercase hover:bg-primary hover:text-surface transition-colors"
+            >
+              Download Game
+            </Link>
+            <Link
+              href="/android-installation"
+              className="inline-block px-8 py-4 border border-primary text-primary font-[JetBrains_Mono] text-sm uppercase hover:bg-primary hover:text-surface transition-colors"
+            >
+              Android Installation
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -191,6 +208,57 @@ export default function PlayOnline() {
               <li>• 3 hidden dialogue triggers</li>
               <li>• 1 secret ending (Eternal Silence preview)</li>
             </ul>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-surface py-16 px-4 md:px-16 border-t border-outline/10">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="font-[Epilogue] text-2xl md:text-3xl font-bold text-primary mb-6">
+            Play or Download
+          </h2>
+          <p className="text-on-surface-variant text-sm mb-8">
+            Choose how you want to experience the demo. The browser version runs instantly, while the downloadable version supports offline play on PC, Mac, Linux, and Android.
+          </p>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="bg-surface-container border border-outline/20 p-6 hover:border-primary transition-colors">
+              <h3 className="font-[Epilogue] text-lg font-bold text-foreground mb-2">
+                Play in Browser
+              </h3>
+              <p className="text-on-surface-variant text-sm mb-4">
+                No download required. Your progress saves automatically in the browser.
+              </p>
+              <a
+                href="https://garula.itch.io/the-freak-circus"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary font-[JetBrains_Mono] text-xs uppercase hover:underline"
+              >
+                Play Online →
+              </a>
+            </div>
+            <div className="bg-surface-container border border-outline/20 p-6 hover:border-primary transition-colors">
+              <h3 className="font-[Epilogue] text-lg font-bold text-foreground mb-2">
+                Download
+              </h3>
+              <p className="text-on-surface-variant text-sm mb-4">
+                Get the demo for Windows, macOS, or Linux from the official itch.io page.
+              </p>
+              <Link href="/download" className="text-primary font-[JetBrains_Mono] text-xs uppercase hover:underline">
+                Download Guide →
+              </Link>
+            </div>
+            <div className="bg-surface-container border border-outline/20 p-6 hover:border-primary transition-colors">
+              <h3 className="font-[Epilogue] text-lg font-bold text-foreground mb-2">
+                Android
+              </h3>
+              <p className="text-on-surface-variant text-sm mb-4">
+                Install the APK on Android. Includes step-by-step setup and known issues.
+              </p>
+              <Link href="/android-installation" className="text-primary font-[JetBrains_Mono] text-xs uppercase hover:underline">
+                Install on Android →
+              </Link>
+            </div>
           </div>
         </div>
       </section>

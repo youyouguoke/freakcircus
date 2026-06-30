@@ -88,6 +88,27 @@ const characters = [
     href: "/characters/columbina",
   },
   {
+    title: "The Trickster",
+    name: "Jester",
+    role: "Unknown / Meta Observer",
+    image: "/Jester2.png",
+    alt: "Jester Freak Circus Character — Trickster Lore Theories Relationships",
+    personality: "Playful, manipulative, meta-aware, unpredictable",
+    routeTheme: "Loop awareness, fourth wall, future route prediction",
+    popularity: "Fastest-growing theory subject in community",
+    mystery: "Speaks to the player and remembers choices from previous playthroughs",
+    background: "Jester appears on Day 2 and in mirror sequences, operating at the edges of the narrative. He seems aware of the game's looping structure and often addresses the player rather than the protagonist. His limited screen time has made every appearance a focus of frame-by-frame analysis and theory-crafting.",
+    endings: [
+      { name: "Unknown Route", type: "Predicted", desc: "Placeholder files for 'jester_route_day3' found in recent builds." },
+      { name: "Mirror Ending", type: "Community Theory", desc: "Reflection may unlock an independent ending in a future update." },
+      { name: "Narrator Ending", type: "Speculation", desc: "Jester may represent the story itself, with no traditional ending." },
+    ],
+    route: "No playable route exists yet. Datamined placeholder files and developer comments suggest Jester may receive a major expansion or secret route in a future update focused on meta-narrative choices.",
+    relationship: "Jester interacts with Pierrot, Harlequin, the Doctor, the Ticket Taker, and Columbina in ways that destabilize them. His most direct relationship is with the player, whom he addresses through the fourth wall.",
+    theory: "The Loop Awareness Theory proposes that Jester remembers events across timelines and may represent the narrative force of the circus itself. He references unselected choices and treats death as an inconvenience.",
+    href: "/characters/jester",
+  },
+  {
     title: "The Gatekeeper",
     name: "Ticket Taker",
     role: "Circus Entrance / Lore Guide",
@@ -118,7 +139,7 @@ export default function CharacterCards() {
           Freak Circus Characters
         </h2>
         <p className="text-on-surface-variant text-sm mb-8">
-          The five central figures of The Freak Circus — Pierrot the melancholic clown, Harlequin the chaotic performer, The Doctor the circus physician, Columbina the ballerina, and the enigmatic Ticket Taker who guards the threshold. Each character has their own route, hidden triggers, disturbing revelations, and multiple endings.
+          The five central figures of The Freak Circus — Pierrot the melancholic clown, Harlequin the chaotic performer, Jester the trickster, The Doctor the circus physician, Columbina the ballerina, and the enigmatic Ticket Taker who guards the threshold. Each character has their own route, hidden triggers, disturbing revelations, and multiple endings.
         </p>
         <div className="grid md:grid-cols-2 gap-8">
           {characters.map((char) => (

@@ -23,16 +23,51 @@ export default function DoctorPage() {
     <main className="min-h-screen">
       <Navigation />
       <article className="bg-surface pt-8 pb-16 px-4 md:px-16">
-        <div className="max-w-4xl mx-auto">
-          <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant mb-4">
-            CHARACTER_PROFILE // DOCTOR
+        <div className="max-w-5xl mx-auto">
+          <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant mb-4 uppercase tracking-widest">
+            Character Profile // The Doctor
           </div>
-          <h1 className="font-[Creepster] text-4xl md:text-6xl text-primary mb-4">
-            The Doctor
-          </h1>
-          <p className="text-on-surface-variant text-lg mb-8">
-            The circus physician — clinical detachment, hidden medical files, and knowledge that arrives before its time.
-          </p>
+
+          {/* Hero Section */}
+          <section className="relative mb-16">
+            <div className="relative w-full aspect-[21/9] overflow-hidden border border-white/5 group">
+              <img
+                alt="The Doctor in the medical tent surrounded by files"
+                className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+                src="/Doctor.jpg"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#131314] via-transparent to-transparent" />
+              <div className="absolute bottom-0 left-0 p-8 w-full">
+                <div className="flex flex-wrap gap-3 mb-4">
+                  <span className="px-2 py-0.5 border border-primary/30 text-primary font-mono text-[10px] uppercase tracking-widest">Memory Route</span>
+                  <span className="px-2 py-0.5 border border-white/10 text-on-surface/50 font-mono text-[10px] uppercase tracking-widest">Romanceable</span>
+                  <span className="px-2 py-0.5 border border-secondary/30 text-secondary font-mono text-[10px] uppercase tracking-widest">Precognition ★★★★☆</span>
+                </div>
+                <h1 className="font-[Creepster] text-4xl md:text-6xl text-on-surface mb-2 uppercase tracking-tight">The Doctor</h1>
+                <p className="font-[Epilogue] italic opacity-60">The circus physician — clinical detachment, hidden medical files, and knowledge that arrives before its time.</p>
+              </div>
+            </div>
+
+            {/* Quick Info Card */}
+            <div className="mt-8 bg-surface-container border border-outline/20 p-8 grid grid-cols-2 md:grid-cols-4 gap-8 border-l-4 border-l-primary">
+              <div>
+                <h4 className="font-[JetBrains_Mono] text-[10px] text-primary mb-1 uppercase tracking-widest">Role</h4>
+                <p className="font-[Epilogue]">Circus Physician</p>
+              </div>
+              <div>
+                <h4 className="font-[JetBrains_Mono] text-[10px] text-primary mb-1 uppercase tracking-widest">First Encounter</h4>
+                <p className="font-[Epilogue]">Medical Tent (Day 1)</p>
+              </div>
+              <div>
+                <h4 className="font-[JetBrains_Mono] text-[10px] text-primary mb-1 uppercase tracking-widest">Key Mechanic</h4>
+                <p className="font-[Epilogue]">Hidden Medical Files</p>
+              </div>
+              <div>
+                <h4 className="font-[JetBrains_Mono] text-[10px] text-primary mb-1 uppercase tracking-widest">Secret Ending</h4>
+                <p className="font-[Epilogue] text-primary font-bold">White Room</p>
+              </div>
+            </div>
+          </section>
 
           <div className="space-y-12">
             <section>

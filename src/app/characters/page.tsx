@@ -16,13 +16,14 @@ import ArchiveIndex from "@/components/home/ArchiveIndex";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Freak Circus Characters — Pierrot, Harlequin, Doctor & Columbina Guide",
-  description: "Meet every Freak Circus character: Pierrot the melancholic clown, Harlequin the chaotic performer, The Doctor the circus physician, and Columbina the ballerina. Full route guides, all endings, relationships, walkthroughs, and community theories for each performer.",
+  title: "Freak Circus Characters — Pierrot, Harlequin, Jester, Doctor & Columbina Guide",
+  description: "Meet every Freak Circus character: Pierrot the melancholic clown, Harlequin the chaotic performer, Jester the trickster, The Doctor the circus physician, and Columbina the ballerina. Full route guides, all endings, relationships, walkthroughs, and community theories for each performer.",
   keywords: [
     "freak circus characters",
     "Freak Circus character guide",
     "Pierrot Freak Circus",
     "Harlequin Freak Circus",
+    "Jester Freak Circus",
     "Doctor Freak Circus",
     "Columbina Freak Circus",
     "freak circus character endings",
@@ -31,6 +32,7 @@ export const metadata: Metadata = {
     "freak circus character relationships",
     "Pierrot ending",
     "Harlequin route",
+    "Jester theory",
     "Doctor good ending",
     "Columbina relationship",
     "Freak Circus all endings",
@@ -43,7 +45,7 @@ export const metadata: Metadata = {
     "character walkthroughs",
   ],
   openGraph: {
-    title: "Freak Circus Characters — Pierrot, Harlequin, Doctor & Columbina Guide",
+    title: "Freak Circus Characters — Pierrot, Harlequin, Jester, Doctor & Columbina Guide",
     description: "Meet every Freak Circus character. Full route guides, all endings, relationships, walkthroughs, and community theories for each performer.",
     type: "website",
     url: "https://freak-circus.com/characters",
@@ -52,12 +54,12 @@ export const metadata: Metadata = {
       url: "/og-image.png",
       width: 1200,
       height: 630,
-      alt: "Freak Circus Characters — Pierrot, Harlequin, Doctor and Columbina character guide",
+      alt: "Freak Circus Characters — Pierrot, Harlequin, Jester, Doctor and Columbina character guide",
     }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Freak Circus Characters — Pierrot, Harlequin, Doctor & Columbina Guide",
+    title: "Freak Circus Characters — Pierrot, Harlequin, Jester, Doctor & Columbina Guide",
     description: "Meet every Freak Circus character. Full route guides, all endings, relationships, walkthroughs, and community theories.",
     images: ["/og-image.png"],
   },

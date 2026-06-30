@@ -15,7 +15,7 @@ export default function CharactersHero() {
           The Complete Character Archive of The Freak Circus
         </h2>
         <p className="text-on-surface-variant text-lg max-w-2xl">
-          Explore every Freak Circus character — Pierrot the melancholic clown, Harlequin the chaotic performer, The Doctor the circus physician, and Columbina the ballerina. Full route guides, all endings, relationships, walkthroughs, and community theories for each performer.
+          Explore every Freak Circus character — Pierrot the melancholic clown, Harlequin the chaotic performer, Jester the trickster, The Doctor the circus physician, and Columbina the ballerina. Full route guides, all endings, relationships, walkthroughs, and community theories for each performer.
         </p>
       </div>
     </section>
