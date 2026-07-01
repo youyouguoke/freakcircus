@@ -34,7 +34,7 @@ export default function ColumbinaPage() {
               <img
                 alt="Columbina dancing in the hallway of doors"
                 className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
-                src="/Columbina.jpg"
+                src="/Columbina-hero.png"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#131314] via-transparent to-transparent" />
               <div className="absolute bottom-0 left-0 p-8 w-full">

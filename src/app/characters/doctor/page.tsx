@@ -34,7 +34,7 @@ export default function DoctorPage() {
               <img
                 alt="The Doctor in the medical tent surrounded by files"
                 className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
-                src="/Doctor.jpg"
+                src="/Doctor-hero.png"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#131314] via-transparent to-transparent" />
               <div className="absolute bottom-0 left-0 p-8 w-full">
