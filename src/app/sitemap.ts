@@ -28,6 +28,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/walkthroughs/doctor-memory-route", priority: 0.8, changeFrequency: "weekly" as const },
     { path: "/walkthroughs/columbina-fractured-route", priority: 0.8, changeFrequency: "weekly" as const },
     { path: "/walkthroughs/null-route", priority: 0.8, changeFrequency: "weekly" as const },
+    { path: "/walkthroughs/all-endings-guide", priority: 0.8, changeFrequency: "weekly" as const },
+    { path: "/walkthroughs/save-guide", priority: 0.7, changeFrequency: "monthly" as const },
+    { path: "/ticket-taker", priority: 0.8, changeFrequency: "weekly" as const },
     { path: "/theories", priority: 0.9, changeFrequency: "weekly" as const },
     { path: "/theories/pierrot-remembers-routes", priority: 0.8, changeFrequency: "weekly" as const },
     { path: "/lore", priority: 0.9, changeFrequency: "weekly" as const },
@@ -41,6 +44,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/download", priority: 0.9, changeFrequency: "weekly" as const },
     { path: "/android-installation", priority: 0.9, changeFrequency: "weekly" as const },
     { path: "/faq", priority: 0.7, changeFrequency: "monthly" as const },
+    { path: "/contribute", priority: 0.7, changeFrequency: "monthly" as const },
+    { path: "/resources", priority: 0.7, changeFrequency: "monthly" as const },
     { path: "/privacy-policy", priority: 0.3, changeFrequency: "yearly" as const },
     { path: "/terms-of-service", priority: 0.3, changeFrequency: "yearly" as const },
   ];

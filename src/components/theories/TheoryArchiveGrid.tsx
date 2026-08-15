@@ -218,7 +218,7 @@ export default function TheoryArchiveGrid() {
           All Freak Circus Theories
         </h2>
         <p className="text-on-surface-variant text-sm mb-8">
-          12 major community theories with confidence scores, evidence ratings, and community support
+          13 major community theories with confidence scores, evidence ratings, and community support
         </p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

@@ -9,6 +9,7 @@ const discoveries = [
     title: "Build 1.04 Unused Ending Investigation",
     desc: "Data miners discovered references to a 13th ending in the latest build. Corrupted hex patterns suggest a route that was cut before release but remains partially accessible through file manipulation.",
     href: "/endings",
+    source: { label: "Reddit r/horrorgaming", url: "https://www.reddit.com/r/horrorgaming/" },
   },
   {
     date: "June 2026",
@@ -16,6 +17,7 @@ const discoveries = [
     title: "Doctor Route Hidden Dialogue Analysis",
     desc: "New community testing confirmed Scene 7 precognitive dialogue triggers across all save slots, not just slot 1. The White Room reference appears even on first playthrough under specific conditions.",
     href: "/characters/doctor",
+    source: { label: "Community Testing Doc", url: "#" },
   },
   {
     date: "June 2026",
@@ -23,6 +25,7 @@ const discoveries = [
     title: "New Columbina Loop Theory",
     desc: "u/loop_architect proposes that Columbina's three-loop structure mirrors the game's overall narrative architecture — suggesting the entire circus is a single loop containing smaller loops within each character route.",
     href: "/theories",
+    source: { label: "Reddit Post", url: "https://www.reddit.com/r/visualnovels/" },
   },
   {
     date: "May 2026",
@@ -30,6 +33,7 @@ const discoveries = [
     title: "Hidden Counter at Save Offset 0x4A20 Confirmed",
     desc: "Cross-platform testing by 12 community members confirmed the hidden counter affects dialogue options across all builds. Counter value 4 triggers Pierrot's replay-aware dialogue regardless of current route choices.",
     href: "/theories/pierrot-remembers-routes",
+    source: { label: "Community Verification Thread", url: "#" },
   },
 ];
 
@@ -60,15 +64,27 @@ export default function LatestDiscoveries() {
               <h3 className="font-[Epilogue] text-lg font-bold text-foreground mb-2">
                 {d.title}
               </h3>
-              <p className="text-on-surface-variant text-sm mb-4 leading-relaxed">
+              <p className="text-on-surface-variant text-sm mb-3 leading-relaxed">
                 {d.desc}
               </p>
-              <Link
-                href={d.href}
-                className="text-primary font-[JetBrains_Mono] text-xs uppercase hover:underline"
-              >
-                Read More →
-              </Link>
+              <div className="flex items-center gap-4">
+                <Link
+                  href={d.href}
+                  className="text-primary font-[JetBrains_Mono] text-xs uppercase hover:underline"
+                >
+                  Read More →
+                </Link>
+                {d.source && (
+                  <a
+                    href={d.source.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-on-surface-variant font-[JetBrains_Mono] text-xs opacity-60 hover:text-primary hover:opacity-100 transition-colors"
+                  >
+                    Source: {d.source.label} ↗
+                  </a>
+                )}
+              </div>
             </div>
           ))}
         </div>

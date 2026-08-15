@@ -1,5 +1,7 @@
 "use client";
 
+import { SINGLE_ROUTE_HOURS } from "@/lib/site-facts";
+
 const faqs = [
   {
     q: "What is the recommended route order for Freak Circus?",
@@ -7,7 +9,7 @@ const faqs = [
   },
   {
     q: "How long is a Freak Circus playthrough?",
-    a: "A single playthrough takes 2-3 hours for a main route. Secret routes take 4-6 hours due to replay requirements. Columbina's Fractured Route takes 6-8 hours due to the 3-loop perfection requirement. Speed-run minimums: Grand Finale (45 min), Smile For Me (50 min), Doctor's Note (2 hours), Eternal Silence (1.5 hours), Columbina's Truth (6+ hours).",
+    a: "A single playthrough takes ${SINGLE_ROUTE_HOURS} for a main route. Secret routes take 4-6 hours due to replay requirements. Columbina's Fractured Route takes 6-8 hours due to the 3-loop perfection requirement. Speed-run minimums: Grand Finale (45 min), Smile For Me (50 min), Doctor's Note (2 hours), Eternal Silence (1.5 hours), Columbina's Truth (6+ hours).",
   },
   {
     q: "Which route should I play first?",
@@ -35,7 +37,7 @@ const faqs = [
   },
   {
     q: "What is the easiest route in Freak Circus?",
-    a: "Pierrot Main Route and Harlequin Main Route are the easiest. Both require no special conditions — simply complete the route with standard dialogue choices. Pierrot's route is slightly more straightforward (2-3 hours), while Harlequin's introduces comedic/aggressive branching but still leads to a standard ending without prerequisites.",
+    a: "Pierrot Main Route and Harlequin Main Route are the easiest. Both require no special conditions — simply complete the route with standard dialogue choices. Pierrot's route is slightly more straightforward (${SINGLE_ROUTE_HOURS}), while Harlequin's introduces comedic/aggressive branching but still leads to a standard ending without prerequisites.",
   },
   {
     q: "What is the hardest route in Freak Circus?",

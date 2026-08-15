@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import ContinueExploring from "@/components/ContinueExploring";
 
 export const metadata: Metadata = {
   title: "Download The Freak Circus — PC, Mac, Linux | Freak Circus Hub",
@@ -163,27 +164,75 @@ export default function DownloadPage() {
       <section className="bg-surface py-16 px-4 md:px-16 border-t border-outline/10">
         <div className="max-w-4xl mx-auto">
           <h2 className="font-[Epilogue] text-2xl md:text-3xl font-bold text-primary mb-6">
-            Related Pages
+            Before You Play
           </h2>
           <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-surface-container border border-outline/20 p-6 hover:border-primary transition-colors">
-              <h3 className="font-[Epilogue] text-lg font-bold text-foreground mb-2">Play Online</h3>
-              <p className="text-on-surface-variant text-sm mb-4">Run the demo directly in your browser without downloading.</p>
-              <Link href="/play-online" className="text-primary font-[JetBrains_Mono] text-xs uppercase hover:underline">Play Online →</Link>
+            <div className="bg-surface-container border border-outline/20 p-6 border-l-4 border-l-primary">
+              <h3 className="font-[Epilogue] text-lg font-bold text-foreground mb-2">Recommended First Route</h3>
+              <p className="text-on-surface-variant text-sm mb-4">Start with Pierrot's route — it introduces core mechanics and has the most community documentation.</p>
+              <Link href="/characters/pierrot" className="text-primary font-[JetBrains_Mono] text-xs uppercase hover:underline">Pierrot Guide →</Link>
             </div>
-            <div className="bg-surface-container border border-outline/20 p-6 hover:border-primary transition-colors">
-              <h3 className="font-[Epilogue] text-lg font-bold text-foreground mb-2">Android Install</h3>
-              <p className="text-on-surface-variant text-sm mb-4">Install the APK on Android with step-by-step instructions.</p>
-              <Link href="/android-installation" className="text-primary font-[JetBrains_Mono] text-xs uppercase hover:underline">Install on Android →</Link>
+            <div className="bg-surface-container border border-outline/20 p-6 border-l-4 border-l-secondary">
+              <h3 className="font-[Epilogue] text-lg font-bold text-foreground mb-2">Save Tips</h3>
+              <p className="text-on-surface-variant text-sm mb-4">Save before every major choice. Some dialogue options only appear once and affect multiple endings.</p>
+              <Link href="/walkthroughs" className="text-primary font-[JetBrains_Mono] text-xs uppercase hover:underline">Walkthrough Guide →</Link>
             </div>
-            <div className="bg-surface-container border border-outline/20 p-6 hover:border-primary transition-colors">
-              <h3 className="font-[Epilogue] text-lg font-bold text-foreground mb-2">FAQ</h3>
-              <p className="text-on-surface-variant text-sm mb-4">General questions about the archive, spoilers, and updates.</p>
-              <Link href="/faq" className="text-primary font-[JetBrains_Mono] text-xs uppercase hover:underline">View FAQ →</Link>
+            <div className="bg-surface-container border border-outline/20 p-6 border-l-4 border-l-primary">
+              <h3 className="font-[Epilogue] text-lg font-bold text-foreground mb-2">Content Warning</h3>
+              <p className="text-on-surface-variant text-sm">The Freak Circus contains psychological horror themes, disturbing imagery, and mature content. Rated 18+. The game uses silence, repetition, and meta-narrative to create unease.</p>
             </div>
           </div>
         </div>
       </section>
+
+      <section className="bg-surface py-16 px-4 md:px-16 border-t border-outline/10">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="font-[Epilogue] text-2xl md:text-3xl font-bold text-primary mb-4">
+            Explore The Archive
+          </h2>
+          <p className="text-on-surface-variant text-sm mb-8">
+            Finished downloading? Dive deeper into the circus — every route, every ending, every secret.
+          </p>
+          <div className="grid md:grid-cols-3 gap-6 mb-8">
+            <div className="bg-surface-container border border-outline/20 p-6 hover:border-primary transition-colors">
+              <div className="text-2xl mb-3">🎭</div>
+              <h3 className="font-[Epilogue] text-lg font-bold text-foreground mb-2">Character Guides</h3>
+              <p className="text-on-surface-variant text-sm mb-4">Route walkthroughs, personality analysis, hidden triggers, and endings for every character.</p>
+              <div className="flex flex-wrap gap-2">
+                <Link href="/characters/pierrot" className="text-primary font-[JetBrains_Mono] text-xs uppercase hover:underline">Pierrot</Link>
+                <span className="text-on-surface-variant text-xs">·</span>
+                <Link href="/characters/harlequin" className="text-primary font-[JetBrains_Mono] text-xs uppercase hover:underline">Harlequin</Link>
+                <span className="text-on-surface-variant text-xs">·</span>
+                <Link href="/characters/doctor" className="text-primary font-[JetBrains_Mono] text-xs uppercase hover:underline">Doctor</Link>
+              </div>
+            </div>
+            <div className="bg-surface-container border border-outline/20 p-6 hover:border-primary transition-colors">
+              <div className="text-2xl mb-3">🎪</div>
+              <h3 className="font-[Epilogue] text-lg font-bold text-foreground mb-2">Complete The Story</h3>
+              <p className="text-on-surface-variant text-sm mb-4">All endings, secret routes, and hidden content explained with unlock conditions.</p>
+              <div className="flex flex-wrap gap-2">
+                <Link href="/endings" className="text-primary font-[JetBrains_Mono] text-xs uppercase hover:underline">All Endings</Link>
+                <span className="text-on-surface-variant text-xs">·</span>
+                <Link href="/walkthroughs" className="text-primary font-[JetBrains_Mono] text-xs uppercase hover:underline">Walkthroughs</Link>
+                <span className="text-on-surface-variant text-xs">·</span>
+                <Link href="/lore" className="text-primary font-[JetBrains_Mono] text-xs uppercase hover:underline">Lore</Link>
+                <span className="text-on-surface-variant text-xs">·</span>
+                <Link href="/walkthroughs/all-endings-guide" className="text-primary font-[JetBrains_Mono] text-xs uppercase hover:underline">Ending Guide</Link>
+                <span className="text-on-surface-variant text-xs">·</span>
+                <Link href="/walkthroughs/save-guide" className="text-primary font-[JetBrains_Mono] text-xs uppercase hover:underline">Save Guide</Link>
+              </div>
+            </div>
+            <div className="bg-surface-container border border-outline/20 p-6 hover:border-primary transition-colors">
+              <div className="text-2xl mb-3">🧩</div>
+              <h3 className="font-[Epilogue] text-lg font-bold text-foreground mb-2">Community Theories</h3>
+              <p className="text-on-surface-variant text-sm mb-4">Fan investigations, conspiracy boards, and the deepest lore analysis from the community.</p>
+              <Link href="/theories" className="text-primary font-[JetBrains_Mono] text-xs uppercase hover:underline">Explore Theories →</Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <ContinueExploring />
 
       <section className="bg-surface py-16 px-4 md:px-16 border-t border-outline/10">
         <div className="max-w-4xl mx-auto text-center">

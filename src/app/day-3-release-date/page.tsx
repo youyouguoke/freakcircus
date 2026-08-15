@@ -5,345 +5,330 @@ import JsonLd from "@/components/JsonLd";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Freak Circus Day 3 Release Date (2026) | Latest News, Expected Launch & Developer Updates",
+  title: "Freak Circus Day 3 Release Date (2026) | Official Status & Development Timeline",
   description:
-    "Freak Circus Day 3 release date: everything we know so far. Current development status, expected release window, developer updates, confirmed features, and community expectations for v0.3.",
+    "Is Freak Circus Day 3 out yet? No — Day 3 is not confirmed as playable. Check the official roadmap status, development timeline, verified community signals, and what to do while waiting.",
   keywords: [
     "Freak Circus Day 3 release date",
     "Freak Circus v0.3",
     "Day 3 release",
     "Freak Circus update",
-    "Day 3 coming soon",
-    "Freak Circus development",
     "Day 3 confirmed",
+    "Freak Circus development",
+    "Day 3 status",
+    "Freak Circus roadmap",
   ],
   openGraph: {
-    title: "Freak Circus Day 3 Release Date (2026) | Latest News, Expected Launch & Developer Updates",
+    title: "Freak Circus Day 3 Release Date (2026) | Official Status & Development Timeline",
     description:
-      "Freak Circus Day 3 release date: current status, expected window, developer updates, and confirmed features for v0.3.",
+      "Is Freak Circus Day 3 out yet? No — Day 3 is not confirmed as playable. Official roadmap status, development timeline, and verified signals.",
     type: "article",
     url: "https://freak-circus.com/day-3-release-date",
     siteName: "Freak Circus Hub",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Freak Circus Day 3 Release Date (2026) | Latest News, Expected Launch & Developer Updates",
+    title: "Freak Circus Day 3 Release Date (2026) | Official Status & Development Timeline",
     description:
-      "Freak Circus Day 3 release date: current status, expected window, and confirmed features.",
+      "Is Freak Circus Day 3 out yet? No — Day 3 is not confirmed as playable. Official status and timeline.",
   },
   alternates: {
     canonical: "https://freak-circus.com/day-3-release-date",
   },
 };
 
+const faqData = [
+  {
+    q: "When is the Freak Circus Day 3 release date?",
+    a: "No official release date has been announced. The developer has not provided a specific date, beta access window, or playable build for Day 3.",
+  },
+  {
+    q: "Is Day 3 confirmed?",
+    a: "Day 3 is in active development — confirmed by the developer's public roadmap and weekly blog updates. However, \"in development\" is not the same as \"released\" or \"date announced.\"",
+  },
+  {
+    q: "What is the latest development update?",
+    a: "As of August 2026, the developer's roadmap marks script writing, script revision, and older code/bug fixes as complete. The next milestone is beginning programming for the update. A July 24 blog post reported café-scene programming progress.",
+  },
+  {
+    q: "Can I play Day 3 now?",
+    a: "No. There is no public Day 3 build, beta, or early access. The current public version is v0.2 (Prototype). Any site claiming to offer a Day 3 download, APK, or leaked build is unverified and potentially unsafe.",
+  },
+  {
+    q: "Will my saves carry over to Day 3?",
+    a: "The developer has not confirmed save compatibility details. Based on typical visual novel practices, saves may carry over, but this is not guaranteed.",
+  },
+  {
+    q: "What content will Day 3 include?",
+    a: "No official content list has been published. Community speculation includes new endings, expanded character routes, and the Ticket Taker storyline — but none of this is confirmed.",
+  },
+  {
+    q: "Are YouTube Day 3 videos real?",
+    a: "No. As of August 2026, no public Day 3 build exists. YouTube videos claiming to show Day 3 content, leaks, or unlocked scenes use fabricated, modded, or speculative content.",
+  },
+  {
+    q: "What should I do while waiting for Day 3?",
+    a: "Play the current v0.2 build. Explore all endings (8+ confirmed), try different character routes, read the lore archive, and save before every major choice. Multi-run awareness is built into the game.",
+  },
+];
+
+const timelineEvents = [
+  {
+    date: "Early 2025",
+    signal: "Official itch.io page states the story continues for one more in-game day, still in development",
+    source: "Official itch.io listing",
+    status: "Official — confirms development direction",
+  },
+  {
+    date: "Mid 2025",
+    signal: "Community discussion grows; players begin asking about Day 3 in itch.io comments and on social platforms",
+    source: "itch.io comments, Reddit, Tumblr",
+    status: "Community observation — not a release signal",
+  },
+  {
+    date: "Late 2025",
+    signal: "Creator-linked notes mention progress on the new update script",
+    source: "Creator Tumblr",
+    status: "Progress signal — not a public build or date",
+  },
+  {
+    date: "Early 2026",
+    signal: "Creator confirms the new-update script is finished; code fixing and minor-bug cleanup are underway",
+    source: "Creator Tumblr / community report",
+    status: "Progress signal — stronger than no news, but not a release date",
+  },
+  {
+    date: "Mid 2026",
+    signal: "YouTube videos and Shorts use Day 3 leak or unlocked scene titles",
+    source: "YouTube",
+    status: "Unverified community content — not proof of a playable build",
+  },
+  {
+    date: "2026-07-08",
+    signal: "Official itch.io page, devlog, and creator Tumblr checked. itch.io still shows public v0.2 files; latest visible devlog item is a Chinese language update, not a Day 3 release notice",
+    source: "Official itch.io + devlog + creator Tumblr",
+    status: "No official public Day 3 build confirmed",
+  },
+  {
+    date: "2026-07-10",
+    signal: "Official TFC Blog says development for the next update is underway after code cleanup; first weekly Day 3 development update available on Patreon",
+    source: "Official TFC Blog",
+    status: "Confirmed development progress — not a playable-build announcement",
+  },
+  {
+    date: "2026-07-17",
+    signal: "Public weekly update says work is still near the beginning of the Day 3 script, with several new sprites added, two backgrounds updated, and a long coffee-shop scene in progress",
+    source: "Official TFC Blog",
+    status: "Confirmed public development detail — not a playable-build announcement",
+  },
+  {
+    date: "2026-07-24",
+    signal: "Public weekly update says a good portion of the café scene has already been programmed; a few simple sprites are still needed, temporary placeholders may be used, and those sprites may be completed after beta testing",
+    source: "Official TFC Blog",
+    status: "Confirmed programming progress — not a public beta or release date",
+  },
+  {
+    date: "Checked 2026-08-03",
+    signal: "Creator roadmap checklist marks script writing, script revision, and older code/bug fixes complete; \"Begin programming the update\" is the next unchecked milestone",
+    source: "Creator Tumblr roadmap",
+    status: "Confirmed milestone checklist — progress only, not a release or date",
+  },
+];
+
 export default function Day3ReleaseDatePage() {
   return (
     <main className="min-h-screen bg-surface">
       <Navigation />
 
-      {/* Hero */}
-      <section className="pt-28 pb-16 px-4 md:px-16 border-b border-outline/10">
-        <div className="max-w-4xl mx-auto">
-          <div className="mb-4">
-            <span className="font-mono text-[10px] text-primary uppercase tracking-[0.3em]">
-              Day 3 Release Date
-            </span>
+      {/* Hero + Quick Answer */}
+      <section className="bg-surface min-h-[50vh] flex flex-col justify-center pt-8 pb-16 px-4 md:px-16 relative overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-surface" />
+        </div>
+        <div className="max-w-4xl mx-auto w-full relative z-10">
+          <div className="flex flex-wrap gap-3 mb-6">
+            <span className="font-[JetBrains_Mono] text-xs px-3 py-1 border border-outline/30 text-on-surface-variant">STATUS CHECK</span>
+            <span className="font-[JetBrains_Mono] text-xs px-3 py-1 border border-outline/30 text-on-surface-variant">FAN-MAINTAINED</span>
           </div>
-          <h1 className="font-display text-4xl md:text-5xl text-on-surface mb-6 uppercase tracking-tight">
+          <h1 className="font-[Creepster] text-4xl md:text-6xl text-primary mb-6">
             Day 3 Release Date
           </h1>
-          <div className="grid md:grid-cols-2 gap-8 items-start">
-            <div className="space-y-4">
-              <div className="flex items-center gap-3">
-                <span className="font-mono text-[10px] text-on-surface/40 uppercase tracking-widest">
-                  Latest Status
-                </span>
-                <span className="inline-flex items-center gap-2 bg-yellow-500/10 text-yellow-500 px-3 py-1 font-mono text-xs">
-                  <span className="w-2 h-2 bg-yellow-500 rounded-full animate-pulse" />
-                  In Development
-                </span>
-              </div>
-              <div className="flex items-center gap-3">
-                <span className="font-mono text-[10px] text-on-surface/40 uppercase tracking-widest">
-                  Last Updated
-                </span>
-                <span className="text-on-surface/80 text-sm">June 2026</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <span className="font-mono text-[10px] text-on-surface/40 uppercase tracking-widest">
-                  Expected Version
-                </span>
-                <span className="text-primary font-display">v0.3</span>
-              </div>
-            </div>
-            <div className="glass-card p-6">
-              <h3 className="font-mono text-[10px] text-primary uppercase tracking-widest mb-4">
-                Development Progress
-              </h3>
-              <div className="w-full bg-[#353534] h-3 mb-3">
-                <div className="bg-primary h-full w-[60%]" />
-              </div>
-              <p className="font-mono text-xs text-on-surface/60">60% — Based on public developer updates</p>
-            </div>
-          </div>
-        </div>
-      </section>
+          <p className="text-on-surface-variant text-lg max-w-2xl mb-8">
+            Is Freak Circus Day 3 out yet? Everything we know from official sources, developer roadmaps, and verified community signals.
+          </p>
 
-      {/* Current Status */}
-      <section className="py-12 px-4 md:px-16">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="font-display text-2xl text-primary uppercase tracking-widest mb-8">
-            Current Development Status
-          </h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            {[
-              { label: "Official Status", value: "In Development", note: "Confirmed by developer" },
-              { label: "Latest Build", value: "v0.2", note: "Current public release" },
-              { label: "Next Update", value: "Day 3", note: "Expected in v0.3" },
-            ].map((item) => (
-              <div key={item.label} className="glass-card p-6 text-center">
-                <p className="font-mono text-[10px] text-on-surface/40 uppercase tracking-widest mb-2">
-                  {item.label}
-                </p>
-                <p className="font-display text-2xl text-on-surface mb-2">{item.value}</p>
-                <p className="text-on-surface/50 text-xs">{item.note}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Is Day 3 Confirmed? */}
-      <section className="py-12 px-4 md:px-16 border-t border-outline/10">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="font-display text-2xl text-primary uppercase tracking-widest mb-8">
-            Is Day 3 Confirmed?
-          </h2>
-          <div className="glass-card p-8 mb-8">
-            <div className="flex items-center gap-4 mb-6">
-              <span className="material-symbols-outlined text-primary text-3xl">check_circle</span>
-              <div>
-                <p className="font-display text-2xl text-on-surface">Yes</p>
-                <p className="text-on-surface/60 text-sm">Day 3 is officially confirmed by the developer</p>
-              </div>
+          {/* Quick Answer Box */}
+          <div className="bg-surface-container border-2 border-primary/40 p-6 max-w-2xl">
+            <div className="flex items-center gap-3 mb-4">
+              <span className="font-[JetBrains_Mono] text-xs text-primary">QUICK ANSWER</span>
             </div>
-            <div className="grid md:grid-cols-3 gap-4">
-              {[
-                { source: "Developer Posts", status: "Confirmed", detail: "Multiple devlogs mention Day 3 content" },
-                { source: "Steam", status: "TBA", detail: "No store page update yet" },
-                { source: "Discord", status: "Active", detail: "Developer posts regular progress updates" },
-              ].map((item) => (
-                <div key={item.source} className="border border-outline/10 p-4">
-                  <p className="font-mono text-[10px] text-primary uppercase tracking-widest mb-1">{item.source}</p>
-                  <p className="text-on-surface/80 text-sm font-medium">{item.status}</p>
-                  <p className="text-on-surface/50 text-xs">{item.detail}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Expected Release Window */}
-      <section className="py-12 px-4 md:px-16 border-t border-outline/10">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="font-display text-2xl text-primary uppercase tracking-widest mb-8">
-            Expected Release Window
-          </h2>
-          <div className="glass-card p-8 mb-6">
-            <div className="flex items-center gap-4 mb-4">
-              <span className="font-display text-3xl text-on-surface">Q3 2026</span>
-              <span className="font-mono text-[10px] text-on-surface/40 uppercase tracking-widest">or</span>
-              <span className="font-display text-3xl text-on-surface">Late 2026</span>
-            </div>
-            <div className="flex items-center gap-2 mb-4">
-              <span className="font-mono text-[10px] text-on-surface/40 uppercase tracking-widest">Confidence</span>
-              <span className="text-primary">★★★☆☆</span>
-            </div>
-            <p className="text-on-surface/60 text-sm leading-relaxed">
-              No official release date has been announced. The Q3/Late 2026 window is based on 
-              community estimates derived from developer progress updates and historical update cadence. 
-              <strong className="text-on-surface"> This is not an official date.</strong>
+            <p className="text-foreground text-lg font-bold mb-2">
+              No. Day 3 is not publicly confirmed as playable yet.
+            </p>
+            <p className="text-on-surface-variant text-sm">
+              No official release date has been announced. The developer has not provided a specific date, beta access window, or playable build. The current public version remains v0.2 (Prototype).
             </p>
           </div>
-          <div className="grid md:grid-cols-2 gap-4">
-            <div className="glass-card p-5 border-l-2 border-l-primary">
-              <p className="font-mono text-[10px] text-primary uppercase tracking-widest mb-2">Official Information</p>
-              <p className="text-on-surface/60 text-sm">Developer has confirmed Day 3 is in development but has not provided a release date.</p>
-            </div>
-            <div className="glass-card p-5 border-l-2 border-l-secondary">
-              <p className="font-mono text-[10px] text-secondary uppercase tracking-widest mb-2">Community Estimates</p>
-              <p className="text-on-surface/60 text-sm">Based on 60% completion estimate and typical indie visual novel development cycles.</p>
-            </div>
+        </div>
+      </section>
+
+      {/* Current Status Table */}
+      <section className="bg-surface py-16 px-4 md:px-16 border-t border-outline/10">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="font-[Epilogue] text-2xl md:text-3xl font-bold text-primary mb-8">Current Status</h2>
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm border border-outline/20">
+              <tbody>
+                {[
+                  { field: "Released?", value: "Not officially released yet" },
+                  { field: "Latest progress source checked", value: "2026-08-03 — creator roadmap checklist plus official TFC Blog July 24 weekly update" },
+                  { field: "Official source reading", value: "Roadmap: script writing complete, script revision complete, older code/bug fixes complete, with programming as the next unchecked milestone. July 24 post: café-scene programming progress was also shown" },
+                  { field: "Confirmed", value: "Development is active. A progress checklist or weekly update is not a playable-build, public-beta, or release-date announcement" },
+                  { field: "Unconfirmed", value: "Exact release date, full route changes, ending impact, Chapter 3 wording, public build timing, APKs, mirrors, and reposted downloads" },
+                ].map((row) => (
+                  <tr key={row.field} className="border-b border-outline/10">
+                    <td className="p-4 text-foreground font-bold bg-surface-container/50 whitespace-nowrap">{row.field}</td>
+                    <td className="p-4 text-on-surface-variant">{row.value}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         </div>
       </section>
 
-      {/* Latest Developer Updates */}
-      <section className="py-12 px-4 md:px-16 border-t border-outline/10">
+      {/* What to Do While Waiting */}
+      <section className="bg-surface py-16 px-4 md:px-16 border-t border-outline/10">
         <div className="max-w-4xl mx-auto">
-          <h2 className="font-display text-2xl text-primary uppercase tracking-widest mb-8">
-            Latest Developer Updates
-          </h2>
+          <h2 className="font-[Epilogue] text-2xl md:text-3xl font-bold text-primary mb-4">No Date Yet? Choose What to Do Next</h2>
+          <p className="text-on-surface-variant text-sm mb-8">
+            Most visitors land here for one answer: Day 3 is not publicly confirmed as playable yet. Don&apos;t keep hunting rumor pages — pick the action that matches your goal.
+          </p>
+          <div className="grid md:grid-cols-3 gap-6">
+            <Link href="/play-online" className="bg-surface-container border border-outline/20 p-6 hover:border-primary transition-colors group">
+              <div className="font-[JetBrains_Mono] text-xs text-primary mb-2">PLAY NOW</div>
+              <h3 className="font-[Epilogue] text-lg font-bold text-foreground group-hover:text-primary transition-colors mb-2">Play the Current Build</h3>
+              <p className="text-on-surface-variant text-sm">Play the official v0.2 build (Day 1 &amp; Day 2) through the official source route. Avoid APKs, mirrors, and reposted downloads.</p>
+            </Link>
+            <Link href="/endings" className="bg-surface-container border border-outline/20 p-6 hover:border-primary transition-colors group">
+              <div className="font-[JetBrains_Mono] text-xs text-primary mb-2">COMPLETE</div>
+              <h3 className="font-[Epilogue] text-lg font-bold text-foreground group-hover:text-primary transition-colors mb-2">Unlock All Endings</h3>
+              <p className="text-on-surface-variant text-sm">8+ confirmed endings across all routes. Some require replay awareness and cross-route dependencies. Save before every major choice.</p>
+            </Link>
+            <Link href="/walkthroughs/save-guide" className="bg-surface-container border border-outline/20 p-6 hover:border-primary transition-colors group">
+              <div className="font-[JetBrains_Mono] text-xs text-primary mb-2">PREPARE</div>
+              <h3 className="font-[Epilogue] text-lg font-bold text-foreground group-hover:text-primary transition-colors mb-2">Set Up Save Files</h3>
+              <p className="text-on-surface-variant text-sm">Create separate saves for each route. The game tracks your history using a hidden counter — multi-run awareness is built in.</p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Timeline */}
+      <section className="bg-surface py-16 px-4 md:px-16 border-t border-outline/10">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="font-[Epilogue] text-2xl md:text-3xl font-bold text-primary mb-4">Timeline of Public Day 3 Signals</h2>
+          <p className="text-on-surface-variant text-sm mb-8">
+            This timeline tracks creator-linked and community-observed signals about Day 3 progress. Each entry is a public signal, not a release confirmation.
+          </p>
           <div className="relative pl-8 border-l border-outline/20 space-y-8">
-            {[
-              { date: "2026-06-18", title: "Progress Update", desc: "Developer confirmed Day 3 writing is 80% complete. CG production ongoing." },
-              { date: "2026-06-03", title: "New CG Preview", desc: "Two new CG previews shared on Discord — one featuring the Hall of Whispers mirror scene." },
-              { date: "2026-05-12", title: "Developer Mentioned Day 3", desc: "First official confirmation that Day 3 will be the next major content update after v0.2." },
-            ].map((update, i) => (
+            {timelineEvents.map((event, i) => (
               <div key={i} className="relative">
                 <div className="absolute -left-[37px] top-1 w-3 h-3 bg-primary rounded-full" />
-                <span className="font-mono text-[10px] text-primary uppercase tracking-widest block mb-1">
-                  {update.date}
+                <span className="font-[JetBrains_Mono] text-xs text-primary uppercase tracking-widest block mb-1">
+                  {event.date}
                 </span>
-                <h3 className="font-display text-lg text-on-surface mb-1">{update.title}</h3>
-                <p className="text-on-surface/60 text-sm">{update.desc}</p>
-              </div>
-            ))}
-          </div>
-          <p className="text-on-surface/40 text-xs mt-8 italic">
-            Dates and details based on public Discord/Steam announcements. May not reflect all internal development milestones.
-          </p>
-        </div>
-      </section>
-
-      {/* What Will Be Included */}
-      <section className="py-12 px-4 md:px-16 border-t border-outline/10">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="font-display text-2xl text-primary uppercase tracking-widest mb-4">
-            What Will Be Included in Day 3?
-          </h2>
-          <p className="text-on-surface/50 text-xs mb-8 italic">
-            Based on official previews and developer statements. Subject to change.
-          </p>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {[
-              { name: "New Story", status: "Confirmed", desc: "Day 3 critical decision chapter" },
-              { name: "New Characters", status: "TBA", desc: "May include expanded Harlequin/Columbina scenes" },
-              { name: "New Endings", status: "Confirmed", desc: "True Ending and Secret Ending paths" },
-              { name: "New CGs", status: "Confirmed", desc: "Multiple new CGs in production" },
-              { name: "New Music", status: "TBA", desc: "No official confirmation yet" },
-              { name: "New Choices", status: "Confirmed", desc: "Multi-branch critical decision point" },
-            ].map((item) => (
-              <div key={item.name} className="glass-card p-5 border-l-2 border-l-primary">
-                <div className="flex items-center justify-between mb-2">
-                  <h3 className="font-display text-sm text-on-surface">{item.name}</h3>
-                  <span className={`font-mono text-[9px] uppercase tracking-widest px-2 py-0.5 ${
-                    item.status === "Confirmed" ? "bg-primary/10 text-primary" : "bg-secondary/10 text-secondary"
-                  }`}>
-                    {item.status}
-                  </span>
+                <h3 className="text-foreground text-sm font-bold mb-1">{event.signal}</h3>
+                <div className="flex flex-wrap gap-x-4 gap-y-1">
+                  <span className="text-on-surface-variant text-xs">Source: {event.source}</span>
+                  <span className="text-on-surface-variant text-xs">Status: {event.status}</span>
                 </div>
-                <p className="text-on-surface/50 text-xs">{item.desc}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Day 3 Preview */}
-      <section className="py-12 px-4 md:px-16 border-t border-outline/10">
+      {/* Rumor Warning */}
+      <section className="bg-surface py-16 px-4 md:px-16 border-t border-outline/10">
         <div className="max-w-4xl mx-auto">
-          <h2 className="font-display text-2xl text-primary uppercase tracking-widest mb-8">
-            Day 3 Preview
-          </h2>
-          <div className="mb-8">
-            <h3 className="font-mono text-[10px] text-primary uppercase tracking-widest mb-4">
-              Known Characters
-            </h3>
-            <div className="flex flex-wrap gap-3">
-              {["Ticket Taker", "Doctor", "Pierrot", "Harlequin"].map((char) => (
-                <Link
-                  key={char}
-                  href={char === "Ticket Taker" ? "/ticket-taker" : `/characters/${char.toLowerCase()}`}
-                  className="glass-card px-4 py-2 text-sm text-on-surface hover:text-primary hover:border-primary transition-colors"
-                >
-                  {char}
-                </Link>
-              ))}
+          <h2 className="font-[Epilogue] text-2xl md:text-3xl font-bold text-primary mb-8">Rumor &amp; Unverified Content Warning</h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-surface-container border border-outline/20 p-6">
+              <h3 className="font-[JetBrains_Mono] text-xs text-blood uppercase tracking-wider mb-3">⚠️ NOT VERIFIED</h3>
+              <ul className="space-y-2 text-on-surface-variant text-sm">
+                <li className="flex items-start gap-2"><span className="text-blood mt-1">✗</span> YouTube &quot;Day 3 leak&quot; or &quot;unlocked scene&quot; videos</li>
+                <li className="flex items-start gap-2"><span className="text-blood mt-1">✗</span> APK downloads claiming to be Day 3</li>
+                <li className="flex items-start gap-2"><span className="text-blood mt-1">✗</span> Play Store or third-party reposts of the game</li>
+                <li className="flex items-start gap-2"><span className="text-blood mt-1">✗</span> &quot;Confirmed release date&quot; claims without official source</li>
+                <li className="flex items-start gap-2"><span className="text-blood mt-1">✗</span> Screenshots or CG previews not from official channels</li>
+              </ul>
             </div>
-          </div>
-          <div className="glass-card p-6 border-l-2 border-l-secondary">
-            <p className="font-mono text-[10px] text-secondary uppercase tracking-widest mb-2">
-              Preview Images
-            </p>
-            <p className="text-on-surface/60 text-sm">
-              No official preview images have been released for Day 3 yet. This section will be updated when developer shares screenshots or CG previews.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Community Expectations */}
-      <section className="py-12 px-4 md:px-16 border-t border-outline/10">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="font-display text-2xl text-primary uppercase tracking-widest mb-8">
-            Community Expectations
-          </h2>
-          <h3 className="font-mono text-[10px] text-primary uppercase tracking-widest mb-4">
-            Most Requested Features
-          </h3>
-          <div className="grid md:grid-cols-2 gap-4">
-            {[
-              { name: "True Ending", demand: "Very High", desc: "Community has been waiting for the canonical conclusion since v0.1" },
-              { name: "Ticket Taker Route", demand: "Very High", desc: "Most requested feature across all community platforms" },
-              { name: "Mirror Story Resolution", demand: "High", desc: "Players want answers to the mirror scene mysteries" },
-              { name: "New Romance Options", demand: "Medium", desc: "Expanded relationship branches for existing characters" },
-            ].map((item) => (
-              <div key={item.name} className="glass-card p-5 border-l-2 border-l-primary">
-                <div className="flex items-center justify-between mb-2">
-                  <h4 className="font-display text-sm text-on-surface">{item.name}</h4>
-                  <span className="font-mono text-[9px] text-primary uppercase tracking-widest">{item.demand}</span>
-                </div>
-                <p className="text-on-surface/50 text-xs">{item.desc}</p>
-              </div>
-            ))}
+            <div className="bg-surface-container border border-outline/20 p-6">
+              <h3 className="font-[JetBrains_Mono] text-xs text-primary uppercase tracking-wider mb-3">✓ VERIFIED SOURCES</h3>
+              <ul className="space-y-2 text-on-surface-variant text-sm">
+                <li className="flex items-start gap-2"><span className="text-primary mt-1">✓</span> Official itch.io listing and devlog</li>
+                <li className="flex items-start gap-2"><span className="text-primary mt-1">✓</span> Official TFC Blog weekly updates</li>
+                <li className="flex items-start gap-2"><span className="text-primary mt-1">✓</span> Creator Tumblr roadmap checklist</li>
+                <li className="flex items-start gap-2"><span className="text-primary mt-1">✓</span> Patreon early-access updates (creator-linked)</li>
+                <li className="flex items-start gap-2"><span className="text-primary mt-1">✓</span> This page (Freak Circus Hub) — sourced from the above</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
 
       {/* FAQ */}
-      <section className="py-12 px-4 md:px-16 border-t border-outline/10">
+      <section className="bg-surface py-16 px-4 md:px-16 border-t border-outline/10">
         <div className="max-w-4xl mx-auto">
-          <h2 className="font-display text-2xl text-primary uppercase tracking-widest mb-8">
-            FAQ
-          </h2>
-          <div className="space-y-6">
-            {[
-              { q: "When will Day 3 release?", a: "No official release date has been announced. Based on developer progress updates, community estimates suggest Q3 or Late 2026 — but this is speculation, not confirmation." },
-              { q: "Is Day 3 confirmed?", a: "Yes. The developer has officially confirmed Day 3 is in development and will be part of the v0.3 update." },
-              { q: "Will Day 3 be free?", a: "No pricing information has been announced. Previous updates (v0.1 → v0.2) were free for existing owners." },
-              { q: "Will saves carry over?", a: "The developer has not confirmed save compatibility details. Based on typical visual novel practices, saves likely will carry over." },
-              { q: "How long is Day 3?", a: "No official length estimate. Based on Day 1–2 structure, expected to be 20–40 minutes of new content." },
-              { q: "Will Ticket Taker appear?", a: "Yes. Ticket Taker is confirmed to appear in Day 3 based on developer dialogue file references." },
-              { q: "Will there be new endings?", a: "Yes. The developer has confirmed new endings (including True Ending and Secret Ending paths) will be added in Day 3." },
-            ].map((faq, i) => (
-              <div key={i} className="glass-card p-6">
-                <h3 className="font-display text-lg text-on-surface mb-2">{faq.q}</h3>
-                <p className="text-on-surface/60 text-sm leading-relaxed">{faq.a}</p>
-              </div>
+          <h2 className="font-[Epilogue] text-2xl md:text-3xl font-bold text-primary mb-8">FAQ</h2>
+          <div className="space-y-4">
+            {faqData.map((faq, i) => (
+              <details key={i} className="bg-surface-container border border-outline/20 p-6 group">
+                <summary className="font-[Epilogue] text-lg text-foreground cursor-pointer list-none flex items-center justify-between">
+                  {faq.q}
+                  <span className="material-symbols-outlined text-on-surface-variant group-open:rotate-180 transition-transform text-xl">expand_more</span>
+                </summary>
+                <p className="text-on-surface-variant text-sm leading-relaxed mt-4">{faq.a}</p>
+              </details>
             ))}
           </div>
         </div>
       </section>
 
       {/* Related Guides */}
-      <section className="py-12 px-4 md:px-16 border-t border-outline/10">
+      <section className="bg-surface py-16 px-4 md:px-16 border-t border-outline/10">
         <div className="max-w-4xl mx-auto">
-          <h2 className="font-display text-2xl text-primary uppercase tracking-widest mb-6">
-            Related Guides
-          </h2>
+          <h2 className="font-[Epilogue] text-2xl md:text-3xl font-bold text-primary mb-6">Related Guides</h2>
           <div className="flex flex-wrap gap-4">
-            <Link href="/day-2" className="text-primary hover:underline text-sm">Day 2 Walkthrough →</Link>
-            <Link href="/day-3" className="text-primary hover:underline text-sm">Day 3 Walkthrough (Preview) →</Link>
-            <Link href="/endings" className="text-primary hover:underline text-sm">Endings →</Link>
-            <Link href="/characters" className="text-primary hover:underline text-sm">Characters →</Link>
-            <Link href="/ticket-taker" className="text-primary hover:underline text-sm">Ticket Taker →</Link>
+            <Link href="/day-2" className="text-primary hover:underline text-sm font-[JetBrains_Mono]">Day 2 Walkthrough →</Link>
+            <Link href="/day-3" className="text-primary hover:underline text-sm font-[JetBrains_Mono]">Day 3 Preview →</Link>
+            <Link href="/endings" className="text-primary hover:underline text-sm font-[JetBrains_Mono]">All Endings →</Link>
+            <Link href="/characters" className="text-primary hover:underline text-sm font-[JetBrains_Mono]">Characters →</Link>
+            <Link href="/ticket-taker" className="text-primary hover:underline text-sm font-[JetBrains_Mono]">Ticket Taker →</Link>
           </div>
         </div>
       </section>
 
       <Footer />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "FAQPage",
+                mainEntity: faqData.map((f) => ({
+                  "@type": "Question",
+                  name: f.q,
+                  acceptedAnswer: { "@type": "Answer", text: f.a },
+                })),
+              },
+            ],
+          }),
+        }}
+      />
       <JsonLd />
     </main>
   );

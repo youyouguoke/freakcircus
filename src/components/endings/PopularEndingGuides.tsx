@@ -1,20 +1,23 @@
 "use client";
 
 import Link from "next/link";
+import { ENDINGS_TOTAL } from "@/lib/site-facts";
 
 const guides = [
-  { name: "Pierrot Good Ending", href: "/characters/pierrot" },
-  { name: "Pierrot Bad Ending", href: "/characters/pierrot" },
-  { name: "Pierrot Secret Ending", href: "/characters/pierrot" },
-  { name: "Harlequin Good Ending", href: "/characters/harlequin" },
-  { name: "Harlequin Secret Ending", href: "/characters/harlequin" },
-  { name: "Doctor Good Ending", href: "/characters/doctor" },
-  { name: "Doctor Secret Ending", href: "/characters/doctor" },
-  { name: "Columbina Good Ending", href: "/characters/columbina" },
-  { name: "Columbina Secret Ending", href: "/characters/columbina" },
+  { name: "Pierrot — Smile For Me (Good)", href: "/characters/pierrot#endings" },
+  { name: "Pierrot — Eternal Silence (Secret)", href: "/characters/pierrot#endings" },
+  { name: "Pierrot — Null Route (Unverified)", href: "/characters/pierrot#endings" },
+  { name: "Harlequin — Grand Finale (Good)", href: "/characters/harlequin#endings" },
+  { name: "Harlequin — Fractured Ending (Secret)", href: "/characters/harlequin#endings" },
+  { name: "Doctor — Doctor's Note (Secret)", href: "/characters/doctor#endings" },
+  { name: "Doctor — White Room (Unverified)", href: "/characters/doctor#endings" },
+  { name: "Columbina — Truth (Secret)", href: "/characters/columbina#endings" },
+  { name: "Columbina — Eternal Dance (Standard)", href: "/characters/columbina#endings" },
   { name: "True Ending Guide", href: "/endings" },
-  { name: "All Endings Guide", href: "/endings" },
+  { name: `All ${ENDINGS_TOTAL} Endings Overview`, href: "/endings" },
   { name: "Ending Order & Timeline", href: "/endings" },
+  { name: "Step-by-Step Ending Unlock", href: "/walkthroughs/all-endings-guide" },
+  { name: "Save Points & Data Guide", href: "/walkthroughs/save-guide" },
 ];
 
 export default function PopularEndingGuides() {

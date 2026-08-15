@@ -25,16 +25,20 @@ export default function TheoriesHero() {
         {/* Stats */}
         <div className="flex flex-wrap gap-8 mb-8">
           <div>
-            <div className="font-[Creepster] text-3xl text-primary">38</div>
-            <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant">Confirmed Theories</div>
+            <div className="font-[Creepster] text-3xl text-primary">13</div>
+            <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant">Theories Documented</div>
           </div>
           <div>
-            <div className="font-[Creepster] text-3xl text-primary">12</div>
+            <div className="font-[Creepster] text-3xl text-primary">5</div>
+            <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant">Community Accepted</div>
+          </div>
+          <div>
+            <div className="font-[Creepster] text-3xl text-primary">4</div>
+            <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant">Controversial</div>
+          </div>
+          <div>
+            <div className="font-[Creepster] text-3xl text-primary">4</div>
             <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant">Unverified</div>
-          </div>
-          <div>
-            <div className="font-[Creepster] text-3xl text-primary">3</div>
-            <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant">Corrupted</div>
           </div>
         </div>
 

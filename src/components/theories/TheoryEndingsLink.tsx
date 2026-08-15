@@ -6,49 +6,49 @@ const theoryEndings = [
   {
     theory: "Pierrot Loop Theory",
     endings: [
-      { name: "Eternal Silence", href: "/endings" },
-      { name: "Smile For Me", href: "/endings" },
-      { name: "Null Route", href: "/endings" },
+      { name: "Eternal Silence", href: "/characters/pierrot#endings" },
+      { name: "Smile For Me", href: "/characters/pierrot#endings" },
+      { name: "Null Route", href: "/characters/pierrot#endings" },
     ],
   },
   {
     theory: "Doctor Is The Observer",
     endings: [
-      { name: "Doctor's Note", href: "/endings" },
-      { name: "White Room", href: "/endings" },
-      { name: "Medical Failure", href: "/endings" },
+      { name: "Doctor's Note", href: "/characters/doctor#endings" },
+      { name: "White Room", href: "/characters/doctor#endings" },
+      { name: "Medical Failure", href: "/characters/doctor#endings" },
     ],
   },
   {
     theory: "Columbina's Memory Is The Key",
     endings: [
-      { name: "Columbina's Truth", href: "/endings" },
-      { name: "Eternal Dance", href: "/endings" },
-      { name: "Corrupted Data", href: "/endings" },
+      { name: "Columbina's Truth", href: "/characters/columbina#endings" },
+      { name: "Eternal Dance", href: "/characters/columbina#endings" },
+      { name: "Corrupted Data", href: "/characters/columbina#endings" },
     ],
   },
   {
     theory: "Circus Does Not Exist",
     endings: [
-      { name: "Grand Finale", href: "/endings" },
-      { name: "Corrupted Data", href: "/endings" },
-      { name: "White Room", href: "/endings" },
+      { name: "Grand Finale", href: "/characters/harlequin#endings" },
+      { name: "Corrupted Data", href: "/characters/columbina#endings" },
+      { name: "White Room", href: "/characters/doctor#endings" },
     ],
   },
   {
     theory: "Timeline Reset Theory",
     endings: [
-      { name: "Eternal Silence", href: "/endings" },
-      { name: "Columbina's Truth", href: "/endings" },
-      { name: "Harlequin's Laughter", href: "/endings" },
+      { name: "Eternal Silence", href: "/characters/pierrot#endings" },
+      { name: "Columbina's Truth", href: "/characters/columbina#endings" },
+      { name: "Harlequin's Laughter", href: "/characters/harlequin#endings" },
     ],
   },
   {
     theory: "Memory Corruption Theory",
     endings: [
-      { name: "Corrupted Data", href: "/endings" },
-      { name: "White Room", href: "/endings" },
-      { name: "Null Route", href: "/endings" },
+      { name: "Corrupted Data", href: "/characters/columbina#endings" },
+      { name: "White Room", href: "/characters/doctor#endings" },
+      { name: "Null Route", href: "/characters/pierrot#endings" },
     ],
   },
 ];

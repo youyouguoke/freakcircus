@@ -14,6 +14,7 @@ import MostSearchedQuestions from "@/components/characters/MostSearchedQuestions
 import CharacterRecommendations from "@/components/characters/CharacterRecommendations";
 import ArchiveIndex from "@/components/home/ArchiveIndex";
 import JsonLd from "@/components/JsonLd";
+import ContinueExploring from "@/components/ContinueExploring";
 
 export const metadata: Metadata = {
   title: "Freak Circus Characters — Pierrot, Harlequin, Jester, Doctor & Columbina Guide",
@@ -84,6 +85,7 @@ export default function CharactersPage() {
       <CharacterFAQ />
       <CharactersAbout />
       <ArchiveIndex />
+      <ContinueExploring />
       <Footer />
       <JsonLd />
     </main>

@@ -1,3 +1,5 @@
+import { SINGLE_ROUTE_HOURS, TOTAL_COMPLETION_HOURS } from "@/lib/site-facts";
+
 export default function JsonLd() {
   const structuredData = {
     "@context": "https://schema.org",
@@ -63,7 +65,7 @@ export default function JsonLd() {
             "name": "What is The Freak Circus?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "The Freak Circus is an indie psychological horror visual novel that uses replay-aware mechanics to create a meta-narrative experience. Unlike traditional horror games, it builds dread through silence, repetition, and characters who appear to remember your choices across playthroughs."
+              "text": "The Freak Circus is an indie psychological horror visual novel that uses replay-aware mechanics to create a meta-narrative experience. It builds dread through silence, repetition, and characters who appear to remember your choices across playthroughs. Rated 18+ for mature themes."
             }
           },
           {
@@ -71,7 +73,7 @@ export default function JsonLd() {
             "name": "Is The Freak Circus free to play?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes, The Freak Circus is available for free on itch.io. It runs directly in your browser without requiring download or installation. The game is rated 18+ for mature themes."
+              "text": "Yes, The Freak Circus is available for free on itch.io. It runs directly in your browser without download or installation."
             }
           },
           {
@@ -79,7 +81,7 @@ export default function JsonLd() {
             "name": "How long is The Freak Circus?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "A single route playthrough takes approximately 4-6 hours. However, experiencing all content requires multiple playthroughs due to replay-aware mechanics, hidden triggers, and route dependencies. A comprehensive investigation to see all endings and hidden content can take 40+ hours."
+              "text": `A single route takes ${SINGLE_ROUTE_HOURS}. Experiencing all content requires multiple playthroughs due to replay-aware mechanics and hidden triggers. Full completion can take ${TOTAL_COMPLETION_HOURS}.`
             }
           },
           {
@@ -87,7 +89,7 @@ export default function JsonLd() {
             "name": "How many endings are in The Freak Circus?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "The exact number remains unknown. The community has confirmed 8 endings including standard routes (Grand Finale, Smile For Me, Doctor's Note), secret endings (Eternal Silence, Columbina's Truth), and corrupted endings (Corrupted Data, White Room)."
+              "text": "The community has confirmed 8 endings across standard, secret, and corrupted categories. Some require specific sequences across multiple playthroughs. The exact total remains unknown."
             }
           },
           {
@@ -95,7 +97,7 @@ export default function JsonLd() {
             "name": "Who is Pierrot in The Freak Circus?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Pierrot is the melancholic clown and often the first route players encounter. His storyline explores themes of forgotten identity, repeated loops, and awareness that extends beyond the fourth wall. The loop theory suggests Pierrot remembers player behavior across save files."
+              "text": "Pierrot is the melancholic clown and often the first route players encounter. His silence mechanic and replay-aware dialogue are central to the Loop Theory."
             }
           },
           {
@@ -103,7 +105,7 @@ export default function JsonLd() {
             "name": "What is the Eternal Silence ending and how do you unlock it?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Eternal Silence is a secret ending on Pierrot's route that requires refusing every major dialogue interaction during the final act. The screen remains black for several minutes before credits roll. The ending suggests the only escape from the circus is to stop engaging entirely."
+              "text": "Eternal Silence is a secret ending on Pierrot's route that requires refusing every major dialogue interaction during the final act. The screen stays black for several minutes before credits roll."
             }
           },
           {
@@ -111,7 +113,15 @@ export default function JsonLd() {
             "name": "What is the true ending of The Freak Circus?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "The community has not reached consensus on a true ending. Some theories suggest Columbina's Truth represents the most complete revelation. Others argue the Corrupted Data ending was intended as the true ending before being cut. The ambiguity appears intentional."
+              "text": "The community has not reached consensus on a true ending. Columbina's Truth, Corrupted Data, and the unfound White Room ending all have supporters. The ambiguity appears intentional."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is this archive spoiler-free?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. This archive is designed for players who have already begun exploring the game. Character guides, ending explanations, and theory pages contain full spoilers. Complete at least one route before browsing."
             }
           }
         ]

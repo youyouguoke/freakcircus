@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import ContinueExploring from "@/components/ContinueExploring";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
@@ -18,10 +19,31 @@ export const metadata: Metadata = {
   },
 };
 
+const faqData = [
+  { question: "Who is The Doctor in The Freak Circus?", answer: "The Doctor is the circus physician whose clinical detachment masks unsettling awareness. His route requires finding 5 hidden medical files and features precognitive dialogue — he describes the White Room ending in Scene 7, three routes before it becomes accessible." },
+  { question: "How do you unlock the White Room ending?", answer: "Find all 5 medical files, trigger the mirror connection (requires failing his main route once), and select 'Ask about the white room' in Scene 12. The screen fades to white and remains so for 2 minutes with breathing and medical equipment sounds." },
+  { question: "What are the 5 medical files?", answer: "File 1 (Scene 2 drawer): Pierrot — chronic dissociative episodes. File 2 (Scene 4 cabinet): Harlequin — rapid affective switching. File 3 (Scene 6 floorboard): Columbina — persecutory delusions. File 4 (Scene 8 bookshelf): The Doctor himself — blank except 'Subject is aware of observation.' File 5 (Scene 10 desk): The player's behavioral profile." },
+  { question: "Does The Doctor know about the player?", answer: "Yes. File 5 contains a psychological profile that matches the player's choice patterns, suggesting the game generates this file based on observed behavior. His precognitive dialogue in Scene 7 describes the White Room ending with disturbing accuracy." },
+  { question: "Is The Doctor connected to Ticket Taker?", answer: "Multiple evidence points suggest a connection: identical height (188cm), shared vocal frequency patterns, matching robe wallpaper patterns, and the fact they never appear in the same scene." },
+];
+
+const doctorJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    { "@type": "BreadcrumbList", itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://freak-circus.com" },
+      { "@type": "ListItem", position: 2, name: "Characters", item: "https://freak-circus.com/characters" },
+      { "@type": "ListItem", position: 3, name: "The Doctor", item: "https://freak-circus.com/characters/doctor" },
+    ]},
+    { "@type": "FAQPage", mainEntity: faqData.map((f) => ({ "@type": "Question", name: f.question, acceptedAnswer: { "@type": "Answer", text: f.answer } })) },
+  ],
+};
+
 export default function DoctorPage() {
   return (
     <main className="min-h-screen">
       <Navigation />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(doctorJsonLd) }} />
       <article className="bg-surface pt-8 pb-16 px-4 md:px-16">
         <div className="max-w-5xl mx-auto">
           <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant mb-4 uppercase tracking-widest">
@@ -74,6 +96,13 @@ export default function DoctorPage() {
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">
                 Who Is The Doctor?
               </h2>
+              {/* Quick Answer for AI SEO */}
+              <div className="bg-surface-container border border-primary/20 p-6 mb-6 border-l-4 border-l-primary">
+                <div className="font-[JetBrains_Mono] text-[10px] text-primary mb-2 uppercase tracking-widest">Quick Answer</div>
+                <p className="text-on-surface-variant text-sm leading-relaxed">
+                  <strong className="text-foreground">Who is The Doctor?</strong> The Doctor is the circus physician of The Freak Circus. He is romanceable, requires finding 5 hidden medical files, and has precognitive dialogue — he describes the White Room ending three routes before it's accessible. His secret ending (White Room) reveals the circus's medical experiments.
+                </p>
+              </div>
               <p className="text-on-surface-variant text-sm mb-4">
                 The Doctor serves as the circus physician in The Freak Circus, but his medical knowledge extends into territory that players find increasingly unsettling. His clinical, detached demeanor masks an awareness that seems to transcend the narrative — he references endings before they occur and demonstrates knowledge of events the player has not yet experienced.
               </p>
@@ -132,7 +161,7 @@ export default function DoctorPage() {
               </div>
             </section>
 
-            <section>
+            <section id="endings">
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">
                 The Doctor Route Endings
               </h2>
@@ -163,9 +192,62 @@ export default function DoctorPage() {
                 <a href="/theories" className="font-[JetBrains_Mono] text-xs px-3 py-1 border border-outline/30 text-on-surface-variant hover:border-primary hover:text-primary transition-colors">Community Theories</a>
               </div>
             </section>
+
+            <section>
+              <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Personality Analysis</h2>
+              <div className="grid md:grid-cols-2 gap-4">
+                {[
+                  { title: "Clinical Detachment", text: "The Doctor speaks in medical terminology even during emotional scenes. His observations are clinical, precise, and deliberately unsettling — he describes other characters as patients rather than people." },
+                  { title: "Precognitive Knowledge", text: "In Scene 7, he describes the White Room ending with disturbing accuracy, three routes before it becomes accessible. This is not metaphorical — the description matches the actual ending scene-for-scene." },
+                  { title: "Self-Awareness", text: "File 4 (about himself) is blank except for one line: 'Subject is aware of observation.' This suggests The Doctor knows he is being watched — by the player, not by other characters." },
+                  { title: "Hidden Aggression", text: "Unused voice lines in build 1.04 reveal a different Doctor — deeper voice, no clinical detachment, direct threats. The 'circus physician' persona may be a mask over a primary antagonist." },
+                ].map((trait) => (
+                  <div key={trait.title} className="bg-surface-container border border-outline/20 p-5">
+                    <h3 className="font-[Epilogue] text-base font-bold text-foreground mb-2">{trait.title}</h3>
+                    <p className="text-on-surface-variant text-sm leading-relaxed">{trait.text}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            <section>
+              <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Fan Theories</h2>
+              <div className="space-y-4">
+                {[
+                  { title: "The Doctor Is Ticket Taker", score: "★★★★☆", summary: "Identical height (188cm), shared vocal frequency, matching robe patterns, and they never appear in the same scene. The Doctor's clinical persona may be a disguise for the gatekeeper entity.", evidence: ["188cm height match", "Never appear together", "Vocal frequency analysis matches", "Robe wallpaper patterns identical"] },
+                  { title: "The Doctor Is the True Antagonist", score: "★★★★★", summary: "Unused voice lines in build 1.04 show The Doctor without his clinical mask — aggressive, threatening, aware. The 'circus physician' persona was added later in development, suggesting the original design was as primary villain.", evidence: ["Unused voice lines in build 1.04", "File 5 contains player behavioral profile", "Precognitive dialogue proves meta-awareness", "White Room ending suggests containment role"] },
+                ].map((t) => (
+                  <div key={t.title} className="bg-surface-container border border-outline/20 p-6">
+                    <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 mb-3">
+                      <h3 className="font-[Epilogue] text-lg font-bold text-foreground">{t.title}</h3>
+                      <div className="font-[Creepster] text-xl text-primary">{t.score}</div>
+                    </div>
+                    <p className="text-on-surface-variant text-sm leading-relaxed mb-3">{t.summary}</p>
+                    <div className="font-[JetBrains_Mono] text-xs text-green-400 uppercase mb-2">Evidence</div>
+                    <ul className="space-y-1 text-on-surface-variant text-sm">{t.evidence.map((e, i) => <li key={i}>• {e}</li>)}</ul>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            <section>
+              <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">FAQ</h2>
+              <div className="space-y-4">
+                {faqData.map((f, i) => (
+                  <details key={i} className="group bg-surface-container border border-outline/20">
+                    <summary className="flex justify-between items-center p-6 cursor-pointer font-[Epilogue] text-base font-semibold text-foreground list-none">
+                      <span>{f.question}</span>
+                      <span className="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+                    </summary>
+                    <div className="p-6 pt-0 text-on-surface-variant text-sm border-t border-outline/10 leading-relaxed">{f.answer}</div>
+                  </details>
+                ))}
+              </div>
+            </section>
           </div>
         </div>
       </article>
+      <ContinueExploring />
       <Footer />
       <JsonLd />
     </main>

@@ -11,12 +11,12 @@ export default function FeaturedTheory() {
         <div className="bg-surface-container border border-outline/20 p-8">
           <div className="flex items-center gap-2 mb-4">
             <span className="font-[JetBrains_Mono] text-xs px-2 py-1 border border-primary text-primary">
-              COMMUNITY CONFIDENCE: 78%
+              COMMUNITY CONFIDENCE: 58%
             </span>
           </div>
 
           <div className="font-[JetBrains_Mono] text-xs text-primary mb-2">
-            THEORY_14 — META THEORY
+            THEORY_15 — META THEORY
           </div>
 
           <h2 className="font-[Creepster] text-3xl md:text-5xl text-primary mb-4">

@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const hubs = [
   { title: "Characters", desc: "Pierrot, Harlequin, The Doctor, Columbina — psychological profiles, lore roles, and contradictions", href: "/characters", label: "Explore Characters" },
-  { title: "Endings", desc: "All 8+ confirmed endings — unlock conditions, secret routes, and post-credits analysis", href: "/endings", label: "Explore Endings" },
+  { title: "Endings", desc: "All 11 confirmed endings — unlock conditions, secret routes, and post-credits analysis", href: "/endings", label: "Explore Endings" },
   { title: "Theories", desc: "Community theories with evidence — Pierrot Loop, Timeline Reset, Doctor Awareness, and more", href: "/theories", label: "Explore Theories" },
   { title: "Walkthroughs", desc: "Step-by-step guides for all routes — choices, hidden triggers, and 100% completion checklist", href: "/walkthroughs", label: "Explore Walkthroughs" },
 ];

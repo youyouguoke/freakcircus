@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import ContinueExploring from "@/components/ContinueExploring";
 import Link from "next/link";
 import {
   statusCards,
@@ -491,6 +492,7 @@ export default function JesterPage() {
         </div>
       </article>
 
+      <ContinueExploring />
       <Footer />
     </main>
   );

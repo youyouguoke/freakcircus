@@ -75,7 +75,7 @@ const faqs = [
   },
   {
     q: "What is the true ending of The Freak Circus?",
-    a: "There is no confirmed 'true ending.' The 8 verified endings are: Grand Finale, Smile For Me, Medical Failure, Doctor's Note, Eternal Silence, Eternal Dance, Columbina's Truth, and Harlequin's Laughter. The Corrupted Data ending and White Room ending are unverified. The 'True Ending' may not exist — the game may be designed as an infinite loop with no escape. The post-credits scene (all endings) shows all four characters in the White Room looking at the player, suggesting the 'true ending' is the player's realization that they are part of the loop.",
+    a: "There is no confirmed 'true ending.' The 11 confirmed endings are: Grand Finale, Smile For Me, Doctor's Note, Eternal Silence, Columbina's Truth, Harlequin's Laughter, Fractured Ending, Medical Failure, Eternal Dance, and two additional variants. White Room, Corrupted Data, and Null Route remain unverified. The 'True Ending' may not exist — the game may be designed as an infinite loop with no escape. The post-credits scene (all endings) shows all four characters in the White Room looking at the player, suggesting the 'true ending' is the player's realization that they are part of the loop.",
   },
   {
     q: "Why does Harlequin say 'You again'?",

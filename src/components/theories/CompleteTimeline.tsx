@@ -2,34 +2,39 @@
 
 const timeline = [
   {
-    year: "1987",
-    title: "First Performance",
-    desc: "The original Freak Circus performance. Records suggest this was a real circus that existed before the game narrative. The date appears in medical files (Doctor's route) and is referenced by Harlequin in her 4th-playthrough dialogue.",
+    year: "1887",
+    title: "The Circus Opens",
+    desc: "First documented performance. Location unknown. No audience records survive. The founding date appears in recovered posters and environmental details across all routes.",
   },
   {
-    year: "1994",
+    year: "1892",
+    title: "First Missing Child",
+    desc: "A child disappears during a performance. Parents report 'the clown smiled at us before it happened.' No body found. This event is referenced in Pierrot's dialogue fragments.",
+  },
+  {
+    year: "1903",
     title: "Mirror Hall Incident",
-    desc: "A documented event where the circus's mirror hall collapsed during a performance. This incident is referenced in Columbina's hallway — the mirrors in her route show reflections that should not exist. The community theory connects this to the 'Masks Hide The Same Face' theory.",
+    desc: "Seven performers enter the Mirror Hall. Only three exit. The other four are never seen again, but their reflections remain in the mirrors. The community connects this to the 'Masks Hide The Same Face' theory.",
   },
   {
-    year: "2003",
-    title: "Doctor Arrival",
-    desc: "The Doctor character appears in the circus's records. His medical files contain dates from 2003-2007, suggesting he was a real physician who became part of the circus. The 'Doctor Is The Observer' theory suggests he represents the developer consciousness.",
+    year: "1917",
+    title: "Doctor Arrives",
+    desc: "A traveling physician joins the circus. Medical records begin. His notes mention 'patients who don't remember their own names.' The 'Doctor Is The Observer' theory connects his awareness to the game's meta-narrative.",
   },
   {
-    year: "2015",
-    title: "Loop Begins",
-    desc: "The first documented loop iteration. The 'Timeline Reset Theory' suggests this is when the circus became a purgatorial loop. Environmental details across all routes reference 2015 as a baseline — flowers in Pierrot's garden, clock in the main hall, and Columbina's hallway architecture.",
+    year: "1945",
+    title: "Timeline Fracture",
+    desc: "Multiple sources report the circus 'disappearing' for 3 days. When it reappears, the performers are different ages. The calendar inside the circus reads 1887.",
   },
   {
-    year: "2024",
+    year: "1987",
     title: "White Room Event",
-    desc: "Referenced in patch notes 1.03 but never found in-game. The Doctor describes it in Scene 7 with disturbing accuracy. The 'White Room Is The Developer Room' theory suggests this is a debug space that became part of the narrative. The date 2024 matches the game's release year, suggesting meta-commentary.",
+    desc: "The White Room is discovered. A space with no walls, no ceiling, no floor. Only light. And a chair facing a mirror that shows nothing. Referenced in patch notes 1.03 and described by The Doctor in Scene 7.",
   },
   {
     year: "2026",
-    title: "Final Collapse",
-    desc: "The current timeline. The 'Circus Does Not Exist' theory suggests the player is the one keeping the circus running by continuing to play. The Corrupted Data ending's hex message — 'The show is over. The audience has left. Why are you still here?' — directly addresses the player in the present tense.",
+    title: "Current Routes",
+    desc: "Players experience the circus through multiple routes. Each route reveals different fragments. The 'Circus Does Not Exist' theory suggests the player is the one keeping the loop running. The complete picture remains unknown.",
   },
 ];
 
@@ -41,7 +46,7 @@ export default function CompleteTimeline() {
           Complete Freak Circus Timeline
         </h2>
         <p className="text-on-surface-variant text-sm mb-8">
-          Chronological history of the circus — from the first performance to the final collapse
+          Chronological history of the circus — from the first performance to the current routes
         </p>
 
         <div className="relative">

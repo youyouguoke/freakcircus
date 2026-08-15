@@ -1,9 +1,11 @@
 "use client";
 
+import { ENDINGS_CONFIRMED, ENDINGS_TOTAL, SINGLE_ROUTE_HOURS, TOTAL_COMPLETION_HOURS } from "@/lib/site-facts";
+
 const faqs = [
   {
     q: "How many endings are there in Freak Circus?",
-    a: "The community has confirmed 8 endings, with 6 additional endings under investigation or unverified. The exact total remains unknown as data miners continue to find references to unused endings in game files. The 8 confirmed endings are: Grand Finale, Smile For Me, Doctor's Note, Eternal Silence, Columbina's Truth, White Room, Corrupted Data, and Harlequin's Laughter.",
+    a: "The community has confirmed ${ENDINGS_CONFIRMED} endings: Grand Finale, Smile For Me, Doctor's Note, Eternal Silence, Columbina's Truth, Harlequin's Laughter, Fractured Ending, Medical Failure, Eternal Dance, and two additional variants under verification. Additionally, 3 endings remain unverified: White Room, Corrupted Data, and Null Route. Total documented: ${ENDINGS_TOTAL}.",
   },
   {
     q: "What is the true ending of Freak Circus?",
@@ -71,11 +73,11 @@ const faqs = [
   },
   {
     q: "Are there secret endings?",
-    a: "Yes, three confirmed secret endings: Eternal Silence (Pierrot), The Doctor's Note (The Doctor), and Columbina's Truth (Columbina). Harlequin's Fractured Ending is also considered secret by some community members. Additionally, Corrupted Data and White Room may be secret endings that have not been legitimately unlocked.",
+    a: "Yes, confirmed secret endings include: Eternal Silence (Pierrot), The Doctor's Note (The Doctor), Columbina's Truth (Columbina), and Fractured Ending (Harlequin). Additionally, Corrupted Data, White Room, and Null Route remain unverified.",
   },
   {
     q: "How long does it take to get all endings?",
-    a: "A single playthrough takes 2-3 hours. Getting all confirmed endings requires at least 4 playthroughs due to replay dependencies. Columbina's Truth alone requires 3 perfect loops, each taking 2+ hours. The total time to see all 8 confirmed endings is estimated at 15-20 hours. Unverified endings may require additional time.",
+    a: "A single route takes ${SINGLE_ROUTE_HOURS}. Getting all ${ENDINGS_CONFIRMED} confirmed endings requires multiple playthroughs due to replay dependencies. Columbina's Truth alone requires 3 perfect loops, each taking 4+ hours. The total time to see all confirmed endings is estimated at ${TOTAL_COMPLETION_HOURS}. Unverified endings may require additional time.",
   },
   {
     q: "What is the ending order?",
@@ -83,7 +85,7 @@ const faqs = [
   },
   {
     q: "Which ending should I get first?",
-    a: "New players should start with The Grand Finale (Harlequin route) or Smile For Me (Pierrot route). These are canon endings with no special requirements and provide the foundational narrative. Avoid secret endings on your first playthrough — they contain spoilers that diminish the impact of the standard endings.",
+    a: "New players should start with Grand Finale (complete Harlequin's route with standard choices) or Smile For Me (accept Pierrot's offer in the garden scene). These are canon endings with no special requirements. Avoid secret endings on your first playthrough.",
   },
   {
     q: "What is the easiest ending?",
@@ -99,7 +101,7 @@ const faqs = [
   },
   {
     q: "What happens after all endings?",
-    a: "After completing all 8 confirmed endings, a hidden post-credits scene plays. The scene shows all four characters in a single room, discussing the player in third person. This breaks the fourth wall and suggests the characters are aware of being in a game. The scene only plays once and cannot be re-watched.",
+    a: "After completing all ${ENDINGS_CONFIRMED} confirmed endings, a hidden post-credits scene plays. The scene shows all four characters in a single room, discussing the player in third person. This breaks the fourth wall and suggests the characters are aware of being in a game. The scene only plays once and cannot be re-watched.",
   },
   {
     q: "Can you skip endings?",

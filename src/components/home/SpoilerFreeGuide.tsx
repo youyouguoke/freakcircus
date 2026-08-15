@@ -16,14 +16,14 @@ export default function SpoilerFreeGuide() {
                 Start Here Without Spoilers
               </h2>
               <p className="text-on-surface-variant text-sm mb-6 leading-relaxed">
-                New to The Freak Circus? This spoiler-free beginner guide covers what the game is, which route to play first, how long it takes, and what to expect — without revealing any story details, ending conditions, or hidden content.
+                New to The Freak Circus? This quick-start guide covers what the game is, which route to play first, how long it takes, and what to expect — without revealing story details or ending conditions. For detailed guides and endings, explore the archive after your first playthrough.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link
-                  href="/"
+                  href="/characters/pierrot"
                   className="px-6 py-3 border border-primary text-primary hover:bg-primary hover:text-surface transition-colors font-[JetBrains_Mono] text-sm uppercase"
                 >
-                  Beginner Guide →
+                  Start With Pierrot →
                 </Link>
                 <Link
                   href="/characters"
@@ -32,6 +32,9 @@ export default function SpoilerFreeGuide() {
                   Meet The Cast
                 </Link>
               </div>
+              <p className="text-on-surface-variant text-xs mt-4 opacity-60">
+                Note: The rest of this archive contains full spoilers. We recommend completing at least one route before exploring further.
+              </p>
             </div>
             <div className="md:w-64 shrink-0">
               <div className="space-y-3">

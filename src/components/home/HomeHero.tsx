@@ -15,19 +15,16 @@ export default function HomeHero() {
         <div className="absolute inset-0 bg-gradient-to-r from-surface via-surface/80 to-transparent" />
       </div>
       <div className="max-w-6xl mx-auto w-full relative z-10">
-        <h1 className="font-[Creepster] text-5xl md:text-7xl lg:text-8xl text-primary mb-4 leading-none">
-          YOU STILL<br />
-          DON'T<br />
-          UNDERSTAND<br />
-          THE ENDING
+        <h1 className="font-[Epilogue] text-4xl md:text-5xl lg:text-6xl font-extrabold text-foreground mb-3 leading-tight">
+          The Freak Circus Guide, Endings, Characters & Hidden Lore Archive
         </h1>
 
-        <h2 className="sr-only">
-          The Freak Circus Guide, Endings, Characters & Hidden Lore Archive
+        <h2 className="font-[Creepster] text-3xl md:text-5xl text-primary mb-6 leading-none">
+          YOU STILL DON&apos;T UNDERSTAND THE ENDING
         </h2>
 
         <h3 className="font-[Epilogue] text-xl md:text-2xl text-foreground mb-2">
-          The Ultimate The Freak Circus Archive
+          The Ultimate Fan Archive
         </h3>
         <p className="text-on-surface-variant text-sm mb-6 max-w-xl">
           Characters, Endings, Walkthroughs, Lore, Theories, Hidden Routes, and Community Discoveries.
@@ -40,7 +37,7 @@ export default function HomeHero() {
         <div className="bg-surface-container border border-blood/30 p-4 mb-8 max-w-lg">
           <div className="font-[JetBrains_Mono] text-xs text-blood mb-1">CORRUPTED_ENTRY</div>
           <div className="text-on-surface-variant text-sm italic">
-            "The Doctor appears before his route unlocks."
+            &ldquo;The Doctor appears before his route unlocks.&rdquo;
           </div>
         </div>
 

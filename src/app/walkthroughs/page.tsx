@@ -2,7 +2,9 @@ import { Metadata } from "next";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import JsonLd from "@/components/JsonLd";
+import ContinueExploring from "@/components/ContinueExploring";
 import Link from "next/link";
+import { ENDINGS_SUMMARY } from "@/lib/site-facts";
 
 export const metadata: Metadata = {
   title: "Freak Circus Walkthrough Hub | Day-by-Day Guides, Routes & Endings",
@@ -102,13 +104,13 @@ export default function WalkthroughsPage() {
             },
             {
               title: "Route Guides",
-              desc: "Pierrot, Doctor, Harlequin & Secret routes",
+              desc: "Pierrot, Doctor, Harlequin, Columbina & Secret routes",
               href: "#route-guides",
               icon: "route",
             },
             {
               title: "Ending Guides",
-              desc: "Good, Bad, True & Secret endings",
+              desc: "Grand Finale, Medical Failure, True & Secret endings",
               href: "#ending-guides",
               icon: "flag",
             },
@@ -176,6 +178,7 @@ export default function WalkthroughsPage() {
                 events: ["Relationship Branches", "Hidden Events", "Ending Flags"],
                 href: "/day-3",
                 cta: "Continue →",
+                note: "Based on community findings — may not reflect final game content",
               },
             ].map((d) => (
               <Link
@@ -228,6 +231,9 @@ export default function WalkthroughsPage() {
                   <span className="text-primary font-mono text-xs uppercase hover:underline">
                     {d.cta}
                   </span>
+                  {d.note && (
+                    <p className="text-on-surface/40 text-[10px] mt-2 font-mono">{d.note}</p>
+                  )}
                 </div>
               </Link>
             ))}
@@ -265,10 +271,16 @@ export default function WalkthroughsPage() {
                 difficulty: "Medium",
               },
               {
-                name: "Secret Route",
-                desc: "Null route. Corrupted files & unused endings.",
+                name: "Columbina Route",
+                desc: "Ballerina. Three-loop perfection & memory fragments.",
+                href: "/characters/columbina#endings",
+                difficulty: "Very Hard",
+              },
+              {
+                name: "Null Route (Unverified)",
+                desc: "Datamined branch with no characters. May not be a real ending.",
                 href: "/walkthroughs/null-route",
-                difficulty: "Extreme",
+                difficulty: "Unknown",
               },
             ].map((route) => (
               <Link
@@ -301,16 +313,16 @@ export default function WalkthroughsPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
-                name: "Good Ending",
-                desc: "Standard completion. Available on first playthrough.",
+                name: "Grand Finale (Canon)",
+                desc: "Harlequin route. Standard completion on first playthrough.",
                 href: "/endings/the-grand-finale",
-                req: "Any route completion",
+                req: "Complete Harlequin route",
               },
               {
-                name: "Bad Ending",
-                desc: "Fail states & early deaths. Multiple variations.",
-                href: "/endings",
-                req: "Miss key choices",
+                name: "Medical Failure (Standard)",
+                desc: "Doctor route without collecting all medical files.",
+                href: "/characters/doctor#endings",
+                req: "Incomplete medical files",
               },
               {
                 name: "True Ending",
@@ -370,6 +382,47 @@ export default function WalkthroughsPage() {
                 <p className="text-on-surface/50 text-xs">{item.desc}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+      {/* Essential Guides */}
+      <section className="py-16 px-4 md:px-16 border-t border-outline/10">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex items-center gap-3 mb-10">
+            <h2 className="font-display text-2xl md:text-3xl text-primary uppercase tracking-widest">
+              Essential Guides
+            </h2>
+            <span className="text-primary">★★★★★</span>
+          </div>
+          <div className="grid md:grid-cols-2 gap-6">
+            <Link
+              href="/walkthroughs/all-endings-guide"
+              className="glass-card p-6 hover:border-primary transition-colors group"
+            >
+              <h3 className="font-display text-xl text-on-surface mb-2 group-hover:text-primary transition-colors">
+                All Endings Guide
+              </h3>
+              <p className="text-on-surface/60 text-sm mb-3">
+                Step-by-step unlock conditions for every confirmed ending. Covers Grand Finale, Smile For Me, Doctor&apos;s Note, Eternal Silence, Columbina&apos;s Truth, and more.
+              </p>
+              <span className="font-mono text-[9px] text-secondary uppercase tracking-widest">
+                {ENDINGS_SUMMARY}
+              </span>
+            </Link>
+            <Link
+              href="/walkthroughs/save-guide"
+              className="glass-card p-6 hover:border-primary transition-colors group"
+            >
+              <h3 className="font-display text-xl text-on-surface mb-2 group-hover:text-primary transition-colors">
+                Save Guide
+              </h3>
+              <p className="text-on-surface/60 text-sm mb-3">
+                Best save points for every route, hidden counter mechanics at offset 0x4A20, save file management, and tips for multiple playthroughs.
+              </p>
+              <span className="font-mono text-[9px] text-secondary uppercase tracking-widest">
+                10 Critical Save Points · Hidden Counter · Multi-Playthrough
+              </span>
+            </Link>
           </div>
         </div>
       </section>
@@ -441,6 +494,7 @@ export default function WalkthroughsPage() {
         </div>
       </section>
 
+      <ContinueExploring />
       <Footer />
       <JsonLd />
     </main>

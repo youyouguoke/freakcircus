@@ -11,7 +11,7 @@ export default function EndingOverview() {
         <div className="space-y-6 text-on-surface-variant text-sm">
           <div>
             <h3 className="font-bold text-foreground mb-2">How many endings exist?</h3>
-            <p>The community has confirmed 8 endings across all character routes, with 6 additional endings under investigation or unverified. The exact total remains unknown — data miners continue to find references to unused endings in game files, and the community suspects there may be endings that require specific combinations of previous completions to unlock.</p>
+            <p>The community has confirmed 11 endings across all character routes, with 3 unverified endings (White Room, Corrupted Data, Null Route). Total documented: 14.</p>
           </div>
 
           <div>

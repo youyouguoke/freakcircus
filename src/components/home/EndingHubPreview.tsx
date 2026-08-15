@@ -7,7 +7,7 @@ const endings = [
     name: "Grand Finale",
     type: "Standard",
     difficulty: "Normal",
-    desc: "The default ending most players see on first playthrough. Unlocks by completing any main route without special conditions.",
+    desc: "The default ending most players see on first playthrough. Complete the Harlequin route with standard dialogue choices.",
     href: "/endings",
   },
   {

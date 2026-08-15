@@ -7,15 +7,15 @@ const categories = [
     title: "Characters",
     items: [
       { name: "Pierrot", href: "/characters/pierrot" },
-      { name: "Harlequin", href: "/characters" },
-      { name: "The Doctor", href: "/characters" },
-      { name: "Columbina", href: "/characters" },
+      { name: "Harlequin", href: "/characters/harlequin" },
+      { name: "The Doctor", href: "/characters/doctor" },
+      { name: "Columbina", href: "/characters/columbina" },
     ],
   },
   {
     title: "Endings",
     items: [
-      { name: "Grand Finale", href: "/endings/grand-finale" },
+      { name: "Grand Finale", href: "/endings/the-grand-finale" },
       { name: "Eternal Silence", href: "/endings/eternal-silence" },
       { name: "Doctor's Note", href: "/endings/doctors-note" },
       { name: "Columbina's Truth", href: "/endings/columbinas-truth" },

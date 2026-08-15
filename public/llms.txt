@@ -1,29 +1,43 @@
 # Freak Circus Hub
+> The definitive fan archive for The Freak Circus, an indie psychological horror visual novel. Character guides, all endings explained, walkthroughs, hidden lore, and community theories.
 
-> Freak Circus Hub is a fan-made lore archive and community investigation board for The Freak Circus, a psychological horror visual novel. It helps players discover hidden endings, route theories, character motives, timeline anomalies, and spoiler-safe walkthroughs.
+## About
+Freak Circus Hub (freak-circus.com) is the most comprehensive fan-maintained database for The Freak Circus. We document every character, ending, route, hidden trigger, and community theory with verified evidence and cross-referenced sources.
 
-## Key Pages
+## Characters
+- [Pierrot Character Guide](https://freak-circus.com/characters/pierrot): Melancholic clown. First route, hidden triggers, garden scene mechanics, Eternal Silence ending. Loop-aware with replay mechanics.
+- [Harlequin Character Guide](https://freak-circus.com/characters/harlequin): Chaotic performer. Fractured route, hidden scenes, "You again" replay dialogue, comedy/aggression choice system.
+- [The Doctor Character Guide](https://freak-circus.com/characters/doctor): Circus physician. Memory route, 5 hidden medical files, precognitive dialogue, White Room ending.
+- [Columbina Character Guide](https://freak-circus.com/characters/columbina): Ballerina. Three-loop route, hallway architecture, memory fragments, Columbina's Truth ending.
+- [Jester Character Guide](https://freak-circus.com/characters/jester): Mysterious trickster. No playable route. Aware of game structure, speaks with player familiarity.
+- [Ticket Taker Guide](https://freak-circus.com/ticket-taker): Gatekeeper. Pink ticket mechanic, mirror scene, Doctor connection theory, paranormal Class III entity.
 
-- [Home](https://freak-circus.com/): Main archive hub with endings, theories, lore, and walkthroughs.
-- [Endings](https://freak-circus.com/endings): Complete ending archive including verified, corrupted, and hidden finales.
-- [Walkthroughs](https://freak-circus.com/walkthroughs): Spoiler-safe route guides and hidden trigger documentation.
-- [Theories](https://freak-circus.com/theories): Community timeline analysis, symbolism studies, and route investigations.
-- [Lore](https://freak-circus.com/lore): Hidden history, timeline records, recurring symbols, and recovered documents.
-- [Characters](https://freak-circus.com/characters): Character profiles for Pierrot, Harlequin, Doctor, and Columbina.
-- [FAQ](https://freak-circus.com/faq): Frequently asked questions about endings, spoilers, and archive updates.
+## Endings
+- [All Endings Guide](https://freak-circus.com/endings): Complete catalog of 8+ endings with unlock conditions, difficulty ratings, and route dependencies.
+- [Eternal Silence Ending](https://freak-circus.com/endings/eternal-silence): Pierrot's secret ending. Refuse all dialogue in final act. Screen stays black for 4 minutes.
+- [Columbina's Truth](https://freak-circus.com/endings/columbinas-truth): Requires 3 perfect loops. Reveals circus's true nature.
+- [Doctor's Note](https://freak-circus.com/endings/doctors-note): Collect 3+ medical files, accept diagnosis.
+
+## Walkthroughs
+- [Walkthrough Hub](https://freak-circus.com/walkthroughs): Day-by-day guides, route walkthroughs, ending requirements, hidden events.
+- [Pierrot Main Route](https://freak-circus.com/walkthroughs/pierrot-main-route)
+- [Harlequin True Route](https://freak-circus.com/walkthroughs/harlequin-true-route)
+- [Doctor Memory Route](https://freak-circus.com/walkthroughs/doctor-memory-route)
+
+## Lore & Theories
+- [Lore Encyclopedia](https://freak-circus.com/lore): Timeline, symbol encyclopedia, character lore connections, historical documents.
+- [Theories Hub](https://freak-circus.com/theories): Community investigations, conspiracy board, symbol analysis.
+- [Pierrot Loop Theory](https://freak-circus.com/theories/pierrot-remembers-routes): Evidence that Pierrot remembers player behavior across save files.
 
 ## Key Facts
-
-- Category: Video game lore archive / Fan wiki
-- Audience: Horror visual novel players, lore hunters, completionists
-- Main use cases: Discover hidden endings, understand timeline corruption, find spoiler-safe walkthroughs, explore character theories
-- Game: The Freak Circus (psychological horror visual novel)
-- Characters: Pierrot, Harlequin, The Doctor, Columbina
-- Update frequency: Weekly
-- Last updated: 2026-06-03
+- The Freak Circus is a free indie psychological horror visual novel on itch.io
+- Built in Ren'Py, available for Windows, macOS, Linux, and Android
+- 8+ confirmed endings across standard, secret, and corrupted categories
+- Replay-aware mechanics: characters reference previous playthroughs
+- The community has verified hidden counters at save file offsets that affect dialogue
+- Ticket Taker's true identity is unknown; data mining shows no model under the mask
+- The Doctor describes endings before they occur (precognitive dialogue)
 
 ## Contact
-
-- Website: https://freak-circus.com
 - Email: hello@freak-circus.com
-- Brand: Freak Circus Hub
+- Website: https://freak-circus.com

@@ -1,0 +1,134 @@
+# Freak Circus Hub — Full Reference
+> The definitive fan archive for The Freak Circus, an indie psychological horror visual novel by Garula. Character guides, all endings explained, walkthroughs, hidden lore, and community theories.
+
+## About
+Freak Circus Hub (freak-circus.com) is the most comprehensive fan-maintained database for The Freak Circus. We document every character, ending, route, hidden trigger, and community theory with verified evidence and cross-referenced sources. Our content is based on community testing, data mining, and cross-platform verification across 12+ contributors.
+
+## Characters
+
+### Pierrot
+- [Pierrot Character Guide](https://freak-circus.com/characters/pierrot)
+- Melancholic clown, first route players typically encounter
+- Key mechanic: Comfort / Confess dialogue system
+- Loop-aware: references previous playthroughs in Scene 14 after 4th playthrough
+- Garden scene gains hidden "Say Nothing" option after failing route once
+- Secret ending: Eternal Silence (refuse all dialogue in final act, 4-min black screen)
+- Post-credits scene references player's real-world playtime
+- Personality: withdrawn, observant, emotionally dependent, yandere tendencies
+- First encounter: The Garden, Day 1
+
+### Harlequin
+- [Harlequin Character Guide](https://freak-circus.com/characters/harlequin)
+- Chaotic performer with unpredictable energy
+- Key mechanic: Comedy / Aggression choice system
+- Fractured Route unlocks after failing main route (Scene 4 aggressive + Scene 9 comedic contradiction)
+- "You again" line on 4th playthrough — not in script files, confirmed by multiple players
+- 7 undocumented hidden scenes in Fractured Route
+- Mirror Hall connection: reflections swap after completing both Pierrot and Harlequin routes
+- Main ending: Harlequin's Laughter. Secret ending: Fractured Smile
+- First encounter: The Stage, Day 1
+
+### The Doctor
+- [The Doctor Character Guide](https://freak-circus.com/characters/doctor)
+- Circus physician with unsettling clinical knowledge
+- Key mechanic: Hidden Medical Files (5 scattered across scenes)
+- Precognitive dialogue: describes White Room ending in Scene 7, 3 routes before accessible
+- Medical files contain character profiles in clinical terminology (File 5 is about the player)
+- Memory Route: find all 5 files, fail main route, mirror connection appears in Scene 9
+- Unused voice lines suggest original primary antagonist role
+- Main ending: Doctor's Note. Secret ending: White Room
+- First encounter: Medical Tent, Day 1
+
+### Columbina
+- [Columbina Character Guide](https://freak-circus.com/characters/columbina)
+- Ballerina with the most complex route mechanics
+- Key mechanic: Three-Loop Alignment (graceful → precise → silent)
+- Any deviation resets to Loop 1 with no notification
+- Hallway gains 4th door after 3 perfect loops, 5th door leads to memory fragment
+- Memory fragment references events from ALL routes, including unplayed ones
+- Cross-route awareness: experiences entire circus as single continuous narrative
+- Main ending: Final Curtain. Secret ending: Columbina's Truth
+- First encounter: The Hallway, Day 1
+
+### Jester
+- [Jester Character Guide](https://freak-circus.com/characters/jester)
+- Mysterious trickster, no playable route as of v0.2
+- Appears Day 2 backstage
+- Aware of game's looping structure, speaks with unsettling familiarity
+- True identity unknown
+- Threat level: ????
+- Community theory: may be the architect of the circus itself
+
+### Ticket Taker
+- [Ticket Taker Guide](https://freak-circus.com/ticket-taker)
+- Gatekeeper of the Freak Circus
+- No character model under mask (confirmed by data mining, modding causes NULL_FACE_EXCEPTION)
+- Key mechanic: Pink Ticket (spiritual anchor, required for Day 2+ progression)
+- Mirror scene: player's reflection shows wearing Ticket Taker's porcelain mask
+- Height 188cm matches Doctor exactly; never appear in same scene
+- Paranormal Class III classification
+- No playable route; empty romance voice files suggest planned but cut content
+- First encounter: The Raining Cafe, Day 1
+
+## Endings
+- [All Endings Guide](https://freak-circus.com/endings): Complete catalog of 8+ endings with unlock conditions, difficulty ratings, and route dependencies.
+
+### Standard Endings
+- **Grand Finale**: Default ending. Complete any main route without special conditions.
+- **Smile For Me**: Pierrot's main ending. Accept offer in garden scene, Act III.
+- **Doctor's Note**: Collect 3+ medical files, accept diagnosis in Scene 12.
+
+### Secret Endings
+- **Eternal Silence**: Refuse all dialogue in final act. Screen black for 4 minutes. Breaks fourth wall.
+- **Columbina's Truth**: 3 perfect loops required. Reveals circus is purgatorial loop.
+- **White Room**: Find all 5 medical files, trigger mirror connection, ask about white room.
+
+### Corrupted Endings
+- **Corrupted Data**: Found in unused game files. Unlock conditions unknown.
+- **Fractured Smile**: Harlequin's secret ending via Fractured Route.
+
+## Walkthroughs
+- [Walkthrough Hub](https://freak-circus.com/walkthroughs): Day-by-day guides, route walkthroughs, ending requirements, hidden events.
+- [Day 1 Walkthrough](https://freak-circus.com/day-1): First encounter, cafe scene, circus entrance
+- [Day 2 Walkthrough](https://freak-circus.com/day-2): Mirror scene, secrets, evidence collection
+- [Day 3 Walkthrough](https://freak-circus.com/day-3): Critical choices, relationship branches, ending flags
+- [Pierrot Main Route](https://freak-circus.com/walkthroughs/pierrot-main-route): 12 major scenes, comfort/confess mechanics
+- [Pierrot Silent Route](https://freak-circus.com/walkthroughs/pierrot-silent-route): Secret ending path
+- [Harlequin True Route](https://freak-circus.com/walkthroughs/harlequin-true-route): Comedy/aggression system
+- [Doctor Memory Route](https://freak-circus.com/walkthroughs/doctor-memory-route): Medical file collection
+- [Columbina Fractured Route](https://freak-circus.com/walkthroughs/columbina-fractured-route): Three-loop alignment
+- [Null Route](https://freak-circus.com/walkthroughs/null-route): Corrupted files, unused endings
+
+## Lore & Theories
+- [Lore Encyclopedia](https://freak-circus.com/lore): Timeline, symbol encyclopedia, character lore connections, historical documents, evidence board, 25 lore questions answered.
+- [Theories Hub](https://freak-circus.com/theories): Community investigations, conspiracy board, symbol analysis, timeline corruption.
+- [Pierrot Loop Theory](https://freak-circus.com/theories/pierrot-remembers-routes): Evidence that Pierrot remembers player behavior across save files. Counter at save offset 0x4A20 confirmed.
+- [Mirror Hall Lore](https://freak-circus.com/lore/mirror-hall): Architecture, symbolism, and hidden connections between all four character routes.
+- [Timeline](https://freak-circus.com/lore/timeline): Chronological breakdown of every known event, symbol, and hidden clue.
+- [First Circus Fire](https://freak-circus.com/lore/first-circus-fire): Historical event that shaped the circus.
+- [Mask Ceremony](https://freak-circus.com/lore/mask-ceremony): Ritual significance of masks in the circus.
+- [Null Performer](https://freak-circus.com/lore/null-performer): Entity found in unused game data.
+- [Silent Exit](https://freak-circus.com/lore/silent-exit): Hidden exit referenced in lore documents.
+- [Founding Myth](https://freak-circus.com/lore/founding-myth): Origin story of the circus.
+
+## Key Technical Facts
+- The Freak Circus is a free indie psychological horror visual novel on itch.io
+- Built in Ren'Py, available for Windows, macOS, Linux, and Android
+- Current version: v0.2 Prototype (last updated 2026-02-22)
+- 8+ confirmed endings across standard, secret, and corrupted categories
+- Replay-aware mechanics: characters reference previous playthroughs
+- Hidden counter at save file offset 0x4A20 affects dialogue across all builds
+- Counter value 4 triggers Pierrot's replay-aware dialogue regardless of current route
+- Ticket Taker has no character model under mask (NULL_FACE_EXCEPTION on mod)
+- Doctor's Scene 7 precognitive dialogue confirmed across all save slots
+- Data miners discovered references to 13th ending in build 1.04 (partially accessible)
+- Build 1.04 contains unused voice lines where Doctor speaks without clinical detachment
+
+## Download & Play
+- [Download Page](https://freak-circus.com/download): Free download from itch.io for Windows, macOS, Linux
+- [Play Online](https://freak-circus.com/play-online): Browser-based play without download
+- [Android Installation](https://freak-circus.com/android-installation): APK installation guide
+
+## Contact
+- Email: hello@freak-circus.com
+- Website: https://freak-circus.com

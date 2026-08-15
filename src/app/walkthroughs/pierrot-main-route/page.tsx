@@ -40,7 +40,7 @@ export default function PierrotMainRoutePage() {
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Requirements</h2>
               <ul className="space-y-2 text-on-surface-variant text-sm">
                 <li>• No prerequisites — available from the start of the game</li>
-                <li>• Estimated playtime: 2-3 hours</li>
+                <li>• Estimated playtime: 4-6 hours</li>
                 <li>• Difficulty: Beginner</li>
                 <li>• Ending: Smile For Me (Good Ending)</li>
               </ul>

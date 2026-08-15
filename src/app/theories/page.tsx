@@ -18,6 +18,7 @@ import TheoryMatrix from "@/components/theories/TheoryMatrix";
 import CompleteTimeline from "@/components/theories/CompleteTimeline";
 import TheoryEndingsLink from "@/components/theories/TheoryEndingsLink";
 import JsonLd from "@/components/JsonLd";
+import ContinueExploring from "@/components/ContinueExploring";
 
 export const metadata: Metadata = {
   title: "Freak Circus Theories, Timeline Analysis & Hidden Lore | Lore Guide & Fan Theories",
@@ -76,6 +77,7 @@ export default function TheoriesPage() {
       <SubmitInvestigation />
       <TheoriesFAQ />
       <TheoriesFooter />
+      <ContinueExploring />
       <Footer />
       <JsonLd />
     </main>

@@ -11,6 +11,7 @@ import LoreQuestions from "@/components/lore/LoreQuestions";
 import LoreNavigationHub from "@/components/lore/LoreNavigationHub";
 import ArchiveIndex from "@/components/home/ArchiveIndex";
 import JsonLd from "@/components/JsonLd";
+import ContinueExploring from "@/components/ContinueExploring";
 
 export const metadata: Metadata = {
   title: "The Freak Circus Lore Encyclopedia — History, Symbols, Timeline & Hidden Meanings",
@@ -74,7 +75,8 @@ export default function LorePage() {
         <LoreQuestions />
         <LoreNavigationHub />
         <ArchiveIndex />
-        <Footer />
+        <ContinueExploring />
+      <Footer />
         <JsonLd />
       </div>
     </main>

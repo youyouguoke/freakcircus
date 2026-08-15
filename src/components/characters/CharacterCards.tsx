@@ -1,10 +1,11 @@
 "use client";
 
 import Link from "next/link";
+import { CHARACTERS_COUNT } from "@/lib/site-facts";
 
 const characters = [
   {
-    title: "The Jester",
+    title: "The Melancholic Clown",
     name: "Pierrot",
     role: "Melancholic Clown / Route Guide",
     image: "/Pierrot.jpg",
@@ -17,7 +18,7 @@ const characters = [
     endings: [
       { name: "Smile For Me", type: "Standard", desc: "Accept Pierrot's offer in the garden scene during Act III." },
       { name: "Eternal Silence", type: "Secret", desc: "Refuse all dialogue for 3 consecutive scenes. Screen stays black for 4 minutes." },
-      { name: "Null Route", type: "Corrupted", desc: "Found in unused files. No legitimate unlock path known." },
+      { name: "Null Route", type: "Unverified", desc: "Found in unused files. Associated with Pierrot route by community speculation — not confirmed by developer." },
     ],
     route: "Pierrot's route introduces the comfort/confess dialogue system. Early choices appear binary but create branching paths that only reveal themselves in Act II. The silent route requires refusing all dialogue for three consecutive scenes — not skipping, but actively refusing. This breaks the narrative contract and triggers unique post-credits narration.",
     relationship: "Pierrot's connection to Columbina is the most theorized in the community. In the Eternal Silence ending, his narration references her hallway — a location he should not know about. Unused voice lines contain a hidden conversation between them that never appears in gameplay.",
@@ -58,7 +59,7 @@ const characters = [
     background: "The Doctor operates from a medical tent that expands into a laboratory in later scenes. His clinical demeanor masks an increasingly unsettling awareness of the game's mechanics. The community has documented his precognitive dialogue across 12 different scenes, with accuracy rates that exceed random chance by significant margins.",
     endings: [
       { name: "Doctor's Note", type: "Secret", desc: "Find all 5 hidden medical files before the final encounter." },
-      { name: "White Room", type: "False", desc: "Referenced in Scene 7 but never officially found." },
+      { name: "White Room", type: "Unverified", desc: "Referenced in Scene 7 but never officially found. Associated with Doctor route by community speculation — not confirmed." },
       { name: "Medical Failure", type: "Standard", desc: "Fail to collect any medical files. The Doctor abandons the patient." },
     ],
     route: "The Doctor's route requires finding 5 hidden medical files scattered across scenes: File 1 in Scene 2 (drawer), File 2 in Scene 4 (cabinet), File 3 in Scene 6 (floorboard), File 4 in Scene 8 (bookshelf), File 5 in Scene 10 (desk). Each file contains a character profile written in clinical terminology. File 4 (The Doctor himself) is blank except for: 'Subject is aware of observation.'",
@@ -79,7 +80,7 @@ const characters = [
     background: "Columbina dances in a hallway that gains architecture as the player progresses. Her gentle demeanor masks the most disturbing revelations about the circus's true nature. The community has mapped her hallway changes across 12 different loop states, documenting door spawn conditions and mirror placement patterns.",
     endings: [
       { name: "Columbina's Truth", type: "Secret", desc: "Perfect alignment across three loops. The fourth door reveals all." },
-      { name: "Corrupted Data", type: "Corrupted", desc: "Found only in modified files. Screen displays raw hex before crash." },
+      { name: "Corrupted Data", type: "Unverified", desc: "Found only in modified files. Associated with Columbina route by community speculation — not confirmed." },
       { name: "Eternal Dance", type: "Standard", desc: "Complete any single loop without perfect alignment." },
     ],
     route: "Columbina's three-loop storyline requires perfect alignment of all dialogue choices — any deviation causes a complete reset to Loop 1, Scene 1. Her hallway gains a fourth door after three loops, containing a memory fragment that reveals the circus's true nature. Memory fragments reference events from other routes that the player never selected, suggesting cross-route awareness.",
@@ -139,7 +140,7 @@ export default function CharacterCards() {
           Freak Circus Characters
         </h2>
         <p className="text-on-surface-variant text-sm mb-8">
-          The five central figures of The Freak Circus — Pierrot the melancholic clown, Harlequin the chaotic performer, Jester the trickster, The Doctor the circus physician, Columbina the ballerina, and the enigmatic Ticket Taker who guards the threshold. Each character has their own route, hidden triggers, disturbing revelations, and multiple endings.
+          The {CHARACTERS_COUNT} central figures of The Freak Circus — Pierrot the melancholic clown, Harlequin the chaotic performer, Jester the trickster, The Doctor the circus physician, Columbina the ballerina, and the enigmatic Ticket Taker who guards the threshold. Each character has their own route, hidden triggers, disturbing revelations, and multiple endings.
         </p>
         <div className="grid md:grid-cols-2 gap-8">
           {characters.map((char) => (

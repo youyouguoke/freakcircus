@@ -24,7 +24,7 @@ export default function LoreHero() {
 
         {/* Origin Year */}
         <div className="font-[JetBrains_Mono] text-sm text-primary/60 mb-4">
-          Origin Year 198?
+          Origin Year 1887
         </div>
 
         <h1 className="font-[Creepster] text-4xl md:text-6xl lg:text-7xl text-primary mb-2">

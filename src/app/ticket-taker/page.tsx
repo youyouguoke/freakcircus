@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import ContinueExploring from "@/components/ContinueExploring";
 import TicketTakerSchema from "@/components/TicketTakerSchema";
 
 export const metadata: Metadata = {
@@ -1087,6 +1088,7 @@ export default function TicketTakerPage() {
         </section>
       </div>
 
+      <ContinueExploring />
       <Footer />
     </main>
   );

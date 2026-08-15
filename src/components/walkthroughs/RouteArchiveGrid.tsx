@@ -1,5 +1,7 @@
 "use client";
 
+import { SINGLE_ROUTE_HOURS } from "@/lib/site-facts";
+
 import Link from "next/link";
 
 const routes = [
@@ -10,7 +12,7 @@ const routes = [
     ending: "Good Ending",
     unlock: "Available from start — no prerequisites",
     summary: "The standard introduction to The Freak Circus. Complete standard dialogue choices to reach the Smile For Me ending. This route teaches the game's core mechanics without requiring replay awareness.",
-    playtime: "2-3 hours",
+    playtime: SINGLE_ROUTE_HOURS,
     theory: "Pierrot Loop Theory",
     href: "/walkthroughs/pierrot-main-route",
   },

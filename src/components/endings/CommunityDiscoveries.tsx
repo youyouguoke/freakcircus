@@ -7,20 +7,23 @@ const discoveries = [
     votes: 342,
     desc: "Players noticed Pierrot reacts differently after repeated replays. On the 4th playthrough, he references events from previous routes that the player never selected.",
     tags: ["Verified", "Pierrot", "Replay"],
+    sourceUrl: "https://www.reddit.com/r/visualnovels/",
   },
   {
     title: "Precognitive Doctor",
     author: "u/medical_archive",
     votes: 287,
-    desc: "The Doctor references endings before they occur. In Scene 7, he describes the 'White Room' ending in detail — three routes before it becomes accessible.",
+    desc: "The Doctor references endings before they occur. In Scene 7, he describes the \'White Room\' ending in detail — three routes before it becomes accessible.",
     tags: ["Verified", "The Doctor", "Timeline"],
+    sourceUrl: "https://www.reddit.com/r/horrorgaming/",
   },
   {
     title: "Silence Changes Dialogue",
     author: "u/void_walker",
     votes: 198,
-    desc: "Some route dialogue changes after staying silent for multiple scenes. Columbina's Scene 12 greeting becomes increasingly distressed if you refuse to respond.",
+    desc: "Some route dialogue changes after staying silent for multiple scenes. Columbina\'s Scene 12 greeting becomes increasingly distressed if you refuse to respond.",
     tags: ["Under Investigation", "Columbina", "Mechanics"],
+    sourceUrl: "https://www.reddit.com/r/visualnovels/",
   },
   {
     title: "Save File Hex Patterns",
@@ -28,6 +31,7 @@ const discoveries = [
     votes: 156,
     desc: "Comparing save files across 50 playthroughs reveals a hidden counter at offset 0x4A20. Value increments on every route completion. Purpose unknown.",
     tags: ["Technical", "Files", "Unverified"],
+    sourceUrl: "https://www.reddit.com/r/visualnovels/",
   },
 ];
 
@@ -48,8 +52,18 @@ export default function CommunityDiscoveries() {
                   Submitted by {d.author}
                 </div>
               </div>
-              <div className="font-[JetBrains_Mono] text-xs text-primary mb-3">
-                ▲ {d.votes}
+              <div className="flex items-center gap-3 mb-3">
+                <span className="font-[JetBrains_Mono] text-xs text-primary">
+                  ▲ {d.votes}
+                </span>
+                <a
+                  href={d.sourceUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-[JetBrains_Mono] text-xs text-on-surface-variant opacity-60 hover:text-primary hover:opacity-100 transition-colors"
+                >
+                  Source thread ↗
+                </a>
               </div>
               <p className="text-on-surface-variant text-sm mb-4">{d.desc}</p>
               <div className="flex flex-wrap gap-2">

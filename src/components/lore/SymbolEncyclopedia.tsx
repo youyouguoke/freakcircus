@@ -43,14 +43,6 @@ const symbols = [
     related: "Timeline Reset Theory, Doctor Created Circus",
     href: "/lore/clock-meaning",
   },
-  {
-    name: "Red Thread",
-    meaning: "A single red thread appears in the post-credits of Pierrot's Smile For Me ending. It represents the connection between the player and the circus — a thread that cannot be cut, only tangled.",
-    appearances: "Post-credits (Smile For Me), Pierrot's garden (Scene 2), Harlequin's ribbon (Scene 5), Columbina's bracelet (Scene 8)",
-    evidence: "The thread is visible in 4 different routes but only mentioned in dialogue once. Players report seeing it 'move' in the background of static scenes.",
-    related: "Pierrot Loop Theory, Timeline Reset Theory",
-    href: "/lore/red-thread-meaning",
-  },
 ];
 
 export default function SymbolEncyclopedia() {
