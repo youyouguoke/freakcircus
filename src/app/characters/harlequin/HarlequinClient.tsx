@@ -14,15 +14,15 @@ const profile = {
 };
 
 const endings = [
-  { name: "Harlequin\'s Laughter", type: "MAIN", desc: "Maintain comedic choices through Acts I-II, then select the aggressive option in Scene 9. Standard ending with chaotic energy." },
-  { name: "No confirmed ending yet", type: "TBD", desc: "Day 3 content will likely include Harlequin-specific endings." },
-  { name: "Fractured Route Ending", type: "SECRET", desc: "Choose aggressive in Scene 4, then comedic in Scene 9. This contradiction triggers 7 undocumented hidden scenes." },
+  { name: "Missing (Bad Ending)", type: "CONFIRMED", desc: "The only ending confirmed by name. Associated with Harlequin\'s route. Most players encounter this on their first playthrough." },
+  { name: "Open Ending (unnamed)", type: "UNCONFIRMED", desc: "Community reports suggest at least one open ending is tied to Harlequin\'s route. Name and exact conditions unknown." },
+  { name: "Day 3 Endings (planned)", type: "TBD", desc: "Day 3 content has not been released yet. Additional Harlequin endings are expected when it launches." },
 ];
 
 const hiddenTriggers = [
-  { title: "\'You Again\' Replay Dialogue", desc: "On the 4th playthrough, Harlequin looks directly at the screen and says \'You again.\' This line does not appear in the script files of any known build." },
-  { title: "Mirror Hall Cross-Route", desc: "After completing both Pierrot and Harlequin routes, the Mirror Hall scene changes. Harlequin\'s reflection appears in Pierrot\'s mirror, and vice versa." },
-  { title: "Scene 12 Soft-Lock Pattern", desc: "Harlequin\'s fractured route shares the same soft-lock pattern in Scene 12 as The Doctor\'s route, suggesting a hidden connection." },
+  { title: "Mirror Scene (Day 2)", desc: "The mirror scene in Day 2 is confirmed to exist and appears to be a key story moment. Community reports describe it as a turning point." },
+  { title: "Day 2 Tent Routes", desc: "Harlequin has tent-based content in Day 2 alongside other characters. Specific triggers and conditions are unverified." },
+  { title: "Columbina Legend Connection", desc: "The Columbina legend in Day 2 reveals the backstory behind Harlequin and Pierrot\'s rivalry. This is confirmed by multiple sources." },
 ];
 
 const personalityTraits = [

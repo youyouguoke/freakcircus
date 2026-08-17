@@ -11,23 +11,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/characters/pierrot", priority: 0.8, changeFrequency: "weekly" as const },
     { path: "/characters/harlequin", priority: 0.8, changeFrequency: "weekly" as const },
     { path: "/characters/doctor", priority: 0.8, changeFrequency: "weekly" as const },
-
     { path: "/characters/jester", priority: 0.8, changeFrequency: "weekly" as const },
     { path: "/characters/pierrot-route-guide", priority: 0.7, changeFrequency: "weekly" as const },
     { path: "/characters/pierrot-endings", priority: 0.7, changeFrequency: "weekly" as const },
     { path: "/endings", priority: 0.9, changeFrequency: "weekly" as const },
-    { path: "/endings/the-grand-finale", priority: 0.8, changeFrequency: "weekly" as const },
-    { path: "/endings/eternal-silence", priority: 0.8, changeFrequency: "weekly" as const },
-    { path: "/endings/doctors-note", priority: 0.8, changeFrequency: "weekly" as const },
-
-    { path: "/endings/corrupted-data", priority: 0.8, changeFrequency: "weekly" as const },
     { path: "/walkthroughs", priority: 0.9, changeFrequency: "weekly" as const },
     { path: "/walkthroughs/pierrot-main-route", priority: 0.8, changeFrequency: "weekly" as const },
-    { path: "/walkthroughs/pierrot-silent-route", priority: 0.8, changeFrequency: "weekly" as const },
     { path: "/walkthroughs/harlequin-true-route", priority: 0.8, changeFrequency: "weekly" as const },
-    { path: "/walkthroughs/doctor-memory-route", priority: 0.8, changeFrequency: "weekly" as const },
-
-    { path: "/walkthroughs/null-route", priority: 0.8, changeFrequency: "weekly" as const },
     { path: "/walkthroughs/all-endings-guide", priority: 0.8, changeFrequency: "weekly" as const },
     { path: "/walkthroughs/save-guide", priority: 0.7, changeFrequency: "monthly" as const },
     { path: "/ticket-taker", priority: 0.8, changeFrequency: "weekly" as const },

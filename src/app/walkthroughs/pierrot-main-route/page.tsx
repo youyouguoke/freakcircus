@@ -2,11 +2,12 @@ import { Metadata } from "next";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import UnverifiedBanner from "@/components/UnverifiedBanner";
 
 export const metadata: Metadata = {
-  title: "Pierrot Main Route Guide — Step-by-Step Walkthrough | Freak Circus Hub",
-  description: "Complete walkthrough for Pierrot's Main Route in The Freak Circus. Covers all dialogue choices, hidden triggers, and how to reach the Open Ending B (unnamed) ending. Beginner-friendly guide with no replay requirements.",
-  keywords: ["Pierrot route guide", "Pierrot main route", "The Freak Circus walkthrough", "Open Ending B (unnamed) ending", "beginner route"],
+  title: "Pierrot Route Guide — Community Walkthrough | Freak Circus Hub",
+  description: "Community guide for Pierrot's route in The Freak Circus. Covers Day 1 introduction, Day 2 development, and what the community has discovered about Pierrot's story path.",
+  keywords: ["Pierrot route guide", "Pierrot walkthrough", "The Freak Circus Pierrot"],
   alternates: {
     canonical: "https://freak-circus.com/walkthroughs/pierrot-main-route",
   },
@@ -18,84 +19,100 @@ export default function PierrotMainRoutePage() {
       <Navigation />
       <article className="py-16 px-4 md:px-16">
         <div className="max-w-4xl mx-auto">
-          <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant mb-4">
-            ROUTE_GUIDE // PIERROT_MAIN
+          <div className="font-mono text-xs text-on-surface-variant mb-4">
+            ROUTE_GUIDE // PIERROT
           </div>
-          <h1 className="font-[Creepster] text-4xl md:text-6xl text-primary mb-4">
-            Pierrot Main Route
+          <h1 className="font-display text-4xl md:text-6xl text-primary mb-4 uppercase">
+            Pierrot Route
           </h1>
           <p className="text-on-surface-variant text-lg mb-8">
-            The standard introduction to The Freak Circus. Complete standard dialogue choices to reach the Open Ending B (unnamed) ending.
+            The melancholic clown — one of the two main character routes in The Freak Circus.
           </p>
 
-          <div className="space-y-12">
+          <UnverifiedBanner level="medium" />
+
+          <div className="space-y-12 mt-8">
             <section>
-              <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Overview</h2>
+              <h2 className="font-display text-2xl font-bold text-foreground mb-4">Overview</h2>
               <p className="text-on-surface-variant text-sm">
-                Pierrot's Main Route is the recommended starting point for new players. It introduces the game's core mechanics — dialogue choices, relationship meters, and scene progression — without requiring replay awareness or hidden triggers. The route follows Pierrot's melancholic storyline through the circus, culminating in the Open Ending B (unnamed) ending.
+                Pierrot is introduced in Day 1 as a silent, melancholic figure. His route is one of the two
+                primary story paths in the game (the other being Harlequin). Day 2 deepens his character
+                through the tent routes and the Columbina legend, which reveals the backstory behind
+                Pierrot and Harlequin&apos;s rivalry.
               </p>
             </section>
 
             <section>
-              <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Requirements</h2>
-              <ul className="space-y-2 text-on-surface-variant text-sm">
-                <li>• No prerequisites — available from the start of the game</li>
-                <li>• Estimated playtime: 4-6 hours</li>
-                <li>• Difficulty: Beginner</li>
-                <li>• Ending: Open Ending B (unnamed) (Good Ending)</li>
+              <h2 className="font-display text-2xl font-bold text-foreground mb-4">What We Know (Verified)</h2>
+              <ul className="space-y-3 text-on-surface-variant text-sm">
+                <li className="flex items-start gap-2">
+                  <span className="text-green-500 mt-1">✓</span>
+                  <span>Pierrot is one of the two main characters introduced in Day 1</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-500 mt-1">✓</span>
+                  <span>He is described as a &quot;yandere&quot; character — obsessive and possessive</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-500 mt-1">✓</span>
+                  <span>Day 2 reveals the Columbina legend, which explains Pierrot and Harlequin&apos;s rivalry</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-500 mt-1">✓</span>
+                  <span>Multiple endings are associated with his route (specific names unconfirmed)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-500 mt-1">✓</span>
+                  <span>He appears alongside Harlequin in Day 1&apos;s story</span>
+                </li>
               </ul>
             </section>
 
             <section>
-              <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Step-by-Step Guide</h2>
-              <div className="space-y-6">
-                <div className="bg-surface-container border border-outline/20 p-4">
-                  <h3 className="font-bold text-foreground mb-2">Act I — The Garden</h3>
-                  <p className="text-on-surface-variant text-sm mb-2">Scene 1-4: Standard introduction scenes. Choose any dialogue options — no choices affect the ending at this stage.</p>
-                  <p className="text-on-surface-variant text-sm">Key moment: In Scene 3, Pierrot offers you a flower. Accepting or refusing both lead to the same outcome in the main route.</p>
-                </div>
-                <div className="bg-surface-container border border-outline/20 p-4">
-                  <h3 className="font-bold text-foreground mb-2">Act II — The Performance</h3>
-                  <p className="text-on-surface-variant text-sm mb-2">Scene 5-8: The main narrative develops. Continue selecting standard dialogue options.</p>
-                  <p className="text-on-surface-variant text-sm">Key moment: In Scene 7, Pierrot asks about your previous visit. This is foreshadowing for the Silent Route — in the main route, either answer is acceptable.</p>
-                </div>
-                <div className="bg-surface-container border border-outline/20 p-4">
-                  <h3 className="font-bold text-foreground mb-2">Act III — The Confession</h3>
-                  <p className="text-on-surface-variant text-sm mb-2">Scene 9-12: Pierrot reveals his true feelings. The dialogue choices here determine which ending you receive.</p>
-                  <p className="text-on-surface-variant text-sm">For the Open Ending B (unnamed) ending: Accept Pierrot's confession in Scene 11. Rejecting leads to a neutral ending, not the main route conclusion.</p>
-                </div>
+              <h2 className="font-display text-2xl font-bold text-foreground mb-4">Community Reports (Unverified)</h2>
+              <div className="glass-card p-6 border-l-4 border-l-yellow-500">
+                <p className="text-on-surface/60 text-sm mb-4">
+                  The following details are reported by community members but have not been independently verified.
+                  Specific dialogue choices, scene names, and mechanics may be inaccurate.
+                </p>
+                <ul className="space-y-2 text-on-surface/50 text-sm">
+                  <li>• Community members describe dialogue choices that affect relationship outcomes</li>
+                  <li>• Some players report &quot;comfort&quot; vs &quot;confess&quot; type choices in Day 1</li>
+                  <li>• Day 2 reportedly features tent-based scenes involving Pierrot</li>
+                  <li>• The exact number of decision points and branching paths is unknown</li>
+                </ul>
               </div>
             </section>
 
             <section>
-              <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Hidden Triggers</h2>
-              <p className="text-on-surface-variant text-sm mb-4">
-                The main route contains no hidden triggers, but it does contain foreshadowing for the Silent Route. In Scene 7, Pierrot's question about "previous visits" is the first hint that the game tracks replay history. Players who have completed other routes before starting Pierrot's main route will see additional dialogue options referencing those experiences.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Ending Outcome</h2>
-              <p className="text-on-surface-variant text-sm">
-                The Open Ending B (unnamed) ending shows Pierrot performing alone on the empty stage. The camera pulls back to reveal the circus tent is empty — no audience, no other performers. Pierrot smiles directly at the player and says, "Thank you for staying." The credits roll over a static image of the empty stage. This ending is considered the "good" ending for Pierrot's route, though its implications are darker than the label suggests.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Related Content</h2>
-              <div className="grid md:grid-cols-2 gap-4">
-                <Link href="/walkthroughs/pierrot-silent-route" className="bg-surface-container border border-outline/20 p-4 hover:border-primary transition-colors">
-                  <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant mb-1">Next Route</div>
-                  <div className="font-bold text-foreground">Pierrot Silent Route →</div>
-                  <div className="text-on-surface-variant text-sm">The hidden replay-aware route</div>
-                </Link>
-                <Link href="/endings/eternal-silence" className="bg-surface-container border border-outline/20 p-4 hover:border-primary transition-colors">
-                  <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant mb-1">Related Ending</div>
-                  <div className="font-bold text-foreground">Open Ending B (unnamed) →</div>
-                  <div className="text-on-surface-variant text-sm">Pierrot's standard ending</div>
-                </Link>
+              <h2 className="font-display text-2xl font-bold text-foreground mb-4">Tips</h2>
+              <div className="glass-card p-6">
+                <ul className="space-y-3 text-on-surface/60 text-sm">
+                  <li>• Save before major dialogue choices — some may lock you out of other paths</li>
+                  <li>• Complete Day 1 first to unlock Day 2 tent content</li>
+                  <li>• Pay attention to the Columbina legend in Day 2 — it provides context for Pierrot&apos;s behavior</li>
+                  <li>• Multiple playthroughs may be needed to see all Pierrot-related content</li>
+                </ul>
               </div>
             </section>
+
+            <section>
+              <h2 className="font-display text-2xl font-bold text-foreground mb-4">Sources</h2>
+              <div className="text-on-surface/40 text-xs space-y-1">
+                <p>• thefreakcircus.org — Character descriptions and route structure</p>
+                <p>• YouTube playthroughs (Tiffany L., MrClockWorks) — Day 1 & 2 content confirmation</p>
+                <p>• Last verified: August 2026</p>
+              </div>
+            </section>
+          </div>
+
+          <div className="mt-12 flex gap-4">
+            <Link href="/walkthroughs" className="font-mono text-xs text-primary uppercase hover:underline">
+              ← Back to Walkthrough Hub
+            </Link>
+            <Link href="/characters/pierrot" className="font-mono text-xs text-secondary uppercase hover:underline">
+              Pierrot Character Page →
+            </Link>
           </div>
         </div>
       </article>

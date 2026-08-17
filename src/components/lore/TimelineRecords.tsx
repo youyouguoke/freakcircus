@@ -2,64 +2,50 @@
 
 const anomalies = [
   {
-    id: "REC_07",
-    title: "Why Does Dialogue Change?",
-    status: "degrading",
-    desc: "Pierrot references scenes before they occur. In Loop 3+, he describes events from routes the player has not yet attempted. This is not random — the game uses a hidden counter at offset 0x4A20 in the save file to track which endings the player has seen. When Pierrot references 'the time you chose silence,' he is accessing data from the Silent Route even if the player has not unlocked it yet. This creates a metanarrative where the character knows more than the player.",
+    id: "REC_01",
+    title: "The Columbina Legend",
+    status: "confirmed",
+    desc: "Day 2 reveals the Columbina legend, which explains the backstory behind Pierrot and Harlequin's rivalry. Columbina is a deceased character — not playable. This is confirmed by multiple sources including thefreakcircus.org and wiki.gg.",
   },
   {
-    id: "REC_11",
-    title: "Why Do Save Files Affect Events?",
-    status: "degrading",
-    desc: "The Doctor remembers routes from deleted saves. His dialogue in Scene 5 changes based on endings from previous installations — not just the current save file. This suggests the game stores data outside the normal save location, possibly in the Windows Registry or a hidden file in the AppData folder. Players who have uninstalled and reinstalled the game report that The Doctor still references their previous playthroughs, creating a persistent narrative memory that survives file deletion.",
+    id: "REC_02",
+    title: "The Mirror Scene",
+    status: "confirmed",
+    desc: "The Mirror Scene in Day 2 is a key story moment confirmed by multiple YouTube playthroughs. It appears to be a turning point in the narrative involving the main characters.",
   },
   {
-    id: "REC_14",
-    title: "How Route Memories Persist?",
-    status: "collapsed",
-    desc: "The circus architecture changes between loops. Room layouts, door positions, and corridor lengths vary across playthroughs. These changes are not random — they follow patterns that match the player's previous choices. A player who chose aggressive options in Harlequin's route will find the corridors in Pierrot's route are narrower, creating a claustrophobic atmosphere. A player who chose silent options will find the rooms are larger and emptier. The game is literally reshaping itself based on the player's history.",
+    id: "REC_03",
+    title: "Multiple Endings",
+    status: "confirmed",
+    desc: "The game has 4 endings total: 1 confirmed bad ending ('Missing') and 3 unnamed open endings. This is confirmed by thefreakcircus.org. The specific names and conditions of the open endings remain unknown.",
   },
   {
-    id: "REC_19",
-    title: "Who Is The Null Performer?",
-    status: "unverified",
-    desc: "Multiple players report seeing a sixth performer in background scenes. This character has no dialogue, no name, and disappears when approached. Data miners found 14 references to this entity in dialogue files, where characters refer to 'the one who watches' or 'the empty costume.' Some theorists believe this is the game's director or narrator, while others suggest it represents the player themselves — a performer who exists in the circus but has no scripted role.",
+    id: "REC_04",
+    title: "Day 3 (Planned)",
+    status: "unreleased",
+    desc: "Day 3 is planned but has not been released yet. thefreakcircus.org describes it as featuring 'higher stakes, tighter route locks, and payoffs for choices you already made.' The exact release date is unknown.",
   },
 ];
 
 export default function TimelineRecords() {
   return (
-    <section id="anomalies" className="bg-surface py-16 px-4 md:px-16 border-t border-outline/10">
+    <section className="py-16 px-4 md:px-16 border-t border-outline/10">
       <div className="max-w-6xl mx-auto">
-        <h2 className="font-[Epilogue] text-2xl md:text-3xl font-bold text-primary mb-4">
-          Timeline Anomalies Explained
+        <h2 className="font-display text-2xl text-primary uppercase tracking-widest mb-8">
+          Key Story Records
         </h2>
-        <p className="text-on-surface-variant text-sm mb-8">
-          Why the game's timeline behaves strangely — and what it means for the narrative
-        </p>
-
-        <div className="grid md:grid-cols-2 gap-6">
-          {anomalies.map((record) => (
-            <div key={record.id} className="bg-surface-container border border-outline/20 p-6">
-              <div className="flex justify-between items-start mb-4">
-                <div className="font-[JetBrains_Mono] text-xs text-primary">
-                  {record.id}
-                </div>
-                <div className={`font-[JetBrains_Mono] text-xs px-2 py-1 border ${
-                  record.status === 'degrading' ? 'border-blood text-blood' :
-                  record.status === 'collapsed' ? 'border-blood text-blood' :
-                  'border-outline/30 text-on-surface-variant'
-                }`}>
-                  {record.status}
-                </div>
+        <div className="space-y-4">
+          {anomalies.map((a) => (
+            <div key={a.id} className="glass-card p-6">
+              <div className="flex items-center gap-3 mb-3">
+                <span className="font-mono text-xs text-primary">{a.id}</span>
+                <span className={`font-mono text-[9px] uppercase ${
+                  a.status === 'confirmed' ? 'text-green-500' :
+                  a.status === 'unreleased' ? 'text-yellow-500' : 'text-on-surface/40'
+                }`}>{a.status}</span>
               </div>
-
-              <h3 className="font-[Epilogue] text-lg font-bold text-foreground mb-2">
-                {record.title}
-              </h3>
-              <p className="text-on-surface-variant text-sm">
-                {record.desc}
-              </p>
+              <h3 className="font-display text-lg text-on-surface mb-2">{a.title}</h3>
+              <p className="text-on-surface/60 text-sm">{a.desc}</p>
             </div>
           ))}
         </div>

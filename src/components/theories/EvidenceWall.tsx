@@ -6,7 +6,7 @@ const theories = [
   { id: "T_04", title: "Pierrot Loop", icon: "search", href: "#pierrot-loop" },
   { id: "T_11", title: "Doctor Aware?", icon: "search", href: "#doctor-aware" },
   { id: "T_07", title: "Memory Glitch", icon: "search", href: "#memory-glitch" },
-  { id: "T_15", title: "Unnamed Open Ending", icon: "search", href: "#null-route" },
+  { id: "T_15", title: "All Endings Guide", icon: "search", href: "/walkthroughs/all-endings-guide" },
   { id: "T_22", title: "Mask Theory", icon: "help", href: "#mask-theory" },
   { id: "T_??", title: "Corrupted", icon: "help", href: "#corrupted" },
 ];

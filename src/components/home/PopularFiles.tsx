@@ -10,7 +10,7 @@ const files = [
     fullDesc: "Pierrot is the melancholic clown of The Freak Circus, and his route is often the first players encounter. But beneath the surface lies one of the most complex character arcs in the game. This guide analyzes every dialogue choice, hidden trigger, and environmental clue that reveals Pierrot's true nature. The loop theory suggests that Pierrot demonstrates awareness extending beyond the fourth wall, remembering player behavior across save files and adjusting his responses accordingly. Key topics covered: Pierrot's garden scene mechanics, the silence trigger system, how replay awareness affects dialogue trees, and the connection between Pierrot's route and the Open Ending C (unnamed) ending.",
     href: "/characters/pierrot",
     related: [
-      { name: "Open Ending C (unnamed) Ending", href: "/endings/eternal-silence" },
+      { name: "All Endings Guide", href: "/walkthroughs/all-endings-guide" },
       { name: "Pierrot Loop Theory", href: "/theories/pierrot-remembers-every-loop" },
     ],
   },
@@ -32,8 +32,8 @@ const files = [
     fullDesc: "The exact number of endings in The Freak Circus remains a topic of active community investigation. This comprehensive catalog documents all known endings: the standard character routes (Open Ending A (unnamed), Open Ending B (unnamed), Unnamed Open Ending), secret endings requiring specific conditions (Open Ending C (unnamed), Unnamed Open Ending), and the corrupted endings that break the game interface itself. Each ending entry includes: unlock requirements, spoiler level, route dependencies, replay conditions, and community verification status. Special attention given to the Unnamed Open Ending ending found in game files but never legitimately unlocked, and the Unnamed Open Ending ending referenced by The Doctor in Scene 7.",
     href: "/endings",
     related: [
-      { name: "Unnamed Open Ending Ending", href: "/endings/corrupted-data" },
-      { name: "Open Ending C (unnamed) Guide", href: "/walkthroughs/pierrot-silent-route" },
+      { name: "Lore Archive", href: "/lore" },
+      { name: "All Endings Guide", href: "/walkthroughs/all-endings-guide" },
     ],
   },
   {
@@ -43,7 +43,7 @@ const files = [
     fullDesc: "The Doctor serves as the circus physician, but his medical knowledge extends into territory that players find increasingly unsettling. This theory analysis examines the clinical observations that break the fourth wall, the mirror connection that appears in Scene 9 only after failing his route once, and the five hidden medical files that reveal the circus's true purpose. Key evidence: The Doctor's precognitive references to endings before they occur, his awareness of save file states, the hex patterns found in crash logs after his route, and the unused voice lines suggesting he was originally designed as the primary antagonist.",
     href: "/theories",
     related: [
-      { name: "Doctor's Memory Route", href: "/walkthroughs/doctor-memory-route" },
+      { name: "Save Guide", href: "/walkthroughs/save-guide" },
       { name: "Mirror Hall Lore", href: "/lore/mirror-hall" },
     ],
   },

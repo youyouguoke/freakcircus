@@ -7,7 +7,7 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
-      // Columbina pages → characters page
+      // Columbina pages → characters page (she's a dead character, not playable)
       {
         source: "/walkthroughs/columbina-fractured-route",
         destination: "/characters",
@@ -46,11 +46,6 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        source: "/walkthroughs/harlequin-true-route",
-        destination: "/walkthroughs",
-        permanent: true,
-      },
-      {
         source: "/walkthroughs/doctor-memory-route",
         destination: "/walkthroughs",
         permanent: true,
@@ -58,11 +53,6 @@ const nextConfig: NextConfig = {
       {
         source: "/walkthroughs/null-route",
         destination: "/walkthroughs",
-        permanent: true,
-      },
-      {
-        source: "/walkthroughs/all-endings-guide",
-        destination: "/endings",
         permanent: true,
       },
     ];

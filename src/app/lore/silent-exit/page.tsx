@@ -48,7 +48,7 @@ export default function Page() {
             </section>
             <section>
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Related Characters</h2>
-              <p className="text-on-surface-variant text-sm whitespace-pre-line">• Pierrot: The Exit appears in his Silent Route ending.
+              <p className="text-on-surface-variant text-sm whitespace-pre-line">• Pierrot: The Exit is referenced in community discussions about Pierrot's route, though specific details are unverified.
 • Columbina: Her three-loop storyline implies the Exit is a 'way out' that only appears after perfect alignment.
 • Null Performer: Some theorists believe the Exit leads to the Null Performer's domain.</p>
             </section>
@@ -83,7 +83,7 @@ A: Yes. The frame carvings match Mirror Hall symbols, suggesting they are connec
             <section>
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Related Content</h2>
               <div className="grid md:grid-cols-2 gap-4">
-                <Link href="/endings/eternal-silence" className="bg-surface-container border border-outline/20 p-4 hover:border-primary transition-colors">
+                <Link href="/endings" className="bg-surface-container border border-outline/20 p-4 hover:border-primary transition-colors">
                   <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant mb-1">Related Ending</div>
                   <div className="font-bold text-foreground">Open Ending C (unnamed) →</div>
                   <div className="text-on-surface-variant text-sm">Ending where the Exit appears</div>

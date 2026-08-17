@@ -163,7 +163,7 @@ export default function JsonLd() {
             "@type": "ListItem",
             "position": 6,
             "name": "Open Ending C (unnamed) Ending Guide",
-            "url": "https://freak-circus.com/endings/eternal-silence"
+            "url": "https://freak-circus.com/endings"
           },
           {
             "@type": "ListItem",

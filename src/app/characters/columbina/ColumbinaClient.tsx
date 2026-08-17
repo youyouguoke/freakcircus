@@ -167,7 +167,7 @@ export default function ColumbinaClient({ faqData }: { faqData: { question: stri
         <div className="max-w-6xl mx-auto">
           <div className="font-label text-[0.6rem] mb-4" style={{ color: accent }}>RELATED FILES</div>
           <div className="flex flex-wrap gap-2">
-            {[{ l: "Columbina Fractured Route", h: "/walkthroughs/columbina-fractured-route" }, { l: "All Endings", h: "/endings" }, { l: "Pierrot Character", h: "/characters/pierrot" }, { l: "Doctor Character", h: "/characters/doctor" }].map((lnk) => (
+            {[{ l: "Lore Archive", h: "/lore" }, { l: "All Endings", h: "/endings" }, { l: "Pierrot Character", h: "/characters/pierrot" }, { l: "Doctor Character", h: "/characters/doctor" }].map((lnk) => (
               <Link key={lnk.h} href={lnk.h} className="font-label text-[0.55rem] px-3 py-1.5 border border-dark-border text-faint-paper hover:border-circus-red hover:text-paper transition-colors">{lnk.l}</Link>
             ))}
           </div>

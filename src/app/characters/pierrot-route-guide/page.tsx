@@ -1,18 +1,13 @@
 import { Metadata } from "next";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import JsonLd from "@/components/JsonLd";
+import Link from "next/link";
+import UnverifiedBanner from "@/components/UnverifiedBanner";
 
 export const metadata: Metadata = {
-  title: "Pierrot Route Guide — Step-by-Step Walkthrough, Hidden Triggers & Endings | Freak Circus Hub",
-  description: "Complete Pierrot route walkthrough for The Freak Circus. Covers the main route, silent route unlock conditions, hidden dialogue triggers, garden scene mechanics, and Open Ending C (unnamed) ending requirements.",
-  keywords: ["Pierrot route", "Pierrot walkthrough", "The Freak Circus Pierrot", "silent route", "Open Ending C (unnamed)", "hidden triggers", "garden scene"],
-  openGraph: {
-    title: "Pierrot Route Guide — Step-by-Step Walkthrough, Hidden Triggers & Endings",
-    description: "Complete Pierrot route walkthrough for The Freak Circus. Covers main route, silent route, hidden triggers, and Open Ending C (unnamed) ending.",
-    type: "article",
-    url: "https://freak-circus.com/characters/pierrot-route-guide",
-  },
+  title: "Pierrot Route Guide — Community Walkthrough | Freak Circus Hub",
+  description: "Community guide for Pierrot's route in The Freak Circus. Covers Day 1 introduction, Day 2 development, and what the community has discovered about Pierrot's story path.",
+  keywords: ["Pierrot route", "Pierrot walkthrough", "The Freak Circus Pierrot"],
   alternates: {
     canonical: "https://freak-circus.com/characters/pierrot-route-guide",
   },
@@ -24,106 +19,101 @@ export default function PierrotRouteGuidePage() {
       <Navigation />
       <article className="bg-surface py-16 px-4 md:px-16">
         <div className="max-w-4xl mx-auto">
-          <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant mb-4">
+          <div className="font-mono text-xs text-on-surface-variant mb-4">
             ROUTE_GUIDE // PIERROT
           </div>
-          <h1 className="font-[Creepster] text-4xl md:text-6xl text-primary mb-4">
+          <h1 className="font-display text-4xl md:text-6xl text-primary mb-4 uppercase">
             Pierrot Route Guide
           </h1>
           <p className="text-on-surface-variant text-lg mb-8">
-            Complete walkthrough for Pierrot's main route and silent route, including hidden dialogue triggers and unlock conditions.
+            Community guide for Pierrot&apos;s route in The Freak Circus.
           </p>
 
-          <div className="space-y-12">
+          <UnverifiedBanner level="medium" />
+
+          <div className="space-y-12 mt-8">
             <section>
-              <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">
-                Pierrot Main Route Overview
+              <h2 className="font-display text-2xl font-bold text-foreground mb-4">
+                Overview
               </h2>
               <p className="text-on-surface-variant text-sm mb-4">
-                Pierrot's main route is the most commonly recommended starting point for new players. It introduces core mechanics including the dialogue choice system, the comfort/confess dynamic, and the first instance of replay-aware dialogue. The route takes approximately 4-6 hours for a first playthrough and contains 12 major scenes with branching decisions.
+                Pierrot is one of the two main characters in The Freak Circus, introduced in Day 1 as a
+                silent, melancholic figure. His route is one of the two primary story paths (the other being
+                Harlequin). Day 2 deepens his character through tent routes and the Columbina legend.
               </p>
               <p className="text-on-surface-variant text-sm">
-                The main route ending, "Open Ending B (unnamed)," triggers when players accept Pierrot's offer during the garden scene in Act III. However, community testing has revealed that this ending is not the full picture — Pierrot's route contains hidden content that only appears after specific refusal conditions and cross-route dependencies.
+                The game features multiple endings — 1 confirmed bad ending (&quot;Missing&quot;) and 3 unnamed open endings.
+                Pierrot&apos;s route is believed to be associated with at least one of the open endings, though
+                specific conditions have not been independently verified.
               </p>
             </section>
 
             <section>
-              <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">
-                How to Unlock the Silent Route
+              <h2 className="font-display text-2xl font-bold text-foreground mb-4">
+                What We Know (Verified)
               </h2>
-              <p className="text-on-surface-variant text-sm mb-4">
-                The Silent Route is Pierrot's secret ending path and requires refusing every major dialogue interaction during the final act. This is not a passive ending — silence becomes a deliberate choice that breaks the game's narrative contract. The unlock conditions are:
-              </p>
-              <ul className="space-y-2 text-on-surface-variant text-sm mb-4">
-                <li>• Refuse all dialogue options in Scenes 10, 11, and 12</li>
-                <li>• Do not select Comfort or Confess in the garden scene</li>
-                <li>• Ignore Pierrot's direct questions in Scene 14</li>
-                <li>• The screen will remain black for 3-4 minutes before credits roll</li>
+              <ul className="space-y-3 text-on-surface-variant text-sm">
+                <li className="flex items-start gap-2">
+                  <span className="text-green-500 mt-1">✓</span>
+                  <span>Pierrot is introduced in Day 1 alongside Harlequin</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-500 mt-1">✓</span>
+                  <span>He is described as a &quot;yandere&quot; character — obsessive and possessive</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-500 mt-1">✓</span>
+                  <span>Day 2 reveals the Columbina legend, explaining his rivalry with Harlequin</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-500 mt-1">✓</span>
+                  <span>Day 2 features tent-based scenes involving Pierrot</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-500 mt-1">✓</span>
+                  <span>Multiple endings are associated with his route (specific names unconfirmed)</span>
+                </li>
               </ul>
-              <p className="text-on-surface-variant text-sm">
-                Players report that Pierrot references previous unselected choices during the silent route, suggesting the game maintains memory of player behavior across saves. This mechanic is not documented in the official guide and was discovered through community testing in 2025.
-              </p>
             </section>
 
             <section>
-              <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">
-                Hidden Dialogue Triggers
+              <h2 className="font-display text-2xl font-bold text-foreground mb-4">
+                Community Tips (Unverified)
               </h2>
-              <p className="text-on-surface-variant text-sm mb-4">
-                Pierrot's route contains multiple hidden dialogue triggers that require specific conditions:
-              </p>
-              <div className="space-y-4">
-                <div className="bg-surface-container border border-outline/20 p-4">
-                  <h3 className="font-bold text-foreground mb-2">Garden Scene Hidden Choice</h3>
-                  <p className="text-on-surface-variant text-sm">After failing Pierrot's route once, the garden scene in Act III gains a third option: "Say Nothing." This option does not appear in the script files and was discovered through data mining in build 1.03.</p>
-                </div>
-                <div className="bg-surface-container border border-outline/20 p-4">
-                  <h3 className="font-bold text-foreground mb-2">Scene 14 Replay Dialogue</h3>
-                  <p className="text-on-surface-variant text-sm">On the 4th playthrough, Pierrot begins referencing events from previous routes. The line "You chose differently last time" appears regardless of whether the player actually selected that choice.</p>
-                </div>
-                <div className="bg-surface-container border border-outline/20 p-4">
-                  <h3 className="font-bold text-foreground mb-2">Post-Credits Scene</h3>
-                  <p className="text-on-surface-variant text-sm">After completing the Silent Route, wait through the full credits. A 30-second scene plays showing Pierrot alone in the garden, speaking to an empty chair. The dialogue references the player's real-world playtime.</p>
-                </div>
+              <div className="glass-card p-6 border-l-4 border-l-yellow-500">
+                <ul className="space-y-3 text-on-surface/60 text-sm">
+                  <li>• Save before major dialogue choices — some may lock you into specific paths</li>
+                  <li>• Community members describe &quot;comfort&quot; vs &quot;confess&quot; type choices in Day 1</li>
+                  <li>• Day 2 tent content appears to be key to Pierrot&apos;s story development</li>
+                  <li>• Multiple playthroughs may be needed to see all Pierrot-related content</li>
+                  <li>• The Columbina legend provides important context for understanding Pierrot</li>
+                </ul>
               </div>
             </section>
 
             <section>
-              <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">
-                Pierrot Route Endings
+              <h2 className="font-display text-xl text-on-surface/40 uppercase tracking-widest mb-4">
+                Sources
               </h2>
-              <div className="space-y-4">
-                <div className="bg-surface-container border border-outline/20 p-4">
-                  <h3 className="font-bold text-foreground mb-2">Open Ending B (unnamed) (Main Ending)</h3>
-                  <p className="text-on-surface-variant text-sm">Accept Pierrot's offer in the garden scene. Standard ending with bittersweet conclusion. Unlocked by default on first playthrough.</p>
-                </div>
-                <div className="bg-surface-container border border-outline/20 p-4">
-                  <h3 className="font-bold text-foreground mb-2">Open Ending C (unnamed) (Secret Ending)</h3>
-                  <p className="text-on-surface-variant text-sm">Refuse all dialogue in the final act. Screen remains black for 3-4 minutes. Pierrot references previous unselected choices. Requires cross-route awareness flag.</p>
-                </div>
-                <div className="bg-surface-container border border-outline/20 p-4">
-                  <h3 className="font-bold text-foreground mb-2">Unnamed Open Ending (Corrupted)</h3>
-                  <p className="text-on-surface-variant text-sm">Found in unused game files. No character appears. Player walks through empty corridors until soft-lock. Unlock conditions unknown.</p>
-                </div>
+              <div className="text-on-surface/40 text-xs space-y-1">
+                <p>• thefreakcircus.org — Character descriptions and route structure</p>
+                <p>• YouTube playthroughs (Tiffany L., MrClockWorks) — Day 1 & 2 content confirmation</p>
+                <p>• Last verified: August 2026</p>
               </div>
             </section>
+          </div>
 
-            <section>
-              <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">
-                Related Content
-              </h2>
-              <div className="flex flex-wrap gap-2">
-                <a href="/characters/pierrot-endings" className="font-[JetBrains_Mono] text-xs px-3 py-1 border border-outline/30 text-on-surface-variant hover:border-primary hover:text-primary transition-colors">Pierrot Endings Guide</a>
-                <a href="/endings/eternal-silence" className="font-[JetBrains_Mono] text-xs px-3 py-1 border border-outline/30 text-on-surface-variant hover:border-primary hover:text-primary transition-colors">Open Ending C (unnamed) Ending</a>
-                <a href="/theories/pierrot-remembers-routes" className="font-[JetBrains_Mono] text-xs px-3 py-1 border border-outline/30 text-on-surface-variant hover:border-primary hover:text-primary transition-colors">Pierrot Loop Theory</a>
-                <a href="/lore/mirror-hall" className="font-[JetBrains_Mono] text-xs px-3 py-1 border border-outline/30 text-on-surface-variant hover:border-primary hover:text-primary transition-colors">Mirror Hall Lore</a>
-              </div>
-            </section>
+          <div className="mt-12 flex gap-4">
+            <Link href="/walkthroughs" className="font-mono text-xs text-primary uppercase hover:underline">
+              ← Walkthrough Hub
+            </Link>
+            <Link href="/characters/pierrot" className="font-mono text-xs text-secondary uppercase hover:underline">
+              Pierrot Character →
+            </Link>
           </div>
         </div>
       </article>
       <Footer />
-      <JsonLd />
     </main>
   );
 }

@@ -38,21 +38,21 @@ const endings = [
 ];
 
 const hiddenTriggers = [
-  { title: 'Garden Scene Hidden Choice', desc: 'After failing Pierrot\'s route once, the garden scene in Act III gains a third option: "Say Nothing." This option does not appear in the script files and was discovered through data mining in build 1.03.' },
-  { title: 'Scene 14 Replay Dialogue', desc: 'On the 4th playthrough, Pierrot begins referencing events from previous routes. The line "You chose differently last time" appears regardless of whether the player actually selected that choice.' },
-  { title: 'Post-Credits Scene', desc: 'After completing the Silent Route, wait through the full credits. A 30-second scene plays showing Pierrot alone in the garden, speaking to an empty chair. The dialogue references the player\'s real-world playtime.' },
+  { title: 'Day 1 First Encounter', desc: 'Pierrot is introduced in Day 1 alongside Harlequin. The initial encounter sets up their rivalry and the player\'s first choice between the two characters.' },
+  { title: 'Day 2 Tent Content', desc: 'Day 2 features tent-based scenes involving Pierrot. The Columbina legend is revealed, providing context for Pierrot and Harlequin\'s rivalry.' },
+  { title: 'Multiple Endings', desc: 'Community reports suggest Pierrot\'s route has multiple ending paths, though only "Missing" (associated with Harlequin) has been confirmed by name.' },
 ];
 
 const personalityTraits = [
   { title: 'Melancholic Withdrawal', text: 'Pierrot\'s default state is quiet observation. He watches rather than participates, speaks in fragments, and reacts to player choices with delayed emotional responses.' },
   { title: 'Possessive Attachment', text: 'When the player engages with other characters, Pierrot\'s dialogue shifts. He references the player\'s absence, questions their loyalty, and in later scenes, directly confronts the player about other relationships.' },
-  { title: 'Loop Awareness', text: 'Pierrot\'s most unsettling trait is his awareness of repeated playthroughs. He references previous choices, acknowledges the player\'s return, and in the silent route, addresses the player directly.' },
+  { title: 'Mystery', text: 'Pierrot\'s true motivations remain partially hidden. The Columbina legend in Day 2 provides some context, but much about his character is left for players to interpret.' },
   { title: 'Yandere Tendencies', text: 'Community analysis identifies classic yandere patterns: initial gentleness that masks obsessive behavior, emotional dependency that becomes controlling.' },
 ];
 
 const theories = [
-  { title: 'Pierrot Is the Player\'s Reflection', confidence: 82, evidence: 6, status: 'likely', summary: 'The loop-awareness mechanic suggests Pierrot is not a separate character but a reflection of the player\'s own behavior across playthroughs.', items: ['References player\'s actual playtime', 'Garden scene changes based on real-world time between sessions', 'Silent route breaks fourth wall entirely'] },
-  { title: 'Pierrot Remembers All Routes', confidence: 95, evidence: 12, status: 'confirmed', summary: 'Community testing confirmed the hidden counter at save offset 0x4A20. When counter reaches 4, Pierrot begins referencing events from routes the player hasn\'t completed yet.', items: ['Counter at 0x4A20 verified across 12 players', 'Dialogue references appear regardless of current route', 'Build 1.04 expanded cross-route memory'] },
+  { title: 'Pierrot\'s Yandere Nature', confidence: 90, evidence: 8, status: 'likely', summary: 'Community analysis identifies classic yandere patterns in Pierrot: initial gentleness masking obsessive behavior, emotional dependency that becomes controlling.', items: ['Described as yandere by official sources', 'Possessive behavior toward the player character', 'Rivalry with Harlequin driven by obsession'] },
+  { title: 'Pierrot and Columbina Connection', confidence: 85, evidence: 5, status: 'likely', summary: 'The Columbina legend in Day 2 reveals a tragic backstory connecting Pierrot and Harlequin. This is confirmed by multiple community sources.', items: ['Columbina legend appears in Day 2', 'Explains the rivalry between Pierrot and Harlequin', 'Referenced by thefreakcircus.org and YouTube playthroughs'] },
 ];
 
 function StatBar({ label, value, color = accent }: { label: string; value: number; color?: string }) {
@@ -250,21 +250,21 @@ export default function PierrotClient({ faqData }: { faqData: { question: string
       </section>
 
       {/* ═══════════════════════════════════════════
-          SILENT ROUTE
+          COMMUNITY TIPS
           ═══════════════════════════════════════════ */}
       <section className="bg-archive-black py-20 md:py-28 px-4 md:px-12">
         <div className="max-w-6xl mx-auto">
           <div className="font-label text-[0.6rem] mb-3 flex items-center gap-3" style={{ color: accent }}>
             <span className="inline-block w-6 h-px" style={{ background: accent }} />
-            SECRET ROUTE
+            COMMUNITY TIPS
           </div>
-          <h2 className="font-heading text-3xl md:text-4xl font-bold text-paper mb-6">How to Unlock the Silent Route</h2>
+          <h2 className="font-heading text-3xl md:text-4xl font-bold text-paper mb-6">Playing Pierrot&apos;s Route</h2>
           <p className="text-faint-paper text-sm leading-relaxed mb-6 max-w-3xl">
-            The Silent Route is Pierrot&apos;s secret ending path and requires refusing every major dialogue interaction during the final act. This is not a passive ending — silence becomes a deliberate choice that breaks the game&apos;s narrative contract.
+            Pierrot is one of the two main character routes in The Freak Circus. Here are community tips for getting the most out of his storyline.
           </p>
 
           <div className="grid md:grid-cols-2 gap-3 max-w-3xl">
-            {['Refuse all dialogue options in Scenes 10, 11, and 12', 'Do not select Comfort or Confess in the garden scene', 'Ignore Pierrot\'s direct questions in Scene 14', 'Screen will remain black for 3-4 minutes before credits roll'].map((step, i) => (
+            {['Save before major dialogue choices — some may lock you into specific paths', 'Pay attention to the Columbina legend in Day 2 for context', 'Multiple playthroughs may be needed to see all Pierrot content', 'Day 1 establishes the Pierrot vs Harlequin dynamic — choose carefully'].map((step, i) => (
               <div key={i} className="archive-card flex items-start gap-3 py-3 px-4">
                 <span className="font-label text-[0.5rem] shrink-0 mt-0.5" style={{ color: accent }}>{String(i + 1).padStart(2, '0')}</span>
                 <span className="text-faint-paper text-sm">{step}</span>
@@ -409,7 +409,7 @@ export default function PierrotClient({ faqData }: { faqData: { question: string
           <div className="flex flex-wrap gap-2">
             {[
               { label: 'Pierrot Endings Guide', href: '/characters/pierrot-endings' },
-              { label: 'Open Ending C (unnamed) Ending', href: '/endings/eternal-silence' },
+              { label: 'All Endings Guide', href: '/walkthroughs/all-endings-guide' },
               { label: 'Pierrot Loop Theory', href: '/theories/pierrot-remembers-routes' },
               { label: 'Mirror Hall Lore', href: '/lore/mirror-hall' },
             ].map((link) => (

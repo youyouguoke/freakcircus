@@ -2,93 +2,139 @@ import { Metadata } from "next";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import UnverifiedBanner from "@/components/UnverifiedBanner";
 
 export const metadata: Metadata = {
-  title: "Harlequin True Route Guide — Aggressive Choices & Open Ending A (unnamed) | Freak Circus Hub",
-  description: "Complete walkthrough for Harlequin's True Route in The Freak Circus. Covers all aggressive dialogue choices, hidden scenes, and how to reach the Open Ending A (unnamed) ending.",
-  keywords: ["Harlequin route guide", "Harlequin True Route", "Open Ending A (unnamed)", "The Freak Circus walkthrough", "aggressive choices"],
+  title: "Harlequin Route Guide — Community Walkthrough | Freak Circus Hub",
+  description: "Community guide for Harlequin's route in The Freak Circus. Covers Day 1 introduction, the 'Missing' bad ending, and what the community has discovered about Harlequin's story path.",
+  keywords: ["Harlequin route guide", "Harlequin walkthrough", "The Freak Circus Harlequin", "Missing ending"],
   alternates: {
     canonical: "https://freak-circus.com/walkthroughs/harlequin-true-route",
   },
 };
 
-export default function Page() {
+export default function HarlequinRoutePage() {
   return (
     <main className="min-h-screen bg-surface">
       <Navigation />
       <article className="py-16 px-4 md:px-16">
         <div className="max-w-4xl mx-auto">
-          <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant mb-4">
-            ROUTE_GUIDE // HARLEQUIN_TRUE
+          <div className="font-mono text-xs text-on-surface-variant mb-4">
+            ROUTE_GUIDE // HARLEQUIN
           </div>
-          <h1 className="font-[Creepster] text-4xl md:text-6xl text-primary mb-4">
-            Harlequin True Route
+          <h1 className="font-display text-4xl md:text-6xl text-primary mb-4 uppercase">
+            Harlequin Route
           </h1>
           <p className="text-on-surface-variant text-lg mb-8">
-            The aggressive route — select all confrontational options to unlock Harlequin's true ending.
+            The seductive rival — one of the two main character routes in The Freak Circus.
+            Home of the confirmed &quot;Missing&quot; bad ending.
           </p>
 
-          <div className="space-y-12">
+          <UnverifiedBanner level="medium" />
+
+          <div className="space-y-12 mt-8">
             <section>
-              <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Overview</h2>
-              <p className="text-on-surface-variant text-sm whitespace-pre-line">Harlequin's True Route is the aggressive path through his storyline. Unlike the standard route, which focuses on his playful exterior, the True Route reveals his dangerous obsession with the player. It requires selecting all confrontational dialogue options, which unlocks 7 hidden scenes that only appear on replay. The route culminates in the Open Ending A (unnamed) ending, which is considered a 'bad' ending but contains the most lore about the circus's founding.</p>
-            </section>
-            <section>
-              <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Requirements</h2>
-              <p className="text-on-surface-variant text-sm whitespace-pre-line">• Available from the start of the game
-• Select ALL aggressive dialogue options (no exceptions)
-• Contains 7 hidden scenes only visible on replay
-• Estimated playtime: 3-4 hours
-• Ending: Open Ending A (unnamed) (Bad Ending)</p>
-            </section>
-            <section>
-              <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Step-by-Step Guide</h2>
-              <p className="text-on-surface-variant text-sm whitespace-pre-line">Act I — The Welcome (Scenes 1-4): Harlequin greets you with his usual playful demeanor. Select aggressive responses to her jokes. In Scene 3, she asks if you're afraid of her. Answer: 'Yes, I should be.'
-
-Act II — The Performance (Scenes 5-8): Continue selecting aggressive options. In Scene 6, Harlequin reveals his knife collection. The aggressive response ('Show me how you use them') unlocks a hidden scene on replay.
-
-Act III — The Confession (Scenes 9-12): Harlequin's demeanor changes. She becomes possessive and controlling. In Scene 11, she locks the door. The aggressive response ('Break the door down') is the only way to proceed.
-
-Finale (Scene 13-14): The ending depends on whether you selected ALL aggressive options. Missing even one causes the standard ending instead.</p>
-            </section>
-            <section>
-              <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Hidden Triggers</h2>
-              <p className="text-on-surface-variant text-sm whitespace-pre-line">The True Route contains 7 hidden scenes that only appear on replay after completing the route once:
-
-1. Scene 3 extended: Harlequin reveals she knows your real name (from save file metadata).
-
-2. Scene 6 knife scene: The aggressive response unlocks a 2-minute animation not found in the standard route.
-
-3. Scene 8 backstage: A hidden conversation with The Doctor about Harlequin's 'episodes.'
-
-4. Scene 10 mirror: Harlequin's reflection shows a different face. This is the first appearance of the Mirror Hall anomaly.
-
-5. Scene 11 lock scene: The door is already locked before Harlequin mentions it — suggesting she planned this.
-
-6. Scene 13 fire: The circus tent burns. This is the first appearance of the First Circus Fire reference.
-
-7. Scene 14 credits: The credits list a fifth character ('The Director') who never appears in the game.</p>
-            </section>
-            <section>
-              <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Ending Outcome</h2>
-              <p className="text-on-surface-variant text-sm whitespace-pre-line">The Open Ending A (unnamed) ending shows Harlequin performing a solo act in a burning circus tent. The audience is revealed to be mannequins. As the fire spreads, Harlequin continues performing, looking directly at the player. The final image is his smile reflected in a cracked mirror. The credits roll over the sound of fire crackling. This ending is considered 'bad' because Harlequin dies in the fire, but it reveals the most lore about the circus's founding myth.</p>
+              <h2 className="font-display text-2xl font-bold text-foreground mb-4">Overview</h2>
+              <p className="text-on-surface-variant text-sm">
+                Harlequin is introduced in Day 1 as Pierrot&apos;s seductive rival. He enters the story
+                as a competing force, creating a triangle of desire, manipulation, and psychological tension.
+                His route is one of the two primary story paths (the other being Pierrot).
+                The confirmed bad ending &quot;Missing&quot; is associated with Harlequin&apos;s route.
+              </p>
             </section>
 
             <section>
-              <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Related Content</h2>
-              <div className="grid md:grid-cols-2 gap-4">
-                <Link href="/endings/the-grand-finale" className="bg-surface-container border border-outline/20 p-4 hover:border-primary transition-colors">
-                  <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant mb-1">Related Ending</div>
-                  <div className="font-bold text-foreground">Open Ending A (unnamed) →</div>
-                  <div className="text-on-surface-variant text-sm">The true ending for this route</div>
-                </Link>
-                <Link href="/theories" className="bg-surface-container border border-outline/20 p-4 hover:border-primary transition-colors">
-                  <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant mb-1">Related Theory</div>
-                  <div className="font-bold text-foreground">Harlequin Loop Theory →</div>
-                  <div className="text-on-surface-variant text-sm">Community theory about her obsession</div>
-                </Link>
+              <h2 className="font-display text-2xl font-bold text-foreground mb-4">What We Know (Verified)</h2>
+              <ul className="space-y-3 text-on-surface-variant text-sm">
+                <li className="flex items-start gap-2">
+                  <span className="text-green-500 mt-1">✓</span>
+                  <span>Harlequin is one of the two main characters introduced in Day 1</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-500 mt-1">✓</span>
+                  <span>He is described as seductive, manipulative, and obsessive</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-500 mt-1">✓</span>
+                  <span>The &quot;Missing&quot; bad ending is confirmed to be associated with his route</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-500 mt-1">✓</span>
+                  <span>YouTube has &quot;Bad End&quot; scene videos confirming the ending exists</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-green-500 mt-1">✓</span>
+                  <span>His rivalry with Pierrot is a central plot element, driven by the Columbina legend</span>
+                </li>
+              </ul>
+            </section>
+
+            <section>
+              <h2 className="font-display text-2xl font-bold text-foreground mb-4">&quot;Missing&quot; — The Confirmed Bad Ending</h2>
+              <div className="glass-card p-6 border-l-4 border-l-green-500">
+                <h3 className="font-display text-lg text-on-surface mb-2">Ending: &quot;Missing&quot;</h3>
+                <div className="space-y-3 text-on-surface/60 text-sm">
+                  <p>
+                    <strong>Status:</strong> <span className="text-green-500">CONFIRMED</span> — the only ending
+                    confirmed by name in any official or wiki source.
+                  </p>
+                  <p>
+                    <strong>How to get it:</strong> Community reports suggest this is the standard ending
+                    most players encounter on their first playthrough of Harlequin&apos;s route.
+                    Specific choice requirements have not been independently verified.
+                  </p>
+                  <p>
+                    <strong>Source:</strong> thefreakcircus.wiki.gg lists &quot;Missing&quot; as the only confirmed ending.
+                  </p>
+                </div>
               </div>
             </section>
+
+            <section>
+              <h2 className="font-display text-2xl font-bold text-foreground mb-4">Community Reports (Unverified)</h2>
+              <div className="glass-card p-6 border-l-4 border-l-yellow-500">
+                <p className="text-on-surface/60 text-sm mb-4">
+                  The following details are reported by community members but have not been independently verified:
+                </p>
+                <ul className="space-y-2 text-on-surface/50 text-sm">
+                  <li>• Players report aggressive and comedic dialogue options in Harlequin scenes</li>
+                  <li>• Day 2 reportedly features tent-based scenes involving Harlequin</li>
+                  <li>• Some players describe a &quot;comedy vs aggression&quot; choice system</li>
+                  <li>• The exact number of endings tied to Harlequin is unknown beyond &quot;Missing&quot;</li>
+                </ul>
+              </div>
+            </section>
+
+            <section>
+              <h2 className="font-display text-2xl font-bold text-foreground mb-4">Tips</h2>
+              <div className="glass-card p-6">
+                <ul className="space-y-3 text-on-surface/60 text-sm">
+                  <li>• Save before major dialogue choices — aggressive vs comedic options may lead to different outcomes</li>
+                  <li>• The &quot;Missing&quot; ending appears to be the default — try different choices to find alternatives</li>
+                  <li>• Complete Day 1 first to unlock Day 2 tent content</li>
+                  <li>• Understanding the Columbina legend from Day 2 adds context to Harlequin&apos;s motivations</li>
+                </ul>
+              </div>
+            </section>
+
+            <section>
+              <h2 className="font-display text-2xl font-bold text-foreground mb-4">Sources</h2>
+              <div className="text-on-surface/40 text-xs space-y-1">
+                <p>• thefreakcircus.wiki.gg — Confirmed ending &quot;Missing&quot; linked to Harlequin</p>
+                <p>• thefreakcircus.org — Character descriptions and route structure</p>
+                <p>• YouTube playthroughs — &quot;Bad End&quot; scene confirmation</p>
+                <p>• Last verified: August 2026</p>
+              </div>
+            </section>
+          </div>
+
+          <div className="mt-12 flex gap-4">
+            <Link href="/walkthroughs" className="font-mono text-xs text-primary uppercase hover:underline">
+              ← Back to Walkthrough Hub
+            </Link>
+            <Link href="/characters/harlequin" className="font-mono text-xs text-secondary uppercase hover:underline">
+              Harlequin Character Page →
+            </Link>
           </div>
         </div>
       </article>

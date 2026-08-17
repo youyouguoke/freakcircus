@@ -7,23 +7,17 @@ import UnverifiedBanner from "@/components/UnverifiedBanner";
 import { ENDINGS_CONFIRMED, ENDINGS_BAD, ENDINGS_OPEN, ENDINGS_TOTAL } from "@/lib/site-facts";
 
 export const metadata: Metadata = {
-  title: "All Endings Guide — Freak Circus Complete Ending Walkthrough (2026)",
-  description: `Guide to all confirmed endings in The Freak Circus. ${ENDINGS_TOTAL} endings confirmed: ${ENDINGS_BAD} bad ending ("Missing") and ${ENDINGS_OPEN} open endings. Community-reported ending names and unlock conditions below.`,
+  title: "All Endings Guide — Freak Circus Ending Information (2026)",
+  description: `What we know about endings in The Freak Circus. ${ENDINGS_TOTAL} endings reported: ${ENDINGS_BAD} confirmed bad ending ("Missing") and ${ENDINGS_OPEN} open endings. Only "Missing" has been verified by name.`,
   keywords: [
     "Freak Circus all endings",
     "Freak Circus endings guide",
-    "how to unlock all endings Freak Circus",
+    "Freak Circus Missing ending",
     "Freak Circus ending walkthrough",
-    "Freak Circus ending order",
-    "Freak Circus true ending",
-    "Freak Circus secret endings",
-    "Freak Circus Open Ending C (unnamed) unlock",
-    "Freak Circus Unnamed Open Ending unlock",
-    "Freak Circus Unnamed Open Ending unlock",
   ],
   openGraph: {
-    title: "All Endings Guide — Freak Circus Complete Ending Walkthrough",
-    description: "Step-by-step guide to unlock every ending in The Freak Circus. All 14 endings with requirements, choices, and tips.",
+    title: "All Endings Guide — Freak Circus Ending Information",
+    description: "What we know about endings in The Freak Circus. Only 'Missing' confirmed by name.",
     type: "article",
     url: "https://freak-circus.com/walkthroughs/all-endings-guide",
   },
@@ -32,305 +26,214 @@ export const metadata: Metadata = {
   },
 };
 
-const endingSteps = [
-  {
-    ending: "Open Ending A (unnamed)",
-    character: "Harlequin",
-    difficulty: "Normal",
-    type: "Canon",
-    time: "45-60 min",
-    steps: [
-      "Start Harlequin's route on Day 1 by visiting the Stage.",
-      "Choose comedic dialogue options in Scenes 1-6.",
-      "In Scene 9, select the aggressive option ('Mock her performance').",
-      "Continue through Act III with standard choices.",
-      "The ending triggers automatically after the final scene.",
-    ],
-    tip: "This is the easiest ending and recommended for first-time players. No special conditions required.",
-  },
-  {
-    ending: "Open Ending B (unnamed)",
-    character: "Pierrot",
-    difficulty: "Normal",
-    type: "Canon",
-    time: "50-70 min",
-    steps: [
-      "Start Pierrot's route by visiting the Garden on Day 1.",
-      "Approach Pierrot in Scene 3 and choose 'Stay a while.'",
-      "In Scene 6, accept his offer to sit together.",
-      "In Scene 9, select 'I trust you.'",
-      "In the Act III garden scene, accept Pierrot's offer.",
-    ],
-    tip: "Pierrot's route is the most commonly recommended starting point. The garden scene is the key decision point.",
-  },
-  {
-    ending: "Unnamed Open Ending",
-    character: "Harlequin",
-    difficulty: "Hidden",
-    type: "Joke",
-    time: "60-90 min",
-    steps: [
-      "Start a new Harlequin route playthrough.",
-      "Select EVERY comedic dialogue option in Scenes 1-8.",
-      "Do NOT select any aggressive options.",
-      "In Scene 9, choose the comedic option (not aggressive).",
-      "The ending triggers after Act III with a fourth-wall-breaking finale.",
-    ],
-    tip: "This ending is easy to miss because it requires 100% comedic choices. One aggressive option locks it out.",
-  },
-  {
-    ending: "Unnamed Open Ending",
-    character: "The Doctor",
-    difficulty: "Hard",
-    type: "Secret",
-    time: "4-6 hours",
-    steps: [
-      "Start The Doctor's route by visiting the Medical Tent on Day 1.",
-      "Find Medical File 1 in Scene 2 (drawer in the examination room).",
-      "Find Medical File 2 in Scene 4 (cabinet behind the curtain).",
-      "Find Medical File 3 in Scene 6 (floorboard under the bed).",
-      "Find Medical File 4 in Scene 8 (bookshelf, third shelf from top).",
-      "Find Medical File 5 in Scene 10 (desk, under the newspaper).",
-      "In Scene 12, accept The Doctor's diagnosis.",
-    ],
-    tip: "File 5 is the hardest to find — it's hidden under a newspaper on the desk. Inspect every object in Scene 10.",
-  },
-  {
-    ending: "Open Ending C (unnamed)",
-    character: "Pierrot",
-    difficulty: "Hard",
-    type: "Secret",
-    time: "1.5-2 hours",
-    steps: [
-      "Complete Pierrot's main route at least once (to unlock the silence mechanic).",
-      "Start a new Pierrot route playthrough.",
-      "In Scenes 10, 11, and 12, REFUSE all dialogue options. Do not select anything.",
-      "In the garden scene, do NOT select Comfort or Confess. Leave both unselected.",
-      "In Scene 14, ignore Pierrot's direct questions. Stay silent.",
-      "The screen will remain black for 3-4 minutes. Do not close the game.",
-      "Credits will roll after the black screen. Post-credits narration references previous playthroughs.",
-    ],
-    tip: "This ending breaks the fourth wall. The black screen is intentional — do not assume the game has crashed.",
-  },
-  {
-    ending: "Unnamed Open Ending",
-    character: "Columbina",
-    difficulty: "Very Hard",
-    type: "Secret",
-    time: "6-8 hours",
-    steps: [
-      "Loop 1: Select all 'graceful' options (accept, comfort, encourage) in every scene.",
-      "Loop 2: Select all 'precise' options (observe, mirror, follow) in every scene.",
-      "Loop 3: Select all 'silent' options (watch, wait, listen) in every scene.",
-      "Any deviation in any loop resets you to Loop 1, Scene 1 with no notification.",
-      "After three perfect loops, the hallway in Act III gains a fourth door.",
-      "Enter the fourth door to trigger the memory fragment and ending.",
-    ],
-    tip: "This is the hardest ending in the game. Use a guide for each loop's correct choices. One wrong selection means starting over.",
-  },
-  {
-    ending: "Unnamed Open Ending",
-    character: "Unknown",
-    difficulty: "Impossible",
-    type: "Unverified",
-    time: "Unknown",
-    steps: [
-      "Mentioned in patch notes 1.03 but never officially unlocked.",
-      "The Doctor describes it in Scene 7: 'A room with no walls, no ceiling, no floor. Only light.'",
-      "No player has confirmed the unlock conditions.",
-      "May require completing all other endings in a specific order.",
-    ],
-    tip: "This ending may be cut content or an intentional mystery. The community maintains a $500 bounty for confirmed unlock conditions.",
-  },
-  {
-    ending: "Unnamed Open Ending",
-    character: "???",
-    difficulty: "Impossible",
-    type: "Corrupted",
-    time: "Unknown",
-    steps: [
-      "Found only in modified game files through data mining.",
-      "The screen displays raw hex before the game crashes.",
-      "The hex, when converted to ASCII, reads: 'The show is over. The audience has left. Why are you still here?'",
-      "No legitimate unlock conditions have been discovered.",
-    ],
-    tip: "This may be a debug remnant, ARG element, or intentionally hidden ending. It cannot be unlocked through normal gameplay.",
-  },
-];
-
-const faqData = [
-  { question: "What order should I unlock endings?", answer: "Recommended order: 1) Open Ending A (unnamed) (Harlequin), 2) Open Ending B (unnamed) (Pierrot), 3) Unnamed Open Ending, 4) Unnamed Open Ending, 5) Open Ending C (unnamed), 6) Unnamed Open Ending. Save unverified endings for last." },
-  { question: "Can I get all endings in one playthrough?", answer: "No. At least 4 playthroughs are required due to replay dependencies. Unnamed Open Ending alone needs 3 perfect loops." },
-  { question: "What is the easiest ending?", answer: "Open Ending A (unnamed) (Harlequin) and Open Ending B (unnamed) (Pierrot) are the easiest — both achievable on first playthrough with no special conditions." },
-  { question: "What is the hardest ending?", answer: "Unnamed Open Ending requires perfect alignment across 3 loops with zero mistakes. Any deviation resets to Loop 1." },
-  { question: "Do endings affect each other?", answer: "Yes. A hidden counter at offset 0x4A20 tracks your completion history. Some endings only become available after seeing others first." },
-  { question: "How long to get all endings?", answer: `Playtime estimates are not yet confirmed. The game has ${ENDINGS_TOTAL} confirmed endings total.` },
-];
-
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Article",
-      headline: "All Endings Guide — Freak Circus Complete Ending Walkthrough",
-      description: "Step-by-step guide to unlock every ending in The Freak Circus.",
-      url: "https://freak-circus.com/walkthroughs/all-endings-guide",
-    },
-    {
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://freak-circus.com" },
-        { "@type": "ListItem", position: 2, name: "Walkthroughs", item: "https://freak-circus.com/walkthroughs" },
-        { "@type": "ListItem", position: 3, name: "All Endings Guide", item: "https://freak-circus.com/walkthroughs/all-endings-guide" },
-      ],
-    },
-    {
-      "@type": "FAQPage",
-      mainEntity: faqData.map((f) => ({
-        "@type": "Question",
-        name: f.question,
-        acceptedAnswer: { "@type": "Answer", text: f.answer },
-      })),
-    },
-  ],
-};
-
 export default function AllEndingsGuidePage() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen bg-surface">
       <Navigation />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <div className="max-w-5xl mx-auto px-4 md:px-16 pt-4">
+
+      {/* Hero */}
+      <section className="pt-28 pb-16 px-4 md:px-16 border-b border-outline/10 relative overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img src="/hero-endings.webp" alt="" className="w-full h-full object-cover opacity-30" aria-hidden="true" />
+          <div className="absolute inset-0 bg-gradient-to-b from-surface/60 via-surface/40 to-surface" />
+        </div>
+        <div className="max-w-4xl mx-auto relative z-10">
+          <span className="font-mono text-[10px] text-primary uppercase tracking-[0.3em] mb-4 block">
+            Endings Guide
+          </span>
+          <h1 className="font-display text-4xl md:text-5xl text-on-surface mb-6 uppercase tracking-tight">
+            All Endings Guide
+          </h1>
+          <p className="text-on-surface/60 text-lg max-w-2xl mb-6 leading-relaxed">
+            What we know about every ending in The Freak Circus.
+            Only one ending has been confirmed by name — the rest are unnamed open endings.
+          </p>
+        </div>
+      </section>
+
+      {/* Unverified Banner */}
+      <div className="max-w-4xl mx-auto px-4 md:px-16 pt-4">
         <UnverifiedBanner level="high" />
       </div>
 
-      <article className="bg-surface pt-8 pb-16 px-4 md:px-16">
-        <div className="max-w-5xl mx-auto">
-          <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant mb-4 uppercase tracking-widest">
-            Walkthrough // All Endings
-          </div>
+      <article className="py-16 px-4 md:px-16">
+        <div className="max-w-4xl mx-auto space-y-12">
 
-          <section className="relative mb-16">
-            <div className="relative w-full aspect-[21/9] overflow-hidden border border-white/5 group">
-              <img
-                alt="All endings guide for The Freak Circus"
-                className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
-                src="/hero-corridor.jpg"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#131314] via-transparent to-transparent" />
-              <div className="absolute bottom-0 left-0 p-8 w-full">
-                <h1 className="font-[Creepster] text-4xl md:text-6xl text-on-surface mb-2 uppercase tracking-tight">
-                  All Endings Guide
-                </h1>
-                <p className="font-[Epilogue] italic opacity-60">
-                  Every ending, every unlock condition, every secret — step by step.
-                </p>
+          {/* Summary */}
+          <section>
+            <h2 className="font-display text-2xl text-primary uppercase tracking-widest mb-4">
+              Ending Summary
+            </h2>
+            <div className="glass-card p-6">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div className="text-center">
+                  <div className="font-display text-3xl text-primary">{ENDINGS_TOTAL}</div>
+                  <div className="font-mono text-[10px] text-on-surface/40 uppercase">Total Endings</div>
+                </div>
+                <div className="text-center">
+                  <div className="font-display text-3xl text-green-500">{ENDINGS_BAD}</div>
+                  <div className="font-mono text-[10px] text-on-surface/40 uppercase">Bad Ending (Named)</div>
+                </div>
+                <div className="text-center">
+                  <div className="font-display text-3xl text-yellow-500">{ENDINGS_OPEN}</div>
+                  <div className="font-mono text-[10px] text-on-surface/40 uppercase">Open Endings (Unnamed)</div>
+                </div>
+                <div className="text-center">
+                  <div className="font-display text-3xl text-on-surface/30">—</div>
+                  <div className="font-mono text-[10px] text-on-surface/40 uppercase">True/Secret Ending</div>
+                </div>
               </div>
-            </div>
-
-            <div className="mt-8 bg-surface-container border border-outline/20 p-8 grid grid-cols-2 md:grid-cols-4 gap-8 border-l-4 border-l-primary">
-              <div>
-                <h4 className="font-[JetBrains_Mono] text-[10px] text-primary mb-1 uppercase tracking-widest">Total Endings</h4>
-                <p className="font-[Epilogue]">8+ Confirmed</p>
-              </div>
-              <div>
-                <h4 className="font-[JetBrains_Mono] text-[10px] text-primary mb-1 uppercase tracking-widest">Time Required</h4>
-                <p className="font-[Epilogue]">15-20 Hours</p>
-              </div>
-              <div>
-                <h4 className="font-[JetBrains_Mono] text-[10px] text-primary mb-1 uppercase tracking-widest">Playthroughs</h4>
-                <p className="font-[Epilogue]">4+ Required</p>
-              </div>
-              <div>
-                <h4 className="font-[JetBrains_Mono] text-[10px] text-primary mb-1 uppercase tracking-widest">Hardest</h4>
-                <p className="font-[Epilogue] text-primary font-bold">Columbina&apos;s Truth</p>
-              </div>
-            </div>
-          </section>
-
-          {/* Quick Answer */}
-          <section className="mb-12">
-            <div className="bg-surface-container border border-primary/20 p-6 border-l-4 border-l-primary">
-              <div className="font-[JetBrains_Mono] text-[10px] text-primary mb-2 uppercase tracking-widest">Quick Answer</div>
-              <p className="text-on-surface-variant text-sm leading-relaxed">
-                <strong className="text-foreground">How many endings are in The Freak Circus?</strong> The community has confirmed 11 endings across standard, secret, and corrupted categories. The easiest are Open Ending A (unnamed) and Open Ending B (unnamed) (first playthrough). The hardest is Columbina&apos;s Truth (3 perfect loops, 6-8 hours). Recommended order: Open Ending A (unnamed) → Open Ending B (unnamed) → Harlequin&apos;s Laughter → Doctor&apos;s Note → Open Ending C (unnamed) → Columbina&apos;s Truth.
+              <p className="text-on-surface/50 text-xs mt-4 text-center">
+                Source: thefreakcircus.org wiki — "1 bad ending and 3 open endings with more planned"
               </p>
             </div>
           </section>
 
-          {/* Ending Steps */}
-          <section className="mb-12">
-            <h2 className="font-[Epilogue] text-2xl md:text-3xl font-bold text-primary mb-8">
-              Step-by-Step Ending Guides
+          {/* Confirmed Ending */}
+          <section>
+            <h2 className="font-display text-2xl text-green-500 uppercase tracking-widest mb-4">
+              ✓ Confirmed Ending
             </h2>
-            <div className="space-y-8">
-              {endingSteps.map((ending, i) => (
-                <div key={ending.ending} className="bg-surface-container border border-outline/20 p-6">
-                  <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-4">
-                    <div>
-                      <h3 className="font-[Epilogue] text-xl font-bold text-foreground">{ending.ending}</h3>
-                      <p className="text-on-surface-variant text-sm">{ending.character} · {ending.type} · {ending.time}</p>
-                    </div>
-                    <div className="flex gap-2">
-                      <span className={`font-[JetBrains_Mono] text-[10px] px-2 py-1 border ${
-                        ending.difficulty === 'Normal' ? 'border-primary text-primary' :
-                        ending.difficulty === 'Impossible' ? 'border-outline/30 text-on-surface-variant' :
-                        'border-blood text-blood'
-                      }`}>{ending.difficulty}</span>
-                      <span className="font-[JetBrains_Mono] text-[10px] px-2 py-1 border border-outline/30 text-on-surface-variant">{ending.type}</span>
-                    </div>
-                  </div>
-                  <ol className="space-y-2 mb-4">
-                    {ending.steps.map((step, j) => (
-                      <li key={j} className="text-on-surface-variant text-sm flex gap-3">
-                        <span className="font-[JetBrains_Mono] text-xs text-primary mt-0.5">{j + 1}.</span>
-                        <span>{step}</span>
-                      </li>
-                    ))}
-                  </ol>
-                  <div className="bg-surface-container-high/30 p-4 border-l border-secondary">
-                    <p className="text-on-surface-variant text-sm">
-                      <strong className="text-secondary">Tip:</strong> {ending.tip}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </section>
-
-          {/* FAQ */}
-          <section className="mb-12">
-            <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">FAQ</h2>
-            <div className="space-y-4">
-              {faqData.map((f, i) => (
-                <details key={i} className="group bg-surface-container border border-outline/20">
-                  <summary className="flex justify-between items-center p-6 cursor-pointer font-[Epilogue] text-base font-semibold text-foreground list-none">
-                    <span>{f.question}</span>
-                    <span className="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
-                  </summary>
-                  <div className="p-6 pt-0 text-on-surface-variant text-sm border-t border-outline/10 leading-relaxed">{f.answer}</div>
-                </details>
-              ))}
-            </div>
-          </section>
-
-          {/* Related Routes */}
-          <section className="mb-12">
-            <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Route Walkthroughs</h2>
-            <div className="grid md:grid-cols-2 gap-4">
-              {[
-                { name: "Pierrot Main Route", href: "/walkthroughs/pierrot-main-route", desc: "Melancholic clown. Memory loops & silence mechanics." },
-                { name: "Pierrot Silent Route", href: "/walkthroughs/pierrot-silent-route", desc: "Secret ending path. Refuse all dialogue." },
-                { name: "Harlequin True Route", href: "/walkthroughs/harlequin-true-route", desc: "Chaotic performer. Comedy/aggression system." },
-                { name: "Doctor Memory Route", href: "/walkthroughs/doctor-memory-route", desc: "Circus physician. 5 hidden medical files." },
-                { name: "Columbina Fractured Route", href: "/walkthroughs/columbina-fractured-route", desc: "Ballerina. Three-loop alignment mechanic." },
-                { name: "Unnamed Open Ending", href: "/walkthroughs/null-route", desc: "Corrupted route. Unused endings." },
-              ].map((route) => (
-                <Link key={route.href} href={route.href} className="bg-surface-container border border-outline/20 p-6 hover:border-primary transition-colors">
-                  <h3 className="font-[Epilogue] text-lg font-bold text-foreground mb-2">{route.name}</h3>
-                  <p className="text-on-surface-variant text-sm">{route.desc}</p>
+            <div className="glass-card p-6 border-l-4 border-l-green-500">
+              <h3 className="font-display text-xl text-on-surface mb-2">"Missing" — Bad Ending</h3>
+              <div className="space-y-3 text-on-surface/70 text-sm">
+                <p>
+                  <strong>Verification:</strong> Confirmed by thefreakcircus.wiki.gg as the only named ending.
+                  YouTube has multiple "Bad End" scene videos.
+                </p>
+                <p>
+                  <strong>Associated Route:</strong> Harlequin route — this is the ending most players encounter
+                  on their first playthrough.
+                </p>
+                <p>
+                  <strong>What Happens:</strong> The details of this ending's narrative content have not been
+                  independently verified by our team. Community reports describe it as a dark conclusion
+                  to the Harlequin storyline.
+                </p>
+              </div>
+              <div className="mt-4 flex gap-3">
+                <Link href="/endings" className="font-mono text-xs text-primary uppercase hover:underline">
+                  View Ending Page →
                 </Link>
-              ))}
+              </div>
+            </div>
+          </section>
+
+          {/* Unnamed Open Endings */}
+          <section>
+            <h2 className="font-display text-2xl text-yellow-500 uppercase tracking-widest mb-4">
+              Unnamed Open Endings
+            </h2>
+            <div className="glass-card p-6 border-l-4 border-l-yellow-500">
+              <p className="text-on-surface/70 text-sm mb-4">
+                thefreakcircus.org confirms there are <strong>3 open endings</strong> in addition to the "Missing" bad ending.
+                However, <strong>none of these open endings have been confirmed by name</strong>. Any specific ending names
+                you see elsewhere (such as "Grand Finale", "Eternal Silence", "Smile For Me", etc.) are unverified
+                and may be community speculation or fabrications.
+              </p>
+              <div className="space-y-4">
+                {[
+                  {
+                    label: "Open Ending A",
+                    status: "Exists (unnamed)",
+                    note: "Some community members associate this with Harlequin's route. No verified name.",
+                  },
+                  {
+                    label: "Open Ending B",
+                    status: "Exists (unnamed)",
+                    note: "Some community members associate this with Pierrot's route. No verified name.",
+                  },
+                  {
+                    label: "Open Ending C",
+                    status: "Exists (unnamed)",
+                    note: "The least documented of the three open endings. No verified name or confirmed route.",
+                  },
+                ].map((ending) => (
+                  <div key={ending.label} className="bg-surface/50 p-4 rounded">
+                    <div className="flex items-center justify-between mb-2">
+                      <span className="font-display text-on-surface">{ending.label}</span>
+                      <span className="font-mono text-[9px] text-yellow-500 uppercase">{ending.status}</span>
+                    </div>
+                    <p className="text-on-surface/50 text-xs">{ending.note}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          {/* Debunked Endings */}
+          <section>
+            <h2 className="font-display text-2xl text-red-500 uppercase tracking-widest mb-4">
+              ✗ Debunked / Unverified Names
+            </h2>
+            <div className="glass-card p-6 border-l-4 border-l-red-500">
+              <p className="text-on-surface/70 text-sm mb-4">
+                The following ending names have appeared on fan sites or in community discussions but are
+                <strong> NOT confirmed</strong> by any official or wiki source. They may be fabrications:
+              </p>
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
+                {[
+                  "Grand Finale",
+                  "Eternal Silence",
+                  "Smile For Me",
+                  "Doctor's Note",
+                  "White Room",
+                  "Corrupted Data",
+                  "Harlequin's Laughter",
+                  "True Ending",
+                  "Secret Ending",
+                ].map((name) => (
+                  <div key={name} className="bg-red-900/20 px-3 py-2 rounded text-center">
+                    <span className="font-mono text-xs text-red-400 line-through">{name}</span>
+                    <br />
+                    <span className="font-mono text-[8px] text-red-400/60 uppercase">unverified</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          {/* What We Don't Know */}
+          <section>
+            <h2 className="font-display text-2xl text-on-surface/60 uppercase tracking-widest mb-4">
+              What We Don't Know Yet
+            </h2>
+            <div className="glass-card p-6">
+              <ul className="space-y-3 text-on-surface/60 text-sm">
+                <li className="flex items-start gap-2">
+                  <span className="text-on-surface/30 mt-1">?</span>
+                  <span>The specific names of the 3 open endings</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-on-surface/30 mt-1">?</span>
+                  <span>The exact choice combinations required for each open ending</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-on-surface/30 mt-1">?</span>
+                  <span>Whether there is a "true" ending that requires 100% completion</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-on-surface/30 mt-1">?</span>
+                  <span>How many endings will be added in Day 3 when it releases</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-on-surface/30 mt-1">?</span>
+                  <span>Whether datamined content in game files is actually accessible in normal gameplay</span>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          {/* Sources */}
+          <section>
+            <h2 className="font-display text-xl text-on-surface/40 uppercase tracking-widest mb-4">
+              Sources
+            </h2>
+            <div className="text-on-surface/40 text-xs space-y-1">
+              <p>• thefreakcircus.wiki.gg — "Confirmed Endings: 1 (Missing)"</p>
+              <p>• thefreakcircus.org — "1 bad ending and 3 open endings with more planned"</p>
+              <p>• YouTube — Multiple "Bad End" and "Good End" scene videos confirm endings exist</p>
+              <p>• Last verified: August 2026</p>
             </div>
           </section>
         </div>

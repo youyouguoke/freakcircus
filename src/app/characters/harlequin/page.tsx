@@ -14,11 +14,11 @@ export const metadata: Metadata = {
 };
 
 const faqData = [
-  { question: "Who is Harlequin in The Freak Circus?", answer: "Harlequin is the chaotic performer of The Freak Circus, bringing unpredictable energy that shifts between playful and menacing. Her route contains the most discussed hidden scenes in the community, including the \'You again\' replay dialogue." },
-  { question: "How do you unlock the Fractured Route?", answer: "Choose aggressive options in Scene 4 (\'Mock her performance\'), then switch to comedic options in Scene 9 (\'Laugh with her\'). This contradiction triggers the Fractured Route flag. Scene 10 onwards contains 7 undocumented hidden scenes." },
-  { question: "What is the \'You again\' line?", answer: "On the 4th playthrough, Harlequin looks directly at the screen and says \'You again.\' This line does not appear in the script files of any known build and was first reported by u/harlequin_hunter in 2024." },
-  { question: "Is Harlequin romanceable?", answer: "Yes. Harlequin is one of the four romanceable characters in The Freak Circus. Her main ending requires maintaining comedic choices through Acts I-II, then selecting the aggressive option in Scene 9." },
-  { question: "What happens in the Mirror Hall after completing both Pierrot and Harlequin routes?", answer: "After completing both routes, the Mirror Hall scene changes. Harlequin\'s reflection appears in Pierrot\'s mirror, and vice versa. This connection was discovered through community cross-referencing." },
+  { question: "Who is Harlequin in The Freak Circus?", answer: "Harlequin is one of the two main characters in The Freak Circus, introduced in Day 1 as Pierrot\'s seductive rival. He is described as manipulative and obsessive, creating a triangle of desire with the player character." },
+  { question: "What endings are associated with Harlequin?", answer: "The confirmed bad ending \'Missing\' is associated with Harlequin\'s route. This is the only ending confirmed by name in any official source. Community reports suggest at least one open ending is also tied to his route." },
+  { question: "Is Harlequin romanceable?", answer: "Harlequin is one of the main character routes in The Freak Circus. The game features branching paths based on player choices, and Harlequin\'s route is one of the primary story paths alongside Pierrot." },
+  { question: "What is the Mirror Scene?", answer: "The Mirror Scene is a key story moment in Day 2 that is confirmed to exist by multiple YouTube playthroughs. It appears to be a turning point in the narrative involving Pierrot and Harlequin\'s rivalry." },
+  { question: "What is Harlequin\'s relationship with Pierrot?", answer: "Harlequin and Pierrot are rivals. The Columbina legend in Day 2 reveals the backstory behind their animosity. This rivalry is a central plot element of the game." },
 ];
 
 export default function HarlequinPage() {

@@ -84,12 +84,12 @@ A: Some players report seeing a sixth figure in the mirrors. This may be the Nul
             <section>
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Related Content</h2>
               <div className="grid md:grid-cols-2 gap-4">
-                <Link href="/walkthroughs/pierrot-silent-route" className="bg-surface-container border border-outline/20 p-4 hover:border-primary transition-colors">
+                <Link href="/walkthroughs/pierrot-main-route" className="bg-surface-container border border-outline/20 p-4 hover:border-primary transition-colors">
                   <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant mb-1">Related Route</div>
-                  <div className="font-bold text-foreground">Pierrot Silent Route →</div>
+                  <div className="font-bold text-foreground">Pierrot Route Guide →</div>
                   <div className="text-on-surface-variant text-sm">Route where mirrors first appear</div>
                 </Link>
-                <Link href="/endings/eternal-silence" className="bg-surface-container border border-outline/20 p-4 hover:border-primary transition-colors">
+                <Link href="/endings" className="bg-surface-container border border-outline/20 p-4 hover:border-primary transition-colors">
                   <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant mb-1">Related Ending</div>
                   <div className="font-bold text-foreground">Open Ending C (unnamed) →</div>
                   <div className="text-on-surface-variant text-sm">Ending set in the Mirror Hall</div>

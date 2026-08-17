@@ -4,8 +4,8 @@ import Link from "next/link";
 
 const popularPages = [
   { title: "Pierrot Route Walkthrough — Every Choice Mapped", href: "/characters/pierrot", desc: "Complete guide to Pierrot\'s main route, silent route, and hidden dialogue triggers." },
-  { title: "How to Unlock Open Ending C (unnamed) Ending", href: "/endings/eternal-silence", desc: "Step-by-step unlock conditions for Pierrot\'s secret ending with the 4-minute black screen." },
-  { title: "Harlequin Route Choices — Fractured Route Guide", href: "/characters/harlequin", desc: "Every dialogue branch mapped, including the 7 undocumented hidden scenes." },
+  { title: "Pierrot Route Guide", href: "/characters/pierrot-route-guide", desc: "Community guide for Pierrot's route in The Freak Circus, covering Day 1cret ending with the 4-minute black screen." },
+  { title: "Harlequin Route — Community Guide", href: "/characters/harlequin", desc: "Community guide for Harlequin's confirmed route, including the 'Missing' ending anddocumented hidden scenes." },
   { title: "Doctor Unnamed Open Ending Theory — Precognitive Dialogue", href: "/characters/doctor", desc: "Why The Doctor describes endings before they occur and what the medical files reveal." },
   { title: "Complete Timeline Explained", href: "/lore", desc: "Chronological breakdown of every known event, symbol, and hidden clue in the circus lore." },
   { title: "Missing Ending Guide", href: "/endings", desc: "The confirmed bad ending in The Freak Circus perfect alignment across three loops and unlock the fourth door." },

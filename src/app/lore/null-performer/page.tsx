@@ -83,7 +83,7 @@ A: No. Despite community attempts, no method has been found to make the entity i
             <section>
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Related Content</h2>
               <div className="grid md:grid-cols-2 gap-4">
-                <Link href="/walkthroughs/null-route" className="bg-surface-container border border-outline/20 p-4 hover:border-primary transition-colors">
+                <Link href="/walkthroughs" className="bg-surface-container border border-outline/20 p-4 hover:border-primary transition-colors">
                   <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant mb-1">Related Route</div>
                   <div className="font-bold text-foreground">Unnamed Open Ending →</div>
                   <div className="text-on-surface-variant text-sm">The corrupted route with no characters</div>

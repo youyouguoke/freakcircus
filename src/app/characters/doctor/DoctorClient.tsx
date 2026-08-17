@@ -194,7 +194,7 @@ export default function DoctorClient({ faqData }: { faqData: { question: string;
         <div className="max-w-6xl mx-auto">
           <div className="font-label text-[0.6rem] mb-4" style={{ color: accent }}>RELATED FILES</div>
           <div className="flex flex-wrap gap-2">
-            {[{ l: "Doctor Memory Route", h: "/walkthroughs/doctor-memory-route" }, { l: "All Endings", h: "/endings" }, { l: "Unnamed Open Ending Lore", h: "/lore/mirror-hall" }, { l: "Columbina Character", h: "/characters/columbina" }].map((lnk) => (
+            {[{ l: "Walkthrough Hub", h: "/walkthroughs" }, { l: "All Endings", h: "/endings" }, { l: "Unnamed Open Ending Lore", h: "/lore/mirror-hall" }, { l: "Columbina Character", h: "/characters/columbina" }].map((lnk) => (
               <Link key={lnk.h} href={lnk.h} className="font-label text-[0.55rem] px-3 py-1.5 border border-dark-border text-faint-paper hover:border-circus-red hover:text-paper transition-colors">{lnk.l}</Link>
             ))}
           </div>
