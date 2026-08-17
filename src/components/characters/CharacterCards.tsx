@@ -7,106 +7,93 @@ const characters = [
   {
     title: "The Melancholic Clown",
     name: "Pierrot",
-    role: "Melancholic Clown / Route Guide",
+    role: "Main Character (Day 1)",
     image: "/Pierrot.jpg",
-    alt: "Pierrot Freak Circus Character — Melancholic Clown Route Guide",
-    personality: "Withdrawn, observant, speaks in riddles",
-    routeTheme: "Memory loops, replay awareness, silence mechanics",
-    popularity: "Most discussed character in community forums",
-    mystery: "References choices from previous playthroughs that the player never selected",
-    background: "Pierrot appears as the first character most players encounter in The Freak Circus. He stands alone in the garden, surrounded by flowers that wilt as the conversation progresses. His dialogue is sparse but weighted — every line contains multiple interpretations. The community has documented 47 unique dialogue variations across different playthroughs, suggesting a complex trigger system tied to save file behavior.",
-    endings: [
-      { name: "Open Ending B (unnamed)", type: "Standard", desc: "Accept Pierrot's offer in the garden scene during Act III." },
-      { name: "Open Ending C (unnamed)", type: "Secret", desc: "Refuse all dialogue for 3 consecutive scenes. Screen stays black for 4 minutes." },
-      { name: "Unnamed Open Ending", type: "Unverified", desc: "Found in unused files. Associated with Pierrot route by community speculation — not confirmed by developer." },
+    alt: "Pierrot — Melancholic Clown",
+    personality: "Yandere — obsessive, possessive, initially gentle",
+    verified: [
+      "Introduced in Day 1 as one of the two main characters",
+      "Described as yandere — obsessive and possessive",
+      "Rivalry with Harlequin driven by the Columbina legend",
+      "Day 2 tent routes deepen his story",
     ],
-    route: "Pierrot's route introduces the comfort/confess dialogue system. Early choices appear binary but create branching paths that only reveal themselves in Act II. The silent route requires refusing all dialogue for three consecutive scenes — not skipping, but actively refusing. This breaks the narrative contract and triggers unique post-credits narration.",
-    relationship: "Pierrot's connection to Columbina is the most theorized in the community. In the Open Ending C (unnamed) ending, his narration references her hallway — a location he should not know about. Unused voice lines contain a hidden conversation between them that never appears in gameplay.",
-    theory: "The Loop Theory suggests Pierrot remembers player behavior across save files. Counter value at offset 0x4A20 affects his dialogue options. On the 4th playthrough, he references choices from previous routes that the player never selected in the current save.",
+    unverified: [
+      "Community reports of dialogue changes after multiple playthroughs (unconfirmed)",
+      "Specific route mechanics and ending conditions (unverified)",
+    ],
     href: "/characters/pierrot",
   },
   {
-    title: "The Performer",
+    title: "The Seductive Rival",
     name: "Harlequin",
-    role: "Chaotic Performer / Route Guide",
+    role: "Main Character (Day 1)",
     image: "/Harlequin.jpg",
-    alt: "Harlequin Freak Circus Route Guide — Chaotic Performer Endings",
-    personality: "Unpredictable, shifts between playful and threatening",
-    routeTheme: "Fractured identity, comedic vs aggressive choices",
-    popularity: "Second most popular, known for hidden scenes",
-    mystery: "Says 'You again' on 4th playthrough — line not found in script files",
-    background: "Harlequin performs on a stage that changes architecture between scenes. His dialogue shifts unpredictably between playful and menacing, creating a sense that she is not fully in control of her own narrative. The community has identified 7 undocumented hidden scenes in her route, each requiring specific failure conditions to unlock.",
-    endings: [
-      { name: "Open Ending A (unnamed)", type: "Standard", desc: "Complete the Harlequin route with standard dialogue choices." },
-      { name: "Unnamed Open Ending", type: "Joke", desc: "Select every comedic option in a single playthrough." },
-      { name: "Unnamed Open Ending", type: "Secret", desc: "Unlocks after failing her main route once. Contains 7 hidden scenes." },
+    alt: "Harlequin — Seductive Rival",
+    personality: "Manipulative, obsessive, seductive",
+    verified: [
+      "Introduced in Day 1 as Pierrot's rival",
+      "Killed Columbina — drives the central conflict",
+      "The 'Missing' bad ending is associated with his route",
+      "Day 2 tent routes expand his story",
     ],
-    route: "Harlequin's fractured route requires specific failure conditions — choose aggressive options in Scene 4, then comedic options in Scene 9. This creates a personality fracture that reveals her true nature. The route contains the most aggressive dialogue pruning in the game, removing options that would lead to early endings.",
-    relationship: "Harlequin's connection to Pierrot is marked by the red thread sprite that appears in both their routes. She describes his garden with details the player never saw, suggesting shared memory or a connection predating the circus. The community theory suggests they may be siblings or former partners in a previous loop iteration.",
-    theory: "The Fractured Personality Theory proposes that Harlequin has multiple consciousnesses competing for control. Evidence includes dialogue that contradicts itself within the same scene, and the 'You again' line on the 4th playthrough that does not appear in script files — suggesting dynamically generated content based on player history.",
+    unverified: [
+      "Community reports of 'aggressive vs comedic' choice system (unconfirmed)",
+      "Specific ending conditions beyond 'Missing' (unverified)",
+    ],
     href: "/characters/harlequin",
   },
   {
-    title: "The Surgeon",
+    title: "The Physician",
     name: "The Doctor",
-    role: "Circus Physician / Route Guide",
+    role: "Day 2 Character",
     image: "/doctor-portrait.jpg",
-    alt: "Doctor Freak Circus Ending Guide — Circus Physician Route",
-    personality: "Clinical, detached, increasingly unsettling",
-    routeTheme: "Medical files, mirror connections, foreknowledge",
-    popularity: "Most disturbing route, high completion difficulty",
-    mystery: "Describes Unnamed Open Ending ending in Scene 7 before it becomes accessible",
-    background: "The Doctor operates from a medical tent that expands into a laboratory in later scenes. His clinical demeanor masks an increasingly unsettling awareness of the game's mechanics. The community has documented his precognitive dialogue across 12 different scenes, with accuracy rates that exceed random chance by significant margins.",
-    endings: [
-      { name: "Unnamed Open Ending", type: "Secret", desc: "Find all 5 hidden medical files before the final encounter." },
-      { name: "Unnamed Open Ending", type: "Unverified", desc: "Referenced in Scene 7 but never officially found. Associated with Doctor route by community speculation — not confirmed." },
-      { name: "Unnamed Open Ending", type: "Standard", desc: "Fail to collect any medical files. The Doctor abandons the patient." },
+    alt: "The Doctor — Circus Physician",
+    personality: "Clinical, detached",
+    verified: [
+      "Introduced in Day 2 tent routes",
+      "One of three new characters added in the Day 2 update",
+      "Appears in tent-based horror scenes alongside Ticket Taker",
     ],
-    route: "The Doctor's route requires finding 5 hidden medical files scattered across scenes: File 1 in Scene 2 (drawer), File 2 in Scene 4 (cabinet), File 3 in Scene 6 (floorboard), File 4 in Scene 8 (bookshelf), File 5 in Scene 10 (desk). Each file contains a character profile written in clinical terminology. File 4 (The Doctor himself) is blank except for: 'Subject is aware of observation.'",
-    relationship: "The Doctor's connection to Columbina is documented in medical files referencing 'patient C' with injuries matching her backstory. The mirror in Scene 9 shows Columbina's reflection when The Doctor looks, suggesting he sees her even when she is not present. This relationship was originally intended as a major plot point before being reduced to environmental storytelling.",
-    theory: "The Precognition Theory suggests The Doctor is aware of the game's script and endings before the player reaches them. His Scene 7 description of the Unnamed Open Ending ending matches unused files found in build 1.04. Some theorists believe he represents the game's developer consciousness within the narrative.",
+    unverified: [
+      "Community speculation about meta-awareness (unconfirmed)",
+      "Whether he has a dedicated route or endings (unknown)",
+    ],
     href: "/characters/doctor",
   },
   {
-    title: "The Trickster",
+    title: "The Storyteller",
     name: "Jester",
-    role: "Unknown / Meta Observer",
+    role: "Day 2 Character",
     image: "/Jester2.png",
-    alt: "Jester Freak Circus Character — Trickster Lore Theories Relationships",
-    personality: "Playful, manipulative, meta-aware, unpredictable",
-    routeTheme: "Loop awareness, fourth wall, future route prediction",
-    popularity: "Fastest-growing theory subject in community",
-    mystery: "Speaks to the player and remembers choices from previous playthroughs",
-    background: "Jester appears on Day 2 and in mirror sequences, operating at the edges of the narrative. He seems aware of the game's looping structure and often addresses the player rather than the protagonist. His limited screen time has made every appearance a focus of frame-by-frame analysis and theory-crafting.",
-    endings: [
-      { name: "Unknown Route", type: "Predicted", desc: "Placeholder files for 'jester_route_day3' found in recent builds." },
-      { name: "Mirror Ending", type: "Community Theory", desc: "Reflection may unlock an independent ending in a future update." },
-      { name: "Narrator Ending", type: "Speculation", desc: "Jester may represent the story itself, with no traditional ending." },
+    alt: "Jester — Storyteller",
+    personality: "Playful, unpredictable",
+    verified: [
+      "Introduced in Day 2 alongside Doctor and Ticket Taker",
+      "Described as a storyteller in the tent routes",
+      "Part of the Day 2 update content",
     ],
-    route: "No playable route exists yet. Datamined placeholder files and developer comments suggest Jester may receive a major expansion or secret route in a future update focused on meta-narrative choices.",
-    relationship: "Jester interacts with Pierrot, Harlequin, the Doctor, the Ticket Taker, and Columbina in ways that destabilize them. His most direct relationship is with the player, whom he addresses through the fourth wall.",
-    theory: "The Loop Awareness Theory proposes that Jester remembers events across timelines and may represent the narrative force of the circus itself. He references unselected choices and treats death as an inconvenience.",
+    unverified: [
+      "Community speculation about meta-awareness (unconfirmed)",
+      "Whether he has a dedicated route or endings (unknown)",
+    ],
     href: "/characters/jester",
   },
   {
     title: "The Gatekeeper",
     name: "Ticket Taker",
-    role: "Circus Entrance / Lore Guide",
+    role: "Day 1-2 Character",
     image: "/tickettaker.jpg",
-    alt: "Ticket Taker Freak Circus Character — Gatekeeper Lore Guide",
-    personality: "Silent, imposing, transactional",
-    routeTheme: "Pink ticket, mirror scene, identity mystery",
-    popularity: "Most discussed NPC despite no romance route",
-    mystery: "Mirror scene shows the player wearing his porcelain mask",
-    background: "The Ticket Taker stands as the enigmatic sentinel at the threshold of the Freak Circus. Draped in tattered mahogany robes and concealing their features behind a static, smiling porcelain mask, they exist between the realm of the living and the spectacle of the circus. Unlike other performers who thrive on the attention of the crowd, the Ticket Taker remains cold, clinical, and transactional. Players first encounter them not at the circus gates, but in the desolate 'Raining Cafe', where they deliver the first of many ominous warnings.",
-    endings: [
-      { name: "Bad Ending A", type: "Standard", desc: "Fail to provide the pink ticket at the circus entrance. Immediate Game Over." },
-      { name: "Mirror Truth", type: "Secret", desc: "Click the mirror 33 times to trigger the hidden laugh — the player's own voice reversed." },
-      { name: "Day 3 Encounter", type: "Cut Content", desc: "Datamined trigger zone found but never activated in current build." },
+    alt: "Ticket Taker — Gatekeeper",
+    personality: "Silent, imposing",
+    verified: [
+      "First character the player meets in Day 1 at the cafe",
+      "Present in both Day 1 and Day 2 content",
+      "Delivers the pink ticket to the player",
     ],
-    route: "As of patch 1.5, there is no playable route for the Ticket Taker. He remains an NPC guide and a primary source of lore exposition. Community petitions for a 'Hidden Route' are currently under review by the developers. Empty romance voice files and unused walking animations suggest one was planned but cut.",
-    relationship: "The Ticket Taker's connection to the Doctor is the most theorized in the community. Multiple evidence points suggest a connection: identical height (188cm), shared vocal frequency patterns, matching robe wallpaper patterns, and the fact they never appear in the same scene. The mirror scene reflection showing the player wearing his mask has spawned the dominant Time-Loop Theory.",
-    theory: "The Time-Loop Theory suggests the Ticket Taker is the player from a previous failed cycle. Evidence: The mirror scene dialogue uses the player's exact word choice from Day 1. The Ticket Taker knows the player's name before it is spoken. The mask fits the player's face perfectly in the reflection. Data mining suggests there is no character model under the mask, confirming he is likely an incorporeal entity.",
+    unverified: [
+      "Whether the mirror scene has hidden mechanics (unconfirmed)",
+      "Whether he has a dedicated route (unknown)",
+    ],
     href: "/ticket-taker",
   },
 ];
@@ -115,11 +102,13 @@ export default function CharacterCards() {
   return (
     <section className="bg-surface py-16 px-4 md:px-16 border-t border-outline/10">
       <div className="max-w-6xl mx-auto">
-        <h2 className="font-[Epilogue] text-2xl md:text-3xl font-bold text-primary mb-4">
+        <h2 className="font-display text-2xl md:text-3xl font-bold text-primary mb-4">
           Freak Circus Characters
         </h2>
         <p className="text-on-surface-variant text-sm mb-8">
-          The {CHARACTERS_COUNT} central figures of The Freak Circus — Pierrot the melancholic clown, Harlequin the chaotic performer, Jester the trickster, The Doctor the circus physician, and the enigmatic Ticket Taker who guards the threshold. Each character has their own route, hidden triggers, disturbing revelations, and multiple endings.
+          The {CHARACTERS_COUNT} characters of The Freak Circus. Pierrot and Harlequin are the two main
+          characters (Day 1). Doctor, Jester, and Ticket Taker were added in the Day 2 update.
+          Columbina is a deceased character — not playable.
         </p>
         <div className="grid md:grid-cols-2 gap-8">
           {characters.map((char) => (
@@ -134,86 +123,51 @@ export default function CharacterCards() {
                   className="w-20 h-20 object-cover rounded border border-outline/20"
                 />
                 <div>
-                  <div className="font-[JetBrains_Mono] text-xs text-primary mb-1">
+                  <div className="font-mono text-xs text-primary mb-1">
                     {char.title}
                   </div>
-                  <h3 className="font-[Creepster] text-3xl text-primary mb-2">
+                  <h3 className="font-display text-3xl text-primary mb-2">
                     {char.name}
                   </h3>
                 </div>
               </div>
 
-              {/* Background Story */}
-              <div className="mb-4">
-                <div className="font-[JetBrains_Mono] text-xs text-primary mb-1">BACKGROUND</div>
-                <p className="text-on-surface-variant text-sm leading-relaxed">
-                  {char.background}
-                </p>
+              <div className="flex gap-2 mb-4">
+                <span className="font-mono text-xs text-on-surface-variant">Role:</span>
+                <span className="text-on-surface-variant text-xs">{char.role}</span>
+              </div>
+              <div className="flex gap-2 mb-4">
+                <span className="font-mono text-xs text-on-surface-variant">Personality:</span>
+                <span className="text-on-surface-variant text-xs">{char.personality}</span>
               </div>
 
-              {/* Personality */}
-              <div className="space-y-2 mb-4">
-                <div className="flex gap-2">
-                  <span className="font-[JetBrains_Mono] text-xs text-on-surface-variant">Role:</span>
-                  <span className="text-on-surface-variant text-xs">{char.role}</span>
-                </div>
-                <div className="flex gap-2">
-                  <span className="font-[JetBrains_Mono] text-xs text-on-surface-variant">Personality:</span>
-                  <span className="text-on-surface-variant text-xs">{char.personality}</span>
-                </div>
-                <div className="flex gap-2">
-                  <span className="font-[JetBrains_Mono] text-xs text-on-surface-variant">Route Theme:</span>
-                  <span className="text-on-surface-variant text-xs">{char.routeTheme}</span>
-                </div>
-                <div className="flex gap-2">
-                  <span className="font-[JetBrains_Mono] text-xs text-on-surface-variant">Key Mystery:</span>
-                  <span className="text-on-surface-variant text-xs">{char.mystery}</span>
-                </div>
-              </div>
-
-              {/* All Endings */}
               <div className="mb-4">
-                <div className="font-[JetBrains_Mono] text-xs text-primary mb-2">ALL ENDINGS</div>
-                <div className="space-y-2">
-                  {char.endings.map((e) => (
-                    <div key={e.name} className="border-l-2 border-outline/20 pl-3">
-                      <div className="flex items-center gap-2">
-                        <span className="text-foreground text-sm font-medium">{e.name}</span>
-                        <span className="font-[JetBrains_Mono] text-xs text-on-surface-variant">({e.type})</span>
-                      </div>
-                      <p className="text-on-surface-variant text-xs">{e.desc}</p>
-                    </div>
+                <div className="font-mono text-xs text-green-500 mb-2">✓ VERIFIED</div>
+                <ul className="space-y-1">
+                  {char.verified.map((item, i) => (
+                    <li key={i} className="text-on-surface-variant text-xs flex items-start gap-2">
+                      <span className="text-green-500 mt-0.5">•</span>
+                      <span>{item}</span>
+                    </li>
                   ))}
-                </div>
+                </ul>
               </div>
 
-              {/* Route Walkthrough */}
               <div className="mb-4">
-                <div className="font-[JetBrains_Mono] text-xs text-primary mb-1">ROUTE WALKTHROUGH</div>
-                <p className="text-on-surface-variant text-sm leading-relaxed">
-                  {char.route}
-                </p>
-              </div>
-
-              {/* Relationship */}
-              <div className="mb-4">
-                <div className="font-[JetBrains_Mono] text-xs text-primary mb-1">RELATIONSHIP</div>
-                <p className="text-on-surface-variant text-sm leading-relaxed">
-                  {char.relationship}
-                </p>
-              </div>
-
-              {/* Fan Theory */}
-              <div className="mb-4">
-                <div className="font-[JetBrains_Mono] text-xs text-primary mb-1">TOP FAN THEORY</div>
-                <p className="text-on-surface-variant text-sm leading-relaxed">
-                  {char.theory}
-                </p>
+                <div className="font-mono text-xs text-yellow-500 mb-2">? UNVERIFIED</div>
+                <ul className="space-y-1">
+                  {char.unverified.map((item, i) => (
+                    <li key={i} className="text-on-surface/50 text-xs flex items-start gap-2">
+                      <span className="text-yellow-500 mt-0.5">•</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
 
               <Link
                 href={char.href}
-                className="text-primary font-[JetBrains_Mono] text-xs uppercase hover:underline"
+                className="text-primary font-mono text-xs uppercase hover:underline"
               >
                 Explore {char.name} →
               </Link>

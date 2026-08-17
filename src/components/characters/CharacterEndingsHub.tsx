@@ -1,69 +1,34 @@
 "use client";
 
-import Link from "next/link";
-
-const endings = [
-  {
-    character: "Pierrot",
-    endings: [
-      { name: "Open Ending B (unnamed)", type: "Standard", desc: "Accept Pierrot's offer in the garden scene. Most players see this on their first playthrough." },
-      { name: "Open Ending C (unnamed)", type: "Secret", desc: "Refuse all dialogue for three scenes. The 4-minute black screen ending that references previous playthroughs." },
-      { name: "Unnamed Open Ending", type: "Corrupted", desc: "Found in unused game files. No player has legitimately unlocked this ending." },
-    ],
-  },
-  {
-    character: "Harlequin",
-    endings: [
-      { name: "Open Ending A (unnamed)", type: "Standard", desc: "Complete the Harlequin route with standard dialogue choices." },
-      { name: "Unnamed Open Ending", type: "Joke", desc: "Select every comedic option in a single playthrough. Low spoilers, first playthrough possible." },
-    ],
-  },
-  {
-    character: "The Doctor",
-    endings: [
-      { name: "Unnamed Open Ending", type: "Secret", desc: "Find all five hidden medical files before the final encounter." },
-      { name: "Unnamed Open Ending", type: "False", desc: "Mentioned in patch notes but never officially found." },
-    ],
-  },
-  {
-    character: "Columbina",
-    endings: [
-      { name: "Unnamed Open Ending", type: "Secret", desc: "Perfect alignment of all dialogue choices across three loops." },
-      { name: "Unnamed Open Ending", type: "Corrupted", desc: "Found only in modified game files. Screen displays raw hex before crash." },
-    ],
-  },
-];
-
 export default function CharacterEndingsHub() {
   return (
-    <section className="bg-surface py-16 px-4 md:px-16 border-t border-outline/10">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="font-[Epilogue] text-2xl md:text-3xl font-bold text-primary mb-4">
-          Character Endings Hub
+    <section className="py-16 px-4 md:px-16 border-t border-outline/10">
+      <div className="max-w-4xl mx-auto">
+        <h2 className="font-display text-2xl text-primary uppercase tracking-widest mb-4">
+          Character Endings
         </h2>
-        <p className="text-on-surface-variant text-sm mb-8">
-          All confirmed endings for each character, with unlock conditions and community verification status
+        <p className="text-on-surface/50 text-sm mb-8">
+          What we know about endings associated with each character.
         </p>
-
-        <div className="grid md:grid-cols-2 gap-8">
-          {endings.map((char) => (
-            <div key={char.character} className="bg-surface-container border border-outline/20 p-6">
-              <h3 className="font-[Creepster] text-2xl text-primary mb-4">
-                {char.character}
-              </h3>
-              <div className="space-y-4">
-                {char.endings.map((e) => (
-                  <div key={e.name} className="border-l-2 border-outline/20 pl-4">
-                    <div className="flex items-center gap-2 mb-1">
-                      <span className="font-[JetBrains_Mono] text-xs text-primary">{e.name}</span>
-                      <span className="font-[JetBrains_Mono] text-xs text-on-surface-variant">({e.type})</span>
-                    </div>
-                    <p className="text-on-surface-variant text-xs">{e.desc}</p>
-                  </div>
-                ))}
-              </div>
+        <div className="glass-card p-6">
+          <div className="space-y-4">
+            <div className="flex items-start gap-3">
+              <span className="font-mono text-xs text-primary shrink-0 w-20">Pierrot</span>
+              <span className="text-on-surface/60 text-sm">Associated with at least one of the 3 unnamed open endings. Specific conditions unverified.</span>
             </div>
-          ))}
+            <div className="flex items-start gap-3">
+              <span className="font-mono text-xs text-primary shrink-0 w-20">Harlequin</span>
+              <span className="text-on-surface/60 text-sm">The &quot;Missing&quot; bad ending is confirmed. May also be associated with an open ending.</span>
+            </div>
+            <div className="flex items-start gap-3">
+              <span className="font-mono text-xs text-primary shrink-0 w-20">Doctor</span>
+              <span className="text-on-surface/60 text-sm">May be associated with an open ending. Unverified.</span>
+            </div>
+            <div className="flex items-start gap-3">
+              <span className="font-mono text-xs text-primary shrink-0 w-20">Jester</span>
+              <span className="text-on-surface/60 text-sm">No endings confirmed. Day 3 may add Jester-specific content.</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
