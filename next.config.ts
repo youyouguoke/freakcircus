@@ -7,19 +7,62 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      // Columbina pages → characters page
       {
         source: "/walkthroughs/columbina-fractured-route",
-        destination: "/characters/columbina",
+        destination: "/characters",
         permanent: true,
       },
       {
         source: "/endings/columbinas-truth",
-        destination: "/characters/columbina",
+        destination: "/endings",
+        permanent: true,
+      },
+      // Fabricated ending pages → main endings page
+      {
+        source: "/endings/the-grand-finale",
+        destination: "/endings",
         permanent: true,
       },
       {
-        source: "/endings/eternal-dance",
-        destination: "/characters/columbina",
+        source: "/endings/eternal-silence",
+        destination: "/endings",
+        permanent: true,
+      },
+      {
+        source: "/endings/doctors-note",
+        destination: "/endings",
+        permanent: true,
+      },
+      {
+        source: "/endings/corrupted-data",
+        destination: "/endings",
+        permanent: true,
+      },
+      // Fabricated walkthrough pages → main walkthroughs page
+      {
+        source: "/walkthroughs/pierrot-silent-route",
+        destination: "/walkthroughs",
+        permanent: true,
+      },
+      {
+        source: "/walkthroughs/harlequin-true-route",
+        destination: "/walkthroughs",
+        permanent: true,
+      },
+      {
+        source: "/walkthroughs/doctor-memory-route",
+        destination: "/walkthroughs",
+        permanent: true,
+      },
+      {
+        source: "/walkthroughs/null-route",
+        destination: "/walkthroughs",
+        permanent: true,
+      },
+      {
+        source: "/walkthroughs/all-endings-guide",
+        destination: "/endings",
         permanent: true,
       },
     ];

@@ -1,222 +1,45 @@
-"use client";
-
-const endings = [
-  {
-    name: "The Grand Finale",
-    character: "Harlequin",
-    difficulty: "Normal",
-    type: "Canon",
-    verified: "Yes",
-    spoilers: "None",
-    unlock: "Complete Harlequin route with standard dialogue choices. No special conditions required.",
-    choices: [
-      "Scene 4: Accept Harlequin's invitation to the stage",
-      "Scene 7: Choose 'I want to see the real you'",
-      "Scene 12: Stay for the final performance",
-    ],
-    rewards: "CG: Harlequin's final bow. Achievement: 'The Show Must Go On'.",
-  },
-  {
-    name: "Smile For Me",
-    character: "Pierrot",
-    difficulty: "Normal",
-    type: "Canon",
-    verified: "Yes",
-    spoilers: "Low",
-    unlock: "Accept Pierrot's offer during the garden scene in Act III.",
-    choices: [
-      "Scene 3: Approach Pierrot in the garden",
-      "Scene 6: Accept his offer to 'stay a while'",
-      "Scene 9: Choose 'I trust you'",
-    ],
-    rewards: "CG: Pierrot's smile. A single red thread remains on the ground after credits. Achievement: 'Smile For Me'.",
-  },
-  {
-    name: "The Doctor's Note",
-    character: "The Doctor",
-    difficulty: "Hard",
-    type: "Secret",
-    verified: "Yes",
-    spoilers: "Medium",
-    unlock: "Find all 5 hidden medical files before the final encounter.",
-    choices: [
-      "Scene 2: Search the drawer for File 1",
-      "Scene 4: Check the cabinet for File 2",
-      "Scene 6: Look under the floorboard for File 3",
-      "Scene 8: Examine the bookshelf for File 4",
-      "Scene 10: Check the desk for File 5",
-    ],
-    rewards: "CG: The Doctor's handwritten note. Achievement: 'Medical History'.",
-  },
-  {
-    name: "Eternal Silence",
-    character: "Pierrot",
-    difficulty: "Hard",
-    type: "Secret",
-    verified: "Yes",
-    spoilers: "High",
-    unlock: "Refuse every major dialogue interaction during the final act. Screen stays black for 4 minutes.",
-    choices: [
-      "Scene 10: Refuse Pierrot's first question",
-      "Scene 11: Refuse the second question",
-      "Scene 12: Refuse the final question",
-      "Wait 4 minutes on black screen",
-    ],
-    rewards: "No CG. Post-credits narration only. Achievement: 'Eternal Silence'.",
-  },
-  {
-    name: "Columbina's Truth",
-    character: "Columbina",
-    difficulty: "Very Hard",
-    type: "Secret",
-    verified: "Yes",
-    spoilers: "Very High",
-    unlock: "Perfect alignment of all dialogue choices across three loops. Any deviation resets to Loop 1.",
-    choices: [
-      "Loop 1: Choose all 'gentle' responses",
-      "Loop 2: Choose all 'truthful' responses",
-      "Loop 3: Choose all 'accepting' responses",
-      "Scene 12: Enter the fourth door",
-    ],
-    rewards: "CG: The fourth door opening. Achievement: 'Columbina's Truth'.",
-  },
-  {
-    name: "White Room",
-    character: "Unknown",
-    difficulty: "Impossible",
-    type: "False",
-    verified: "No",
-    spoilers: "Unknown",
-    unlock: "Mentioned in patch notes 1.03. Conditions unknown. The Doctor describes it in Scene 7.",
-    choices: ["No known unlock path."],
-    rewards: "Unknown.",
-  },
-  {
-    name: "Corrupted Data",
-    character: "???",
-    difficulty: "Impossible",
-    type: "Corrupted",
-    verified: "No",
-    spoilers: "Extreme",
-    unlock: "Found only in modified game files. Screen displays raw hex before crash.",
-    choices: ["No legitimate unlock path known."],
-    rewards: "None. Game crashes after hex display.",
-  },
-  {
-    name: "Harlequin's Laughter",
-    character: "Harlequin",
-    difficulty: "Hidden",
-    type: "Joke",
-    verified: "Yes",
-    spoilers: "Low",
-    unlock: "Select every comedic option in a single playthrough.",
-    choices: [
-      "Scene 2: Choose the joke option",
-      "Scene 5: Choose the absurd option",
-      "Scene 8: Choose the comedic option",
-      "Scene 11: Choose the silly option",
-    ],
-    rewards: "CG: Harlequin laughing. Achievement: 'Harlequin's Laughter'.",
-  },
-  {
-    name: "Fractured Ending",
-    character: "Harlequin",
-    difficulty: "Hard",
-    type: "Alternate",
-    verified: "Yes",
-    spoilers: "Medium",
-    unlock: "Fail Harlequin's main route once, then choose aggressive options in Scene 4 and comedic options in Scene 9.",
-    choices: [
-      "Fail Harlequin's main route first",
-      "Scene 4: Choose aggressive options",
-      "Scene 9: Choose comedic options",
-      "Unlock 7 hidden scenes",
-    ],
-    rewards: "Reveals Harlequin's fractured personality. No standard CG.",
-  },
-  {
-    name: "Medical Failure",
-    character: "The Doctor",
-    difficulty: "Normal",
-    type: "Standard",
-    verified: "Yes",
-    spoilers: "Low",
-    unlock: "Complete The Doctor's route without finding all 5 hidden medical files.",
-    choices: [
-      "Complete Doctor route normally",
-      "Do not collect all medical files",
-    ],
-    rewards: "The Doctor abandons the patient. Standard route conclusion.",
-  },
-  {
-    name: "Eternal Dance",
-    character: "Columbina",
-    difficulty: "Normal",
-    type: "Standard",
-    verified: "Yes",
-    spoilers: "Low",
-    unlock: "Complete a single Columbina loop without perfect alignment.",
-    choices: [
-      "Complete one loop of Columbina's route",
-      "No special conditions required",
-    ],
-    rewards: "Standard Columbina ending. The dance continues without revelation.",
-  },
-];
-
 export default function EndingComparisonTable() {
   return (
     <section className="bg-surface py-16 px-4 md:px-16 border-t border-outline/10">
       <div className="max-w-6xl mx-auto">
         <h2 className="font-[Epilogue] text-2xl md:text-3xl font-bold text-primary mb-4">
-          All Endings Table
+          Confirmed Ending
         </h2>
         <p className="text-on-surface-variant text-sm mb-8">
-          Complete ending guide with unlock conditions, requirements, and rewards for every ending
+          Only 1 ending has been independently verified by multiple sources
         </p>
-
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
               <tr className="border-b border-outline/20">
                 <th className="text-left p-3 text-foreground">Ending</th>
-                <th className="text-left p-3 text-foreground">Character</th>
-                <th className="text-left p-3 text-foreground">Difficulty</th>
                 <th className="text-left p-3 text-foreground">Type</th>
-                <th className="text-left p-3 text-foreground">Unlock Conditions</th>
-                <th className="text-left p-3 text-foreground">Rewards</th>
+                <th className="text-left p-3 text-foreground">Trigger</th>
+                <th className="text-left p-3 text-foreground">Source</th>
               </tr>
             </thead>
             <tbody>
-              {endings.map((e) => (
-                <tr key={e.name} className="border-b border-outline/10">
-                  <td className="p-3 text-foreground font-bold">{e.name}</td>
-                  <td className="p-3 text-on-surface-variant">{e.character}</td>
-                  <td className="p-3">
-                    <span className={`font-[JetBrains_Mono] text-xs px-2 py-1 border ${
-                      e.difficulty === "Normal" ? "border-primary text-primary" :
-                      e.difficulty === "Hard" ? "border-blood text-blood" :
-                      e.difficulty === "Very Hard" ? "border-blood text-blood" :
-                      "border-outline/30 text-on-surface-variant"
-                    }`}>{e.difficulty}</span>
-                  </td>
-                  <td className="p-3">
-                    <span className={`font-[JetBrains_Mono] text-xs px-2 py-1 border ${
-                      e.type === "Canon" ? "border-primary text-primary" :
-                      e.type === "Secret" ? "border-blood text-blood" :
-                      e.type === "Joke" ? "border-primary text-primary" :
-                      e.type === "Unverified" ? "border-yellow-500/30 text-yellow-500" :
-                      e.type === "Corrupted" ? "border-red-500/30 text-red-500" :
-                      e.type === "False" ? "border-red-400/30 text-red-400" :
-                      "border-outline/30 text-on-surface-variant"
-                    }`}>{e.type}{e.verified === "No" && " ⚠️"}</span>
-                  </td>
-                  <td className="p-3 text-on-surface-variant text-xs max-w-xs">{e.unlock}</td>
-                  <td className="p-3 text-on-surface-variant text-xs max-w-xs">{e.rewards}</td>
-                </tr>
-              ))}
+              <tr className="border-b border-outline/10">
+                <td className="p-3 text-foreground font-bold">Missing</td>
+                <td className="p-3">
+                  <span className="font-[JetBrains_Mono] text-xs px-2 py-1 border border-blood text-blood">Bad Ending</span>
+                </td>
+                <td className="p-3 text-on-surface-variant text-xs">
+                  Trust thresholds not met by end of Day 2. Player character goes missing.
+                </td>
+                <td className="p-3 text-on-surface-variant text-xs">
+                  thefreakcircus.wiki, YouTube, thefreakcircus.org
+                </td>
+              </tr>
             </tbody>
           </table>
+        </div>
+        <div className="mt-6 bg-surface-container border border-amber-500/30 p-4">
+          <p className="text-on-surface-variant text-xs">
+            <strong className="text-amber-400">Note:</strong> The developer has confirmed 3 additional open endings exist,
+            but no source has named them. Ending names like &quot;Grand Finale&quot;, &quot;Eternal Silence&quot;, etc.
+            that appear on other sites are unverified speculation.
+          </p>
         </div>
       </div>
     </section>

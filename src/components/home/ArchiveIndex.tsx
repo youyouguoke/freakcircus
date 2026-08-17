@@ -1,8 +1,6 @@
-'use client';
-
 import Link from 'next/link';
 
-const categories = [
+const sections = [
   {
     title: 'Characters',
     items: [
@@ -16,10 +14,8 @@ const categories = [
   {
     title: 'Endings',
     items: [
-      { name: 'Grand Finale', href: '/endings/the-grand-finale' },
-      { name: 'Eternal Silence', href: '/endings/eternal-silence' },
-      { name: "Doctor's Note", href: '/endings/doctors-note' },
-      { name: 'Corrupted Data', href: '/endings/corrupted-data' },
+      { name: 'Missing (Confirmed)', href: '/endings' },
+      { name: 'All Endings Overview', href: '/endings' },
     ],
   },
   {
@@ -54,20 +50,14 @@ export default function ArchiveIndex() {
             Archive Index
           </h2>
         </div>
-
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {categories.map((cat) => (
-            <div key={cat.title}>
-              <h3 className="font-archive text-sm text-paper mb-4 pb-2 border-b border-dark-border">
-                {cat.title.toUpperCase()}
-              </h3>
+          {sections.map((section) => (
+            <div key={section.title}>
+              <h3 className="font-archive text-sm text-paper mb-4 pb-2 border-b border-dark-border">{section.title.toUpperCase()}</h3>
               <ul className="space-y-2">
-                {cat.items.map((item) => (
+                {section.items.map((item) => (
                   <li key={item.name}>
-                    <Link
-                      href={item.href}
-                      className="text-faint-paper text-sm hover:text-paper transition-colors"
-                    >
+                    <Link href={item.href} className="text-faint-paper text-sm hover:text-paper transition-colors">
                       {item.name}
                     </Link>
                   </li>
@@ -75,12 +65,6 @@ export default function ArchiveIndex() {
               </ul>
             </div>
           ))}
-        </div>
-
-        <div className="border-t border-dark-border mt-12 pt-6">
-          <span className="font-label text-[0.55rem] text-dim-paper">
-            LAST UPDATED: JUNE 2026
-          </span>
         </div>
       </div>
     </section>

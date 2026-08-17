@@ -1,23 +1,14 @@
-"use client";
-
 import Link from "next/link";
 
-const spotlights = [
+const endings = [
   {
-    id: "ENDING #04",
-    title: "Eternal Silence",
-    difficulty: "Hard",
-    character: "Pierrot",
-    desc: "The secret ending that breaks the game's narrative contract. Requires refusing all dialogue for three consecutive scenes, triggering a 4-minute black screen where Pierrot narrates events from previous playthroughs that the player never selected.",
-    href: "/endings/eternal-silence",
-  },
-  {
-    id: "ENDING #07",
-    title: "Corrupted Data",
-    difficulty: "Impossible",
-    character: "???",
-    desc: "A rumored ending hidden inside unused game files. The screen displays raw hex data before the application crashes. No player has verified legitimate unlock conditions. Data miners found references in build 1.04.",
-    href: "/endings/corrupted-data",
+    id: "ENDING #01",
+    title: "Missing",
+    difficulty: "Unknown",
+    character: "MC",
+    desc: "The only confirmed ending. The player character goes missing and is never found. Triggers when trust thresholds are not met by end of Day 2.",
+    href: "/endings",
+    status: "confirmed",
   },
 ];
 
@@ -25,24 +16,26 @@ export default function EndingSpotlight() {
   return (
     <section className="bg-surface py-16 px-4 md:px-16 border-t border-outline/10">
       <div className="max-w-6xl mx-auto">
-        <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant mb-4">
-          // Ending Spotlight — Weekly Rotation
-        </div>
-
-        <div className="grid md:grid-cols-3 gap-6">
-          {spotlights.map((s) => (
-            <div key={s.id} className="bg-surface-container border border-outline/20 p-6 hover:border-primary transition-colors">
-              <div className="font-[JetBrains_Mono] text-xs text-primary mb-2">{s.id}</div>
-              <h3 className="font-[Creepster] text-2xl text-primary mb-2">{s.title}</h3>
-              <div className="flex gap-2 mb-3">
-                <span className="font-[JetBrains_Mono] text-xs text-blood border border-blood/30 px-2 py-1">{s.difficulty}</span>
-                <span className="font-[JetBrains_Mono] text-xs text-on-surface-variant border border-outline/30 px-2 py-1">{s.character}</span>
+        <h2 className="font-[Epilogue] text-2xl md:text-3xl font-bold text-primary mb-4">
+          Confirmed Ending
+        </h2>
+        <p className="text-on-surface-variant text-sm mb-8">
+          The only ending verified by independent sources
+        </p>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {endings.map((ending) => (
+            <Link key={ending.id} href={ending.href} className="group">
+              <div className="bg-surface-container border border-outline/20 p-6 hover:border-primary transition-colors h-full">
+                <div className="font-[JetBrains_Mono] text-xs text-primary mb-2">{ending.id}</div>
+                <h3 className="font-[Epilogue] text-lg font-bold text-foreground mb-2">{ending.title}</h3>
+                <div className="flex gap-2 mb-3">
+                  <span className="font-[JetBrains_Mono] text-[10px] px-2 py-0.5 border border-status-confirmed/30 text-status-confirmed bg-status-confirmed/5">VERIFIED</span>
+                  <span className="font-[JetBrains_Mono] text-[10px] px-2 py-0.5 border border-outline/30 text-on-surface-variant">Bad Ending</span>
+                </div>
+                <p className="text-on-surface-variant text-sm mb-4">{ending.desc}</p>
+                <span className="font-[JetBrains_Mono] text-xs text-primary group-hover:underline">Learn More →</span>
               </div>
-              <p className="text-on-surface-variant text-sm mb-4">{s.desc}</p>
-              <Link href={s.href} className="text-primary font-[JetBrains_Mono] text-xs uppercase hover:underline">
-                Full Investigation →
-              </Link>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
