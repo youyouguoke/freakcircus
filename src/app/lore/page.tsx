@@ -15,7 +15,7 @@ import ContinueExploring from "@/components/ContinueExploring";
 
 export const metadata: Metadata = {
   title: "The Freak Circus Lore Encyclopedia — History, Symbols, Timeline & Hidden Meanings",
-  description: "What we know about the story of The Freak Circus. Verified lore, character connections, Day 1 & 2 story elements, and the Columbina legend.",
+  description: "What we know about the story of The Freak Circus by Neko Bueno. Verified lore, character connections, Circus of Horrors setting, Day 1 & 2 story elements, and the Columbina legend.",
   keywords: [
     "The Freak Circus lore",
     "The Freak Circus lore encyclopedia",

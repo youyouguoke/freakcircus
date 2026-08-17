@@ -1,170 +1,94 @@
 "use client";
 
-import Link from "next/link";
-
 const records = [
   {
-    id: "FILE_09",
-    title: "What Was The First Circus Fire?",
-    category: "World History",
-    overview: "The First Circus Fire is the central mystery of The Freak Circus's backstory. According to recovered records, the original circus burned down decades before the current timeline, killing all original performers. However, conflicting evidence suggests the fire may never have happened — or that it happens repeatedly in a loop.",
+    id: "LORE_01",
+    title: "The Circus of Horrors",
+    category: "Setting",
+    overview: "The Freak Circus is set in a traveling circus called the Circus of Horrors. The player begins as an ordinary café worker whose life becomes entangled with the enigmatic performers of this sinister circus.",
     facts: [
-      "Newspaper fragments reference a fire in 1923, 1954, and 1987 simultaneously",
-      "No burn marks appear on current circus architecture",
-      "Character dialogue references the fire from different historical perspectives",
-      "The Doctor's medical files describe 'reconstruction' rather than 'recovery'",
+      "The circus arrives in town, bringing dark secrets and terrifying mysteries",
+      "The player is dragged into the circus through a single encounter",
+      "The circus features original artwork and carefully crafted backgrounds",
+      "The setting combines psychological horror with romance tension",
     ],
-    controversies: [
-      "Some theorists believe the fire is a metaphor for memory erasure",
-      "Others suggest the circus exists in multiple timelines simultaneously",
-      "Data miners found references to 'Fire Loop #7' in unused files",
-    ],
-    relatedCharacters: ["The Doctor", "Pierrot", "Columbina"],
-    relatedEndings: ["Unnamed Open Ending", "Unnamed Open Ending"],
+    verified: true,
+    source: "thefreakcircus.org, thefreakcircus.my",
   },
   {
-    id: "FILE_12",
-    title: "What Is The Mirror Hall?",
-    category: "Locations",
-    overview: "The Mirror Hall is a hidden location in The Freak Circus that only appears under specific conditions. It contains mirrors that show events from other routes, future scenes, and occasionally the player's desktop. The Hall is considered the most lore-rich location in the game.",
+    id: "LORE_02",
+    title: "The Columbina Legend",
+    category: "Core Lore",
+    overview: "The Columbina legend is the most significant piece of confirmed lore in The Freak Circus. It is revealed in Day 2 and explains the central conflict between Pierrot and Harlequin.",
     facts: [
-      "Only appears after failing at least one route",
-      "Contains 7 mirrors, each showing a different route's events",
-      "The central mirror shows the player's desktop, breaking the fourth wall",
-      "Mirror reflections change based on the number of completed endings",
+      "Columbina is a deceased character — killed by Harlequin",
+      "Her death drives the rivalry between Pierrot and Harlequin",
+      "The legend is revealed through Day 2 tent route content",
+      "Columbina is not a playable character — she exists only in lore",
     ],
-    controversies: [
-      "Some players report seeing a sixth performer in the mirrors",
-      "The Hall's geometry does not match the circus's floor plan",
-      "Audio files contain breathing sounds not matching any character",
-    ],
-    relatedCharacters: ["Pierrot", "Columbina"],
-    relatedEndings: ["Open Ending C (unnamed)", "Unnamed Open Ending"],
+    verified: true,
+    source: "thefreakcircus.org, thefreakcircus.wiki.gg, YouTube",
   },
   {
-    id: "FILE_03",
-    title: "What Is The Founding Myth?",
-    category: "World History",
-    overview: "The Founding Myth describes how The Freak Circus was created. According to The Doctor's medical files, the circus was founded after a medical experiment gone wrong — an attempt to preserve human consciousness after death. The original performers were test subjects, and the current characters are reconstructions of their memories.",
+    id: "LORE_03",
+    title: "The Café Meeting",
+    category: "Day 1",
+    overview: "The game begins at a café where the player works. The Ticket Taker delivers a pink ticket, and the player's encounter with Pierrot and Harlequin begins the central story.",
     facts: [
-      "The Doctor's files reference 'Project Continuity' from 1923",
-      "Patient records describe memory extraction procedures",
-      "The circus architecture matches 1920s hospital layouts",
-      "Character names match original patient IDs",
+      "The player is a café worker at the start of the game",
+      "The Ticket Taker is the first character encountered",
+      "The pink ticket is delivered at the café",
+      "Day 1 introduces Pierrot and Harlequin as the two main characters",
     ],
-    controversies: [
-      "Some theorists believe the 'medical experiment' is a cover story",
-      "Others suggest the circus is a purgatorial system, not a scientific experiment",
-      "Unused files reference a 'Director' who is never seen in the game",
-    ],
-    relatedCharacters: ["The Doctor", "All Characters"],
-    relatedEndings: ["Unnamed Open Ending", "Unnamed Open Ending"],
+    verified: true,
+    source: "thefreakcircus.my, YouTube playthroughs",
   },
   {
-    id: "FILE_17",
-    title: "What Is The Silent Exit?",
-    category: "Locations",
-    overview: "The Silent Exit is a hidden location that appears only in the Open Ending C (unnamed) ending. It is described as a door that leads 'outside the circus' but shows only darkness when opened. Some players report hearing their own voice when approaching the Exit.",
+    id: "LORE_04",
+    title: "Day 2 Tent Routes",
+    category: "Day 2",
+    overview: "Day 2 (released December 3, 2025) expands the story with tent-based routes. New characters Jester, Doctor, and Ticket Taker are introduced, and the Columbina legend is revealed.",
     facts: [
-      "Only appears in the Open Ending C (unnamed) ending",
-      "Opening the Exit causes the game to crash on some systems",
-      "Audio files contain the player's system username spoken aloud",
-      "The Exit's door handle matches the player's mouse cursor",
+      "Day 2 was released on December 3, 2025",
+      "Introduces three new characters: Jester, Doctor, Ticket Taker",
+      "Features tent-based branching routes",
+      "The mirror scene is a key story moment in Day 2",
+      "The Columbina legend is revealed, explaining the Pierrot-Harlequin rivalry",
     ],
-    controversies: [
-      "Some believe the Exit represents death within the narrative",
-      "Others suggest it is a portal to the 'real world' outside the game",
-      "Data miners found an unused scene showing what is behind the Exit",
-    ],
-    relatedCharacters: ["Pierrot"],
-    relatedEndings: ["Open Ending C (unnamed)"],
+    verified: true,
+    source: "thefreakcircus.my, thefreakcircus.org, YouTube",
   },
 ];
 
 export default function FeaturedRecord() {
   return (
-    <section id="featured-records" className="bg-surface py-16 px-4 md:px-16 border-t border-outline/10">
-      <div className="max-w-6xl mx-auto">
-        <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant mb-4">
-          // Featured Records — Major Historical Events
-        </div>
-
-        <h2 className="font-[Epilogue] text-2xl md:text-3xl font-bold text-primary mb-8">
-          Major Historical Events
+    <section className="py-16 px-4 md:px-16 border-t border-outline/10">
+      <div className="max-w-4xl mx-auto">
+        <h2 className="font-display text-2xl text-primary uppercase tracking-widest mb-8">
+          Key Lore Records
         </h2>
-
-        <div className="space-y-8">
-          {records.map((record) => (
-            <div key={record.id} className="bg-surface-container border border-outline/20 p-8">
-              <div className="flex items-center gap-2 mb-4">
-                <span className="font-[JetBrains_Mono] text-xs px-2 py-1 border border-blood text-blood">
-                  ARCHIVE STATUS: PARTIALLY RECOVERED
-                </span>
+        <div className="space-y-6">
+          {records.map((r) => (
+            <div key={r.id} className="glass-card p-6">
+              <div className="flex items-center gap-3 mb-3">
+                <span className="font-mono text-xs text-primary">{r.id}</span>
+                <span className="font-mono text-[9px] text-green-500 bg-green-900/20 px-2 py-0.5 uppercase">{r.category}</span>
+                <span className="font-mono text-[9px] text-green-500 uppercase">Verified</span>
               </div>
-
-              <div className="font-[JetBrains_Mono] text-xs text-primary mb-2">
-                {record.id} — {record.category}
+              <h3 className="font-display text-lg text-on-surface mb-2">{r.title}</h3>
+              <p className="text-on-surface/60 text-sm mb-4">{r.overview}</p>
+              <div className="mb-3">
+                <div className="font-mono text-[9px] text-on-surface/40 uppercase mb-2">Confirmed Facts</div>
+                <ul className="space-y-1">
+                  {r.facts.map((fact, i) => (
+                    <li key={i} className="text-on-surface/50 text-xs flex items-start gap-2">
+                      <span className="text-green-500 mt-0.5">✓</span>
+                      <span>{fact}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
-
-              <h3 className="font-[Creepster] text-2xl md:text-3xl text-primary mb-4">
-                {record.title}
-              </h3>
-
-              <p className="text-on-surface-variant mb-6">
-                {record.overview}
-              </p>
-
-              <div className="grid md:grid-cols-2 gap-8 mb-6">
-                <div>
-                  <h4 className="font-[Epilogue] text-lg font-bold text-foreground mb-3">
-                    Known Facts
-                  </h4>
-                  <ul className="space-y-2 text-sm text-on-surface-variant">
-                    {record.facts.map((fact, i) => (
-                      <li key={i} className="flex items-start gap-2">
-                        <span className="text-primary">■</span>
-                        <span>{fact}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <div>
-                  <h4 className="font-[Epilogue] text-lg font-bold text-foreground mb-3">
-                    Controversies
-                  </h4>
-                  <ul className="space-y-2 text-sm text-on-surface-variant">
-                    {record.controversies.map((c, i) => (
-                      <li key={i} className="flex items-start gap-2">
-                        <span className="text-blood">■</span>
-                        <span>{c}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-
-              <div className="flex flex-wrap gap-4 mb-4">
-                <div>
-                  <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant mb-1">Related Characters</div>
-                  <div className="flex gap-2">
-                    {record.relatedCharacters.map((char) => (
-                      <Link key={char} href={`/characters/${char.toLowerCase().replace(/ /g, "-")}`} className="text-primary text-sm hover:underline">
-                        {char}
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-                <div>
-                  <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant mb-1">Related Endings</div>
-                  <div className="flex gap-2">
-                    {record.relatedEndings.map((ending) => (
-                      <Link key={ending} href={`/endings/${ending.toLowerCase().replace(/ /g, "-")}`} className="text-primary text-sm hover:underline">
-                        {ending}
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              </div>
+              <div className="font-mono text-[8px] text-on-surface/30">Source: {r.source}</div>
             </div>
           ))}
         </div>

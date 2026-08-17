@@ -10,7 +10,7 @@ import { ENDINGS_SUMMARY } from "@/lib/site-facts";
 export const metadata: Metadata = {
   title: "Freak Circus Walkthrough Hub | Day-by-Day Guides, Routes & Endings",
   description:
-    "Walkthrough guides for The Freak Circus — Day 1 & Day 2 guides, character route info, confirmed ending details, and community tips. Based on verified gameplay data from v0.2.",
+    "Walkthrough guides for The Freak Circus by Neko Bueno — Day 1 & Day 2 (released Dec 2025) guides, character route info, confirmed ending details, and community tips.",
   keywords: [
     "Freak Circus walkthrough",
     "Freak Circus day guide",
@@ -59,8 +59,8 @@ export default function WalkthroughsPage() {
             Freak Circus Walkthrough Hub
           </h1>
           <p className="text-on-surface/60 text-lg max-w-2xl mb-10 leading-relaxed">
-            Community guides for Day 1 & Day 2 of The Freak Circus.
-            Day 3 is planned but not yet released.
+            Community guides for The Freak Circus — an 18+ psychological horror visual novel by Neko Bueno.
+            Day 1 & Day 2 (released December 3, 2025) are playable. Day 3 is planned.
           </p>
           <div className="flex flex-wrap gap-6">
             <div className="flex items-center gap-2">

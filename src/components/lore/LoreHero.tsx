@@ -15,8 +15,8 @@ export default function LoreHero() {
           Lore Encyclopedia
         </h1>
         <p className="text-on-surface/60 text-lg max-w-2xl mb-8">
-          What we know about the story and world of The Freak Circus.
-          The game is in v0.2 — much of the lore is still being discovered.
+          What we know about the story of The Freak Circus — an 18+ psychological horror visual novel
+          by Neko Bueno. You play a café worker dragged into the Circus of Horrors.
         </p>
         <div className="flex flex-wrap gap-6">
           <div className="text-center">

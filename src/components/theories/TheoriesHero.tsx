@@ -15,8 +15,8 @@ export default function TheoriesHero() {
           Fan Theories &amp; Speculation
         </h1>
         <p className="text-on-surface/60 text-lg max-w-2xl mb-8">
-          Community theories about The Freak Circus. None of these have been confirmed by the developer.
-          The game is still in development (v0.2) with Day 3 planned but unreleased.
+          Community theories about The Freak Circus — an 18+ psychological horror visual novel by Neko Bueno.
+          None of these have been confirmed. Day 3 is planned but unreleased.
         </p>
         <div className="flex flex-wrap gap-6">
           <div className="text-center">

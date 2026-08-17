@@ -27,8 +27,8 @@ export default function EndingsHero() {
           What We Know So Far
         </h2>
         <p className="text-on-surface-variant text-lg max-w-2xl mb-8">
-          Only 1 ending has been independently confirmed: &quot;Missing&quot; (Bad Ending, Day 2).
-          3 additional open endings exist but remain unnamed. All other ending names
+          The Freak Circus by Neko Bueno has 4 endings total. Only 1 has been confirmed by name:
+          &quot;Missing&quot; (Bad Ending). 3 additional open endings exist but remain unnamed. All other ending names
           you may see online are unverified community speculation.
         </p>
       </div>
