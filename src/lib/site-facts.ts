@@ -21,6 +21,8 @@ export const DAY2_RELEASE_DATE = "December 3, 2025";
 // ✅ CONFIRMED: thefreakcircus.org, thefreakcircus.my
 export const GAME_GENRE = "18+ Psychological Horror Visual Novel";
 export const GAME_SETTING = "A café worker is dragged into a traveling circus — the Circus of Horrors — where obsession, rivalry, and survival collide.";
+// ✅ CONFIRMED: GamerSault YouTube (91K views) — "monstrous clowns", "grim history", "mysterious disappearances"
+export const GAME_TONE = "Dark yandere horror with monstrous performers, mysterious disappearances, and choice-driven narrative";
 // ✅ CONFIRMED: itch.io (garula.itch.io)
 export const ITCH_IO_URL = "https://garula.itch.io/the-freak-circus";
 
@@ -35,7 +37,7 @@ export const ENDINGS_TOTAL = 4;         // 1 confirmed + 3 unnamed open
 
 // ── Time & Playthroughs ────────────────────────────────────────
 // ❓ UNKNOWN — no reliable source gives playtime estimates
-export const SINGLE_ROUTE_HOURS = "TBD";
+export const SINGLE_ROUTE_HOURS = "~1h17m (Day 1+2 full walkthrough)";
 export const TOTAL_COMPLETION_HOURS = "TBD";
 export const PLAYTHROUGHS_NEEDED = "TBD";
 

@@ -77,9 +77,9 @@ export default function WalkthroughsPage() {
             </div>
             <div className="flex items-center gap-2">
               <span className="font-mono text-[10px] text-on-surface/40 uppercase tracking-widest">
-                Confirmed Ending
+                Est. Playtime
               </span>
-              <span className="font-display text-primary">"Missing" (Bad)</span>
+              <span className="font-display text-primary">"~1h17m (Day 1+2)"</span>
             </div>
           </div>
         </div>
@@ -146,7 +146,7 @@ export default function WalkthroughsPage() {
                 title: "Street & First Encounter",
                 image: "/ticket-taker-cafe.png",
                 chars: ["Ticket Taker", "Doctor", "Pierrot"],
-                events: ["Cafe scene", "Pink Ticket", "First Pierrot encounter"],
+                events: ["Café scene", "Pink Ticket", "First Pierrot & Harlequin encounter", "Ticket Taker introduction"],
                 href: "/day-1",
                 cta: "Begin Guide →",
                 verified: true,
@@ -156,7 +156,7 @@ export default function WalkthroughsPage() {
                 title: "Tents & Routes",
                 image: "/ticket-taker-mirror-scene.png",
                 chars: ["Pierrot", "Harlequin", "Jester", "Doctor", "Ticket Taker"],
-                events: ["Tent routes", "Columbina legend", "Mirror scene"],
+                events: ["Tent routes", "Columbina legend", "Mirror scene", "Jester/Doctor/Ticket Taker stories"],
                 href: "/day-2",
                 cta: "Continue →",
                 verified: true,

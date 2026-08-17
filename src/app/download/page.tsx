@@ -6,7 +6,7 @@ import ContinueExploring from '@/components/ContinueExploring';
 
 export const metadata: Metadata = {
   title: 'Download The Freak Circus — PC, Mac, Linux | Freak Circus Hub',
-  description: 'Download The Freak Circus official demo for Windows, macOS, and Linux. Get the latest version safely from itch.io, with platform-specific install notes and save compatibility details.',
+  description: 'Download The Freak Circus by Neko Bueno — 18+ psychological horror visual novel. Free on itch.io for Windows, macOS, Linux. Day 1 & Day 2 available.',
   keywords: ['The Freak Circus download', 'PC', 'Mac', 'Linux', 'itch.io', 'official demo', 'visual novel', 'horror game'],
   openGraph: {
     title: 'Download The Freak Circus — PC, Mac, Linux',

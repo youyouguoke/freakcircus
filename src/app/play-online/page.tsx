@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Play The Freak Circus Online (Official Demo) | Freak Circus Hub",
-  description: "Play The Freak Circus official demo online for free. A psychological horror visual novel with replay-aware mechanics, multiple endings, and hidden routes. Start your first playthrough now.",
+  description: "Play The Freak Circus online for free. An 18+ psychological horror visual novel by Neko Bueno. Day 1 & Day 2 playable in browser. Multiple endings, yandere characters, dark story.",
   keywords: ["The Freak Circus", "play online", "official demo", "free", "itch.io", "horror visual novel", "demo", "browser game"],
   openGraph: {
     title: "Play The Freak Circus Online (Official Demo)",

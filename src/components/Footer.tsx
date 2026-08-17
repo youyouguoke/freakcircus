@@ -22,12 +22,18 @@ const communityLinks = [
   { label: 'Tumblr #freakcircus', url: 'https://www.tumblr.com/tagged/freakcircus' },
 ];
 
+const languageLinks = [
+  { label: '🇪🇸 Español', url: 'https://thefreakcircus.my/the-freak-circus-espanol' },
+  { label: '🇷🇺 Русский', url: 'https://thefreakcircus.my/the-freak-circus-na-russkom' },
+  { label: '🇮🇩 Bahasa Indonesia', url: 'https://thefreakcircus.my/the-freak-circus-bahasa-indonesia' },
+];
+
 export default function Footer() {
   return (
     <footer className="bg-void-black border-t border-dark-border">
       <div className="max-w-6xl mx-auto px-4 md:px-12 py-16">
         {/* Top grid */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-10 mb-12">
           {/* Brand */}
           <div className="md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
@@ -72,23 +78,40 @@ export default function Footer() {
             <h3 className="font-label text-[0.6rem] text-circus-red mb-4">COMMUNITY</h3>
             <ul className="space-y-2">
               {communityLinks.map((link) => (
-                <li key={link.url}>
+                <li key={link.label}>
                   <a
                     href={link.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-faint-paper text-sm hover:text-paper transition-colors"
+                    className="text-faint-paper text-xs hover:text-paper transition-colors"
                   >
-                    {link.label}
+                    {link.label} ↗
                   </a>
                 </li>
               ))}
-              <li>
-                <a href="mailto:hello@freak-circus.com" className="text-faint-paper text-sm hover:text-paper transition-colors">
-                  Contact Us
-                </a>
-              </li>
             </ul>
+          </div>
+
+          {/* Languages */}
+          <div>
+            <h3 className="font-label text-[0.6rem] text-circus-red mb-4">FAN TRANSLATIONS</h3>
+            <ul className="space-y-2">
+              {languageLinks.map((link) => (
+                <li key={link.label}>
+                  <a
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-faint-paper text-xs hover:text-paper transition-colors"
+                  >
+                    {link.label} ↗
+                  </a>
+                </li>
+              ))}
+            </ul>
+            <p className="text-faint-paper/50 text-[10px] mt-3">
+              Official: English, Português, 中文
+            </p>
           </div>
         </div>
 
