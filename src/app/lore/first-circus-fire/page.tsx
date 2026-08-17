@@ -54,9 +54,9 @@ export default function Page() {
             </section>
             <section>
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Related Endings</h2>
-              <p className="text-on-surface-variant text-sm whitespace-pre-line">• Doctor's Note: Reveals the fire was part of Project Continuity's memory extraction process.
-• Columbina's Truth: Suggests the fire is a loop event that resets the circus's timeline.
-• Corrupted Data: Contains references to 'Fire Loop #7' in unused files.</p>
+              <p className="text-on-surface-variant text-sm whitespace-pre-line">• Unnamed Open Ending: Reveals the fire was part of Project Continuity's memory extraction process.
+• Unnamed Open Ending: Suggests the fire is a loop event that resets the circus's timeline.
+• Unnamed Open Ending: Contains references to 'Fire Loop #7' in unused files.</p>
             </section>
             <section>
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Related Theories</h2>

@@ -3,15 +3,15 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Doctor's Note Ending — How to Unlock, Requirements & Lore | Freak Circus Hub",
-  description: "Complete guide to The Doctor's Note ending in The Freak Circus. Covers the 5 hidden medical files, mirror connection, and why this ending suggests The Doctor knows more than he reveals.",
-  keywords: ["Doctor's Note", "The Doctor ending", "The Freak Circus endings", "hidden medical files", "secret ending"],
+  title: "Unnamed Open Ending Ending — How to Unlock, Requirements & Lore | Freak Circus Hub",
+  description: "Complete guide to The Unnamed Open Ending ending in The Freak Circus. Covers the 5 hidden medical files, mirror connection, and why this ending suggests The Doctor knows more than he reveals.",
+  keywords: ["Unnamed Open Ending", "The Doctor ending", "The Freak Circus endings", "hidden medical files", "secret ending"],
   alternates: {
     canonical: "https://freak-circus.com/endings/doctors-note",
   },
 };
 
-export default function DoctorsNotePage() {
+export default function EndingPage() {
   return (
     <main className="min-h-screen bg-surface">
       <Navigation />
@@ -21,7 +21,7 @@ export default function DoctorsNotePage() {
             ENDING_GUIDE // DOCTORS_NOTE
           </div>
           <h1 className="font-[Creepster] text-4xl md:text-6xl text-primary mb-4">
-            The Doctor's Note
+            The Unnamed Open Ending
           </h1>
           <p className="text-on-surface-variant text-lg mb-8">
             The secret ending for The Doctor's route — requires finding 5 hidden medical files across multiple playthroughs.
@@ -31,7 +31,7 @@ export default function DoctorsNotePage() {
             <section>
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Overview</h2>
               <p className="text-on-surface-variant text-sm">
-                The Doctor's Note is the secret ending for The Doctor's route and one of the most disturbing conclusions in The Freak Circus. It requires finding five hidden medical files scattered across scenes — files that reference experiments, patient records, and the founding myth of the circus. The ending reveals that The Doctor's medical knowledge extends far beyond carnival medicine, and that he may have been involved in the circus's creation.
+                The Unnamed Open Ending is the secret ending for The Doctor's route and one of the most disturbing conclusions in The Freak Circus. It requires finding five hidden medical files scattered across scenes — files that reference experiments, patient records, and the founding myth of the circus. The ending reveals that The Doctor's medical knowledge extends far beyond carnival medicine, and that he may have been involved in the circus's creation.
               </p>
             </section>
 
@@ -57,7 +57,7 @@ export default function DoctorsNotePage() {
             <section>
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Lore Meaning</h2>
               <p className="text-on-surface-variant text-sm">
-                The Doctor's Note reveals that the circus was founded after a medical experiment gone wrong. The files reference a "First Circus Fire" that killed the original performers, and suggest that the current characters are replacements or reconstructions. The ending implies that The Doctor is not just a circus physician but the keeper of the circus's darkest secrets.
+                The Unnamed Open Ending reveals that the circus was founded after a medical experiment gone wrong. The files reference a "First Circus Fire" that killed the original performers, and suggest that the current characters are replacements or reconstructions. The ending implies that The Doctor is not just a circus physician but the keeper of the circus's darkest secrets.
               </p>
             </section>
 

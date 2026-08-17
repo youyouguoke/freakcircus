@@ -40,7 +40,7 @@ const records = [
     status: "Unverified",
     endings: 2,
     desc: "A doorway that only appears after refusing to engage with any character for an entire playthrough. No player has confirmed walking through it.",
-    tags: ["Hidden", "Null Route", "Silence"],
+    tags: ["Hidden", "Unnamed Open Ending", "Silence"],
     href: "#silent-exit",
   },
   {

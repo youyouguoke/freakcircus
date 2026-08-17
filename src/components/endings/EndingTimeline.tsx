@@ -2,19 +2,19 @@
 
 const timeline = [
   { year: "2024", events: [
-    "Grand Finale discovered — first confirmed ending on Harlequin route",
-    "Smile For Me documented — standard Pierrot ending",
+    "Open Ending A (unnamed) discovered — first confirmed ending on Harlequin route",
+    "Open Ending B (unnamed) documented — standard Pierrot ending",
   ]},
   { year: "2025", events: [
-    "Eternal Silence documented — Pierrot secret ending requiring silence mechanics",
-    "Doctor's Note confirmed — requires finding 5 hidden medical files",
-    "Harlequin's Laughter discovered — joke ending from comedic choices",
-    "White Room mentioned in patch notes 1.03 — conditions unknown",
+    "Open Ending C (unnamed) documented — Pierrot secret ending requiring silence mechanics",
+    "Unnamed Open Ending confirmed — requires finding 5 hidden medical files",
+    "Unnamed Open Ending discovered — joke ending from comedic choices",
+    "Unnamed Open Ending mentioned in patch notes 1.03 — conditions unknown",
   ]},
   { year: "2026", events: [
-    "Columbina's Truth verified — three-loop perfection requirement confirmed",
-    "Corrupted Data rumor appears — found in build 1.04 files",
-    "Null Route discovered in data mining — branch with no characters",
+    "Unnamed Open Ending verified — three-loop perfection requirement confirmed",
+    "Unnamed Open Ending rumor appears — found in build 1.04 files",
+    "Unnamed Open Ending discovered in data mining — branch with no characters",
     "Hidden counter at 0x4A20 documented — affects ending availability",
   ]},
 ];

@@ -17,9 +17,9 @@ const connections = [
     contradictions: [
       "Describes endings before they occur (precognitive dialogue in Scene 7)",
       "Medical files reference events from routes he is not in",
-      "White Room description matches a Unity testing environment",
+      "Unnamed Open Ending description matches a Unity testing environment",
     ],
-    connections: "Doctor Awareness Theory, Doctor Created Circus, White Room Symbolism",
+    connections: "Doctor Awareness Theory, Doctor Created Circus, Unnamed Open Ending Symbolism",
   },
   {
     character: "Harlequin",

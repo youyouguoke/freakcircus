@@ -3,7 +3,7 @@
 const faqs = [
   {
     question: "Who is Pierrot in The Freak Circus?",
-    answer: "Pierrot is the melancholic clown and the most discussed character in the community. His route introduces memory loops, replay awareness, and hidden dialogue triggers. The Eternal Silence ending requires refusing all dialogue for three scenes, revealing narration about previous playthroughs.",
+    answer: "Pierrot is the melancholic clown and the most discussed character in the community. His route introduces memory loops, replay awareness, and hidden dialogue triggers. The Open Ending C (unnamed) ending requires refusing all dialogue for three scenes, revealing narration about previous playthroughs.",
   },
   {
     question: "Who is Harlequin in The Freak Circus?",
@@ -15,7 +15,7 @@ const faqs = [
   },
   {
     question: "Who is The Doctor in The Freak Circus?",
-    answer: "The Doctor is the circus physician whose route requires finding 5 hidden medical files. His precognitive dialogue in Scene 7 describes the White Room ending before it becomes accessible. Unused voice lines suggest he was originally the primary antagonist.",
+    answer: "The Doctor is the circus physician whose route requires finding 5 hidden medical files. His precognitive dialogue in Scene 7 describes the Unnamed Open Ending ending before it becomes accessible. Unused voice lines suggest he was originally the primary antagonist.",
   },
   {
     question: "Which character route should you play first?",

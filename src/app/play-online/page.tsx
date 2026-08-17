@@ -206,7 +206,7 @@ export default function PlayOnline() {
               <li>• Partial Harlequin route (Act I-II)</li>
               <li>• Mirror Hall introduction scene</li>
               <li>• 3 hidden dialogue triggers</li>
-              <li>• 1 secret ending (Eternal Silence preview)</li>
+              <li>• 1 secret ending (Open Ending C (unnamed) preview)</li>
             </ul>
           </div>
         </div>

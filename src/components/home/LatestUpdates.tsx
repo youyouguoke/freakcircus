@@ -8,7 +8,7 @@ const updates = [
   },
   {
     date: "June 7, 2026",
-    title: "Updated Eternal Silence Ending Guide",
+    title: "Updated Open Ending C (unnamed) Ending Guide",
     desc: "Revised unlock conditions based on new community testing. Added Scene 12 confirmation and black screen duration notes.",
   },
   {

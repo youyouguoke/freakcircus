@@ -54,9 +54,9 @@ export default function Page() {
             </section>
             <section>
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Related Endings</h2>
-              <p className="text-on-surface-variant text-sm whitespace-pre-line">• Doctor's Note: Reveals the full history of Project Continuity.
-• Columbina's Truth: Suggests the reconstruction process is imperfect, creating memory loops.
-• Corrupted Data: Contains references to 'Project Continuity v7.0' in unused files.</p>
+              <p className="text-on-surface-variant text-sm whitespace-pre-line">• Unnamed Open Ending: Reveals the full history of Project Continuity.
+• Unnamed Open Ending: Suggests the reconstruction process is imperfect, creating memory loops.
+• Unnamed Open Ending: Contains references to 'Project Continuity v7.0' in unused files.</p>
             </section>
             <section>
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Related Theories</h2>
@@ -90,7 +90,7 @@ A: The reconstruction process is imperfect. Each character was rebuilt from inco
                 </Link>
                 <Link href="/endings/doctors-note" className="bg-surface-container border border-outline/20 p-4 hover:border-primary transition-colors">
                   <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant mb-1">Related Ending</div>
-                  <div className="font-bold text-foreground">Doctor's Note →</div>
+                  <div className="font-bold text-foreground">Unnamed Open Ending →</div>
                   <div className="text-on-surface-variant text-sm">Ending that reveals the full history</div>
                 </Link>
               </div>

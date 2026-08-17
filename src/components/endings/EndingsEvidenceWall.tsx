@@ -3,10 +3,10 @@
 import Link from "next/link";
 
 const endings = [
-  { id: "ENDING #04", title: "Eternal Silence", status: "VERIFIED", href: "#ending-04" },
-  { id: "ENDING #07", title: "Doctor's Note", status: "CORRUPTED", href: "#ending-07" },
-  { id: "ENDING #09", title: "Columbina's Truth", status: "UNSTABLE", href: "#ending-09" },
-  { id: "ENDING #??", title: "Null Route", status: "UNVERIFIED", href: "#ending-null" },
+  { id: "ENDING #04", title: "Open Ending C (unnamed)", status: "VERIFIED", href: "#ending-04" },
+  { id: "ENDING #07", title: "Unnamed Open Ending", status: "CORRUPTED", href: "#ending-07" },
+  { id: "ENDING #09", title: "Unnamed Open Ending", status: "UNSTABLE", href: "#ending-09" },
+  { id: "ENDING #??", title: "Unnamed Open Ending", status: "UNVERIFIED", href: "#ending-null" },
 ];
 
 export default function EndingsEvidenceWall() {

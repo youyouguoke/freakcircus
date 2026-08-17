@@ -37,7 +37,7 @@ export default function EndingComparisonTable() {
         <div className="mt-6 bg-surface-container border border-amber-500/30 p-4">
           <p className="text-on-surface-variant text-xs">
             <strong className="text-amber-400">Note:</strong> The developer has confirmed 3 additional open endings exist,
-            but no source has named them. Ending names like &quot;Grand Finale&quot;, &quot;Eternal Silence&quot;, etc.
+            but no source has named them. Ending names like &quot;Open Ending A (unnamed)&quot;, &quot;Open Ending C (unnamed)&quot;, etc.
             that appear on other sites are unverified speculation.
           </p>
         </div>

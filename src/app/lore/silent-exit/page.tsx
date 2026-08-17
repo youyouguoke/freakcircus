@@ -5,8 +5,8 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Silent Exit — Hidden Location, Ending Connection & Theories | Freak Circus Hub",
-  description: "Complete guide to the Silent Exit in The Freak Circus. Covers how to find it, what it represents, and connections to the Eternal Silence ending.",
-  keywords: ["Silent Exit", "The Freak Circus lore", "hidden location", "Eternal Silence", "fourth wall"],
+  description: "Complete guide to the Silent Exit in The Freak Circus. Covers how to find it, what it represents, and connections to the Open Ending C (unnamed) ending.",
+  keywords: ["Silent Exit", "The Freak Circus lore", "hidden location", "Open Ending C (unnamed)", "fourth wall"],
   alternates: {
     canonical: "https://freak-circus.com/lore/silent-exit",
   },
@@ -31,15 +31,15 @@ export default function Page() {
           <div className="space-y-12">
             <section>
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Overview</h2>
-              <p className="text-on-surface-variant text-sm whitespace-pre-line">The Silent Exit is a hidden location that appears only in the Eternal Silence ending. It is described as a door that leads 'outside the circus' but shows only darkness when opened. Some players report hearing their own voice when approaching the Exit, and the door handle matches the player's mouse cursor. The Exit's frame contains carvings that match symbols from the Mirror Hall, suggesting a connection between these two hidden locations.</p>
+              <p className="text-on-surface-variant text-sm whitespace-pre-line">The Silent Exit is a hidden location that appears only in the Open Ending C (unnamed) ending. It is described as a door that leads 'outside the circus' but shows only darkness when opened. Some players report hearing their own voice when approaching the Exit, and the door handle matches the player's mouse cursor. The Exit's frame contains carvings that match symbols from the Mirror Hall, suggesting a connection between these two hidden locations.</p>
             </section>
             <section>
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Historical Record</h2>
-              <p className="text-on-surface-variant text-sm whitespace-pre-line">The Silent Exit first appeared in community reports in 2026, when players discovered the Eternal Silence ending. The Exit is not mentioned in any character dialogue or file — it exists only as a visual element in the ending. Data miners found an unused scene showing what is behind the Exit, but the file is corrupted and displays only static. The Exit's connection to the Mirror Hall suggests it may be a 'back door' to the same metaphysical space.</p>
+              <p className="text-on-surface-variant text-sm whitespace-pre-line">The Silent Exit first appeared in community reports in 2026, when players discovered the Open Ending C (unnamed) ending. The Exit is not mentioned in any character dialogue or file — it exists only as a visual element in the ending. Data miners found an unused scene showing what is behind the Exit, but the file is corrupted and displays only static. The Exit's connection to the Mirror Hall suggests it may be a 'back door' to the same metaphysical space.</p>
             </section>
             <section>
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Evidence</h2>
-              <p className="text-on-surface-variant text-sm whitespace-pre-line">1. Only appears in the Eternal Silence ending.
+              <p className="text-on-surface-variant text-sm whitespace-pre-line">1. Only appears in the Open Ending C (unnamed) ending.
 2. Opening the Exit causes the game to crash on some systems.
 3. Audio files contain the player's system username spoken aloud.
 4. The door handle matches the player's mouse cursor.
@@ -54,9 +54,9 @@ export default function Page() {
             </section>
             <section>
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Related Endings</h2>
-              <p className="text-on-surface-variant text-sm whitespace-pre-line">• Eternal Silence: The Exit is the final location in this ending.
-• Corrupted Data: Contains references to 'Exit Loop #7' in unused files.
-• Columbina's Truth: The fourth door may be connected to the Exit.</p>
+              <p className="text-on-surface-variant text-sm whitespace-pre-line">• Open Ending C (unnamed): The Exit is the final location in this ending.
+• Unnamed Open Ending: Contains references to 'Exit Loop #7' in unused files.
+• Unnamed Open Ending: The fourth door may be connected to the Exit.</p>
             </section>
             <section>
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Related Theories</h2>
@@ -66,12 +66,12 @@ export default function Page() {
             </section>
             <section>
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Community Debate</h2>
-              <p className="text-on-surface-variant text-sm whitespace-pre-line">The community debates whether the Silent Exit is a genuine escape route or a trap. The 'escape' camp points to its description as leading 'outside the circus' and its connection to the Eternal Silence ending. The 'trap' camp argues that the darkness, crashes, and static suggest the Exit is not a safe passage. A third theory suggests the Exit is a choice — the player must decide whether to trust the darkness or remain in the circus.</p>
+              <p className="text-on-surface-variant text-sm whitespace-pre-line">The community debates whether the Silent Exit is a genuine escape route or a trap. The 'escape' camp points to its description as leading 'outside the circus' and its connection to the Open Ending C (unnamed) ending. The 'trap' camp argues that the darkness, crashes, and static suggest the Exit is not a safe passage. A third theory suggests the Exit is a choice — the player must decide whether to trust the darkness or remain in the circus.</p>
             </section>
             <section>
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">FAQ</h2>
               <p className="text-on-surface-variant text-sm whitespace-pre-line">Q: How do I find the Silent Exit?
-A: Complete the Eternal Silence ending. The Exit appears in the final scene.
+A: Complete the Open Ending C (unnamed) ending. The Exit appears in the final scene.
 
 Q: What happens if I open the Exit?
 A: The game crashes on some systems. On others, it displays static and returns to the title screen.
@@ -85,7 +85,7 @@ A: Yes. The frame carvings match Mirror Hall symbols, suggesting they are connec
               <div className="grid md:grid-cols-2 gap-4">
                 <Link href="/endings/eternal-silence" className="bg-surface-container border border-outline/20 p-4 hover:border-primary transition-colors">
                   <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant mb-1">Related Ending</div>
-                  <div className="font-bold text-foreground">Eternal Silence →</div>
+                  <div className="font-bold text-foreground">Open Ending C (unnamed) →</div>
                   <div className="text-on-surface-variant text-sm">Ending where the Exit appears</div>
                 </Link>
                 <Link href="/lore/mirror-hall" className="bg-surface-container border border-outline/20 p-4 hover:border-primary transition-colors">

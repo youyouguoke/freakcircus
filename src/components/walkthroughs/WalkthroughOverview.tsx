@@ -11,7 +11,7 @@ export default function WalkthroughOverview() {
         <div className="space-y-6 text-on-surface-variant text-sm">
           <div>
             <h3 className="font-bold text-foreground mb-2">How many routes exist?</h3>
-            <p>The community has verified 6 main routes across the four characters: Pierrot Main Route, Pierrot Silent Route, Harlequin True Route, The Doctor Memory Route, Columbina Fractured Route, and the Null Route. Each route contains multiple hidden branches that only appear under specific conditions, bringing the total documented branches to 24.</p>
+            <p>The community has verified 6 main routes across the four characters: Pierrot Main Route, Pierrot Silent Route, Harlequin True Route, The Doctor Memory Route, Columbina Fractured Route, and the Unnamed Open Ending. Each route contains multiple hidden branches that only appear under specific conditions, bringing the total documented branches to 24.</p>
           </div>
 
           <div>
@@ -31,7 +31,7 @@ export default function WalkthroughOverview() {
 
           <div>
             <h3 className="font-bold text-foreground mb-2">Which routes unlock secret endings?</h3>
-            <p>Four routes unlock secret endings: Pierrot Silent Route leads to Eternal Silence, Harlequin True Route leads to Grand Finale, Doctor Memory Route leads to Doctor's Note, and Columbina Fractured Route leads to Columbina's Truth. The Null Route may lead to Corrupted Data, but this remains unverified.</p>
+            <p>Four routes unlock secret endings: Pierrot Silent Route leads to Open Ending C (unnamed), Harlequin True Route leads to Open Ending A (unnamed), Doctor Memory Route leads to Unnamed Open Ending, and Columbina Fractured Route leads to Unnamed Open Ending. The Unnamed Open Ending may lead to Unnamed Open Ending, but this remains unverified.</p>
           </div>
         </div>
       </div>

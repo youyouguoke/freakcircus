@@ -7,7 +7,7 @@ const faqs = [
   },
   {
     q: "Is the Circus real?",
-    a: "Within the game's narrative, the circus exists as a physical location that appears and disappears across different time periods. The 1945 Timeline Fracture memo describes it vanishing for 72 hours and returning with performers of different ages. However, the 'reality' of the circus is questionable — the White Room may be a metaphor for the space between routes, and the Doctor's notes suggest the circus is a construct rather than a place.",
+    a: "Within the game's narrative, the circus exists as a physical location that appears and disappears across different time periods. The 1945 Timeline Fracture memo describes it vanishing for 72 hours and returning with performers of different ages. However, the 'reality' of the circus is questionable — the Unnamed Open Ending may be a metaphor for the space between routes, and the Doctor's notes suggest the circus is a construct rather than a place.",
   },
   {
     q: "Why does time repeat?",
@@ -19,11 +19,11 @@ const faqs = [
   },
   {
     q: "Who created the Circus?",
-    a: "The creator of the circus is unknown. The 'Doctor Created Circus' theory suggests The Doctor is the architect, based on his medical files, the White Room description, and his precognitive dialogue. However, the 'Columbina Watches Player' theory suggests she is the true architect, as her route requires cross-route completion and her hallway gains a 4th door after 3 loops. The 'Null Performer' theory proposes an unnamed entity as the creator. No theory has been confirmed.",
+    a: "The creator of the circus is unknown. The 'Doctor Created Circus' theory suggests The Doctor is the architect, based on his medical files, the Unnamed Open Ending description, and his precognitive dialogue. However, the 'Columbina Watches Player' theory suggests she is the true architect, as her route requires cross-route completion and her hallway gains a 4th door after 3 loops. The 'Null Performer' theory proposes an unnamed entity as the creator. No theory has been confirmed.",
   },
   {
-    q: "What is the White Room?",
-    a: "The White Room is a space described by The Doctor in Scene 7: 'A room with no walls, no ceiling, no floor. Only light. And in the center, a chair facing a mirror that shows nothing.' It has never been found by players. The 'White Room Is The Developer Room' theory suggests it is a debug space that became part of the narrative. The 'White Room Is The Space Between Routes' theory suggests it is a metaphor for the loading screen between playthroughs. The 'White Room Is The True Ending' theory suggests it is the final destination of all routes.",
+    q: "What is the Unnamed Open Ending?",
+    a: "The Unnamed Open Ending is a space described by The Doctor in Scene 7: 'A room with no walls, no ceiling, no floor. Only light. And in the center, a chair facing a mirror that shows nothing.' It has never been found by players. The 'Unnamed Open Ending Is The Developer Room' theory suggests it is a debug space that became part of the narrative. The 'Unnamed Open Ending Is The Space Between Routes' theory suggests it is a metaphor for the loading screen between playthroughs. The 'Unnamed Open Ending Is The True Ending' theory suggests it is the final destination of all routes.",
   },
   {
     q: "Why are memories corrupted?",
@@ -43,15 +43,15 @@ const faqs = [
   },
   {
     q: "What is the Red Thread?",
-    a: "The Red Thread is a recurring symbol that appears in the post-credits of Pierrot's Smile For Me ending, Pierrot's garden, Harlequin's ribbon, and Columbina's bracelet. It represents the connection between the player and the circus — a thread that cannot be cut, only tangled. The thread is visible in 4 routes but mentioned in dialogue only once. Players report seeing it move in static scenes. Its movement is tied to the hidden counter, suggesting it is a physical manifestation of the player's history.",
+    a: "The Red Thread is a recurring symbol that appears in the post-credits of Pierrot's Open Ending B (unnamed) ending, Pierrot's garden, Harlequin's ribbon, and Columbina's bracelet. It represents the connection between the player and the circus — a thread that cannot be cut, only tangled. The thread is visible in 4 routes but mentioned in dialogue only once. Players report seeing it move in static scenes. Its movement is tied to the hidden counter, suggesting it is a physical manifestation of the player's history.",
   },
   {
     q: "What is the Mirror Hall?",
     a: "The Mirror Hall is a location referenced in the 1903 Incident Report. Seven performers entered; three exited; four remained as reflections. The mirrors were not installed until 1905, two years after the incident. The Mirror Hall is the central symbol of fractured memory — it shows not what is present, but what has been. The mirror in Scene 9 uses a variable called 'PREVIOUS_ROUTE_SPRITE', confirming that the game's mirrors are designed to show memory, not reality.",
   },
   {
-    q: "What is the Null Route?",
-    a: "The Null Route is a corrupted route found in datamined files. The player walks through empty corridors with no character sprites until the game soft-locks after 5 minutes. The 'Null Route Is The True White Room' theory suggests it is the space between all routes. The 'Null Route Is Cut Content' theory suggests it was removed before release. The 'Null Route Is An ARG Element' theory suggests it is intentionally hidden. No player has legitimately unlocked it.",
+    q: "What is the Unnamed Open Ending?",
+    a: "The Unnamed Open Ending is a corrupted route found in datamined files. The player walks through empty corridors with no character sprites until the game soft-locks after 5 minutes. The 'Unnamed Open Ending Is The True Unnamed Open Ending' theory suggests it is the space between all routes. The 'Unnamed Open Ending Is Cut Content' theory suggests it was removed before release. The 'Unnamed Open Ending Is An ARG Element' theory suggests it is intentionally hidden. No player has legitimately unlocked it.",
   },
   {
     q: "Why does the Doctor know the future?",
@@ -70,12 +70,12 @@ const faqs = [
     a: "Pierrot and Columbina have a complex relationship that changes across loops. In the main routes, they are fellow performers. In the secret routes, they are adversaries. In the 4th-playthrough dialogue, they reference each other as if they have met outside the circus. The 'Pierrot Loop Theory' suggests they are the same entity in different loops. The 'Columbina Watches Player' theory suggests she controls Pierrot's memories.",
   },
   {
-    q: "What is the White Room Is The Developer Room theory?",
-    a: "This theory proposes that the White Room is a literal reference to the game's development environment. The description matches a standard Unity testing room: no walls, no ceiling, no floor, only light, a chair, and a disabled camera render. The 'mirror that shows nothing' may be a reference to a camera that is not rendering. If true, the Doctor is aware that he is in a game — making him the only character with meta-awareness.",
+    q: "What is the Unnamed Open Ending Is The Developer Room theory?",
+    a: "This theory proposes that the Unnamed Open Ending is a literal reference to the game's development environment. The description matches a standard Unity testing room: no walls, no ceiling, no floor, only light, a chair, and a disabled camera render. The 'mirror that shows nothing' may be a reference to a camera that is not rendering. If true, the Doctor is aware that he is in a game — making him the only character with meta-awareness.",
   },
   {
     q: "What is the true ending of The Freak Circus?",
-    a: "There is no confirmed 'true ending.' The 11 confirmed endings are: Grand Finale, Smile For Me, Doctor's Note, Eternal Silence, Columbina's Truth, Harlequin's Laughter, Fractured Ending, Medical Failure, Eternal Dance, and two additional variants. White Room, Corrupted Data, and Null Route remain unverified. The 'True Ending' may not exist — the game may be designed as an infinite loop with no escape. The post-credits scene (all endings) shows all four characters in the White Room looking at the player, suggesting the 'true ending' is the player's realization that they are part of the loop.",
+    a: "There is no confirmed 'true ending.' The 11 confirmed endings are: Open Ending A (unnamed), Open Ending B (unnamed), Unnamed Open Ending, Open Ending C (unnamed), Unnamed Open Ending, Unnamed Open Ending, Unnamed Open Ending, Unnamed Open Ending, Unnamed Open Ending, and two additional variants. Unnamed Open Ending, Unnamed Open Ending, and Unnamed Open Ending remain unverified. The 'True Ending' may not exist — the game may be designed as an infinite loop with no escape. The post-credits scene (all endings) shows all four characters in the Unnamed Open Ending looking at the player, suggesting the 'true ending' is the player's realization that they are part of the loop.",
   },
   {
     q: "Why does Harlequin say 'You again'?",
@@ -83,7 +83,7 @@ const faqs = [
   },
   {
     q: "What is the meaning of the 4th door?",
-    a: "After 3 perfect loops in Columbina's route, her hallway gains a 4th door. The door was always in the background files but invisible. It represents the 'truth' that is hidden until the player has experienced enough of the loop. The 4th door may lead to the White Room, or to a new route that has not been discovered. Its existence confirms that the game contains content that is not accessible through normal play.",
+    a: "After 3 perfect loops in Columbina's route, her hallway gains a 4th door. The door was always in the background files but invisible. It represents the 'truth' that is hidden until the player has experienced enough of the loop. The 4th door may lead to the Unnamed Open Ending, or to a new route that has not been discovered. Its existence confirms that the game contains content that is not accessible through normal play.",
   },
   {
     q: "Is The Freak Circus based on a true story?",
@@ -95,7 +95,7 @@ const faqs = [
   },
   {
     q: "What is the significance of the post-credits scene?",
-    a: "After completing all 11 confirmed endings, a hidden post-credits scene plays. It shows all four characters in the White Room, looking at the player. The scene is not in any route file — it is a separate video that triggers based on the hidden counter. The characters do not speak. They only look. This scene suggests that the 'true ending' is not a narrative conclusion but a meta-narrative realization: the player has been watched throughout all routes, and the characters are aware of the player's presence.",
+    a: "After completing all 11 confirmed endings, a hidden post-credits scene plays. It shows all four characters in the Unnamed Open Ending, looking at the player. The scene is not in any route file — it is a separate video that triggers based on the hidden counter. The characters do not speak. They only look. This scene suggests that the 'true ending' is not a narrative conclusion but a meta-narrative realization: the player has been watched throughout all routes, and the characters are aware of the player's presence.",
   },
   {
     q: "What is the Freak Circus lore archive?",

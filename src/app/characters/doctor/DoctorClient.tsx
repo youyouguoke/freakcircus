@@ -8,18 +8,18 @@ const accent = "var(--doctor)";
 const profile = {
   role: "THE PHYSICIAN", status: "ACTIVE", route: "AVAILABLE",
   firstEncounter: "Medical Tent (Day 1)", keyMechanic: "Collect Medical Files",
-  endings: "Doctor\'s Note / White Room",
+  endings: "Doctor\'s Note / Unnamed Open Ending",
   loopAwareness: 95, threatLevel: 85, emotionalAttachment: 30, stability: 60, fourthWallAwareness: 98,
 };
 
 const endings = [
   { name: "Doctor\'s Note", type: "MAIN", desc: "Collect at least 3 medical files and accept his diagnosis. The prescription appears in your next route." },
-  { name: "White Room", type: "SECRET", desc: "Find all 5 medical files, trigger the mirror connection, select \'Ask about the white room\' in Scene 12. Screen fades to white for 2 minutes." },
-  { name: "Medical Failure", type: "STANDARD", desc: "Complete the route without finding enough medical files. The Doctor dismisses the player with a prescription that references other routes." },
+  { name: "Unnamed Open Ending", type: "SECRET", desc: "Find all 5 medical files, trigger the mirror connection, select \'Ask about the white room\' in Scene 12. Screen fades to white for 2 minutes." },
+  { name: "Unnamed Open Ending", type: "STANDARD", desc: "Complete the route without finding enough medical files. The Doctor dismisses the player with a prescription that references other routes." },
 ];
 
 const hiddenTriggers = [
-  { title: "Precognitive Dialogue (Scene 7)", desc: "The Doctor describes the White Room ending with disturbing accuracy — three routes before it becomes accessible. His description matches a Unity testing environment." },
+  { title: "Precognitive Dialogue (Scene 7)", desc: "The Doctor describes the Unnamed Open Ending ending with disturbing accuracy — three routes before it becomes accessible. His description matches a Unity testing environment." },
   { title: "5 Hidden Medical Files", desc: "File 1 (Scene 2 drawer): Pierrot — chronic dissociative episodes. File 2 (Scene 4 cabinet): Harlequin — rapid affective switching. File 3 (Scene 6 floorboard): Columbina — persecutory delusions. File 4 (Scene 8 bookshelf): The Doctor himself — blank except \'Subject is aware of observation.\' File 5 (Scene 10 desk): The player\'s behavioral profile." },
   { title: "Mirror Connection", desc: "The mirror in Scene 9 shows Columbina\'s reflection when The Doctor looks. This only appears after failing his main route once." },
 ];
@@ -33,7 +33,7 @@ const personalityTraits = [
 
 const theories = [
   { title: "The Doctor Is The Observer", confidence: 67, evidence: 4, status: "likely", summary: "The Doctor may be aware of the player directly, breaking the fourth wall through clinical observations.", items: ["Scene 7 precognitive dialogue", "File 5 contains player behavioral profile", "Description matches Unity testing room"] },
-  { title: "Doctor Created The Circus", confidence: 55, evidence: 3, status: "unverified", summary: "Some theorists believe The Doctor created the circus as a psychological experiment, with the other characters as test subjects.", items: ["Medical files reference all characters", "White Room may be observation room", "He is the only character with admin-level knowledge"] },
+  { title: "Doctor Created The Circus", confidence: 55, evidence: 3, status: "unverified", summary: "Some theorists believe The Doctor created the circus as a psychological experiment, with the other characters as test subjects.", items: ["Medical files reference all characters", "Unnamed Open Ending may be observation room", "He is the only character with admin-level knowledge"] },
 ];
 
 function StatBar({ label, value, color = accent }: { label: string; value: number; color?: string }) {
@@ -84,9 +84,9 @@ export default function DoctorClient({ faqData }: { faqData: { question: string;
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-paper mb-6">Who Is The Doctor?</h2>
             <div className="archive-card mb-6" style={{ borderLeft: `3px solid ${accent}` }}>
               <div className="font-label text-[0.55rem] mb-2" style={{ color: accent }}>QUICK ANSWER</div>
-              <p className="text-faint-paper text-sm leading-relaxed"><strong className="text-paper">The Doctor</strong> is the circus physician whose clinical detachment masks unsettling awareness. He describes the White Room ending in Scene 7 with disturbing accuracy and his medical files contain a psychological profile that matches the player&apos;s choice patterns.</p>
+              <p className="text-faint-paper text-sm leading-relaxed"><strong className="text-paper">The Doctor</strong> is the circus physician whose clinical detachment masks unsettling awareness. He describes the Unnamed Open Ending ending in Scene 7 with disturbing accuracy and his medical files contain a psychological profile that matches the player&apos;s choice patterns.</p>
             </div>
-            <p className="text-faint-paper text-sm leading-relaxed">The Doctor references endings before they occur and his medical files contain timestamps matching real-world save creation dates. His Scene 7 description of the White Room matches unused files found in build 1.04.</p>
+            <p className="text-faint-paper text-sm leading-relaxed">The Doctor references endings before they occur and his medical files contain timestamps matching real-world save creation dates. His Scene 7 description of the Unnamed Open Ending matches unused files found in build 1.04.</p>
           </div>
           <div className="md:col-span-2">
             <div className="relative overflow-hidden">
@@ -116,7 +116,7 @@ export default function DoctorClient({ faqData }: { faqData: { question: string;
             <div className="archive-card">
               <div className="font-label text-[0.55rem] text-faint-paper mb-4 pb-2 border-b border-dark-border">CLASSIFICATION DATA</div>
               <div className="space-y-4">
-                {[{ l: "DESIGNATION", v: "The Doctor" }, { l: "CLASSIFICATION", v: "Circus Entity" }, { l: "ROLE", v: "Circus Physician" }, { l: "KEY MECHANIC", v: "Collect Medical Files" }, { l: "SECRET ENDING", v: "White Room" }, { l: "KNOWN ASSOCIATIONS", v: "Columbina / Ticket Taker / Player" }].map((i) => (
+                {[{ l: "DESIGNATION", v: "The Doctor" }, { l: "CLASSIFICATION", v: "Circus Entity" }, { l: "ROLE", v: "Circus Physician" }, { l: "KEY MECHANIC", v: "Collect Medical Files" }, { l: "SECRET ENDING", v: "Unnamed Open Ending" }, { l: "KNOWN ASSOCIATIONS", v: "Columbina / Ticket Taker / Player" }].map((i) => (
                   <div key={i.l} className="flex items-baseline gap-4"><span className="font-label text-[0.5rem] text-faint-paper w-32 shrink-0">{i.l}</span><span className="text-paper text-sm">{i.v}</span></div>
                 ))}
               </div>
@@ -194,7 +194,7 @@ export default function DoctorClient({ faqData }: { faqData: { question: string;
         <div className="max-w-6xl mx-auto">
           <div className="font-label text-[0.6rem] mb-4" style={{ color: accent }}>RELATED FILES</div>
           <div className="flex flex-wrap gap-2">
-            {[{ l: "Doctor Memory Route", h: "/walkthroughs/doctor-memory-route" }, { l: "All Endings", h: "/endings" }, { l: "White Room Lore", h: "/lore/mirror-hall" }, { l: "Columbina Character", h: "/characters/columbina" }].map((lnk) => (
+            {[{ l: "Doctor Memory Route", h: "/walkthroughs/doctor-memory-route" }, { l: "All Endings", h: "/endings" }, { l: "Unnamed Open Ending Lore", h: "/lore/mirror-hall" }, { l: "Columbina Character", h: "/characters/columbina" }].map((lnk) => (
               <Link key={lnk.h} href={lnk.h} className="font-label text-[0.55rem] px-3 py-1.5 border border-dark-border text-faint-paper hover:border-circus-red hover:text-paper transition-colors">{lnk.l}</Link>
             ))}
           </div>

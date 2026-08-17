@@ -4,9 +4,9 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Null Route Investigation — Unverified Corrupted Data & Theories | Freak Circus Hub",
-  description: "Complete investigation of the Null Route in The Freak Circus. Covers datamined files, hex patterns, community theories, and why this route remains unverified.",
-  keywords: ["Null Route", "Corrupted Data", "The Freak Circus unverified", "datamined", "hex dump", "null route investigation"],
+  title: "Unnamed Open Ending Investigation — Unverified Unnamed Open Ending & Theories | Freak Circus Hub",
+  description: "Complete investigation of the Unnamed Open Ending in The Freak Circus. Covers datamined files, hex patterns, community theories, and why this route remains unverified.",
+  keywords: ["Unnamed Open Ending", "Unnamed Open Ending", "The Freak Circus unverified", "datamined", "hex dump", "null route investigation"],
   alternates: {
     canonical: "https://freak-circus.com/walkthroughs/null-route",
   },
@@ -22,7 +22,7 @@ export default function Page() {
             ROUTE_GUIDE // NULL_ROUTE
           </div>
           <h1 className="font-[Creepster] text-4xl md:text-6xl text-primary mb-4">
-            Null Route Investigation
+            Unnamed Open Ending Investigation
           </h1>
           <p className="text-on-surface-variant text-lg mb-8">
             The unverified corrupted route — found in game files but never legitimately unlocked.
@@ -31,7 +31,7 @@ export default function Page() {
           <div className="space-y-12">
             <section>
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Overview</h2>
-              <p className="text-on-surface-variant text-sm whitespace-pre-line">The Null Route is an unverified route found in unused game files by data miners in build 1.04. No player has legitimately unlocked this route, and its conditions remain unknown. When triggered through file manipulation, the screen displays raw hexadecimal data before the application crashes. The community is divided on whether this is a debug remnant, an intentionally hidden ARG element, or cut content from a planned true ending.</p>
+              <p className="text-on-surface-variant text-sm whitespace-pre-line">The Unnamed Open Ending is an unverified route found in unused game files by data miners in build 1.04. No player has legitimately unlocked this route, and its conditions remain unknown. When triggered through file manipulation, the screen displays raw hexadecimal data before the application crashes. The community is divided on whether this is a debug remnant, an intentionally hidden ARG element, or cut content from a planned true ending.</p>
             </section>
             <section>
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">What We Know</h2>
@@ -48,7 +48,7 @@ export default function Page() {
             </section>
             <section>
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Community Theories</h2>
-              <p className="text-on-surface-variant text-sm whitespace-pre-line">Three main theories exist about the Null Route:
+              <p className="text-on-surface-variant text-sm whitespace-pre-line">Three main theories exist about the Unnamed Open Ending:
 
 1. Debug Remnant: The ending may be a debug tool left by developers. The ELF header patterns and crash behavior suggest this is not a finished narrative element.
 
@@ -64,8 +64,8 @@ A: No. Despite six months of community attempts, no player has verified legitima
 Q: Can you trigger it through file editing?
 A: Yes, but this requires modifying save files and is not considered a legitimate unlock. The game crashes immediately after displaying hex data.
 
-Q: Is it related to the Corrupted Data ending?
-A: The community believes they are the same route, but this is unverified. The Corrupted Data ending may be what the Null Route was intended to unlock.</p>
+Q: Is it related to the Unnamed Open Ending ending?
+A: The community believes they are the same route, but this is unverified. The Unnamed Open Ending ending may be what the Unnamed Open Ending was intended to unlock.</p>
             </section>
 
             <section>
@@ -73,12 +73,12 @@ A: The community believes they are the same route, but this is unverified. The C
               <div className="grid md:grid-cols-2 gap-4">
                 <Link href="/endings/corrupted-data" className="bg-surface-container border border-outline/20 p-4 hover:border-primary transition-colors">
                   <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant mb-1">Related Ending</div>
-                  <div className="font-bold text-foreground">Corrupted Data →</div>
+                  <div className="font-bold text-foreground">Unnamed Open Ending →</div>
                   <div className="text-on-surface-variant text-sm">The unverified ending investigation</div>
                 </Link>
                 <Link href="/theories" className="bg-surface-container border border-outline/20 p-4 hover:border-primary transition-colors">
                   <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant mb-1">Related Theory</div>
-                  <div className="font-bold text-foreground">Null Route Theory →</div>
+                  <div className="font-bold text-foreground">Unnamed Open Ending Theory →</div>
                   <div className="text-on-surface-variant text-sm">Community theories about this route</div>
                 </Link>
               </div>

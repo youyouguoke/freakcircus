@@ -3,11 +3,11 @@
 import Link from "next/link";
 
 const connections = [
-  { lore: "First Circus Fire", theory: "Loop Theory", ending: "Eternal Silence", walkthrough: "pierrot-main-route" },
-  { lore: "Mirror Hall", theory: "Broken Mirror Theory", ending: "White Room", walkthrough: "harlequin-true-route" },
+  { lore: "First Circus Fire", theory: "Loop Theory", ending: "Open Ending C (unnamed)", walkthrough: "pierrot-main-route" },
+  { lore: "Mirror Hall", theory: "Broken Mirror Theory", ending: "Unnamed Open Ending", walkthrough: "harlequin-true-route" },
   { lore: "Null Performer", theory: "Observer Theory", ending: "Infinite Loop", walkthrough: "null-route" },
-  { lore: "Doctor's Ward", theory: "Memory Archive Theory", ending: "Grand Finale", walkthrough: "doctor-memory-route" },
-  { lore: "Silent Exit", theory: "Escape Theory", ending: "Eternal Silence", walkthrough: "columbina-fractured-route" },
+  { lore: "Doctor's Ward", theory: "Memory Archive Theory", ending: "Open Ending A (unnamed)", walkthrough: "doctor-memory-route" },
+  { lore: "Silent Exit", theory: "Escape Theory", ending: "Open Ending C (unnamed)", walkthrough: "columbina-fractured-route" },
 ];
 
 export default function RelatedRoutes() {

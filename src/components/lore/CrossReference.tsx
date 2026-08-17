@@ -6,7 +6,7 @@ const connections = [
   {
     lore: "The First Circus Fire",
     loreHref: "/lore/first-circus-fire",
-    ending: "Columbina's Truth",
+    ending: "Unnamed Open Ending",
     endingHref: "/endings/columbinas-truth",
     theory: "The Fire Wasn't Real",
     theoryHref: "/theories/fire-wasnt-real",
@@ -16,7 +16,7 @@ const connections = [
   {
     lore: "Mirror Hall",
     loreHref: "/lore/mirror-hall",
-    ending: "Eternal Silence",
+    ending: "Open Ending C (unnamed)",
     endingHref: "/endings/eternal-silence",
     theory: "Mirror Identity",
     theoryHref: "/theories/mirror-identity",
@@ -26,17 +26,17 @@ const connections = [
   {
     lore: "Null Performer",
     loreHref: "/lore/null-performer",
-    ending: "Corrupted Data",
+    ending: "Unnamed Open Ending",
     endingHref: "/endings/corrupted-data",
     theory: "Observer Theory",
     theoryHref: "/theories/observer-theory",
-    route: "Null Route",
+    route: "Unnamed Open Ending",
     routeHref: "/walkthroughs/null-route",
   },
   {
     lore: "Doctor's Ward",
     loreHref: "/lore/doctors-ward",
-    ending: "Doctor's Note",
+    ending: "Unnamed Open Ending",
     endingHref: "/endings/doctors-note",
     theory: "Doctor Created Circus",
     theoryHref: "/theories/doctor-created-circus",

@@ -17,9 +17,9 @@ export const metadata: Metadata = {
     "Freak Circus ending order",
     "Freak Circus true ending",
     "Freak Circus secret endings",
-    "Freak Circus Eternal Silence unlock",
-    "Freak Circus Columbina Truth unlock",
-    "Freak Circus Doctor Note unlock",
+    "Freak Circus Open Ending C (unnamed) unlock",
+    "Freak Circus Unnamed Open Ending unlock",
+    "Freak Circus Unnamed Open Ending unlock",
   ],
   openGraph: {
     title: "All Endings Guide — Freak Circus Complete Ending Walkthrough",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
 
 const endingSteps = [
   {
-    ending: "Grand Finale",
+    ending: "Open Ending A (unnamed)",
     character: "Harlequin",
     difficulty: "Normal",
     type: "Canon",
@@ -49,7 +49,7 @@ const endingSteps = [
     tip: "This is the easiest ending and recommended for first-time players. No special conditions required.",
   },
   {
-    ending: "Smile For Me",
+    ending: "Open Ending B (unnamed)",
     character: "Pierrot",
     difficulty: "Normal",
     type: "Canon",
@@ -64,7 +64,7 @@ const endingSteps = [
     tip: "Pierrot's route is the most commonly recommended starting point. The garden scene is the key decision point.",
   },
   {
-    ending: "Harlequin's Laughter",
+    ending: "Unnamed Open Ending",
     character: "Harlequin",
     difficulty: "Hidden",
     type: "Joke",
@@ -79,7 +79,7 @@ const endingSteps = [
     tip: "This ending is easy to miss because it requires 100% comedic choices. One aggressive option locks it out.",
   },
   {
-    ending: "Doctor's Note",
+    ending: "Unnamed Open Ending",
     character: "The Doctor",
     difficulty: "Hard",
     type: "Secret",
@@ -96,7 +96,7 @@ const endingSteps = [
     tip: "File 5 is the hardest to find — it's hidden under a newspaper on the desk. Inspect every object in Scene 10.",
   },
   {
-    ending: "Eternal Silence",
+    ending: "Open Ending C (unnamed)",
     character: "Pierrot",
     difficulty: "Hard",
     type: "Secret",
@@ -113,7 +113,7 @@ const endingSteps = [
     tip: "This ending breaks the fourth wall. The black screen is intentional — do not assume the game has crashed.",
   },
   {
-    ending: "Columbina's Truth",
+    ending: "Unnamed Open Ending",
     character: "Columbina",
     difficulty: "Very Hard",
     type: "Secret",
@@ -129,7 +129,7 @@ const endingSteps = [
     tip: "This is the hardest ending in the game. Use a guide for each loop's correct choices. One wrong selection means starting over.",
   },
   {
-    ending: "White Room",
+    ending: "Unnamed Open Ending",
     character: "Unknown",
     difficulty: "Impossible",
     type: "Unverified",
@@ -143,7 +143,7 @@ const endingSteps = [
     tip: "This ending may be cut content or an intentional mystery. The community maintains a $500 bounty for confirmed unlock conditions.",
   },
   {
-    ending: "Corrupted Data",
+    ending: "Unnamed Open Ending",
     character: "???",
     difficulty: "Impossible",
     type: "Corrupted",
@@ -159,10 +159,10 @@ const endingSteps = [
 ];
 
 const faqData = [
-  { question: "What order should I unlock endings?", answer: "Recommended order: 1) Grand Finale (Harlequin), 2) Smile For Me (Pierrot), 3) Harlequin's Laughter, 4) Doctor's Note, 5) Eternal Silence, 6) Columbina's Truth. Save unverified endings for last." },
-  { question: "Can I get all endings in one playthrough?", answer: "No. At least 4 playthroughs are required due to replay dependencies. Columbina's Truth alone needs 3 perfect loops." },
-  { question: "What is the easiest ending?", answer: "Grand Finale (Harlequin) and Smile For Me (Pierrot) are the easiest — both achievable on first playthrough with no special conditions." },
-  { question: "What is the hardest ending?", answer: "Columbina's Truth requires perfect alignment across 3 loops with zero mistakes. Any deviation resets to Loop 1." },
+  { question: "What order should I unlock endings?", answer: "Recommended order: 1) Open Ending A (unnamed) (Harlequin), 2) Open Ending B (unnamed) (Pierrot), 3) Unnamed Open Ending, 4) Unnamed Open Ending, 5) Open Ending C (unnamed), 6) Unnamed Open Ending. Save unverified endings for last." },
+  { question: "Can I get all endings in one playthrough?", answer: "No. At least 4 playthroughs are required due to replay dependencies. Unnamed Open Ending alone needs 3 perfect loops." },
+  { question: "What is the easiest ending?", answer: "Open Ending A (unnamed) (Harlequin) and Open Ending B (unnamed) (Pierrot) are the easiest — both achievable on first playthrough with no special conditions." },
+  { question: "What is the hardest ending?", answer: "Unnamed Open Ending requires perfect alignment across 3 loops with zero mistakes. Any deviation resets to Loop 1." },
   { question: "Do endings affect each other?", answer: "Yes. A hidden counter at offset 0x4A20 tracks your completion history. Some endings only become available after seeing others first." },
   { question: "How long to get all endings?", answer: `Playtime estimates are not yet confirmed. The game has ${ENDINGS_TOTAL} confirmed endings total.` },
 ];
@@ -253,7 +253,7 @@ export default function AllEndingsGuidePage() {
             <div className="bg-surface-container border border-primary/20 p-6 border-l-4 border-l-primary">
               <div className="font-[JetBrains_Mono] text-[10px] text-primary mb-2 uppercase tracking-widest">Quick Answer</div>
               <p className="text-on-surface-variant text-sm leading-relaxed">
-                <strong className="text-foreground">How many endings are in The Freak Circus?</strong> The community has confirmed 11 endings across standard, secret, and corrupted categories. The easiest are Grand Finale and Smile For Me (first playthrough). The hardest is Columbina&apos;s Truth (3 perfect loops, 6-8 hours). Recommended order: Grand Finale → Smile For Me → Harlequin&apos;s Laughter → Doctor&apos;s Note → Eternal Silence → Columbina&apos;s Truth.
+                <strong className="text-foreground">How many endings are in The Freak Circus?</strong> The community has confirmed 11 endings across standard, secret, and corrupted categories. The easiest are Open Ending A (unnamed) and Open Ending B (unnamed) (first playthrough). The hardest is Columbina&apos;s Truth (3 perfect loops, 6-8 hours). Recommended order: Open Ending A (unnamed) → Open Ending B (unnamed) → Harlequin&apos;s Laughter → Doctor&apos;s Note → Open Ending C (unnamed) → Columbina&apos;s Truth.
               </p>
             </div>
           </section>
@@ -324,7 +324,7 @@ export default function AllEndingsGuidePage() {
                 { name: "Harlequin True Route", href: "/walkthroughs/harlequin-true-route", desc: "Chaotic performer. Comedy/aggression system." },
                 { name: "Doctor Memory Route", href: "/walkthroughs/doctor-memory-route", desc: "Circus physician. 5 hidden medical files." },
                 { name: "Columbina Fractured Route", href: "/walkthroughs/columbina-fractured-route", desc: "Ballerina. Three-loop alignment mechanic." },
-                { name: "Null Route", href: "/walkthroughs/null-route", desc: "Corrupted route. Unused endings." },
+                { name: "Unnamed Open Ending", href: "/walkthroughs/null-route", desc: "Corrupted route. Unused endings." },
               ].map((route) => (
                 <Link key={route.href} href={route.href} className="bg-surface-container border border-outline/20 p-6 hover:border-primary transition-colors">
                   <h3 className="font-[Epilogue] text-lg font-bold text-foreground mb-2">{route.name}</h3>

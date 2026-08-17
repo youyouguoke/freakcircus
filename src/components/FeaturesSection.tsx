@@ -29,7 +29,7 @@ export default function FeaturesSection() {
           </h2>
           <p className="text-on-surface-variant text-lg mb-8">
             Stop guessing. Our archive contains every frame-perfect decision
-            needed to trigger the 'Eternal Silence' ending. Compiled from community testing and documented route discoveries.
+            needed to trigger the 'Open Ending C (unnamed)' ending. Compiled from community testing and documented route discoveries.
           </p>
           <ul className="space-y-4 font-[JetBrains_Mono] text-primary text-sm">
             <li className="flex items-center gap-3">

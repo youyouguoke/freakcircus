@@ -4,9 +4,9 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Doctor Memory Route Guide — Hidden Files & Doctor Note | Freak Circus Hub",
-  description: "Complete walkthrough for The Doctor's Memory Route in The Freak Circus. Covers all 5 hidden medical files, mirror connection, and how to unlock the Doctor Note ending.",
-  keywords: ["Doctor route guide", "Doctor Memory Route", "Doctor Note", "The Freak Circus walkthrough", "hidden medical files"],
+  title: "Doctor Memory Route Guide — Hidden Files & Unnamed Open Ending | Freak Circus Hub",
+  description: "Complete walkthrough for The Doctor's Memory Route in The Freak Circus. Covers all 5 hidden medical files, mirror connection, and how to unlock the Unnamed Open Ending ending.",
+  keywords: ["Doctor route guide", "Doctor Memory Route", "Unnamed Open Ending", "The Freak Circus walkthrough", "hidden medical files"],
   alternates: {
     canonical: "https://freak-circus.com/walkthroughs/doctor-memory-route",
   },
@@ -65,7 +65,7 @@ Finale (Scene 13-14): With all 5 files collected, The Doctor's dialogue changes.
 
             <section>
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Ending Outcome</h2>
-              <p className="text-on-surface-variant text-sm">The Doctor's Note ending shows The Doctor writing in a medical journal. The camera zooms in on the page, revealing patient records for all four characters — including entries dated before the circus existed. The final image is a photograph of the original performers, who look identical to the current characters. The Doctor's voiceover says: "They don't remember. But I do." This ending suggests the current characters are replacements or reconstructions of the original performers.</p>
+              <p className="text-on-surface-variant text-sm">The Unnamed Open Ending ending shows The Doctor writing in a medical journal. The camera zooms in on the page, revealing patient records for all four characters — including entries dated before the circus existed. The final image is a photograph of the original performers, who look identical to the current characters. The Doctor's voiceover says: "They don't remember. But I do." This ending suggests the current characters are replacements or reconstructions of the original performers.</p>
             </section>
 
             <section>
@@ -73,7 +73,7 @@ Finale (Scene 13-14): With all 5 files collected, The Doctor's dialogue changes.
               <div className="grid md:grid-cols-2 gap-4">
                 <Link href="/endings/doctors-note" className="bg-surface-container border border-outline/20 p-4 hover:border-primary transition-colors">
                   <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant mb-1">Related Ending</div>
-                  <div className="font-bold text-foreground">Doctor's Note →</div>
+                  <div className="font-bold text-foreground">Unnamed Open Ending →</div>
                   <div className="text-on-surface-variant text-sm">The secret ending for this route</div>
                 </Link>
                 <Link href="/theories" className="bg-surface-container border border-outline/20 p-4 hover:border-primary transition-colors">

@@ -8,7 +8,7 @@ const archives = [
   { slug: "harlequin-true-route", title: "Harlequin True Route", desc: "Harlequin's complete story. 24 steps, 4 endings.", status: "Complete" },
   { slug: "doctor-memory-route", title: "Doctor Memory Route", desc: "Unlocks medical archive records. 18 steps, 2 endings.", status: "Complete" },
   { slug: "columbina-fractured-route", title: "Columbina Fractured Route", desc: "Timeline-fragmented narrative. 27 steps, 3 endings.", status: "Complete" },
-  { slug: "null-route", title: "Null Route", desc: "The hidden final route. 56 steps, 1 ending.", status: "Complete" },
+  { slug: "null-route", title: "Unnamed Open Ending", desc: "The hidden final route. 56 steps, 1 ending.", status: "Complete" },
 ];
 
 export default function WalkthroughArchiveGrid() {

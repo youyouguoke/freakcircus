@@ -8,12 +8,12 @@ const accent = "var(--columbina)";
 const profile = {
   role: "THE BALLERINA", status: "ACTIVE", route: "AVAILABLE",
   firstEncounter: "Hallway (Day 2)", keyMechanic: "Three-Loop Alignment",
-  endings: "Eternal Dance / Columbina\'s Truth",
+  endings: "Unnamed Open Ending / Columbina\'s Truth",
   loopAwareness: 100, threatLevel: 20, emotionalAttachment: 80, stability: 70, fourthWallAwareness: 85,
 };
 
 const endings = [
-  { name: "Eternal Dance", type: "MAIN", desc: "Complete Columbina\'s route with graceful options. Standard ending with a bittersweet dance sequence." },
+  { name: "Unnamed Open Ending", type: "MAIN", desc: "Complete Columbina\'s route with graceful options. Standard ending with a bittersweet dance sequence." },
   { name: "Columbina\'s Truth", type: "SECRET", desc: "Complete three perfect loops with perfect dialogue alignment. Any deviation resets to Loop 1. After three perfect loops, a fourth door appears." },
 ];
 

@@ -4,9 +4,9 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Pierrot Silent Route Guide — Hidden Triggers & Eternal Silence | Freak Circus Hub",
-  description: "Complete walkthrough for Pierrot's Silent Route in The Freak Circus. Covers silence mechanics, replay requirements, hidden triggers, and how to unlock the Eternal Silence ending.",
-  keywords: ["Pierrot Silent Route", "silent route guide", "Eternal Silence", "The Freak Circus walkthrough", "hidden triggers"],
+  title: "Pierrot Silent Route Guide — Hidden Triggers & Open Ending C (unnamed) | Freak Circus Hub",
+  description: "Complete walkthrough for Pierrot's Silent Route in The Freak Circus. Covers silence mechanics, replay requirements, hidden triggers, and how to unlock the Open Ending C (unnamed) ending.",
+  keywords: ["Pierrot Silent Route", "silent route guide", "Open Ending C (unnamed)", "The Freak Circus walkthrough", "hidden triggers"],
   alternates: {
     canonical: "https://freak-circus.com/walkthroughs/pierrot-silent-route",
   },
@@ -31,7 +31,7 @@ export default function Page() {
           <div className="space-y-12">
             <section>
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Overview</h2>
-              <p className="text-on-surface-variant text-sm whitespace-pre-line">The Silent Pierrot Route is the most discussed hidden route in The Freak Circus. It requires avoiding all direct emotional responses during Acts II and III, then replaying the route 3-5 times to unlock full content. The route becomes aware of previous playthroughs after the third loop, with Pierrot referencing events the player never selected. This route unlocks the Eternal Silence ending, which is considered one of the game's most disturbing conclusions.</p>
+              <p className="text-on-surface-variant text-sm whitespace-pre-line">The Silent Pierrot Route is the most discussed hidden route in The Freak Circus. It requires avoiding all direct emotional responses during Acts II and III, then replaying the route 3-5 times to unlock full content. The route becomes aware of previous playthroughs after the third loop, with Pierrot referencing events the player never selected. This route unlocks the Open Ending C (unnamed) ending, which is considered one of the game's most disturbing conclusions.</p>
             </section>
             <section>
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Requirements</h2>
@@ -49,7 +49,7 @@ Act II — The Performance (Scenes 5-8): This is where the silence mechanic begi
 
 Act III — The Confession (Scenes 9-12): By this point, certain dialogue options will have disappeared. Pierrot's dialogue changes to reference your silence. In Scene 11, he asks: 'You said nothing last time, too. Do you think I don't remember?'
 
-Finale (Scene 13-14): The ending depends on your loop count. First loop: neutral ending. Third loop: Eternal Silence ending with full narration.</p>
+Finale (Scene 13-14): The ending depends on your loop count. First loop: neutral ending. Third loop: Open Ending C (unnamed) ending with full narration.</p>
             </section>
             <section>
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Hidden Triggers</h2>
@@ -63,7 +63,7 @@ Finale (Scene 13-14): The ending depends on your loop count. First loop: neutral
             </section>
             <section>
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Ending Outcome</h2>
-              <p className="text-on-surface-variant text-sm whitespace-pre-line">The Eternal Silence ending shows a 4-minute black screen with narration that is not found in the game's script files. Post-credits, a single scene shows Pierrot sitting alone in the White Room, looking directly at the camera. He says: 'You were here before. You will be here again.' The game then displays the player's real-world playtime and asks: 'How many times have you done this?' This ending is considered the most disturbing in the game because it breaks the fourth wall explicitly.</p>
+              <p className="text-on-surface-variant text-sm whitespace-pre-line">The Open Ending C (unnamed) ending shows a 4-minute black screen with narration that is not found in the game's script files. Post-credits, a single scene shows Pierrot sitting alone in the Unnamed Open Ending, looking directly at the camera. He says: 'You were here before. You will be here again.' The game then displays the player's real-world playtime and asks: 'How many times have you done this?' This ending is considered the most disturbing in the game because it breaks the fourth wall explicitly.</p>
             </section>
 
             <section>
@@ -76,7 +76,7 @@ Finale (Scene 13-14): The ending depends on your loop count. First loop: neutral
                 </Link>
                 <Link href="/endings/eternal-silence" className="bg-surface-container border border-outline/20 p-4 hover:border-primary transition-colors">
                   <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant mb-1">Related Ending</div>
-                  <div className="font-bold text-foreground">Eternal Silence →</div>
+                  <div className="font-bold text-foreground">Open Ending C (unnamed) →</div>
                   <div className="text-on-surface-variant text-sm">The secret ending for this route</div>
                 </Link>
                 <Link href="/theories/pierrot-remembers-routes" className="bg-surface-container border border-outline/20 p-4 hover:border-primary transition-colors">

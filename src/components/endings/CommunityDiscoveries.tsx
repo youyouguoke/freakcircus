@@ -13,7 +13,7 @@ const discoveries = [
     title: "Precognitive Doctor",
     author: "u/medical_archive",
     votes: 287,
-    desc: "The Doctor references endings before they occur. In Scene 7, he describes the \'White Room\' ending in detail — three routes before it becomes accessible.",
+    desc: "The Doctor references endings before they occur. In Scene 7, he describes the \'Unnamed Open Ending\' ending in detail — three routes before it becomes accessible.",
     tags: ["Verified", "The Doctor", "Timeline"],
     sourceUrl: "https://www.reddit.com/r/horrorgaming/",
   },

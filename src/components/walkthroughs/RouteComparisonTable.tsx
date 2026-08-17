@@ -6,7 +6,7 @@ const routes = [
   { name: "Harlequin True Route", character: "Harlequin", difficulty: "Hard", endingType: "Bad", mainRoute: "Yes" },
   { name: "Doctor Memory Route", character: "The Doctor", difficulty: "Hard", endingType: "False", mainRoute: "No" },
   { name: "Columbina Fractured Route", character: "Columbina", difficulty: "Very Hard", endingType: "Loop", mainRoute: "No" },
-  { name: "Null Route", character: "Unknown", difficulty: "Impossible", endingType: "False", mainRoute: "No" },
+  { name: "Unnamed Open Ending", character: "Unknown", difficulty: "Impossible", endingType: "False", mainRoute: "No" },
 ];
 
 export default function RouteComparisonTable() {

@@ -5,8 +5,8 @@ import Link from 'next/link';
 const symbols = [
   {
     name: 'Red Thread',
-    meaning: 'A single red thread appears in the post-credits of Pierrot\'s Smile For Me ending. It represents the connection between the player and the circus — a thread that cannot be cut, only tangled.',
-    appearances: 'Post-credits (Smile For Me), Pierrot\'s garden (Scene 2), Harlequin\'s ribbon (Scene 5), Columbina\'s bracelet (Scene 8)',
+    meaning: 'A single red thread appears in the post-credits of Pierrot\'s Open Ending B (unnamed) ending. It represents the connection between the player and the circus — a thread that cannot be cut, only tangled.',
+    appearances: 'Post-credits (Open Ending B (unnamed)), Pierrot\'s garden (Scene 2), Harlequin\'s ribbon (Scene 5), Columbina\'s bracelet (Scene 8)',
     evidence: 'The thread is visible in 4 different routes but only mentioned in dialogue once. Players report seeing it \'move\' in the background of static scenes.',
     related: 'Pierrot Loop Theory, Timeline Reset Theory',
     href: '/lore/founding-myth',
@@ -14,17 +14,17 @@ const symbols = [
   {
     name: 'Broken Mirror',
     meaning: 'The mirror in Scene 9 reflects the player\'s previous route character, not their current one. Breaking it reveals a hidden file. The mirror represents fractured memory.',
-    appearances: 'Scene 9 (all routes), Doctor\'s laboratory (Scene 10), White Room description',
+    appearances: 'Scene 9 (all routes), Doctor\'s laboratory (Scene 10), Unnamed Open Ending description',
     evidence: 'Datamined files show the mirror uses a variable called \'PREVIOUS_ROUTE_SPRITE\' that persists across save files.',
     related: 'Doctor Awareness Theory, Timeline Reset Theory',
     href: '/lore/mirror-hall',
   },
   {
-    name: 'White Room',
+    name: 'Unnamed Open Ending',
     meaning: 'A space with no walls, no ceiling, no floor. Only light. And a chair facing a mirror that shows nothing. Described by The Doctor in Scene 7 but never found by players.',
     appearances: 'Doctor\'s dialogue (Scene 7), datamined files (1.03 patch notes), unused texture files',
     evidence: 'The Doctor\'s description matches the layout of a standard Unity testing room.',
-    related: 'Doctor Awareness Theory, White Room Is The Developer Room',
+    related: 'Doctor Awareness Theory, Unnamed Open Ending Is The Developer Room',
     href: '/lore/mirror-hall',
   },
   {

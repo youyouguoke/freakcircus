@@ -3,15 +3,15 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Columbina's Truth Ending — Three-Loop Guide & Lore | Freak Circus Hub",
-  description: "Complete guide to Columbina's Truth ending in The Freak Circus. Covers the three-loop perfection requirement, hidden fourth door, and why this ending suggests the circus is a purgatorial system.",
-  keywords: ["Columbina's Truth", "Columbina ending", "The Freak Circus endings", "three loop", "secret ending", "purgatory"],
+  title: "Unnamed Open Ending Ending — Three-Loop Guide & Lore | Freak Circus Hub",
+  description: "Complete guide to Unnamed Open Ending ending in The Freak Circus. Covers the three-loop perfection requirement, hidden fourth door, and why this ending suggests the circus is a purgatorial system.",
+  keywords: ["Unnamed Open Ending", "Columbina ending", "The Freak Circus endings", "three loop", "secret ending", "purgatory"],
   alternates: {
     canonical: "https://freak-circus.com/endings/columbinas-truth",
   },
 };
 
-export default function ColumbinasTruthPage() {
+export default function EndingPage() {
   return (
     <main className="min-h-screen bg-surface">
       <Navigation />
@@ -21,7 +21,7 @@ export default function ColumbinasTruthPage() {
             ENDING_GUIDE // COLUMBINAS_TRUTH
           </div>
           <h1 className="font-[Creepster] text-4xl md:text-6xl text-primary mb-4">
-            Columbina's Truth
+            Unnamed Open Ending
           </h1>
           <p className="text-on-surface-variant text-lg mb-8">
             The secret ending for Columbina's route — requires perfect alignment across three consecutive loops.
@@ -31,7 +31,7 @@ export default function ColumbinasTruthPage() {
             <section>
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Overview</h2>
               <p className="text-on-surface-variant text-sm">
-                Columbina's Truth is the most difficult ending to unlock in The Freak Circus. It requires perfect alignment of all dialogue choices across three consecutive loops — any deviation, even a single incorrect choice, causes a complete reset. The ending reveals that Columbina is the only character who truly understands the circus, and that her gentle demeanor hides a disturbing awareness of the narrative loop.
+                Unnamed Open Ending is the most difficult ending to unlock in The Freak Circus. It requires perfect alignment of all dialogue choices across three consecutive loops — any deviation, even a single incorrect choice, causes a complete reset. The ending reveals that Columbina is the only character who truly understands the circus, and that her gentle demeanor hides a disturbing awareness of the narrative loop.
               </p>
             </section>
 
@@ -59,7 +59,7 @@ export default function ColumbinasTruthPage() {
             <section>
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Lore Meaning</h2>
               <p className="text-on-surface-variant text-sm">
-                Columbina's Truth suggests that the circus is a purgatorial system where characters forget but the world remembers. The three loops represent stages of memory erosion — each loop strips away more of the protagonist's identity until only instinct remains. The fourth door represents the boundary between the player and the protagonist, suggesting that the player is the true variable being tested.
+                Unnamed Open Ending suggests that the circus is a purgatorial system where characters forget but the world remembers. The three loops represent stages of memory erosion — each loop strips away more of the protagonist's identity until only instinct remains. The fourth door represents the boundary between the player and the protagonist, suggesting that the player is the true variable being tested.
               </p>
             </section>
 

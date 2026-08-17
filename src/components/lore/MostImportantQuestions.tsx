@@ -21,7 +21,7 @@ const questions = [
   },
   {
     question: "Is The Circus Real?",
-    answer: "The game presents multiple realities simultaneously. The circus exists as a physical location in some routes, a purgatorial system in others, and a digital construct in the Corrupted Data ending. The most accepted theory is that the circus is a memory preservation system — real to the characters who inhabit it, but constructed from saved consciousness rather than physical matter.",
+    answer: "The game presents multiple realities simultaneously. The circus exists as a physical location in some routes, a purgatorial system in others, and a digital construct in the Unnamed Open Ending ending. The most accepted theory is that the circus is a memory preservation system — real to the characters who inhabit it, but constructed from saved consciousness rather than physical matter.",
     links: [
       { label: "Purgatorial Theory", href: "/theories/purgatorial" },
       { label: "Mirror Hall", href: "/lore/mirror-hall" },

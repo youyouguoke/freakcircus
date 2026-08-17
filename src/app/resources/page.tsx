@@ -62,7 +62,7 @@ const socialCards = [
   {
     platform: "Reddit",
     title: "I found all 14 endings in The Freak Circus — here's the complete guide",
-    body: "After 20+ hours of investigation, I documented every confirmed ending with unlock conditions, step-by-step walkthroughs, and hidden triggers. Includes the secret Eternal Silence ending and the three-loop Columbina's Truth.\n\nFull guide: https://freak-circus.com/endings\n\nThis is a fan-maintained archive, not affiliated with the developer. Corrections welcome!",
+    body: "After 20+ hours of investigation, I documented every confirmed ending with unlock conditions, step-by-step walkthroughs, and hidden triggers. Includes the secret Open Ending C (unnamed) ending and the three-loop Unnamed Open Ending.\n\nFull guide: https://freak-circus.com/endings\n\nThis is a fan-maintained archive, not affiliated with the developer. Corrections welcome!",
     subreddit: "r/visualnovels",
   },
   {
@@ -80,7 +80,7 @@ const socialCards = [
   {
     platform: "Tumblr",
     title: "The Freak Circus endings guide — all 14 endings explained with unlock conditions",
-    body: "For anyone trying to get all the endings in The Freak Circus, I put together a comprehensive guide covering every confirmed ending.\n\n🎭 8 confirmed endings (6 more under investigation)\n🎪 Secret endings require replay awareness\n🔮 Columbina's Truth needs 3 perfect loops\n💫 The game tracks your history across saves\n\nFull guide: https://freak-circus.com/endings\nCharacter guides: https://freak-circus.com/characters\n\n#freakcircus #the-freak-circus #visualnovel #horrorgame #indiegame",
+    body: "For anyone trying to get all the endings in The Freak Circus, I put together a comprehensive guide covering every confirmed ending.\n\n🎭 8 confirmed endings (6 more under investigation)\n🎪 Secret endings require replay awareness\n🔮 Unnamed Open Ending needs 3 perfect loops\n💫 The game tracks your history across saves\n\nFull guide: https://freak-circus.com/endings\nCharacter guides: https://freak-circus.com/characters\n\n#freakcircus #the-freak-circus #visualnovel #horrorgame #indiegame",
     tags: ["freakcircus", "visualnovel", "horrorgame"],
   },
   {

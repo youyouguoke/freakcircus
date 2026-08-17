@@ -3,9 +3,9 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "The Grand Finale Ending — Harlequin Route Guide | Freak Circus Hub",
-  description: "Complete guide to The Grand Finale ending in The Freak Circus. Covers unlock conditions, scene requirements, and why this is the standard conclusion for Harlequin's route.",
-  keywords: ["Grand Finale", "Harlequin ending", "The Freak Circus endings", "standard ending", "canon ending"],
+  title: "The Open Ending A (unnamed) Ending — Harlequin Route Guide | Freak Circus Hub",
+  description: "Complete guide to The Open Ending A (unnamed) ending in The Freak Circus. Covers unlock conditions, scene requirements, and why this is the standard conclusion for Harlequin's route.",
+  keywords: ["Open Ending A (unnamed)", "Harlequin ending", "The Freak Circus endings", "standard ending", "canon ending"],
   alternates: {
     canonical: "https://freak-circus.com/endings/the-grand-finale",
   },
@@ -21,7 +21,7 @@ export default function GrandFinalePage() {
             ENDING_GUIDE // GRAND_FINALE
           </div>
           <h1 className="font-[Creepster] text-4xl md:text-6xl text-primary mb-4">
-            The Grand Finale
+            The Open Ending A (unnamed)
           </h1>
           <p className="text-on-surface-variant text-lg mb-8">
             The standard ending for Harlequin's route — complete unlock guide and scene breakdown.
@@ -31,7 +31,7 @@ export default function GrandFinalePage() {
             <section>
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Overview</h2>
               <p className="text-on-surface-variant text-sm">
-                The Grand Finale is the standard ending for Harlequin's route and one of the two canon endings most players see on their first playthrough. It completes the main narrative thread without requiring special conditions or replay awareness. The ending concludes with Harlequin's final performance, where the player must choose whether to applaud or remain silent.
+                The Open Ending A (unnamed) is the standard ending for Harlequin's route and one of the two canon endings most players see on their first playthrough. It completes the main narrative thread without requiring special conditions or replay awareness. The ending concludes with Harlequin's final performance, where the player must choose whether to applaud or remain silent.
               </p>
             </section>
 
@@ -48,21 +48,21 @@ export default function GrandFinalePage() {
             <section>
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Walkthrough</h2>
               <p className="text-on-surface-variant text-sm mb-4">
-                The Grand Finale follows Harlequin's standard route from beginning to end. Maintain positive dialogue choices throughout Acts I and II. In the final act, support Harlequin's performance decisions. The ending triggers automatically after Scene 15 if you have not refused too many interactions.
+                The Open Ending A (unnamed) follows Harlequin's standard route from beginning to end. Maintain positive dialogue choices throughout Acts I and II. In the final act, support Harlequin's performance decisions. The ending triggers automatically after Scene 15 if you have not refused too many interactions.
               </p>
             </section>
 
             <section>
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Lore Meaning</h2>
               <p className="text-on-surface-variant text-sm">
-                The Grand Finale represents the circus as a functioning performance — Harlequin completes her act, the audience applauds, and the curtain falls. It is the only ending that presents the circus as a normal entertainment venue, without the meta-narrative elements that appear in secret endings. Some community members interpret this as the "intended" ending before the player discovers the darker layers.
+                The Open Ending A (unnamed) represents the circus as a functioning performance — Harlequin completes her act, the audience applauds, and the curtain falls. It is the only ending that presents the circus as a normal entertainment venue, without the meta-narrative elements that appear in secret endings. Some community members interpret this as the "intended" ending before the player discovers the darker layers.
               </p>
             </section>
 
             <section>
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Community Theory</h2>
               <p className="text-on-surface-variant text-sm">
-                The community theory suggests that The Grand Finale is a "surface level" ending — what the circus wants the player to see. Secret endings reveal that this performance is a loop, and that Harlequin has given this same performance countless times. The standard ending's simplicity makes it suspicious in retrospect.
+                The community theory suggests that The Open Ending A (unnamed) is a "surface level" ending — what the circus wants the player to see. Secret endings reveal that this performance is a loop, and that Harlequin has given this same performance countless times. The standard ending's simplicity makes it suspicious in retrospect.
               </p>
             </section>
 
@@ -71,11 +71,11 @@ export default function GrandFinalePage() {
               <div className="space-y-4">
                 <div className="bg-surface-container border border-outline/20 p-4">
                   <h3 className="font-bold text-foreground mb-2">Can you get this ending on the first playthrough?</h3>
-                  <p className="text-on-surface-variant text-sm">Yes. The Grand Finale is designed as the standard ending for Harlequin's route and requires no special conditions.</p>
+                  <p className="text-on-surface-variant text-sm">Yes. The Open Ending A (unnamed) is designed as the standard ending for Harlequin's route and requires no special conditions.</p>
                 </div>
                 <div className="bg-surface-container border border-outline/20 p-4">
                   <h3 className="font-bold text-foreground mb-2">Does this ending affect other routes?</h3>
-                  <p className="text-on-surface-variant text-sm">No. The Grand Finale does not trigger cross-route changes. However, completing it increments the hidden counter at 0x4A20, which affects dialogue in subsequent playthroughs.</p>
+                  <p className="text-on-surface-variant text-sm">No. The Open Ending A (unnamed) does not trigger cross-route changes. However, completing it increments the hidden counter at 0x4A20, which affects dialogue in subsequent playthroughs.</p>
                 </div>
               </div>
             </section>

@@ -33,9 +33,9 @@ const symbols = [
     meanings: [
       { title: "Narrative Control", desc: "Someone — or something — is deciding when the curtain rises and falls. The curtains appear in every scene transition, suggesting an unseen director controls the narrative. Unused audio files contain a voice saying 'Cut' and 'Action' that does not match any character's voice profile." },
       { title: "Hidden Truth", desc: "What happens behind the curtain may be the real story. Characters occasionally reference events that happen 'backstage' — events the player never sees. The curtains sometimes part to reveal empty spaces where characters should be, suggesting the performers are not always present when the story requires them." },
-      { title: "False Endings", desc: "Every curtain fall marks a timeline shift or memory reset. The game's endings all involve curtains falling, but the curtains in the Eternal Silence ending fall upward instead of down — a visual glitch that suggests the ending is not a conclusion but a reversal. This supports the loop theory that the game has no true ending, only repeated performances." },
+      { title: "False Endings", desc: "Every curtain fall marks a timeline shift or memory reset. The game's endings all involve curtains falling, but the curtains in the Open Ending C (unnamed) ending fall upward instead of down — a visual glitch that suggests the ending is not a conclusion but a reversal. This supports the loop theory that the game has no true ending, only repeated performances." },
     ],
-    appearances: "Appear in every scene transition. Special curtain behavior in Eternal Silence ending (falls upward).",
+    appearances: "Appear in every scene transition. Special curtain behavior in Open Ending C (unnamed) ending (falls upward).",
   },
 ];
 

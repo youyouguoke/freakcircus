@@ -27,7 +27,7 @@ const theories = [
     status: 'likely',
     evidence: 4,
     confidence: 67,
-    desc: 'The Doctor may be aware of the player directly, breaking the fourth wall through clinical observations. His Scene 7 description of the White Room ending matches unused files found in build 1.04.',
+    desc: 'The Doctor may be aware of the player directly, breaking the fourth wall through clinical observations. His Scene 7 description of the Unnamed Open Ending ending matches unused files found in build 1.04.',
     href: '/theories',
   },
 ];

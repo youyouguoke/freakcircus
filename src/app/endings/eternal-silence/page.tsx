@@ -4,12 +4,12 @@ import Footer from "@/components/Footer";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Eternal Silence Ending — How to Unlock, What Happens & Community Theories | Freak Circus Hub",
-  description: "Complete guide to the Eternal Silence ending in The Freak Circus. Covers unlock conditions, the 4-minute black screen, post-credits scene, and why this ending suggests the circus is aware of the player.",
-  keywords: ["Eternal Silence", "Eternal Silence ending", "Pierrot secret ending", "The Freak Circus endings", "how to unlock Eternal Silence", "silent route"],
+  title: "Open Ending C (unnamed) Ending — How to Unlock, What Happens & Community Theories | Freak Circus Hub",
+  description: "Complete guide to the Open Ending C (unnamed) ending in The Freak Circus. Covers unlock conditions, the 4-minute black screen, post-credits scene, and why this ending suggests the circus is aware of the player.",
+  keywords: ["Open Ending C (unnamed)", "Open Ending C (unnamed) ending", "Pierrot secret ending", "The Freak Circus endings", "how to unlock Open Ending C (unnamed)", "silent route"],
   openGraph: {
-    title: "Eternal Silence Ending — How to Unlock, What Happens & Community Theories",
-    description: "Complete guide to the Eternal Silence ending. Unlock conditions, black screen mechanics, and community theories.",
+    title: "Open Ending C (unnamed) Ending — How to Unlock, What Happens & Community Theories",
+    description: "Complete guide to the Open Ending C (unnamed) ending. Unlock conditions, black screen mechanics, and community theories.",
     type: "article",
     url: "https://freak-circus.com/endings/eternal-silence",
   },
@@ -28,7 +28,7 @@ export default function EternalSilencePage() {
             ENDING_ANALYSIS // ETERNAL_SILENCE
           </div>
           <h1 className="font-[Creepster] text-4xl md:text-6xl text-primary mb-4">
-            Eternal Silence Ending
+            Open Ending C (unnamed) Ending
           </h1>
           <p className="text-on-surface-variant text-lg mb-8">
             The secret ending that breaks the game's narrative contract — complete unlock guide, scene-by-scene breakdown, and community theories.
@@ -37,10 +37,10 @@ export default function EternalSilencePage() {
           <div className="space-y-12">
             <section>
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">
-                What Is the Eternal Silence Ending?
+                What Is the Open Ending C (unnamed) Ending?
               </h2>
               <p className="text-on-surface-variant text-sm mb-4">
-                Eternal Silence is Pierrot's secret ending and one of the most discussed outcomes in The Freak Circus community. Unlike standard endings that resolve the narrative, Eternal Silence suggests that the only escape from the circus is to stop engaging entirely. The ending requires refusing every major dialogue interaction during the final act, turning silence into a deliberate choice that the game does not expect.
+                Open Ending C (unnamed) is Pierrot's secret ending and one of the most discussed outcomes in The Freak Circus community. Unlike standard endings that resolve the narrative, Open Ending C (unnamed) suggests that the only escape from the circus is to stop engaging entirely. The ending requires refusing every major dialogue interaction during the final act, turning silence into a deliberate choice that the game does not expect.
               </p>
               <p className="text-on-surface-variant text-sm">
                 Players who unlock this ending report a disturbing sense that the game has been watching them. Pierrot references choices from previous playthroughs that the player never selected, and the post-credits scene breaks the fourth wall by addressing the player's real-world playtime. The ending has been described as "the game talking back to you."
@@ -49,7 +49,7 @@ export default function EternalSilencePage() {
 
             <section>
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">
-                How to Unlock Eternal Silence
+                How to Unlock Open Ending C (unnamed)
               </h2>
               <div className="bg-surface-container border border-outline/20 p-6">
                 <h3 className="font-bold text-foreground mb-3">Step-by-Step Requirements</h3>
@@ -104,7 +104,7 @@ export default function EternalSilencePage() {
 
             <section>
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">
-                Community Theories About Eternal Silence
+                Community Theories About Open Ending C (unnamed)
               </h2>
               <div className="space-y-4">
                 <div className="bg-surface-container border border-outline/20 p-4">

@@ -7,10 +7,10 @@ const files = [
     type: "Character",
     title: "Who Is Pierrot? Complete Character Guide",
     shortDesc: "Full analysis of Pierrot route, hidden dialogue triggers, and the loop theory.",
-    fullDesc: "Pierrot is the melancholic clown of The Freak Circus, and his route is often the first players encounter. But beneath the surface lies one of the most complex character arcs in the game. This guide analyzes every dialogue choice, hidden trigger, and environmental clue that reveals Pierrot's true nature. The loop theory suggests that Pierrot demonstrates awareness extending beyond the fourth wall, remembering player behavior across save files and adjusting his responses accordingly. Key topics covered: Pierrot's garden scene mechanics, the silence trigger system, how replay awareness affects dialogue trees, and the connection between Pierrot's route and the Eternal Silence ending.",
+    fullDesc: "Pierrot is the melancholic clown of The Freak Circus, and his route is often the first players encounter. But beneath the surface lies one of the most complex character arcs in the game. This guide analyzes every dialogue choice, hidden trigger, and environmental clue that reveals Pierrot's true nature. The loop theory suggests that Pierrot demonstrates awareness extending beyond the fourth wall, remembering player behavior across save files and adjusting his responses accordingly. Key topics covered: Pierrot's garden scene mechanics, the silence trigger system, how replay awareness affects dialogue trees, and the connection between Pierrot's route and the Open Ending C (unnamed) ending.",
     href: "/characters/pierrot",
     related: [
-      { name: "Eternal Silence Ending", href: "/endings/eternal-silence" },
+      { name: "Open Ending C (unnamed) Ending", href: "/endings/eternal-silence" },
       { name: "Pierrot Loop Theory", href: "/theories/pierrot-remembers-every-loop" },
     ],
   },
@@ -18,7 +18,7 @@ const files = [
     type: "Route",
     title: "Harlequin Route Guide — Every Choice Mapped",
     shortDesc: "Every choice mapped. How to unlock her secret scenes and corrupted endings.",
-    fullDesc: "Harlequin brings chaotic energy to The Freak Circus, with dialogue that shifts unpredictably between playful and menacing. Her route contains some of the most discussed hidden scenes in the community, requiring careful navigation to unlock her full storyline. This walkthrough maps every dialogue branch, identifies the comedic option sequence for Harlequin's Laughter ending, and explains how her route interconnects with Pierrot's through the Mirror Hall. Key topics: aggressive vs. comedic dialogue paths, the fractured route unlock conditions, how Harlequin's memory changes across playthroughs, and the hidden scene that only appears after failing her route once.",
+    fullDesc: "Harlequin brings chaotic energy to The Freak Circus, with dialogue that shifts unpredictably between playful and menacing. Her route contains some of the most discussed hidden scenes in the community, requiring careful navigation to unlock her full storyline. This walkthrough maps every dialogue branch, identifies the comedic option sequence for Unnamed Open Ending ending, and explains how her route interconnects with Pierrot's through the Mirror Hall. Key topics: aggressive vs. comedic dialogue paths, the fractured route unlock conditions, how Harlequin's memory changes across playthroughs, and the hidden scene that only appears after failing her route once.",
     href: "/walkthroughs/harlequin-true-route",
     related: [
       { name: "All Endings Explained", href: "/endings" },
@@ -29,11 +29,11 @@ const files = [
     type: "Endings",
     title: "How Many Endings Are in The Freak Circus? Complete Catalog",
     shortDesc: "Complete catalog of standard, secret, and corrupted endings with unlock conditions.",
-    fullDesc: "The exact number of endings in The Freak Circus remains a topic of active community investigation. This comprehensive catalog documents all known endings: the standard character routes (Grand Finale, Smile For Me, Doctor's Note), secret endings requiring specific conditions (Eternal Silence, Columbina's Truth), and the corrupted endings that break the game interface itself. Each ending entry includes: unlock requirements, spoiler level, route dependencies, replay conditions, and community verification status. Special attention given to the Corrupted Data ending found in game files but never legitimately unlocked, and the White Room ending referenced by The Doctor in Scene 7.",
+    fullDesc: "The exact number of endings in The Freak Circus remains a topic of active community investigation. This comprehensive catalog documents all known endings: the standard character routes (Open Ending A (unnamed), Open Ending B (unnamed), Unnamed Open Ending), secret endings requiring specific conditions (Open Ending C (unnamed), Unnamed Open Ending), and the corrupted endings that break the game interface itself. Each ending entry includes: unlock requirements, spoiler level, route dependencies, replay conditions, and community verification status. Special attention given to the Unnamed Open Ending ending found in game files but never legitimately unlocked, and the Unnamed Open Ending ending referenced by The Doctor in Scene 7.",
     href: "/endings",
     related: [
-      { name: "Corrupted Data Ending", href: "/endings/corrupted-data" },
-      { name: "Eternal Silence Guide", href: "/walkthroughs/pierrot-silent-route" },
+      { name: "Unnamed Open Ending Ending", href: "/endings/corrupted-data" },
+      { name: "Open Ending C (unnamed) Guide", href: "/walkthroughs/pierrot-silent-route" },
     ],
   },
   {

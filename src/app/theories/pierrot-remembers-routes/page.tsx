@@ -66,7 +66,7 @@ export default function PierrotRemembersRoutesPage() {
                 </div>
                 <div className="bg-surface-container border border-outline/20 p-4">
                   <h3 className="font-bold text-foreground mb-2">Evidence 4: Post-Credits Playtime Reference</h3>
-                  <p className="text-on-surface-variant text-sm">In the Eternal Silence ending, the post-credits scene references the player's real-world playtime: "You've been here for [X] hours." This value matches the system clock, not in-game time, suggesting the game reads external data.</p>
+                  <p className="text-on-surface-variant text-sm">In the Open Ending C (unnamed) ending, the post-credits scene references the player's real-world playtime: "You've been here for [X] hours." This value matches the system clock, not in-game time, suggesting the game reads external data.</p>
                 </div>
               </div>
             </section>
@@ -110,7 +110,7 @@ export default function PierrotRemembersRoutesPage() {
               <div className="flex flex-wrap gap-2">
                 <a href="/characters/pierrot" className="font-[JetBrains_Mono] text-xs px-3 py-1 border border-outline/30 text-on-surface-variant hover:border-primary hover:text-primary transition-colors">Pierrot Route Guide</a>
                 <a href="/characters/pierrot-endings" className="font-[JetBrains_Mono] text-xs px-3 py-1 border border-outline/30 text-on-surface-variant hover:border-primary hover:text-primary transition-colors">Pierrot Endings Guide</a>
-                <a href="/endings/eternal-silence" className="font-[JetBrains_Mono] text-xs px-3 py-1 border border-outline/30 text-on-surface-variant hover:border-primary hover:text-primary transition-colors">Eternal Silence Ending</a>
+                <a href="/endings/eternal-silence" className="font-[JetBrains_Mono] text-xs px-3 py-1 border border-outline/30 text-on-surface-variant hover:border-primary hover:text-primary transition-colors">Open Ending C (unnamed) Ending</a>
                 <a href="/lore/mirror-hall" className="font-[JetBrains_Mono] text-xs px-3 py-1 border border-outline/30 text-on-surface-variant hover:border-primary hover:text-primary transition-colors">Mirror Hall Lore</a>
               </div>
             </section>

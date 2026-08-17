@@ -76,12 +76,12 @@ const routes = {
     ],
   },
   "null-route": {
-    title: "Null Route",
+    title: "Unnamed Open Ending",
     description: "The hidden final route. Requires all previous endings.",
     steps: 56,
     endings: 1,
     difficulty: "Extreme",
-    fullDescription: "The Null Route is the hidden final route that requires completion of all other routes and their endings. With 56 decision points and a single ending, this route serves as the ultimate challenge for completionist players. The route reveals the true nature of the circus and connects all previous narrative threads.",
+    fullDescription: "The Unnamed Open Ending is the hidden final route that requires completion of all other routes and their endings. With 56 decision points and a single ending, this route serves as the ultimate challenge for completionist players. The route reveals the true nature of the circus and connects all previous narrative threads.",
     requirements: ["Complete all 15 endings from other routes", "Wait 30 seconds on title screen"],
     keyScenes: [
       "Act 1: The Void - Empty circus introduction",

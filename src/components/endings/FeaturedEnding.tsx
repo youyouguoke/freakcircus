@@ -17,7 +17,7 @@ export default function FeaturedEnding() {
           </div>
 
           <h2 className="font-[Creepster] text-3xl md:text-5xl text-primary mb-4">
-            Corrupted Data
+            Unnamed Open Ending
           </h2>
 
           <p className="text-on-surface-variant mb-8 max-w-2xl">

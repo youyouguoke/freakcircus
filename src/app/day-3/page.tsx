@@ -160,7 +160,7 @@ export default function Day3Page() {
                 </tr>
                 <tr className="border-b border-outline/10">
                   <td className="py-4 text-on-surface/80 font-medium">B — Follow Pierrot</td>
-                  <td className="py-4 text-on-surface/60">Pierrot route affinity +; likely unlocks Eternal Silence ending</td>
+                  <td className="py-4 text-on-surface/60">Pierrot route affinity +; likely unlocks Open Ending C (unnamed) ending</td>
                 </tr>
                 <tr className="border-b border-outline/10">
                   <td className="py-4 text-on-surface/80 font-medium">C — Investigate alone</td>
@@ -200,7 +200,7 @@ export default function Day3Page() {
                 reqs: ["Mirror clicked 33× (Day 2)", "Stay silent on Day 1", "Choice C on Day 3 (expected)", "Modified files (speculated)"],
               },
               {
-                name: "Eternal Silence",
+                name: "Open Ending C (unnamed)",
                 reqs: ["Pierrot Route affinity high", "Choice B on Day 3 (expected)", "Refuse all dialogue 3× (speculated)"],
               },
             ].map((ending) => (

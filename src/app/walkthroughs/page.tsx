@@ -288,7 +288,7 @@ export default function WalkthroughsPage() {
                 difficulty: "Very Hard",
               },
               {
-                name: "Null Route (Unverified)",
+                name: "Unnamed Open Ending (Unverified)",
                 desc: "Datamined branch with no characters. May not be a real ending.",
                 href: "/walkthroughs/null-route",
                 difficulty: "Unknown",
@@ -330,7 +330,7 @@ export default function WalkthroughsPage() {
                 req: "Complete Harlequin route",
               },
               {
-                name: "Medical Failure (Standard)",
+                name: "Unnamed Open Ending (Standard)",
                 desc: "Doctor route without collecting all medical files.",
                 href: "/characters/doctor#endings",
                 req: "Incomplete medical files",

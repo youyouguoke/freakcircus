@@ -9,7 +9,7 @@ const faqs = [
   },
   {
     q: "Are there secret or hidden endings?",
-    a: "No secret or hidden endings have been verified. Claims about secret endings (such as 'Eternal Silence' or 'Grand Finale') are unconfirmed community speculation and have no external source backing them.",
+    a: "No secret or hidden endings have been verified. Claims about secret endings (such as 'Open Ending C (unnamed)' or 'Open Ending A (unnamed)') are unconfirmed community speculation and have no external source backing them.",
   },
   {
     q: "What about the 3 open endings?",

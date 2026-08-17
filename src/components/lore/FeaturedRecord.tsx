@@ -20,7 +20,7 @@ const records = [
       "Data miners found references to 'Fire Loop #7' in unused files",
     ],
     relatedCharacters: ["The Doctor", "Pierrot", "Columbina"],
-    relatedEndings: ["Doctor's Note", "Columbina's Truth"],
+    relatedEndings: ["Unnamed Open Ending", "Unnamed Open Ending"],
   },
   {
     id: "FILE_12",
@@ -39,7 +39,7 @@ const records = [
       "Audio files contain breathing sounds not matching any character",
     ],
     relatedCharacters: ["Pierrot", "Columbina"],
-    relatedEndings: ["Eternal Silence", "Corrupted Data"],
+    relatedEndings: ["Open Ending C (unnamed)", "Unnamed Open Ending"],
   },
   {
     id: "FILE_03",
@@ -58,15 +58,15 @@ const records = [
       "Unused files reference a 'Director' who is never seen in the game",
     ],
     relatedCharacters: ["The Doctor", "All Characters"],
-    relatedEndings: ["Doctor's Note", "Null Route"],
+    relatedEndings: ["Unnamed Open Ending", "Unnamed Open Ending"],
   },
   {
     id: "FILE_17",
     title: "What Is The Silent Exit?",
     category: "Locations",
-    overview: "The Silent Exit is a hidden location that appears only in the Eternal Silence ending. It is described as a door that leads 'outside the circus' but shows only darkness when opened. Some players report hearing their own voice when approaching the Exit.",
+    overview: "The Silent Exit is a hidden location that appears only in the Open Ending C (unnamed) ending. It is described as a door that leads 'outside the circus' but shows only darkness when opened. Some players report hearing their own voice when approaching the Exit.",
     facts: [
-      "Only appears in the Eternal Silence ending",
+      "Only appears in the Open Ending C (unnamed) ending",
       "Opening the Exit causes the game to crash on some systems",
       "Audio files contain the player's system username spoken aloud",
       "The Exit's door handle matches the player's mouse cursor",
@@ -77,7 +77,7 @@ const records = [
       "Data miners found an unused scene showing what is behind the Exit",
     ],
     relatedCharacters: ["Pierrot"],
-    relatedEndings: ["Eternal Silence"],
+    relatedEndings: ["Open Ending C (unnamed)"],
   },
 ];
 

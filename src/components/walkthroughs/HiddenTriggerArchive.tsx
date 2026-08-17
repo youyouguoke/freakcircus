@@ -3,7 +3,7 @@
 const triggers = [
   { id: "01", name: "Remain Silent Three Scenes", desc: "In Pierrot's route, refuse all dialogue options for three consecutive scenes in Act II. This unlocks the Silent Route branch.", route: "Pierrot Silent Route" },
   { id: "02", name: "Open Mirror After Doctor Failure", desc: "After failing The Doctor's route once, the mirror in Scene 9 becomes interactive. Examining it reveals a hidden file location.", route: "Doctor Memory Route" },
-  { id: "03", name: "View Ending #11 Before Scene 9", desc: "In Columbina's route, viewing the Corrupted Data ending before Scene 9 causes her hallway to display a fourth door.", route: "Columbina Fractured Route" },
+  { id: "03", name: "View Ending #11 Before Scene 9", desc: "In Columbina's route, viewing the Unnamed Open Ending ending before Scene 9 causes her hallway to display a fourth door.", route: "Columbina Fractured Route" },
   { id: "04", name: "Select All Aggressive Options", desc: "In Harlequin's route, choosing every confrontational dialogue option unlocks her True Route ending instead of the standard one.", route: "Harlequin True Route" },
   { id: "05", name: "Fail Two Endings Before Loop 3", desc: "In Columbina's route, failing any two endings before starting Loop 3 causes her to reference those failures in dialogue.", route: "Columbina Fractured Route" },
 ];

@@ -6,7 +6,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Mirror Hall — Location Guide, Symbolism & Hidden Secrets | Freak Circus Hub",
   description: "Complete guide to the Mirror Hall in The Freak Circus. Covers how to find it, what the mirrors show, symbolism, and connections to routes and endings.",
-  keywords: ["Mirror Hall", "The Freak Circus lore", "mirror symbolism", "hidden location", "Eternal Silence"],
+  keywords: ["Mirror Hall", "The Freak Circus lore", "mirror symbolism", "hidden location", "Open Ending C (unnamed)"],
   alternates: {
     canonical: "https://freak-circus.com/lore/mirror-hall",
   },
@@ -55,9 +55,9 @@ export default function Page() {
             </section>
             <section>
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Related Endings</h2>
-              <p className="text-on-surface-variant text-sm whitespace-pre-line">• Eternal Silence: The Hall is the final location in this ending.
-• Corrupted Data: Contains references to 'Mirror Loop #7' in unused files.
-• Columbina's Truth: The fourth door in her hallway leads to a room of mirrors.</p>
+              <p className="text-on-surface-variant text-sm whitespace-pre-line">• Open Ending C (unnamed): The Hall is the final location in this ending.
+• Unnamed Open Ending: Contains references to 'Mirror Loop #7' in unused files.
+• Unnamed Open Ending: The fourth door in her hallway leads to a room of mirrors.</p>
             </section>
             <section>
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Related Theories</h2>
@@ -91,7 +91,7 @@ A: Some players report seeing a sixth figure in the mirrors. This may be the Nul
                 </Link>
                 <Link href="/endings/eternal-silence" className="bg-surface-container border border-outline/20 p-4 hover:border-primary transition-colors">
                   <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant mb-1">Related Ending</div>
-                  <div className="font-bold text-foreground">Eternal Silence →</div>
+                  <div className="font-bold text-foreground">Open Ending C (unnamed) →</div>
                   <div className="text-on-surface-variant text-sm">Ending set in the Mirror Hall</div>
                 </Link>
               </div>

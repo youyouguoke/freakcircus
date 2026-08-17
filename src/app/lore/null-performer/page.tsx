@@ -43,7 +43,7 @@ export default function Page() {
 2. Background figures in screenshots that do not match any character sprite.
 3. Audio files containing breathing sounds at 12 BPM.
 4. Unused files referencing 'Director' and 'Observer' roles.
-5. The Null Route's empty corridors may be the Null Performer's 'stage.'</p>
+5. The Unnamed Open Ending's empty corridors may be the Null Performer's 'stage.'</p>
             </section>
             <section>
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Related Characters</h2>
@@ -54,9 +54,9 @@ export default function Page() {
             </section>
             <section>
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Related Endings</h2>
-              <p className="text-on-surface-variant text-sm whitespace-pre-line">• Corrupted Data: The ending's empty corridors may be the Null Performer's domain.
-• Null Route: The route with no characters may be the Null Performer's perspective.
-• Columbina's Truth: The fourth door leads to a room where 'someone is always watching.'</p>
+              <p className="text-on-surface-variant text-sm whitespace-pre-line">• Unnamed Open Ending: The ending's empty corridors may be the Null Performer's domain.
+• Unnamed Open Ending: The route with no characters may be the Null Performer's perspective.
+• Unnamed Open Ending: The fourth door leads to a room where 'someone is always watching.'</p>
             </section>
             <section>
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Related Theories</h2>
@@ -85,7 +85,7 @@ A: No. Despite community attempts, no method has been found to make the entity i
               <div className="grid md:grid-cols-2 gap-4">
                 <Link href="/walkthroughs/null-route" className="bg-surface-container border border-outline/20 p-4 hover:border-primary transition-colors">
                   <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant mb-1">Related Route</div>
-                  <div className="font-bold text-foreground">Null Route →</div>
+                  <div className="font-bold text-foreground">Unnamed Open Ending →</div>
                   <div className="text-on-surface-variant text-sm">The corrupted route with no characters</div>
                 </Link>
                 <Link href="/theories" className="bg-surface-container border border-outline/20 p-4 hover:border-primary transition-colors">

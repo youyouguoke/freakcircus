@@ -4,9 +4,9 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Harlequin True Route Guide — Aggressive Choices & Grand Finale | Freak Circus Hub",
-  description: "Complete walkthrough for Harlequin's True Route in The Freak Circus. Covers all aggressive dialogue choices, hidden scenes, and how to reach the Grand Finale ending.",
-  keywords: ["Harlequin route guide", "Harlequin True Route", "Grand Finale", "The Freak Circus walkthrough", "aggressive choices"],
+  title: "Harlequin True Route Guide — Aggressive Choices & Open Ending A (unnamed) | Freak Circus Hub",
+  description: "Complete walkthrough for Harlequin's True Route in The Freak Circus. Covers all aggressive dialogue choices, hidden scenes, and how to reach the Open Ending A (unnamed) ending.",
+  keywords: ["Harlequin route guide", "Harlequin True Route", "Open Ending A (unnamed)", "The Freak Circus walkthrough", "aggressive choices"],
   alternates: {
     canonical: "https://freak-circus.com/walkthroughs/harlequin-true-route",
   },
@@ -31,7 +31,7 @@ export default function Page() {
           <div className="space-y-12">
             <section>
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Overview</h2>
-              <p className="text-on-surface-variant text-sm whitespace-pre-line">Harlequin's True Route is the aggressive path through his storyline. Unlike the standard route, which focuses on his playful exterior, the True Route reveals his dangerous obsession with the player. It requires selecting all confrontational dialogue options, which unlocks 7 hidden scenes that only appear on replay. The route culminates in the Grand Finale ending, which is considered a 'bad' ending but contains the most lore about the circus's founding.</p>
+              <p className="text-on-surface-variant text-sm whitespace-pre-line">Harlequin's True Route is the aggressive path through his storyline. Unlike the standard route, which focuses on his playful exterior, the True Route reveals his dangerous obsession with the player. It requires selecting all confrontational dialogue options, which unlocks 7 hidden scenes that only appear on replay. The route culminates in the Open Ending A (unnamed) ending, which is considered a 'bad' ending but contains the most lore about the circus's founding.</p>
             </section>
             <section>
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Requirements</h2>
@@ -39,7 +39,7 @@ export default function Page() {
 • Select ALL aggressive dialogue options (no exceptions)
 • Contains 7 hidden scenes only visible on replay
 • Estimated playtime: 3-4 hours
-• Ending: Grand Finale (Bad Ending)</p>
+• Ending: Open Ending A (unnamed) (Bad Ending)</p>
             </section>
             <section>
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Step-by-Step Guide</h2>
@@ -71,7 +71,7 @@ Finale (Scene 13-14): The ending depends on whether you selected ALL aggressive 
             </section>
             <section>
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Ending Outcome</h2>
-              <p className="text-on-surface-variant text-sm whitespace-pre-line">The Grand Finale ending shows Harlequin performing a solo act in a burning circus tent. The audience is revealed to be mannequins. As the fire spreads, Harlequin continues performing, looking directly at the player. The final image is his smile reflected in a cracked mirror. The credits roll over the sound of fire crackling. This ending is considered 'bad' because Harlequin dies in the fire, but it reveals the most lore about the circus's founding myth.</p>
+              <p className="text-on-surface-variant text-sm whitespace-pre-line">The Open Ending A (unnamed) ending shows Harlequin performing a solo act in a burning circus tent. The audience is revealed to be mannequins. As the fire spreads, Harlequin continues performing, looking directly at the player. The final image is his smile reflected in a cracked mirror. The credits roll over the sound of fire crackling. This ending is considered 'bad' because Harlequin dies in the fire, but it reveals the most lore about the circus's founding myth.</p>
             </section>
 
             <section>
@@ -79,7 +79,7 @@ Finale (Scene 13-14): The ending depends on whether you selected ALL aggressive 
               <div className="grid md:grid-cols-2 gap-4">
                 <Link href="/endings/the-grand-finale" className="bg-surface-container border border-outline/20 p-4 hover:border-primary transition-colors">
                   <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant mb-1">Related Ending</div>
-                  <div className="font-bold text-foreground">Grand Finale →</div>
+                  <div className="font-bold text-foreground">Open Ending A (unnamed) →</div>
                   <div className="text-on-surface-variant text-sm">The true ending for this route</div>
                 </Link>
                 <Link href="/theories" className="bg-surface-container border border-outline/20 p-4 hover:border-primary transition-colors">

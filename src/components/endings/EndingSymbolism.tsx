@@ -2,7 +2,7 @@
 
 const endings = [
   {
-    name: "Eternal Silence",
+    name: "Open Ending C (unnamed)",
     themes: [
       { title: "Emotional Withdrawal", desc: "The protagonist stops engaging with the narrative entirely, reflecting player burnout." },
       { title: "Route Refusal", desc: "By rejecting all choices, the player breaks the game's assumption of participation." },
@@ -10,7 +10,7 @@ const endings = [
     ],
   },
   {
-    name: "Columbina's Truth",
+    name: "Unnamed Open Ending",
     themes: [
       { title: "Purgatorial Loops", desc: "The circus as an inescapable cycle where characters forget but the world remembers." },
       { title: "Memory Erosion", desc: "Each loop strips away more of the protagonist's identity until only instinct remains." },

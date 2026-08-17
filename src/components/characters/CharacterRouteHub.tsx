@@ -7,7 +7,7 @@ const routes = [
     name: "Pierrot",
     route: "Silent Route",
     difficulty: "Hard",
-    desc: "Requires refusing all dialogue for three consecutive scenes. Unlocks the Eternal Silence ending and reveals hidden narration about previous playthroughs.",
+    desc: "Requires refusing all dialogue for three consecutive scenes. Unlocks the Open Ending C (unnamed) ending and reveals hidden narration about previous playthroughs.",
     href: "/characters/pierrot",
   },
   {

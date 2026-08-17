@@ -12,7 +12,7 @@ const notes = [
     votes: 398,
   },
   {
-    quote: "This dialogue never appeared on my first playthrough. The 'White Room' reference only showed up after I had seen 3 different endings.",
+    quote: "This dialogue never appeared on my first playthrough. The 'Unnamed Open Ending' reference only showed up after I had seen 3 different endings.",
     author: "u/memory_hunter",
     votes: 312,
   },

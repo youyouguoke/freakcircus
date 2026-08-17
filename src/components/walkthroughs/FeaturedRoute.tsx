@@ -57,7 +57,7 @@ export default function FeaturedRoute() {
                 <div className="bg-surface border border-outline/20 p-4">
                   <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant mb-1">Related Ending</div>
                   <Link href="/endings/eternal-silence" className="text-primary font-bold hover:underline">
-                    Eternal Silence →
+                    Open Ending C (unnamed) →
                   </Link>
                 </div>
                 <div className="bg-surface border border-outline/20 p-4">

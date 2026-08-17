@@ -3,9 +3,9 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Corrupted Data Ending — What We Know, File Analysis & Theories | Freak Circus Hub",
-  description: "Complete analysis of the Corrupted Data ending in The Freak Circus. Covers data mining discoveries, hex patterns, crash logs, and community theories about this unverified ending.",
-  keywords: ["Corrupted Data", "The Freak Circus endings", "unverified ending", "data mining", "hex dump", "crash analysis"],
+  title: "Unnamed Open Ending Ending — What We Know, File Analysis & Theories | Freak Circus Hub",
+  description: "Complete analysis of the Unnamed Open Ending ending in The Freak Circus. Covers data mining discoveries, hex patterns, crash logs, and community theories about this unverified ending.",
+  keywords: ["Unnamed Open Ending", "The Freak Circus endings", "unverified ending", "data mining", "hex dump", "crash analysis"],
   alternates: {
     canonical: "https://freak-circus.com/endings/corrupted-data",
   },
@@ -21,7 +21,7 @@ export default function CorruptedDataPage() {
             ENDING_ANALYSIS // CORRUPTED_DATA
           </div>
           <h1 className="font-[Creepster] text-4xl md:text-6xl text-primary mb-4">
-            Corrupted Data
+            Unnamed Open Ending
           </h1>
           <p className="text-on-surface-variant text-lg mb-8">
             The unverified ending found in unused game files — complete data mining analysis and community theories.
@@ -31,7 +31,7 @@ export default function CorruptedDataPage() {
             <section>
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Overview</h2>
               <p className="text-on-surface-variant text-sm">
-                Corrupted Data is an unverified ending found in unused game files by data miners in build 1.04. No player has legitimately unlocked this ending, and its conditions remain unknown. When triggered through file manipulation, the screen displays raw hexadecimal data before the application crashes. The community is divided on whether this is a debug remnant, an intentionally hidden ARG element, or cut content from a planned true ending.
+                Unnamed Open Ending is an unverified ending found in unused game files by data miners in build 1.04. No player has legitimately unlocked this ending, and its conditions remain unknown. When triggered through file manipulation, the screen displays raw hexadecimal data before the application crashes. The community is divided on whether this is a debug remnant, an intentionally hidden ARG element, or cut content from a planned true ending.
               </p>
             </section>
 
@@ -83,7 +83,7 @@ export default function CorruptedDataPage() {
                 </div>
                 <div className="bg-surface-container border border-outline/20 p-4">
                   <h3 className="font-bold text-foreground mb-2">Theory: Cut True Ending</h3>
-                  <p className="text-on-surface-variant text-sm">Some players believe Corrupted Data was the intended true ending before being cut during development. The placeholder dialogue and map file suggest a complete narrative was planned.</p>
+                  <p className="text-on-surface-variant text-sm">Some players believe Unnamed Open Ending was the intended true ending before being cut during development. The placeholder dialogue and map file suggest a complete narrative was planned.</p>
                 </div>
               </div>
             </section>

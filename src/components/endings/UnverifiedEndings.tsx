@@ -3,12 +3,12 @@
 const endings = [
   {
     status: "Data-mined",
-    title: "Null Route",
+    title: "Unnamed Open Ending",
     desc: "A branch where no character appears at all. The player walks through empty corridors until the game soft-locks.",
   },
   {
     status: "Referenced",
-    title: "White Room Ending",
+    title: "Unnamed Open Ending Ending",
     desc: "Mentioned in patch notes but never officially found. The Doctor describes it in Scene 7 with disturbing accuracy.",
   },
   {

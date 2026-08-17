@@ -37,9 +37,9 @@ const savePoints = [
   { scene: "Day 2 — Mirror Hall", route: "All Routes", reason: "Before the mirror scene. Ticket Taker encounter affects all routes.", priority: "Essential" },
   { scene: "Day 2 — Backstage", route: "Jester", reason: "Before Jester encounter. Dialogue options affect future predictions.", priority: "Recommended" },
   { scene: "Day 3 — Decision Point", route: "All Routes", reason: "Final branching point. Most endings lock here.", priority: "Essential" },
-  { scene: "Act III — Garden", route: "Pierrot", reason: "Before Smile For Me / Eternal Silence split.", priority: "Essential" },
+  { scene: "Act III — Garden", route: "Pierrot", reason: "Before Open Ending B (unnamed) / Open Ending C (unnamed) split.", priority: "Essential" },
   { scene: "Act III — Scene 9", route: "Harlequin", reason: "Before comedy/aggression contradiction for Fractured Route.", priority: "Essential" },
-  { scene: "Act III — Scene 12", route: "Doctor", reason: "Before diagnosis acceptance. Doctor's Note vs Medical Failure.", priority: "Essential" },
+  { scene: "Act III — Scene 12", route: "Doctor", reason: "Before diagnosis acceptance. Unnamed Open Ending vs Unnamed Open Ending.", priority: "Essential" },
 ];
 
 const faqData = [
@@ -50,7 +50,7 @@ const faqData = [
   { question: "Do saves carry over between versions?", answer: "Yes, saves from the demo carry over to newer demo builds and are intended to carry over to the full release. Always back up before switching versions." },
   { question: "What is the hidden counter at 0x4A20?", answer: "A hidden counter in the save file that increments on every route completion. When it reaches 4, Pierrot begins referencing events from previous routes. This counter affects dialogue across all builds." },
   { question: "Should I use different save slots for different routes?", answer: "Yes. Use separate slots for each route to preserve your progress. The game tracks the hidden counter globally, so using different slots does not affect replay-aware mechanics." },
-  { question: "Can save corruption affect endings?", answer: "Rare cases of save corruption have been reported after force-closing during the Eternal Silence black screen. Always wait for credits to roll naturally." },
+  { question: "Can save corruption affect endings?", answer: "Rare cases of save corruption have been reported after force-closing during the Open Ending C (unnamed) black screen. Always wait for credits to roll naturally." },
 ];
 
 const jsonLd = {
@@ -176,7 +176,7 @@ export default function SaveGuidePage() {
                 <li>• Backing up and restoring saves preserves the counter</li>
                 <li>• Counter value 4: Pierrot references previous routes</li>
                 <li>• Counter value 7: Harlequin says &quot;You again&quot;</li>
-                <li>• Counter value 10: Doctor describes White Room ending</li>
+                <li>• Counter value 10: Doctor describes Unnamed Open Ending ending</li>
               </ul>
             </div>
           </section>

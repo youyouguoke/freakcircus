@@ -10,7 +10,7 @@ const theories = [
   {
     id: 'THEORY_11', title: 'The Doctor Is The Observer', category: 'Character Theory',
     status: 'likely', confidence: 67, evidence: 4, contradictions: 3,
-    character: 'The Doctor', desc: 'The Doctor may be aware of the player directly, breaking the fourth wall through clinical observations. His Scene 7 description of the White Room ending matches unused files found in build 1.04.',
+    character: 'The Doctor', desc: 'The Doctor may be aware of the player directly, breaking the fourth wall through clinical observations. His Scene 7 description of the Unnamed Open Ending ending matches unused files found in build 1.04.',
     tags: ['Meta', 'Fourth Wall', 'Manipulation'],
   },
   {

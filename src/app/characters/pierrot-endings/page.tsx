@@ -4,11 +4,11 @@ import Footer from "@/components/Footer";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Pierrot Endings Guide — Smile For Me, Eternal Silence & Null Route | Freak Circus Hub",
-  description: "All Pierrot endings explained: Smile For Me (main), Eternal Silence (secret), and Null Route (corrupted). Includes unlock conditions, scene requirements, and community verification status.",
-  keywords: ["Pierrot endings", "Eternal Silence", "Smile For Me", "Null Route", "Pierrot route endings", "The Freak Circus endings"],
+  title: "Pierrot Endings Guide — Open Ending B (unnamed), Open Ending C (unnamed) & Unnamed Open Ending | Freak Circus Hub",
+  description: "All Pierrot endings explained: Open Ending B (unnamed) (main), Open Ending C (unnamed) (secret), and Unnamed Open Ending (corrupted). Includes unlock conditions, scene requirements, and community verification status.",
+  keywords: ["Pierrot endings", "Open Ending C (unnamed)", "Open Ending B (unnamed)", "Unnamed Open Ending", "Pierrot route endings", "The Freak Circus endings"],
   openGraph: {
-    title: "Pierrot Endings Guide — Smile For Me, Eternal Silence & Null Route",
+    title: "Pierrot Endings Guide — Open Ending B (unnamed), Open Ending C (unnamed) & Unnamed Open Ending",
     description: "All Pierrot endings explained with unlock conditions and community verification.",
     type: "article",
     url: "https://freak-circus.com/characters/pierrot-endings",
@@ -49,7 +49,7 @@ export default function PierrotEndingsPage() {
 
             <section>
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">
-                Smile For Me — Standard Ending
+                Open Ending B (unnamed) — Standard Ending
               </h2>
               <div className="bg-surface-container border border-outline/20 p-6 mb-4">
                 <div className="flex items-center gap-3 mb-4">
@@ -73,7 +73,7 @@ export default function PierrotEndingsPage() {
 
             <section>
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">
-                Eternal Silence — Secret Ending
+                Open Ending C (unnamed) — Secret Ending
               </h2>
               <div className="bg-surface-container border border-outline/20 p-6 mb-4">
                 <div className="flex items-center gap-3 mb-4">
@@ -81,7 +81,7 @@ export default function PierrotEndingsPage() {
                   <span className="font-[JetBrains_Mono] text-xs text-on-surface-variant">Difficulty: Hard</span>
                 </div>
                 <p className="text-on-surface-variant text-sm mb-4">
-                  Eternal Silence is Pierrot's secret ending and one of the most discussed outcomes in the community. It requires refusing every major dialogue interaction during the final act, turning silence into a deliberate narrative choice that breaks the game's contract with the player.
+                  Open Ending C (unnamed) is Pierrot's secret ending and one of the most discussed outcomes in the community. It requires refusing every major dialogue interaction during the final act, turning silence into a deliberate narrative choice that breaks the game's contract with the player.
                 </p>
                 <h3 className="font-bold text-foreground mb-2">Unlock Conditions</h3>
                 <ul className="space-y-2 text-on-surface-variant text-sm">
@@ -101,7 +101,7 @@ export default function PierrotEndingsPage() {
 
             <section>
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">
-                Null Route — Corrupted Ending
+                Unnamed Open Ending — Corrupted Ending
               </h2>
               <div className="bg-surface-container border border-outline/20 p-6 mb-4">
                 <div className="flex items-center gap-3 mb-4">
@@ -109,7 +109,7 @@ export default function PierrotEndingsPage() {
                   <span className="font-[JetBrains_Mono] text-xs text-on-surface-variant">Difficulty: Unknown</span>
                 </div>
                 <p className="text-on-surface-variant text-sm mb-4">
-                  The Null Route is a corrupted ending found in unused game files but never legitimately unlocked by any player. Data miners discovered references to this ending in build 1.04, with memory addresses that do not match any known scene IDs.
+                  The Unnamed Open Ending is a corrupted ending found in unused game files but never legitimately unlocked by any player. Data miners discovered references to this ending in build 1.04, with memory addresses that do not match any known scene IDs.
                 </p>
                 <h3 className="font-bold text-foreground mb-2">What We Know</h3>
                 <ul className="space-y-2 text-on-surface-variant text-sm">
@@ -140,19 +140,19 @@ export default function PierrotEndingsPage() {
                   </thead>
                   <tbody>
                     <tr className="border-b border-outline/10">
-                      <td className="p-3 text-on-surface-variant">Smile For Me</td>
+                      <td className="p-3 text-on-surface-variant">Open Ending B (unnamed)</td>
                       <td className="p-3"><span className="font-[JetBrains_Mono] text-xs text-primary">Standard</span></td>
                       <td className="p-3 text-on-surface-variant">Normal</td>
                       <td className="p-3 text-on-surface-variant">No</td>
                     </tr>
                     <tr className="border-b border-outline/10">
-                      <td className="p-3 text-on-surface-variant">Eternal Silence</td>
+                      <td className="p-3 text-on-surface-variant">Open Ending C (unnamed)</td>
                       <td className="p-3"><span className="font-[JetBrains_Mono] text-xs text-blood">Secret</span></td>
                       <td className="p-3 text-on-surface-variant">Hard</td>
                       <td className="p-3 text-on-surface-variant">Yes (1 route)</td>
                     </tr>
                     <tr>
-                      <td className="p-3 text-on-surface-variant">Null Route</td>
+                      <td className="p-3 text-on-surface-variant">Unnamed Open Ending</td>
                       <td className="p-3"><span className="font-[JetBrains_Mono] text-xs text-on-surface-variant">Corrupted</span></td>
                       <td className="p-3 text-on-surface-variant">Unknown</td>
                       <td className="p-3 text-on-surface-variant">Unverified</td>
@@ -168,7 +168,7 @@ export default function PierrotEndingsPage() {
               </h2>
               <div className="flex flex-wrap gap-2">
                 <a href="/characters/pierrot" className="font-[JetBrains_Mono] text-xs px-3 py-1 border border-outline/30 text-on-surface-variant hover:border-primary hover:text-primary transition-colors">Pierrot Route Guide</a>
-                <a href="/endings/eternal-silence" className="font-[JetBrains_Mono] text-xs px-3 py-1 border border-outline/30 text-on-surface-variant hover:border-primary hover:text-primary transition-colors">Eternal Silence Deep Dive</a>
+                <a href="/endings/eternal-silence" className="font-[JetBrains_Mono] text-xs px-3 py-1 border border-outline/30 text-on-surface-variant hover:border-primary hover:text-primary transition-colors">Open Ending C (unnamed) Deep Dive</a>
                 <a href="/theories/pierrot-remembers-routes" className="font-[JetBrains_Mono] text-xs px-3 py-1 border border-outline/30 text-on-surface-variant hover:border-primary hover:text-primary transition-colors">Pierrot Loop Theory</a>
                 <a href="/lore/mirror-hall" className="font-[JetBrains_Mono] text-xs px-3 py-1 border border-outline/30 text-on-surface-variant hover:border-primary hover:text-primary transition-colors">Mirror Hall Lore</a>
               </div>

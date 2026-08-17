@@ -3,22 +3,22 @@
 const categories = [
   {
     name: "Canon Endings",
-    desc: "The standard conclusions for each character route. These endings resolve the main narrative threads and are achievable on the first playthrough without special requirements. The Grand Finale (Harlequin) and Smile For Me (Pierrot) are the two canon endings most players see on their initial playthrough.",
+    desc: "The standard conclusions for each character route. These endings resolve the main narrative threads and are achievable on the first playthrough without special requirements. The Open Ending A (unnamed) (Harlequin) and Open Ending B (unnamed) (Pierrot) are the two canon endings most players see on their initial playthrough.",
     count: 2,
   },
   {
     name: "Secret Endings",
-    desc: "Hidden conclusions that require specific conditions, replay awareness, or sequence dependencies. Eternal Silence requires refusing all dialogue for three scenes. The Doctor's Note requires finding five hidden medical files. Columbina's Truth requires perfect alignment across three loops. These endings reveal deeper narrative layers.",
+    desc: "Hidden conclusions that require specific conditions, replay awareness, or sequence dependencies. Open Ending C (unnamed) requires refusing all dialogue for three scenes. The Unnamed Open Ending requires finding five hidden medical files. Unnamed Open Ending requires perfect alignment across three loops. These endings reveal deeper narrative layers.",
     count: 3,
   },
   {
     name: "Corrupted Endings",
-    desc: "Endings found in unused game files or mentioned in patch notes but never officially unlocked. Corrupted Data displays raw hex before crashing. White Room is referenced by The Doctor in Scene 7 but has never been found. These may be cut content, debug remnants, or intentionally hidden.",
+    desc: "Endings found in unused game files or mentioned in patch notes but never officially unlocked. Unnamed Open Ending displays raw hex before crashing. Unnamed Open Ending is referenced by The Doctor in Scene 7 but has never been found. These may be cut content, debug remnants, or intentionally hidden.",
     count: 2,
   },
   {
     name: "Joke Endings",
-    desc: "Lighthearted or absurd conclusions that subvert the game's horror tone. Harlequin's Laughter requires selecting every comedic option in a single playthrough. These endings provide relief from the main narrative's intensity and often contain fourth-wall-breaking humor.",
+    desc: "Lighthearted or absurd conclusions that subvert the game's horror tone. Unnamed Open Ending requires selecting every comedic option in a single playthrough. These endings provide relief from the main narrative's intensity and often contain fourth-wall-breaking humor.",
     count: 1,
   },
 ];

@@ -9,7 +9,7 @@ const rankings = [
 
 const viewedPages = [
   { page: "Pierrot Route Guide", views: "12,400" },
-  { page: "Eternal Silence Ending", views: "9,800" },
+  { page: "Open Ending C (unnamed) Ending", views: "9,800" },
   { page: "Harlequin Hidden Scenes", views: "8,200" },
   { page: "Columbina Loop Theory", views: "7,100" },
 ];

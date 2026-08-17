@@ -5,8 +5,8 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Columbina Fractured Route Guide — Three Loops & Perfect Alignment | Freak Circus Hub",
-  description: "Complete walkthrough for Columbina Fractured Route in The Freak Circus. Covers the three-loop perfection requirement, fourth door, and how to unlock Columbina Truth ending.",
-  keywords: ["Columbina route guide", "Columbina Fractured Route", "Columbina Truth", "three loop", "The Freak Circus walkthrough"],
+  description: "Complete walkthrough for Columbina Fractured Route in The Freak Circus. Covers the three-loop perfection requirement, fourth door, and how to unlock Unnamed Open Ending ending.",
+  keywords: ["Columbina route guide", "Columbina Fractured Route", "Unnamed Open Ending", "three loop", "The Freak Circus walkthrough"],
   alternates: {
     canonical: "https://freak-circus.com/walkthroughs/columbina-fractured-route",
   },
@@ -63,7 +63,7 @@ Finale (Scene 14): The ending depends on whether you entered the fourth door. Mi
             </section>
             <section>
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Ending Outcome</h2>
-              <p className="text-on-surface-variant text-sm whitespace-pre-line">Columbina's Truth ending shows the player sitting in a chair facing a mirror. The mirror displays the player's desktop, breaking the fourth wall explicitly. Columbina's voiceover says: 'You are not the first to sit here. You will not be the last.' The game then asks: 'Do you want to remember?' Selecting 'Yes' causes the game to delete the save file. Selecting 'No' returns to the title screen with a new option: 'Continue from Loop 4.' This ending is considered the most meta-narrative conclusion in the game.</p>
+              <p className="text-on-surface-variant text-sm whitespace-pre-line">Unnamed Open Ending ending shows the player sitting in a chair facing a mirror. The mirror displays the player's desktop, breaking the fourth wall explicitly. Columbina's voiceover says: 'You are not the first to sit here. You will not be the last.' The game then asks: 'Do you want to remember?' Selecting 'Yes' causes the game to delete the save file. Selecting 'No' returns to the title screen with a new option: 'Continue from Loop 4.' This ending is considered the most meta-narrative conclusion in the game.</p>
             </section>
 
             <section>
@@ -71,7 +71,7 @@ Finale (Scene 14): The ending depends on whether you entered the fourth door. Mi
               <div className="grid md:grid-cols-2 gap-4">
                 <Link href="/endings/columbinas-truth" className="bg-surface-container border border-outline/20 p-4 hover:border-primary transition-colors">
                   <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant mb-1">Related Ending</div>
-                  <div className="font-bold text-foreground">Columbina's Truth →</div>
+                  <div className="font-bold text-foreground">Unnamed Open Ending →</div>
                   <div className="text-on-surface-variant text-sm">The secret ending for this route</div>
                 </Link>
                 <Link href="/theories" className="bg-surface-container border border-outline/20 p-4 hover:border-primary transition-colors">

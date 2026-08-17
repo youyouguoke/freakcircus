@@ -14,7 +14,7 @@ const hiddenRoutes = [
   { name: "Harlequin True Route", href: "#archive", type: "Secret" },
   { name: "Doctor Memory Route", href: "#archive", type: "Secret" },
   { name: "Columbina Fractured Route", href: "#archive", type: "Secret" },
-  { name: "Null Route", href: "#archive", type: "Corrupted" },
+  { name: "Unnamed Open Ending", href: "#archive", type: "Corrupted" },
 ];
 
 export default function RouteFlowchart() {

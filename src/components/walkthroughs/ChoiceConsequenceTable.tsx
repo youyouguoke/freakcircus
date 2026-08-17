@@ -14,7 +14,7 @@ const choices = [
     scene: "Scene 3 — The Stage",
     character: "Harlequin",
     choices: [
-      { option: "A — Accept invitation", result: "Harlequin +5 affection, unlocks stage performance", flag: "Grand Finale route" },
+      { option: "A — Accept invitation", result: "Harlequin +5 affection, unlocks stage performance", flag: "Open Ending A (unnamed) route" },
       { option: "B — Refuse and leave", result: "Harlequin -5 affection, triggers confrontation", flag: "Bad ending flag" },
       { option: "C — Make a joke", result: "Harlequin +3 affection, comedic dialogue branch", flag: "Joke ending" },
     ],
@@ -23,8 +23,8 @@ const choices = [
     scene: "Scene 5 — Medical Tent",
     character: "The Doctor",
     choices: [
-      { option: "A — Accept examination", result: "Doctor +5 affection, File 1 discovered", flag: "Doctor's Note route" },
-      { option: "B — Refuse treatment", result: "Doctor -3 affection, locked out of tent", flag: "Medical Failure ending" },
+      { option: "A — Accept examination", result: "Doctor +5 affection, File 1 discovered", flag: "Unnamed Open Ending route" },
+      { option: "B — Refuse treatment", result: "Doctor -3 affection, locked out of tent", flag: "Unnamed Open Ending ending" },
       { option: "C — Ask about the files", result: "Doctor +2 affection, hints at hidden files", flag: "File hunt begins" },
     ],
   },
@@ -33,7 +33,7 @@ const choices = [
     character: "Columbina",
     choices: [
       { option: "A — Enter the first door", result: "Loop 1 begins, gentle response required", flag: "Loop system" },
-      { option: "B — Turn back", result: "Columbina -5 affection, hallway sealed", flag: "Eternal Dance ending" },
+      { option: "B — Turn back", result: "Columbina -5 affection, hallway sealed", flag: "Unnamed Open Ending ending" },
       { option: "C — Ask about the fourth door", result: "Columbina surprised, hidden dialogue", flag: "Truth ending hint" },
     ],
   },

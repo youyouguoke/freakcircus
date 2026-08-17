@@ -6,30 +6,30 @@ const endings = [
   {
     character: "Pierrot",
     endings: [
-      { name: "Smile For Me", type: "Standard", desc: "Accept Pierrot's offer in the garden scene. Most players see this on their first playthrough." },
-      { name: "Eternal Silence", type: "Secret", desc: "Refuse all dialogue for three scenes. The 4-minute black screen ending that references previous playthroughs." },
-      { name: "Null Route", type: "Corrupted", desc: "Found in unused game files. No player has legitimately unlocked this ending." },
+      { name: "Open Ending B (unnamed)", type: "Standard", desc: "Accept Pierrot's offer in the garden scene. Most players see this on their first playthrough." },
+      { name: "Open Ending C (unnamed)", type: "Secret", desc: "Refuse all dialogue for three scenes. The 4-minute black screen ending that references previous playthroughs." },
+      { name: "Unnamed Open Ending", type: "Corrupted", desc: "Found in unused game files. No player has legitimately unlocked this ending." },
     ],
   },
   {
     character: "Harlequin",
     endings: [
-      { name: "Grand Finale", type: "Standard", desc: "Complete the Harlequin route with standard dialogue choices." },
-      { name: "Harlequin's Laughter", type: "Joke", desc: "Select every comedic option in a single playthrough. Low spoilers, first playthrough possible." },
+      { name: "Open Ending A (unnamed)", type: "Standard", desc: "Complete the Harlequin route with standard dialogue choices." },
+      { name: "Unnamed Open Ending", type: "Joke", desc: "Select every comedic option in a single playthrough. Low spoilers, first playthrough possible." },
     ],
   },
   {
     character: "The Doctor",
     endings: [
-      { name: "Doctor's Note", type: "Secret", desc: "Find all five hidden medical files before the final encounter." },
-      { name: "White Room", type: "False", desc: "Mentioned in patch notes but never officially found." },
+      { name: "Unnamed Open Ending", type: "Secret", desc: "Find all five hidden medical files before the final encounter." },
+      { name: "Unnamed Open Ending", type: "False", desc: "Mentioned in patch notes but never officially found." },
     ],
   },
   {
     character: "Columbina",
     endings: [
-      { name: "Columbina's Truth", type: "Secret", desc: "Perfect alignment of all dialogue choices across three loops." },
-      { name: "Corrupted Data", type: "Corrupted", desc: "Found only in modified game files. Screen displays raw hex before crash." },
+      { name: "Unnamed Open Ending", type: "Secret", desc: "Perfect alignment of all dialogue choices across three loops." },
+      { name: "Unnamed Open Ending", type: "Corrupted", desc: "Found only in modified game files. Screen displays raw hex before crash." },
     ],
   },
 ];

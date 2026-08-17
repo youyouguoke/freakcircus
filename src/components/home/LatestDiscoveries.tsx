@@ -18,7 +18,7 @@ const discoveries = [
     tag: 'UPDATE',
     tagColor: 'var(--status-likely)',
     title: 'Doctor Route Hidden Dialogue Analysis',
-    desc: 'New community testing confirmed Scene 7 precognitive dialogue triggers across all save slots, not just slot 1. The White Room reference appears even on first playthrough under specific conditions.',
+    desc: 'New community testing confirmed Scene 7 precognitive dialogue triggers across all save slots, not just slot 1. The Unnamed Open Ending reference appears even on first playthrough under specific conditions.',
     evidence: 5,
     href: '/characters/doctor',
     source: { label: 'Community Testing Doc', url: '#' },

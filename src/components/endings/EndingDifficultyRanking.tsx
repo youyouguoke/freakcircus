@@ -1,11 +1,11 @@
 "use client";
 
 const rankings = [
-  { rank: 1, name: "Columbina's Truth", character: "Columbina", difficulty: "Very Hard", desc: "Perfect alignment across three loops. Any deviation causes complete reset." },
-  { rank: 2, name: "Corrupted Data", character: "???", difficulty: "Impossible", desc: "No verified unlock conditions. May be intentionally unreachable." },
-  { rank: 3, name: "Eternal Silence", character: "Pierrot", difficulty: "Hard", desc: "Requires refusing all dialogue for three scenes. 4-minute black screen." },
-  { rank: 4, name: "The Doctor's Note", character: "The Doctor", difficulty: "Hard", desc: "Find 5 hidden medical files across multiple playthroughs." },
-  { rank: 5, name: "White Room", character: "Unknown", difficulty: "Impossible", desc: "Mentioned in patch notes but never officially found." },
+  { rank: 1, name: "Unnamed Open Ending", character: "Columbina", difficulty: "Very Hard", desc: "Perfect alignment across three loops. Any deviation causes complete reset." },
+  { rank: 2, name: "Unnamed Open Ending", character: "???", difficulty: "Impossible", desc: "No verified unlock conditions. May be intentionally unreachable." },
+  { rank: 3, name: "Open Ending C (unnamed)", character: "Pierrot", difficulty: "Hard", desc: "Requires refusing all dialogue for three scenes. 4-minute black screen." },
+  { rank: 4, name: "The Unnamed Open Ending", character: "The Doctor", difficulty: "Hard", desc: "Find 5 hidden medical files across multiple playthroughs." },
+  { rank: 5, name: "Unnamed Open Ending", character: "Unknown", difficulty: "Impossible", desc: "Mentioned in patch notes but never officially found." },
 ];
 
 export default function EndingDifficultyRanking() {

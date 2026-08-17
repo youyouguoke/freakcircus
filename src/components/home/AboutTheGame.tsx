@@ -16,7 +16,7 @@ const aboutCards = [
   },
   {
     title: 'How Many Endings?',
-    content: `The community has confirmed 11 endings through repeated testing. Standard routes include Grand Finale, Smile For Me, and Doctor's Note. Secret endings like Eternal Silence and Columbina's Truth require specific conditions across multiple playthroughs.`,
+    content: `The community has confirmed 11 endings through repeated testing. Standard routes include Open Ending A (unnamed), Open Ending B (unnamed), and Unnamed Open Ending. Secret endings like Open Ending C (unnamed) and Unnamed Open Ending require specific conditions across multiple playthroughs.`,
     link: { label: 'View all endings', href: '/endings' },
   },
   {

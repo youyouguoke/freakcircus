@@ -5,11 +5,11 @@ import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title: "Pierrot Route Guide — Step-by-Step Walkthrough, Hidden Triggers & Endings | Freak Circus Hub",
-  description: "Complete Pierrot route walkthrough for The Freak Circus. Covers the main route, silent route unlock conditions, hidden dialogue triggers, garden scene mechanics, and Eternal Silence ending requirements.",
-  keywords: ["Pierrot route", "Pierrot walkthrough", "The Freak Circus Pierrot", "silent route", "Eternal Silence", "hidden triggers", "garden scene"],
+  description: "Complete Pierrot route walkthrough for The Freak Circus. Covers the main route, silent route unlock conditions, hidden dialogue triggers, garden scene mechanics, and Open Ending C (unnamed) ending requirements.",
+  keywords: ["Pierrot route", "Pierrot walkthrough", "The Freak Circus Pierrot", "silent route", "Open Ending C (unnamed)", "hidden triggers", "garden scene"],
   openGraph: {
     title: "Pierrot Route Guide — Step-by-Step Walkthrough, Hidden Triggers & Endings",
-    description: "Complete Pierrot route walkthrough for The Freak Circus. Covers main route, silent route, hidden triggers, and Eternal Silence ending.",
+    description: "Complete Pierrot route walkthrough for The Freak Circus. Covers main route, silent route, hidden triggers, and Open Ending C (unnamed) ending.",
     type: "article",
     url: "https://freak-circus.com/characters/pierrot-route-guide",
   },
@@ -43,7 +43,7 @@ export default function PierrotRouteGuidePage() {
                 Pierrot's main route is the most commonly recommended starting point for new players. It introduces core mechanics including the dialogue choice system, the comfort/confess dynamic, and the first instance of replay-aware dialogue. The route takes approximately 4-6 hours for a first playthrough and contains 12 major scenes with branching decisions.
               </p>
               <p className="text-on-surface-variant text-sm">
-                The main route ending, "Smile For Me," triggers when players accept Pierrot's offer during the garden scene in Act III. However, community testing has revealed that this ending is not the full picture — Pierrot's route contains hidden content that only appears after specific refusal conditions and cross-route dependencies.
+                The main route ending, "Open Ending B (unnamed)," triggers when players accept Pierrot's offer during the garden scene in Act III. However, community testing has revealed that this ending is not the full picture — Pierrot's route contains hidden content that only appears after specific refusal conditions and cross-route dependencies.
               </p>
             </section>
 
@@ -94,15 +94,15 @@ export default function PierrotRouteGuidePage() {
               </h2>
               <div className="space-y-4">
                 <div className="bg-surface-container border border-outline/20 p-4">
-                  <h3 className="font-bold text-foreground mb-2">Smile For Me (Main Ending)</h3>
+                  <h3 className="font-bold text-foreground mb-2">Open Ending B (unnamed) (Main Ending)</h3>
                   <p className="text-on-surface-variant text-sm">Accept Pierrot's offer in the garden scene. Standard ending with bittersweet conclusion. Unlocked by default on first playthrough.</p>
                 </div>
                 <div className="bg-surface-container border border-outline/20 p-4">
-                  <h3 className="font-bold text-foreground mb-2">Eternal Silence (Secret Ending)</h3>
+                  <h3 className="font-bold text-foreground mb-2">Open Ending C (unnamed) (Secret Ending)</h3>
                   <p className="text-on-surface-variant text-sm">Refuse all dialogue in the final act. Screen remains black for 3-4 minutes. Pierrot references previous unselected choices. Requires cross-route awareness flag.</p>
                 </div>
                 <div className="bg-surface-container border border-outline/20 p-4">
-                  <h3 className="font-bold text-foreground mb-2">Null Route (Corrupted)</h3>
+                  <h3 className="font-bold text-foreground mb-2">Unnamed Open Ending (Corrupted)</h3>
                   <p className="text-on-surface-variant text-sm">Found in unused game files. No character appears. Player walks through empty corridors until soft-lock. Unlock conditions unknown.</p>
                 </div>
               </div>
@@ -114,7 +114,7 @@ export default function PierrotRouteGuidePage() {
               </h2>
               <div className="flex flex-wrap gap-2">
                 <a href="/characters/pierrot-endings" className="font-[JetBrains_Mono] text-xs px-3 py-1 border border-outline/30 text-on-surface-variant hover:border-primary hover:text-primary transition-colors">Pierrot Endings Guide</a>
-                <a href="/endings/eternal-silence" className="font-[JetBrains_Mono] text-xs px-3 py-1 border border-outline/30 text-on-surface-variant hover:border-primary hover:text-primary transition-colors">Eternal Silence Ending</a>
+                <a href="/endings/eternal-silence" className="font-[JetBrains_Mono] text-xs px-3 py-1 border border-outline/30 text-on-surface-variant hover:border-primary hover:text-primary transition-colors">Open Ending C (unnamed) Ending</a>
                 <a href="/theories/pierrot-remembers-routes" className="font-[JetBrains_Mono] text-xs px-3 py-1 border border-outline/30 text-on-surface-variant hover:border-primary hover:text-primary transition-colors">Pierrot Loop Theory</a>
                 <a href="/lore/mirror-hall" className="font-[JetBrains_Mono] text-xs px-3 py-1 border border-outline/30 text-on-surface-variant hover:border-primary hover:text-primary transition-colors">Mirror Hall Lore</a>
               </div>

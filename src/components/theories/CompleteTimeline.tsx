@@ -28,8 +28,8 @@ const timeline = [
   },
   {
     year: "1987",
-    title: "White Room Event",
-    desc: "The White Room is discovered. A space with no walls, no ceiling, no floor. Only light. And a chair facing a mirror that shows nothing. Referenced in patch notes 1.03 and described by The Doctor in Scene 7.",
+    title: "Unnamed Open Ending Event",
+    desc: "The Unnamed Open Ending is discovered. A space with no walls, no ceiling, no floor. Only light. And a chair facing a mirror that shows nothing. Referenced in patch notes 1.03 and described by The Doctor in Scene 7.",
   },
   {
     year: "2026",

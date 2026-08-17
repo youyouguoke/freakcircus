@@ -5,8 +5,8 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Pierrot Main Route Guide — Step-by-Step Walkthrough | Freak Circus Hub",
-  description: "Complete walkthrough for Pierrot's Main Route in The Freak Circus. Covers all dialogue choices, hidden triggers, and how to reach the Smile For Me ending. Beginner-friendly guide with no replay requirements.",
-  keywords: ["Pierrot route guide", "Pierrot main route", "The Freak Circus walkthrough", "Smile For Me ending", "beginner route"],
+  description: "Complete walkthrough for Pierrot's Main Route in The Freak Circus. Covers all dialogue choices, hidden triggers, and how to reach the Open Ending B (unnamed) ending. Beginner-friendly guide with no replay requirements.",
+  keywords: ["Pierrot route guide", "Pierrot main route", "The Freak Circus walkthrough", "Open Ending B (unnamed) ending", "beginner route"],
   alternates: {
     canonical: "https://freak-circus.com/walkthroughs/pierrot-main-route",
   },
@@ -25,14 +25,14 @@ export default function PierrotMainRoutePage() {
             Pierrot Main Route
           </h1>
           <p className="text-on-surface-variant text-lg mb-8">
-            The standard introduction to The Freak Circus. Complete standard dialogue choices to reach the Smile For Me ending.
+            The standard introduction to The Freak Circus. Complete standard dialogue choices to reach the Open Ending B (unnamed) ending.
           </p>
 
           <div className="space-y-12">
             <section>
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Overview</h2>
               <p className="text-on-surface-variant text-sm">
-                Pierrot's Main Route is the recommended starting point for new players. It introduces the game's core mechanics — dialogue choices, relationship meters, and scene progression — without requiring replay awareness or hidden triggers. The route follows Pierrot's melancholic storyline through the circus, culminating in the Smile For Me ending.
+                Pierrot's Main Route is the recommended starting point for new players. It introduces the game's core mechanics — dialogue choices, relationship meters, and scene progression — without requiring replay awareness or hidden triggers. The route follows Pierrot's melancholic storyline through the circus, culminating in the Open Ending B (unnamed) ending.
               </p>
             </section>
 
@@ -42,7 +42,7 @@ export default function PierrotMainRoutePage() {
                 <li>• No prerequisites — available from the start of the game</li>
                 <li>• Estimated playtime: 4-6 hours</li>
                 <li>• Difficulty: Beginner</li>
-                <li>• Ending: Smile For Me (Good Ending)</li>
+                <li>• Ending: Open Ending B (unnamed) (Good Ending)</li>
               </ul>
             </section>
 
@@ -62,7 +62,7 @@ export default function PierrotMainRoutePage() {
                 <div className="bg-surface-container border border-outline/20 p-4">
                   <h3 className="font-bold text-foreground mb-2">Act III — The Confession</h3>
                   <p className="text-on-surface-variant text-sm mb-2">Scene 9-12: Pierrot reveals his true feelings. The dialogue choices here determine which ending you receive.</p>
-                  <p className="text-on-surface-variant text-sm">For the Smile For Me ending: Accept Pierrot's confession in Scene 11. Rejecting leads to a neutral ending, not the main route conclusion.</p>
+                  <p className="text-on-surface-variant text-sm">For the Open Ending B (unnamed) ending: Accept Pierrot's confession in Scene 11. Rejecting leads to a neutral ending, not the main route conclusion.</p>
                 </div>
               </div>
             </section>
@@ -77,7 +77,7 @@ export default function PierrotMainRoutePage() {
             <section>
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Ending Outcome</h2>
               <p className="text-on-surface-variant text-sm">
-                The Smile For Me ending shows Pierrot performing alone on the empty stage. The camera pulls back to reveal the circus tent is empty — no audience, no other performers. Pierrot smiles directly at the player and says, "Thank you for staying." The credits roll over a static image of the empty stage. This ending is considered the "good" ending for Pierrot's route, though its implications are darker than the label suggests.
+                The Open Ending B (unnamed) ending shows Pierrot performing alone on the empty stage. The camera pulls back to reveal the circus tent is empty — no audience, no other performers. Pierrot smiles directly at the player and says, "Thank you for staying." The credits roll over a static image of the empty stage. This ending is considered the "good" ending for Pierrot's route, though its implications are darker than the label suggests.
               </p>
             </section>
 
@@ -91,7 +91,7 @@ export default function PierrotMainRoutePage() {
                 </Link>
                 <Link href="/endings/eternal-silence" className="bg-surface-container border border-outline/20 p-4 hover:border-primary transition-colors">
                   <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant mb-1">Related Ending</div>
-                  <div className="font-bold text-foreground">Smile For Me →</div>
+                  <div className="font-bold text-foreground">Open Ending B (unnamed) →</div>
                   <div className="text-on-surface-variant text-sm">Pierrot's standard ending</div>
                 </Link>
               </div>

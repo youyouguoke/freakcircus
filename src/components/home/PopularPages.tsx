@@ -4,9 +4,9 @@ import Link from "next/link";
 
 const popularPages = [
   { title: "Pierrot Route Walkthrough — Every Choice Mapped", href: "/characters/pierrot", desc: "Complete guide to Pierrot\'s main route, silent route, and hidden dialogue triggers." },
-  { title: "How to Unlock Eternal Silence Ending", href: "/endings/eternal-silence", desc: "Step-by-step unlock conditions for Pierrot\'s secret ending with the 4-minute black screen." },
+  { title: "How to Unlock Open Ending C (unnamed) Ending", href: "/endings/eternal-silence", desc: "Step-by-step unlock conditions for Pierrot\'s secret ending with the 4-minute black screen." },
   { title: "Harlequin Route Choices — Fractured Route Guide", href: "/characters/harlequin", desc: "Every dialogue branch mapped, including the 7 undocumented hidden scenes." },
-  { title: "Doctor White Room Theory — Precognitive Dialogue", href: "/characters/doctor", desc: "Why The Doctor describes endings before they occur and what the medical files reveal." },
+  { title: "Doctor Unnamed Open Ending Theory — Precognitive Dialogue", href: "/characters/doctor", desc: "Why The Doctor describes endings before they occur and what the medical files reveal." },
   { title: "Complete Timeline Explained", href: "/lore", desc: "Chronological breakdown of every known event, symbol, and hidden clue in the circus lore." },
   { title: "Missing Ending Guide", href: "/endings", desc: "The confirmed bad ending in The Freak Circus perfect alignment across three loops and unlock the fourth door." },
   { title: "How Many Endings Are in The Freak Circus?", href: "/endings", desc: "Complete catalog of standard, secret, and corrupted endings with unlock conditions." },

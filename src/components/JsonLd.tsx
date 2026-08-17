@@ -102,10 +102,10 @@ export default function JsonLd() {
           },
           {
             "@type": "Question",
-            "name": "What is the Eternal Silence ending and how do you unlock it?",
+            "name": "What is the Open Ending C (unnamed) ending and how do you unlock it?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Eternal Silence is a secret ending on Pierrot's route that requires refusing every major dialogue interaction during the final act. The screen stays black for several minutes before credits roll."
+              "text": "Open Ending C (unnamed) is a secret ending on Pierrot's route that requires refusing every major dialogue interaction during the final act. The screen stays black for several minutes before credits roll."
             }
           },
           {
@@ -113,7 +113,7 @@ export default function JsonLd() {
             "name": "What is the true ending of The Freak Circus?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "The community has not reached consensus on a true ending. Columbina's Truth, Corrupted Data, and the unfound White Room ending all have supporters. The ambiguity appears intentional."
+              "text": "The community has not reached consensus on a true ending. Unnamed Open Ending, Unnamed Open Ending, and the unfound Unnamed Open Ending ending all have supporters. The ambiguity appears intentional."
             }
           },
           {
@@ -162,7 +162,7 @@ export default function JsonLd() {
           {
             "@type": "ListItem",
             "position": 6,
-            "name": "Eternal Silence Ending Guide",
+            "name": "Open Ending C (unnamed) Ending Guide",
             "url": "https://freak-circus.com/endings/eternal-silence"
           },
           {

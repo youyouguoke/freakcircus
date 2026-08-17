@@ -10,7 +10,7 @@ const questions = [
   },
   {
     question: "Is Pierrot evil in The Freak Circus?",
-    answer: "Pierrot is not traditionally evil — he is melancholic, withdrawn, and increasingly aware of the player's presence. His route explores themes of forgotten identity and repeated loops. The 'evil' interpretation comes from his post-credits scene in the Eternal Silence ending, where he addresses the player's real-world playtime with unsettling familiarity. Whether this makes him antagonistic or simply tragic is a major community debate.",
+    answer: "Pierrot is not traditionally evil — he is melancholic, withdrawn, and increasingly aware of the player's presence. His route explores themes of forgotten identity and repeated loops. The 'evil' interpretation comes from his post-credits scene in the Open Ending C (unnamed) ending, where he addresses the player's real-world playtime with unsettling familiarity. Whether this makes him antagonistic or simply tragic is a major community debate.",
     href: "/characters/pierrot",
   },
   {
@@ -20,27 +20,27 @@ const questions = [
   },
   {
     question: "What happened to Columbina in The Freak Circus?",
-    answer: "Columbina's fate depends on the ending achieved. In her standard ending, she continues dancing in the hallway indefinitely. In Columbina's Truth, she discovers the circus's true nature and the fourth door reveals a memory fragment suggesting she may be the orchestrator of the entire narrative loop. In the Corrupted Data ending, her sprite dissolves into static.",
+    answer: "Columbina's fate depends on the ending achieved. In her standard ending, she continues dancing in the hallway indefinitely. In Unnamed Open Ending, she discovers the circus's true nature and the fourth door reveals a memory fragment suggesting she may be the orchestrator of the entire narrative loop. In the Unnamed Open Ending ending, her sprite dissolves into static.",
     href: "/characters/columbina",
   },
   {
     question: "Does The Doctor have a good ending?",
-    answer: "The Doctor does not have a traditionally 'good' ending. His standard ending (Medical Failure) results in him abandoning the patient. His secret ending (Doctor's Note) requires finding all 5 hidden medical files and reveals disturbing truths about the circus. The White Room ending, referenced in his dialogue but never found, may represent the closest to a 'good' outcome — but it remains unverified.",
+    answer: "The Doctor does not have a traditionally 'good' ending. His standard ending (Unnamed Open Ending) results in him abandoning the patient. His secret ending (Unnamed Open Ending) requires finding all 5 hidden medical files and reveals disturbing truths about the circus. The Unnamed Open Ending ending, referenced in his dialogue but never found, may represent the closest to a 'good' outcome — but it remains unverified.",
     href: "/characters/doctor",
   },
   {
     question: "Which Freak Circus ending is canon?",
-    answer: "The developer has not confirmed any ending as canon. The community debate centers on three possibilities: Columbina's Truth (most complete revelation), the Corrupted Data ending (found in unused files, possibly cut content), or the White Room ending (referenced but never found). The ambiguity appears intentional, suggesting the 'true' ending may require completing all routes in a specific order.",
+    answer: "The developer has not confirmed any ending as canon. The community debate centers on three possibilities: Unnamed Open Ending (most complete revelation), the Unnamed Open Ending ending (found in unused files, possibly cut content), or the Unnamed Open Ending ending (referenced but never found). The ambiguity appears intentional, suggesting the 'true' ending may require completing all routes in a specific order.",
     href: "/endings",
   },
   {
     question: "How do you unlock Pierrot's secret ending?",
-    answer: "Pierrot's secret ending, Eternal Silence, requires refusing all dialogue for three consecutive scenes in Act III. This is not a passive ending — silence becomes a deliberate choice that breaks the game's narrative contract. The screen remains black for 4 minutes before credits roll, and post-credits narration references previous playthroughs.",
+    answer: "Pierrot's secret ending, Open Ending C (unnamed), requires refusing all dialogue for three consecutive scenes in Act III. This is not a passive ending — silence becomes a deliberate choice that breaks the game's narrative contract. The screen remains black for 4 minutes before credits roll, and post-credits narration references previous playthroughs.",
     href: "/characters/pierrot",
   },
   {
     question: "What is the relationship between Pierrot and Columbina?",
-    answer: "Pierrot and Columbina share the most theorized relationship in The Freak Circus. In the Eternal Silence ending, Pierrot's narration references Columbina's hallway — a location he should not know about. Unused voice lines contain a hidden conversation between them. Columbina's Truth ending requires completing Pierrot's route first, suggesting an unspoken dependency.",
+    answer: "Pierrot and Columbina share the most theorized relationship in The Freak Circus. In the Open Ending C (unnamed) ending, Pierrot's narration references Columbina's hallway — a location he should not know about. Unused voice lines contain a hidden conversation between them. Unnamed Open Ending ending requires completing Pierrot's route first, suggesting an unspoken dependency.",
     href: "/characters",
   },
   {

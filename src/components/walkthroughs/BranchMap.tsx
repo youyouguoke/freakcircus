@@ -26,7 +26,7 @@ export default function BranchMap() {
             </div>
             <div className="bg-surface border border-blood/30 p-4 text-center">
               <div className="font-[JetBrains_Mono] text-xs text-blood mb-1">Corrupted</div>
-              <div className="font-[Epilogue] text-sm font-bold text-foreground">Null Route</div>
+              <div className="font-[Epilogue] text-sm font-bold text-foreground">Unnamed Open Ending</div>
             </div>
           </div>
 

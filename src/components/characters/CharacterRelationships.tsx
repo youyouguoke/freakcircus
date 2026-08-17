@@ -9,7 +9,7 @@ const relationships = [
   {
     pair: "Pierrot & Columbina",
     theme: "SILENCE",
-    desc: "Many theories suggest that Columbina is the only character Pierrot truly trusts. In the Eternal Silence ending, Pierrot's narration references Columbina's hallway — a location he should not know about. The three-loop storyline requires completing Pierrot's route before Columbina's becomes fully accessible, suggesting a dependency that the game does not explicitly state. Unused voice lines found in build 1.04 contain a conversation between Pierrot and Columbina that never appears in gameplay.",
+    desc: "Many theories suggest that Columbina is the only character Pierrot truly trusts. In the Open Ending C (unnamed) ending, Pierrot's narration references Columbina's hallway — a location he should not know about. The three-loop storyline requires completing Pierrot's route before Columbina's becomes fully accessible, suggesting a dependency that the game does not explicitly state. Unused voice lines found in build 1.04 contain a conversation between Pierrot and Columbina that never appears in gameplay.",
   },
   {
     pair: "The Doctor & Columbina",

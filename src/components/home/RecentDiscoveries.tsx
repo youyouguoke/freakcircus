@@ -9,7 +9,7 @@ const discoveries = [
   {
     title: "Mirror Hall Layout Changes After Ending #7",
     status: "Under Investigation",
-    desc: "The Mirror Hall layout changes after viewing the Corrupted Data ending. Some doors only appear on replay, and the hallway architecture shifts between loops. Players report seeing rooms they have not yet unlocked, suggesting the environment is not static.",
+    desc: "The Mirror Hall layout changes after viewing the Unnamed Open Ending ending. Some doors only appear on replay, and the hallway architecture shifts between loops. Players report seeing rooms they have not yet unlocked, suggesting the environment is not static.",
   },
   {
     title: "Pierrot Remembers Failed Routes and Adjusts Dialogue",

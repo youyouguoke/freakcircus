@@ -35,7 +35,7 @@ const characters = [
     accent: 'var(--doctor)',
     glow: 'var(--doctor-glow)',
     status: 'ACTIVE',
-    desc: 'References endings before they occur. His five hidden medical files and the White Room prediction in Scene 7 remain deeply unsettling.',
+    desc: 'References endings before they occur. His five hidden medical files and the Unnamed Open Ending prediction in Scene 7 remain deeply unsettling.',
     stats: { threat: 85, mystery: 95, attachment: 30 },
     href: '/characters/doctor',
   },

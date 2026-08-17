@@ -6,7 +6,7 @@ const timelineEvents = [
   { year: "1903", event: "Mirror Hall Incident", detail: "Seven performers enter the Mirror Hall. Only three exit. The other four are never seen again, but their reflections remain in the mirrors." },
   { year: "1917", event: "Doctor Arrives", detail: "A traveling physician joins the circus. Medical records begin. His notes mention 'patients who don't remember their own names.'" },
   { year: "1945", event: "Timeline Fracture", detail: "Multiple sources report the circus 'disappearing' for 3 days. When it reappears, the performers are different ages. Some are younger." },
-  { year: "1987", event: "White Room Event", detail: "The White Room is discovered. A space with no walls, no ceiling, no floor. Only light. And a chair facing a mirror that shows nothing." },
+  { year: "1987", event: "Unnamed Open Ending Event", detail: "The Unnamed Open Ending is discovered. A space with no walls, no ceiling, no floor. Only light. And a chair facing a mirror that shows nothing." },
   { year: "2026", event: "Current Routes", detail: "Players experience the circus through multiple routes. Each route reveals different fragments. The complete picture remains unknown." },
 ];
 

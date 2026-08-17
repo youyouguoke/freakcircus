@@ -23,7 +23,7 @@ const profile = {
   route: 'AVAILABLE',
   firstEncounter: 'The Garden (Day 1)',
   keyMechanic: 'Comfort / Confess',
-  endings: 'Smile For Me / Eternal Silence',
+  endings: 'Open Ending B (unnamed) / Open Ending C (unnamed)',
   loopAwareness: 95,
   threatLevel: 40,
   emotionalAttachment: 95,
@@ -32,9 +32,9 @@ const profile = {
 };
 
 const endings = [
-  { name: 'Smile For Me', type: 'MAIN', desc: 'Accept Pierrot\'s offer in the garden scene. Standard ending with bittersweet conclusion.' },
-  { name: 'Eternal Silence', type: 'SECRET', desc: 'Refuse all dialogue in the final act. Screen remains black for 3-4 minutes. Pierrot references previous unselected choices.' },
-  { name: 'Null Route', type: 'CORRUPTED', desc: 'Found in unused game files. No character appears. Player walks through empty corridors until soft-lock.' },
+  { name: 'Open Ending B (unnamed)', type: 'MAIN', desc: 'Accept Pierrot\'s offer in the garden scene. Standard ending with bittersweet conclusion.' },
+  { name: 'Open Ending C (unnamed)', type: 'SECRET', desc: 'Refuse all dialogue in the final act. Screen remains black for 3-4 minutes. Pierrot references previous unselected choices.' },
+  { name: 'Unnamed Open Ending', type: 'CORRUPTED', desc: 'Found in unused game files. No character appears. Player walks through empty corridors until soft-lock.' },
 ];
 
 const hiddenTriggers = [
@@ -156,7 +156,7 @@ export default function PierrotClient({ faqData }: { faqData: { question: string
               <div className="archive-card mb-6" style={{ borderLeft: `3px solid ${accent}` }}>
                 <div className="font-label text-[0.55rem] mb-2" style={{ color: accent }}>QUICK ANSWER</div>
                 <p className="text-faint-paper text-sm leading-relaxed">
-                  <strong className="text-paper">Who is Pierrot?</strong> Pierrot is the melancholic clown of The Freak Circus, often the first route players encounter. He is romanceable, loop-aware (references previous playthroughs), and has two endings: Smile For Me (main) and Eternal Silence (secret). His personality combines melancholy, possessiveness, and emotional dependency — community analysis identifies strong yandere tendencies.
+                  <strong className="text-paper">Who is Pierrot?</strong> Pierrot is the melancholic clown of The Freak Circus, often the first route players encounter. He is romanceable, loop-aware (references previous playthroughs), and has two endings: Open Ending B (unnamed) (main) and Open Ending C (unnamed) (secret). His personality combines melancholy, possessiveness, and emotional dependency — community analysis identifies strong yandere tendencies.
                 </p>
               </div>
 
@@ -164,7 +164,7 @@ export default function PierrotClient({ faqData }: { faqData: { question: string
                 Pierrot is the melancholic clown of The Freak Circus and often the first route players encounter. Beneath his withdrawn, observant demeanor lies one of the most complex character arcs in the game. His storyline explores themes of forgotten identity, repeated loops, and awareness that extends beyond the fourth wall.
               </p>
               <p className="text-faint-paper text-sm leading-relaxed">
-                The loop theory suggests Pierrot remembers player behavior across save files, adjusting his dialogue and reactions accordingly. His garden scene contains hidden triggers that only appear after failing his route once, and the silence mechanic in his route leads to the Eternal Silence ending — one of the most discussed outcomes in the community.
+                The loop theory suggests Pierrot remembers player behavior across save files, adjusting his dialogue and reactions accordingly. His garden scene contains hidden triggers that only appear after failing his route once, and the silence mechanic in his route leads to the Open Ending C (unnamed) ending — one of the most discussed outcomes in the community.
               </p>
             </div>
 
@@ -215,8 +215,8 @@ export default function PierrotClient({ faqData }: { faqData: { question: string
                   { label: 'CLASSIFICATION', value: 'Circus Entity' },
                   { label: 'ROLE', value: 'Melancholic Clown' },
                   { label: 'KEY MECHANIC', value: 'Comfort / Confess' },
-                  { label: 'MAIN ENDING', value: 'Smile For Me' },
-                  { label: 'SECRET ENDING', value: 'Eternal Silence' },
+                  { label: 'MAIN ENDING', value: 'Open Ending B (unnamed)' },
+                  { label: 'SECRET ENDING', value: 'Open Ending C (unnamed)' },
                   { label: 'KNOWN ASSOCIATIONS', value: 'Columbina / Harlequin / Player' },
                 ].map((item) => (
                   <div key={item.label} className="flex items-baseline gap-4">
@@ -244,7 +244,7 @@ export default function PierrotClient({ faqData }: { faqData: { question: string
             Pierrot&apos;s main route is the most commonly recommended starting point for new players. It introduces core mechanics including the dialogue choice system, the comfort/confess dynamic, and the first instance of replay-aware dialogue. The route takes approximately 4-6 hours for a first playthrough and contains 12 major scenes with branching decisions.
           </p>
           <p className="text-faint-paper text-sm leading-relaxed max-w-3xl">
-            The main route ending, &ldquo;Smile For Me,&rdquo; triggers when players accept Pierrot&apos;s offer during the garden scene in Act III. However, community testing has revealed that this ending is not the full picture — Pierrot&apos;s route contains hidden content that only appears after specific refusal conditions and cross-route dependencies.
+            The main route ending, &ldquo;Open Ending B (unnamed),&rdquo; triggers when players accept Pierrot&apos;s offer during the garden scene in Act III. However, community testing has revealed that this ending is not the full picture — Pierrot&apos;s route contains hidden content that only appears after specific refusal conditions and cross-route dependencies.
           </p>
         </div>
       </section>
@@ -409,7 +409,7 @@ export default function PierrotClient({ faqData }: { faqData: { question: string
           <div className="flex flex-wrap gap-2">
             {[
               { label: 'Pierrot Endings Guide', href: '/characters/pierrot-endings' },
-              { label: 'Eternal Silence Ending', href: '/endings/eternal-silence' },
+              { label: 'Open Ending C (unnamed) Ending', href: '/endings/eternal-silence' },
               { label: 'Pierrot Loop Theory', href: '/theories/pierrot-remembers-routes' },
               { label: 'Mirror Hall Lore', href: '/lore/mirror-hall' },
             ].map((link) => (

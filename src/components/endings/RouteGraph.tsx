@@ -45,53 +45,53 @@ export default function RouteGraph() {
               <div className="space-y-3">
                 <div className="bg-surface border border-primary/30 p-3 text-center">
                   <div className="font-[JetBrains_Mono] text-xs text-primary mb-1">Good Ending</div>
-                  <div className="font-[Epilogue] text-sm font-bold text-foreground">Smile For Me</div>
+                  <div className="font-[Epilogue] text-sm font-bold text-foreground">Open Ending B (unnamed)</div>
                   <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant mt-1">Accept offer in Scene 9</div>
                 </div>
                 <div className="bg-surface border border-blood/30 p-3 text-center">
                   <div className="font-[JetBrains_Mono] text-xs text-blood mb-1">Secret Ending</div>
-                  <div className="font-[Epilogue] text-sm font-bold text-foreground">Eternal Silence</div>
+                  <div className="font-[Epilogue] text-sm font-bold text-foreground">Open Ending C (unnamed)</div>
                   <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant mt-1">Refuse dialogue ×3</div>
                 </div>
               </div>
               <div className="space-y-3">
                 <div className="bg-surface border border-primary/30 p-3 text-center">
                   <div className="font-[JetBrains_Mono] text-xs text-primary mb-1">Good Ending</div>
-                  <div className="font-[Epilogue] text-sm font-bold text-foreground">Grand Finale</div>
+                  <div className="font-[Epilogue] text-sm font-bold text-foreground">Open Ending A (unnamed)</div>
                   <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant mt-1">Standard completion</div>
                 </div>
                 <div className="bg-surface border border-primary/30 p-3 text-center">
                   <div className="font-[JetBrains_Mono] text-xs text-primary mb-1">Joke Ending</div>
-                  <div className="font-[Epilogue] text-sm font-bold text-foreground">Harlequin's Laughter</div>
+                  <div className="font-[Epilogue] text-sm font-bold text-foreground">Unnamed Open Ending</div>
                   <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant mt-1">All comedic choices</div>
                 </div>
                 <div className="bg-surface border border-blood/30 p-3 text-center">
                   <div className="font-[JetBrains_Mono] text-xs text-blood mb-1">Secret Ending</div>
-                  <div className="font-[Epilogue] text-sm font-bold text-foreground">Fractured Ending</div>
+                  <div className="font-[Epilogue] text-sm font-bold text-foreground">Unnamed Open Ending</div>
                   <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant mt-1">Fail route first</div>
                 </div>
               </div>
               <div className="space-y-3">
                 <div className="bg-surface border border-primary/30 p-3 text-center">
                   <div className="font-[JetBrains_Mono] text-xs text-primary mb-1">Standard Ending</div>
-                  <div className="font-[Epilogue] text-sm font-bold text-foreground">Medical Failure</div>
+                  <div className="font-[Epilogue] text-sm font-bold text-foreground">Unnamed Open Ending</div>
                   <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant mt-1">Fail to collect files</div>
                 </div>
                 <div className="bg-surface border border-blood/30 p-3 text-center">
                   <div className="font-[JetBrains_Mono] text-xs text-blood mb-1">Secret Ending</div>
-                  <div className="font-[Epilogue] text-sm font-bold text-foreground">Doctor's Note</div>
+                  <div className="font-[Epilogue] text-sm font-bold text-foreground">Unnamed Open Ending</div>
                   <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant mt-1">Find all 5 files</div>
                 </div>
               </div>
               <div className="space-y-3">
                 <div className="bg-surface border border-primary/30 p-3 text-center">
                   <div className="font-[JetBrains_Mono] text-xs text-primary mb-1">Standard Ending</div>
-                  <div className="font-[Epilogue] text-sm font-bold text-foreground">Eternal Dance</div>
+                  <div className="font-[Epilogue] text-sm font-bold text-foreground">Unnamed Open Ending</div>
                   <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant mt-1">Any single loop</div>
                 </div>
                 <div className="bg-surface border border-blood/30 p-3 text-center">
                   <div className="font-[JetBrains_Mono] text-xs text-blood mb-1">Secret Ending</div>
-                  <div className="font-[Epilogue] text-sm font-bold text-foreground">Columbina's Truth</div>
+                  <div className="font-[Epilogue] text-sm font-bold text-foreground">Unnamed Open Ending</div>
                   <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant mt-1">3 perfect loops</div>
                 </div>
               </div>
@@ -105,16 +105,16 @@ export default function RouteGraph() {
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                 <div className="bg-surface border border-blood/30 p-3 text-center">
                   <div className="font-[JetBrains_Mono] text-xs text-blood mb-1">False Ending</div>
-                  <div className="font-[Epilogue] text-sm font-bold text-foreground">White Room</div>
+                  <div className="font-[Epilogue] text-sm font-bold text-foreground">Unnamed Open Ending</div>
                   <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant mt-1">Never found</div>
                 </div>
                 <div className="bg-surface border border-blood/30 p-3 text-center">
                   <div className="font-[JetBrains_Mono] text-xs text-blood mb-1">Corrupted</div>
-                  <div className="font-[Epilogue] text-sm font-bold text-foreground">Corrupted Data</div>
+                  <div className="font-[Epilogue] text-sm font-bold text-foreground">Unnamed Open Ending</div>
                   <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant mt-1">Hex crash</div>
                 </div>
                 <div className="bg-surface border border-blood/30 p-3 text-center">
-                  <div className="font-[JetBrains_Mono] text-xs text-blood mb-1">Null Route</div>
+                  <div className="font-[JetBrains_Mono] text-xs text-blood mb-1">Unnamed Open Ending</div>
                   <div className="font-[Epilogue] text-sm font-bold text-foreground">Empty Room</div>
                   <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant mt-1">Data-mined only</div>
                 </div>

@@ -2,7 +2,7 @@
 
 const reactions = [
   {
-    quote: "I thought my game froze during Eternal Silence. I waited four minutes before realizing it was intentional.",
+    quote: "I thought my game froze during Open Ending C (unnamed). I waited four minutes before realizing it was intentional.",
     source: "Steam Review",
   },
   {
@@ -10,7 +10,7 @@ const reactions = [
     source: "Reddit /r/FreakCircus",
   },
   {
-    quote: "I still don't know if Corrupted Data is real. I've been trying for six months and I'm starting to question my own memory.",
+    quote: "I still don't know if Unnamed Open Ending is real. I've been trying for six months and I'm starting to question my own memory.",
     source: "Discord #theories",
   },
   {

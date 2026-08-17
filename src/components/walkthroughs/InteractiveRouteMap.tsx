@@ -43,7 +43,7 @@ export default function InteractiveRouteMap() {
             <line x1="375" y1="275" x2="300" y2="320" stroke="#7A1E1E" strokeWidth="1" opacity="0.5" />
           </svg>
           <div className="mt-4 text-on-surface-variant text-sm">
-            <p>Route Relationship Analysis: All routes converge at the Null Route. Completion of multiple routes unlocks hidden connections.</p>
+            <p>Route Relationship Analysis: All routes converge at the Unnamed Open Ending. Completion of multiple routes unlocks hidden connections.</p>
           </div>
         </div>
       </div>
