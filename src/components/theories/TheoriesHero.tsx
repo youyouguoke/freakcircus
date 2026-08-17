@@ -7,7 +7,7 @@ export default function TheoriesHero() {
     <section className="bg-void-black min-h-[70vh] flex flex-col justify-center py-20 md:py-28 px-4 md:px-12 relative overflow-hidden">
       {/* Background image */}
       <div className="absolute inset-0 z-0">
-        <img src="/route-lost-corridor.jpg" alt="" className="w-full h-full object-cover object-center opacity-45" aria-hidden="true" />
+        <img src="/hero-theories.webp" alt="" className="w-full h-full object-cover object-center opacity-45" aria-hidden="true" />
         <div className="absolute inset-0 bg-gradient-to-r from-void-black via-void-black/70 to-void-black/30" />
         <div className="absolute inset-0 bg-gradient-to-t from-void-black via-transparent to-void-black/40" />
         <div className="absolute inset-0 vhs-scanlines opacity-20" />

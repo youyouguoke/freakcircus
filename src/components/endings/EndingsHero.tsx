@@ -9,7 +9,7 @@ export default function EndingsHero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/hero-corridor.jpg"
+          src="/hero-endings.webp"
           alt="Corridor"
           className="w-full h-full object-cover opacity-35"
         />

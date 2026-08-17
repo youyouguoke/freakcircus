@@ -8,7 +8,7 @@ export default function WalkthroughHero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/hero-corridor.jpg"
+          src="/hero-walkthroughs.webp"
           alt="Route Investigation"
           className="w-full h-full object-cover opacity-45"
         />
