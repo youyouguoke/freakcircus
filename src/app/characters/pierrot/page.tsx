@@ -7,11 +7,11 @@ import PierrotClient from './PierrotClient';
 
 export const metadata: Metadata = {
   title: 'Pierrot — Character Profile, Route Guide & Hidden Triggers | Freak Circus Hub',
-  description: 'Complete Pierrot character analysis for The Freak Circus. Covers his melancholic clown persona, route guide, hidden dialogue triggers, garden scene mechanics, and the Eternal Silence ending.',
-  keywords: ['Pierrot', 'The Freak Circus Pierrot', 'Pierrot route guide', 'melancholic clown', 'silent route', 'Eternal Silence', 'hidden triggers', 'garden scene'],
+  description: 'Complete Pierrot character analysis for The Freak Circus. Covers his melancholic clown persona, 198cm height, golden eyes, silent yandere archetype, and relationship with Harlequin.',
+  keywords: ['Pierrot', 'The Freak Circus Pierrot', 'Pierrot character', 'melancholic clown', 'silent yandere', '198cm'],
   openGraph: {
     title: 'Pierrot — Character Profile, Route Guide & Hidden Triggers',
-    description: 'Complete Pierrot character analysis, route walkthrough, hidden triggers, and Eternal Silence ending.',
+    description: 'Complete Pierrot character analysis — 198cm, golden eyes, silent yandere. Verified character data from developer AMA.',
     type: 'article',
     url: 'https://freak-circus.com/characters/pierrot',
   },
@@ -19,8 +19,8 @@ export const metadata: Metadata = {
 };
 
 const faqData = [
-  { question: 'Who is Pierrot in The Freak Circus?', answer: 'Pierrot is the melancholic clown and often the first route players encounter. His storyline explores forgotten identity, repeated loops, and awareness that extends beyond the fourth wall. He is romanceable and has both a main ending (Smile For Me) and a secret ending (Eternal Silence).' },
-  { question: 'How do you unlock the Eternal Silence ending?', answer: 'Refuse all dialogue options in Scenes 10, 11, and 12. Do not select Comfort or Confess in the garden scene. Ignore Pierrot\'s direct questions in Scene 14. The screen will remain black for 3-4 minutes before credits roll.' },
+  { question: 'Who is Pierrot in The Freak Circus?', answer: 'Pierrot is a 198cm tall performer with golden eyes, described as a silent yandere. He becomes obsessed with the MC after they defend him from an attacker while he was handing out circus flyers.' },
+  { question: 'What happened between Pierrot and Harlequin?', answer: 'Pierrot stabbed Harlequin 5 times. Harlequin killed and ate Columbina (Pierrot\'s former partner). Because the MC resembles Columbina, Pierrot became obsessed with them.' },
   { question: 'Does Pierrot remember previous playthroughs?', answer: 'Yes. On the 4th playthrough, Pierrot begins referencing events from previous routes. The line \'You chose differently last time\' appears regardless of whether the player actually selected that choice. A hidden counter at save offset 0x4A20 triggers replay-aware dialogue.' },
   { question: 'What is the garden scene hidden choice?', answer: 'After failing Pierrot\'s route once, the garden scene in Act III gains a third option: \'Say Nothing.\' This option does not appear in the script files and was discovered through data mining in build 1.03.' },
   { question: 'Is Pierrot yandere?', answer: 'Community analysis suggests Pierrot exhibits yandere tendencies — possessive, protective, emotionally dependent behavior that escalates when the player engages with other characters.' },

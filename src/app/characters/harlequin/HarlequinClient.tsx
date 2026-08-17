@@ -9,13 +9,13 @@ const accentGlow = "var(--harlequin-glow)";
 const profile = {
   role: "THE PERFORMER", status: "ACTIVE", route: "AVAILABLE",
   firstEncounter: "Main Stage (Day 1)", keyMechanic: "Mock / Laugh",
-  endings: "Harlequin\'s Laughter / Grand Finale",
+  endings: "No confirmed endings yet (Day 3 pending)",
   loopAwareness: 80, threatLevel: 70, emotionalAttachment: 60, stability: 45, fourthWallAwareness: 75,
 };
 
 const endings = [
   { name: "Harlequin\'s Laughter", type: "MAIN", desc: "Maintain comedic choices through Acts I-II, then select the aggressive option in Scene 9. Standard ending with chaotic energy." },
-  { name: "Grand Finale", type: "STANDARD", desc: "Complete the route with balanced choices. The default ending most players see on first playthrough." },
+  { name: "No confirmed ending yet", type: "TBD", desc: "Day 3 content will likely include Harlequin-specific endings." },
   { name: "Fractured Route Ending", type: "SECRET", desc: "Choose aggressive in Scene 4, then comedic in Scene 9. This contradiction triggers 7 undocumented hidden scenes." },
 ];
 

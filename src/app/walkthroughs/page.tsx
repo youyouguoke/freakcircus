@@ -121,7 +121,7 @@ export default function WalkthroughsPage() {
             },
             {
               title: "Ending Guides",
-              desc: "Grand Finale, Medical Failure, True & Secret endings",
+              desc: "Day 1 choices, Pierrot encounter, first forks",
               href: "#ending-guides",
               icon: "flag",
             },
@@ -324,7 +324,7 @@ export default function WalkthroughsPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
-                name: "Grand Finale (Canon)",
+                name: "Missing (Confirmed Bad Ending)",
                 desc: "Harlequin route. Standard completion on first playthrough.",
                 href: "/endings/the-grand-finale",
                 req: "Complete Harlequin route",
@@ -414,7 +414,7 @@ export default function WalkthroughsPage() {
                 All Endings Guide
               </h3>
               <p className="text-on-surface/60 text-sm mb-3">
-                Step-by-step unlock conditions for every confirmed ending. Covers Grand Finale, Smile For Me, Doctor&apos;s Note, Eternal Silence, Columbina&apos;s Truth, and more.
+                Step-by-step unlock conditions for the confirmed ending "Missing" and what we know about the 3 unnamed open endings.
               </p>
               <span className="font-mono text-[9px] text-secondary uppercase tracking-widest">
                 {ENDINGS_SUMMARY}
