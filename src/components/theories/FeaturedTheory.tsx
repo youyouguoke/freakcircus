@@ -1,90 +1,54 @@
-"use client";
+'use client';
 
 export default function FeaturedTheory() {
   return (
-    <section id="featured" className="bg-surface py-16 px-4 md:px-16 border-t border-outline/10">
+    <section id="featured" className="bg-archive-black py-20 md:py-28 px-4 md:px-12">
       <div className="max-w-6xl mx-auto">
-        <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant mb-4">
-          // Featured Investigation — This Week
+        <div className="font-label text-circus-red text-[0.6rem] mb-3 flex items-center gap-3">
+          <span className="inline-block w-6 h-px bg-circus-red" />
+          FEATURED INVESTIGATION
         </div>
 
-        <div className="bg-surface-container border border-outline/20 p-8">
-          <div className="flex items-center gap-2 mb-4">
-            <span className="font-[JetBrains_Mono] text-xs px-2 py-1 border border-primary text-primary">
+        <div className="archive-card border-circus-red/20 p-6 md:p-10">
+          <div className="flex items-center gap-3 mb-4">
+            <span className="font-label text-[0.55rem] px-2 py-0.5 text-status-likely border border-status-likely/30 bg-status-likely/8">
               COMMUNITY CONFIDENCE: 58%
             </span>
+            <span className="font-label text-[0.55rem] text-faint-paper">THEORY_15</span>
           </div>
 
-          <div className="font-[JetBrains_Mono] text-xs text-primary mb-2">
-            THEORY_15 — META THEORY
-          </div>
-
-          <h2 className="font-[Creepster] text-3xl md:text-5xl text-primary mb-4">
+          <h2 className="font-heading text-3xl md:text-5xl font-bold text-paper mb-4">
             The Circus Does Not Exist
           </h2>
 
-          <p className="text-on-surface-variant mb-8 max-w-2xl">
+          <p className="text-faint-paper mb-8 max-w-2xl leading-relaxed">
             Some players believe the circus is not a physical location, but a fragmented psychological space shared across collapsing timelines.
           </p>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-8">
-            <div>
-              <h3 className="font-[Epilogue] text-lg font-bold text-foreground mb-4">
-                Supporting Clues
-              </h3>
-              <ul className="space-y-2 text-sm text-on-surface-variant">
-                <li className="flex items-start gap-2">
-                  <span className="text-primary">■</span>
-                  <span>Repeated impossible architecture between scenes</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary">■</span>
-                  <span>Inconsistent room layouts across playthroughs</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary">■</span>
-                  <span>Conflicting memories expressed by characters</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary">■</span>
-                  <span>Timeline-aware dialogue referencing unseen events</span>
-                </li>
+          <div className="grid md:grid-cols-2 gap-6 mb-8">
+            <div className="archive-card">
+              <div className="font-label text-[0.55rem] text-circus-red mb-3">SUPPORTING EVIDENCE</div>
+              <ul className="space-y-2 text-faint-paper text-sm">
+                <li className="flex items-start gap-2"><span className="text-circus-red mt-1">▸</span> No two players describe the circus layout identically</li>
+                <li className="flex items-start gap-2"><span className="text-circus-red mt-1">▸</span> Map geometry changes between routes</li>
+                <li className="flex items-start gap-2"><span className="text-circus-red mt-1">▸</span> The Mirror Hall exists in all routes but with different physics</li>
+                <li className="flex items-start gap-2"><span className="text-circus-red mt-1">▸</span> Columbina&apos;s &ldquo;real world&rdquo; memories contain circus imagery</li>
               </ul>
-
-              <div className="flex flex-wrap gap-2 mt-4">
-                <span className="font-[JetBrains_Mono] text-xs px-2 py-1 border border-outline/30 text-on-surface-variant">Architecture</span>
-                <span className="font-[JetBrains_Mono] text-xs px-2 py-1 border border-outline/30 text-on-surface-variant">Timeline</span>
-                <span className="font-[JetBrains_Mono] text-xs px-2 py-1 border border-outline/30 text-on-surface-variant">Psychology</span>
-                <span className="font-[JetBrains_Mono] text-xs px-2 py-1 border border-outline/30 text-on-surface-variant">Meta</span>
-              </div>
             </div>
-
-            <div className="space-y-4">
-              <div className="bg-surface border border-outline/20 p-4">
-                <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant mb-2">Screenshot A</div>
-                <div className="font-[Creepster] text-4xl text-primary/30 text-center py-8">
-                  ROOM_A_v1.04
-                </div>
-              </div>
-              <div className="bg-surface border border-outline/20 p-4">
-                <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant mb-2">Screenshot B</div>
-                <div className="font-[Creepster] text-4xl text-primary/30 text-center py-8">
-                  ROOM_A_v2.01
-                </div>
-              </div>
+            <div className="archive-card">
+              <div className="font-label text-[0.55rem] text-faint-paper mb-3">CONTRADICTIONS</div>
+              <ul className="space-y-2 text-faint-paper text-sm">
+                <li className="flex items-start gap-2"><span className="text-dim-paper mt-1">△</span> Physical objects persist across loops</li>
+                <li className="flex items-start gap-2"><span className="text-dim-paper mt-1">△</span> The Doctor references real-world medical files</li>
+                <li className="flex items-start gap-2"><span className="text-dim-paper mt-1">△</span> Ticket Taker exists outside the circus space</li>
+              </ul>
             </div>
           </div>
 
-          <div className="bg-surface border border-outline/20 p-6">
-            <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant mb-2">
-              Hidden Dialogue Fragment
-            </div>
-            <blockquote className="text-on-surface-variant italic border-l-2 border-primary pl-4">
-              "This room... it was different before. Or maybe I am the one who changed."
-              <footer className="text-sm mt-2 not-italic">
-                — Columbina, Scene 12 (3rd loop)
-              </footer>
-            </blockquote>
+          <div className="flex items-center gap-4">
+            <span className="font-label text-[0.5rem] text-faint-paper">META THEORY</span>
+            <span className="font-label text-[0.5rem] text-faint-paper">4 EVIDENCE</span>
+            <span className="font-label text-[0.5rem] text-faint-paper">3 CONTRADICTIONS</span>
           </div>
         </div>
       </div>

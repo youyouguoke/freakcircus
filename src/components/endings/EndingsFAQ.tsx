@@ -5,7 +5,7 @@ import { ENDINGS_CONFIRMED, ENDINGS_TOTAL, SINGLE_ROUTE_HOURS, TOTAL_COMPLETION_
 const faqs = [
   {
     q: "How many endings are there in Freak Circus?",
-    a: "The community has confirmed ${ENDINGS_CONFIRMED} endings: Grand Finale, Smile For Me, Doctor's Note, Eternal Silence, Columbina's Truth, Harlequin's Laughter, Fractured Ending, Medical Failure, Eternal Dance, and two additional variants under verification. Additionally, 3 endings remain unverified: White Room, Corrupted Data, and Null Route. Total documented: ${ENDINGS_TOTAL}.",
+    a: `The community has confirmed ${ENDINGS_CONFIRMED} endings: Grand Finale, Smile For Me, Doctor's Note, Eternal Silence, Columbina's Truth, Harlequin's Laughter, Fractured Ending, Medical Failure, Eternal Dance, and two additional variants under verification. Additionally, 3 endings remain unverified: White Room, Corrupted Data, and Null Route. Total documented: ${ENDINGS_TOTAL}.`,
   },
   {
     q: "What is the true ending of Freak Circus?",
@@ -77,7 +77,7 @@ const faqs = [
   },
   {
     q: "How long does it take to get all endings?",
-    a: "A single route takes ${SINGLE_ROUTE_HOURS}. Getting all ${ENDINGS_CONFIRMED} confirmed endings requires multiple playthroughs due to replay dependencies. Columbina's Truth alone requires 3 perfect loops, each taking 4+ hours. The total time to see all confirmed endings is estimated at ${TOTAL_COMPLETION_HOURS}. Unverified endings may require additional time.",
+    a: `A single route takes ${SINGLE_ROUTE_HOURS}. Getting all ${ENDINGS_CONFIRMED} confirmed endings requires multiple playthroughs due to replay dependencies. Columbina's Truth alone requires 3 perfect loops, each taking 4+ hours. The total time to see all confirmed endings is estimated at ${TOTAL_COMPLETION_HOURS}. Unverified endings may require additional time.`,
   },
   {
     q: "What is the ending order?",
@@ -101,7 +101,7 @@ const faqs = [
   },
   {
     q: "What happens after all endings?",
-    a: "After completing all ${ENDINGS_CONFIRMED} confirmed endings, a hidden post-credits scene plays. The scene shows all four characters in a single room, discussing the player in third person. This breaks the fourth wall and suggests the characters are aware of being in a game. The scene only plays once and cannot be re-watched.",
+    a: `After completing all ${ENDINGS_CONFIRMED} confirmed endings, a hidden post-credits scene plays. The scene shows all four characters in a single room, discussing the player in third person. This breaks the fourth wall and suggests the characters are aware of being in a game. The scene only plays once and cannot be re-watched.`,
   },
   {
     q: "Can you skip endings?",

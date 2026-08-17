@@ -205,8 +205,11 @@ export default function EndingComparisonTable() {
                       e.type === "Canon" ? "border-primary text-primary" :
                       e.type === "Secret" ? "border-blood text-blood" :
                       e.type === "Joke" ? "border-primary text-primary" :
+                      e.type === "Unverified" ? "border-yellow-500/30 text-yellow-500" :
+                      e.type === "Corrupted" ? "border-red-500/30 text-red-500" :
+                      e.type === "False" ? "border-red-400/30 text-red-400" :
                       "border-outline/30 text-on-surface-variant"
-                    }`}>{e.type}</span>
+                    }`}>{e.type}{e.verified === "No" && " ⚠️"}</span>
                   </td>
                   <td className="p-3 text-on-surface-variant text-xs max-w-xs">{e.unlock}</td>
                   <td className="p-3 text-on-surface-variant text-xs max-w-xs">{e.rewards}</td>

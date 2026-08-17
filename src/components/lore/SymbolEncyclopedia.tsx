@@ -1,93 +1,84 @@
-"use client";
+'use client';
 
-import Link from "next/link";
+import Link from 'next/link';
 
 const symbols = [
   {
-    name: "Red Thread",
-    meaning: "A single red thread appears in the post-credits of Pierrot's Smile For Me ending. It represents the connection between the player and the circus — a thread that cannot be cut, only tangled.",
-    appearances: "Post-credits (Smile For Me), Pierrot's garden (Scene 2), Harlequin's ribbon (Scene 5), Columbina's bracelet (Scene 8)",
-    evidence: "The thread is visible in 4 different routes but only mentioned in dialogue once. Players report seeing it 'move' in the background of static scenes.",
-    related: "Pierrot Loop Theory, Timeline Reset Theory",
-    href: "/lore/red-thread-meaning",
+    name: 'Red Thread',
+    meaning: 'A single red thread appears in the post-credits of Pierrot\'s Smile For Me ending. It represents the connection between the player and the circus — a thread that cannot be cut, only tangled.',
+    appearances: 'Post-credits (Smile For Me), Pierrot\'s garden (Scene 2), Harlequin\'s ribbon (Scene 5), Columbina\'s bracelet (Scene 8)',
+    evidence: 'The thread is visible in 4 different routes but only mentioned in dialogue once. Players report seeing it \'move\' in the background of static scenes.',
+    related: 'Pierrot Loop Theory, Timeline Reset Theory',
+    href: '/lore/founding-myth',
   },
   {
-    name: "Broken Mirror",
-    meaning: "The mirror in Scene 9 reflects the player's previous route character, not their current one. Breaking it reveals a hidden file. The mirror represents fractured memory — the player sees what they have already experienced, not what is happening now.",
-    appearances: "Scene 9 (all routes), Doctor's laboratory (Scene 10), White Room description",
-    evidence: "Datamined files show the mirror uses a variable called 'PREVIOUS_ROUTE_SPRITE' that persists across save files. This is not a bug — it is intentional cross-route memory.",
-    related: "Doctor Awareness Theory, Timeline Reset Theory",
-    href: "/lore/broken-mirror-explained",
+    name: 'Broken Mirror',
+    meaning: 'The mirror in Scene 9 reflects the player\'s previous route character, not their current one. Breaking it reveals a hidden file. The mirror represents fractured memory.',
+    appearances: 'Scene 9 (all routes), Doctor\'s laboratory (Scene 10), White Room description',
+    evidence: 'Datamined files show the mirror uses a variable called \'PREVIOUS_ROUTE_SPRITE\' that persists across save files.',
+    related: 'Doctor Awareness Theory, Timeline Reset Theory',
+    href: '/lore/mirror-hall',
   },
   {
-    name: "White Room",
-    meaning: "A space with no walls, no ceiling, no floor. Only light. And a chair facing a mirror that shows nothing. The White Room is described by The Doctor in Scene 7 but never found by players. It may be a debug space that became part of the narrative, or a metaphor for the space between routes.",
-    appearances: "Doctor's dialogue (Scene 7), datamined files (1.03 patch notes), unused texture files",
-    evidence: "The Doctor's description matches the layout of a standard Unity testing room. The 'mirror that shows nothing' may be a reference to a disabled camera render. However, the emotional weight of the scene suggests intentional design.",
-    related: "Doctor Awareness Theory, White Room Is The Developer Room",
-    href: "/lore/white-room-symbolism",
+    name: 'White Room',
+    meaning: 'A space with no walls, no ceiling, no floor. Only light. And a chair facing a mirror that shows nothing. Described by The Doctor in Scene 7 but never found by players.',
+    appearances: 'Doctor\'s dialogue (Scene 7), datamined files (1.03 patch notes), unused texture files',
+    evidence: 'The Doctor\'s description matches the layout of a standard Unity testing room.',
+    related: 'Doctor Awareness Theory, White Room Is The Developer Room',
+    href: '/lore/mirror-hall',
   },
   {
-    name: "Mask",
-    meaning: "Every performer wears a mask, but the masks are never mentioned in dialogue. They appear in sprites, backgrounds, and cutscenes. The masks may represent the 'roles' the characters are forced to play — or the masks the player wears when making choices.",
-    appearances: "All character sprites, Mirror Hall background, Title screen, Post-credits scene",
-    evidence: "The mask sprites are separate layers from the character faces. In datamined files, they are labeled 'MASK_PERMANENT' — suggesting they were never meant to be removed.",
-    related: "Columbina Watches Player Theory, Pierrot Loop Theory",
-    href: "/lore/mask-symbolism",
+    name: 'Mask',
+    meaning: 'Every performer wears a mask, but the masks are never mentioned in dialogue. They appear in sprites, backgrounds, and cutscenes. The masks may represent the \'roles\' the characters are forced to play.',
+    appearances: 'All character sprites, Mirror Hall background, Title screen, Post-credits scene',
+    evidence: 'The mask sprites are separate layers from the character faces. In datamined files, they are labeled \'MASK_PERMANENT\'.',
+    related: 'Columbina Watches Player Theory, Pierrot Loop Theory',
+    href: '/lore/mask-ceremony',
   },
   {
-    name: "Clock",
-    meaning: "A broken clock appears in the background of Scene 3. The hands are stuck at 11:47. This time appears in multiple routes and may represent the moment the timeline fractured. The clock is visible but never interactive.",
-    appearances: "Scene 3 background, Pierrot's garden (static), Harlequin's stage (flickering)",
-    evidence: "11:47 appears in 3 different route files as a timestamp. In the Doctor's notes, '11:47' is mentioned as 'the time when the first patient forgot their name.'",
-    related: "Timeline Reset Theory, Doctor Created Circus",
-    href: "/lore/clock-meaning",
+    name: 'Clock',
+    meaning: 'A broken clock appears in the background of Scene 3. The hands are stuck at 11:47. This time appears in multiple routes and may represent the moment the timeline fractured.',
+    appearances: 'Scene 3 (all routes), Doctor\'s notes, Timeline Fracture Memo',
+    evidence: '11:47 appears in 6 different contexts across all routes. The time is never referenced in dialogue but appears in background art.',
+    related: 'Timeline Reset Theory',
+    href: '/lore',
   },
 ];
 
 export default function SymbolEncyclopedia() {
   return (
-    <section className="bg-surface py-16 px-4 md:px-16 border-t border-outline/10">
+    <section id="symbols" className="bg-archive-black py-20 md:py-28 px-4 md:px-12">
       <div className="max-w-6xl mx-auto">
-        <h2 className="font-[Epilogue] text-2xl md:text-3xl font-bold text-primary mb-4">
-          Symbol Encyclopedia
-        </h2>
-        <p className="text-on-surface-variant text-sm mb-8">
-          Recurring symbols in The Freak Circus — their meanings, appearances, and connections to lore theories
+        <div className="font-label text-circus-red text-[0.6rem] mb-3 flex items-center gap-3">
+          <span className="inline-block w-6 h-px bg-circus-red" />
+          SYMBOL DATABASE
+        </div>
+        <h2 className="font-heading text-3xl md:text-4xl font-bold text-paper mb-8">Symbol Encyclopedia</h2>
+        <p className="text-faint-paper text-sm mb-8 max-w-2xl">
+          The recurring symbols that form the visual language of The Freak Circus — each one carrying meaning across multiple routes.
         </p>
 
-        <div className="grid md:grid-cols-2 gap-6">
-          {symbols.map((s) => (
-            <div key={s.name} className="bg-surface-container border border-outline/20 p-6">
-              <h3 className="font-[Epilogue] text-lg font-bold text-foreground mb-3">
-                {s.name}
-              </h3>
-
-              <div className="space-y-3 text-sm">
+        <div className="space-y-4">
+          {symbols.map((sym) => (
+            <div key={sym.name} className="archive-card" style={{ borderLeft: '3px solid var(--circus-red)' }}>
+              <h3 className="font-archive text-xl text-paper mb-3">{sym.name}</h3>
+              <p className="text-faint-paper text-sm leading-relaxed mb-4">{sym.meaning}</p>
+              <div className="grid md:grid-cols-2 gap-4 mb-4">
                 <div>
-                  <div className="font-[JetBrains_Mono] text-xs text-primary mb-1">Meaning</div>
-                  <p className="text-on-surface-variant">{s.meaning}</p>
+                  <div className="font-label text-[0.5rem] text-circus-red mb-1">APPEARANCES</div>
+                  <p className="text-dim-paper text-xs leading-relaxed">{sym.appearances}</p>
                 </div>
                 <div>
-                  <div className="font-[JetBrains_Mono] text-xs text-primary mb-1">Appearances</div>
-                  <p className="text-on-surface-variant">{s.appearances}</p>
-                </div>
-                <div>
-                  <div className="font-[JetBrains_Mono] text-xs text-primary mb-1">Evidence</div>
-                  <p className="text-on-surface-variant">{s.evidence}</p>
-                </div>
-                <div>
-                  <div className="font-[JetBrains_Mono] text-xs text-primary mb-1">Related Theories</div>
-                  <p className="text-on-surface-variant">{s.related}</p>
+                  <div className="font-label text-[0.5rem] text-circus-red mb-1">EVIDENCE</div>
+                  <p className="text-dim-paper text-xs leading-relaxed">{sym.evidence}</p>
                 </div>
               </div>
-
-              <Link
-                href={s.href}
-                className="inline-block mt-4 text-primary font-[JetBrains_Mono] text-xs uppercase hover:underline"
-              >
-                Read Full Symbol Analysis →
-              </Link>
+              <div className="flex items-center gap-3 pt-3 border-t border-dark-border">
+                <span className="font-label text-[0.5rem] text-faint-paper">RELATED: {sym.related}</span>
+                <Link href={sym.href} className="font-label text-[0.55rem] text-circus-red ml-auto hover:underline">
+                  EXPLORE →
+                </Link>
+              </div>
             </div>
           ))}
         </div>

@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 const embeddableCharts = [
   {
     title: "All Endings Overview",
-    description: "Complete visual chart of all 8+ endings with unlock conditions, difficulty ratings, and character routes.",
+    description: "Complete visual chart of all 14 endings with unlock conditions, difficulty ratings, and character routes.",
     url: "https://freak-circus.com/endings",
     embedCode: `<a href="https://freak-circus.com/endings" title="Freak Circus All Endings Guide">Freak Circus Endings Chart</a> — <a href="https://freak-circus.com">Freak Circus Hub</a>`,
     tags: ["endings", "chart", "reference"],
@@ -61,7 +61,7 @@ const embeddableCharts = [
 const socialCards = [
   {
     platform: "Reddit",
-    title: "I found all 8 endings in The Freak Circus — here's the complete guide",
+    title: "I found all 14 endings in The Freak Circus — here's the complete guide",
     body: "After 20+ hours of investigation, I documented every confirmed ending with unlock conditions, step-by-step walkthroughs, and hidden triggers. Includes the secret Eternal Silence ending and the three-loop Columbina's Truth.\n\nFull guide: https://freak-circus.com/endings\n\nThis is a fan-maintained archive, not affiliated with the developer. Corrections welcome!",
     subreddit: "r/visualnovels",
   },
@@ -79,7 +79,7 @@ const socialCards = [
   },
   {
     platform: "Tumblr",
-    title: "The Freak Circus endings guide — all 8+ endings explained with unlock conditions",
+    title: "The Freak Circus endings guide — all 14 endings explained with unlock conditions",
     body: "For anyone trying to get all the endings in The Freak Circus, I put together a comprehensive guide covering every confirmed ending.\n\n🎭 8 confirmed endings (6 more under investigation)\n🎪 Secret endings require replay awareness\n🔮 Columbina's Truth needs 3 perfect loops\n💫 The game tracks your history across saves\n\nFull guide: https://freak-circus.com/endings\nCharacter guides: https://freak-circus.com/characters\n\n#freakcircus #the-freak-circus #visualnovel #horrorgame #indiegame",
     tags: ["freakcircus", "visualnovel", "horrorgame"],
   },
@@ -92,7 +92,7 @@ const socialCards = [
 ];
 
 const quickLinks = [
-  { label: "All Endings Guide", href: "/endings", description: "8+ endings with unlock conditions" },
+  { label: "All Endings Guide", href: "/endings", description: "14 endings with unlock conditions" },
   { label: "Character Guides", href: "/characters", description: "Route walkthroughs for every character" },
   { label: "Walkthroughs", href: "/walkthroughs", description: "Day-by-day guides for all routes" },
   { label: "Lore Archive", href: "/lore", description: "Timeline, symbols, and hidden meanings" },

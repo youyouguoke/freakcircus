@@ -1,16 +1,16 @@
-"use client";
+'use client';
 
-import Link from "next/link";
-import { useState } from "react";
-import { usePathname } from "next/navigation";
+import Link from 'next/link';
+import { useState } from 'react';
+import { usePathname } from 'next/navigation';
 
 const navLinks = [
-  { label: "Home", href: "/" },
-  { label: "Characters", href: "/characters" },
-  { label: "Walkthroughs", href: "/walkthroughs" },
-  { label: "Endings", href: "/endings" },
-  { label: "Theories", href: "/theories" },
-  { label: "Lore Archive", href: "/lore" },
+  { label: 'Archive', href: '/' },
+  { label: 'Characters', href: '/characters' },
+  { label: 'Walkthroughs', href: '/walkthroughs' },
+  { label: 'Endings', href: '/endings' },
+  { label: 'Theories', href: '/theories' },
+  { label: 'Lore', href: '/lore' },
 ];
 
 export default function Navigation() {
@@ -18,97 +18,89 @@ export default function Navigation() {
   const pathname = usePathname();
 
   const isActive = (href: string) => {
-    if (href === "/") {
-      return pathname === "/";
-    }
-    return pathname === href || pathname.startsWith(href + "/");
+    if (href === '/') return pathname === '/';
+    return pathname === href || pathname.startsWith(href + '/');
   };
 
   return (
-    <>
-      <nav className="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-md border-b-2 border-primary-container shadow-[0_4px_0_0_rgba(122,30,30,0.5)] flex justify-between items-center px-4 md:px-16 py-4">
-        <Link
-          href="/"
-          className="flex items-center gap-3 font-[Epilogue] text-2xl md:text-4xl font-extrabold text-primary drop-shadow-[2px_2px_0px_#7A1E1E] tracking-tight scale-90 origin-left"
-        >
-          <img
-            src="/favicon.png"
-            alt="Freak Circus Hub"
-            className="w-10 h-10 md:w-12 md:h-12 rounded-sm"
-          />
-          FREAK CIRCUS HUB
-        </Link>
+    <nav className="nav-archive fixed top-0 w-full z-50 flex justify-between items-center px-4 md:px-12 py-3">
+      {/* Logo */}
+      <Link
+        href="/"
+        className="flex items-center gap-2.5 group"
+      >
+        <img
+          src="/favicon.png"
+          alt="Freak Circus Hub"
+          className="w-8 h-8 md:w-9 md:h-9 opacity-90 group-hover:opacity-100 transition-opacity"
+        />
+        <div className="flex flex-col">
+          <span className="font-archive text-xs md:text-sm text-paper tracking-[0.2em] leading-none">
+            FREAK CIRCUS
+          </span>
+          <span className="font-label text-circus-red text-[0.55rem] tracking-[0.3em]">
+            THE FORBIDDEN ARCHIVE
+          </span>
+        </div>
+      </Link>
 
-        {/* Desktop nav */}
-        <div className="hidden md:flex gap-6 items-center">
+      {/* Desktop nav */}
+      <div className="hidden md:flex items-center gap-8">
+        {navLinks.map((link) => (
+          <Link
+            key={link.href}
+            href={link.href}
+            className={`nav-link ${isActive(link.href) ? 'nav-link--active' : ''}`}
+          >
+            {link.label}
+          </Link>
+        ))}
+        <a
+          href="https://freak-circus.com/play-online"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn-archive text-[0.65rem] py-2 px-4"
+        >
+          <span className="inline-block w-1.5 h-1.5 bg-status-confirmed rounded-full animate-pulse-slow" />
+          PLAY
+        </a>
+      </div>
+
+      {/* Mobile toggle */}
+      <button
+        className="md:hidden text-muted-paper hover:text-paper transition-colors"
+        onClick={() => setMobileOpen(!mobileOpen)}
+        aria-label="Toggle menu"
+      >
+        <span className="material-symbols-outlined text-2xl">
+          {mobileOpen ? 'close' : 'menu'}
+        </span>
+      </button>
+
+      {/* Mobile menu */}
+      {mobileOpen && (
+        <div className="absolute top-full right-0 w-64 bg-archive-black border border-dark-border border-t-0 p-6 md:hidden flex flex-col gap-4 shadow-2xl">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className={`transition-colors duration-300 font-[Epilogue] text-base uppercase tracking-widest ${
-                isActive(link.href)
-                  ? "text-primary font-bold"
-                  : "text-on-surface-variant hover:text-primary"
-              }`}
+              className={`nav-link text-sm ${isActive(link.href) ? 'nav-link--active' : ''}`}
+              onClick={() => setMobileOpen(false)}
             >
               {link.label}
             </Link>
           ))}
+          <div className="h-px bg-dark-border my-2" />
           <a
             href="https://freak-circus.com/play-online"
             target="_blank"
             rel="noopener noreferrer"
-            className="relative group bg-blood text-surface px-7 py-2.5 border-2 border-blood shadow-[4px_4px_0px_#000] active:translate-x-1 active:translate-y-1 active:shadow-none transition-all font-[JetBrains_Mono] text-xs uppercase tracking-widest hover:bg-primary hover:border-primary hover:shadow-[5px_5px_0px_#000]"
+            className="btn-archive text-center text-[0.65rem] py-2"
           >
-            <span className="relative z-10 flex items-center gap-2">
-              <span className="inline-block w-2 h-2 bg-surface rounded-full animate-pulse" />
-              <span className="font-bold text-sm">PLAY ON ITCH.IO ↗</span>
-            </span>
+            PLAY ON ITCH.IO ↗
           </a>
         </div>
-
-        {/* Mobile toggle */}
-        <button
-          className="md:hidden text-primary"
-          onClick={() => setMobileOpen(!mobileOpen)}
-          aria-label="Toggle menu"
-        >
-          <span className="material-symbols-outlined text-3xl">
-            {mobileOpen ? "close" : "menu"}
-          </span>
-        </button>
-
-        {/* Mobile menu */}
-        {mobileOpen && (
-          <div className="absolute top-full left-0 w-full bg-surface border-b-2 border-primary-container p-6 md:hidden flex flex-col gap-4">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={`transition-colors font-[Epilogue] text-lg uppercase tracking-widest ${
-                  isActive(link.href)
-                    ? "text-primary font-bold"
-                    : "text-on-surface-variant hover:text-primary"
-                }`}
-                onClick={() => setMobileOpen(false)}
-              >
-                {link.label}
-              </Link>
-            ))}
-            <a
-              href="https://freak-circus.com/play-online"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="relative group bg-blood text-surface px-6 py-3 border-2 border-blood shadow-[4px_4px_0px_#000] transition-all font-[JetBrains_Mono] text-xs uppercase text-center mt-2 hover:bg-primary hover:border-primary hover:shadow-[5px_5px_0px_#000]"
-            >
-              <span className="flex items-center justify-center gap-2">
-                <span className="inline-block w-2 h-2 bg-surface rounded-full animate-pulse" />
-                <span className="font-bold text-sm">PLAY ON ITCH.IO ↗</span>
-              </span>
-            </a>
-          </div>
-        )}
-      </nav>
-    </>
+      )}
+    </nav>
   );
 }

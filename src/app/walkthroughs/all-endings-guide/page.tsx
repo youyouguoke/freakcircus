@@ -7,7 +7,7 @@ import { ENDINGS_CONFIRMED, TOTAL_COMPLETION_HOURS } from "@/lib/site-facts";
 
 export const metadata: Metadata = {
   title: "All Endings Guide — Freak Circus Complete Ending Walkthrough (2026)",
-  description: "Step-by-step guide to unlock every ending in The Freak Circus. Covers all 8+ endings: Grand Finale, Smile For Me, Doctor's Note, Eternal Silence, Columbina's Truth, White Room, Corrupted Data, and Harlequin's Laughter. Requirements, choices, and tips.",
+  description: "Step-by-step guide to unlock every ending in The Freak Circus. Covers all 14 endings: Grand Finale, Smile For Me, Doctor's Note, Eternal Silence, Columbina's Truth, White Room, Corrupted Data, and Harlequin's Laughter. Requirements, choices, and tips.",
   keywords: [
     "Freak Circus all endings",
     "Freak Circus endings guide",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "All Endings Guide — Freak Circus Complete Ending Walkthrough",
-    description: "Step-by-step guide to unlock every ending in The Freak Circus. All 8+ endings with requirements, choices, and tips.",
+    description: "Step-by-step guide to unlock every ending in The Freak Circus. All 14 endings with requirements, choices, and tips.",
     type: "article",
     url: "https://freak-circus.com/walkthroughs/all-endings-guide",
   },
@@ -249,7 +249,7 @@ export default function AllEndingsGuidePage() {
             <div className="bg-surface-container border border-primary/20 p-6 border-l-4 border-l-primary">
               <div className="font-[JetBrains_Mono] text-[10px] text-primary mb-2 uppercase tracking-widest">Quick Answer</div>
               <p className="text-on-surface-variant text-sm leading-relaxed">
-                <strong className="text-foreground">How many endings are in The Freak Circus?</strong> The community has confirmed 8 endings across standard, secret, and corrupted categories. The easiest are Grand Finale and Smile For Me (first playthrough). The hardest is Columbina&apos;s Truth (3 perfect loops, 6-8 hours). Recommended order: Grand Finale → Smile For Me → Harlequin&apos;s Laughter → Doctor&apos;s Note → Eternal Silence → Columbina&apos;s Truth.
+                <strong className="text-foreground">How many endings are in The Freak Circus?</strong> The community has confirmed 11 endings across standard, secret, and corrupted categories. The easiest are Grand Finale and Smile For Me (first playthrough). The hardest is Columbina&apos;s Truth (3 perfect loops, 6-8 hours). Recommended order: Grand Finale → Smile For Me → Harlequin&apos;s Laughter → Doctor&apos;s Note → Eternal Silence → Columbina&apos;s Truth.
               </p>
             </div>
           </section>

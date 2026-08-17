@@ -44,7 +44,7 @@ const endingsJsonLd = {
 
 export const metadata: Metadata = {
   title: "Freak Circus Endings Guide (2026) | All Endings, Routes, Requirements & Explained",
-  description: "Complete Freak Circus endings guide. All 8+ endings explained: unlock conditions, step-by-step walkthroughs, requirements, rewards, and fan interpretations. Covers Pierrot, Harlequin, Doctor, and Columbina endings.",
+  description: "Complete Freak Circus endings guide. All 14 endings explained: unlock conditions, step-by-step walkthroughs, requirements, rewards, and fan interpretations. Covers Pierrot, Harlequin, Doctor, and Columbina endings.",
   keywords: [
     "Freak Circus endings",
     "Freak Circus endings guide",
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "Freak Circus Endings Guide (2026) | All Endings, Routes, Requirements & Explained",
-    description: "Complete Freak Circus endings guide. All 8+ endings explained with unlock conditions, walkthroughs, and requirements.",
+    description: "Complete Freak Circus endings guide. All 14 endings explained with unlock conditions, walkthroughs, and requirements.",
     type: "website",
     url: "https://freak-circus.com/endings",
     siteName: "Freak Circus Hub",

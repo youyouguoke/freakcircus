@@ -11,9 +11,9 @@ export default function EndingsHero() {
         <img
           src="/hero-corridor.jpg"
           alt="Corridor"
-          className="w-full h-full object-cover opacity-15"
+          className="w-full h-full object-cover opacity-35"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-surface/80 via-surface/60 to-surface" />
+        <div className="absolute inset-0 bg-gradient-to-b from-surface/60 via-surface/40 to-surface" />
       </div>
       <div className="max-w-6xl mx-auto w-full relative z-10">
         <div className="flex flex-wrap gap-3 mb-8">

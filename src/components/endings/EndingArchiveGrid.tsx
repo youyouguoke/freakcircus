@@ -157,7 +157,16 @@ export default function EndingArchiveGrid() {
                 </div>
                 <div className="bg-surface border border-outline/20 p-2">
                   <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant">Type</div>
-                  <div className="font-[Epilogue] text-sm font-bold text-foreground">{ending.type}</div>
+                  <div className={`font-[Epilogue] text-sm font-bold ${
+                    ending.type === 'Unverified' ? 'text-yellow-500' :
+                    ending.type === 'Corrupted' ? 'text-red-500' :
+                    ending.type === 'False' ? 'text-red-400' :
+                    'text-foreground'
+                  }`}>
+                    {ending.type}
+                    {ending.type === 'Unverified' && ' ⚠️'}
+                    {ending.type === 'Corrupted' && ' ❌'}
+                  </div>
                 </div>
                 <div className="bg-surface border border-outline/20 p-2">
                   <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant">Spoilers</div>

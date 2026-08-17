@@ -1,75 +1,129 @@
-"use client";
+'use client';
 
-import Link from "next/link";
+import Link from 'next/link';
+import { useEffect, useState } from 'react';
+
+const stats = [
+  { value: '6', label: 'SUBJECTS' },
+  { value: '11', label: 'ENDINGS' },
+  { value: '14', label: 'TOTAL ENDINGS' },
+  { value: '40+', label: 'HOURS CONTENT' },
+];
 
 export default function HomeHero() {
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    setVisible(true);
+  }, []);
+
   return (
-    <section className="bg-surface min-h-[80vh] flex flex-col justify-center py-16 px-4 md:px-16 relative overflow-hidden">
-      {/* Background Image */}
+    <section className="relative min-h-screen flex items-center overflow-hidden">
+      {/* Background — character image with cinematic treatment */}
       <div className="absolute inset-0 z-0">
         <img
           src="/Hero.png"
-          alt="The Freak Circus"
-          className="w-full h-full object-contain object-right opacity-30"
+          alt=""
+          className="w-full h-full object-cover object-top opacity-40 img-cinematic animate-breathe"
+          aria-hidden="true"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-surface via-surface/80 to-transparent" />
+        {/* Gradient overlays */}
+        <div className="absolute inset-0 bg-gradient-to-r from-void-black via-void-black/70 to-void-black/20" />
+        <div className="absolute inset-0 bg-gradient-to-t from-void-black via-transparent to-void-black/30" />
+        {/* Scanline effect */}
+        <div className="absolute inset-0 vhs-scanlines opacity-30" />
       </div>
-      <div className="max-w-6xl mx-auto w-full relative z-10">
-        <h1 className="font-[Epilogue] text-4xl md:text-5xl lg:text-6xl font-extrabold text-foreground mb-3 leading-tight">
-          The Freak Circus Guide, Endings, Characters & Hidden Lore Archive
-        </h1>
 
-        <h2 className="font-[Creepster] text-3xl md:text-5xl text-primary mb-6 leading-none">
-          YOU STILL DON&apos;T UNDERSTAND THE ENDING
-        </h2>
+      {/* Content */}
+      <div className="relative z-10 max-w-6xl mx-auto w-full px-4 md:px-12 py-32 md:py-40">
+        <div className="max-w-2xl">
+          {/* Archive stamp */}
+          <div
+            className={`transition-all duration-1000 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
+          >
+            <div className="font-label text-circus-red mb-6 flex items-center gap-3">
+              <span className="inline-block w-8 h-px bg-circus-red" />
+              CLASSIFIED DOCUMENT
+            </div>
+          </div>
 
-        <h3 className="font-[Epilogue] text-xl md:text-2xl text-foreground mb-2">
-          The Ultimate Fan Archive
-        </h3>
-        <p className="text-on-surface-variant text-sm mb-6 max-w-xl">
-          Characters, Endings, Walkthroughs, Lore, Theories, Hidden Routes, and Community Discoveries.
-        </p>
+          {/* Main title */}
+          <div
+            className={`transition-all duration-1000 delay-200 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
+          >
+            <h1 className="font-archive text-5xl md:text-7xl lg:text-8xl text-paper leading-[0.9] mb-2">
+              FREAK
+              <br />
+              CIRCUS
+              <br />
+              <span className="text-circus-red">HUB</span>
+            </h1>
+          </div>
 
-        <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant mb-4">
-          // Live Investigation Feed 00:00:??
-        </div>
+          {/* Subtitle */}
+          <div
+            className={`transition-all duration-1000 delay-500 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
+          >
+            <p className="font-label text-muted-paper mt-6 mb-2 tracking-[0.2em]">
+              THE UNOFFICIAL ARCHIVE
+            </p>
+            <p className="text-faint-paper text-sm md:text-base max-w-lg leading-relaxed mb-8">
+              Every route mapped. Every ending documented. Every theory catalogued.
+              <br />
+              <span className="text-muted-paper">Every route hides another story.</span>
+            </p>
+          </div>
 
-        <div className="bg-surface-container border border-blood/30 p-4 mb-8 max-w-lg">
-          <div className="font-[JetBrains_Mono] text-xs text-blood mb-1">CORRUPTED_ENTRY</div>
-          <div className="text-on-surface-variant text-sm italic">
-            &ldquo;The Doctor appears before his route unlocks.&rdquo;
+          {/* Corrupted entry */}
+          <div
+            className={`transition-all duration-1000 delay-700 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
+          >
+            <div className="bg-archive-black/80 border border-circus-red/20 p-4 mb-10 max-w-md backdrop-blur-sm">
+              <div className="font-label text-circus-red text-[0.6rem] mb-1">CORRUPTED_ENTRY</div>
+              <p className="text-muted-paper text-sm italic">
+                &ldquo;The Doctor appears before his route unlocks.&rdquo;
+              </p>
+            </div>
+          </div>
+
+          {/* CTA buttons */}
+          <div
+            className={`transition-all duration-1000 delay-900 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
+          >
+            <div className="flex flex-wrap gap-4">
+              <Link href="/characters" className="btn-archive btn-archive--filled">
+                ENTER THE ARCHIVE
+              </Link>
+              <Link href="/walkthroughs" className="btn-archive btn-archive--ghost">
+                ROUTE GUIDE
+              </Link>
+            </div>
           </div>
         </div>
 
-        <p className="text-on-surface-variant text-lg max-w-2xl mb-8">
-          The Freak Circus is an indie horror visual novel that hides more than it reveals. Every route, every ending, and every character holds secrets that only emerge through repeated playthroughs. This archive documents everything the community has uncovered: character psychological profiles, all endings explained with unlock conditions, step-by-step walkthroughs for hidden routes, timeline lore analysis, and player theories about what the circus truly represents.
-        </p>
-
-        {/* Archive Statistics */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8 max-w-2xl">
-          <div className="bg-surface-container border border-outline/20 p-4 text-center">
-            <div className="font-[Creepster] text-2xl text-primary">4</div>
-            <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant">Main Characters</div>
-          </div>
-          <div className="bg-surface-container border border-outline/20 p-4 text-center">
-            <div className="font-[Creepster] text-2xl text-primary">8+</div>
-            <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant">Verified Endings</div>
-          </div>
-          <div className="bg-surface-container border border-outline/20 p-4 text-center">
-            <div className="font-[Creepster] text-2xl text-primary">17</div>
-            <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant">Route Variations</div>
-          </div>
-          <div className="bg-surface-container border border-outline/20 p-4 text-center">
-            <div className="font-[Creepster] text-2xl text-primary">42</div>
-            <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant">Community Discoveries</div>
+        {/* Stats — bottom */}
+        <div
+          className={`mt-16 transition-all duration-1000 delay-[1100ms] ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
+        >
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-dark-border max-w-xl">
+            {stats.map((stat) => (
+              <div key={stat.label} className="bg-void-black p-4 md:p-5">
+                <div className="font-horror text-2xl md:text-3xl text-paper mb-1">
+                  {stat.value}
+                </div>
+                <div className="font-label text-faint-paper text-[0.6rem]">
+                  {stat.label}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
+      </div>
 
-        <div className="flex flex-wrap gap-4">
-          <Link href="/lore" className="px-6 py-3 border border-primary text-primary hover:bg-primary hover:text-surface transition-colors font-[JetBrains_Mono] text-sm uppercase">
-            Explore The Archive
-          </Link>
-        </div>
+      {/* Scroll indicator */}
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 animate-fade-in-slow" style={{ animationDelay: '1.5s' }}>
+        <span className="font-label text-dim-paper text-[0.55rem] tracking-[0.3em]">SCROLL</span>
+        <div className="w-px h-8 bg-gradient-to-b from-dim-paper to-transparent" />
       </div>
     </section>
   );

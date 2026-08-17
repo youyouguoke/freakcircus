@@ -1,68 +1,66 @@
-"use client";
+'use client';
 
-import Link from "next/link";
+import Link from 'next/link';
 
 export default function TheoriesHero() {
   return (
-    <section className="bg-surface min-h-[70vh] flex flex-col justify-center pt-8 pb-16 px-4 md:px-16 relative overflow-hidden">
-      <div className="max-w-6xl mx-auto w-full">
-        {/* Archive Labels */}
-        <div className="flex flex-wrap gap-3 mb-8">
-          <span className="font-[JetBrains_Mono] text-xs px-3 py-1 border border-outline/30 text-on-surface-variant">
-            BRANCH_09
-          </span>
-          <span className="font-[JetBrains_Mono] text-xs px-3 py-1 border border-outline/30 text-on-surface-variant">
-            LOOP_FAILED
-          </span>
-          <span className="font-[JetBrains_Mono] text-xs px-3 py-1 border border-outline/30 text-on-surface-variant">
-            SESSION_RESTARTED
-          </span>
-          <span className="font-[JetBrains_Mono] text-xs px-3 py-1 border border-outline/30 text-on-surface-variant">
-            MEMORY_CORRUPTION
-          </span>
+    <section className="bg-void-black min-h-[70vh] flex flex-col justify-center py-20 md:py-28 px-4 md:px-12 relative overflow-hidden">
+      {/* Background image */}
+      <div className="absolute inset-0 z-0">
+        <img src="/route-lost-corridor.jpg" alt="" className="w-full h-full object-cover object-center opacity-45" aria-hidden="true" />
+        <div className="absolute inset-0 bg-gradient-to-r from-void-black via-void-black/70 to-void-black/30" />
+        <div className="absolute inset-0 bg-gradient-to-t from-void-black via-transparent to-void-black/40" />
+        <div className="absolute inset-0 vhs-scanlines opacity-20" />
+      </div>
+
+      <div className="max-w-6xl mx-auto w-full relative z-10">
+        {/* Archive tags */}
+        <div className="flex flex-wrap gap-2 mb-8">
+          {['BRANCH_09', 'LOOP_FAILED', 'SESSION_RESTARTED', 'CORRUPTED_DATA'].map((tag) => (
+            <span key={tag} className="font-label text-[0.55rem] px-2.5 py-1 text-faint-paper border border-dark-border">
+              {tag}
+            </span>
+          ))}
         </div>
 
-        {/* Stats */}
-        <div className="flex flex-wrap gap-8 mb-8">
-          <div>
-            <div className="font-[Creepster] text-3xl text-primary">13</div>
-            <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant">Theories Documented</div>
-          </div>
-          <div>
-            <div className="font-[Creepster] text-3xl text-primary">5</div>
-            <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant">Community Accepted</div>
-          </div>
-          <div>
-            <div className="font-[Creepster] text-3xl text-primary">4</div>
-            <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant">Controversial</div>
-          </div>
-          <div>
-            <div className="font-[Creepster] text-3xl text-primary">4</div>
-            <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant">Unverified</div>
-          </div>
+        {/* Title */}
+        <div className="font-label text-circus-red text-[0.6rem] mb-4 flex items-center gap-3">
+          <span className="inline-block w-8 h-px bg-circus-red" />
+          THEORY DATABASE
         </div>
 
-        <h1 className="font-[Creepster] text-4xl md:text-6xl lg:text-7xl text-primary mb-2">
-          The Freak Circus Theories,
+        <h1 className="font-archive text-5xl md:text-7xl lg:text-8xl text-paper leading-[0.9] mb-4">
+          INVESTIGATION
           <br />
-          Timeline Analysis & Hidden Lore
+          <span className="text-circus-red">ARCHIVE</span>
         </h1>
 
-        <p className="font-[JetBrains_Mono] text-sm text-on-surface-variant mb-6">
-          Every Route Hides Another Theory
+        <p className="font-label text-muted-paper text-sm tracking-[0.15em] mb-4">
+          THEORIES · TIMELINE ANALYSIS · HIDDEN LORE
         </p>
 
-        <p className="text-on-surface-variant text-lg max-w-2xl mb-8">
-          Explore timeline corruption, hidden motives, replay anomalies, and community investigations inside The Freak Circus archive.
+        <p className="text-faint-paper text-sm md:text-base max-w-xl leading-relaxed mb-8">
+          Every theory catalogued. Every piece of evidence documented. From community-accepted loop theories to unverified corrupted data — the complete investigation archive.
         </p>
 
-        <div className="flex flex-wrap gap-4">
-          <Link href="#archive" className="px-6 py-3 border border-primary text-primary hover:bg-primary hover:text-surface transition-colors font-[JetBrains_Mono] text-sm uppercase">
-            Explore All Theories
-          </Link>
-          <Link href="#timeline" className="px-6 py-3 border border-outline/30 text-on-surface-variant hover:border-primary hover:text-primary transition-colors font-[JetBrains_Mono] text-sm uppercase">
-            Investigate Timeline Anomalies
-          </Link>
+        {/* Stats */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-dark-border max-w-xl mb-10">
+          {[
+            { value: '15+', label: 'THEORIES' },
+            { value: '80+', label: 'EVIDENCE' },
+            { value: '6', label: 'SUBJECTS' },
+            { value: '3', label: 'CONFIRMED' },
+          ].map((stat) => (
+            <div key={stat.label} className="bg-void-black p-4">
+              <div className="font-horror text-2xl text-paper mb-1">{stat.value}</div>
+              <div className="font-label text-[0.5rem] text-faint-paper">{stat.label}</div>
+            </div>
+          ))}
+        </div>
+
+        <div className="flex flex-wrap gap-3">
+          <Link href="#featured" className="btn-archive btn-archive--filled">FEATURED THEORY</Link>
+          <Link href="#timeline" className="btn-archive btn-archive--ghost">VIEW TIMELINE</Link>
         </div>
       </div>
     </section>

@@ -95,7 +95,7 @@ const faqs = [
   },
   {
     q: "What is the significance of the post-credits scene?",
-    a: "After completing all 8 endings, a hidden post-credits scene plays. It shows all four characters in the White Room, looking at the player. The scene is not in any route file — it is a separate video that triggers based on the hidden counter. The characters do not speak. They only look. This scene suggests that the 'true ending' is not a narrative conclusion but a meta-narrative realization: the player has been watched throughout all routes, and the characters are aware of the player's presence.",
+    a: "After completing all 11 confirmed endings, a hidden post-credits scene plays. It shows all four characters in the White Room, looking at the player. The scene is not in any route file — it is a separate video that triggers based on the hidden counter. The characters do not speak. They only look. This scene suggests that the 'true ending' is not a narrative conclusion but a meta-narrative realization: the player has been watched throughout all routes, and the characters are aware of the player's presence.",
   },
   {
     q: "What is the Freak Circus lore archive?",

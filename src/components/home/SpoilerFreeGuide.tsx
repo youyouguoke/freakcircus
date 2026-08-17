@@ -4,60 +4,38 @@ import Link from "next/link";
 
 export default function SpoilerFreeGuide() {
   return (
-    <section className="bg-surface py-16 px-4 md:px-16 border-t border-outline/10">
+    <section className="bg-archive-black py-20 md:py-28 px-4 md:px-12">
       <div className="max-w-6xl mx-auto">
-        <div className="bg-surface-container border border-outline/20 p-8 md:p-12">
+        <div className="archive-card border-circus-red/20 p-6 md:p-10">
           <div className="flex flex-col md:flex-row md:items-center gap-6 md:gap-12">
             <div className="flex-1">
-              <div className="font-[JetBrains_Mono] text-xs text-primary border border-primary/30 px-2 py-1 inline-block mb-4">
-                NEW PLAYER
-              </div>
-              <h2 className="font-[Epilogue] text-2xl md:text-3xl font-bold text-foreground mb-4">
+              <div className="font-label text-[0.55rem] text-circus-red mb-4">NEW PLAYER BRIEFING</div>
+              <h2 className="font-heading text-2xl md:text-3xl font-bold text-paper mb-4">
                 Start Here Without Spoilers
               </h2>
-              <p className="text-on-surface-variant text-sm mb-6 leading-relaxed">
-                New to The Freak Circus? This quick-start guide covers what the game is, which route to play first, how long it takes, and what to expect — without revealing story details or ending conditions. For detailed guides and endings, explore the archive after your first playthrough.
+              <p className="text-faint-paper text-sm mb-6 leading-relaxed">
+                New to The Freak Circus? This quick-start guide covers what the game is, which route to play first, how long it takes, and what to expect — without revealing story details or ending conditions.
               </p>
-              <div className="flex flex-wrap gap-4">
-                <Link
-                  href="/characters/pierrot"
-                  className="px-6 py-3 border border-primary text-primary hover:bg-primary hover:text-surface transition-colors font-[JetBrains_Mono] text-sm uppercase"
-                >
-                  Start With Pierrot →
+              <div className="flex flex-wrap gap-3">
+                <Link href="/characters/pierrot" className="btn-archive btn-archive--filled">
+                  START WITH PIERROT
                 </Link>
-                <Link
-                  href="/characters"
-                  className="px-6 py-3 border border-outline/30 text-on-surface-variant hover:border-primary hover:text-primary transition-colors font-[JetBrains_Mono] text-sm uppercase"
-                >
-                  Meet The Cast
+                <Link href="/characters" className="btn-archive btn-archive--ghost">
+                  MEET THE CAST
                 </Link>
               </div>
-              <p className="text-on-surface-variant text-xs mt-4 opacity-60">
-                Note: The rest of this archive contains full spoilers. We recommend completing at least one route before exploring further.
+              <p className="text-dim-paper text-xs mt-4">
+                Note: The rest of this archive contains full spoilers. Complete at least one route before exploring further.
               </p>
             </div>
-            <div className="md:w-64 shrink-0">
-              <div className="space-y-3">
-                <div className="flex items-center gap-3">
-                  <span className="text-primary">■</span>
-                  <span className="text-on-surface-variant text-sm">What type of game is it?</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <span className="text-primary">■</span>
-                  <span className="text-on-surface-variant text-sm">Which route first?</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <span className="text-primary">■</span>
-                  <span className="text-on-surface-variant text-sm">How long is one playthrough?</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <span className="text-primary">■</span>
-                  <span className="text-on-surface-variant text-sm">Is it free to play?</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <span className="text-primary">■</span>
-                  <span className="text-on-surface-variant text-sm">What to expect (no spoilers)</span>
-                </div>
+            <div className="md:w-56 shrink-0">
+              <div className="space-y-2.5">
+                {["What type of game is it?", "Which route first?", "How long is one playthrough?", "Is it free to play?", "What to expect (no spoilers)"].map((q) => (
+                  <div key={q} className="flex items-center gap-2.5">
+                    <span className="text-circus-red text-xs">▸</span>
+                    <span className="text-faint-paper text-sm">{q}</span>
+                  </div>
+                ))}
               </div>
             </div>
           </div>

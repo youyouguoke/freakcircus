@@ -89,7 +89,7 @@ export default function JsonLd() {
             "name": "How many endings are in The Freak Circus?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "The community has confirmed 8 endings across standard, secret, and corrupted categories. Some require specific sequences across multiple playthroughs. The exact total remains unknown."
+              "text": "The community has confirmed 11 endings across standard, secret, and corrupted categories. Some require specific sequences across multiple playthroughs. Total documented: 14."
             }
           },
           {

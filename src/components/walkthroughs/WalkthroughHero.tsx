@@ -8,11 +8,11 @@ export default function WalkthroughHero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/hero-workspace.jpg"
+          src="/hero-corridor.jpg"
           alt="Route Investigation"
-          className="w-full h-full object-cover opacity-15"
+          className="w-full h-full object-cover opacity-45"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-surface/80 via-surface/60 to-surface" />
+        <div className="absolute inset-0 bg-gradient-to-b from-surface/40 via-surface/20 to-surface" />
       </div>
       <div className="max-w-6xl mx-auto w-full relative z-10">
         {/* Archive Labels */}

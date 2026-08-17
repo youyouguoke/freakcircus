@@ -47,8 +47,13 @@ export default function WalkthroughsPage() {
       <Navigation />
 
       {/* Hero */}
-      <section className="pt-28 pb-16 px-4 md:px-16 border-b border-outline/10">
-        <div className="max-w-6xl mx-auto">
+      <section className="pt-28 pb-16 px-4 md:px-16 border-b border-outline/10 relative overflow-hidden">
+        {/* Background image */}
+        <div className="absolute inset-0 z-0">
+          <img src="/hero-corridor.jpg" alt="" className="w-full h-full object-cover opacity-40" aria-hidden="true" />
+          <div className="absolute inset-0 bg-gradient-to-b from-surface/50 via-surface/30 to-surface" />
+        </div>
+        <div className="max-w-6xl mx-auto relative z-10">
           <div className="mb-6">
             <span className="font-mono text-[10px] text-primary uppercase tracking-[0.3em]">
               Walkthrough Hub
