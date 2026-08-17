@@ -15,7 +15,7 @@ import ContinueExploring from "@/components/ContinueExploring";
 
 export const metadata: Metadata = {
   title: "The Freak Circus Lore Encyclopedia — History, Symbols, Timeline & Hidden Meanings",
-  description: "The ultimate story and worldbuilding guide for The Freak Circus. Complete timeline, symbol encyclopedia, character lore connections, historical documents, evidence board, and 25 lore questions answered.",
+  description: "What we know about the story of The Freak Circus. Verified lore, character connections, Day 1 & 2 story elements, and the Columbina legend.",
   keywords: [
     "The Freak Circus lore",
     "The Freak Circus lore encyclopedia",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "The Freak Circus Lore Encyclopedia — History, Symbols, Timeline & Hidden Meanings",
-    description: "The ultimate story and worldbuilding guide for The Freak Circus. Complete timeline, symbol encyclopedia, and 25 lore questions answered.",
+    description: "What we know about the story of The Freak Circus. Verified lore and character connections.",
     type: "website",
     url: "https://freak-circus.com/lore",
     siteName: "Freak Circus Hub",

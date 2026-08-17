@@ -1,85 +1,70 @@
 "use client";
 
-const connections = [
+import Link from "next/link";
+
+const characters = [
   {
-    character: "Pierrot",
-    role: "The Memory Keeper",
-    contradictions: [
-      "Remembers routes the player has not completed (4th playthrough dialogue)",
-      "References events from other routes in his own route",
-      "Post-credits scene changes based on total completion count",
-    ],
-    connections: "Pierrot Loop Theory, Timeline Reset Theory, Red Thread Symbolism",
+    name: "Pierrot",
+    role: "Main Character (Day 1)",
+    desc: "The melancholic clown. Described as yandere — obsessive and possessive. His rivalry with Harlequin is driven by the Columbina legend.",
+    lore: ["Introduced in Day 1 at the cafe/street", "Central to the Pierrot-Harlequin rivalry", "Day 2 tent routes deepen his story"],
+    href: "/characters/pierrot",
   },
   {
-    character: "The Doctor",
-    role: "The Observer",
-    contradictions: [
-      "Describes endings before they occur (precognitive dialogue in Scene 7)",
-      "Medical files reference events from routes he is not in",
-      "Unnamed Open Ending description matches a Unity testing environment",
-    ],
-    connections: "Doctor Awareness Theory, Doctor Created Circus, Unnamed Open Ending Symbolism",
+    name: "Harlequin",
+    role: "Main Character (Day 1)",
+    desc: "The seductive rival. Manipulative and obsessive. Killed Columbina, which drives the central conflict.",
+    lore: ["Introduced in Day 1 as Pierrot's rival", "The 'Missing' bad ending is associated with his route", "The Columbina legend reveals his role in her death"],
+    href: "/characters/harlequin",
   },
   {
-    character: "Harlequin",
-    role: "The Fractured Performer",
-    contradictions: [
-      "Personality changes between aggressive and comedic based on player history",
-      "7 hidden scenes only appear on replay",
-      "Says 'You again' on 4th playthrough regardless of current route",
-    ],
-    connections: "Harlequin Loop Theory, Personality Fracture Theory, Mask Symbolism",
+    name: "The Doctor",
+    role: "Day 2 Character",
+    desc: "Circus physician introduced in Day 2. Appears in tent-based horror scenes alongside Ticket Taker.",
+    lore: ["Introduced in Day 2 tent routes", "One of three new characters added in the Day 2 update", "Community members speculate about hidden knowledge, but this is unverified"],
+    href: "/characters/doctor",
   },
   {
-    character: "Columbina",
-    role: "The Loop Architect",
-    contradictions: [
-      "Hallway gains a 4th door after 3 perfect loops — a door that was always there but invisible",
-      "References player choices from previous loops in current loop dialogue",
-      "Only character whose route requires cross-route completion",
-    ],
-    connections: "Columbina Watches Player Theory, Timeline Reset Theory, Mirror Symbolism",
+    name: "Jester",
+    role: "Day 2 Character",
+    desc: "Storyteller character introduced in Day 2. Part of the tent route content.",
+    lore: ["Introduced in Day 2 alongside Doctor and Ticket Taker", "Described as a storyteller in the tent routes"],
+    href: "/characters/jester",
+  },
+  {
+    name: "Ticket Taker",
+    role: "Day 1-2 Character",
+    desc: "Introduced in Day 1 at the cafe. Expanded role in Day 2 tent routes.",
+    lore: ["First character the player meets in Day 1", "Present in both Day 1 and Day 2 content"],
+    href: "/characters",
   },
 ];
 
 export default function CharacterLoreConnections() {
   return (
-    <section className="bg-surface py-16 px-4 md:px-16 border-t border-outline/10">
+    <section className="py-16 px-4 md:px-16 border-t border-outline/10">
       <div className="max-w-6xl mx-auto">
-        <h2 className="font-[Epilogue] text-2xl md:text-3xl font-bold text-primary mb-4">
-          Character Lore Connections
+        <h2 className="font-display text-2xl md:text-3xl text-primary uppercase tracking-widest mb-4">
+          Character Lore
         </h2>
-        <p className="text-on-surface-variant text-sm mb-8">
-          Each character's role in the timeline, known contradictions, and connections to major lore theories
+        <p className="text-on-surface/50 text-sm mb-8">
+          Each character&apos;s role in the story based on verified community sources.
         </p>
-
-        <div className="grid md:grid-cols-2 gap-6">
-          {connections.map((c) => (
-            <div key={c.character} className="bg-surface-container border border-outline/20 p-6">
-              <div className="flex items-center gap-3 mb-4">
-                <h3 className="font-[Epilogue] text-lg font-bold text-foreground">{c.character}</h3>
-                <span className="font-[JetBrains_Mono] text-xs text-primary border border-primary/30 px-2 py-1">{c.role}</span>
-              </div>
-
-              <div className="space-y-3">
-                <div>
-                  <div className="font-[JetBrains_Mono] text-xs text-primary mb-2">Known Contradictions</div>
-                  <ul className="space-y-1">
-                    {c.contradictions.map((item, i) => (
-                      <li key={i} className="text-on-surface-variant text-sm flex items-start gap-2">
-                        <span className="text-blood mt-1">▸</span>
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <div>
-                  <div className="font-[JetBrains_Mono] text-xs text-primary mb-1">Connected Theories</div>
-                  <p className="text-on-surface-variant text-sm">{c.connections}</p>
-                </div>
-              </div>
-            </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {characters.map((c) => (
+            <Link key={c.name} href={c.href} className="glass-card p-6 hover:border-primary transition-colors">
+              <h3 className="font-display text-lg text-on-surface mb-1">{c.name}</h3>
+              <div className="font-mono text-[9px] text-primary uppercase mb-3">{c.role}</div>
+              <p className="text-on-surface/60 text-sm mb-4">{c.desc}</p>
+              <ul className="space-y-1">
+                {c.lore.map((item, i) => (
+                  <li key={i} className="text-on-surface/50 text-xs flex items-start gap-2">
+                    <span className="text-green-500 mt-0.5">✓</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </Link>
           ))}
         </div>
       </div>

@@ -55,6 +55,32 @@ const nextConfig: NextConfig = {
         destination: "/walkthroughs",
         permanent: true,
       },
+      // Fabricated lore pages → main lore page
+      {
+        source: "/lore/founding-myth",
+        destination: "/lore",
+        permanent: true,
+      },
+      {
+        source: "/lore/first-circus-fire",
+        destination: "/lore",
+        permanent: true,
+      },
+      {
+        source: "/lore/mask-ceremony",
+        destination: "/lore",
+        permanent: true,
+      },
+      {
+        source: "/lore/silent-exit",
+        destination: "/lore",
+        permanent: true,
+      },
+      {
+        source: "/lore/null-performer",
+        destination: "/lore",
+        permanent: true,
+      },
     ];
   },
 };

@@ -1,40 +1,29 @@
-'use client';
-
-const documents = [
-  { id: '001', title: 'Opening Poster', year: '1887', content: "'The Freak Circus — Where the Impossible Becomes the Expected.' First documented poster. No location listed. No performer names. The poster is printed on paper that does not match any known 19th-century manufacturing process." },
-  { id: '002', title: 'Lost Performance Schedule', year: '1892', content: "Schedule lists 12 performances. The 7th performance is crossed out with a red 'X' and the word 'MISSING' written in the margin. The handwriting does not match any known performer's." },
-  { id: '003', title: "Unnamed Open Endings — Patient 001", year: '1917', content: "'Patient reports waking up in a room with no doors. Claims to have been in the circus for three days but calendar shows three years. Patient's memory is consistent but impossible. Recommended: observation, not treatment.'" },
-  { id: '004', title: 'Incident Report — Mirror Hall', year: '1903', content: "'Seven performers entered the Mirror Hall at 11:47 PM. Three exited at 11:48 PM. The other four did not exit. Their costumes were found inside. Their reflections were found in the mirrors. The mirrors were not installed until 1905.'" },
-  { id: '005', title: 'Timeline Fracture Memo', year: '1945', content: "'The circus was not present for 72 hours. When it returned, the performers were different. Pierrot was younger. The Doctor was older. Columbina was the same age but did not recognize anyone. The calendar inside the circus read 1887.'" },
-  { id: '006', title: 'Unnamed Open Ending Description', year: '1987', content: "'A room with no walls, no ceiling, no floor. Only light. And in the center, a chair facing a mirror that shows nothing. The chair is warm. Someone was sitting there. The mirror is cold. No one has ever looked into it and seen their own face.'" },
-];
+"use client";
 
 export default function HistoricalDocuments() {
   return (
-    <section className="bg-archive-black py-20 md:py-28 px-4 md:px-12">
-      <div className="max-w-6xl mx-auto">
-        <div className="font-label text-circus-red text-[0.6rem] mb-3 flex items-center gap-3">
-          <span className="inline-block w-6 h-px bg-circus-red" />
-          RECOVERED RECORDS
-        </div>
-        <h2 className="font-heading text-3xl md:text-4xl font-bold text-paper mb-8">Recovered Circus Records</h2>
-        <p className="text-faint-paper text-sm mb-8 max-w-2xl">
-          Historical documents recovered from The Freak Circus archive — fictional records that form the foundation of the lore.
+    <section className="py-16 px-4 md:px-16 border-t border-outline/10">
+      <div className="max-w-4xl mx-auto">
+        <h2 className="font-display text-2xl text-primary uppercase tracking-widest mb-4">
+          Story Elements
+        </h2>
+        <p className="text-on-surface/50 text-sm mb-8">
+          Key story elements confirmed by community sources.
         </p>
-
         <div className="space-y-4">
-          {documents.map((doc) => (
-            <div key={doc.id} className="archive-card" style={{ borderLeft: '3px solid var(--circus-red)' }}>
-              <div className="flex items-center gap-3 mb-3">
-                <span className="font-label text-[0.55rem] px-2 py-0.5 text-circus-red border border-circus-red/30 bg-circus-red/8">
-                  DOC-{doc.id}
-                </span>
-                <span className="font-label text-[0.55rem] text-faint-paper">{doc.year}</span>
-                <span className="font-heading text-sm font-bold text-paper">{doc.title}</span>
+          {[
+            { title: "The Cafe (Day 1)", desc: "The starting location where the player receives the pink ticket and first encounters the circus world." },
+            { title: "The Circus Entrance", desc: "Where the Ticket Taker welcomes the player. This transition marks the shift from normal life to the circus." },
+            { title: "The Tent Routes (Day 2)", desc: "Day 2's branching content is structured around different tents, each containing different character stories." },
+            { title: "The Mirror Scene (Day 2)", desc: "A key story moment confirmed by multiple YouTube playthroughs. Its narrative significance is still being discussed." },
+            { title: "The Columbina Legend (Day 2)", desc: "The central piece of confirmed lore — explains why Pierrot and Harlequin are rivals." },
+          ].map((doc, i) => (
+            <div key={i} className="glass-card p-5 flex items-start gap-4">
+              <span className="font-mono text-xs text-primary shrink-0 w-6">{String(i + 1).padStart(2, '0')}</span>
+              <div>
+                <h3 className="font-display text-sm text-on-surface mb-1">{doc.title}</h3>
+                <p className="text-on-surface/50 text-xs">{doc.desc}</p>
               </div>
-              <p className="text-faint-paper text-sm italic leading-relaxed">
-                &ldquo;{doc.content}&rdquo;
-              </p>
             </div>
           ))}
         </div>
