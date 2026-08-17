@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import JsonLd from "@/components/JsonLd";
 import ContinueExploring from "@/components/ContinueExploring";
 import Link from "next/link";
+import UnverifiedBanner from "@/components/UnverifiedBanner";
 import { ENDINGS_SUMMARY } from "@/lib/site-facts";
 
 export const metadata: Metadata = {
@@ -96,6 +97,11 @@ export default function WalkthroughsPage() {
           </div>
         </div>
       </section>
+
+      {/* Unverified Content Banner */}
+      <div className="max-w-6xl mx-auto px-4 md:px-16 pt-4">
+        <UnverifiedBanner level="medium" />
+      </div>
 
       {/* Four Big Cards */}
       <section className="py-12 px-4 md:px-16">

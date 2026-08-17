@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import UnverifiedBanner from "@/components/UnverifiedBanner";
 import CharactersHero from "@/components/characters/CharactersHero";
 import CharacterCards from "@/components/characters/CharacterCards";
 import CharacterRelationships from "@/components/characters/CharacterRelationships";
@@ -74,6 +75,9 @@ export default function CharactersPage() {
     <main className="min-h-screen bg-surface">
       <Navigation />
       <CharactersHero />
+      <div className="max-w-6xl mx-auto px-4 md:px-16 pt-4">
+        <UnverifiedBanner level="medium" />
+      </div>
       <CharacterCards />
       <CharacterRelationships />
       <CharacterPopularity />

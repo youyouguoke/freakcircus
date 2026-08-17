@@ -15,17 +15,14 @@ import EndingTableOfContents from "@/components/endings/EndingTableOfContents";
 import ArchiveIndex from "@/components/home/ArchiveIndex";
 import JsonLd from "@/components/JsonLd";
 import ContinueExploring from "@/components/ContinueExploring";
-import { ENDINGS_CONFIRMED, ENDINGS_UNVERIFIED, ENDINGS_TOTAL, SINGLE_ROUTE_HOURS, TOTAL_COMPLETION_HOURS } from "@/lib/site-facts";
+import UnverifiedBanner from "@/components/UnverifiedBanner";
+import { ENDINGS_CONFIRMED, ENDINGS_BAD, ENDINGS_OPEN, ENDINGS_TOTAL, SINGLE_ROUTE_HOURS, TOTAL_COMPLETION_HOURS } from "@/lib/site-facts";
 
 const endingsFaqData = [
-  { question: "How many endings are there in Freak Circus?", answer: "The community has confirmed 11 endings including Grand Finale, Smile For Me, Doctor's Note, Eternal Silence, Columbina's Truth, Harlequin's Laughter, Fractured Ending, Medical Failure, and Eternal Dance. Additionally, 3 endings remain unverified: White Room, Corrupted Data, and Null Route. Total: 14 documented." },
-  { question: "What is the true ending of Freak Circus?", answer: "No single ending is universally accepted as the true ending. Columbina's Truth is widely considered the closest because it reveals the circus's origin, but this remains unverified by the developer." },
-  { question: "How to unlock Pierrot secret ending Eternal Silence?", answer: "Refuse all dialogue for three consecutive scenes in Act III. The screen remains black for 4 minutes before credits roll. Post-credits narration references previous playthroughs." },
-  { question: "Can you get all endings in one playthrough?", answer: "No. Several endings require replay awareness and cross-route dependencies. The game tracks history using a hidden counter at offset 0x4A20. Columbina's Truth requires 3 perfect loops." },
-  { question: "What is the hardest ending to unlock?", answer: "Columbina's Truth requires perfect alignment across three loops with no mistakes. Corrupted Data may be impossible to unlock legitimately." },
-  { question: "Which ending should I get first?", answer: "Start with Grand Finale (Harlequin route) or Smile For Me (Pierrot route). These are canon endings with no special requirements." },
-  { question: "Do endings change after replaying?", answer: "Yes. Four endings require replay awareness: Eternal Silence, Columbina's Truth, Doctor's Note, and Harlequin's Laughter. Pierrot's dialogue changes after repeated playthroughs." },
-  { question: "How long does it take to get all endings?", answer: `All ${ENDINGS_CONFIRMED} confirmed endings require ${TOTAL_COMPLETION_HOURS} including multiple playthroughs. Columbina's Truth alone needs 3 perfect loops at 4+ hours each.` },
+  { question: "How many endings are there in Freak Circus?", answer: `The confirmed count is ${ENDINGS_TOTAL} endings: ${ENDINGS_BAD} bad ending ("Missing") and ${ENDINGS_OPEN} open endings. Additional ending names and details below are based on community reports and have not been independently verified.` },
+  { question: "What is the true ending of Freak Circus?", answer: "No single ending is universally accepted as the true ending. The developer has not confirmed a canonical ending." },
+  { question: "What is the confirmed bad ending?", answer: "\"Missing\" is the only independently confirmed ending. It is a Bad Ending triggered during Day 2." },
+  { question: "How long does it take to get all endings?", answer: `Playtime estimates are not yet confirmed. The game has ${ENDINGS_TOTAL} confirmed endings total.` },
 ];
 
 const endingsJsonLd = {
@@ -94,6 +91,9 @@ export default function EndingsPage() {
       <Navigation />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(endingsJsonLd) }} />
       <EndingsHero />
+      <div className="max-w-6xl mx-auto px-4 md:px-16 pt-4">
+        <UnverifiedBanner level="high" />
+      </div>
       {/* Step-by-step guides banner */}
       <section className="bg-surface py-8 px-4 md:px-16 border-t border-outline/10">
         <div className="max-w-6xl mx-auto flex flex-wrap gap-4">

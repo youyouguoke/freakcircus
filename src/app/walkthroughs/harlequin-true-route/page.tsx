@@ -31,7 +31,7 @@ export default function Page() {
           <div className="space-y-12">
             <section>
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Overview</h2>
-              <p className="text-on-surface-variant text-sm whitespace-pre-line">Harlequin's True Route is the aggressive path through her storyline. Unlike the standard route, which focuses on her playful exterior, the True Route reveals her dangerous obsession with the player. It requires selecting all confrontational dialogue options, which unlocks 7 hidden scenes that only appear on replay. The route culminates in the Grand Finale ending, which is considered a 'bad' ending but contains the most lore about the circus's founding.</p>
+              <p className="text-on-surface-variant text-sm whitespace-pre-line">Harlequin's True Route is the aggressive path through his storyline. Unlike the standard route, which focuses on his playful exterior, the True Route reveals his dangerous obsession with the player. It requires selecting all confrontational dialogue options, which unlocks 7 hidden scenes that only appear on replay. The route culminates in the Grand Finale ending, which is considered a 'bad' ending but contains the most lore about the circus's founding.</p>
             </section>
             <section>
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Requirements</h2>
@@ -43,9 +43,9 @@ export default function Page() {
             </section>
             <section>
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Step-by-Step Guide</h2>
-              <p className="text-on-surface-variant text-sm whitespace-pre-line">Act I — The Welcome (Scenes 1-4): Harlequin greets you with her usual playful demeanor. Select aggressive responses to her jokes. In Scene 3, she asks if you're afraid of her. Answer: 'Yes, I should be.'
+              <p className="text-on-surface-variant text-sm whitespace-pre-line">Act I — The Welcome (Scenes 1-4): Harlequin greets you with his usual playful demeanor. Select aggressive responses to her jokes. In Scene 3, she asks if you're afraid of her. Answer: 'Yes, I should be.'
 
-Act II — The Performance (Scenes 5-8): Continue selecting aggressive options. In Scene 6, Harlequin reveals her knife collection. The aggressive response ('Show me how you use them') unlocks a hidden scene on replay.
+Act II — The Performance (Scenes 5-8): Continue selecting aggressive options. In Scene 6, Harlequin reveals his knife collection. The aggressive response ('Show me how you use them') unlocks a hidden scene on replay.
 
 Act III — The Confession (Scenes 9-12): Harlequin's demeanor changes. She becomes possessive and controlling. In Scene 11, she locks the door. The aggressive response ('Break the door down') is the only way to proceed.
 
@@ -71,7 +71,7 @@ Finale (Scene 13-14): The ending depends on whether you selected ALL aggressive 
             </section>
             <section>
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Ending Outcome</h2>
-              <p className="text-on-surface-variant text-sm whitespace-pre-line">The Grand Finale ending shows Harlequin performing a solo act in a burning circus tent. The audience is revealed to be mannequins. As the fire spreads, Harlequin continues performing, looking directly at the player. The final image is her smile reflected in a cracked mirror. The credits roll over the sound of fire crackling. This ending is considered 'bad' because Harlequin dies in the fire, but it reveals the most lore about the circus's founding myth.</p>
+              <p className="text-on-surface-variant text-sm whitespace-pre-line">The Grand Finale ending shows Harlequin performing a solo act in a burning circus tent. The audience is revealed to be mannequins. As the fire spreads, Harlequin continues performing, looking directly at the player. The final image is his smile reflected in a cracked mirror. The credits roll over the sound of fire crackling. This ending is considered 'bad' because Harlequin dies in the fire, but it reveals the most lore about the circus's founding myth.</p>
             </section>
 
             <section>

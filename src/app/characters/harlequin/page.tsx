@@ -7,7 +7,7 @@ import HarlequinClient from "./HarlequinClient";
 
 export const metadata: Metadata = {
   title: "Harlequin — Character Profile, Route Guide & Hidden Scenes | Freak Circus Hub",
-  description: "Complete Harlequin character analysis for The Freak Circus. Covers her chaotic performer persona, fractured route unlock conditions, hidden scenes, and the \'You again\' replay dialogue.",
+  description: "Complete Harlequin character analysis for The Freak Circus. Covers his chaotic performer persona, fractured route unlock conditions, hidden scenes, and the \'You again\' replay dialogue.",
   keywords: ["Harlequin", "The Freak Circus Harlequin", "Harlequin route guide", "chaotic performer", "fractured route", "hidden scenes"],
   openGraph: { title: "Harlequin — Character Profile, Route Guide & Hidden Scenes", description: "Complete Harlequin character analysis, fractured route walkthrough, hidden scenes, and replay-aware mechanics.", type: "article", url: "https://freak-circus.com/characters/harlequin" },
   alternates: { canonical: "https://freak-circus.com/characters/harlequin" },

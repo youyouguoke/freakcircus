@@ -50,7 +50,7 @@ const files = [
   {
     type: "Lore",
     title: "Columbina Timeline — Chronological Breakdown of Hidden Clues",
-    shortDesc: "Chronological breakdown of events, symbols, and hidden clues in her storyline.",
+    shortDesc: "Chronological breakdown of events, symbols, and hidden clues in his storyline.",
     fullDesc: "Columbina, the ballerina of The Freak Circus, appears gentle and refined at first. Her route contains disturbing revelations about the circus's true nature and plays a key role in understanding the overall timeline. This chronological analysis traces every hidden clue across her three-loop storyline: the changing hallway architecture, the fourth door that appears only after perfect alignment, the memory fragments that reference events from other routes, and the final revelation that suggests Columbina may be the only character who truly understands the circus. Includes: scene-by-scene analysis, symbol interpretation (red thread, mirrors, stage curtains), and connection to the Loop Theory.",
     href: "/lore",
     related: [

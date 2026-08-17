@@ -3,11 +3,12 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import ContinueExploring from "@/components/ContinueExploring";
 import Link from "next/link";
-import { ENDINGS_CONFIRMED, TOTAL_COMPLETION_HOURS } from "@/lib/site-facts";
+import UnverifiedBanner from "@/components/UnverifiedBanner";
+import { ENDINGS_CONFIRMED, ENDINGS_BAD, ENDINGS_OPEN, ENDINGS_TOTAL } from "@/lib/site-facts";
 
 export const metadata: Metadata = {
   title: "All Endings Guide — Freak Circus Complete Ending Walkthrough (2026)",
-  description: "Step-by-step guide to unlock every ending in The Freak Circus. Covers all 14 endings: Grand Finale, Smile For Me, Doctor's Note, Eternal Silence, Columbina's Truth, White Room, Corrupted Data, and Harlequin's Laughter. Requirements, choices, and tips.",
+  description: `Guide to all confirmed endings in The Freak Circus. ${ENDINGS_TOTAL} endings confirmed: ${ENDINGS_BAD} bad ending ("Missing") and ${ENDINGS_OPEN} open endings. Community-reported ending names and unlock conditions below.`,
   keywords: [
     "Freak Circus all endings",
     "Freak Circus endings guide",
@@ -163,7 +164,7 @@ const faqData = [
   { question: "What is the easiest ending?", answer: "Grand Finale (Harlequin) and Smile For Me (Pierrot) are the easiest — both achievable on first playthrough with no special conditions." },
   { question: "What is the hardest ending?", answer: "Columbina's Truth requires perfect alignment across 3 loops with zero mistakes. Any deviation resets to Loop 1." },
   { question: "Do endings affect each other?", answer: "Yes. A hidden counter at offset 0x4A20 tracks your completion history. Some endings only become available after seeing others first." },
-  { question: "How long to get all endings?", answer: `${TOTAL_COMPLETION_HOURS} for all ${ENDINGS_CONFIRMED} confirmed endings. Columbina's Truth alone takes 12+ hours across 3 loops.` },
+  { question: "How long to get all endings?", answer: `Playtime estimates are not yet confirmed. The game has ${ENDINGS_TOTAL} confirmed endings total.` },
 ];
 
 const jsonLd = {
@@ -199,6 +200,9 @@ export default function AllEndingsGuidePage() {
     <main className="min-h-screen">
       <Navigation />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <div className="max-w-5xl mx-auto px-4 md:px-16 pt-4">
+        <UnverifiedBanner level="high" />
+      </div>
 
       <article className="bg-surface pt-8 pb-16 px-4 md:px-16">
         <div className="max-w-5xl mx-auto">

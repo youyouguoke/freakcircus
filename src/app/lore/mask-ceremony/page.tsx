@@ -56,7 +56,7 @@ export default function Page() {
             <section>
               <h2 className="font-[Epilogue] text-2xl font-bold text-foreground mb-4">Related Endings</h2>
               <p className="text-on-surface-variant text-sm whitespace-pre-line">• Eternal Silence: Pierrot's mask cracks in the final scene, revealing nothing beneath.
-• Grand Finale: Harlequin's mask burns with the circus, suggesting her identity is tied to the location.
+• Grand Finale: Harlequin's mask burns with the circus, suggesting his identity is tied to the location.
 • Columbina's Truth: The mirror shows the player wearing Columbina's mask.</p>
             </section>
             <section>

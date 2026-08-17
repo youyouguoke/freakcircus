@@ -35,7 +35,7 @@ const characters = [
     routeTheme: "Fractured identity, comedic vs aggressive choices",
     popularity: "Second most popular, known for hidden scenes",
     mystery: "Says 'You again' on 4th playthrough — line not found in script files",
-    background: "Harlequin performs on a stage that changes architecture between scenes. Her dialogue shifts unpredictably between playful and menacing, creating a sense that she is not fully in control of her own narrative. The community has identified 7 undocumented hidden scenes in her route, each requiring specific failure conditions to unlock.",
+    background: "Harlequin performs on a stage that changes architecture between scenes. His dialogue shifts unpredictably between playful and menacing, creating a sense that she is not fully in control of her own narrative. The community has identified 7 undocumented hidden scenes in her route, each requiring specific failure conditions to unlock.",
     endings: [
       { name: "Grand Finale", type: "Standard", desc: "Complete the Harlequin route with standard dialogue choices." },
       { name: "Harlequin's Laughter", type: "Joke", desc: "Select every comedic option in a single playthrough." },
