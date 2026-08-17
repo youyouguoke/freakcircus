@@ -5,11 +5,11 @@ const faqs = [
   },
   {
     q: "What is the confirmed ending?",
-    a: "\"Missing\" is the only independently confirmed ending. It is a Bad Ending that triggers when trust thresholds are not met by the end of Day 2. The player character goes missing and is never found.",
+    a: "\"Missing\" is the only independently confirmed ending. It is a Bad Ending associated with Harlequin's route. Community reports describe it as an ending where the player character goes missing. Specific trigger conditions have not been independently verified.",
   },
   {
     q: "Are there secret or hidden endings?",
-    a: "No secret or hidden endings have been verified. Claims about secret endings (such as 'Open Ending C (unnamed)' or 'Open Ending A (unnamed)') are unconfirmed community speculation and have no external source backing them.",
+    a: "No secret or hidden endings have been verified. The developer confirmed 3 open endings exist, but has not named them. Any specific ending names you may see online are unconfirmed community speculation.",
   },
   {
     q: "What about the 3 open endings?",

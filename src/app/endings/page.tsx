@@ -41,7 +41,7 @@ const endingsJsonLd = {
 
 export const metadata: Metadata = {
   title: "Freak Circus Endings Guide (2026) | All Endings, Routes, Requirements & Explained",
-  description: "Complete Freak Circus endings guide. All 14 endings explained: unlock conditions, step-by-step walkthroughs, requirements, rewards, and fan interpretations. Covers Pierrot, Harlequin, Doctor, and Columbina endings.",
+  description: "Freak Circus endings guide. 4 endings confirmed: 1 bad ending (Missing) and 3 unnamed open endings. Only Missing has been verified by name.",
   keywords: [
     "Freak Circus endings",
     "Freak Circus endings guide",
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "Freak Circus Endings Guide (2026) | All Endings, Routes, Requirements & Explained",
-    description: "Complete Freak Circus endings guide. All 14 endings explained with unlock conditions, walkthroughs, and requirements.",
+    description: "Freak Circus endings guide. 4 endings confirmed: 1 bad ending (Missing) and 3 unnamed open endings.",
     type: "website",
     url: "https://freak-circus.com/endings",
     siteName: "Freak Circus Hub",
@@ -78,7 +78,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Freak Circus Endings Guide (2026) | All Endings, Routes, Requirements & Explained",
-    description: "Complete Freak Circus endings guide. All endings, routes, requirements, and explained.",
+    description: "Freak Circus endings guide. 4 endings confirmed — only Missing verified by name.",
   },
   alternates: {
     canonical: "https://freak-circus.com/endings",

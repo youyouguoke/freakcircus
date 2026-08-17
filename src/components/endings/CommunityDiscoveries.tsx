@@ -2,76 +2,50 @@
 
 const discoveries = [
   {
-    title: "Replay-Aware Dialogue",
-    author: "u/loop_hunter",
-    votes: 342,
-    desc: "Players noticed Pierrot reacts differently after repeated replays. On the 4th playthrough, he references events from previous routes that the player never selected.",
-    tags: ["Verified", "Pierrot", "Replay"],
-    sourceUrl: "https://www.reddit.com/r/visualnovels/",
+    title: "Missing Ending Confirmed",
+    desc: "Community verification through thefreakcircus.wiki.gg confirmed 'Missing' as the only named ending in the game.",
+    tags: ["Confirmed", "Bad Ending"],
+    source: "thefreakcircus.wiki.gg",
   },
   {
-    title: "Precognitive Doctor",
-    author: "u/medical_archive",
-    votes: 287,
-    desc: "The Doctor references endings before they occur. In Scene 7, he describes the \'Unnamed Open Ending\' ending in detail — three routes before it becomes accessible.",
-    tags: ["Verified", "The Doctor", "Timeline"],
-    sourceUrl: "https://www.reddit.com/r/horrorgaming/",
+    title: "4 Total Endings",
+    desc: "thefreakcircus.org confirms the game has '1 bad ending and 3 open endings with more planned in future updates.'",
+    tags: ["Confirmed", "Developer Statement"],
+    source: "thefreakcircus.org",
   },
   {
-    title: "Silence Changes Dialogue",
-    author: "u/void_walker",
-    votes: 198,
-    desc: "Some route dialogue changes after staying silent for multiple scenes. Columbina\'s Scene 12 greeting becomes increasingly distressed if you refuse to respond.",
-    tags: ["Under Investigation", "Columbina", "Mechanics"],
-    sourceUrl: "https://www.reddit.com/r/visualnovels/",
+    title: "Day 2 Mirror Scene",
+    desc: "Multiple YouTube playthroughs confirm the Mirror Scene exists in Day 2. It appears to be a key story moment.",
+    tags: ["Confirmed", "Day 2"],
+    source: "YouTube (240K+ views)",
   },
   {
-    title: "Save File Hex Patterns",
-    author: "u/data_miner_99",
-    votes: 156,
-    desc: "Comparing save files across 50 playthroughs reveals a hidden counter at offset 0x4A20. Value increments on every route completion. Purpose unknown.",
-    tags: ["Technical", "Files", "Unverified"],
-    sourceUrl: "https://www.reddit.com/r/visualnovels/",
+    title: "Columbina is Dead",
+    desc: "Community sources confirm Columbina is a deceased character (killed by Harlequin), not a playable route.",
+    tags: ["Confirmed", "Lore"],
+    source: "thefreakcircus.org, wiki.gg",
   },
 ];
 
 export default function CommunityDiscoveries() {
   return (
-    <section className="bg-surface py-16 px-4 md:px-16 border-t border-outline/10">
+    <section className="py-16 px-4 md:px-16 border-t border-outline/10">
       <div className="max-w-6xl mx-auto">
-        <h2 className="font-[Epilogue] text-2xl md:text-3xl font-bold text-primary mb-8">
-          Player-Reported Ending Discoveries
+        <h2 className="font-display text-2xl text-primary uppercase tracking-widest mb-8">
+          Community Discoveries
         </h2>
-
         <div className="grid md:grid-cols-2 gap-6">
           {discoveries.map((d, i) => (
-            <div key={i} className="bg-surface-container border border-outline/20 p-6">
-              <div className="flex justify-between items-start mb-2">
-                <h3 className="font-[Epilogue] text-lg font-bold text-foreground">{d.title}</h3>
-                <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant">
-                  Submitted by {d.author}
+            <div key={i} className="glass-card p-6">
+              <h3 className="font-display text-lg text-on-surface mb-2">{d.title}</h3>
+              <p className="text-on-surface/60 text-sm mb-3">{d.desc}</p>
+              <div className="flex items-center justify-between">
+                <div className="flex gap-2">
+                  {d.tags.map((tag) => (
+                    <span key={tag} className="font-mono text-[9px] text-green-500 bg-green-900/20 px-2 py-0.5 uppercase">{tag}</span>
+                  ))}
                 </div>
-              </div>
-              <div className="flex items-center gap-3 mb-3">
-                <span className="font-[JetBrains_Mono] text-xs text-primary">
-                  ▲ {d.votes}
-                </span>
-                <a
-                  href={d.sourceUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-[JetBrains_Mono] text-xs text-on-surface-variant opacity-60 hover:text-primary hover:opacity-100 transition-colors"
-                >
-                  Source thread ↗
-                </a>
-              </div>
-              <p className="text-on-surface-variant text-sm mb-4">{d.desc}</p>
-              <div className="flex flex-wrap gap-2">
-                {d.tags.map((tag) => (
-                  <span key={tag} className="font-[JetBrains_Mono] text-xs px-2 py-1 border border-outline/30 text-on-surface-variant">
-                    {tag}
-                  </span>
-                ))}
+                <span className="font-mono text-[8px] text-on-surface/30">{d.source}</span>
               </div>
             </div>
           ))}

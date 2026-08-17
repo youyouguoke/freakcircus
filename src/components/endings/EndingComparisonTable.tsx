@@ -25,7 +25,7 @@ export default function EndingComparisonTable() {
                   <span className="font-[JetBrains_Mono] text-xs px-2 py-1 border border-blood text-blood">Bad Ending</span>
                 </td>
                 <td className="p-3 text-on-surface-variant text-xs">
-                  Trust thresholds not met by end of Day 2. Player character goes missing.
+                  Associated with Harlequin's route. Player character goes missing. Specific trigger conditions unverified.
                 </td>
                 <td className="p-3 text-on-surface-variant text-xs">
                   thefreakcircus.wiki, YouTube, thefreakcircus.org

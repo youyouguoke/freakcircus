@@ -7,7 +7,7 @@ const endings = [
     type: "BAD ENDING",
     difficulty: "Unknown",
     status: "confirmed",
-    desc: "The player character goes missing and is never found. This ending occurs when specific trust thresholds are not met by the end of Day 2.",
+    desc: "The player character goes missing and is never found. Associated with Harlequin's route. Specific trigger conditions have not been independently verified.",
     href: "#",
     source: "thefreakcircus.wiki (verified May 2026)",
   },

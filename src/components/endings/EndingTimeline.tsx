@@ -1,48 +1,25 @@
 "use client";
 
-const timeline = [
-  { year: "2024", events: [
-    "Open Ending A (unnamed) discovered — first confirmed ending on Harlequin route",
-    "Open Ending B (unnamed) documented — standard Pierrot ending",
-  ]},
-  { year: "2025", events: [
-    "Open Ending C (unnamed) documented — Pierrot secret ending requiring silence mechanics",
-    "Unnamed Open Ending confirmed — requires finding 5 hidden medical files",
-    "Unnamed Open Ending discovered — joke ending from comedic choices",
-    "Unnamed Open Ending mentioned in patch notes 1.03 — conditions unknown",
-  ]},
-  { year: "2026", events: [
-    "Unnamed Open Ending verified — three-loop perfection requirement confirmed",
-    "Unnamed Open Ending rumor appears — found in build 1.04 files",
-    "Unnamed Open Ending discovered in data mining — branch with no characters",
-    "Hidden counter at 0x4A20 documented — affects ending availability",
-  ]},
+const events = [
+  { date: "2024", event: "The Freak Circus initial release — Day 1 content available" },
+  { date: "2024-25", event: "Day 2 update released — adds tent routes, new characters (Jester, Doctor, Ticket Taker), Columbina legend" },
+  { date: "2025", event: "Community confirms 'Missing' as the bad ending name (thefreakcircus.wiki.gg)" },
+  { date: "2025-26", event: "thefreakcircus.org confirms '1 bad ending and 3 open endings'" },
+  { date: "2026", event: "Day 3 planned but not yet released" },
 ];
 
 export default function EndingTimeline() {
   return (
-    <section className="bg-surface py-16 px-4 md:px-16 border-t border-outline/10">
-      <div className="max-w-4xl mx-auto">
-        <h2 className="font-[Epilogue] text-2xl md:text-3xl font-bold text-primary mb-4">
-          Ending Discovery Timeline
+    <section className="py-16 px-4 md:px-16 border-t border-outline/10">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="font-display text-2xl text-primary uppercase tracking-widest mb-8">
+          Timeline
         </h2>
-        <p className="text-on-surface-variant text-sm mb-8">
-          How the community documented each ending over two years of testing
-        </p>
-
-        <div className="space-y-8">
-          {timeline.map((t) => (
-            <div key={t.year} className="flex gap-6">
-              <div className="font-[Creepster] text-2xl text-primary w-20 shrink-0">
-                {t.year}
-              </div>
-              <div className="space-y-3">
-                {t.events.map((e, i) => (
-                  <div key={i} className="bg-surface-container border border-outline/20 p-4">
-                    <p className="text-on-surface-variant text-sm">{e}</p>
-                  </div>
-                ))}
-              </div>
+        <div className="space-y-4">
+          {events.map((e, i) => (
+            <div key={i} className="flex items-start gap-4">
+              <span className="font-mono text-xs text-primary shrink-0 w-20">{e.date}</span>
+              <span className="text-on-surface/60 text-sm">{e.event}</span>
             </div>
           ))}
         </div>
