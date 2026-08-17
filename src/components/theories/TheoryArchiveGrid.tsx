@@ -1,119 +1,100 @@
-'use client';
+"use client";
+
+import Link from "next/link";
 
 const theories = [
   {
-    id: 'THEORY_07', title: 'Pierrot Remembers Every Loop', category: 'Timeline Theory',
-    status: 'confirmed', confidence: 82, evidence: 5, contradictions: 2,
-    character: 'Pierrot', desc: 'Evidence suggests Pierrot reacts differently after repeated failed endings, retaining knowledge across timelines. On the 4th playthrough, he references choices from previous routes that the player never selected in the current save.',
-    tags: ['Obsession', 'Replay Awareness', 'Narrative Corruption'],
+    id: "T_01",
+    title: "Pierrot and Harlequin Are Mirrors",
+    status: "SPECULATION",
+    confidence: 0,
+    character: "Pierrot / Harlequin",
+    desc: "Some fans theorize that Pierrot and Harlequin represent two sides of the same personality — one internalizes pain, the other externalizes it. The Columbina legend in Day 2 provides some support for this, but it remains unverified speculation.",
+    tags: ["Character Theory", "Unverified"],
+    evidence: 0,
   },
   {
-    id: 'THEORY_11', title: 'The Doctor Is The Observer', category: 'Character Theory',
-    status: 'likely', confidence: 67, evidence: 4, contradictions: 3,
-    character: 'The Doctor', desc: 'The Doctor may be aware of the player directly, breaking the fourth wall through clinical observations. His Scene 7 description of the Unnamed Open Ending ending matches unused files found in build 1.04.',
-    tags: ['Meta', 'Fourth Wall', 'Manipulation'],
+    id: "T_02",
+    title: "The Circus Is a Loop",
+    status: "SPECULATION",
+    confidence: 0,
+    character: "All",
+    desc: "Some players believe the game's structure (Day 1 → Day 2 → endings → replay) suggests a narrative loop. Whether this is a game mechanic or an in-universe phenomenon is unknown. No official source has confirmed or denied this.",
+    tags: ["Meta Theory", "Unverified"],
+    evidence: 0,
   },
   {
-    id: 'THEORY_09', title: 'Columbina\'s Memory Is The Key', category: 'Memory Theory',
-    status: 'confirmed', confidence: 78, evidence: 4, contradictions: 2,
-    character: 'Columbina', desc: 'Columbina\'s fragmented recollections may hold the true nature of the circus and its looping structure. Her three-loop storyline mirrors the game\'s overall narrative architecture.',
-    tags: ['Memory', 'Revelation', 'Purgatory'],
+    id: "T_03",
+    title: "Columbina's Death Drives Everything",
+    status: "PARTIALLY VERIFIED",
+    confidence: 60,
+    character: "Columbina",
+    desc: "The Columbina legend is confirmed to exist in Day 2 and explains the rivalry between Pierrot and Harlequin. However, the specific details of her death and its narrative significance beyond the rivalry have not been independently verified.",
+    tags: ["Lore Theory", "Partially Verified"],
+    evidence: 2,
   },
   {
-    id: 'THEORY_03', title: 'The Circus Does Not Exist', category: 'Meta Theory',
-    status: 'unverified', confidence: 58, evidence: 4, contradictions: 3,
-    character: 'All', desc: 'Some players believe the circus is not a physical location but a fragmented psychological space shared across collapsing timelines. Map geometry changes between routes.',
-    tags: ['Meta', 'Psychological', 'Simulation'],
+    id: "T_04",
+    title: "The Doctor Knows More Than He Shows",
+    status: "SPECULATION",
+    confidence: 0,
+    character: "The Doctor",
+    desc: "Community members speculate that The Doctor has meta-awareness of the game's events. This is based on his role as an observer in Day 2 content. No specific dialogue or game data has been verified to support fourth-wall-breaking behavior.",
+    tags: ["Character Theory", "Unverified"],
+    evidence: 0,
   },
   {
-    id: 'THEORY_12', title: 'Harlequin\'s Fourth Wall Break', category: 'Character Theory',
-    status: 'likely', confidence: 71, evidence: 3, contradictions: 1,
-    character: 'Harlequin', desc: 'Harlequin\'s "You again" line on the 4th playthrough is not found in any script file. She may be the most aware character after Pierrot, with her own form of loop memory.',
-    tags: ['Fourth Wall', 'Replay', 'Hidden Dialogue'],
+    id: "T_05",
+    title: "The 3 Open Endings Form a Pattern",
+    status: "SPECULATION",
+    confidence: 0,
+    character: "All",
+    desc: "With 3 unnamed open endings confirmed to exist, some fans theorize they represent different thematic responses to the circus (acceptance, rejection, transcendence). This is pure speculation — the endings have not been named or described by any official source.",
+    tags: ["Ending Theory", "Unverified"],
+    evidence: 0,
   },
   {
-    id: 'THEORY_15', title: 'Red Thread Connects All Routes', category: 'Symbol Theory',
-    status: 'confirmed', confidence: 85, evidence: 7, contradictions: 1,
-    character: 'All', desc: 'The red thread appears in every character route and seems to physically connect characters across timelines. Cutting the thread in one route affects dialogue in others.',
-    tags: ['Symbol', 'Connection', 'Foreshadowing'],
+    id: "T_06",
+    title: "Day 3 Will Reveal the Truth",
+    status: "SPECULATION",
+    confidence: 0,
+    character: "All",
+    desc: "Day 3 is confirmed to be planned but unreleased. Some fans expect it to resolve unanswered questions from Day 1 and 2. The developer has described it as featuring 'higher stakes, tighter route locks, and payoffs for choices.'",
+    tags: ["Future Content", "Unverified"],
+    evidence: 0,
   },
 ];
 
-function StatusPill({ status }: { status: string }) {
-  const map: Record<string, { c: string; b: string; bd: string }> = {
-    confirmed: { c: 'var(--status-confirmed)', b: 'rgba(76,175,110,0.08)', bd: 'rgba(76,175,110,0.3)' },
-    likely: { c: 'var(--status-likely)', b: 'rgba(196,154,60,0.08)', bd: 'rgba(196,154,60,0.3)' },
-    unverified: { c: 'var(--status-unverified)', b: 'rgba(138,128,120,0.08)', bd: 'rgba(138,128,120,0.3)' },
-    corrupted: { c: 'var(--status-corrupted)', b: 'rgba(179,58,53,0.08)', bd: 'rgba(179,58,53,0.3)' },
-  };
-  const s = map[status] || map.unverified;
-  return (
-    <span className="font-label text-[0.5rem] px-2 py-0.5" style={{ color: s.c, border: `1px solid ${s.bd}`, background: s.b }}>
-      {status.toUpperCase()}
-    </span>
-  );
-}
-
-function CharacterTag({ name }: { name: string }) {
-  const colors: Record<string, string> = {
-    Pierrot: 'var(--pierrot)', Harlequin: 'var(--harlequin)', 'The Doctor': 'var(--doctor)',
-    Columbina: 'var(--columbina)', Jester: 'var(--jester)', 'Ticket Taker': 'var(--ticket-taker)', All: 'var(--muted-paper)',
-  };
-  const c = colors[name] || 'var(--muted-paper)';
-  return (
-    <span className="font-label text-[0.5rem] px-2 py-0.5" style={{ color: c, border: `1px solid ${c}33`, background: `${c}0D` }}>
-      {name}
-    </span>
-  );
-}
-
 export default function TheoryArchiveGrid() {
   return (
-    <section className="bg-void-black py-20 md:py-28 px-4 md:px-12">
+    <section className="py-16 px-4 md:px-16 border-t border-outline/10">
       <div className="max-w-6xl mx-auto">
-        <div className="font-label text-circus-red text-[0.6rem] mb-3 flex items-center gap-3">
-          <span className="inline-block w-6 h-px bg-circus-red" />
-          ALL THEORIES
-        </div>
-        <h2 className="font-heading text-3xl md:text-4xl font-bold text-paper mb-8">Theory Database</h2>
+        <h2 className="font-display text-2xl md:text-3xl text-primary uppercase tracking-widest mb-4">
+          Community Theories
+        </h2>
+        <p className="text-on-surface/50 text-sm mb-8 max-w-2xl">
+          Fan theories about The Freak Circus. None of these have been confirmed by the developer.
+          They are community speculation based on gameplay observations.
+        </p>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid md:grid-cols-2 gap-6">
           {theories.map((t) => (
-            <div key={t.id} className="archive-card group transition-all duration-300 hover:border-circus-red/40">
-              {/* Header */}
-              <div className="flex items-center justify-between mb-3">
-                <span className="font-label text-[0.5rem] text-faint-paper">{t.id}</span>
-                <StatusPill status={t.status} />
+            <div key={t.id} className="glass-card p-6">
+              <div className="flex items-center gap-3 mb-3">
+                <span className="font-mono text-xs text-primary">{t.id}</span>
+                <span className={`font-mono text-[9px] uppercase tracking-widest px-2 py-0.5 ${
+                  t.status === 'PARTIALLY VERIFIED' ? 'text-yellow-500 bg-yellow-900/20' :
+                  'text-on-surface/40 bg-surface/50'
+                }`}>{t.status}</span>
               </div>
-
-              {/* Title */}
-              <h3 className="font-heading text-base font-bold text-paper mb-2 group-hover:text-circus-red transition-colors">
-                {t.title}
-              </h3>
-
-              {/* Category & character */}
-              <div className="flex items-center gap-2 mb-3">
-                <span className="font-label text-[0.5rem] text-dim-paper">{t.category}</span>
-                <span className="text-dim-paper text-xs">·</span>
-                <CharacterTag name={t.character} />
+              <h3 className="font-display text-lg text-on-surface mb-2">{t.title}</h3>
+              <div className="font-mono text-xs text-on-surface/40 mb-3">
+                Subject: {t.character}
               </div>
-
-              {/* Description */}
-              <p className="text-faint-paper text-sm leading-relaxed mb-4 line-clamp-3">{t.desc}</p>
-
-              {/* Metrics */}
-              <div className="flex items-center gap-4 pt-3 border-t border-dark-border mb-3">
-                <span className="font-label text-[0.5rem] text-faint-paper">{t.evidence} EVIDENCE</span>
-                <span className="font-label text-[0.5rem] text-faint-paper">{t.confidence}% CONF</span>
-                <span className="font-label text-[0.5rem] text-faint-paper">{t.contradictions} CONTRA</span>
-              </div>
-
-              {/* Tags */}
-              <div className="flex flex-wrap gap-1.5">
+              <p className="text-on-surface/60 text-sm mb-4">{t.desc}</p>
+              <div className="flex gap-2">
                 {t.tags.map((tag) => (
-                  <span key={tag} className="font-label text-[0.45rem] px-1.5 py-0.5 text-dim-paper border border-dark-border">
-                    {tag}
-                  </span>
+                  <span key={tag} className="font-mono text-[8px] text-on-surface/30 bg-surface/50 px-2 py-0.5 uppercase">{tag}</span>
                 ))}
               </div>
             </div>

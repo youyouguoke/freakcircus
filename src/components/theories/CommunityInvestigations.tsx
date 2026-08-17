@@ -1,50 +1,38 @@
 "use client";
 
-const notes = [
-  {
-    quote: "I replayed Columbina's route three times and the hallway changed. The third time, there was a door that wasn't there before.",
-    author: "u/corridor_walker",
-    votes: 412,
-  },
-  {
-    quote: "Pierrot references dialogue choices I never selected. I checked my save file — I had never chosen those options in any playthrough.",
-    author: "u/loop_hunter",
-    votes: 389,
-  },
-  {
-    quote: "The save file timestamps stop matching after Ending #11. My system clock says 2am but the save says 00:00:00 from a date that hasn't happened yet.",
-    author: "u/time_glitch",
-    votes: 267,
-  },
-  {
-    quote: "Harlequin looked at the screen during my 5th replay. Not at the protagonist. At the screen.",
-    author: "u/void_walker",
-    votes: 198,
-  },
-];
-
 export default function CommunityInvestigations() {
   return (
-    <section className="bg-surface py-16 px-4 md:px-16 border-t border-outline/10">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="font-[Epilogue] text-2xl md:text-3xl font-bold text-primary mb-8">
-          Community Notes & Discoveries
+    <section className="py-16 px-4 md:px-16 border-t border-outline/10">
+      <div className="max-w-4xl mx-auto">
+        <h2 className="font-display text-2xl text-primary uppercase tracking-widest mb-4">
+          Community Discussion
         </h2>
-
-        <div className="grid md:grid-cols-2 gap-6">
-          {notes.map((note, i) => (
-            <div key={i} className="bg-surface-container border border-outline/20 p-6">
-              <blockquote className="text-on-surface-variant italic mb-4">
-                "{note.quote}"
-              </blockquote>
-              <footer className="flex items-center gap-2">
-                <span className="font-[JetBrains_Mono] text-xs text-primary">
-                  — {note.author}
-                </span>
-                <span className="font-[JetBrains_Mono] text-xs text-on-surface-variant">
-                  ▲ {note.votes}
-                </span>
-              </footer>
+        <p className="text-on-surface/50 text-sm mb-8">
+          The Freak Circus community is active on Reddit (r/TheFreakCircus), YouTube, and Discord.
+          Here are the main topics of discussion:
+        </p>
+        <div className="space-y-4">
+          {[
+            {
+              topic: "What are the 3 open endings?",
+              desc: "The most discussed question. The developer confirmed 3 open endings exist but hasn't named them. Community members have proposed various names but none are verified.",
+            },
+            {
+              topic: "Mirror scene significance",
+              desc: "The mirror scene in Day 2 is confirmed to exist. Community members debate its narrative significance and whether it has hidden mechanics.",
+            },
+            {
+              topic: "Day 3 expectations",
+              desc: "With Day 3 confirmed as planned, the community speculates about what new content, endings, and story revelations it will bring.",
+            },
+            {
+              topic: "Columbina's full story",
+              desc: "While Columbina's death is confirmed, the full details of her story and its impact on the game's narrative remain subjects of community investigation.",
+            },
+          ].map((item, i) => (
+            <div key={i} className="glass-card p-6">
+              <h3 className="font-display text-lg text-on-surface mb-2">{item.topic}</h3>
+              <p className="text-on-surface/60 text-sm">{item.desc}</p>
             </div>
           ))}
         </div>

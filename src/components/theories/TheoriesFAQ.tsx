@@ -1,45 +1,41 @@
-'use client';
-
-import Link from 'next/link';
+"use client";
 
 const faqs = [
-  { q: 'Is the circus real in Freak Circus?', a: 'The \'Circus Does Not Exist\' theory suggests the circus is not a physical location but a psychological space. Evidence includes inconsistent map geometry and Columbina\'s memories containing circus imagery from before she arrived.', link: { label: 'Full analysis', href: '/theories' } },
-  { q: 'Does Pierrot remember previous playthroughs?', a: 'Community testing has confirmed a hidden counter at save offset 0x4A20. When this counter reaches 4, Pierrot begins referencing events from routes the player hasn\'t completed in the current save. This is the strongest evidence for replay-aware mechanics.', link: { label: 'Pierrot theory', href: '/theories/pierrot-remembers-routes' } },
-  { q: 'What is the Loop Theory?', a: 'The Loop Theory proposes that characters forget but the world remembers. Evidence includes Pierrot\'s replay-aware dialogue, Harlequin\'s "You again" line, and Columbina\'s cross-route memory fragments.', link: { label: 'All theories', href: '/theories' } },
-  { q: 'What does the Doctor know?', a: 'The Doctor references endings before they occur and his medical files contain timestamps matching real-world save creation dates. His Scene 7 description of the Unnamed Open Ending matches unused files in build 1.04.', link: { label: 'Doctor analysis', href: '/characters/doctor' } },
-  { q: 'What is timeline corruption?', a: 'Timeline corruption refers to instances where the game\'s narrative continuity appears to break. Characters reference events from different timelines, locations change between playthroughs, and some dialogue options reference choices the player never made.', link: { label: 'Timeline', href: '/lore' } },
-  { q: 'Are the developers aware of the theories?', a: 'The developers have not directly confirmed or denied any community theories. However, build 1.04 expanded several mechanics that align with popular theories, suggesting they are at least aware of community investigation efforts.', link: null },
-  { q: 'What is the Mirror Hall theory?', a: 'The Mirror Hall appears in all character routes but with different physical properties each time. Some theorists believe it represents the boundary between the player\'s reality and the game world, functioning as a liminal space.', link: { label: 'Mirror Hall', href: '/lore/mirror-hall' } },
-  { q: 'How do I contribute to the investigation?', a: 'Community testing is the backbone of Freak Circus theory verification. Document your playthroughs with timestamps, save file hashes, and exact dialogue selections. Cross-reference findings with other players before claiming discoveries.', link: { label: 'Contribute', href: '/contribute' } },
+  {
+    q: "Are any theories confirmed by the developer?",
+    a: "No. The developer has not directly confirmed or denied any community theories. The game is still in active development (v0.2) with Day 3 planned but unreleased.",
+  },
+  {
+    q: "Does Pierrot remember previous playthroughs?",
+    a: "This is an unverified community theory. Some players report that Pierrot's dialogue changes after multiple playthroughs, but no hidden counter or memory mechanic has been independently verified. Claims about specific save file offsets are unconfirmed.",
+  },
+  {
+    q: "What is the Columbina legend?",
+    a: "The Columbina legend is confirmed to appear in Day 2. It explains the backstory behind Pierrot and Harlequin's rivalry. Columbina is a deceased character who was killed by Harlequin. This is verified by thefreakcircus.org and YouTube playthroughs.",
+  },
+  {
+    q: "Will Day 3 answer the unanswered questions?",
+    a: "Day 3 is confirmed to be planned but not yet released. The developer has described it as featuring 'higher stakes, tighter route locks, and payoffs for choices.' Whether it will resolve the community's open questions is unknown.",
+  },
+  {
+    q: "How many endings are there?",
+    a: "The game has 4 confirmed endings: 1 bad ending ('Missing') and 3 unnamed open endings. Only 'Missing' has been verified by name. The developer has confirmed more endings are planned for future updates.",
+  },
 ];
 
 export default function TheoriesFAQ() {
   return (
-    <section className="bg-void-black py-20 md:py-28 px-4 md:px-12">
+    <section className="py-16 px-4 md:px-16 border-t border-outline/10">
       <div className="max-w-4xl mx-auto">
-        <div className="font-label text-circus-red text-[0.6rem] mb-3 flex items-center gap-3">
-          <span className="inline-block w-6 h-px bg-circus-red" />
-          FREQUENTLY ASKED
-        </div>
-        <h2 className="font-heading text-3xl md:text-4xl font-bold text-paper mb-8">Questions & Answers</h2>
-
-        <div className="space-y-3">
+        <h2 className="font-display text-2xl text-primary uppercase tracking-widest mb-8">
+          Theories FAQ
+        </h2>
+        <div className="space-y-4">
           {faqs.map((faq, i) => (
-            <details key={i} className="group archive-card">
-              <summary className="flex justify-between items-center cursor-pointer font-medium text-paper hover:text-circus-red transition-colors list-none">
-                <span className="pr-4">{faq.q}</span>
-                <span className="font-label text-[0.55rem] text-faint-paper group-open:hidden shrink-0">[+]</span>
-                <span className="font-label text-[0.55rem] text-circus-red hidden group-open:inline shrink-0">[−]</span>
-              </summary>
-              <div className="mt-4 text-faint-paper text-sm leading-relaxed border-t border-dark-border pt-4">
-                {faq.a}
-                {faq.link && (
-                  <Link href={faq.link.href} className="text-circus-red hover:underline ml-1">
-                    {faq.link.label} →
-                  </Link>
-                )}
-              </div>
-            </details>
+            <div key={i} className="glass-card p-6">
+              <h3 className="font-display text-lg text-on-surface mb-3">{faq.q}</h3>
+              <p className="text-on-surface/60 text-sm">{faq.a}</p>
+            </div>
           ))}
         </div>
       </div>

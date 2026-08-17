@@ -1,61 +1,45 @@
 "use client";
 
-const investigations = [
-  {
-    id: "THEORY_NULL",
-    category: "Data-mined",
-    title: "The Null Protagonist",
-    desc: "A hidden route where no characters acknowledge the protagonist. Dialogue trees exist but every response is met with silence.",
-  },
-  {
-    id: "THEORY_MEM",
-    category: "Unverified",
-    title: "Memory Overwrite",
-    desc: "Save files may influence future dialogue trees. Players report conversations changing after importing old saves into new installations.",
-  },
-  {
-    id: "THEORY_OBS",
-    category: "Referenced",
-    title: "The Observer Theory",
-    desc: "The Doctor may be aware of the player directly, not just the protagonist. Some lines appear to reference the player's actual behavior.",
-  },
-  {
-    id: "THEORY_DEV",
-    category: "Files Found",
-    title: "Developer Ghost Ending",
-    desc: "Unused assets suggest a cut ending where the game deletes its own save file and leaves a message in the installation directory.",
-  },
-];
-
 export default function CorruptedInvestigations() {
   return (
-    <section className="bg-surface py-16 px-4 md:px-16 border-t border-outline/10">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="font-[Epilogue] text-2xl md:text-3xl font-bold text-primary mb-4">
-          Corrupted Investigations
+    <section className="py-16 px-4 md:px-16 border-t border-outline/10">
+      <div className="max-w-4xl mx-auto">
+        <h2 className="font-display text-2xl text-primary uppercase tracking-widest mb-4">
+          Unverified Claims
         </h2>
-        <p className="text-on-surface-variant text-sm mb-8">
-          Impossible theories, deleted content, data-mined findings, ARG-like rumors, and hidden game references. These investigations have not been independently verified.
+        <p className="text-on-surface/50 text-sm mb-8">
+          Claims that circulate in the community but have NOT been independently verified.
+          Treat these with skepticism.
         </p>
-
-        <div className="grid md:grid-cols-2 gap-6">
-          {investigations.map((inv) => (
-            <div key={inv.id} className="bg-surface-container border border-blood/30 p-6">
-              <div className="flex justify-between items-start mb-2">
-                <div className="font-[JetBrains_Mono] text-xs text-primary">
-                  {inv.id}
-                </div>
-                <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant">
-                  {inv.category}
-                </div>
+        <div className="space-y-4">
+          {[
+            {
+              claim: "Hidden save file mechanics",
+              status: "UNVERIFIED",
+              desc: "Some players claim the game tracks data across playthroughs using hidden counters in save files. No independent verification exists.",
+            },
+            {
+              claim: "Fourth-wall-breaking dialogue",
+              status: "UNVERIFIED",
+              desc: "Reports of characters referencing the player (not the protagonist) or previous playthroughs. Could be misremembered dialogue or community myth.",
+            },
+            {
+              claim: "Datamined unused content",
+              status: "UNVERIFIED",
+              desc: "Claims about unused game files containing cut endings, hidden routes, or developer messages. No verified datamine results have been published.",
+            },
+            {
+              claim: "Architecture changes between playthroughs",
+              status: "UNVERIFIED",
+              desc: "Some players report that game environments change after multiple playthroughs. This could be confirmation bias or genuine hidden mechanics.",
+            },
+          ].map((item, i) => (
+            <div key={i} className="glass-card p-6 border-l-4 border-l-yellow-500/30">
+              <div className="flex items-center gap-3 mb-2">
+                <h3 className="font-display text-lg text-on-surface">{item.claim}</h3>
+                <span className="font-mono text-[9px] text-yellow-500 uppercase">{item.status}</span>
               </div>
-
-              <h3 className="font-[Epilogue] text-lg font-bold text-foreground mb-2">
-                {inv.title}
-              </h3>
-              <p className="text-on-surface-variant text-sm">
-                {inv.desc}
-              </p>
+              <p className="text-on-surface/50 text-sm">{item.desc}</p>
             </div>
           ))}
         </div>
