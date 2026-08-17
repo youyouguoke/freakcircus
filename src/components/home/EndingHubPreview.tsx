@@ -36,14 +36,6 @@ const endings = [
     href: '/endings/eternal-silence',
   },
   {
-    name: 'Columbina\'s Truth',
-    type: 'SECRET',
-    difficulty: 'Very Hard',
-    status: 'confirmed',
-    desc: 'Complete three perfect loops with Columbina. Any deviation resets progress. The fourth door reveals the circus\'s true nature.',
-    href: '/endings/columbinas-truth',
-  },
-  {
     name: 'White Room',
     type: 'UNKNOWN',
     difficulty: 'Unknown',
@@ -67,7 +59,7 @@ export default function EndingHubPreview() {
             All Confirmed Endings
           </h2>
           <p className="text-faint-paper text-sm mt-3 max-w-lg">
-            The community has verified 11 endings across standard, secret, and corrupted categories. Each requires specific unlock conditions.
+            The community has verified 4 endings across bad and open categories. Each requires specific unlock conditions.
           </p>
         </div>
 

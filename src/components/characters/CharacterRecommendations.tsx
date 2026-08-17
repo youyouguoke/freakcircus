@@ -8,7 +8,6 @@ const recommendations = [
     text: "If you like Pierrot, read:",
     links: [
       { name: "Harlequin Guide", href: "/characters/harlequin" },
-      { name: "Columbina Guide", href: "/characters/columbina" },
       { name: "Doctor Guide", href: "/characters/doctor" },
     ],
   },
@@ -18,27 +17,17 @@ const recommendations = [
     links: [
       { name: "Pierrot Guide", href: "/characters/pierrot" },
       { name: "Doctor Guide", href: "/characters/doctor" },
-      { name: "Columbina Guide", href: "/characters/columbina" },
     ],
   },
   {
     from: "The Doctor",
     text: "If you like The Doctor, read:",
     links: [
-      { name: "Columbina Guide", href: "/characters/columbina" },
       { name: "Pierrot Guide", href: "/characters/pierrot" },
       { name: "Harlequin Guide", href: "/characters/harlequin" },
     ],
   },
-  {
-    from: "Columbina",
-    text: "If you like Columbina, read:",
-    links: [
-      { name: "Pierrot Guide", href: "/characters/pierrot" },
-      { name: "Harlequin Guide", href: "/characters/harlequin" },
-      { name: "Doctor Guide", href: "/characters/doctor" },
-    ],
-  },
+
 ];
 
 export default function CharacterRecommendations() {

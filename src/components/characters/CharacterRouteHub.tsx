@@ -14,7 +14,7 @@ const routes = [
     name: "Harlequin",
     route: "Fractured Route",
     difficulty: "Very Hard",
-    desc: "Unlocks after failing her main route once. Contains the most aggressive dialogue pruning and 7 undocumented hidden scenes.",
+    desc: "Unlocks after failing his main route once. Contains the most aggressive dialogue pruning and 7 undocumented hidden scenes.",
     href: "/characters/harlequin",
   },
   {
@@ -23,13 +23,6 @@ const routes = [
     difficulty: "Hard",
     desc: "Requires finding 5 hidden medical files. The mirror connection in Scene 9 only appears after failing the route once.",
     href: "/characters/doctor",
-  },
-  {
-    name: "Columbina",
-    route: "Three-Loop Route",
-    difficulty: "Very Hard",
-    desc: "Requires perfect alignment of all dialogue choices across three loops. Any deviation causes a complete reset.",
-    href: "/characters/columbina",
   },
 ];
 
@@ -41,7 +34,7 @@ export default function CharacterRouteHub() {
           Character Route Guide Hub
         </h2>
         <p className="text-on-surface-variant text-sm mb-8">
-          Step-by-step walkthroughs for each character's main route, hidden triggers, and secret endings
+          Step-by-step walkthroughs for each character&apos;s main route, hidden triggers, and secret endings
         </p>
 
         <div className="grid md:grid-cols-2 gap-6">

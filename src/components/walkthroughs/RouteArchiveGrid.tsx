@@ -29,12 +29,6 @@ const routes = [
     playtime: '4-5 hours', href: '/walkthroughs/doctor-memory-route',
   },
   {
-    title: 'Columbina Fractured Route', character: 'Columbina', characterColor: 'var(--columbina)',
-    difficulty: 'Very Hard', ending: "Columbina's Truth", unlock: 'Complete Pierrot Main + Doctor Memory + Harlequin True',
-    summary: 'Perfect alignment across three loops required. Any deviation resets to Loop 1, Scene 1. After three perfect loops, a fourth door appears.',
-    playtime: '6-8 hours', href: '/walkthroughs/columbina-fractured-route',
-  },
-  {
     title: 'Null Route', character: 'Unknown', characterColor: 'var(--status-corrupted)',
     difficulty: 'Unknown', ending: 'Corrupted', unlock: 'Found in unused game files — unlock conditions unknown',
     summary: 'No character appears. Player walks through empty corridors until soft-lock. Found in unused game files.',

@@ -68,27 +68,6 @@ const characters = [
     href: "/characters/doctor",
   },
   {
-    title: "The Dove",
-    name: "Columbina",
-    role: "Ballerina / Route Guide",
-    image: "/columbina-portrait.jpg",
-    alt: "Columbina Freak Circus Character — Ballerina Route Endings",
-    personality: "Gentle, refined, disturbingly aware",
-    routeTheme: "Three-loop perfection, hallway architecture, memory fragments",
-    popularity: "Highest theory-to-discussion ratio in community",
-    mystery: "May be the only character who truly understands the circus",
-    background: "Columbina dances in a hallway that gains architecture as the player progresses. Her gentle demeanor masks the most disturbing revelations about the circus's true nature. The community has mapped her hallway changes across 12 different loop states, documenting door spawn conditions and mirror placement patterns.",
-    endings: [
-      { name: "Columbina's Truth", type: "Secret", desc: "Perfect alignment across three loops. The fourth door reveals all." },
-      { name: "Corrupted Data", type: "Unverified", desc: "Found only in modified files. Associated with Columbina route by community speculation — not confirmed." },
-      { name: "Eternal Dance", type: "Standard", desc: "Complete any single loop without perfect alignment." },
-    ],
-    route: "Columbina's three-loop storyline requires perfect alignment of all dialogue choices — any deviation causes a complete reset to Loop 1, Scene 1. Her hallway gains a fourth door after three loops, containing a memory fragment that reveals the circus's true nature. Memory fragments reference events from other routes that the player never selected, suggesting cross-route awareness.",
-    relationship: "Columbina's connection to Pierrot is the most theorized relationship. Her Truth ending requires completing his route first, suggesting a dependency the game does not explicitly state. Unused voice lines contain a conversation between them discussing the player in third person — breaking the fourth wall.",
-    theory: "The Orchestrator Theory proposes Columbina is the only character who truly understands the circus. Her three-loop structure mirrors the game's overall narrative architecture, suggesting the entire circus is a single loop containing smaller loops within each character route. The fourth door in her hallway may represent the true ending that requires all other routes to be completed first.",
-    href: "/characters/columbina",
-  },
-  {
     title: "The Trickster",
     name: "Jester",
     role: "Unknown / Meta Observer",
@@ -140,7 +119,7 @@ export default function CharacterCards() {
           Freak Circus Characters
         </h2>
         <p className="text-on-surface-variant text-sm mb-8">
-          The {CHARACTERS_COUNT} central figures of The Freak Circus — Pierrot the melancholic clown, Harlequin the chaotic performer, Jester the trickster, The Doctor the circus physician, Columbina the ballerina, and the enigmatic Ticket Taker who guards the threshold. Each character has their own route, hidden triggers, disturbing revelations, and multiple endings.
+          The {CHARACTERS_COUNT} central figures of The Freak Circus — Pierrot the melancholic clown, Harlequin the chaotic performer, Jester the trickster, The Doctor the circus physician, and the enigmatic Ticket Taker who guards the threshold. Each character has their own route, hidden triggers, disturbing revelations, and multiple endings.
         </p>
         <div className="grid md:grid-cols-2 gap-8">
           {characters.map((char) => (

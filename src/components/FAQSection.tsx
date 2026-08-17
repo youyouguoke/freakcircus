@@ -62,10 +62,10 @@ export default function FAQSection() {
       ),
     },
     {
-      question: "Who is Columbina in The Freak Circus?",
+      question: "Who was Columbina in The Freak Circus?",
       answer: (
         <>
-          Columbina is the ballerina whose three-loop route requires perfect dialogue alignment. Any deviation resets progress entirely. <Link href="/characters/columbina" className="text-circus-red hover:underline">Full character analysis →</Link>
+          Columbina was a deceased character in The Freak Circus — she was Pierrot's former partner, killed by Harlequin. She is NOT a playable character. Any deviation resets progress entirely. <Link href="/characters/columbina" className="text-circus-red hover:underline">Full character analysis →</Link>
         </>
       ),
     },

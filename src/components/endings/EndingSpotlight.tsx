@@ -19,14 +19,6 @@ const spotlights = [
     desc: "A rumored ending hidden inside unused game files. The screen displays raw hex data before the application crashes. No player has verified legitimate unlock conditions. Data miners found references in build 1.04.",
     href: "/endings/corrupted-data",
   },
-  {
-    id: "ENDING #09",
-    title: "Columbina's Truth",
-    difficulty: "Very Hard",
-    character: "Columbina",
-    desc: "Requires perfect alignment of all dialogue choices across three consecutive loops. Any deviation causes a complete reset. The ending suggests the circus is a purgatorial system where characters forget but the world remembers.",
-    href: "/endings/columbinas-truth",
-  },
 ];
 
 export default function EndingSpotlight() {

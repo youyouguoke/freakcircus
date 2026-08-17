@@ -11,8 +11,6 @@ const guides = [
   { name: "Harlequin — Fractured Ending (Secret)", href: "/characters/harlequin#endings" },
   { name: "Doctor — Doctor's Note (Secret)", href: "/characters/doctor#endings" },
   { name: "Doctor — White Room (Unverified)", href: "/characters/doctor#endings" },
-  { name: "Columbina — Truth (Secret)", href: "/characters/columbina#endings" },
-  { name: "Columbina — Eternal Dance (Standard)", href: "/characters/columbina#endings" },
   { name: "True Ending Guide", href: "/endings" },
   { name: `All ${ENDINGS_TOTAL} Endings Overview`, href: "/endings" },
   { name: "Ending Order & Timeline", href: "/endings" },

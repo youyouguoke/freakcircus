@@ -40,18 +40,6 @@ const characters = [
     href: '/characters/doctor',
   },
   {
-    name: 'Columbina',
-    role: 'THE BALLERINA',
-    caseFile: '04',
-    image: '/Columbina.jpg',
-    accent: 'var(--columbina)',
-    glow: 'var(--columbina-glow)',
-    status: 'ACTIVE',
-    desc: 'Her three-loop route requires perfect dialogue alignment. Any deviation resets everything. Many believe she is the only character who truly understands the circus.',
-    stats: { threat: 20, mystery: 100, attachment: 80 },
-    href: '/characters/columbina',
-  },
-  {
     name: 'Jester',
     role: 'THE TRICKSTER',
     caseFile: '05',

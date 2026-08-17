@@ -19,7 +19,7 @@ import ContinueExploring from "@/components/ContinueExploring";
 
 export const metadata: Metadata = {
   title: "Freak Circus Characters — Pierrot, Harlequin, Jester, Doctor & Columbina Guide",
-  description: "Meet every Freak Circus character: Pierrot the melancholic clown, Harlequin the chaotic performer, Jester the trickster, The Doctor the circus physician, and Columbina the ballerina. Full route guides, all endings, relationships, walkthroughs, and community theories for each performer.",
+  description: "Meet every Freak Circus character: Pierrot the melancholic clown, Harlequin the chaotic performer, Jester the trickster, The Doctor the circus physician, and Ticket Taker. Full route guides, all endings, relationships, walkthroughs, and community theories for each performer.",
   keywords: [
     "freak circus characters",
     "Freak Circus character guide",
