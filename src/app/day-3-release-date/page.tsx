@@ -3,6 +3,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import JsonLd from "@/components/JsonLd";
 import Link from "next/link";
+import Day3Subscribe from "@/components/Day3Subscribe";
 
 export const metadata: Metadata = {
   title: "Freak Circus Day 3 Release Date (2026) | Official Status & Development Timeline",
@@ -48,7 +49,7 @@ const faqData = [
   },
   {
     q: "What is the latest development update?",
-    a: "As of August 2026, the developer's roadmap marks script writing, script revision, and older code/bug fixes as complete. The next milestone is beginning programming for the update. A July 24 blog post reported café-scene programming progress.",
+    a: "As of September 2026, weekly updates show dialogue programming progressing through branching café and store scenes, with new sprites chosen for Harlequin, Pierrot and Jester. The developer is currently working through a complicated choice-branching section and has not announced a release date, beta, or public build.",
   },
   {
     q: "Can I play Day 3 now?",
@@ -68,7 +69,7 @@ const faqData = [
   },
   {
     q: "What should I do while waiting for Day 3?",
-    a: "Play the current v0.2 build. Explore all endings (8+ confirmed), try different character routes, read the lore archive, and save before every major choice. Multi-run awareness is built into the game.",
+    a: "Play the current v0.2 build. The current build has 1 confirmed ending (Missing). The developer has planned 3 additional endings, but none are implemented yet. Read the lore archive and save before every major choice.",
   },
 ];
 
@@ -133,6 +134,42 @@ const timelineEvents = [
     source: "Creator Tumblr roadmap",
     status: "Confirmed milestone checklist — progress only, not a release or date",
   },
+  {
+    date: "2026-08-07",
+    signal: "Weekly update: another small section added; rough test builds used to verify branching scenes work; the blurred branching-path map is expanding — choices can change scenes and sometimes the dialogue itself; several café scene variations exist",
+    source: "Official TFC Blog",
+    status: "Confirmed programming progress — not a playable-build announcement",
+  },
+  {
+    date: "2026-08-14",
+    signal: "Weekly update: good progress programming dialogue; next step is identifying new assets — at least two new artwork pieces plus background changes; a favorite upcoming scene was teased with screenshots promised",
+    source: "Official TFC Blog",
+    status: "Confirmed programming progress — not a playable-build announcement",
+  },
+  {
+    date: "2026-08-22",
+    signal: "Weekly update: all café dialogue adjusted and scenes polished for pacing; broken choice branches rebuilt so they work without affecting other choices; developer notes they have not yet reached \"the most interesting part of the café\"",
+    source: "Official TFC Blog",
+    status: "Confirmed polish/restructure progress — not a playable-build announcement",
+  },
+  {
+    date: "2026-08-29",
+    signal: "Weekly update: developer worked exclusively on the store and the game, with good progress on the initial part; heavy dialogue translation and setup; new sprites decided for Harlequin, Pierrot and Jester, with screenshots shared",
+    source: "Official TFC Blog",
+    status: "Confirmed art/programming progress — not a playable-build announcement",
+  },
+  {
+    date: "2026-09-04",
+    signal: "Blog notice: no AMA or weekly update that week (blog team announcement, not a development milestone)",
+    source: "Official TFC Blog notice",
+    status: "Cadence note only — no signal either way",
+  },
+  {
+    date: "2026-09-12",
+    signal: "Weekly update: back from a few days off; good progress on coding, adjustments and fixes; currently working through a complicated section with many choices and branching paths, so testing may take longer; reached one of the developer's favorite parts (screenshot promised for the following week); backgrounds and sprites fixed; Doctor sprite fixes planned once his scenes are reached",
+    source: "Official TFC Blog",
+    status: "Confirmed programming progress — not a playable-build announcement",
+  },
 ];
 
 export default function Day3ReleaseDatePage() {
@@ -172,6 +209,13 @@ export default function Day3ReleaseDatePage() {
         </div>
       </section>
 
+      {/* Subscribe for Day 3 Notification */}
+      <section className="bg-surface py-12 px-4 md:px-16 border-t border-outline/10">
+        <div className="max-w-2xl mx-auto">
+          <Day3Subscribe />
+        </div>
+      </section>
+
       {/* Current Status Table */}
       <section className="bg-surface py-16 px-4 md:px-16 border-t border-outline/10">
         <div className="max-w-4xl mx-auto">
@@ -181,8 +225,8 @@ export default function Day3ReleaseDatePage() {
               <tbody>
                 {[
                   { field: "Released?", value: "Not officially released yet" },
-                  { field: "Latest progress source checked", value: "2026-08-03 — creator roadmap checklist plus official TFC Blog July 24 weekly update" },
-                  { field: "Official source reading", value: "Roadmap: script writing complete, script revision complete, older code/bug fixes complete, with programming as the next unchecked milestone. July 24 post: café-scene programming progress was also shown" },
+                  { field: "Latest progress source checked", value: "2026-09-17 — creator Tumblr weekly Day 3 updates through September 12, 2026" },
+                  { field: "Official source reading", value: "Weekly updates (Aug 7 – Sep 12): dialogue programming progressing through branching café and store scenes; new sprites chosen for Harlequin, Pierrot and Jester; currently on a complicated choice-branching section that the developer says will need longer testing; Doctor sprite fixes planned once his scenes are reached" },
                   { field: "Confirmed", value: "Development is active. A progress checklist or weekly update is not a playable-build, public-beta, or release-date announcement" },
                   { field: "Unconfirmed", value: "Exact release date, full route changes, ending impact, Chapter 3 wording, public build timing, APKs, mirrors, and reposted downloads" },
                 ].map((row) => (
@@ -213,12 +257,12 @@ export default function Day3ReleaseDatePage() {
             <Link href="/endings" className="bg-surface-container border border-outline/20 p-6 hover:border-primary transition-colors group">
               <div className="font-[JetBrains_Mono] text-xs text-primary mb-2">COMPLETE</div>
               <h3 className="font-[Epilogue] text-lg font-bold text-foreground group-hover:text-primary transition-colors mb-2">Unlock All Endings</h3>
-              <p className="text-on-surface-variant text-sm">8+ confirmed endings across all routes. Some require replay awareness and cross-route dependencies. Save before every major choice.</p>
+              <p className="text-on-surface-variant text-sm">1 confirmed ending (Missing). The developer has planned 3 additional endings, but none are implemented yet. Save before every major choice to prepare for future updates.</p>
             </Link>
             <Link href="/walkthroughs/save-guide" className="bg-surface-container border border-outline/20 p-6 hover:border-primary transition-colors group">
               <div className="font-[JetBrains_Mono] text-xs text-primary mb-2">PREPARE</div>
               <h3 className="font-[Epilogue] text-lg font-bold text-foreground group-hover:text-primary transition-colors mb-2">Set Up Save Files</h3>
-              <p className="text-on-surface-variant text-sm">Create separate saves for each route. The game tracks your history using a hidden counter — multi-run awareness is built in.</p>
+              <p className="text-on-surface-variant text-sm">Create separate saves for each route. Community members have speculated about a hidden counter that tracks player history, but this is unverified.</p>
             </Link>
           </div>
         </div>
