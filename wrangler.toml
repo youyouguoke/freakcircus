@@ -1,11 +1,21 @@
-name = "freakcircus"
+name = "freakcircus-production"
 main = ".open-next/worker.js"
 compatibility_date = "2025-05-20"
 compatibility_flags = ["nodejs_compat"]
 account_id = "b183c58c7fa8b50d9a8a8e6ac8d42a31"
 
+routes = [
+  { pattern = "freak-circus.com/*", zone_name = "freak-circus.com" },
+  { pattern = "*.freak-circus.com/*", zone_name = "freak-circus.com" }
+]
+
 [observability.logs]
 enabled = true
+
+# Subscriber storage for Day 3 notification
+[[kv_namespaces]]
+binding = "SUBSCRIBERS"
+id = "6d312a4b1ed94f67aef7a70e3a5314f2"
 
 # Static assets configuration
 [assets]
