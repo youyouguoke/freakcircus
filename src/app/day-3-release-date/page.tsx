@@ -6,7 +6,7 @@ import Day3Subscribe from "@/components/Day3Subscribe";
 import { CURRENT_VERSION, RELEASED_DAYS_LABEL } from "@/lib/site-facts";
 
 export const metadata: Metadata = {
-  title: "Freak Circus Day 3 Release Date (2026) | Official Status & Development Timeline",
+  title: "Is The Freak Circus Day 3 Out? No — Official Status & Timeline (2026)",
   description:
     "Is Freak Circus Day 3 out yet? No — Day 3 is not confirmed as playable. Check the official roadmap status, development timeline, verified community signals, and what to do while waiting.",
   keywords: [
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     "Freak Circus roadmap",
   ],
   openGraph: {
-    title: "Freak Circus Day 3 Release Date (2026) | Official Status & Development Timeline",
+    title: "Is The Freak Circus Day 3 Out? No — Official Status & Timeline (2026)",
     description:
       "Is Freak Circus Day 3 out yet? No — Day 3 is not confirmed as playable. Official roadmap status, development timeline, and verified signals.",
     type: "article",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Freak Circus Day 3 Release Date (2026) | Official Status & Development Timeline",
+    title: "Is The Freak Circus Day 3 Out? No — Official Status & Timeline (2026)",
     description:
       "Is Freak Circus Day 3 out yet? No — Day 3 is not confirmed as playable. Official status and timeline.",
   },

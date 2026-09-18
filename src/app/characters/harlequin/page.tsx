@@ -5,10 +5,10 @@ import ContinueExploring from "@/components/ContinueExploring";
 import HarlequinClient from "./HarlequinClient";
 
 export const metadata: Metadata = {
-  title: "Harlequin — Character Profile, Route Guide & Hidden Scenes | Freak Circus Hub",
-  description: "Harlequin character in The Freak Circus. Main character, seductive rival. Community analysis and fractured route unlock conditions, hidden scenes, and the \'You again\' replay dialogue.",
-  keywords: ["Harlequin", "The Freak Circus Harlequin", "Harlequin route guide", "chaotic performer", "fractured route", "hidden scenes"],
-  openGraph: { title: "Harlequin — Character Profile, Route Guide & Hidden Scenes", description: "Complete Harlequin character analysis, fractured route walkthrough, hidden scenes, and replay-aware mechanics.", type: "article", url: "https://freak-circus.com/characters/harlequin" },
+  title: "The Freak Circus Harlequin — Character Guide, Route Status & Confirmed Facts",
+  description: "Harlequin is one of the two main character routes in The Freak Circus. Confirmed facts, community-reported scenes, the 'Missing' bad ending connection, and what is still unverified.",
+  keywords: ["The Freak Circus Harlequin", "Harlequin", "Harlequin route guide", "Harlequin character", "Freak Circus characters", "Missing ending"],
+  openGraph: { title: "The Freak Circus Harlequin — Character Guide, Route Status & Confirmed Facts", description: "Harlequin is one of the two main character routes in The Freak Circus. Confirmed facts, community-reported scenes, and the 'Missing' bad ending connection.", type: "article", url: "https://freak-circus.com/characters/harlequin" },
   alternates: { canonical: "https://freak-circus.com/characters/harlequin" },
 };
 

@@ -5,13 +5,13 @@ import ContinueExploring from '@/components/ContinueExploring';
 import PierrotClient from './PierrotClient';
 
 export const metadata: Metadata = {
-  title: 'Pierrot — Character Profile & Route Guide | Freak Circus Hub',
-  description: 'Pierrot character profile for The Freak Circus. 198cm, golden eyes, silent yandere. One of the two main character routes. A planned ending exists but is not yet implemented.',
-  keywords: ['Pierrot', 'The Freak Circus Pierrot', 'Pierrot character', 'melancholic clown', 'silent yandere', '198cm'],
+  title: "The Freak Circus Pierrot — Character Guide, Route Status & Confirmed Facts",
+  description: 'Pierrot in The Freak Circus: 198cm, golden eyes, silent yandere. One of the two main character routes. Confirmed facts, a planned (not yet implemented) ending, and what is still unverified.',
+  keywords: ['The Freak Circus Pierrot', 'Pierrot', 'Pierrot character', 'Pierrot route guide', 'silent yandere', '198cm'],
   alternates: { canonical: 'https://freak-circus.com/characters/pierrot' },
   openGraph: {
-    title: 'Pierrot — Character Profile & Route Guide | Freak Circus Hub',
-    description: 'Pierrot character profile for The Freak Circus. 198cm, golden eyes, silent yandere. One of the two main character routes.',
+    title: "The Freak Circus Pierrot — Character Guide, Route Status & Confirmed Facts",
+    description: 'Pierrot in The Freak Circus: 198cm, golden eyes, silent yandere. One of the two main character routes.',
     type: 'website',
     url: 'https://freak-circus.com/characters/pierrot',
     siteName: 'Freak Circus Hub',

@@ -6,21 +6,19 @@ import JesterClient from "./JesterClient";
 import { ENDINGS_CONFIRMED, ENDINGS_TOTAL } from "@/lib/site-facts";
 
 export const metadata: Metadata = {
-  title: "Jester — Character Profile & Community Analysis | Freak Circus Hub",
+  title: "The Freak Circus Jester — Character Guide & Confirmed Appearances",
   description:
-    "Jester character in The Freak Circus. Community analysis of the trickster persona, peripheral presence, and unverified observations.",
+    "Jester in The Freak Circus: Day 2 appearances, role in the story, and community-reported observations — with confirmed and unverified information clearly separated.",
   keywords: [
-    "Jester",
     "The Freak Circus Jester",
     "Jester character",
-    "trickster",
-    "observer",
-    "character analysis",
+    "Jester guide",
+    "Freak Circus characters",
   ],
   openGraph: {
-    title: "Jester — Character Profile, Day 2 Sightings & Hidden Observer Analysis",
+    title: "The Freak Circus Jester — Character Guide & Confirmed Appearances",
     description:
-      "Complete Jester character analysis, Day 2 sightings, character connections, and observer theory.",
+      "Jester in The Freak Circus: Day 2 appearances, role in the story, and community-reported observations.",
     type: "article",
     url: "https://freak-circus.com/characters/jester",
   },
