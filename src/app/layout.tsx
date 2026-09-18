@@ -114,6 +114,7 @@ export default function RootLayout({
                 var s = document.createElement('script');
                 s.src = 'https://feedback-hub.youyouguoke.workers.dev/widget.js';
                 s.setAttribute('data-site-id', 'freak-circus');
+                s.setAttribute('data-lang', 'en');
                 s.defer = true;
                 document.body.appendChild(s);
               })();
