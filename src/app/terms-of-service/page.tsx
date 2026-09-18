@@ -5,6 +5,18 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Terms of Service | Freak Circus Hub",
   description: "Terms of service for Freak Circus Hub.",
+  openGraph: {
+    title: "Terms of Service | Freak Circus Hub",
+    description: "Terms of service for Freak Circus Hub.",
+    type: "website",
+    url: "https://freak-circus.com/terms-of-service",
+    siteName: "Freak Circus Hub",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Terms of Service | Freak Circus Hub",
+    description: "Terms of service for Freak Circus Hub.",
+  },
 };
 
 export default function TermsOfService() {

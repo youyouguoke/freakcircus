@@ -5,6 +5,18 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Privacy Policy | Freak Circus Hub",
   description: "Privacy policy for Freak Circus Hub.",
+  openGraph: {
+    title: "Privacy Policy | Freak Circus Hub",
+    description: "Privacy policy for Freak Circus Hub.",
+    type: "website",
+    url: "https://freak-circus.com/privacy-policy",
+    siteName: "Freak Circus Hub",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Privacy Policy | Freak Circus Hub",
+    description: "Privacy policy for Freak Circus Hub.",
+  },
 };
 
 export default function PrivacyPolicy() {

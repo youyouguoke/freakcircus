@@ -11,6 +11,18 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://freak-circus.com/characters/pierrot-endings",
   },
+  openGraph: {
+    title: "Pierrot Endings — What We Know | Freak Circus Hub",
+    description: "What we know about endings associated with Pierrot in The Freak Circus. Only 'Missing' has been confirmed by name — the rest are unnamed open endings.",
+    type: "website",
+    url: "https://freak-circus.com/characters/pierrot-endings",
+    siteName: "Freak Circus Hub",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Pierrot Endings — What We Know | Freak Circus Hub",
+    description: "What we know about endings associated with Pierrot in The Freak Circus. Only 'Missing' has been confirmed by name — the rest are unnamed open endings.",
+  },
 };
 
 export default function PierrotEndingsPage() {

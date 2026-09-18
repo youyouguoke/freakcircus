@@ -11,6 +11,18 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://freak-circus.com/theories/pierrot-remembers-routes",
   },
+  openGraph: {
+    title: "Pierrot Character Analysis — Community Discussion | Freak Circus Hub",
+    description: "Community analysis of Pierrot's character in The Freak Circus. Examining his yandere nature, relationship with Harlequin, and the Columbina legend.",
+    type: "article",
+    url: "https://freak-circus.com/theories/pierrot-remembers-routes",
+    siteName: "Freak Circus Hub",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Pierrot Character Analysis — Community Discussion | Freak Circus Hub",
+    description: "Community analysis of Pierrot's character in The Freak Circus. Examining his yandere nature, relationship with Harlequin, and the Columbina legend.",
+  },
 };
 
 export default function PierrotAnalysisPage() {

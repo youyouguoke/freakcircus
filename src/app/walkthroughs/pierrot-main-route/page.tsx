@@ -11,6 +11,18 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://freak-circus.com/walkthroughs/pierrot-main-route",
   },
+  openGraph: {
+    title: "Pierrot Route Guide — Community Walkthrough | Freak Circus Hub",
+    description: "Community guide for Pierrot's route in The Freak Circus. Covers Day 1 introduction, Day 2 development, and what the community has discovered about Pierrot's story path.",
+    type: "website",
+    url: "https://freak-circus.com/walkthroughs/pierrot-main-route",
+    siteName: "Freak Circus Hub",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Pierrot Route Guide — Community Walkthrough | Freak Circus Hub",
+    description: "Community guide for Pierrot's route in The Freak Circus. Covers Day 1 introduction, Day 2 development, and community discoveries.",
+  },
 };
 
 export default function PierrotMainRoutePage() {

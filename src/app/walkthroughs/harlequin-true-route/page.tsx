@@ -11,6 +11,18 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://freak-circus.com/walkthroughs/harlequin-true-route",
   },
+  openGraph: {
+    title: "Harlequin Route Guide — Community Walkthrough | Freak Circus Hub",
+    description: "Community guide for Harlequin's route in The Freak Circus. Covers Day 1 introduction, the 'Missing' bad ending, and what the community has discovered about Harlequin's story path.",
+    type: "website",
+    url: "https://freak-circus.com/walkthroughs/harlequin-true-route",
+    siteName: "Freak Circus Hub",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Harlequin Route Guide — Community Walkthrough | Freak Circus Hub",
+    description: "Community guide for Harlequin's route in The Freak Circus. Covers Day 1 introduction, the 'Missing' bad ending, and community discoveries.",
+  },
 };
 
 export default function HarlequinRoutePage() {

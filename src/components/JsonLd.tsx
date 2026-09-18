@@ -63,7 +63,8 @@ const faqEntities = [
   },
 ];
 
-export default function JsonLd() {
+// Site-wide graph: rendered in root layout on every page (WebSite, Organization, VideoGame)
+export function SiteJsonLd() {
   const structuredData = {
     "@context": "https://schema.org",
     "@graph": [
@@ -105,6 +106,22 @@ export default function JsonLd() {
           url: ITCH_IO_URL,
         },
       },
+    ],
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+    />
+  );
+}
+
+// Homepage-only graph: WebPage, BreadcrumbList, FAQPage, ItemList
+export default function JsonLd() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
       {
         "@type": "WebPage",
         "@id": `${siteUrl}/#webpage`,

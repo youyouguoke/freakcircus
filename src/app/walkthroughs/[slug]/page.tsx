@@ -78,6 +78,18 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: `${route.title} Guide — Freak Circus Hub`,
     description: route.description,
     alternates: { canonical: `https://freak-circus.com/walkthroughs/${slug}` },
+    openGraph: {
+      title: `${route.title} Guide — Freak Circus Hub`,
+      description: route.description,
+      type: "website",
+      url: `https://freak-circus.com/walkthroughs/${slug}`,
+      siteName: "Freak Circus Hub",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${route.title} Guide — Freak Circus Hub`,
+      description: route.description,
+    },
   };
 }
 

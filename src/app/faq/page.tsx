@@ -18,8 +18,29 @@ export const metadata: Metadata = {
   title: "The Freak Circus FAQ — Gameplay, Characters, Endings & Updates",
   description:
     "Frequently asked questions about The Freak Circus: official source, current build, playtime, choices, characters, confirmed endings, Day 3 status, spoilers, and updates.",
+  keywords: [
+    "Freak Circus FAQ",
+    "The Freak Circus questions",
+    "Freak Circus gameplay",
+    "Freak Circus endings FAQ",
+    "Freak Circus Day 3",
+  ],
   alternates: {
     canonical: "https://freak-circus.com/faq",
+  },
+  openGraph: {
+    title: "The Freak Circus FAQ — Gameplay, Characters, Endings & Updates",
+    description:
+      "Frequently asked questions about The Freak Circus: official source, current build, playtime, choices, characters, confirmed endings, Day 3 status, spoilers, and updates.",
+    type: "website",
+    url: "https://freak-circus.com/faq",
+    siteName: "Freak Circus Hub",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "The Freak Circus FAQ — Gameplay, Characters, Endings & Updates",
+    description:
+      "Frequently asked questions about The Freak Circus: official source, current build, playtime, choices, characters, confirmed endings, Day 3 status, spoilers, and updates.",
   },
 };
 

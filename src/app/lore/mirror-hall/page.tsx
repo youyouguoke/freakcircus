@@ -11,6 +11,18 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://freak-circus.com/lore/mirror-hall",
   },
+  openGraph: {
+    title: "Mirror Scene — Day 2 Key Story Moment | Freak Circus Hub",
+    description: "The mirror scene in The Freak Circus Day 2 — what we know about this confirmed story moment and community interpretations.",
+    type: "article",
+    url: "https://freak-circus.com/lore/mirror-hall",
+    siteName: "Freak Circus Hub",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mirror Scene — Day 2 Key Story Moment | Freak Circus Hub",
+    description: "The mirror scene in The Freak Circus Day 2 — what we know about this confirmed story moment and community interpretations.",
+  },
 };
 
 export default function MirrorHallPage() {
