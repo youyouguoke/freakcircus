@@ -6,10 +6,10 @@ import TicketTakerClient from "./TicketTakerClient";
 import { ENDINGS_CONFIRMED, ENDINGS_TOTAL } from "@/lib/site-facts";
 
 export const metadata: Metadata = {
-  title: "The Freak Circus Ticket Taker Guide | Freak Circus Hub",
-  description: "Ticket Taker guide for The Freak Circus. Confirmed appearances, community-reported scenes, route status, theories, and evidence status.",
+  title: "Ticket Taker in The Freak Circus — Character Guide & Route Status",
+  description: "Ticket Taker is the mysterious gatekeeper first encountered at The Freak Circus entrance. See confirmed appearances, Day 1–2 information, and the current route status.",
   keywords: ["The Freak Circus Ticket Taker", "Ticket Taker guide", "Freak Circus characters", "gatekeeper", "character analysis"],
-  openGraph: { title: "The Freak Circus Ticket Taker Guide", description: "Confirmed appearances, community-reported scenes, route status, theories, and evidence status.", type: "article", url: "https://freak-circus.com/characters/ticket-taker" },
+  openGraph: { title: "Ticket Taker in The Freak Circus — Character Guide & Route Status", description: "Ticket Taker is the mysterious gatekeeper first encountered at The Freak Circus entrance. See confirmed appearances, Day 1–2 information, and the current route status.", type: "article", url: "https://freak-circus.com/characters/ticket-taker" },
   alternates: { canonical: "https://freak-circus.com/characters/ticket-taker" },
 };
 

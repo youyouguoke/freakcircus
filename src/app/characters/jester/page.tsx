@@ -6,9 +6,9 @@ import JesterClient from "./JesterClient";
 import { ENDINGS_CONFIRMED, ENDINGS_TOTAL } from "@/lib/site-facts";
 
 export const metadata: Metadata = {
-  title: "The Freak Circus Jester — Character Guide & Confirmed Appearances",
+  title: "Jester in The Freak Circus — Character Guide & Route Status",
   description:
-    "Jester in The Freak Circus: Day 2 appearances, role in the story, and community-reported observations — with confirmed and unverified information clearly separated.",
+    "Jester is a Day 2 character in The Freak Circus with no confirmed playable route or ending. See known appearances, verified status, and community reports.",
   keywords: [
     "The Freak Circus Jester",
     "Jester character",
@@ -16,9 +16,9 @@ export const metadata: Metadata = {
     "Freak Circus characters",
   ],
   openGraph: {
-    title: "The Freak Circus Jester — Character Guide & Confirmed Appearances",
+    title: "Jester in The Freak Circus — Character Guide & Route Status",
     description:
-      "Jester in The Freak Circus: Day 2 appearances, role in the story, and community-reported observations.",
+      "Jester is a Day 2 character in The Freak Circus with no confirmed playable route or ending. See known appearances, verified status, and community reports.",
     type: "article",
     url: "https://freak-circus.com/characters/jester",
   },

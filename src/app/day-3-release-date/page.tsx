@@ -3,12 +3,12 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import Day3Subscribe from "@/components/Day3Subscribe";
-import { CURRENT_VERSION, RELEASED_DAYS_LABEL } from "@/lib/site-facts";
+import { CURRENT_VERSION, ENDINGS_PLANNED, RELEASED_DAYS_LABEL } from "@/lib/site-facts";
 
 export const metadata: Metadata = {
-  title: "Is The Freak Circus Day 3 Out? No — Official Status & Timeline (2026)",
+  title: "Is The Freak Circus Day 3 Out? No — Release Status & Timeline",
   description:
-    "Is Freak Circus Day 3 out yet? No — Day 3 is not confirmed as playable. Check the official roadmap status, development timeline, verified community signals, and what to do while waiting.",
+    "No — The Freak Circus Day 3 has not been publicly released and no official release date has been announced. See the latest development status, official updates, and timeline.",
   keywords: [
     "Freak Circus Day 3 release date",
     "Freak Circus v0.3",
@@ -20,18 +20,18 @@ export const metadata: Metadata = {
     "Freak Circus roadmap",
   ],
   openGraph: {
-    title: "Is The Freak Circus Day 3 Out? No — Official Status & Timeline (2026)",
+    title: "Is The Freak Circus Day 3 Out? No — Release Status & Timeline",
     description:
-      "Is Freak Circus Day 3 out yet? No — Day 3 is not confirmed as playable. Official roadmap status, development timeline, and verified signals.",
+      "No — The Freak Circus Day 3 has not been publicly released and no official release date has been announced. See the latest development status, official updates, and timeline.",
     type: "article",
     url: "https://freak-circus.com/day-3-release-date",
     siteName: "Freak Circus Hub",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Is The Freak Circus Day 3 Out? No — Official Status & Timeline (2026)",
+    title: "Is The Freak Circus Day 3 Out? No — Release Status & Timeline",
     description:
-      "Is Freak Circus Day 3 out yet? No — Day 3 is not confirmed as playable. Official status and timeline.",
+      "No — The Freak Circus Day 3 has not been publicly released and no official release date has been announced. See the latest development status, official updates, and timeline.",
   },
   alternates: {
     canonical: "https://freak-circus.com/day-3-release-date",
@@ -257,7 +257,7 @@ export default function Day3ReleaseDatePage() {
             <Link href="/endings" className="bg-surface-container border border-outline/20 p-6 hover:border-primary transition-colors group">
               <div className="font-[JetBrains_Mono] text-xs text-primary mb-2">COMPLETE</div>
               <h3 className="font-[Epilogue] text-lg font-bold text-foreground group-hover:text-primary transition-colors mb-2">Unlock All Endings</h3>
-              <p className="text-on-surface-variant text-sm">1 confirmed ending (Missing). The developer has planned 3 additional endings, but none are implemented yet. Save before every major choice to prepare for future updates.</p>
+              <p className="text-on-surface-variant text-sm">1 confirmed ending (Missing). The developer has planned {ENDINGS_PLANNED} additional endings, but none are implemented yet. Save before every major choice to prepare for future updates.</p>
             </Link>
             <Link href="/walkthroughs/save-guide" className="bg-surface-container border border-outline/20 p-6 hover:border-primary transition-colors group">
               <div className="font-[JetBrains_Mono] text-xs text-primary mb-2">PREPARE</div>

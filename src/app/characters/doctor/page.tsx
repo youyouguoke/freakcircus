@@ -5,10 +5,10 @@ import ContinueExploring from "@/components/ContinueExploring";
 import DoctorClient from "./DoctorClient";
 
 export const metadata: Metadata = {
-  title: "The Freak Circus Doctor — Character Guide & Route Status",
-  description: "The Doctor in The Freak Circus: Day 2 circus physician. Confirmed appearances, community-reported observations, and what is still unknown.",
+  title: "The Doctor in The Freak Circus — Character Guide & Route Status",
+  description: "The Doctor is the circus physician featured in The Freak Circus Day 2 content. See his known appearances, character information, and current route and ending status.",
   keywords: ["The Freak Circus Doctor", "Doctor character", "Freak Circus characters", "Day 2 character", "Doctor guide"],
-  openGraph: { title: "The Freak Circus Doctor — Character Guide & Route Status", description: "The Doctor in The Freak Circus: Day 2 circus physician. Confirmed appearances and community-reported observations.", type: "article", url: "https://freak-circus.com/characters/doctor" },
+  openGraph: { title: "The Doctor in The Freak Circus — Character Guide & Route Status", description: "The Doctor is the circus physician featured in The Freak Circus Day 2 content. See his known appearances, character information, and current route and ending status.", type: "article", url: "https://freak-circus.com/characters/doctor" },
   alternates: { canonical: "https://freak-circus.com/characters/doctor" },
 };
 

@@ -5,13 +5,13 @@ import ContinueExploring from '@/components/ContinueExploring';
 import PierrotClient from './PierrotClient';
 
 export const metadata: Metadata = {
-  title: "The Freak Circus Pierrot — Character Guide, Route Status & Confirmed Facts",
-  description: 'Pierrot in The Freak Circus: 198cm, golden eyes, silent yandere. One of the two main character routes. Confirmed facts, a planned (not yet implemented) ending, and what is still unverified.',
+  title: "Pierrot in The Freak Circus — Character & Route Guide",
+  description: 'Pierrot is one of the two main characters in The Freak Circus. Explore his Day 1–2 route, confirmed facts, ending status, and the story behind his rivalry with Harlequin.',
   keywords: ['The Freak Circus Pierrot', 'Pierrot', 'Pierrot character', 'Pierrot route guide', 'silent yandere', '198cm'],
   alternates: { canonical: 'https://freak-circus.com/characters/pierrot' },
   openGraph: {
-    title: "The Freak Circus Pierrot — Character Guide, Route Status & Confirmed Facts",
-    description: 'Pierrot in The Freak Circus: 198cm, golden eyes, silent yandere. One of the two main character routes.',
+    title: "Pierrot in The Freak Circus — Character & Route Guide",
+    description: 'Pierrot is one of the two main characters in The Freak Circus. Explore his Day 1–2 route, confirmed facts, ending status, and the story behind his rivalry with Harlequin.',
     type: 'website',
     url: 'https://freak-circus.com/characters/pierrot',
     siteName: 'Freak Circus Hub',

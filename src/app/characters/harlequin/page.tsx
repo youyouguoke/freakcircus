@@ -5,10 +5,10 @@ import ContinueExploring from "@/components/ContinueExploring";
 import HarlequinClient from "./HarlequinClient";
 
 export const metadata: Metadata = {
-  title: "The Freak Circus Harlequin — Character Guide, Route Status & Confirmed Facts",
-  description: "Harlequin is one of the two main character routes in The Freak Circus. Confirmed facts, community-reported scenes, the 'Missing' bad ending connection, and what is still unverified.",
+  title: "Harlequin in The Freak Circus — Missing Ending & Character Guide",
+  description: "Harlequin is one of The Freak Circus's main characters and the route associated with the confirmed “Missing” ending. See verified facts, Day 1–2 appearances, and route information.",
   keywords: ["The Freak Circus Harlequin", "Harlequin", "Harlequin route guide", "Harlequin character", "Freak Circus characters", "Missing ending"],
-  openGraph: { title: "The Freak Circus Harlequin — Character Guide, Route Status & Confirmed Facts", description: "Harlequin is one of the two main character routes in The Freak Circus. Confirmed facts, community-reported scenes, and the 'Missing' bad ending connection.", type: "article", url: "https://freak-circus.com/characters/harlequin" },
+  openGraph: { title: "Harlequin in The Freak Circus — Missing Ending & Character Guide", description: "Harlequin is one of The Freak Circus's main characters and the route associated with the confirmed “Missing” ending. See verified facts, Day 1–2 appearances, and route information.", type: "article", url: "https://freak-circus.com/characters/harlequin" },
   alternates: { canonical: "https://freak-circus.com/characters/harlequin" },
 };
 
