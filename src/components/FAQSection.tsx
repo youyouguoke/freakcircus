@@ -24,7 +24,7 @@ export default function FAQSection() {
       question: "How many endings are in The Freak Circus?",
       answer: (
         <>
-          The game has 4 endings: 1 confirmed bad ending (&quot;Missing&quot;) and 3 open endings. Only &quot;Missing&quot; has been independently verified. The 3 open endings have not been named by any official source. <Link href="/endings" className="text-circus-red hover:underline">View endings →</Link>
+          The current build has 1 confirmed ending: &quot;Missing&quot; (Bad Ending). The developer has planned 4 additional endings on itch.io, but none are implemented yet. <Link href="/endings" className="text-circus-red hover:underline">View endings →</Link>
         </>
       ),
     },

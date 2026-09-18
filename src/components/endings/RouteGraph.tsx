@@ -1,5 +1,7 @@
 "use client";
 
+import { CURRENT_VERSION } from "@/lib/site-facts";
+
 export default function RouteGraph() {
   return (
     <section className="bg-surface py-16 px-4 md:px-16 border-t border-outline/10">
@@ -21,7 +23,7 @@ export default function RouteGraph() {
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-green-500 mt-1">•</span>
-                <span><strong>3 open endings</strong> exist but are unnamed</span>
+                <span><strong>4 planned endings</strong> listed by developer (not yet in game)</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-green-500 mt-1">•</span>
@@ -69,7 +71,7 @@ export default function RouteGraph() {
           <h3 className="font-display text-lg text-on-surface mb-2">Why We Don&apos;t Have a Route Map</h3>
           <p className="text-on-surface/50 text-sm">
             Unlike many visual novels, The Freak Circus has not had its full route tree publicly documented.
-            The game is still in active development (v0.2), and Day 3 has not been released.
+            The game is still in active development ({CURRENT_VERSION}), and Day 3 has not been released.
             Community members have shared partial findings, but no comprehensive route-to-ending mapping
             has been independently verified.
           </p>

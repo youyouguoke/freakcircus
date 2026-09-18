@@ -17,7 +17,6 @@ import TheoriesFooter from "@/components/theories/TheoriesFooter";
 import TheoryMatrix from "@/components/theories/TheoryMatrix";
 import CompleteTimeline from "@/components/theories/CompleteTimeline";
 import TheoryEndingsLink from "@/components/theories/TheoryEndingsLink";
-import JsonLd from "@/components/JsonLd";
 import ContinueExploring from "@/components/ContinueExploring";
 
 export const metadata: Metadata = {
@@ -79,7 +78,7 @@ export default function TheoriesPage() {
       <TheoriesFooter />
       <ContinueExploring />
       <Footer />
-      <JsonLd />
+      
     </main>
   );
 }

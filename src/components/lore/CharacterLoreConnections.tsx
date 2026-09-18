@@ -36,7 +36,7 @@ const characters = [
     role: "Day 1-2 Character",
     desc: "Introduced in Day 1 at the cafe. Expanded role in Day 2 tent routes.",
     lore: ["First character the player meets in Day 1", "Present in both Day 1 and Day 2 content"],
-    href: "/characters",
+    href: "/characters/ticket-taker",
   },
 ];
 

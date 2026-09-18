@@ -22,11 +22,7 @@ const communityLinks = [
   { label: 'Tumblr #freakcircus', url: 'https://www.tumblr.com/tagged/freakcircus' },
 ];
 
-const languageLinks = [
-  { label: '🇪🇸 Español', url: 'https://thefreakcircus.my/the-freak-circus-espanol' },
-  { label: '🇷🇺 Русский', url: 'https://thefreakcircus.my/the-freak-circus-na-russkom' },
-  { label: '🇮🇩 Bahasa Indonesia', url: 'https://thefreakcircus.my/the-freak-circus-bahasa-indonesia' },
-];
+const languageLinks: { label: string; url: string }[] = [];
 
 export default function Footer() {
   return (

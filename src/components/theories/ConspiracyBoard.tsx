@@ -1,5 +1,7 @@
 "use client";
 
+import { CURRENT_VERSION, RELEASED_DAYS_LABEL } from "@/lib/site-facts";
+
 export default function ConspiracyBoard() {
   return (
     <section className="py-16 px-4 md:px-16 border-t border-outline/10">
@@ -17,9 +19,9 @@ export default function ConspiracyBoard() {
             { category: "Lore", fact: "Columbina is dead — killed by Harlequin" },
             { category: "Lore", fact: "The Columbina legend explains Pierrot-Harlequin rivalry" },
             { category: "Endings", fact: "1 confirmed ending: 'Missing' (Bad Ending)" },
-            { category: "Endings", fact: "3 unnamed open endings confirmed by developer" },
-            { category: "Structure", fact: "Day 1 & 2 released, Day 3 planned" },
-            { category: "Structure", fact: "Game is in v0.2, actively developed" },
+            { category: "Endings", fact: "4 planned endings listed on itch.io (Pierrot's, Harlequin's, Protagonist's, All together) — not yet implemented" },
+            { category: "Structure", fact: `${RELEASED_DAYS_LABEL} released, Day 3 planned` },
+            { category: "Structure", fact: `Game is in ${CURRENT_VERSION}, actively developed` },
           ].map((item, i) => (
             <div key={i} className="glass-card p-4 flex items-start gap-3">
               <span className="font-mono text-[9px] text-green-500 bg-green-900/20 px-2 py-0.5 uppercase shrink-0">{item.category}</span>

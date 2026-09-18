@@ -1,9 +1,9 @@
 import { Metadata } from "next";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import JsonLd from "@/components/JsonLd";
 import Link from "next/link";
 import Day3Subscribe from "@/components/Day3Subscribe";
+import { CURRENT_VERSION, RELEASED_DAYS_LABEL } from "@/lib/site-facts";
 
 export const metadata: Metadata = {
   title: "Freak Circus Day 3 Release Date (2026) | Official Status & Development Timeline",
@@ -53,7 +53,7 @@ const faqData = [
   },
   {
     q: "Can I play Day 3 now?",
-    a: "No. There is no public Day 3 build, beta, or early access. The current public version is v0.2 (Prototype). Any site claiming to offer a Day 3 download, APK, or leaked build is unverified and potentially unsafe.",
+    a: `No. There is no public Day 3 build, beta, or early access. The current public version is ${CURRENT_VERSION}. Any site claiming to offer a Day 3 download, APK, or leaked build is unverified and potentially unsafe.`,
   },
   {
     q: "Will my saves carry over to Day 3?",
@@ -69,7 +69,7 @@ const faqData = [
   },
   {
     q: "What should I do while waiting for Day 3?",
-    a: "Play the current v0.2 build. The current build has 1 confirmed ending (Missing). The developer has planned 3 additional endings, but none are implemented yet. Read the lore archive and save before every major choice.",
+    a: `Play the current ${CURRENT_VERSION} build. The current build has 1 confirmed ending (Missing). The developer has planned 4 additional endings, but none are implemented yet. Read the lore archive and save before every major choice.`,
   },
 ];
 
@@ -106,7 +106,7 @@ const timelineEvents = [
   },
   {
     date: "2026-07-08",
-    signal: "Official itch.io page, devlog, and creator Tumblr checked. itch.io still shows public v0.2 files; latest visible devlog item is a Chinese language update, not a Day 3 release notice",
+    signal: `Official itch.io page, devlog, and creator Tumblr checked. itch.io still shows public ${CURRENT_VERSION} files; latest visible devlog item is a Chinese language update, not a Day 3 release notice`,
     source: "Official itch.io + devlog + creator Tumblr",
     status: "No official public Day 3 build confirmed",
   },
@@ -203,7 +203,7 @@ export default function Day3ReleaseDatePage() {
               No. Day 3 is not publicly confirmed as playable yet.
             </p>
             <p className="text-on-surface-variant text-sm">
-              No official release date has been announced. The developer has not provided a specific date, beta access window, or playable build. The current public version remains v0.2 (Prototype).
+              No official release date has been announced. The developer has not provided a specific date, beta access window, or playable build. The current public version remains {CURRENT_VERSION}.
             </p>
           </div>
         </div>
@@ -252,7 +252,7 @@ export default function Day3ReleaseDatePage() {
             <Link href="/play-online" className="bg-surface-container border border-outline/20 p-6 hover:border-primary transition-colors group">
               <div className="font-[JetBrains_Mono] text-xs text-primary mb-2">PLAY NOW</div>
               <h3 className="font-[Epilogue] text-lg font-bold text-foreground group-hover:text-primary transition-colors mb-2">Play the Current Build</h3>
-              <p className="text-on-surface-variant text-sm">Play the official v0.2 build (Day 1 &amp; Day 2) through the official source route. Avoid APKs, mirrors, and reposted downloads.</p>
+              <p className="text-on-surface-variant text-sm">Play the official {CURRENT_VERSION} build ({RELEASED_DAYS_LABEL}) through the official source route. Avoid APKs, mirrors, and reposted downloads.</p>
             </Link>
             <Link href="/endings" className="bg-surface-container border border-outline/20 p-6 hover:border-primary transition-colors group">
               <div className="font-[JetBrains_Mono] text-xs text-primary mb-2">COMPLETE</div>
@@ -345,11 +345,11 @@ export default function Day3ReleaseDatePage() {
         <div className="max-w-4xl mx-auto">
           <h2 className="font-[Epilogue] text-2xl md:text-3xl font-bold text-primary mb-6">Related Guides</h2>
           <div className="flex flex-wrap gap-4">
-            <Link href="/day-2" className="text-primary hover:underline text-sm font-[JetBrains_Mono]">Day 2 Walkthrough →</Link>
+            <Link href="/walkthroughs/day-2" className="text-primary hover:underline text-sm font-[JetBrains_Mono]">Day 2 Walkthrough →</Link>
             <Link href="/day-3" className="text-primary hover:underline text-sm font-[JetBrains_Mono]">Day 3 Preview →</Link>
             <Link href="/endings" className="text-primary hover:underline text-sm font-[JetBrains_Mono]">All Endings →</Link>
             <Link href="/characters" className="text-primary hover:underline text-sm font-[JetBrains_Mono]">Characters →</Link>
-            <Link href="/ticket-taker" className="text-primary hover:underline text-sm font-[JetBrains_Mono]">Ticket Taker →</Link>
+            <Link href="/characters/ticket-taker" className="text-primary hover:underline text-sm font-[JetBrains_Mono]">Ticket Taker →</Link>
           </div>
         </div>
       </section>
@@ -373,7 +373,7 @@ export default function Day3ReleaseDatePage() {
           }),
         }}
       />
-      <JsonLd />
+      
     </main>
   );
 }

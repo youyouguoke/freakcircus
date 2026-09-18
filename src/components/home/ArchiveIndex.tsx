@@ -8,7 +8,7 @@ const sections = [
       { name: 'Harlequin', href: '/characters/harlequin' },
       { name: 'The Doctor', href: '/characters/doctor' },
       { name: 'Jester', href: '/characters/jester' },
-      { name: 'Ticket Taker', href: '/ticket-taker' },
+      { name: 'Ticket Taker', href: '/characters/ticket-taker' },
     ],
   },
   {

@@ -9,12 +9,12 @@ const discoveries = [
   {
     title: "Mirror Hall Layout Changes After Ending #7",
     status: "Under Investigation",
-    desc: "The Mirror Hall layout changes after viewing the Unnamed Open Ending ending. Some doors only appear on replay, and the hallway architecture shifts between loops. Players report seeing rooms they have not yet unlocked, suggesting the environment is not static.",
+    desc: "Community members report changes in the Mirror Hall scene across playthroughs. Whether this is intentional design is unverified. Some observations only appear on replay, and the hallway architecture shifts between loops. Players report seeing rooms they have not yet unlocked, suggesting the environment is not static.",
   },
   {
     title: "Pierrot Remembers Failed Routes and Adjusts Dialogue",
     status: "Community Theory",
-    desc: "Multiple players have documented Pierrot reacting differently on the 4th playthrough. He references events from previous routes with specificity that suggests memory retention across saves. The loop theory proposes that the game maintains a hidden counter at save file offset 0x4A20 that affects available dialogue options.",
+    desc: "Some players report that Pierrot's dialogue may change after repeated playthroughs. Whether this is intentional design or player perception is debated. Claims about specific save file mechanics are unverified community speculation.",
   },
 ];
 

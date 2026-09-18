@@ -4,17 +4,17 @@ const updates = [
   {
     date: "June 9, 2026",
     title: "Added Columbina Timeline Analysis",
-    desc: "Full chronological breakdown of Columbina's three-loop storyline, including the fourth door trigger and memory fragment documentation.",
+    desc: "Community analysis of character dialogue patterns and potential replay-aware behavior in Day 1 and Day 2 content.",
   },
   {
     date: "June 7, 2026",
-    title: "Updated Open Ending C (unnamed) Ending Guide",
+    title: "Updated Endings Guide — What's Confirmed vs Planned",
     desc: "Revised unlock conditions based on new community testing. Added Scene 12 confirmation and black screen duration notes.",
   },
   {
     date: "June 5, 2026",
     title: "Added Pierrot Relationship Notes",
-    desc: "Documented cross-route dialogue changes and the hidden counter mechanism found at save file offset 0x4A20.",
+    desc: "Community reports suggest dialogue may change across playthroughs. Specific save file mechanics are unverified.",
   },
   {
     date: "June 2, 2026",

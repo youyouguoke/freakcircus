@@ -2,14 +2,13 @@ import { Metadata } from "next";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import ContinueExploring from "@/components/ContinueExploring";
-import JsonLd from "@/components/JsonLd";
 import UnverifiedBanner from "@/components/UnverifiedBanner";
 import ColumbinaClient from "./ColumbinaClient";
 
 export const metadata: Metadata = {
-  title: "Columbina — Deceased Character, Lore & Community Theories | Freak Circus Hub",
-  description: "Columbina character analysis for The Freak Circus. NOTE: Columbina is a DECEASED character (killed by Harlequin), not a playable route. This page covers community theories and lore about her role in the story.",
-  keywords: ["Columbina", "The Freak Circus Columbina", "Columbina deceased", "ballerina", "Columbina lore"],
+  title: "Columbina — Deceased Lore Character (Not Playable) | Freak Circus Hub",
+  description: "Columbina is a DECEASED character in The Freak Circus, killed by Harlequin. She has NO playable route and NO endings. This page covers her role in the backstory and corrects previous misinformation.",
+  keywords: ["Columbina", "The Freak Circus Columbina", "Columbina deceased", "Columbina not playable", "Columbina lore"],
   openGraph: { title: "Columbina — Deceased Character & Lore Analysis", description: "Columbina is deceased (killed by Harlequin). Community theories and lore analysis.", type: "article", url: "https://freak-circus.com/characters/columbina" },
   alternates: { canonical: "https://freak-circus.com/characters/columbina" },
 };
@@ -31,7 +30,7 @@ export default function ColumbinaPage() {
       <ColumbinaClient faqData={faqData} />
       <ContinueExploring />
       <Footer />
-      <JsonLd />
+      
     </main>
   );
 }

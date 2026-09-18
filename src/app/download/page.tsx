@@ -3,36 +3,46 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
 import ContinueExploring from '@/components/ContinueExploring';
+import QuickPeek from '@/components/QuickPeek';
+import {
+  CURRENT_VERSION,
+  ENDINGS_CONFIRMED,
+  ENDINGS_PLANNED,
+  ITCH_IO_URL,
+  LAST_VERIFIED_LABEL,
+  RELEASED_DAYS_LABEL,
+} from '@/lib/site-facts';
 
 export const metadata: Metadata = {
-  title: 'Download The Freak Circus — PC, Mac, Linux | Freak Circus Hub',
-  description: 'Download The Freak Circus by Neko Bueno — 18+ psychological horror visual novel. Free on itch.io for Windows, macOS, Linux. Day 1 & Day 2 available.',
-  keywords: ['The Freak Circus download', 'PC', 'Mac', 'Linux', 'itch.io', 'official demo', 'visual novel', 'horror game'],
+  title: 'The Freak Circus Download — Official itch.io Source | Freak Circus Hub',
+  description: 'Download The Freak Circus from the official itch.io source. Current build, platform safety notes, verification guidance, and official-source warnings.',
+  keywords: ['The Freak Circus download', 'official source', 'itch.io', 'Windows', 'macOS', 'Linux', 'visual novel', 'horror game'],
   openGraph: {
-    title: 'Download The Freak Circus — PC, Mac, Linux',
-    description: 'Download The Freak Circus official demo for Windows, macOS, and Linux from itch.io.',
+    title: 'The Freak Circus Download — Official itch.io Source',
+    description: 'Download The Freak Circus from the official itch.io source with platform safety notes.',
     type: 'website',
     url: 'https://freak-circus.com/download',
     siteName: 'Freak Circus Hub',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Download The Freak Circus — PC, Mac, Linux',
-    description: 'Download the official demo for Windows, macOS, and Linux.',
+    title: 'The Freak Circus Download — Official itch.io Source',
+    description: 'Download from the official source with safety and verification notes.',
   },
   alternates: { canonical: 'https://freak-circus.com/download' },
 };
 
 const platforms = [
-  { name: 'Windows', file: 'the-freak-circus-windows.zip', note: 'Extract and run the .exe inside the folder. Windows Defender may show a SmartScreen warning because the executable is unsigned; click More info → Run anyway.' },
-  { name: 'macOS', file: 'the-freak-circus-mac.zip', note: 'Extract the .app and move it to Applications. If Gatekeeper blocks the app, right-click the icon and choose Open, or go to System Settings → Privacy & Security → Allow.' },
-  { name: 'Linux', file: 'the-freak-circus-linux.zip', note: 'Extract the archive and run the shell script or executable. You may need to chmod +x the launcher from a terminal.' },
+  { name: 'Windows', note: 'Open the official itch.io page and choose the current Windows build. If Windows Defender shows a SmartScreen warning, verify the source is the official itch.io page before running the file.' },
+  { name: 'macOS', note: 'Open the official itch.io page and choose the current macOS build. If Gatekeeper blocks the app, verify the download source first, then use macOS Privacy & Security settings to open it.' },
+  { name: 'Linux', note: 'Open the official itch.io page and choose the current Linux build. Follow the included launch instructions and verify the source before making any file executable.' },
 ];
 
 const faqs = [
-  { question: 'How large is the game?', answer: 'The downloadable demo is approximately 400–500 MB depending on platform. The Android APK is around 423 MB.' },
-  { question: 'Does the download cost anything?', answer: 'No. The demo is free to download and play. itch.io may show a \'Name your price\' option, but you can enter $0 to download at no cost.' },
-  { question: 'Are saves compatible across versions?', answer: 'Yes, saves from the demo carry over to newer demo builds and are intended to carry over to the full release. Keep your save files backed up before switching versions.' },
+  { question: 'Is this the official download source?', answer: `No. This page links to the official itch.io page (${ITCH_IO_URL}). We do not host, mirror, or redistribute the game.` },
+  { question: 'Does the download cost anything?', answer: 'No. The official public build is free through itch.io. If a name-your-price option appears, you can enter $0.' },
+  { question: 'How do I verify I downloaded the real game?', answer: 'Download only from the official itch.io page, check the creator name, and avoid APKs, mirrors, reposted builds, or sites promising leaked Day 3 content.' },
+  { question: 'What content is in the current build?', answer: `The current build is ${CURRENT_VERSION} with ${RELEASED_DAYS_LABEL} available. It has ${ENDINGS_CONFIRMED} confirmed ending and ${ENDINGS_PLANNED} planned endings that are not implemented yet.` },
 ];
 
 export default function DownloadPage() {
@@ -52,7 +62,7 @@ export default function DownloadPage() {
         <div className="max-w-4xl mx-auto w-full relative z-10">
           <div className="font-label text-circus-red text-[0.6rem] mb-4 flex items-center gap-3">
             <span className="inline-block w-8 h-px bg-circus-red" />
-            v0.2 PROTOTYPE · LAST UPDATED: 2026-02-22
+            {CURRENT_VERSION} · LAST VERIFIED: {LAST_VERIFIED_LABEL}
           </div>
           <h1 className="font-archive text-5xl md:text-7xl text-paper leading-[0.9] mb-6">
             DOWNLOAD
@@ -63,7 +73,7 @@ export default function DownloadPage() {
             Cross-platform download guide. Get the official demo for Windows, macOS, and Linux from itch.io.
           </p>
           <a
-            href="https://garula.itch.io/the-freak-circus"
+            href={ITCH_IO_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="btn-archive btn-archive--filled text-base py-3 px-8"
@@ -99,11 +109,10 @@ export default function DownloadPage() {
               <div key={platform.name} className="archive-card flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                 <div>
                   <h3 className="font-heading text-lg font-bold text-paper">{platform.name}</h3>
-                  <div className="font-label text-[0.5rem] text-faint-paper mt-1">{platform.file}</div>
                   <p className="text-faint-paper text-sm mt-2">{platform.note}</p>
                 </div>
                 <a
-                  href="https://garula.itch.io/the-freak-circus"
+                  href={ITCH_IO_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-archive shrink-0"
@@ -215,7 +224,7 @@ export default function DownloadPage() {
             Download the latest version safely from the official itch.io page. Free, no account required.
           </p>
           <a
-            href="https://garula.itch.io/the-freak-circus"
+            href={ITCH_IO_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="btn-archive btn-archive--filled text-base py-3 px-8"
@@ -224,6 +233,8 @@ export default function DownloadPage() {
           </a>
         </div>
       </section>
+
+      <QuickPeek theme="archive" />
 
       <Footer />
     </main>

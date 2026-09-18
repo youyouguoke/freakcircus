@@ -14,8 +14,8 @@ export default function CommunityInvestigations() {
         <div className="space-y-4">
           {[
             {
-              topic: "What are the 3 open endings?",
-              desc: "The most discussed question. The developer confirmed 3 open endings exist but hasn't named them. Community members have proposed various names but none are verified.",
+              topic: "What are the 4 planned endings?",
+              desc: "The most discussed question. The developer listed 4 planned endings on itch.io (Pierrot's, Harlequin's, Protagonist's, All together). None are implemented in the current build.",
             },
             {
               topic: "Mirror scene significance",

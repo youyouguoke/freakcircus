@@ -99,7 +99,7 @@ export default function SaveGuidePage() {
                   <div>
                     <strong>The game has 4 endings — plan for multiple playthroughs.</strong>
                     <p className="text-on-surface/50 text-xs mt-1">
-                      1 confirmed bad ending (&quot;Missing&quot;) + 3 unnamed open endings.
+                      1 confirmed bad ending (&quot;Missing&quot;) + 4 planned endings (not yet in game).
                       You&apos;ll need to replay with different choices to see them all.
                     </p>
                   </div>
@@ -170,7 +170,7 @@ export default function SaveGuidePage() {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-on-surface/30 mt-1">?</span>
-                  <span>The exact choice combinations that lead to each of the 3 open endings</span>
+                  <span>The exact choice combinations for the 4 planned endings (not yet in game)</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-on-surface/30 mt-1">?</span>

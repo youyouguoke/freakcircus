@@ -53,7 +53,7 @@ export default function UnverifiedBanner({ level = "high", className = "" }: Unv
         {copy.body}
       </p>
       <p className="text-paper/50 text-[10px] mt-2 font-[JetBrains_Mono]">
-        Sources: VNDB · itch.io · thefreakcircus.org · YouTube · Last verified: Aug 2026
+        Sources: VNDB · itch.io · YouTube · Last verified: Aug 2026
       </p>
     </div>
   );

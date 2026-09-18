@@ -1,10 +1,10 @@
 "use client";
 
 const symbols = [
-  { name: "Red Thread", meaning: "Connection between characters across routes. The thread frays as the player approaches the Unnamed Open Ending.", appearances: ["Pierrot Main", "Harlequin True", "Unnamed Open Ending"] },
+  { name: "Red Thread", meaning: "Connection between characters across routes. The thread appears in scenes involving Pierrot and Harlequin's rivalry. Ending.", appearances: ["Pierrot Main", "Harlequin True", "Pierrot route"] },
   { name: "Mask", meaning: "Identity and deception. Characters who wear masks have different dialogue in subsequent playthroughs.", appearances: ["Harlequin True", "Columbina Fractured"] },
   { name: "Mirror", meaning: "Memory and reflection. Shows different images based on the player's route history and ending count.", appearances: ["All Routes"] },
-  { name: "Stage Curtain", meaning: "Boundaries between acts. Closing the curtain at specific times triggers hidden events.", appearances: ["Pierrot Silent", "Unnamed Open Ending"] },
+  { name: "Stage Curtain", meaning: "Boundaries between acts. Closing the curtain at specific times triggers hidden events.", appearances: ["Pierrot Silent", "Pierrot route"] },
 ];
 
 export default function SymbolismDatabase() {

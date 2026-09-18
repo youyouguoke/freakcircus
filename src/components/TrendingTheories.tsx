@@ -4,44 +4,38 @@ import Link from 'next/link';
 
 const theories = [
   {
-    id: 'THEORY_07',
-    title: 'Pierrot Remembers Every Loop',
-    status: 'confirmed',
-    evidence: 5,
-    confidence: 82,
-    desc: 'Evidence suggests Pierrot reacts differently after repeated failed endings, retaining knowledge across timelines. On the 4th playthrough, he references choices from previous routes that the player never selected in the current save.',
+    id: 'T_03',
+    title: "Columbina's Death Drives Everything",
+    status: 'PARTIALLY VERIFIED',
+    desc: "The Columbina legend is confirmed to appear in Day 2, explaining Pierrot and Harlequin's rivalry. Columbina was killed by Harlequin — this is the central event driving the story.",
     href: '/theories',
   },
   {
-    id: 'THEORY_15',
-    title: 'Red Thread Connects All Routes',
-    status: 'confirmed',
-    evidence: 7,
-    confidence: 85,
-    desc: 'The red thread appears in every character route and seems to physically connect characters across timelines. Cutting the thread in one route affects dialogue in others.',
-    href: '/theories',
+    id: 'T_05',
+    title: 'Pierrot Remembers Previous Playthroughs',
+    status: 'UNVERIFIED',
+    desc: "Some players report Pierrot's dialogue changes after repeated playthroughs. Claims about specific save file mechanics (e.g., hidden counters) are unconfirmed community speculation.",
+    href: '/theories/pierrot-remembers-routes',
   },
   {
-    id: 'THEORY_11',
-    title: 'The Doctor Is The Observer',
-    status: 'likely',
-    evidence: 4,
-    confidence: 67,
-    desc: 'The Doctor may be aware of the player directly, breaking the fourth wall through clinical observations. His Scene 7 description of the Unnamed Open Ending ending matches unused files found in build 1.04.',
+    id: 'T_06',
+    title: 'The Circus Is A Loop',
+    status: 'SPECULATION',
+    desc: "The theory that the entire circus operates as a repeating loop, with characters retaining fragments of memory across cycles. No official confirmation.",
     href: '/theories',
   },
 ];
 
 function StatusPill({ status }: { status: string }) {
   const colors: Record<string, { c: string; b: string; bd: string }> = {
-    confirmed: { c: 'var(--status-confirmed)', b: 'rgba(76,175,110,0.08)', bd: 'rgba(76,175,110,0.3)' },
-    likely: { c: 'var(--status-likely)', b: 'rgba(196,154,60,0.08)', bd: 'rgba(196,154,60,0.3)' },
-    unverified: { c: 'var(--status-unverified)', b: 'rgba(138,128,120,0.08)', bd: 'rgba(138,128,120,0.3)' },
+    'PARTIALLY VERIFIED': { c: 'var(--status-likely)', b: 'rgba(196,154,60,0.08)', bd: 'rgba(196,154,60,0.3)' },
+    'UNVERIFIED': { c: 'var(--status-unverified)', b: 'rgba(138,128,120,0.08)', bd: 'rgba(138,128,120,0.3)' },
+    'SPECULATION': { c: 'var(--status-unverified)', b: 'rgba(138,128,120,0.08)', bd: 'rgba(138,128,120,0.3)' },
   };
-  const s = colors[status] || colors.unverified;
+  const s = colors[status] || colors['UNVERIFIED'];
   return (
     <span className="font-label text-[0.5rem] px-2 py-0.5" style={{ color: s.c, border: `1px solid ${s.bd}`, background: s.b }}>
-      {status.toUpperCase()}
+      {status}
     </span>
   );
 }
@@ -56,7 +50,7 @@ export default function TrendingTheories() {
             THEORY DATABASE
           </div>
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-paper">
-            Trending Theories
+            Community Theories
           </h2>
         </div>
         <div className="grid md:grid-cols-3 gap-4">
@@ -69,13 +63,17 @@ export default function TrendingTheories() {
                 </div>
                 <h3 className="font-heading text-base font-bold text-paper mb-3 group-hover:text-circus-red transition-colors">{t.title}</h3>
                 <p className="text-faint-paper text-sm leading-relaxed mb-4 line-clamp-3">{t.desc}</p>
-                <div className="flex items-center gap-4 pt-3 border-t border-dark-border">
-                  <span className="font-label text-[0.5rem] text-faint-paper">{t.evidence} EVIDENCE</span>
-                  <span className="font-label text-[0.5rem] text-faint-paper">{t.confidence}% CONF</span>
-                </div>
+                <span className="font-label text-[0.55rem] text-circus-red flex items-center gap-1">
+                  VIEW THEORY <span className="group-hover:translate-x-1 transition-transform">→</span>
+                </span>
               </div>
             </Link>
           ))}
+        </div>
+        <div className="mt-8 text-center">
+          <Link href="/theories" className="btn-archive">
+            VIEW ALL THEORIES
+          </Link>
         </div>
       </div>
     </section>

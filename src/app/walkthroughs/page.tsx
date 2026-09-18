@@ -1,16 +1,15 @@
 import { Metadata } from "next";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import JsonLd from "@/components/JsonLd";
 import ContinueExploring from "@/components/ContinueExploring";
 import Link from "next/link";
 import UnverifiedBanner from "@/components/UnverifiedBanner";
-import { ENDINGS_SUMMARY } from "@/lib/site-facts";
+import { ENDINGS_SUMMARY, CURRENT_VERSION, RELEASED_DAYS_LABEL, PLAYTIME_LABEL, currentBuildSummary } from "@/lib/site-facts";
 
 export const metadata: Metadata = {
   title: "Freak Circus Walkthrough Hub | Day-by-Day Guides, Routes & Endings",
   description:
-    "Walkthrough guides for The Freak Circus by Neko Bueno — Day 1 & Day 2 (released Dec 2025) guides, character route info, confirmed ending details, and community tips.",
+    "Walkthrough guides for The Freak Circus by Neko Bueno — Day 1 & Day 2 guides, character route info, confirmed ending details, and community tips.",
   keywords: [
     "Freak Circus walkthrough",
     "Freak Circus day guide",
@@ -60,26 +59,26 @@ export default function WalkthroughsPage() {
           </h1>
           <p className="text-on-surface/60 text-lg max-w-2xl mb-10 leading-relaxed">
             Community guides for The Freak Circus — an 18+ psychological horror visual novel by Neko Bueno.
-            Day 1 & Day 2 (released December 3, 2025) are playable. Day 3 is planned.
+            {currentBuildSummary()}
           </p>
           <div className="flex flex-wrap gap-6">
             <div className="flex items-center gap-2">
               <span className="font-mono text-[10px] text-on-surface/40 uppercase tracking-widest">
                 Version
               </span>
-              <span className="font-display text-primary">v0.2</span>
+              <span className="font-display text-primary">{CURRENT_VERSION}</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="font-mono text-[10px] text-on-surface/40 uppercase tracking-widest">
                 Released Days
               </span>
-              <span className="font-display text-primary">Day 1 & 2</span>
+              <span className="font-display text-primary">{RELEASED_DAYS_LABEL}</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="font-mono text-[10px] text-on-surface/40 uppercase tracking-widest">
                 Est. Playtime
               </span>
-              <span className="font-display text-primary">"~1h17m (Day 1+2)"</span>
+              <span className="font-display text-primary">{PLAYTIME_LABEL}</span>
             </div>
           </div>
         </div>
@@ -147,7 +146,7 @@ export default function WalkthroughsPage() {
                 image: "/ticket-taker-cafe.png",
                 chars: ["Ticket Taker", "Doctor", "Pierrot"],
                 events: ["Café scene", "Pink Ticket", "First Pierrot & Harlequin encounter", "Ticket Taker introduction"],
-                href: "/day-1",
+                href: "/walkthroughs/day-1",
                 cta: "Begin Guide →",
                 verified: true,
               },
@@ -157,7 +156,7 @@ export default function WalkthroughsPage() {
                 image: "/ticket-taker-mirror-scene.png",
                 chars: ["Pierrot", "Harlequin", "Jester", "Doctor", "Ticket Taker"],
                 events: ["Tent routes", "Columbina legend", "Mirror scene", "Jester/Doctor/Ticket Taker stories"],
-                href: "/day-2",
+                href: "/walkthroughs/day-2",
                 cta: "Continue →",
                 verified: true,
               },
@@ -167,7 +166,7 @@ export default function WalkthroughsPage() {
                 image: "/ticket-taker-entrance.png",
                 chars: ["TBD"],
                 events: ["Higher stakes", "Route locks", "Ending payoffs"],
-                href: "#",
+                href: "/day-3",
                 cta: "Coming After Release",
                 verified: false,
               },
@@ -338,7 +337,7 @@ export default function WalkthroughsPage() {
               },
               {
                 title: "Multiple Playthroughs",
-                desc: "The game has 4 endings total (1 bad + 3 open). You'll need multiple runs to see them all.",
+                desc: "The current build has 1 confirmed ending (Missing). The developer has planned 4 additional endings. You may want multiple runs to explore different routes.",
               },
             ].map((tip) => (
               <div key={tip.title} className="glass-card p-6">
@@ -379,7 +378,7 @@ export default function WalkthroughsPage() {
 
       <ContinueExploring />
       <Footer />
-      <JsonLd />
+      
     </main>
   );
 }

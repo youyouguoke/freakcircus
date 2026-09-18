@@ -17,7 +17,7 @@ export default function FeaturedTheory() {
         <div className="glass-card p-6">
           <h3 className="font-display text-lg text-on-surface mb-3">What We Know</h3>
           <ul className="space-y-2 text-on-surface/60 text-sm">
-            <li>• Columbina is a deceased character — confirmed by thefreakcircus.org</li>
+            <li>• Columbina is a deceased character — confirmed by developer</li>
             <li>• The Columbina legend appears in Day 2 — confirmed by YouTube playthroughs</li>
             <li>• It explains why Pierrot and Harlequin are rivals — confirmed by multiple sources</li>
             <li>• Specific details of her death and its broader significance remain unverified</li>

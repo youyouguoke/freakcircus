@@ -1,185 +1,189 @@
-import { SINGLE_ROUTE_HOURS, TOTAL_COMPLETION_HOURS } from "@/lib/site-facts";
+import {
+  CHARACTERS_COUNT,
+  CURRENT_VERSION,
+  ENDINGS_CONFIRMED,
+  ENDINGS_PLANNED,
+  GAME_GENRE,
+  ITCH_IO_URL,
+  MAIN_CHARACTERS,
+  PLAYTIME_LABEL,
+  RELEASED_DAYS_LABEL,
+} from "@/lib/site-facts";
+
+const siteUrl = "https://freak-circus.com";
+
+const faqEntities = [
+  {
+    "@type": "Question",
+    name: "What is The Freak Circus?",
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: `${GAME_GENRE} by Neko Bueno. The current public build is ${CURRENT_VERSION} with ${RELEASED_DAYS_LABEL} available and Day 3 planned.`,
+    },
+  },
+  {
+    "@type": "Question",
+    name: "Is The Freak Circus free to play?",
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: `Yes. The official public build is available on itch.io at ${ITCH_IO_URL}.`,
+    },
+  },
+  {
+    "@type": "Question",
+    name: "How long is The Freak Circus?",
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: `Community reports estimate ${PLAYTIME_LABEL} for ${RELEASED_DAYS_LABEL} combined. Treat this as an approximate player-reported estimate, not an official figure.`,
+    },
+  },
+  {
+    "@type": "Question",
+    name: "How many endings are in The Freak Circus?",
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: `The current build has ${ENDINGS_CONFIRMED} confirmed ending: "Missing". The developer has listed ${ENDINGS_PLANNED} planned endings, but they are not implemented in the current build.`,
+    },
+  },
+  {
+    "@type": "Question",
+    name: "Who are the main characters?",
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: `The main documented characters are ${MAIN_CHARACTERS.join(", ")} — ${CHARACTERS_COUNT} total. Columbina is a deceased lore character, not a current playable route.`,
+    },
+  },
+  {
+    "@type": "Question",
+    name: "Is this archive spoiler-free?",
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: "No. This guide and evidence archive contains spoilers for released content and community theories.",
+    },
+  },
+];
 
 export default function JsonLd() {
   const structuredData = {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "WebPage",
-        "@id": "https://freak-circus.com/#webpage",
-        "url": "https://freak-circus.com",
-        "name": "The Freak Circus Guide, Endings, Characters & Hidden Lore Archive",
-        "description": "The ultimate fan archive for The Freak Circus horror visual novel. Explore character guides, all endings explained, walkthroughs, hidden routes, timeline lore, and community theories.",
-        "isPartOf": {
-          "@id": "https://freak-circus.com/#website"
-        },
-        "about": {
-          "@type": "VideoGame",
-          "name": "The Freak Circus",
-          "genre": ["Horror", "Visual Novel", "Indie"],
-          "applicationCategory": "Game",
-          "operatingSystem": "Any",
-          "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "USD"
-          }
-        }
-      },
-      {
         "@type": "WebSite",
-        "@id": "https://freak-circus.com/#website",
-        "url": "https://freak-circus.com",
-        "name": "Freak Circus Hub",
-        "description": "A fan-maintained archive documenting characters, endings, theories, and hidden routes for The Freak Circus.",
-        "publisher": {
-          "@id": "https://freak-circus.com/#organization"
-        }
+        "@id": `${siteUrl}/#website`,
+        url: siteUrl,
+        name: "Freak Circus Hub",
+        alternateName: "The Freak Circus Guide & Evidence Archive",
+        description:
+          "A fact-checked guide and evidence archive for The Freak Circus, with confirmed and unverified information clearly separated.",
+        publisher: { "@id": `${siteUrl}/#organization` },
       },
       {
         "@type": "Organization",
-        "@id": "https://freak-circus.com/#organization",
-        "name": "Freak Circus Hub",
-        "url": "https://freak-circus.com",
-        "logo": {
+        "@id": `${siteUrl}/#organization`,
+        name: "Freak Circus Hub",
+        url: siteUrl,
+        logo: {
           "@type": "ImageObject",
-          "url": "https://freak-circus.com/Logo.png"
-        }
+          url: `${siteUrl}/Logo.png`,
+        },
+      },
+      {
+        "@type": "VideoGame",
+        "@id": `${siteUrl}/#game`,
+        name: "The Freak Circus",
+        genre: ["Horror", "Visual Novel", "Indie"],
+        applicationCategory: "Game",
+        gamePlatform: ["Windows", "macOS", "Linux", "Web Browser"],
+        operatingSystem: "Any",
+        softwareVersion: CURRENT_VERSION,
+        author: { name: "Neko Bueno" },
+        url: ITCH_IO_URL,
+        offers: {
+          "@type": "Offer",
+          price: "0",
+          priceCurrency: "USD",
+          url: ITCH_IO_URL,
+        },
+      },
+      {
+        "@type": "WebPage",
+        "@id": `${siteUrl}/#webpage`,
+        url: siteUrl,
+        name: "The Freak Circus Guide & Evidence Archive",
+        description:
+          "The Freak Circus guide covering characters, walkthroughs, endings, lore and community theories, with confirmed and unverified information clearly separated.",
+        isPartOf: { "@id": `${siteUrl}/#website` },
+        about: { "@id": `${siteUrl}/#game` },
       },
       {
         "@type": "BreadcrumbList",
-        "itemListElement": [
+        itemListElement: [
           {
             "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://freak-circus.com"
-          }
-        ]
+            position: 1,
+            name: "Home",
+            item: siteUrl,
+          },
+        ],
       },
       {
         "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "What is The Freak Circus?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The Freak Circus is an indie psychological horror visual novel that uses replay-aware mechanics to create a meta-narrative experience. It builds dread through silence, repetition, and characters who appear to remember your choices across playthroughs. Rated 18+ for mature themes."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Is The Freak Circus free to play?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes, The Freak Circus is available for free on itch.io. It runs directly in your browser without download or installation."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How long is The Freak Circus?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": `A single route takes ${SINGLE_ROUTE_HOURS}. Experiencing all content requires multiple playthroughs due to replay-aware mechanics and hidden triggers. Full completion can take ${TOTAL_COMPLETION_HOURS}.`
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How many endings are in The Freak Circus?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The community has confirmed 11 endings across standard, secret, and corrupted categories. Some require specific sequences across multiple playthroughs. Total documented: 14."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Who is Pierrot in The Freak Circus?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Pierrot is the melancholic clown and often the first route players encounter. His silence mechanic and replay-aware dialogue are central to the Loop Theory."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is the Open Ending C (unnamed) ending and how do you unlock it?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Open Ending C (unnamed) is a secret ending on Pierrot's route that requires refusing every major dialogue interaction during the final act. The screen stays black for several minutes before credits roll."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is the true ending of The Freak Circus?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The community has not reached consensus on a true ending. Unnamed Open Ending, Unnamed Open Ending, and the unfound Unnamed Open Ending ending all have supporters. The ambiguity appears intentional."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Is this archive spoiler-free?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "No. This archive is designed for players who have already begun exploring the game. Character guides, ending explanations, and theory pages contain full spoilers. Complete at least one route before browsing."
-            }
-          }
-        ]
+        mainEntity: faqEntities,
       },
       {
         "@type": "ItemList",
-        "itemListElement": [
+        itemListElement: [
           {
             "@type": "ListItem",
-            "position": 1,
-            "name": "Pierrot Character Guide",
-            "url": "https://freak-circus.com/characters/pierrot"
+            position: 1,
+            name: "Pierrot Character Guide",
+            url: `${siteUrl}/characters/pierrot`,
           },
           {
             "@type": "ListItem",
-            "position": 2,
-            "name": "Harlequin Character Guide",
-            "url": "https://freak-circus.com/characters/harlequin"
+            position: 2,
+            name: "Harlequin Character Guide",
+            url: `${siteUrl}/characters/harlequin`,
           },
           {
             "@type": "ListItem",
-            "position": 3,
-            "name": "The Doctor Character Guide",
-            "url": "https://freak-circus.com/characters/doctor"
+            position: 3,
+            name: "The Doctor Character Guide",
+            url: `${siteUrl}/characters/doctor`,
           },
           {
             "@type": "ListItem",
-            "position": 4,
-            "name": "Columbina Character Guide",
-            "url": "https://freak-circus.com/characters/columbina"
+            position: 4,
+            name: "Jester Character Guide",
+            url: `${siteUrl}/characters/jester`,
           },
           {
             "@type": "ListItem",
-            "position": 5,
-            "name": "All Endings Explained",
-            "url": "https://freak-circus.com/endings"
+            position: 5,
+            name: "Ticket Taker Character Guide",
+            url: `${siteUrl}/characters/ticket-taker`,
           },
           {
             "@type": "ListItem",
-            "position": 6,
-            "name": "Open Ending C (unnamed) Ending Guide",
-            "url": "https://freak-circus.com/endings"
+            position: 6,
+            name: "Day 1 Walkthrough",
+            url: `${siteUrl}/walkthroughs/day-1`,
           },
           {
             "@type": "ListItem",
-            "position": 7,
-            "name": "Walkthroughs",
-            "url": "https://freak-circus.com/walkthroughs"
+            position: 7,
+            name: "Day 2 Walkthrough",
+            url: `${siteUrl}/walkthroughs/day-2`,
           },
           {
             "@type": "ListItem",
-            "position": 8,
-            "name": "Lore Archive",
-            "url": "https://freak-circus.com/lore"
-          }
-        ]
-      }
-    ]
+            position: 8,
+            name: "Endings Archive",
+            url: `${siteUrl}/endings`,
+          },
+        ],
+      },
+    ],
   };
 
   return (

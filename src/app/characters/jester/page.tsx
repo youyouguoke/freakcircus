@@ -2,24 +2,20 @@ import { Metadata } from "next";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import ContinueExploring from "@/components/ContinueExploring";
-import JsonLd from "@/components/JsonLd";
 import JesterClient from "./JesterClient";
 import { ENDINGS_CONFIRMED, ENDINGS_TOTAL } from "@/lib/site-facts";
 
 export const metadata: Metadata = {
-  title: "Jester — Character Profile, Day 2 Sightings & Hidden Observer Analysis | Freak Circus Hub",
+  title: "Jester — Character Profile & Community Analysis | Freak Circus Hub",
   description:
-    "Complete Jester character analysis for The Freak Circus. Covers the trickster persona, peripheral presence, Day 2 sightings, character connections, double-meaning dialogue, and the theory that Jester watches from the edges of every route.",
+    "Jester character in The Freak Circus. Community analysis of the trickster persona, peripheral presence, and unverified observations.",
   keywords: [
     "Jester",
     "The Freak Circus Jester",
     "Jester character",
     "trickster",
     "observer",
-    "hidden character",
-    "Jester Day 2",
-    "Jester mirror hall",
-    "Jester Ticket Taker theory",
+    "character analysis",
   ],
   openGraph: {
     title: "Jester — Character Profile, Day 2 Sightings & Hidden Observer Analysis",
@@ -70,12 +66,12 @@ const faqData = [
   {
     question: "Does Jester break the fourth wall?",
     answer:
-      "Jester has the highest fourth-wall awareness rating of any character in our analysis (70%). Dialogue lines reference 'the one watching' and 'you chose to come here,' which players interpret as awareness of the player rather than the protagonist. Whether this constitutes true meta-awareness or is simply Jester's trickster persona speaking in riddles is debated.",
+      "Some players interpret Jester's dialogue as meta-awareness — lines like 'the one watching' and 'you chose to come here' could reference the player rather than the protagonist. Whether this constitutes true fourth-wall breaking or is simply Jester's trickster persona speaking in riddles is debated and unverified.",
   },
   {
     question: "Is Jester aware of the time loop?",
     answer:
-      "Loop awareness metrics rate Jester at 85% — tied with Pierrot for the highest among all characters. Jester's dialogue includes lines like 'again?' and 'you always start here' that suggest awareness of repeated cycles. However, unlike Pierrot, Jester never explicitly states remembering past playthroughs.",
+      "Community members have noted Jester's dialogue includes lines like 'again?' and 'you always start here' that could suggest awareness of repeated cycles. However, whether this represents actual loop awareness or is part of Jester's trickster persona is unverified. Unlike Pierrot, Jester never explicitly states remembering past playthroughs.",
   },
   {
     question: "When will Jester's route be added to the game?",
@@ -123,7 +119,7 @@ export default function JesterPage() {
       <ContinueExploring />
       <Footer />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jesterJsonLd) }} />
-      <JsonLd />
+      
     </main>
   );
 }

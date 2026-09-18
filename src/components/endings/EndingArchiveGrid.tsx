@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { CURRENT_VERSION } from "@/lib/site-facts";
 
 // Only verified ending data
 const endings = [
@@ -9,7 +10,7 @@ const endings = [
     status: "confirmed",
     desc: "The player character goes missing and is never found. Associated with Harlequin's route. Specific trigger conditions have not been independently verified.",
     href: "#",
-    source: "thefreakcircus.wiki (verified May 2026)",
+    source: "YouTube playthroughs (verified May 2026)",
   },
 ];
 
@@ -39,14 +40,15 @@ export default function EndingArchiveGrid() {
 
         {/* Unnamed open endings note */}
         <div className="bg-surface-container border border-amber-500/30 p-6">
-          <div className="font-[JetBrains_Mono] text-xs text-amber-400 mb-2">⚠️ 3 OPEN ENDINGS EXIST — NAMES UNCONFIRMED</div>
+          <div className="font-[JetBrains_Mono] text-xs text-amber-400 mb-2">⚠️ 4 PLANNED ENDINGS — NOT YET IMPLEMENTED</div>
           <p className="text-on-surface-variant text-sm leading-relaxed">
-            The Freak Circus has 3 additional open endings confirmed by the developer (&quot;1 bad ending and 3 open endings&quot;).
-            However, <strong>no external source has named these endings</strong>. Any ending names you see elsewhere
-            (including previously on this site) are community speculation or fabrication.
+            The developer has listed 4 planned endings on itch.io: <strong>Pierrot&apos;s ending</strong>, <strong>Harlequin&apos;s ending</strong>,
+            <strong> Protagonist&apos;s ending</strong>, and <strong>&quot;All together&quot;</strong> (MC with both Pierrot and Harlequin).
+            However, the developer also states: &quot;the script is still a work in progress, so no endings are fully planned yet.&quot;
+            <strong>None of these exist in the current {CURRENT_VERSION} build.</strong>
           </p>
           <p className="text-on-surface-variant text-xs mt-3">
-            Source: thefreakcircus.org wiki, thefreakcircus.wiki, VNDB
+            Source: itch.io (garula.itch.io/the-freak-circus) — &quot;What is planned?&quot; section
           </p>
         </div>
       </div>

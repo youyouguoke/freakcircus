@@ -3,8 +3,8 @@
 const questions = [
   { q: "What is the Columbina legend?", a: "Columbina is a deceased character killed by Harlequin. Her death explains the rivalry between Pierrot and Harlequin. This is the most significant piece of confirmed lore.", verified: true },
   { q: "Is the circus a real place?", a: "The game presents the circus as a real setting within its story. Whether it has deeper metaphysical significance is unverified community speculation.", verified: false },
-  { q: "What are the 3 open endings?", a: "The developer confirmed 3 open endings exist but has not named them. Their narrative content is unknown.", verified: true },
-  { q: "Will Day 3 reveal more lore?", a: "Day 3 is planned but unreleased. The developer says it will feature 'higher stakes and payoffs for choices.' Whether it adds significant new lore is unknown.", verified: true },
+  { q: "What are the 4 planned endings?", a: "The developer listed 4 planned endings on itch.io: Pierrot's ending, Harlequin's ending, Protagonist's ending, and 'All together' (MC with both Pierrot and Harlequin). None are implemented in the current build.", verified: true },
+  { q: "Will Day 3 reveal more lore?", a: "Day 3 is planned but unreleased. The developer has stated the script is complete and programming is in progress. Specific content details have not been officially revealed.", verified: true },
   { q: "Do characters remember previous playthroughs?", a: "This is unverified community speculation. Some players report dialogue changes after multiple playthroughs, but no hidden memory mechanic has been confirmed.", verified: false },
   { q: "What is the significance of the mirror scene?", a: "The mirror scene in Day 2 is confirmed to exist. Its deeper narrative significance is still being discussed by the community.", verified: false },
 ];

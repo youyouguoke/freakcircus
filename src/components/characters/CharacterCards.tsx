@@ -39,7 +39,7 @@ const characters = [
       "Killed Columbina — drives the central conflict",
       "The 'Missing' bad ending is associated with his route",
       "Day 2 tent routes expand his story (YouTube: 'Harlequin Tent Scene')",
-      "Male (confirmed by thefreakcircus.org, VNDB)",
+      "Male (confirmed by VNDB)",
     ],
     unverified: [
       "Community reports of 'aggressive vs comedic' choice system",
@@ -103,7 +103,7 @@ const characters = [
       "Whether the mirror scene has hidden mechanics",
       "Whether Ticket Taker has a dedicated route",
     ],
-    href: "/ticket-taker",
+    href: "/characters/ticket-taker",
   },
 ];
 

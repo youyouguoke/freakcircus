@@ -1,40 +1,39 @@
 "use client";
 
 const rankings = [
-  { rank: 1, name: "Unnamed Open Ending", character: "Columbina", difficulty: "Very Hard", desc: "Perfect alignment across three loops. Any deviation causes complete reset." },
-  { rank: 2, name: "Unnamed Open Ending", character: "???", difficulty: "Impossible", desc: "No verified unlock conditions. May be intentionally unreachable." },
-  { rank: 3, name: "Open Ending C (unnamed)", character: "Pierrot", difficulty: "Hard", desc: "Requires refusing all dialogue for three scenes. 4-minute black screen." },
-  { rank: 4, name: "The Unnamed Open Ending", character: "The Doctor", difficulty: "Hard", desc: "Find 5 hidden medical files across multiple playthroughs." },
-  { rank: 5, name: "Unnamed Open Ending", character: "Unknown", difficulty: "Impossible", desc: "Mentioned in patch notes but never officially found." },
+  { rank: 1, name: "Missing", character: "Harlequin", difficulty: "Unknown", desc: "The only confirmed ending. Specific trigger conditions have not been independently verified." },
 ];
 
 export default function EndingDifficultyRanking() {
   return (
-    <section className="bg-surface py-16 px-4 md:px-16 border-t border-outline/10">
-      <div className="max-w-4xl mx-auto">
-        <h2 className="font-[Epilogue] text-2xl md:text-3xl font-bold text-primary mb-4">
-          Hardest Endings To Unlock
+    <section className="py-16 px-4 md:px-16 border-t border-outline/10">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="font-display text-2xl text-primary uppercase tracking-widest mb-4">
+          Ending Difficulty
         </h2>
-        <p className="text-on-surface-variant text-sm mb-8">
-          Community-verified difficulty ranking based on unlock requirements, replay dependencies, and failure rates
+        <p className="text-on-surface/50 text-sm mb-8">
+          Only 1 ending has been confirmed. Difficulty ratings are not available.
         </p>
-
-        <div className="space-y-4">
+        <div className="space-y-3">
           {rankings.map((r) => (
-            <div key={r.rank} className="bg-surface-container border border-outline/20 p-6 flex items-start gap-4">
-              <div className="font-[Creepster] text-3xl text-primary w-12 shrink-0">
-                {r.rank}
-              </div>
-              <div>
-                <div className="flex items-center gap-3 mb-2">
-                  <h3 className="font-[Epilogue] text-lg font-bold text-foreground">{r.name}</h3>
-                  <span className="font-[JetBrains_Mono] text-xs text-blood border border-blood/30 px-2 py-1">{r.difficulty}</span>
-                  <span className="font-[JetBrains_Mono] text-xs text-on-surface-variant">{r.character}</span>
+            <div key={r.rank} className="glass-card p-4 flex items-center gap-4">
+              <span className="font-mono text-lg text-primary w-8">{r.rank}</span>
+              <div className="flex-1">
+                <div className="flex items-center gap-2 mb-1">
+                  <span className="font-display text-on-surface">{r.name}</span>
+                  <span className="font-mono text-[9px] text-green-500 uppercase">CONFIRMED</span>
                 </div>
-                <p className="text-on-surface-variant text-sm">{r.desc}</p>
+                <p className="text-on-surface/50 text-xs">{r.desc}</p>
               </div>
+              <span className="font-mono text-xs text-on-surface/40">{r.character}</span>
             </div>
           ))}
+        </div>
+        <div className="mt-6 bg-surface-container border border-amber-500/30 p-4">
+          <p className="text-on-surface-variant text-xs">
+            <strong className="text-amber-400">Note:</strong> The developer has planned 4 additional endings but none are implemented.
+            Previously this page listed fabricated difficulty rankings for endings that do not exist.
+          </p>
         </div>
       </div>
     </section>

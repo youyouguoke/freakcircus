@@ -99,7 +99,7 @@ export default function PierrotMainRoutePage() {
             <section>
               <h2 className="font-display text-2xl font-bold text-foreground mb-4">Sources</h2>
               <div className="text-on-surface/40 text-xs space-y-1">
-                <p>• thefreakcircus.org — Character descriptions and route structure</p>
+                
                 <p>• YouTube playthroughs (Tiffany L., MrClockWorks) — Day 1 & 2 content confirmation</p>
                 <p>• Last verified: August 2026</p>
               </div>

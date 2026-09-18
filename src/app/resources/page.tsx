@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { CURRENT_VERSION } from "@/lib/site-facts";
 
 export const metadata: Metadata = {
   title: "Freak Circus Resources | Embed Charts, Share Guides & Link Assets",
@@ -30,10 +31,10 @@ export const metadata: Metadata = {
 const embeddableCharts = [
   {
     title: "All Endings Overview",
-    description: "Complete visual chart of all 14 endings with unlock conditions, difficulty ratings, and character routes.",
+    description: "Verified ending information for The Freak Circus. 1 confirmed ending (Missing) plus 4 planned endings listed by the developer.",
     url: "https://freak-circus.com/endings",
-    embedCode: `<a href="https://freak-circus.com/endings" title="Freak Circus All Endings Guide">Freak Circus Endings Chart</a> — <a href="https://freak-circus.com">Freak Circus Hub</a>`,
-    tags: ["endings", "chart", "reference"],
+    embedCode: `<a href="https://freak-circus.com/endings" title="Freak Circus Endings Guide">Freak Circus Endings Guide</a> — <a href="https://freak-circus.com">Freak Circus Hub</a>`,
+    tags: ["endings", "guide", "verified"],
   },
   {
     title: "Character Route Map",
@@ -44,10 +45,10 @@ const embeddableCharts = [
   },
   {
     title: "Ending Difficulty Tier List",
-    description: "Community-ranked tier list of all endings by difficulty. Updated with each new discovery.",
+    description: "Ending information with verification status. Only 'Missing' is confirmed — planned endings are clearly labeled.",
     url: "https://freak-circus.com/endings",
-    embedCode: `<a href="https://freak-circus.com/endings" title="Freak Circus Ending Difficulty Rankings">Ending Difficulty Rankings</a> — <a href="https://freak-circus.com">Freak Circus Hub</a>`,
-    tags: ["tier-list", "difficulty", "rankings"],
+    embedCode: `<a href="https://freak-circus.com/endings" title="Freak Circus Ending Guide">Ending Verification Guide</a> — <a href="https://freak-circus.com">Freak Circus Hub</a>`,
+    tags: ["endings", "verification", "guide"],
   },
   {
     title: "Save Points Guide",
@@ -61,26 +62,26 @@ const embeddableCharts = [
 const socialCards = [
   {
     platform: "Reddit",
-    title: "I found all 14 endings in The Freak Circus — here's the complete guide",
-    body: "After 20+ hours of investigation, I documented every confirmed ending with unlock conditions, step-by-step walkthroughs, and hidden triggers. Includes the secret Open Ending C (unnamed) ending and the three-loop Unnamed Open Ending.\n\nFull guide: https://freak-circus.com/endings\n\nThis is a fan-maintained archive, not affiliated with the developer. Corrections welcome!",
+    title: "The Freak Circus endings — what's actually confirmed vs planned",
+    body: "I've been tracking the ending situation in The Freak Circus. Currently there's only 1 confirmed ending ('Missing'). The developer has listed 4 planned endings on itch.io, but none are implemented yet.\n\nVerified guide: https://freak-circus.com/endings\n\nThis is a fan-maintained archive, not affiliated with the developer. Corrections welcome!",
     subreddit: "r/visualnovels",
   },
   {
     platform: "Reddit",
-    title: "The Freak Circus has a hidden counter at offset 0x4A20 that tracks your playthroughs",
-    body: "Data miners found that the game tracks your history across save files using a hidden memory counter. This explains why some endings require multiple playthroughs — the game literally remembers what you've done before.\n\nFull technical breakdown: https://freak-circus.com/walkthroughs/save-guide\n\nHas anyone else noticed dialogue changing after repeated playthroughs?",
+    title: "Does The Freak Circus track your playthroughs? Community observations",
+    body: "Some players report that dialogue seems to change after repeated playthroughs in The Freak Circus. Whether this is intentional design or player perception is debated.\n\nCommunity observations: https://freak-circus.com/theories/pierrot-remembers-routes\n\nHas anyone else noticed this? The game is free on itch.io.",
     subreddit: "r/horrorgaming",
   },
   {
     platform: "Reddit",
-    title: "Pierrot remembers: Evidence that The Freak Circus tracks player behavior across saves",
-    body: "I've been documenting Pierrot's dialogue changes across multiple playthroughs. After completing the game 3 times, Pierrot's dialogue in Act I references choices I made in PREVIOUS playthroughs.\n\nEvidence and analysis: https://freak-circus.com/theories/pierrot-remembers-routes\n\nThe loop theory is real. The game breaks the fourth wall in ways I haven't seen since Undertale.",
+    title: "The Freak Circus — community analysis of Pierrot's behavior across playthroughs",
+    body: "I've been documenting Pierrot's dialogue across multiple playthroughs. Some players report changes that reference previous runs, but this hasn't been independently verified.\n\nCommunity analysis: https://freak-circus.com/theories/pierrot-remembers-routes\n\nThe game is free on itch.io if you want to check for yourself.",
     subreddit: "r/visualnovels",
   },
   {
     platform: "Tumblr",
-    title: "The Freak Circus endings guide — all 14 endings explained with unlock conditions",
-    body: "For anyone trying to get all the endings in The Freak Circus, I put together a comprehensive guide covering every confirmed ending.\n\n🎭 8 confirmed endings (6 more under investigation)\n🎪 Secret endings require replay awareness\n🔮 Unnamed Open Ending needs 3 perfect loops\n💫 The game tracks your history across saves\n\nFull guide: https://freak-circus.com/endings\nCharacter guides: https://freak-circus.com/characters\n\n#freakcircus #the-freak-circus #visualnovel #horrorgame #indiegame",
+    title: "The Freak Circus endings — verified guide with what's confirmed and what's planned",
+    body: `For anyone curious about endings in The Freak Circus:\n\n✅ 1 confirmed ending ('Missing' — Bad Ending)\n📋 4 planned endings listed by developer (not yet in game)\n⚠️ The game is still in ${CURRENT_VERSION}\n\nVerified guide: https://freak-circus.com/endings\nCharacter guides: https://freak-circus.com/characters\n\n#freakcircus #the-freak-circus #visualnovel #horrorgame #indiegame`,
     tags: ["freakcircus", "visualnovel", "horrorgame"],
   },
   {
@@ -92,7 +93,7 @@ const socialCards = [
 ];
 
 const quickLinks = [
-  { label: "All Endings Guide", href: "/endings", description: "14 endings with unlock conditions" },
+  { label: "Endings Guide", href: "/endings", description: "1 confirmed + 4 planned endings" },
   { label: "Character Guides", href: "/characters", description: "Route walkthroughs for every character" },
   { label: "Walkthroughs", href: "/walkthroughs", description: "Day-by-day guides for all routes" },
   { label: "Lore Archive", href: "/lore", description: "Timeline, symbols, and hidden meanings" },

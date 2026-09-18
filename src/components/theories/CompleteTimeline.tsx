@@ -3,9 +3,9 @@
 const events = [
   { year: "2024", event: "The Freak Circus initial release — Day 1 content available with Pierrot and Harlequin" },
   { year: "2024-25", event: "Day 2 update — adds tent routes, Columbina legend, Jester/Doctor/Ticket Taker characters" },
-  { year: "2025", event: "Community confirms 'Missing' as the only named ending (thefreakcircus.wiki.gg)" },
-  { year: "2025-26", event: "thefreakcircus.org confirms '1 bad ending and 3 open endings' — endings remain unnamed" },
-  { year: "2026", event: "Day 3 planned but not yet released — 'higher stakes, tighter route locks, ending payoffs'" },
+  { year: "2025", event: "Community confirms 'Missing' as the only named ending" },
+  { year: "2025-26", event: "Developer lists 4 planned endings on itch.io — none implemented yet" },
+  { year: "2026", event: "Day 3 planned but not yet released — developer states script is complete, programming in progress" },
 ];
 
 export default function CompleteTimeline() {

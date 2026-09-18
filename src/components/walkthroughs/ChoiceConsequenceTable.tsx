@@ -23,8 +23,8 @@ const choices = [
     scene: "Scene 5 — Medical Tent",
     character: "The Doctor",
     choices: [
-      { option: "A — Accept examination", result: "Doctor +5 affection, File 1 discovered", flag: "Unnamed Open Ending route" },
-      { option: "B — Refuse treatment", result: "Doctor -3 affection, locked out of tent", flag: "Unnamed Open Ending ending" },
+      { option: "A — Accept examination", result: "Doctor +5 affection, File 1 discovered", flag: "Doctor route" },
+      { option: "B — Refuse treatment", result: "Doctor -3 affection, locked out of tent", flag: "Route locked" },
       { option: "C — Ask about the files", result: "Doctor +2 affection, hints at hidden files", flag: "File hunt begins" },
     ],
   },
@@ -33,8 +33,8 @@ const choices = [
     character: "Columbina",
     choices: [
       { option: "A — Enter the first door", result: "Loop 1 begins, gentle response required", flag: "Loop system" },
-      { option: "B — Turn back", result: "Columbina -5 affection, hallway sealed", flag: "Unnamed Open Ending ending" },
-      { option: "C — Ask about the fourth door", result: "Columbina surprised, hidden dialogue", flag: "Truth ending hint" },
+      { option: "B — Turn back", result: "Columbina -5 affection, hallway sealed", flag: "Route locked" },
+      { option: "C — Ask about the past", result: "Columbina reacts, backstory revealed", flag: "Lore" },
     ],
   },
   {

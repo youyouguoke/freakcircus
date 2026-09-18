@@ -14,7 +14,6 @@ import CharactersAbout from "@/components/characters/CharactersAbout";
 import MostSearchedQuestions from "@/components/characters/MostSearchedQuestions";
 import CharacterRecommendations from "@/components/characters/CharacterRecommendations";
 import ArchiveIndex from "@/components/home/ArchiveIndex";
-import JsonLd from "@/components/JsonLd";
 import ContinueExploring from "@/components/ContinueExploring";
 
 export const metadata: Metadata = {
@@ -91,7 +90,7 @@ export default function CharactersPage() {
       <ArchiveIndex />
       <ContinueExploring />
       <Footer />
-      <JsonLd />
+      
     </main>
   );
 }

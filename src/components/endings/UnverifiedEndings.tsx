@@ -3,12 +3,12 @@
 const endings = [
   {
     status: "Data-mined",
-    title: "Unnamed Open Ending",
+    title: "Planned Ending (Pierrot's)",
     desc: "A branch where no character appears at all. The player walks through empty corridors until the game soft-locks.",
   },
   {
     status: "Referenced",
-    title: "Unnamed Open Ending Ending",
+    title: "Planned Ending (Doctor's)",
     desc: "Mentioned in patch notes but never officially found. The Doctor describes it in Scene 7 with disturbing accuracy.",
   },
   {

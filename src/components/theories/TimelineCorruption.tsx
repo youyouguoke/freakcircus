@@ -12,7 +12,7 @@ export default function TimelineCorruption() {
         </p>
         <div className="space-y-4">
           {[
-            "What are the names of the 3 open endings?",
+            "What are the 4 planned endings?",
             "Does the game track player behavior across playthroughs?",
             "What will Day 3 add to the story?",
             "Is there a 'true' ending that requires completing all routes?",

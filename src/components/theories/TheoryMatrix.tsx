@@ -16,7 +16,7 @@ export default function TheoryMatrix() {
               { from: "Columbina's death", to: "Pierrot-Harlequin rivalry", relation: "explains (verified)" },
               { from: "Pierrot-Harlequin rivalry", to: "Multiple endings theory", relation: "suggests" },
               { from: "Day 2 tent routes", to: "Character-specific endings", relation: "supports" },
-              { from: "3 unnamed open endings", to: "Route-specific endings theory", relation: "implies" },
+              { from: "4 planned endings (not yet in game)", to: "Route-specific endings theory", relation: "implies" },
               { from: "Day 3 planned", to: "More endings coming", relation: "developer confirmed" },
             ].map((c, i) => (
               <div key={i} className="flex items-center gap-3 text-sm">

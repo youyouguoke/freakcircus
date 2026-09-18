@@ -30,7 +30,7 @@ export default function CompleteTimeline() {
             },
             {
               label: "Day 3 — Planned (Not Released)",
-              desc: "Day 3 is confirmed to be planned. The developer describes it as featuring 'higher stakes, tighter route locks, and payoffs for choices.' It has not been released yet.",
+              desc: "Day 3 is confirmed to be planned. The developer has stated the script is complete and programming is in progress. It has not been released yet.",
               verified: false,
             },
           ].map((item, i) => (

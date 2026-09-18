@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Freak Circus Hub — Lore Archive & Theory Hub",
+  title: "The Freak Circus Guide, Endings, Characters & Lore | Freak Circus Hub",
   description:
-    "A fan-made archive for The Freak Circus visual novel. Explore all endings, character relationships, hidden lore, and community theories.",
+    "The Freak Circus guide covering characters, walkthroughs, endings, lore and community theories, with confirmed and unverified information clearly separated.",
   keywords: [
     "Freak Circus",
     "visual novel",
@@ -19,9 +20,9 @@ export const metadata: Metadata = {
   publisher: "Freak Circus Hub",
   metadataBase: new URL("https://freak-circus.com"),
   openGraph: {
-    title: "Freak Circus Hub — You Still Don't Understand the Ending",
+    title: "The Freak Circus Guide, Endings, Characters & Lore",
     description:
-      "Every ending mapped. Every character connected. Every theory documented.",
+      "The Freak Circus guide covering characters, walkthroughs, endings, lore and community theories, with confirmed and unverified information clearly separated.",
     url: "https://freak-circus.com",
     siteName: "Freak Circus Hub",
     locale: "en_US",
@@ -35,9 +36,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Freak Circus Hub — Lore Archive & Theory Hub",
+    title: "The Freak Circus Guide, Endings, Characters & Lore",
     description:
-      "Every ending mapped. Every character connected. Every theory documented.",
+      "The Freak Circus guide with confirmed and unverified information clearly separated.",
     images: ["/twitter-image.png"],
   },
   robots: {
@@ -55,8 +56,8 @@ export const metadata: Metadata = {
     canonical: "https://freak-circus.com",
   },
   icons: {
-    icon: "/Logo.png",
-    apple: "/Logo.png",
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
   },
 };
 
@@ -104,6 +105,19 @@ export default function RootLayout({
       <body className="font-sans antialiased">
         <div className="grain-overlay" />
         {children}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                var s = document.createElement('script');
+                s.src = 'https://feedback-hub.youyouguoke.workers.dev/widget.js';
+                s.setAttribute('data-site-id', 'freak-circus');
+                s.defer = true;
+                document.body.appendChild(s);
+              })();
+            `,
+          }}
+        />
       </body>
     </html>
   );

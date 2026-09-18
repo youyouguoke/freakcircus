@@ -13,7 +13,7 @@ const anomalies = [
     title: "Precognitive References",
     route: "The Doctor",
     status: "Confirmed",
-    desc: "The Doctor references endings before they occur. In Scene 7, he describes the 'Unnamed Open Ending' ending in detail — three routes before it becomes accessible.",
+    desc: "Community reports suggest The Doctor may reference events from other routes. Whether this is intentional or interpretation is unverified in detail — three routes before it becomes accessible.",
   },
   {
     id: "a03",

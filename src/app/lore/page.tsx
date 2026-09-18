@@ -10,7 +10,6 @@ import LoreEvidenceBoard from "@/components/lore/LoreEvidenceBoard";
 import LoreQuestions from "@/components/lore/LoreQuestions";
 import LoreNavigationHub from "@/components/lore/LoreNavigationHub";
 import ArchiveIndex from "@/components/home/ArchiveIndex";
-import JsonLd from "@/components/JsonLd";
 import ContinueExploring from "@/components/ContinueExploring";
 
 export const metadata: Metadata = {
@@ -77,7 +76,7 @@ export default function LorePage() {
         <ArchiveIndex />
         <ContinueExploring />
       <Footer />
-        <JsonLd />
+        
       </div>
     </main>
   );

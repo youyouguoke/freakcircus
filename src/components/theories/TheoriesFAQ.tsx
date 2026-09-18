@@ -1,9 +1,11 @@
 "use client";
 
+import { CURRENT_VERSION } from "@/lib/site-facts";
+
 const faqs = [
   {
     q: "Are any theories confirmed by the developer?",
-    a: "No. The developer has not directly confirmed or denied any community theories. The game is still in active development (v0.2) with Day 3 planned but unreleased.",
+    a: `No. The developer has not directly confirmed or denied any community theories. The game is still in active development (${CURRENT_VERSION}) with Day 3 planned but unreleased.`,
   },
   {
     q: "Does Pierrot remember previous playthroughs?",
@@ -11,15 +13,15 @@ const faqs = [
   },
   {
     q: "What is the Columbina legend?",
-    a: "The Columbina legend is confirmed to appear in Day 2. It explains the backstory behind Pierrot and Harlequin's rivalry. Columbina is a deceased character who was killed by Harlequin. This is verified by thefreakcircus.org and YouTube playthroughs.",
+    a: "The Columbina legend is confirmed to appear in Day 2. It explains the backstory behind Pierrot and Harlequin's rivalry. Columbina is a deceased character who was killed by Harlequin. This is verified by YouTube playthroughs.",
   },
   {
     q: "Will Day 3 answer the unanswered questions?",
-    a: "Day 3 is confirmed to be planned but not yet released. The developer has described it as featuring 'higher stakes, tighter route locks, and payoffs for choices.' Whether it will resolve the community's open questions is unknown.",
+    a: "Day 3 is confirmed to be planned but not yet released. The developer has stated the script is complete and programming is in progress. Specific content details have not been officially revealed. Whether it will resolve the community's open questions is unknown.",
   },
   {
     q: "How many endings are there?",
-    a: "The game has 4 confirmed endings: 1 bad ending ('Missing') and 3 unnamed open endings. Only 'Missing' has been verified by name. The developer has confirmed more endings are planned for future updates.",
+    a: "The current build has 1 confirmed ending: 'Missing' (Bad Ending). The developer has listed 4 planned endings on itch.io (Pierrot's, Harlequin's, Protagonist's, All together), but none are implemented yet. The developer states: 'the script is still a work in progress, so no endings are fully planned yet.'",
   },
 ];
 

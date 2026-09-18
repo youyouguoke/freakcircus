@@ -3,8 +3,8 @@
 const events = [
   { date: "2024", event: "The Freak Circus initial release — Day 1 content available" },
   { date: "2024-25", event: "Day 2 update released — adds tent routes, new characters (Jester, Doctor, Ticket Taker), Columbina legend" },
-  { date: "2025", event: "Community confirms 'Missing' as the bad ending name (thefreakcircus.wiki.gg)" },
-  { date: "2025-26", event: "thefreakcircus.org confirms '1 bad ending and 3 open endings'" },
+  { date: "2025", event: "Community confirms 'Missing' as the bad ending name" },
+  { date: "2025-26", event: "Developer lists 4 planned endings on itch.io (Pierrot's, Harlequin's, Protagonist's, All together)" },
   { date: "2026", event: "Day 3 planned but not yet released" },
 ];
 

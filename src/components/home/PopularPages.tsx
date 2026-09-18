@@ -3,45 +3,74 @@
 import Link from "next/link";
 
 const popularPages = [
-  { title: "Pierrot Route Walkthrough — Every Choice Mapped", href: "/characters/pierrot", desc: "Complete guide to Pierrot\'s main route, silent route, and hidden dialogue triggers." },
-  { title: "Pierrot Route Guide", href: "/characters/pierrot-route-guide", desc: "Community guide for Pierrot's route in The Freak Circus, covering Day 1cret ending with the 4-minute black screen." },
-  { title: "Harlequin Route — Community Guide", href: "/characters/harlequin", desc: "Community guide for Harlequin's confirmed route, including the 'Missing' ending anddocumented hidden scenes." },
-  { title: "Doctor Unnamed Open Ending Theory — Precognitive Dialogue", href: "/characters/doctor", desc: "Why The Doctor describes endings before they occur and what the medical files reveal." },
-  { title: "Complete Timeline Explained", href: "/lore", desc: "Chronological breakdown of every known event, symbol, and hidden clue in the circus lore." },
-  { title: "Missing Ending Guide", href: "/endings", desc: "The confirmed bad ending in The Freak Circus perfect alignment across three loops and unlock the fourth door." },
-  { title: "How Many Endings Are in The Freak Circus?", href: "/endings", desc: "Complete catalog of standard, secret, and corrupted endings with unlock conditions." },
-  { title: "Mirror Hall Lore — Architecture & Symbolism", href: "/lore/mirror-hall", desc: "How the Mirror Hall connects all four character routes and what the reflections mean." },
+  {
+    num: "01",
+    title: "Pierrot Character Guide",
+    desc: "Complete analysis of Pierrot — the melancholic clown and one of the two main character routes.",
+    href: "/characters/pierrot",
+    tag: "CHARACTER",
+  },
+  {
+    num: "02",
+    title: "Harlequin Character Guide",
+    desc: "Pierrot's seductive rival. Home of the confirmed 'Missing' bad ending.",
+    href: "/characters/harlequin",
+    tag: "CHARACTER",
+  },
+  {
+    num: "03",
+    title: "Missing Ending Guide",
+    desc: "The only confirmed ending in the current build. Trigger conditions and story details.",
+    href: "/endings",
+    tag: "ENDING",
+  },
+  {
+    num: "04",
+    title: "Day 1 Walkthrough",
+    desc: "Community guide for Day 1 — character introductions, the café scene, and first encounters.",
+    href: "/walkthroughs/day-1",
+    tag: "WALKTHROUGH",
+  },
+  {
+    num: "05",
+    title: "Columbina — Deceased Lore Character",
+    desc: "Not playable. Killed by Harlequin. Her story is told through the Columbina legend in Day 2.",
+    href: "/characters/columbina",
+    tag: "LORE",
+  },
+  {
+    num: "06",
+    title: "Community Theories",
+    desc: "Fan analysis of replay-aware dialogue, loop theories, and character motivations. Most remain unverified.",
+    href: "/theories",
+    tag: "THEORIES",
+  },
 ];
 
 export default function PopularPages() {
   return (
-    <section className="bg-void-black py-20 md:py-28 px-4 md:px-12">
+    <section className="bg-surface py-16 px-4 md:px-16 border-t border-outline/10">
       <div className="max-w-6xl mx-auto">
-        <div className="mb-10">
-          <div className="font-label text-circus-red text-[0.6rem] mb-3 flex items-center gap-3">
-            <span className="inline-block w-6 h-px bg-circus-red" />
-            MOST ACCESSED FILES
-          </div>
-          <h2 className="font-heading text-3xl md:text-4xl font-bold text-paper">
-            Popular Pages
-          </h2>
-          <p className="text-faint-paper text-sm mt-3">Where readers go first — the most searched guides, endings, and character analyses.</p>
-        </div>
-
-        <div className="grid md:grid-cols-2 gap-3">
-          {popularPages.map((page, i) => (
-            <Link key={i} href={page.href} className="group block">
-              <div className="archive-card py-4 px-5 flex items-start gap-4 transition-all duration-300 group-hover:border-circus-red/40">
-                <span className="font-label text-[0.5rem] text-dim-paper mt-1 shrink-0">
-                  {String(i + 1).padStart(2, "0")}
-                </span>
-                <div className="min-w-0">
-                  <h3 className="font-heading text-sm font-bold text-paper group-hover:text-circus-red transition-colors mb-1 truncate">
-                    {page.title}
-                  </h3>
-                  <p className="text-faint-paper text-xs truncate">{page.desc}</p>
-                </div>
+        <h2 className="font-[Epilogue] text-2xl md:text-3xl font-bold text-primary mb-8">
+          Popular Pages
+        </h2>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {popularPages.map((page) => (
+            <Link
+              key={page.num}
+              href={page.href}
+              className="group bg-surface-container border border-outline/20 p-5 hover:border-primary transition-colors"
+            >
+              <div className="flex items-center justify-between mb-3">
+                <span className="font-[JetBrains_Mono] text-[10px] text-on-surface/40">{page.num}</span>
+                <span className="font-[JetBrains_Mono] text-[9px] px-2 py-0.5 border border-outline/30 text-on-surface-variant">{page.tag}</span>
               </div>
+              <h3 className="font-[Epilogue] text-base font-bold text-foreground group-hover:text-primary transition-colors mb-2">
+                {page.title}
+              </h3>
+              <p className="text-on-surface-variant text-xs leading-relaxed line-clamp-2">
+                {page.desc}
+              </p>
             </Link>
           ))}
         </div>

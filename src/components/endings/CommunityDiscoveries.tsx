@@ -3,15 +3,15 @@
 const discoveries = [
   {
     title: "Missing Ending Confirmed",
-    desc: "Community verification through thefreakcircus.wiki.gg confirmed 'Missing' as the only named ending in the game.",
+    desc: "Community verification confirmed 'Missing' as the only named ending in the game.",
     tags: ["Confirmed", "Bad Ending"],
-    source: "thefreakcircus.wiki.gg",
+    source: "YouTube playthroughs",
   },
   {
-    title: "4 Total Endings",
-    desc: "thefreakcircus.org confirms the game has '1 bad ending and 3 open endings with more planned in future updates.'",
+    title: "1 Confirmed + 4 Planned Endings",
+    desc: "The current build has 1 confirmed bad ending ('Missing'). The developer has planned 4 additional endings (Pierrot's, Harlequin's, Protagonist's, All together) but states: 'the script is still a work in progress, so no endings are fully planned yet.'",
     tags: ["Confirmed", "Developer Statement"],
-    source: "thefreakcircus.org",
+    source: "itch.io",
   },
   {
     title: "Day 2 Mirror Scene",
@@ -23,7 +23,7 @@ const discoveries = [
     title: "Columbina is Dead",
     desc: "Community sources confirm Columbina is a deceased character (killed by Harlequin), not a playable route.",
     tags: ["Confirmed", "Lore"],
-    source: "thefreakcircus.org, wiki.gg",
+    source: "YouTube playthroughs",
   },
 ];
 

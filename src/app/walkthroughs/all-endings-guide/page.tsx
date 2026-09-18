@@ -4,11 +4,11 @@ import Footer from "@/components/Footer";
 import ContinueExploring from "@/components/ContinueExploring";
 import Link from "next/link";
 import UnverifiedBanner from "@/components/UnverifiedBanner";
-import { ENDINGS_CONFIRMED, ENDINGS_BAD, ENDINGS_OPEN, ENDINGS_TOTAL } from "@/lib/site-facts";
+import { ENDINGS_CONFIRMED, ENDINGS_BAD, ENDINGS_PLANNED, ENDINGS_TOTAL } from "@/lib/site-facts";
 
 export const metadata: Metadata = {
   title: "All Endings Guide — Freak Circus Ending Information (2026)",
-  description: `What we know about endings in The Freak Circus. ${ENDINGS_TOTAL} endings reported: ${ENDINGS_BAD} confirmed bad ending ("Missing") and ${ENDINGS_OPEN} open endings. Only "Missing" has been verified by name.`,
+  description: `What we know about endings in The Freak Circus. ${ENDINGS_TOTAL} endings reported: ${ENDINGS_BAD} confirmed bad ending ("Missing") and ${ENDINGS_PLANNED} planned endings. Only "Missing" has been verified by name.`,
   keywords: [
     "Freak Circus all endings",
     "Freak Circus endings guide",
@@ -68,14 +68,14 @@ export default function AllEndingsGuidePage() {
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div className="text-center">
                   <div className="font-display text-3xl text-primary">{ENDINGS_TOTAL}</div>
-                  <div className="font-mono text-[10px] text-on-surface/40 uppercase">Total Endings</div>
+                  <div className="font-mono text-[10px] text-on-surface/40 uppercase">Confirmed Endings</div>
                 </div>
                 <div className="text-center">
                   <div className="font-display text-3xl text-green-500">{ENDINGS_BAD}</div>
                   <div className="font-mono text-[10px] text-on-surface/40 uppercase">Bad Ending (Named)</div>
                 </div>
                 <div className="text-center">
-                  <div className="font-display text-3xl text-yellow-500">{ENDINGS_OPEN}</div>
+                  <div className="font-display text-3xl text-yellow-500">{ENDINGS_PLANNED}</div>
                   <div className="font-mono text-[10px] text-on-surface/40 uppercase">Open Endings (Unnamed)</div>
                 </div>
                 <div className="text-center">
@@ -84,7 +84,7 @@ export default function AllEndingsGuidePage() {
                 </div>
               </div>
               <p className="text-on-surface/50 text-xs mt-4 text-center">
-                Source: thefreakcircus.org wiki — "1 bad ending and 3 open endings with more planned"
+                Source: Official developer statements — "1 bad ending" (current) and 4 planned endings
               </p>
             </div>
           </section>
@@ -98,7 +98,7 @@ export default function AllEndingsGuidePage() {
               <h3 className="font-display text-xl text-on-surface mb-2">"Missing" — Bad Ending</h3>
               <div className="space-y-3 text-on-surface/70 text-sm">
                 <p>
-                  <strong>Verification:</strong> Confirmed by thefreakcircus.wiki.gg as the only named ending.
+
                   YouTube has multiple "Bad End" scene videos.
                 </p>
                 <p>
@@ -119,34 +119,39 @@ export default function AllEndingsGuidePage() {
             </div>
           </section>
 
-          {/* Unnamed Open Endings */}
+          {/* Planned Endings */}
           <section>
             <h2 className="font-display text-2xl text-yellow-500 uppercase tracking-widest mb-4">
-              Unnamed Open Endings
+              Planned Endings (Not Yet Implemented)
             </h2>
             <div className="glass-card p-6 border-l-4 border-l-yellow-500">
               <p className="text-on-surface/70 text-sm mb-4">
-                thefreakcircus.org confirms there are <strong>3 open endings</strong> in addition to the "Missing" bad ending.
-                However, <strong>none of these open endings have been confirmed by name</strong>. Any specific ending names
-                you see elsewhere (such as "Grand Finale", "Eternal Silence", "Smile For Me", etc.) are unverified
-                and may be community speculation or fabrications.
+                The developer has listed <strong>4 planned endings</strong> on itch.io (Pierrot&apos;s, Harlequin&apos;s, Protagonist&apos;s,
+                and &quot;All together&quot;), but <strong>none are implemented in the current build</strong>. The developer states:
+                &quot;the script is still a work in progress, so no endings are fully planned yet.&quot;
+                Any specific ending names you see elsewhere are unverified and may be community speculation or fabrications.
               </p>
               <div className="space-y-4">
                 {[
                   {
-                    label: "Open Ending A",
-                    status: "Exists (unnamed)",
-                    note: "Some community members associate this with Harlequin's route. No verified name.",
+                    label: "Pierrot's ending",
+                    status: "Planned (not in game)",
+                    note: "Listed under 'What is planned?' on itch.io.",
                   },
                   {
-                    label: "Open Ending B",
-                    status: "Exists (unnamed)",
-                    note: "Some community members associate this with Pierrot's route. No verified name.",
+                    label: "Harlequin's ending",
+                    status: "Planned (not in game)",
+                    note: "Listed under 'What is planned?' on itch.io.",
                   },
                   {
-                    label: "Open Ending C",
-                    status: "Exists (unnamed)",
-                    note: "The least documented of the three open endings. No verified name or confirmed route.",
+                    label: "Protagonist's ending",
+                    status: "Planned (not in game)",
+                    note: "Listed under 'What is planned?' on itch.io.",
+                  },
+                  {
+                    label: "All together",
+                    status: "Planned (not in game)",
+                    note: "MC with both Pierrot and Harlequin. Listed on itch.io.",
                   },
                 ].map((ending) => (
                   <div key={ending.label} className="bg-surface/50 p-4 rounded">
@@ -155,38 +160,6 @@ export default function AllEndingsGuidePage() {
                       <span className="font-mono text-[9px] text-yellow-500 uppercase">{ending.status}</span>
                     </div>
                     <p className="text-on-surface/50 text-xs">{ending.note}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </section>
-
-          {/* Debunked Endings */}
-          <section>
-            <h2 className="font-display text-2xl text-red-500 uppercase tracking-widest mb-4">
-              ✗ Debunked / Unverified Names
-            </h2>
-            <div className="glass-card p-6 border-l-4 border-l-red-500">
-              <p className="text-on-surface/70 text-sm mb-4">
-                The following ending names have appeared on fan sites or in community discussions but are
-                <strong> NOT confirmed</strong> by any official or wiki source. They may be fabrications:
-              </p>
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
-                {[
-                  "Grand Finale",
-                  "Eternal Silence",
-                  "Smile For Me",
-                  "Doctor's Note",
-                  "White Room",
-                  "Corrupted Data",
-                  "Harlequin's Laughter",
-                  "True Ending",
-                  "Secret Ending",
-                ].map((name) => (
-                  <div key={name} className="bg-red-900/20 px-3 py-2 rounded text-center">
-                    <span className="font-mono text-xs text-red-400 line-through">{name}</span>
-                    <br />
-                    <span className="font-mono text-[8px] text-red-400/60 uppercase">unverified</span>
                   </div>
                 ))}
               </div>
@@ -202,7 +175,7 @@ export default function AllEndingsGuidePage() {
               <ul className="space-y-3 text-on-surface/60 text-sm">
                 <li className="flex items-start gap-2">
                   <span className="text-on-surface/30 mt-1">?</span>
-                  <span>The specific names of the 3 open endings</span>
+                  <span>The specific details of the 4 planned endings</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-on-surface/30 mt-1">?</span>
@@ -230,8 +203,8 @@ export default function AllEndingsGuidePage() {
               Sources
             </h2>
             <div className="text-on-surface/40 text-xs space-y-1">
-              <p>• thefreakcircus.wiki.gg — "Confirmed Endings: 1 (Missing)"</p>
-              <p>• thefreakcircus.org — "1 bad ending and 3 open endings with more planned"</p>
+              <p>• itch.io (garula) — Official download and game info</p>
+              <p>• YouTube — Community playthroughs and ending verification</p>
               <p>• YouTube — Multiple "Bad End" and "Good End" scene videos confirm endings exist</p>
               <p>• Last verified: August 2026</p>
             </div>

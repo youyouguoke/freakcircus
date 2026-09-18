@@ -38,7 +38,7 @@ export default function PierrotEndingsPage() {
                 <ul className="space-y-3 text-on-surface/60 text-sm">
                   <li className="flex items-start gap-2">
                     <span className="text-green-500 mt-1">✓</span>
-                    <span>The game has 4 endings total: 1 confirmed bad ending (&quot;Missing&quot;) + 3 unnamed open endings</span>
+                    <span>The game has 4 endings total: 1 confirmed bad ending (&quot;Missing&quot;) + 4 planned endings (not yet in game)</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-yellow-500 mt-1">?</span>
@@ -70,8 +70,7 @@ export default function PierrotEndingsPage() {
             <section>
               <h2 className="font-display text-xl text-on-surface/40 uppercase tracking-widest mb-4">Sources</h2>
               <div className="text-on-surface/40 text-xs space-y-1">
-                <p>• thefreakcircus.org — &quot;1 bad ending and 3 open endings&quot;</p>
-                <p>• thefreakcircus.wiki.gg — &quot;Missing&quot; confirmed as only named ending</p>
+                
                 <p>• Last verified: August 2026</p>
               </div>
             </section>

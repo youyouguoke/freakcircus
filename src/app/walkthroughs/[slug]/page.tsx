@@ -37,7 +37,6 @@ const routes: Record<string, {
       "Pay attention to the Columbina legend in Day 2",
     ],
     sources: [
-      "thefreakcircus.org — Character descriptions",
       "YouTube playthroughs — Day 1 & 2 content confirmation",
     ],
   },
@@ -64,8 +63,6 @@ const routes: Record<string, {
       "Understanding the Columbina legend adds context to Harlequin's motivations",
     ],
     sources: [
-      "thefreakcircus.wiki.gg — 'Missing' ending confirmed",
-      "thefreakcircus.org — Character descriptions",
       "YouTube — 'Bad End' scene videos",
     ],
   },

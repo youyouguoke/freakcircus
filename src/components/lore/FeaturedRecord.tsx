@@ -13,7 +13,7 @@ const records = [
       "The setting combines psychological horror with romance tension",
     ],
     verified: true,
-    source: "thefreakcircus.org, thefreakcircus.my",
+    source: "VNDB, itch.io",
   },
   {
     id: "LORE_02",
@@ -27,7 +27,7 @@ const records = [
       "Columbina is not a playable character — she exists only in lore",
     ],
     verified: true,
-    source: "thefreakcircus.org, thefreakcircus.wiki.gg, YouTube",
+    source: "YouTube",
   },
   {
     id: "LORE_03",
@@ -41,7 +41,7 @@ const records = [
       "Day 1 introduces Pierrot and Harlequin as the two main characters",
     ],
     verified: true,
-    source: "thefreakcircus.my, YouTube playthroughs",
+    source: "YouTube playthroughs",
   },
   {
     id: "LORE_04",
@@ -56,7 +56,7 @@ const records = [
       "The Columbina legend is revealed, explaining the Pierrot-Harlequin rivalry",
     ],
     verified: true,
-    source: "thefreakcircus.my, thefreakcircus.org, YouTube",
+    source: "YouTube",
   },
 ];
 

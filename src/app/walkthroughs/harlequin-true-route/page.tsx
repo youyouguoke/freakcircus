@@ -84,7 +84,7 @@ export default function HarlequinRoutePage() {
                     Specific choice requirements have not been independently verified.
                   </p>
                   <p>
-                    <strong>Source:</strong> thefreakcircus.wiki.gg lists &quot;Missing&quot; as the only confirmed ending.
+                    <strong>Source:</strong> YouTube playthroughs confirm &quot;Missing&quot; as the only named ending.
                   </p>
                 </div>
               </div>
@@ -120,8 +120,7 @@ export default function HarlequinRoutePage() {
             <section>
               <h2 className="font-display text-2xl font-bold text-foreground mb-4">Sources</h2>
               <div className="text-on-surface/40 text-xs space-y-1">
-                <p>• thefreakcircus.wiki.gg — Confirmed ending &quot;Missing&quot; linked to Harlequin</p>
-                <p>• thefreakcircus.org — Character descriptions and route structure</p>
+                
                 <p>• YouTube playthroughs — &quot;Bad End&quot; scene confirmation</p>
                 <p>• Last verified: August 2026</p>
               </div>

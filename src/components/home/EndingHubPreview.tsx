@@ -6,11 +6,17 @@ const endings = [
   {
     name: 'Missing',
     type: 'BAD ENDING',
-    difficulty: 'Unknown',
     status: 'confirmed',
-    desc: 'The only confirmed ending. The player character goes missing and is never found. Triggers when trust thresholds are not met by end of Day 2.',
+    desc: 'The only confirmed ending in the current build. The player character goes missing and is never found. Associated with Harlequin\'s route.',
     href: '/endings',
   },
+];
+
+const planned = [
+  "Pierrot's ending",
+  "Harlequin's ending",
+  "Protagonist's ending",
+  "All together (MC with both Pierrot and Harlequin)",
 ];
 
 export default function EndingHubPreview() {
@@ -23,10 +29,10 @@ export default function EndingHubPreview() {
             ENDING CATALOGUE
           </div>
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-paper">
-            Confirmed Ending
+            Endings
           </h2>
           <p className="text-faint-paper text-sm mt-3 max-w-lg">
-            Only 1 ending has been independently verified. 3 additional open endings exist but remain unnamed.
+            1 confirmed ending. 4 planned endings listed by the developer (not yet implemented).
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -45,6 +51,20 @@ export default function EndingHubPreview() {
               </div>
             </Link>
           ))}
+
+          <div className="archive-card">
+            <div className="font-label text-[0.55rem] px-2 py-0.5 border border-amber-500/30 text-amber-400 bg-amber-500/8 inline-block mb-4">PLANNED — NOT IN GAME</div>
+            <ul className="space-y-2">
+              {planned.map((name) => (
+                <li key={name} className="text-faint-paper text-sm flex items-center gap-2">
+                  <span className="text-amber-400">📋</span> {name}
+                </li>
+              ))}
+            </ul>
+            <p className="text-dim-paper text-xs mt-4">
+              Source: itch.io &quot;What is planned?&quot;
+            </p>
+          </div>
         </div>
         <div className="mt-8 text-center">
           <Link href="/endings" className="btn-archive">

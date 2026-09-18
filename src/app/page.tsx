@@ -19,21 +19,21 @@ import JsonLd from '@/components/JsonLd';
 import ScrollReveal from '@/components/archive/ScrollReveal';
 
 export const metadata: Metadata = {
-  title: 'The Freak Circus Guide, Endings, Characters & Hidden Lore Archive | Freak Circus Hub',
-  description: 'The ultimate fan archive for The Freak Circus horror visual novel. Explore character guides, all endings explained, walkthroughs, hidden routes, timeline lore, and community theories. Discover Pierrot, Harlequin, The Doctor, and Columbina.',
+  title: 'The Freak Circus Guide, Endings, Characters & Lore | Freak Circus Hub',
+  description: 'The Freak Circus guide covering characters, walkthroughs, endings, lore and community theories, with confirmed and unverified information clearly separated.',
   keywords: ['The Freak Circus', 'The Freak Circus guide', 'The Freak Circus endings', 'The Freak Circus characters', 'The Freak Circus lore', 'The Freak Circus walkthrough', 'horror visual novel', 'Pierrot', 'Harlequin', 'The Doctor', 'Columbina', 'endings guide', 'hidden routes', 'lore archive', 'community theories'],
   openGraph: {
-    title: 'The Freak Circus Guide, Endings, Characters & Hidden Lore Archive',
-    description: 'The ultimate fan archive for The Freak Circus horror visual novel. Explore character guides, all endings explained, walkthroughs, hidden routes, timeline lore, and community theories.',
+    title: 'The Freak Circus Guide, Endings, Characters & Lore',
+    description: 'The Freak Circus guide covering characters, walkthroughs, endings, lore and community theories, with confirmed and unverified information clearly separated.',
     type: 'website',
     url: 'https://freak-circus.com',
     siteName: 'Freak Circus Hub',
-    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'The Freak Circus Guide — Endings, Characters & Hidden Lore Archive' }],
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'The Freak Circus Guide — Endings, Characters & Lore' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'The Freak Circus Guide, Endings, Characters & Hidden Lore Archive',
-    description: 'The ultimate fan archive for The Freak Circus horror visual novel.',
+    title: 'The Freak Circus Guide, Endings, Characters & Lore',
+    description: 'The Freak Circus guide with confirmed and unverified information clearly separated.',
     images: ['/twitter-image.png'],
   },
   alternates: { canonical: 'https://freak-circus.com' },

@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { usePathname } from 'next/navigation';
+import { ITCH_IO_URL } from '@/lib/site-facts';
 
 const navLinks = [
   { label: 'Archive', href: '/' },
@@ -56,13 +57,13 @@ export default function Navigation() {
           </Link>
         ))}
         <a
-          href="https://freak-circus.com/play-online"
+          href={ITCH_IO_URL}
           target="_blank"
           rel="noopener noreferrer"
           className="btn-archive text-[0.65rem] py-2 px-4"
         >
           <span className="inline-block w-1.5 h-1.5 bg-status-confirmed rounded-full animate-pulse-slow" />
-          PLAY
+          PLAY ON ITCH.IO
         </a>
       </div>
 
@@ -92,7 +93,7 @@ export default function Navigation() {
           ))}
           <div className="h-px bg-dark-border my-2" />
           <a
-            href="https://freak-circus.com/play-online"
+            href={ITCH_IO_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="btn-archive text-center text-[0.65rem] py-2"

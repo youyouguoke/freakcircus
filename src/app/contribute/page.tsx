@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import { CURRENT_VERSION, LAST_VERIFIED_LABEL } from "@/lib/site-facts";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
@@ -66,7 +67,7 @@ const contributionTypes = [
     title: "Write a Walkthrough",
     description: "Have detailed knowledge of a specific route? Contribute a day-by-day walkthrough for character routes we haven't covered yet.",
     examples: [
-      "Columbina's three-loop walkthrough",
+      "Columbina legend documentation",
       "Doctor's hidden files guide",
       "Ticket Taker route speculation",
     ],
@@ -177,7 +178,7 @@ export default function ContributePage() {
             <div className="bg-surface-container border border-outline/20 p-6">
               <h3 className="font-[Epilogue] text-lg font-bold text-foreground mb-2">Game Version</h3>
               <p className="text-on-surface-variant text-sm">
-                Always specify the game version when reporting discoveries. Content may change between patches. Current known version: v0.2 Prototype (2026-02-22).
+                Always specify the game version when reporting discoveries. Content may change between patches. Current known version: {CURRENT_VERSION} (last verified {LAST_VERIFIED_LABEL}).
               </p>
             </div>
           </div>

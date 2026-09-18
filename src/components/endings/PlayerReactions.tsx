@@ -2,7 +2,7 @@
 
 const reactions = [
   {
-    quote: "I thought my game froze during Open Ending C (unnamed). I waited four minutes before realizing it was intentional.",
+    quote: "I thought my game froze during a scene. I waited a few minutes before realizing it was intentional.",
     source: "Steam Review",
   },
   {
@@ -10,7 +10,7 @@ const reactions = [
     source: "Reddit /r/FreakCircus",
   },
   {
-    quote: "I still don't know if Unnamed Open Ending is real. I've been trying for six months and I'm starting to question my own memory.",
+    quote: "I still don't know if the planned endings will be implemented. I've been following the game for months and I'm starting to wonder about the future.",
     source: "Discord #theories",
   },
   {

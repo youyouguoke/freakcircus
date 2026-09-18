@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import { CURRENT_VERSION, ITCH_IO_URL, LAST_VERIFIED_LABEL, PLATFORMS } from "@/lib/site-facts";
 
 export const metadata: Metadata = {
   title: "The Freak Circus Android — APK Download & Install | Freak Circus Hub",
@@ -25,10 +26,10 @@ export const metadata: Metadata = {
 };
 
 const fileInfo = [
-  { label: "File Name", value: "garula.thefreakcircus-0.2.apk" },
-  { label: "Size", value: "423 MB" },
-  { label: "Version", value: "0.2" },
-  { label: "Download Source", value: "itch.io Official Page", href: "https://garula.itch.io/the-freak-circus" },
+  { label: "Official Source", value: "itch.io", href: ITCH_IO_URL },
+  { label: "Current Build", value: CURRENT_VERSION },
+  { label: "Platforms", value: PLATFORMS.join(", ") },
+  { label: "Last Verified", value: LAST_VERIFIED_LABEL },
 ];
 
 const steps = [
@@ -62,7 +63,7 @@ const knownIssues = [
 const faqs = [
   {
     question: "How large is the Android version?",
-    answer: "The APK is approximately 423 MB. Make sure you have enough free storage and a stable Wi-Fi connection before downloading.",
+    answer: "Check the current file size on the official itch.io page before downloading. This archive does not independently verify APK size after each update.",
   },
   {
     question: "Can I play on iOS?",
@@ -82,7 +83,7 @@ export default function AndroidInstallationPage() {
       <section className="bg-surface min-h-[50vh] flex flex-col justify-center py-16 px-4 md:px-16 relative overflow-hidden">
         <div className="max-w-4xl mx-auto w-full relative z-10">
           <div className="font-[JetBrains_Mono] text-xs text-primary mb-4 uppercase tracking-widest">
-            v0.2 Prototype | Last updated: 2026-02-22
+            {CURRENT_VERSION} | Last verified: {LAST_VERIFIED_LABEL}
           </div>
           <h1 className="font-[Creepster] text-5xl md:text-7xl text-primary mb-6 leading-none">
             The Freak Circus Android Version
@@ -91,7 +92,7 @@ export default function AndroidInstallationPage() {
             Mobile installation guide. Download the official APK from itch.io and install it on your Android phone.
           </p>
           <a
-            href="https://garula.itch.io/the-freak-circus"
+            href={ITCH_IO_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-8 py-4 bg-primary text-surface font-[JetBrains_Mono] text-sm uppercase hover:bg-primary/90 transition-colors"
@@ -220,7 +221,7 @@ export default function AndroidInstallationPage() {
             Download the official APK from itch.io and follow the steps above. Free, no account required.
           </p>
           <a
-            href="https://garula.itch.io/the-freak-circus"
+            href={ITCH_IO_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-8 py-4 bg-primary text-surface font-[JetBrains_Mono] text-sm uppercase hover:bg-primary/90 transition-colors"

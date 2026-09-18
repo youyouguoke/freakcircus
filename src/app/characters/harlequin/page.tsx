@@ -2,7 +2,6 @@ import { Metadata } from "next";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import ContinueExploring from "@/components/ContinueExploring";
-import JsonLd from "@/components/JsonLd";
 import HarlequinClient from "./HarlequinClient";
 
 export const metadata: Metadata = {
@@ -28,7 +27,7 @@ export default function HarlequinPage() {
       <HarlequinClient faqData={faqData} />
       <ContinueExploring />
       <Footer />
-      <JsonLd />
+      
     </main>
   );
 }

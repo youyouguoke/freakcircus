@@ -43,7 +43,7 @@ export default function PierrotAnalysisPage() {
                 explained by the Columbina legend in Day 2.
               </p>
               <p className="text-on-surface-variant text-sm">
-                These are verified facts from thefreakcircus.org, wiki.gg, and YouTube playthroughs.
+                These are verified facts from official sources and YouTube playthroughs.
               </p>
             </section>
 
@@ -93,8 +93,7 @@ export default function PierrotAnalysisPage() {
                 Sources
               </h2>
               <div className="text-on-surface/40 text-xs space-y-1">
-                <p>• thefreakcircus.org — Character descriptions</p>
-                <p>• thefreakcircus.wiki.gg — Character information</p>
+
                 <p>• YouTube playthroughs — Day 1 & 2 content</p>
                 <p>• Last verified: August 2026</p>
               </div>

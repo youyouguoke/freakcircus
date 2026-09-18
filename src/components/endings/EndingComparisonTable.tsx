@@ -28,7 +28,7 @@ export default function EndingComparisonTable() {
                   Associated with Harlequin's route. Player character goes missing. Specific trigger conditions unverified.
                 </td>
                 <td className="p-3 text-on-surface-variant text-xs">
-                  thefreakcircus.wiki, YouTube, thefreakcircus.org
+                  YouTube
                 </td>
               </tr>
             </tbody>
@@ -36,8 +36,9 @@ export default function EndingComparisonTable() {
         </div>
         <div className="mt-6 bg-surface-container border border-amber-500/30 p-4">
           <p className="text-on-surface-variant text-xs">
-            <strong className="text-amber-400">Note:</strong> The developer has confirmed 3 additional open endings exist,
-            but no source has named them. Ending names like &quot;Open Ending A (unnamed)&quot;, &quot;Open Ending C (unnamed)&quot;, etc.
+            <strong className="text-amber-400">Note:</strong> The developer has listed 4 planned endings on itch.io (Pierrot&apos;s, Harlequin&apos;s,
+            Protagonist&apos;s, All together), but none are implemented in the current build. The developer states:
+            &quot;the script is still a work in progress, so no endings are fully planned yet.&quot; Any ending names beyond &quot;Missing&quot;
             that appear on other sites are unverified speculation.
           </p>
         </div>

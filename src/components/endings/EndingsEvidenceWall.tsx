@@ -1,33 +1,28 @@
 "use client";
 
-import Link from "next/link";
-
 const endings = [
-  { id: "ENDING #04", title: "Open Ending C (unnamed)", status: "VERIFIED", href: "#ending-04" },
-  { id: "ENDING #07", title: "Unnamed Open Ending", status: "CORRUPTED", href: "#ending-07" },
-  { id: "ENDING #09", title: "Unnamed Open Ending", status: "UNSTABLE", href: "#ending-09" },
-  { id: "ENDING #??", title: "Unnamed Open Ending", status: "UNVERIFIED", href: "#ending-null" },
+  { id: "ENDING #01", title: "Missing", status: "CONFIRMED", href: "#ending-01" },
 ];
 
 export default function EndingsEvidenceWall() {
   return (
-    <section className="bg-surface py-16 px-4 md:px-16 border-t border-outline/10">
+    <section className="py-16 px-4 md:px-16 border-t border-outline/10">
       <div className="max-w-6xl mx-auto">
-        <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant mb-8">
-          Evidence Wall // CONFIDENTIAL
-        </div>
-
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {endings.map((ending) => (
-            <Link key={ending.id} href={ending.href} className="block bg-surface-container border border-outline/20 p-6 hover:border-primary transition-colors">
-              <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant mb-2">{ending.id}</div>
-              <div className="font-[Epilogue] text-lg font-bold text-foreground mb-2">{ending.title}</div>
-              <div className={`font-[JetBrains_Mono] text-xs px-2 py-1 border inline-block ${
-                ending.status === 'VERIFIED' ? 'border-primary text-primary' :
-                ending.status === 'CORRUPTED' ? 'border-blood text-blood' :
-                'border-outline/30 text-on-surface-variant'
-              }`}>{ending.status}</div>
-            </Link>
+        <h2 className="font-display text-2xl text-primary uppercase tracking-widest mb-4">
+          Ending Evidence Wall
+        </h2>
+        <p className="text-on-surface/50 text-sm mb-8">
+          Only 1 ending has been confirmed in the current build.
+        </p>
+        <div className="grid md:grid-cols-2 gap-3">
+          {endings.map((e) => (
+            <div key={e.id} className="glass-card p-4 flex items-center justify-between">
+              <div>
+                <span className="font-mono text-[10px] text-on-surface/40">{e.id}</span>
+                <h3 className="font-display text-on-surface">{e.title}</h3>
+              </div>
+              <span className="font-mono text-[9px] text-green-500 uppercase">{e.status}</span>
+            </div>
           ))}
         </div>
       </div>

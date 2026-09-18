@@ -4,29 +4,27 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { ENDINGS_CONFIRMED, ENDINGS_TOTAL } from "@/lib/site-facts";
 
-const accent = "var(--jester)";
+const accent = "var(--ticket-taker)";
 
 const profile = {
-  role: "THE TRICKSTER",
-  status: "UNKNOWN",
+  role: "THE GATEKEEPER",
+  status: "ACTIVE",
   route: "NOT CONFIRMED",
-  firstEncounter: "Edges of narrative",
-  keyMechanic: "Observation / Commentary",
-  endings: "Unknown",
+  firstEncounter: "Circus Entrance (Day 1)",
 };
 
-/* ─── Day 2 sightings ─── */
-const day2Sightings = [
+/* ─── Field Reports ─── */
+const fieldReports = [
   {
     scene: "Community-Reported Sightings",
     detail:
-      "Players have reported encountering Jester in various Day 2 scenes, including Mirror Hall reflections and peripheral appearances. Specific scene details and mechanics remain unverified against the current game build.",
+      "Players have reported encountering Ticket Taker at the entrance to the circus and in mirror-related scenes. Whether these represent a dedicated route or are part of the broader narrative structure is unverified.",
     confidence: "unverified",
   },
   {
-    scene: "Narrative Presence",
+    scene: "Mirror Scene",
     detail:
-      "Jester appears to exist at the edges of other characters' storylines, delivering commentary rather than direct action. Whether this constitutes a separate route or is part of the broader narrative structure is unconfirmed.",
+      "Community members have described a scene where the player sees themselves wearing Ticket Taker's mask. Whether this is a confirmed game mechanic or player interpretation is unverified against the current build.",
     confidence: "unverified",
   },
 ];
@@ -34,69 +32,30 @@ const day2Sightings = [
 /* ─── Character connections ─── */
 const connections = [
   {
-    name: "Ticket Taker",
-    href: "/characters/ticket-taker",
-    relation: "Speculated connection",
-    detail:
-      "Community members have speculated about a possible connection between Jester and Ticket Taker, as both appear at the edges of other characters' routes. Whether they are the same entity, related, or entirely separate is unverified.",
-    confidence: "unverified",
-  },
-  {
     name: "The Doctor",
     href: "/characters/doctor",
-    relation: "Unverified interaction",
+    relation: "Unverified connection",
     detail:
-      "Some community reports suggest Jester and The Doctor may interact in Day 2 content. The nature and significance of any connection is unverified.",
+      "Both characters appear in Day 2 content. Whether they have a deeper narrative connection is unverified community speculation.",
     confidence: "unverified",
   },
   {
-    name: "Columbina",
-    href: "/characters/columbina",
-    relation: "Backstory reference",
+    name: "Jester",
+    href: "/characters/jester",
+    relation: "Speculated connection",
     detail:
-      "Jester may reference or be connected to Columbina's backstory. Whether this constitutes a meaningful narrative connection or is incidental is unverified.",
+      "Community members have speculated about a possible connection between Ticket Taker and Jester, as both appear at the edges of other characters' routes. Whether they are the same entity, related, or entirely separate is unverified.",
     confidence: "unverified",
   },
   {
-    name: "Harlequin",
-    href: "/characters/harlequin",
-    relation: "Unverified dynamic",
+    name: "All Characters",
+    href: "/characters",
+    relation: "Narrative presence",
     detail:
-      "Community members have speculated about Jester's relationship with Harlequin. Whether there is fear, deference, rivalry, or no special dynamic is unverified.",
+      "Ticket Taker appears to exist at the boundary of the circus narrative. Whether this constitutes a connection to all characters or is a separate narrative function is unverified.",
     confidence: "unverified",
   },
 ];
-
-/* ─── Related theories ─── */
-// Removed local theory database — theories are maintained on /theories page
-const relatedTheories: { title: string; href: string; tag: string; connection: string }[] = [];
-
-function StatBar({
-  label,
-  value,
-  color = accent,
-}: {
-  label: string;
-  value: number;
-  color?: string;
-}) {
-  return (
-    <div className="flex items-center gap-3">
-      <span className="font-label text-[0.55rem] text-faint-paper w-28 shrink-0">
-        {label}
-      </span>
-      <div className="flex-1 h-1 bg-dark-border overflow-hidden">
-        <div
-          className="h-full transition-all duration-1000"
-          style={{ width: `${value}%`, background: color }}
-        />
-      </div>
-      <span className="font-label text-[0.5rem] text-faint-paper w-8 text-right">
-        {value}%
-      </span>
-    </div>
-  );
-}
 
 function ConfidenceBadge({ level }: { level: string }) {
   const map: Record<string, { label: string; cls: string }> = {
@@ -113,7 +72,7 @@ function ConfidenceBadge({ level }: { level: string }) {
   );
 }
 
-export default function JesterClient({
+export default function TicketTakerClient({
   faqData,
 }: {
   faqData: { question: string; answer: string }[];
@@ -129,7 +88,7 @@ export default function JesterClient({
       <section className="relative min-h-[60vh] flex items-end overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="/jester-hero-new.webp"
+            src="/tickettaker-hero-new.webp"
             alt=""
             className="w-full h-full object-cover object-top opacity-45 img-cinematic animate-breathe"
             aria-hidden="true"
@@ -147,19 +106,19 @@ export default function JesterClient({
                 className="inline-block w-8 h-px"
                 style={{ background: accent }}
               />
-              CASE FILE 05
+              CASE FILE 06
             </div>
             <h1
               className="font-archive text-6xl md:text-8xl lg:text-9xl leading-[0.85] mb-2"
               style={{ color: accent }}
             >
-              JESTER
+              TICKET TAKER
             </h1>
             <p className="font-label text-muted-paper text-sm tracking-[0.2em] mb-8">
               {profile.role}
             </p>
             <div className="flex flex-wrap gap-3 mb-8">
-              <span className="font-label text-[0.55rem] px-2.5 py-1 text-status-unverified border border-status-unverified/30 bg-status-unverified/8">
+              <span className="font-label text-[0.55rem] px-2.5 py-1 text-status-confirmed border border-status-confirmed/30 bg-status-confirmed/8">
                 STATUS: {profile.status}
               </span>
               <span className="font-label text-[0.55rem] px-2.5 py-1 text-muted-paper border border-dark-border">
@@ -171,8 +130,8 @@ export default function JesterClient({
             className={`grid grid-cols-2 md:grid-cols-4 gap-px bg-dark-border max-w-2xl transition-all duration-1000 delay-300 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
           >
             {[
-              { label: "ROLE", value: "Trickster" },
-              { label: "PRESENCE", value: "Peripheral" },
+              { label: "ROLE", value: "Gatekeeper" },
+              { label: "PRESENCE", value: "Boundary" },
               { label: "ROUTE", value: "Unconfirmed" },
               { label: "AWARENESS", value: "★★★★☆" },
             ].map((i) => (
@@ -187,7 +146,7 @@ export default function JesterClient({
         </div>
       </section>
 
-      {/* ═══ WHO IS JESTER ═══ */}
+      {/* ═══ WHO IS TICKET TAKER ═══ */}
       <section className="bg-void-black py-20 md:py-28 px-4 md:px-12">
         <div className="max-w-6xl mx-auto grid md:grid-cols-5 gap-8 md:gap-12">
           <div className="md:col-span-3">
@@ -202,7 +161,7 @@ export default function JesterClient({
               SUBJECT ANALYSIS
             </div>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-paper mb-6">
-              Who Is Jester?
+              Who Is Ticket Taker?
             </h2>
             <div
               className="archive-card mb-6"
@@ -215,28 +174,26 @@ export default function JesterClient({
                 QUICK ANSWER
               </div>
               <p className="text-faint-paper text-sm leading-relaxed">
-                <strong className="text-paper">Jester</strong> operates at the
-                edges of the narrative — watching, commenting, and delivering
-                lines dense with double meanings that fuel theory-crafting.
-                Unlike other characters, Jester has no confirmed route and
-                appears in the peripheral vision of other characters&apos;
-                stories.
+                <strong className="text-paper">Ticket Taker</strong> is a
+                character who appears at the boundary of The Freak Circus
+                narrative. Community members have reported encountering Ticket
+                Taker at the circus entrance and in mirror-related scenes.
+                Whether Ticket Taker has a dedicated route, specific endings, or
+                deeper narrative significance is unverified.
               </p>
             </div>
             <p className="text-faint-paper text-sm leading-relaxed">
-              Jester is the most enigmatic figure in The Freak Circus. While
-              other characters have defined routes and endings, Jester exists in
-              the margins — appearing briefly in other characters&apos; scenes,
-              delivering cryptic commentary, and vanishing before the player can
-              fully engage. Some community members theorize Jester may be the
-              circus&apos;s central orchestrator, but this remains unconfirmed.
+              Ticket Taker exists at the edges of the narrative — appearing at
+              threshold moments rather than in dedicated story sequences. Some
+              community members theorize a connection to Jester or The Doctor,
+              but these connections remain unverified speculation.
             </p>
           </div>
           <div className="md:col-span-2">
             <div className="relative overflow-hidden">
               <img
-                src="/jester-hero-new.webp"
-                alt="Jester portrait"
+                src="/tickettaker-hero-new.webp"
+                alt="Ticket Taker portrait"
                 className="w-full object-cover img-cinematic"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-void-black via-transparent to-transparent opacity-60" />
@@ -250,7 +207,7 @@ export default function JesterClient({
         </div>
       </section>
 
-      {/* ═══ DAY 2 SIGHTINGS ═══ */}
+      {/* ═══ FIELD REPORTS ═══ */}
       <section className="bg-archive-black py-20 md:py-28 px-4 md:px-12">
         <div className="max-w-6xl mx-auto">
           <div
@@ -264,15 +221,15 @@ export default function JesterClient({
             FIELD REPORTS
           </div>
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-paper mb-3">
-            Day 2 Sightings &amp; Known Scenes
+            Community-Observed Scenes
           </h2>
           <p className="text-faint-paper text-sm mb-8 max-w-2xl">
-            Community-reported scenes featuring Jester on Day 2. These are
-            sourced from multiple independent player reports but have not been
-            independently verified against the current game build.
+            Community-reported scenes featuring Ticket Taker. These are
+            sourced from player reports but have not been independently
+            verified against the current game build.
           </p>
-          <div className="grid md:grid-cols-3 gap-4">
-            {day2Sightings.map((s) => (
+          <div className="grid md:grid-cols-2 gap-4">
+            {fieldReports.map((s) => (
               <div
                 key={s.scene}
                 className="archive-card flex flex-col gap-3"
@@ -316,16 +273,24 @@ export default function JesterClient({
               </div>
               <div className="space-y-3">
                 <div>
-                  <div className="font-label text-[0.5rem] text-faint-paper mb-1">LOOP AWARENESS</div>
-                  <p className="text-faint-paper text-sm">Community members report Jester may show awareness of repeated cycles, but this is unverified.</p>
+                  <div className="font-label text-[0.5rem] text-faint-paper mb-1">
+                    NARRATIVE ROLE
+                  </div>
+                  <p className="text-faint-paper text-sm">
+                    Ticket Taker appears to function as a boundary or threshold
+                    character. Whether this role has deeper significance is
+                    unverified.
+                  </p>
                 </div>
                 <div>
-                  <div className="font-label text-[0.5rem] text-faint-paper mb-1">THREAT LEVEL</div>
-                  <p className="text-faint-paper text-sm">Jester's threat level is unclear — some view Jester as harmless, others as potentially dangerous.</p>
-                </div>
-                <div>
-                  <div className="font-label text-[0.5rem] text-faint-paper mb-1">4TH WALL AWARENESS</div>
-                  <p className="text-faint-paper text-sm">Some players interpret Jester's dialogue as meta-awareness, but this remains unverified speculation.</p>
+                  <div className="font-label text-[0.5rem] text-faint-paper mb-1">
+                    AWARENESS
+                  </div>
+                  <p className="text-faint-paper text-sm">
+                    Some players interpret Ticket Taker's positioning as
+                    meta-awareness of the player, but this remains unverified
+                    speculation.
+                  </p>
                 </div>
               </div>
             </div>
@@ -335,14 +300,11 @@ export default function JesterClient({
               </div>
               <div className="space-y-4">
                 {[
-                  { l: "DESIGNATION", v: "Jester" },
-                  { l: "CLASSIFICATION", v: "Unknown" },
-                  { l: "ROLE", v: "Trickster / Observer" },
-                  { l: "ROUTE STATUS", v: "Unconfirmed" },
-                  {
-                    l: "KNOWN ASSOCIATIONS",
-                    v: "All characters (peripheral)",
-                  },
+                  { l: "DESIGNATION", v: "Ticket Taker" },
+                  { l: "CLASSIFICATION", v: "Circus Entity" },
+                  { l: "ROLE", v: "Gatekeeper" },
+                  { l: "CONFIRMED ENDINGS", v: "None" },
+                  { l: "KNOWN APPEARANCES", v: "Day 1 entrance, Day 2 content" },
                 ].map((i) => (
                   <div key={i.l} className="flex items-baseline gap-4">
                     <span className="font-label text-[0.5rem] text-faint-paper w-32 shrink-0">
@@ -374,11 +336,10 @@ export default function JesterClient({
             Character Connections
           </h2>
           <p className="text-faint-paper text-sm mb-8 max-w-2xl">
-            Known and theorized relationships between Jester and other
-            characters. Confidence levels reflect how many independent sources
-            corroborate the connection.
+            Theorized relationships between Ticket Taker and other
+            characters. All connections are unverified community speculation.
           </p>
-          <div className="grid md:grid-cols-2 gap-4">
+          <div className="grid md:grid-cols-3 gap-4">
             {connections.map((c) => (
               <Link
                 key={c.name}
@@ -407,55 +368,8 @@ export default function JesterClient({
         </div>
       </section>
 
-      {/* ═══ RELATED THEORIES ═══ */}
-      <section className="bg-void-black py-20 md:py-28 px-4 md:px-12">
-        <div className="max-w-6xl mx-auto">
-          <div
-            className="font-label text-[0.6rem] mb-3 flex items-center gap-3"
-            style={{ color: accent }}
-          >
-            <span
-              className="inline-block w-6 h-px"
-              style={{ background: accent }}
-            />
-            THEORY CONNECTIONS
-          </div>
-          <h2 className="font-heading text-3xl md:text-4xl font-bold text-paper mb-3">
-            Related Theories
-          </h2>
-          <p className="text-faint-paper text-sm mb-8 max-w-2xl">
-            Community theories that reference or rely on Jester&apos;s behavior
-            and presence.
-          </p>
-          <div className="grid md:grid-cols-3 gap-4">
-            {relatedTheories.map((t) => (
-              <Link
-                key={t.title}
-                href={t.href}
-                className="archive-card group hover:border-circus-red/50 transition-colors flex flex-col gap-3"
-              >
-                <div className="flex items-center justify-between gap-2">
-                  <div className="font-label text-[0.65rem] text-paper group-hover:text-circus-red transition-colors">
-                    {t.title}
-                  </div>
-                  <span className="font-label text-[0.5rem] px-2 py-0.5 border border-gold-accent/30 text-gold-accent bg-gold-accent/8">
-                    {t.tag}
-                  </span>
-                </div>
-                <p className="text-faint-paper text-sm leading-relaxed flex-1">
-                  {t.connection}
-                </p>
-                <div className="font-label text-[0.5rem] text-faint-paper group-hover:text-circus-red transition-colors">
-                  VIEW THEORY →
-                </div>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* ═══ ALL ENDINGS ═══ */}
-      <section className="bg-archive-black py-16 px-4 md:px-12">
+      <section className="bg-void-black py-16 px-4 md:px-12">
         <div className="max-w-6xl mx-auto">
           <div
             className="font-label text-[0.6rem] mb-3 flex items-center gap-3"
@@ -477,18 +391,57 @@ export default function JesterClient({
               </span>
             </div>
             <p className="text-faint-paper text-sm leading-relaxed">
-              Jester has no confirmed endings associated with a dedicated route.
-              Placeholder dialogue files labeled &apos;JESTER_ROUTE&apos; exist
-              in the game data but are empty. The developer has listed
-              Jester&apos;s route as &quot;planned&quot; without a target date.
+              Ticket Taker has no confirmed endings associated with a dedicated
+              route. Whether any endings are specifically tied to Ticket Taker is
+              unverified.
             </p>
             <p className="text-muted-paper text-xs mt-3">
               The Freak Circus has {ENDINGS_TOTAL} documented endings across all
               characters ({ENDINGS_CONFIRMED} confirmed). See the{" "}
-              <Link href="/endings" className="text-paper hover:text-circus-red transition-colors underline underline-offset-2">
+              <Link
+                href="/endings"
+                className="text-paper hover:text-circus-red transition-colors underline underline-offset-2"
+              >
                 Endings Archive
               </Link>{" "}
               for the complete list.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══ RELATED THEORIES ═══ */}
+      <section className="bg-archive-black py-20 md:py-28 px-4 md:px-12">
+        <div className="max-w-6xl mx-auto">
+          <div
+            className="font-label text-[0.6rem] mb-3 flex items-center gap-3"
+            style={{ color: accent }}
+          >
+            <span
+              className="inline-block w-6 h-px"
+              style={{ background: accent }}
+            />
+            THEORY CONNECTIONS
+          </div>
+          <h2 className="font-heading text-3xl md:text-4xl font-bold text-paper mb-8">
+            Fan Theories
+          </h2>
+          <div className="archive-card" style={{ borderLeft: `3px solid ${accent}` }}>
+            <p className="text-faint-paper text-sm leading-relaxed mb-4">
+              Community members have speculated about Ticket Taker's role in the
+              narrative, including theories about time loops, shared identities
+              with other characters, and meta-narrative significance. Whether any
+              of these theories are correct is unverified.
+            </p>
+            <p className="text-faint-paper text-sm leading-relaxed">
+              For the complete list of community theories, see the{" "}
+              <Link
+                href="/theories"
+                className="text-paper hover:text-circus-red transition-colors underline underline-offset-2"
+              >
+                Theories Hub
+              </Link>
+              .
             </p>
           </div>
         </div>
@@ -503,11 +456,10 @@ export default function JesterClient({
           <div className="flex flex-wrap gap-2">
             {[
               { l: "All Characters", h: "/characters" },
-              { l: "Ticket Taker", h: "/ticket-taker" },
+              { l: "The Doctor", h: "/characters/doctor" },
+              { l: "Jester", h: "/characters/jester" },
               { l: "All Theories", h: "/theories" },
-              { l: "Endings Archive", h: "/endings" },
-              { l: "Lore Archive", h: "/lore" },
-              { l: "Walkthroughs", h: "/walkthroughs" },
+              { l: "All Endings", h: "/endings" },
             ].map((lnk) => (
               <Link
                 key={lnk.h}

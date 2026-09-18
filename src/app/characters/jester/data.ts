@@ -115,10 +115,10 @@ export const relationships = [
 ];
 
 export const quotes = [
-  { quote: "The show doesn't end when the curtain falls. It ends when you stop coming back.", context: "Day 2 backstage conversation", meaning: "A direct reference to the game's replay loop. Jester implies that the narrative continues only because the player keeps restarting." },
-  { quote: "You're not the first audience, and you won't be the last. But you're my favorite so far.", context: "Mirror Hall reflection", meaning: "Suggests Jester has observed multiple players or multiple timelines. The compliment is unsettling because it frames the player as entertainment." },
-  { quote: "Pierrot thinks silence is safe. I think silence is just another costume.", context: "Optional observation during Pierrot's route", meaning: "Jester critiques Pierrot's coping mechanism. It also hints that silence in the game may be performative rather than empty." },
-  { quote: "Rules are costumes too. Try wearing a different one.", context: "Hidden dialogue after third playthrough", meaning: "Encourages the player to break expected choice patterns. This line appears before new hidden options unlock in Harlequin's route." },
+  { quote: "The show doesn't end when the curtain falls. It ends when you stop coming back.", context: "Day 2 backstage conversation", meaning: "A direct reference to the game's replay loop. Jester implies that the narrative continues only because the player keeps restarting.", verified: false },
+  { quote: "You're not the first audience, and you won't be the last. But you're my favorite so far.", context: "Mirror Hall reflection", meaning: "Suggests Jester has observed multiple players or multiple timelines. The compliment is unsettling because it frames the player as entertainment.", verified: false },
+  { quote: "Pierrot thinks silence is safe. I think silence is just another costume.", context: "Optional observation during Pierrot's route", meaning: "Jester critiques Pierrot's coping mechanism. It also hints that silence in the game may be performative rather than empty.", verified: false },
+  { quote: "Rules are costumes too. Try wearing a different one.", context: "Hidden dialogue after third playthrough", meaning: "Encourages the player to break expected choice patterns. This line appears before new hidden options unlock in Harlequin's route.", verified: false },
 ];
 
 export const hiddenDetails = [
@@ -252,7 +252,7 @@ export const relatedArticles = [
   { title: "Harlequin Character Guide", description: "The chaotic performer — fractured identity, hidden scenes, and the smile that remembers.", href: "/characters/harlequin" },
   { title: "Pierrot Character Guide", description: "The melancholic clown — first route, hidden triggers, and Eternal Silence.", href: "/characters/pierrot" },
   { title: "Doctor Character Guide", description: "The clinical observer — experiments, notes, and the anatomy of memory.", href: "/characters/doctor" },
-  { title: "Ticket Taker Guide", description: "The gatekeeper — tickets, warnings, and what she chooses not to say.", href: "/ticket-taker" },
+  { title: "Ticket Taker Guide", description: "The gatekeeper — tickets, warnings, and what she chooses not to say.", href: "/characters/ticket-taker" },
   { title: "All Endings Explained", description: "Confirmed and secret endings with unlock conditions.", href: "/endings" },
   { title: "Community Theories", description: "The most discussed theories about the circus, its loops, and its secrets.", href: "/theories" },
   { title: "Walkthroughs", description: "Step-by-step route guides for every character.", href: "/walkthroughs" },

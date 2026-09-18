@@ -1,37 +1,29 @@
 "use client";
 
+import { CURRENT_VERSION, ENDINGS_PLANNED } from "@/lib/site-facts";
+
 export default function EndingOverview() {
   return (
-    <section className="bg-surface py-16 px-4 md:px-16 border-t border-outline/10">
-      <div className="max-w-4xl mx-auto">
-        <h2 className="font-[Epilogue] text-2xl md:text-3xl font-bold text-primary mb-4">
-          The Complete Ending Guide
+    <section className="py-16 px-4 md:px-16 border-t border-outline/10">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="font-display text-2xl text-primary uppercase tracking-widest mb-4">
+          Ending Overview
         </h2>
 
-        <div className="space-y-6 text-on-surface-variant text-sm">
-          <div>
-            <h3 className="font-bold text-foreground mb-2">How many endings exist?</h3>
-            <p>The community has confirmed 11 endings across all character routes, with 3 unverified endings (Unnamed Open Ending, Unnamed Open Ending, Unnamed Open Ending). Total documented: 14.</p>
-          </div>
-
+        <div className="space-y-8">
           <div>
             <h3 className="font-bold text-foreground mb-2">Which ending is considered the true ending?</h3>
-            <p>No single ending is universally accepted as the "true ending." The community theory suggests that the true ending requires completing all four character routes in a specific order, with Columbina's three-loop storyline being the final piece. However, this remains unverified. Some players argue that the Unnamed Open Ending ending — found only in unused files — represents the intended conclusion that was cut during development.</p>
+            <p>No single ending is universally accepted as the &quot;true ending.&quot; The developer has not confirmed a canonical ending. The current build has only 1 confirmed ending (&quot;Missing&quot;). The developer has planned 4 additional endings, but none are implemented yet.</p>
           </div>
 
           <div>
-            <h3 className="font-bold text-foreground mb-2">Which ending is hardest to unlock?</h3>
-            <p>Unnamed Open Ending requires perfect alignment of all dialogue choices across three consecutive loops. Any deviation — even a single incorrect choice — causes a complete reset. The Unnamed Open Ending ending may be impossible to unlock legitimately; no player has verified conditions, and it may be a debug remnant or intentionally unreachable content.</p>
+            <h3 className="font-bold text-foreground mb-2">What endings exist in the current build?</h3>
+            <p>The current build ({CURRENT_VERSION}) has 1 confirmed ending: &quot;Missing&quot; (Bad Ending), associated with Harlequin&apos;s route. The specific trigger conditions have not been independently verified.</p>
           </div>
 
           <div>
-            <h3 className="font-bold text-foreground mb-2">Which endings require replaying the game?</h3>
-            <p>Four endings require replay awareness: Open Ending C (unnamed) (requires completing one other route first), Unnamed Open Ending (requires three loops), The Unnamed Open Ending (requires finding files across multiple playthroughs), and Unnamed Open Ending (requires specific comedic choices that only become available after seeing her standard ending). The game tracks your history across saves using a hidden counter at offset 0x4A20.</p>
-          </div>
-
-          <div>
-            <h3 className="font-bold text-foreground mb-2">Which endings remain unverified?</h3>
-            <p>Three endings remain unverified by the community: Unnamed Open Ending (found in files but never unlocked), Unnamed Open Ending (mentioned in patch notes but never found), and Unnamed Open Ending (a branch with no characters that soft-locks after 5 minutes). These may be cut content, debug remnants, or intentionally hidden endings that require conditions the community has not yet discovered.</p>
+            <h3 className="font-bold text-foreground mb-2">What endings are planned?</h3>
+            <p>The developer has listed {ENDINGS_PLANNED} planned endings on itch.io: Pierrot&apos;s ending, Harlequin&apos;s ending, Protagonist&apos;s ending, and &quot;All together&quot; (MC with both Pierrot and Harlequin). The developer also states: &quot;the script is still a work in progress, so no endings are fully planned yet.&quot;</p>
           </div>
         </div>
       </div>

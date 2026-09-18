@@ -14,7 +14,7 @@ export default function CharacterEndingsHub() {
           <div className="space-y-4">
             <div className="flex items-start gap-3">
               <span className="font-mono text-xs text-primary shrink-0 w-20">Pierrot</span>
-              <span className="text-on-surface/60 text-sm">Associated with at least one of the 3 unnamed open endings. Specific conditions unverified.</span>
+              <span className="text-on-surface/60 text-sm">The developer has planned 4 endings, but none are implemented in the current build. Specific conditions are unknown.</span>
             </div>
             <div className="flex items-start gap-3">
               <span className="font-mono text-xs text-primary shrink-0 w-20">Harlequin</span>

@@ -21,7 +21,7 @@ const questions = [
   },
   {
     question: "Is The Circus Real?",
-    answer: "The game presents multiple realities simultaneously. The circus exists as a physical location in some routes, a purgatorial system in others, and a digital construct in the Unnamed Open Ending ending. The most accepted theory is that the circus is a memory preservation system — real to the characters who inhabit it, but constructed from saved consciousness rather than physical matter.",
+    answer: "The game presents multiple realities simultaneously. The circus exists as a physical location in some routes, a purgatorial system in others, and a psychological construct. The most accepted theory is that the circus is a memory preservation system — real to the characters who inhabit it, but constructed from saved consciousness rather than physical matter.",
     links: [
       { label: "Purgatorial Theory", href: "/theories/purgatorial" },
       { label: "Mirror Hall", href: "/lore/mirror-hall" },
@@ -37,7 +37,7 @@ const questions = [
   },
   {
     question: "Why Are Memories Shared Across Routes?",
-    answer: "The game uses a hidden counter at offset 0x4A20 in the save file to track player behavior across routes. This creates a 'persistent memory' system where characters reference events from other playthroughs. The narrative justification is that all routes occur in the same timeline — the player is not replaying the game but experiencing different aspects of a single continuous story.",
+    answer: "Some players report that characters appear to reference events from other playthroughs, suggesting the game may track player behavior across routes. However, claims about specific save file mechanics (like hidden counters at specific offsets) are unconfirmed community speculation and have not been verified by the developer.",
     links: [
       { label: "Timeline Anomalies", href: "/lore#anomalies" },
       { label: "Pierrot Remembers Routes", href: "/theories/pierrot-remembers-routes" },

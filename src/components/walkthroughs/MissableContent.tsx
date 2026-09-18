@@ -6,16 +6,14 @@ const missable = [
   { content: "CG #3 — Doctor's Medical File #1", unlock: "Scene 2: Search the drawer", route: "Doctor" },
   { content: "CG #4 — Columbina's First Dance", unlock: "Scene 3: Enter the first door", route: "Columbina" },
   { content: "CG #5 — Mirror Reflection", unlock: "Scene 9: Look into mirror (requires Doctor failure)", route: "All" },
-  { content: "CG #6 — Open Ending C (unnamed) Black Screen", unlock: "Scene 12: Refuse all dialogue ×3", route: "Pierrot" },
+  { content: "CG #6 — Mirror Hall Scene", unlock: "Day 2: Visit the Mirror Hall", route: "Pierrot" },
   { content: "Secret Dialogue #1 — Pierrot's 47th Variation", unlock: "4th playthrough, Scene 5", route: "Pierrot" },
   { content: "Secret Dialogue #2 — Harlequin's 'You Again'", unlock: "4th playthrough, Scene 1", route: "Harlequin" },
-  { content: "Hidden Scene #1 — Doctor's Precognition", unlock: "Scene 7 (before Unnamed Open Ending accessible)", route: "Doctor" },
+  { content: "Hidden Scene #1 — Doctor's Office", unlock: "Day 2: Examine all medical files", route: "Doctor" },
   { content: "Hidden Scene #2 — Columbina's 4th Door", unlock: "3 perfect loops, Scene 12", route: "Columbina" },
   { content: "Hidden Scene #3 — Harlequin's Fracture", unlock: "Fail route once, then retry", route: "Harlequin" },
   { content: "Achievement — Medical History", unlock: "Collect all 5 medical files", route: "Doctor" },
-  { content: "Achievement — Open Ending C (unnamed)", unlock: "Refuse dialogue for 3 consecutive scenes", route: "Pierrot" },
-  { content: "Achievement — Unnamed Open Ending", unlock: "Perfect 3-loop alignment", route: "Columbina" },
-  { content: "Post-Credits Scene — All Characters", unlock: "Complete all 8 confirmed endings", route: "All" },
+  { content: "Achievement — Post-Credits Scene", unlock: "Complete the 'Missing' ending", route: "Harlequin" },
 ];
 
 export default function MissableContent() {

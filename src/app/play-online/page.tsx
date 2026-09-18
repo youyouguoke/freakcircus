@@ -2,22 +2,33 @@ import { Metadata } from "next";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import QuickPeek from "@/components/QuickPeek";
+import {
+  CURRENT_VERSION,
+  ENDINGS_CONFIRMED,
+  ENDINGS_PLANNED,
+  GAME_GENRE,
+  ITCH_IO_URL,
+  LAST_VERIFIED_LABEL,
+  PLAYTIME_LABEL,
+  RELEASED_DAYS_LABEL,
+} from "@/lib/site-facts";
 
 export const metadata: Metadata = {
-  title: "Play The Freak Circus Online (Official Demo) | Freak Circus Hub",
-  description: "Play The Freak Circus online for free. An 18+ psychological horror visual novel by Neko Bueno. Day 1 & Day 2 playable in browser. Multiple endings, yandere characters, dark story.",
-  keywords: ["The Freak Circus", "play online", "official demo", "free", "itch.io", "horror visual novel", "demo", "browser game"],
+  title: "Where to Play The Freak Circus — Official itch.io Source | Freak Circus Hub",
+  description: "Play The Freak Circus through the official itch.io source. Current build, platform, content status, safety notes, and spoiler-aware getting-started guide.",
+  keywords: ["The Freak Circus", "play online", "official source", "itch.io", "horror visual novel", "browser game"],
   openGraph: {
-    title: "Play The Freak Circus Online (Official Demo)",
-    description: "Play The Freak Circus official demo online for free. A psychological horror visual novel with replay-aware mechanics and multiple endings.",
+    title: "Where to Play The Freak Circus — Official itch.io Source",
+    description: "Current build, platform, content status, safety notes, and getting-started guide for The Freak Circus.",
     type: "website",
     url: "https://freak-circus.com/play-online",
     siteName: "Freak Circus Hub",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Play The Freak Circus Online (Official Demo)",
-    description: "Play The Freak Circus official demo online for free.",
+    title: "Where to Play The Freak Circus — Official itch.io Source",
+    description: "Current build, platform, content status, and safety notes.",
   },
   alternates: {
     canonical: "https://freak-circus.com/play-online",
@@ -32,7 +43,7 @@ export default function PlayOnline() {
       <section className="bg-surface min-h-[60vh] flex flex-col justify-center py-16 px-4 md:px-16 relative overflow-hidden">
         <div className="max-w-4xl mx-auto w-full relative z-10">
           <div className="font-[JetBrains_Mono] text-xs text-primary mb-4 uppercase tracking-widest">
-            v0.2 Prototype | Last updated: 2026-02-22
+            {CURRENT_VERSION} | Last verified: {LAST_VERIFIED_LABEL}
           </div>
           <h1 className="font-[Creepster] text-5xl md:text-7xl text-primary mb-6 leading-none">
             Play The Freak Circus Online
@@ -42,7 +53,7 @@ export default function PlayOnline() {
           </p>
           <div className="flex flex-wrap gap-4">
             <a
-              href="https://garula.itch.io/the-freak-circus"
+              href={ITCH_IO_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block px-8 py-4 bg-primary text-surface font-[JetBrains_Mono] text-sm uppercase hover:bg-primary/90 transition-colors"
@@ -71,10 +82,10 @@ export default function PlayOnline() {
             About The Game
           </h2>
           <p className="text-on-surface-variant text-sm leading-relaxed mb-4">
-            The Freak Circus is an indie psychological horror visual novel that hides more than it reveals. Every route, every ending, and every character holds secrets that only emerge through repeated playthroughs. The game uses replay-aware mechanics — characters appear to remember your choices across saves, adjusting their dialogue and reactions based on previous playthroughs.
+            The Freak Circus is a {GAME_GENRE} that hides more than it reveals. Released content currently covers {RELEASED_DAYS_LABEL}; Day 3 is planned. The game uses choice-driven scenes, and community reports suggest some replay-aware behavior — but specific technical mechanics remain unverified.
           </p>
           <p className="text-on-surface-variant text-sm leading-relaxed mb-4">
-            The demo includes the full Pierrot route and partial access to Harlequin's route. All endings discovered in the demo carry over to the full version. The demo is rated 18+ for mature themes including psychological horror, body horror, and unsettling narrative content.
+            The current build is rated 18+ for mature themes including psychological horror and unsettling narrative content. Route structure is still being documented; treat specific route-completion claims as community-reported unless confirmed on the relevant guide page.
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
             <div className="bg-surface-container border border-outline/20 p-4 text-center">
@@ -82,8 +93,8 @@ export default function PlayOnline() {
               <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant">Price</div>
             </div>
             <div className="bg-surface-container border border-outline/20 p-4 text-center">
-              <div className="font-[Creepster] text-2xl text-primary">4-6h</div>
-              <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant">Demo Length</div>
+              <div className="font-[Creepster] text-2xl text-primary">{PLAYTIME_LABEL}</div>
+              <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant">Demo Length (community)</div>
             </div>
             <div className="bg-surface-container border border-outline/20 p-4 text-center">
               <div className="font-[Creepster] text-2xl text-primary">Browser</div>
@@ -116,7 +127,7 @@ export default function PlayOnline() {
                 2. Make Dialogue Choices
               </h3>
               <p className="text-on-surface-variant text-sm">
-                The game presents dialogue choices that affect character relationships and route outcomes. Some choices only appear after multiple playthroughs. The hidden counter at save file offset 0x4A20 tracks your progress across sessions.
+                The game presents dialogue choices that affect character relationships and route outcomes. Some choices only appear after multiple playthroughs. The game appears to track play history, but specific technical details have not been independently verified.
               </p>
             </div>
             <div className="bg-surface-container border border-outline/20 p-6">
@@ -124,7 +135,7 @@ export default function PlayOnline() {
                 3. Discover Hidden Content
               </h3>
               <p className="text-on-surface-variant text-sm">
-                The Freak Circus rewards repeated playthroughs. Characters reference previous choices, new dialogue options appear, and hidden scenes unlock based on your play history. The demo contains multiple endings that carry over to the full version.
+                The Freak Circus rewards repeated playthroughs. Community reports suggest characters may reference previous choices. The demo contains Day 1 and Day 2 content with 1 confirmed ending.
               </p>
             </div>
           </div>
@@ -197,16 +208,15 @@ export default function PlayOnline() {
             Demo Length
           </h2>
           <p className="text-on-surface-variant text-sm leading-relaxed mb-6">
-            The demo includes approximately 4-6 hours of content for a single route playthrough. However, experiencing all demo content requires multiple playthroughs due to replay-aware mechanics and hidden triggers. The demo contains 3+ endings that unlock based on specific choice combinations.
+            Community players report {PLAYTIME_LABEL} for {RELEASED_DAYS_LABEL} combined. The current build has {ENDINGS_CONFIRMED} confirmed ending (&quot;Missing&quot;). The developer has listed {ENDINGS_PLANNED} planned endings, but they are not implemented yet.
           </p>
           <div className="bg-surface-container border border-outline/20 p-6">
             <div className="font-[JetBrains_Mono] text-xs text-primary mb-2">DEMO CONTENT</div>
             <ul className="space-y-2 text-sm text-on-surface-variant">
-              <li>• Full Pierrot route with 2 endings</li>
-              <li>• Partial Harlequin route (Act I-II)</li>
-              <li>• Mirror Hall introduction scene</li>
-              <li>• 3 hidden dialogue triggers</li>
-              <li>• 1 secret ending (Open Ending C (unnamed) preview)</li>
+              <li>• Day 1 and Day 2 content</li>
+              <li>• Pierrot and Harlequin routes</li>
+              <li>• 1 confirmed ending (&quot;Missing&quot;)</li>
+              <li>• Columbina legend (backstory, not playable)</li>
             </ul>
           </div>
         </div>
@@ -229,7 +239,7 @@ export default function PlayOnline() {
                 No download required. Your progress saves automatically in the browser.
               </p>
               <a
-                href="https://garula.itch.io/the-freak-circus"
+                href={ITCH_IO_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary font-[JetBrains_Mono] text-xs uppercase hover:underline"
@@ -288,7 +298,7 @@ export default function PlayOnline() {
                 Characters
               </h3>
               <p className="text-on-surface-variant text-sm mb-4">
-                Meet Pierrot, Harlequin, The Doctor, and Columbina. Learn their routes, hidden triggers, and disturbing revelations.
+                Meet the 5 main characters: Pierrot, Harlequin, The Doctor, Jester, and Ticket Taker. Columbina is a deceased character in the backstory.
               </p>
               <Link href="/characters" className="text-primary font-[JetBrains_Mono] text-xs uppercase hover:underline">
                 Explore Characters →
@@ -327,6 +337,8 @@ export default function PlayOnline() {
           </a>
         </div>
       </section>
+
+      <QuickPeek theme="surface" />
 
       <Footer />
     </main>

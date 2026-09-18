@@ -5,7 +5,7 @@ const anomalies = [
     id: "REC_01",
     title: "The Columbina Legend",
     status: "confirmed",
-    desc: "Day 2 reveals the Columbina legend, which explains the backstory behind Pierrot and Harlequin's rivalry. Columbina is a deceased character — not playable. This is confirmed by multiple sources including thefreakcircus.org and wiki.gg.",
+    desc: "Day 2 reveals the Columbina legend, which explains the backstory behind Pierrot and Harlequin's rivalry. Columbina is a deceased character — not playable. This is confirmed by multiple sources.",
   },
   {
     id: "REC_02",
@@ -17,13 +17,13 @@ const anomalies = [
     id: "REC_03",
     title: "Multiple Endings",
     status: "confirmed",
-    desc: "The game has 4 endings total: 1 confirmed bad ending ('Missing') and 3 unnamed open endings. This is confirmed by thefreakcircus.org. The specific names and conditions of the open endings remain unknown.",
+    desc: "The current build has 1 confirmed ending: 'Missing' (Bad Ending). The developer has listed 4 planned endings on itch.io (Pierrot's, Harlequin's, Protagonist's, All together), but none are implemented yet.",
   },
   {
     id: "REC_04",
     title: "Day 3 (Planned)",
     status: "unreleased",
-    desc: "Day 3 is planned but has not been released yet. thefreakcircus.org describes it as featuring 'higher stakes, tighter route locks, and payoffs for choices you already made.' The exact release date is unknown.",
+    desc: "Day 3 is planned but has not been released yet. The developer has stated the script is complete and programming is in progress. The exact release date is unknown.",
   },
 ];
 

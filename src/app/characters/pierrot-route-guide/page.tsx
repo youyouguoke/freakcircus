@@ -42,7 +42,7 @@ export default function PierrotRouteGuidePage() {
                 Harlequin). Day 2 deepens his character through tent routes and the Columbina legend.
               </p>
               <p className="text-on-surface-variant text-sm">
-                The game features multiple endings — 1 confirmed bad ending (&quot;Missing&quot;) and 3 unnamed open endings.
+                The game features multiple endings — 1 confirmed bad ending (&quot;Missing&quot;). The developer has planned 4 additional endings (Pierrot&apos;s, Harlequin&apos;s, Protagonist&apos;s, All together), but none are implemented yet.
                 Pierrot&apos;s route is believed to be associated with at least one of the open endings, though
                 specific conditions have not been independently verified.
               </p>
@@ -96,7 +96,7 @@ export default function PierrotRouteGuidePage() {
                 Sources
               </h2>
               <div className="text-on-surface/40 text-xs space-y-1">
-                <p>• thefreakcircus.org — Character descriptions and route structure</p>
+                
                 <p>• YouTube playthroughs (Tiffany L., MrClockWorks) — Day 1 & 2 content confirmation</p>
                 <p>• Last verified: August 2026</p>
               </div>

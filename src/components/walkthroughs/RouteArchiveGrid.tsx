@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { PLAYTIME_LABEL } from "@/lib/site-facts";
 
 const routes = [
   {
@@ -8,8 +9,8 @@ const routes = [
     ending: "Sets up path for Day 2",
     unlock: "Available from start",
     summary: "Street setup, first moral forks, Pierrot vulnerability, early Harlequin friction. Your choices here affect which endings are available in Day 2.",
-    playtime: "1-2 hours",
-    href: "/walkthroughs/pierrot-main-route",
+    playtime: `Combined ${PLAYTIME_LABEL}`,
+    href: "/walkthroughs/day-1",
   },
   {
     title: "Day 2 Walkthrough",
@@ -18,8 +19,8 @@ const routes = [
     ending: "Missing (Bad Ending confirmed)",
     unlock: "Complete Day 1",
     summary: "Tent routes, Columbina legend, Jester storytelling, Doctor & Ticket Taker horror set-pieces. The \"Missing\" bad ending triggers here if trust thresholds are not met.",
-    playtime: "2-3 hours",
-    href: "/walkthroughs",
+    playtime: `Combined ${PLAYTIME_LABEL}`,
+    href: "/walkthroughs/day-2",
   },
 ];
 

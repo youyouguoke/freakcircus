@@ -1,7 +1,7 @@
 const faqs = [
   {
     q: "How many endings are in The Freak Circus?",
-    a: "The game has 4 endings total: 1 confirmed bad ending (\"Missing\") and 3 open endings. The open endings have not been named by any official or verified source.",
+    a: "The current build has 1 confirmed ending: \"Missing\" (Bad Ending). The developer has planned 4 additional endings on itch.io, but these are NOT yet implemented. The developer states: 'the script is still a work in progress, so no endings are fully planned yet.'",
   },
   {
     q: "What is the confirmed ending?",
@@ -9,15 +9,15 @@ const faqs = [
   },
   {
     q: "Are there secret or hidden endings?",
-    a: "No secret or hidden endings have been verified. The developer confirmed 3 open endings exist, but has not named them. Any specific ending names you may see online are unconfirmed community speculation.",
+    a: "No secret or hidden endings have been verified in the current build. The developer has listed 4 planned endings on itch.io, but none are implemented yet. Any specific ending names beyond 'Missing' that you see online are unconfirmed speculation.",
   },
   {
-    q: "What about the 3 open endings?",
-    a: "The developer confirmed 3 open endings exist, but has not publicly named them. Community attempts to name these endings are speculative and should not be treated as fact.",
+    q: "What about the planned endings?",
+    a: "The developer has listed 4 planned endings on itch.io: Pierrot's ending, Harlequin's ending, Protagonist's ending, and 'All together (MC with both Pierrot and Harlequin)'. However, the developer also states these are not fully planned yet, and none exist in the current build.",
   },
   {
     q: "Will more endings be added?",
-    a: "Yes. The developer has stated that more endings are planned for future updates, including Day 3 content.",
+    a: "Yes. The developer has listed 4 specific planned endings and Day 3 content. However, the developer also notes 'the script is still a work in progress, so no endings are fully planned yet.'",
   },
 ];
 

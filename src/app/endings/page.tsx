@@ -13,16 +13,15 @@ import EndingExplained from "@/components/endings/EndingExplained";
 import PopularEndingGuides from "@/components/endings/PopularEndingGuides";
 import EndingTableOfContents from "@/components/endings/EndingTableOfContents";
 import ArchiveIndex from "@/components/home/ArchiveIndex";
-import JsonLd from "@/components/JsonLd";
 import ContinueExploring from "@/components/ContinueExploring";
 import UnverifiedBanner from "@/components/UnverifiedBanner";
-import { ENDINGS_CONFIRMED, ENDINGS_BAD, ENDINGS_OPEN, ENDINGS_TOTAL, SINGLE_ROUTE_HOURS, TOTAL_COMPLETION_HOURS } from "@/lib/site-facts";
+import { ENDINGS_CONFIRMED, ENDINGS_BAD, ENDINGS_PLANNED, ENDINGS_TOTAL, PLANNED_ENDINGS_LIST, CURRENT_VERSION } from "@/lib/site-facts";
 
 const endingsFaqData = [
-  { question: "How many endings are there in Freak Circus?", answer: `The confirmed count is ${ENDINGS_TOTAL} endings: ${ENDINGS_BAD} bad ending ("Missing") and ${ENDINGS_OPEN} open endings. Additional ending names and details below are based on community reports and have not been independently verified.` },
+  { question: "How many endings are there in Freak Circus?", answer: `The current build has ${ENDINGS_TOTAL} confirmed ending: ${ENDINGS_BAD} bad ending ("Missing"). The developer has planned ${ENDINGS_PLANNED} additional endings (${PLANNED_ENDINGS_LIST.join(", ")}), but these are NOT yet implemented. The developer states: "the script is still a work in progress, so no endings are fully planned yet."` },
   { question: "What is the true ending of Freak Circus?", answer: "No single ending is universally accepted as the true ending. The developer has not confirmed a canonical ending." },
-  { question: "What is the confirmed bad ending?", answer: "\"Missing\" is the only independently confirmed ending. It is a Bad Ending triggered during Day 2." },
-  { question: "How long does it take to get all endings?", answer: `Playtime estimates are not yet confirmed. The game has ${ENDINGS_TOTAL} confirmed endings total.` },
+  { question: "What is the confirmed bad ending?", answer: "\"Missing\" is the only ending confirmed to exist in the current build. It is a Bad Ending. Specific trigger conditions have not been independently verified." },
+  { question: "Do the planned endings exist in the demo?", answer: `No. The ${ENDINGS_PLANNED} planned endings (Pierrot's, Harlequin's, Protagonist's, and 'All together') are listed under 'What is planned?' on the official itch.io page. They are not yet implemented in the current ${CURRENT_VERSION} build.` },
 ];
 
 const endingsJsonLd = {
@@ -41,7 +40,7 @@ const endingsJsonLd = {
 
 export const metadata: Metadata = {
   title: "Freak Circus Endings Guide (2026) | All Endings, Routes, Requirements & Explained",
-  description: "Freak Circus endings guide. 4 endings confirmed: 1 bad ending (Missing) and 3 unnamed open endings. Only Missing has been verified by name.",
+  description: "Freak Circus endings guide. 1 confirmed ending: Missing (Bad Ending). 4 additional endings planned by developer but not yet implemented.",
   keywords: [
     "Freak Circus endings",
     "Freak Circus endings guide",
@@ -55,30 +54,23 @@ export const metadata: Metadata = {
     "Pierrot endings",
     "Harlequin endings",
     "Doctor endings",
-    "Columbina endings",
     "true ending",
     "secret ending",
-    "hidden ending",
-    "canon ending",
-    "Open Ending C (unnamed)",
-    "Unnamed Open Ending",
-    "Unnamed Open Ending",
-    "Open Ending A (unnamed)",
     "all endings",
     "ending order",
     "ending timeline",
   ],
   openGraph: {
     title: "Freak Circus Endings Guide (2026) | All Endings, Routes, Requirements & Explained",
-    description: "Freak Circus endings guide. 4 endings confirmed: 1 bad ending (Missing) and 3 unnamed open endings.",
-    type: "website",
+    description: "Freak Circus endings guide. 1 confirmed ending (Missing). 4 planned endings not yet in game.",
+ type: "website",
     url: "https://freak-circus.com/endings",
     siteName: "Freak Circus Hub",
   },
   twitter: {
     card: "summary_large_image",
     title: "Freak Circus Endings Guide (2026) | All Endings, Routes, Requirements & Explained",
-    description: "Freak Circus endings guide. 4 endings confirmed — only Missing verified by name.",
+    description: "Freak Circus endings guide. 1 confirmed ending (Missing). 4 planned endings not yet in game.",
   },
   alternates: {
     canonical: "https://freak-circus.com/endings",
@@ -121,7 +113,7 @@ export default function EndingsPage() {
       <ArchiveIndex />
       <ContinueExploring title="Explore More" />
       <Footer />
-      <JsonLd />
+      
     </main>
   );
 }

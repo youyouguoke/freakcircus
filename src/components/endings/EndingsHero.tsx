@@ -12,12 +12,8 @@ export default function EndingsHero() {
             <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant">Confirmed Ending</div>
           </div>
           <div>
-            <div className="font-[Creepster] text-3xl text-primary">3</div>
-            <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant">Open Endings (unnamed)</div>
-          </div>
-          <div>
-            <div className="font-[Creepster] text-3xl text-primary">4</div>
-            <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant">Total Endings</div>
+            <div className="font-[Creepster] text-3xl text-amber-400">4</div>
+            <div className="font-[JetBrains_Mono] text-xs text-on-surface-variant">Planned (not in game)</div>
           </div>
         </div>
         <h1 className="font-[Epilogue] text-4xl md:text-5xl lg:text-6xl font-extrabold text-foreground mb-3 leading-tight">
@@ -27,9 +23,9 @@ export default function EndingsHero() {
           What We Know So Far
         </h2>
         <p className="text-on-surface-variant text-lg max-w-2xl mb-8">
-          The Freak Circus by Neko Bueno has 4 endings total. Only 1 has been confirmed by name:
-          &quot;Missing&quot; (Bad Ending). 3 additional open endings exist but remain unnamed. All other ending names
-          you may see online are unverified community speculation.
+          The Freak Circus by Neko Bueno currently has 1 confirmed ending: &quot;Missing&quot; (Bad Ending).
+          The developer has planned 4 additional endings (Pierrot&apos;s, Harlequin&apos;s, Protagonist&apos;s, and &quot;All together&quot;),
+          but these are not yet implemented. The developer states: &quot;the script is still a work in progress, so no endings are fully planned yet.&quot;
         </p>
       </div>
     </section>
